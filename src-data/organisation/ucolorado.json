@@ -1,0 +1,32 @@
+{
+    "id": "ucolorado",
+    "type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "label": "UColorado",
+    "ror": "00jc20583",
+    "long_label": "University of Colorado System",
+    "url": [
+        "http://www.cu.edu/"
+    ],
+    "established": 1876,
+    "kind": "Education",
+    "labels": [],
+    "aliases": [],
+    "acronyms": [
+        "CU"
+    ],
+    "location": {
+        "id": "universal:location/00jc20583",
+        "type": "wcrp:location",
+        "lat": 40.01499,
+        "lon": 40.01499,
+        "city": "Boulder",
+        "country": [
+            "United States",
+            "US"
+        ]
+    }
+}
