@@ -1,0 +1,235 @@
+{
+  "@context": {
+  "@base": "https://wcrp-cmip.github.io/WCRP-universe/model-family/",
+  "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/model-family/",
+  "entries": "@none",
+  "id": "@id",
+  "type": "@type",
+  "cf": "https://wcrp-cmip.github.io/CF/",
+  "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
+  "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
+  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
+  "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
+  "variables": "https://wcrp-cmip.github.io/MIP-variables/",
+  "origin": {
+    "@type": "@id",
+    "@context": "https://wcrp-cmip.github.io/WCRP-universe/"
+  }
+},
+  "@graph": [
+    {
+  "id": "access",
+  "type": "wcrp:model-family",
+  "label": "ACCESS",
+  "description": "Australian Community Climate and Earth System Simulator",
+  "origin": "BoM/CSIRO (Bureau of Meteorology/Commonwealth Scientific and Industrial Research Organisation)"
+}
+    ,{
+  "id": "bcc-csm",
+  "type": "wcrp:model-family",
+  "label": "BCC-CSM",
+  "description": "Beijing Climate Center Climate System Model",
+  "origin": "BCC (Beijing Climate Center)"
+}
+    ,{
+  "id": "cam",
+  "type": "wcrp:model-family",
+  "label": "CAM",
+  "description": "Community Atmosphere Model",
+  "origin": "NCAR (National Center for Atmospheric Research)",
+  "permissible_realms": [
+    "atmos"
+  ]
+}
+    ,{
+  "id": "canesm",
+  "type": "wcrp:model-family",
+  "label": "CanESM",
+  "description": "Canadian Earth System Model (developed by CCCma)",
+  "origin": "CCCma (Canadian Centre for Climate Modelling and Analysis)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "ocnbgchem"
+  ]
+}
+    ,{
+  "id": "cesm",
+  "type": "wcrp:model-family",
+  "label": "CESM",
+  "description": "Community Earth System Model",
+  "origin": "NCAR (National Center for Atmospheric Research)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "seaice",
+    "ocnbgchem"
+  ]
+}
+    ,{
+  "id": "cnrm-cm",
+  "type": "wcrp:model-family",
+  "label": "CNRM-CM",
+  "description": "Centre National de Recherches Météorologiques model",
+  "origin": "CNRM (Centre National de Recherches Météorologiques)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean"
+  ]
+}
+    ,{
+  "id": "ec-earth",
+  "type": "wcrp:model-family",
+  "label": "EC-Earth",
+  "description": "Community-developed Earth system model based on IFS",
+  "origin": "EC-Earth Consortium (EC-Earth Consortium)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "seaice"
+  ]
+}
+    ,{
+  "id": "fgoals",
+  "type": "wcrp:model-family",
+  "label": "FGOALS",
+  "description": "Flexible Global Ocean-Atmosphere-Land System Model",
+  "origin": "IAP (Institute of Atmospheric Physics)"
+}
+    ,{
+  "id": "geos",
+  "type": "wcrp:model-family",
+  "label": "GEOS",
+  "description": "Goddard Earth Observing System",
+  "origin": "NASA (National Aeronautics and Space Administration)",
+  "permissible_realms": [
+    "atmos",
+    "land"
+  ]
+}
+    ,{
+  "id": "gfdl-cm4",
+  "type": "wcrp:model-family",
+  "label": "GFDL-CM4",
+  "description": "NOAA Geophysical Fluid Dynamics Laboratory model",
+  "origin": "NOAA GFDL (National Oceanic and Atmospheric Administration Geophysical Fluid Dynamics Laboratory)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "ocnbgchem"
+  ]
+}
+    ,{
+  "id": "giss-e2",
+  "type": "wcrp:model-family",
+  "label": "GISS-E2",
+  "description": "NASA Goddard Institute for Space Studies model",
+  "origin": "NASA GISS (NASA Goddard Institute for Space Studies)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean"
+  ]
+}
+    ,{
+  "id": "hadgem3",
+  "type": "wcrp:model-family",
+  "label": "HadGEM3",
+  "description": "Hadley Centre Global Environment Model",
+  "origin": "Met Office Hadley Centre (Met Office Hadley Centre)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "seaice"
+  ]
+}
+    ,{
+  "id": "icon",
+  "type": "wcrp:model-family",
+  "label": "ICON",
+  "description": "Icosahedral Nonhydrostatic model",
+  "origin": "DWD/MPI-M (Deutscher Wetterdienst/Max Planck Institute for Meteorology)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "seaice"
+  ]
+}
+    ,{
+  "id": "ifs",
+  "type": "wcrp:model-family",
+  "label": "IFS",
+  "description": "Integrated Forecasting System",
+  "origin": "ECMWF (European Centre for Medium-Range Weather Forecasts)",
+  "permissible_realms": [
+    "atmos"
+  ]
+}
+    ,{
+  "id": "ipsl-cm",
+  "type": "wcrp:model-family",
+  "label": "IPSL-CM",
+  "description": "Institut Pierre-Simon Laplace model",
+  "origin": "IPSL (Institut Pierre-Simon Laplace)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "ocnbgchem"
+  ]
+}
+    ,{
+  "id": "miroc",
+  "type": "wcrp:model-family",
+  "label": "MIROC",
+  "description": "Model for Interdisciplinary Research on Climate",
+  "origin": "JAMSTEC/AORI/NIES (Japan Agency for Marine-Earth Science and Technology/Atmosphere and Ocean Research Institute/National Institute for Environmental Studies)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "seaice"
+  ]
+}
+    ,{
+  "id": "mpi-esm",
+  "type": "wcrp:model-family",
+  "label": "MPI-ESM",
+  "description": "Max Planck Institute Earth System Model",
+  "origin": "MPI-M (Max Planck Institute for Meteorology)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "ocnbgchem"
+  ]
+}
+    ,{
+  "id": "nicam",
+  "type": "wcrp:model-family",
+  "label": "NICAM",
+  "description": "Nonhydrostatic Icosahedral Atmospheric Model",
+  "origin": "JAMSTEC (Japan Agency for Marine-Earth Science and Technology)"
+}
+    ,{
+  "id": "ukesm1",
+  "type": "wcrp:model-family",
+  "label": "UKESM1",
+  "description": "UK Earth System Model (based on HadGEM3)",
+  "origin": "Met Office Hadley Centre (Met Office Hadley Centre)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean",
+    "ocnbgchem"
+  ]
+}
+  ]
+}

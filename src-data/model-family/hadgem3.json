@@ -1,0 +1,13 @@
+{
+    "id": "hadgem3",
+    "type": "wcrp:model-family",
+    "label": "HadGEM3",
+    "description": "Hadley Centre Global Environment Model",
+    "origin": "Met Office Hadley Centre (Met Office Hadley Centre)",
+    "permissible_realms": [
+        "atmos",
+        "land",
+        "ocean",
+        "seaice"
+    ]
+}
