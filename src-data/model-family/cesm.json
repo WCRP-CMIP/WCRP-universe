@@ -1,0 +1,14 @@
+{
+    "id": "cesm",
+    "type": "wcrp:model-family",
+    "label": "CESM",
+    "description": "Community Earth System Model",
+    "origin": "NCAR (National Center for Atmospheric Research)",
+    "permissible_realms": [
+        "atmos",
+        "land",
+        "ocean",
+        "seaice",
+        "ocnbgchem"
+    ]
+}
