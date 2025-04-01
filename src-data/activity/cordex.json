@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "cordex",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://cordex.org",
+  "label": "CORDEX",
+  "long-label": "Coordinated Regional Climate Downscaling Experiment",
+  "description": ""
+}

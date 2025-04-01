@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "simip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://climate-cryosphere.org/simip-about/",
+  "label": "SIMIP",
+  "long-label": "Sea Ice Model Intercomparison Project",
+  "description": ""
+}

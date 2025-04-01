@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "irrmip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://hydr.vub.be/projects/irrmip",
+  "label": "IRRMIP",
+  "long-label": "Irrigation Model Intercomparison Project",
+  "description": ""
+}

@@ -1,0 +1,12 @@
+{
+    "id": "giss-e2",
+    "type": "wcrp:model-family",
+    "label": "GISS-E2",
+    "description": "NASA Goddard Institute for Space Studies model",
+    "origin": "NASA GISS (NASA Goddard Institute for Space Studies)",
+    "permissible_realms": [
+        "atmos",
+        "land",
+        "ocean"
+    ]
+}

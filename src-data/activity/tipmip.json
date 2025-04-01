@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "tipmip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://tipmip.pik-potsdam.de/",
+  "label": "TIPMIP",
+  "long-label": "Tipping Point Modelling Intercomparison Project",
+  "description": "Tipping Point Model Intercomparison Project"
+}
