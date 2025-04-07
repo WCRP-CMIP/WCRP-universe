@@ -1,0 +1,35 @@
+{
+    "id": "kit",
+    "type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "label": "KIT",
+    "ror": "04t3en479",
+    "long_label": "Karlsruhe Institute of Technology",
+    "url": [
+        "https://www.kit.edu"
+    ],
+    "established": 2009,
+    "kind": "Education",
+    "labels": [],
+    "aliases": [
+        "Das Karlsruher Institut f\u00fcr Technologie (KIT) \u2013 Die Forschungsuniversit\u00e4t in der Helmholtz-Gemeinschaft",
+        "Karlsruhe Institute of Technology - The Research University in the Helmholtz Association"
+    ],
+    "acronyms": [
+        "KIT"
+    ],
+    "location": {
+        "id": "universal:location/04t3en479",
+        "type": "wcrp:location",
+        "lat": 49.00937,
+        "lon": 49.00937,
+        "city": "Karlsruhe",
+        "country": [
+            "Germany",
+            "DE"
+        ]
+    }
+}

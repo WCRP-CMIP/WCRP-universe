@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "highresmip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://www.highresmip.org",
+  "label": "HighResMIP",
+  "long-label": "High Resolution Model Intercomparison Project",
+  "description": ""
+}

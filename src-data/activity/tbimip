@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "tbimip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://www.clivar.org/research-foci/basin-interaction",
+  "label": "TBIMIP",
+  "long-label": "Tropical Basin Interaction Model Intercomparison Project",
+  "description": ""
+}

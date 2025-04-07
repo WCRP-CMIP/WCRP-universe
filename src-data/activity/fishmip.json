@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "fishmip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://fishmip.org/",
+  "label": "FishMIP",
+  "long-label": "Fisheries and Marine Ecosystem Model Intercomparison Project",
+  "description": ""
+}
