@@ -66,6 +66,10 @@
             "description": "Tipping Point Model Intercomparison Project",
             "url": "https://tipmip.pik-potsdam.de/"
         },
+        "HighResMIP2": {
+	    "description": "High Resolution Model Intercomparison Project 2",
+	    "url": "https://highresmip.org"
+	},
         "none": {
             "description": "'none' entry permissable only for the experiment parent id. ",
             "url": ""
