@@ -1926,15 +1926,16 @@
         "universal"
       ],
       "label": "PCMDI",
-      "ror": "041nk4h53",
-      "long_label": "Lawrence Livermore National Laboratory",
+      "ror": "02k3nmd98",
+      "long_label": "PCMDI: Earth System Model Evaluation Project",
       "url": [
-        "https://www.llnl.gov"
+        "https://pcmdi.llnl.gov"
       ],
-      "established": 1952,
+      "established": 1989,
       "kind": "Facility",
       "labels": [],
       "aliases": [
+        "Program for Climate Model Diagnosis and Intercomparison",
         "U.S. Department of Energy Lawrence Livermore National Laboratory",
         "U.S. Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory",
         "United States Department of Energy Lawrence Livermore National Laboratory",
@@ -1942,10 +1943,11 @@
       ],
       "acronyms": [
         "LLL",
-        "LLNL"
+        "LLNL",
+        "PCMDI"
       ],
       "location": {
-        "id": "universal:location/041nk4h53",
+        "id": "universal:location/02k3nmd98",
         "type": "wcrp:location",
         "lat": 37.68187,
         "lon": 37.68187,

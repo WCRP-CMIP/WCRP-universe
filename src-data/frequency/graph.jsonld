@@ -1,193 +1,193 @@
 {
   "@context": {
-  "@base": "https://wcrp-cmip.github.io/WCRP-universe/frequency/",
-  "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/frequency/",
-  "entries": "@none",
-  "id": "@id",
-  "type": "@type",
-  "cf": "https://wcrp-cmip.github.io/CF/",
-  "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
-  "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
-  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
-  "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
-  "variables": "https://wcrp-cmip.github.io/MIP-variables/"
-},
+    "@base": "https://wcrp-cmip.github.io/WCRP-universe/frequency/",
+    "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/frequency/",
+    "entries": "@none",
+    "id": "@id",
+    "type": "@type",
+    "cf": "https://wcrp-cmip.github.io/CF/",
+    "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
+    "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
+    "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
+    "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
+    "variables": "https://wcrp-cmip.github.io/MIP-variables/"
+  },
   "@graph": [
     {
-  "description": "sampled hourly",
-  "id": "1hr",
-  "long_name": "1 Hourly Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "hour",
-  "label": "1hr"
-}
-    ,{
-  "description": "monthly-mean diurnal cycle resolving each day into 1-hour means",
-  "id": "1hrcm",
-  "long_name": "1 Hour Climatology Monthly",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "hour",
-  "label": "1hrCM"
-}
-    ,{
-  "description": "sampled hourly, at specified time point within an hour",
-  "id": "1hrpt",
-  "long_name": "1 Hour Point",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "hour",
-  "label": "1hrPt"
-}
-    ,{
-  "description": "3 hourly mean samples",
-  "id": "3hr",
-  "long_name": "3 Hourly Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "hour",
-  "label": "3hr"
-}
-    ,{
-  "description": "sampled 3 hourly, at specified time point within the time period",
-  "id": "3hrpt",
-  "long_name": "3 Hour Point",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "hour",
-  "label": "3hrPt"
-}
-    ,{
-  "description": "6 hourly mean samples",
-  "id": "6hr",
-  "long_name": "6 Hourly Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "hour",
-  "label": "6hr"
-}
-    ,{
-  "description": "sampled 6 hourly, at specified time point within the time period",
-  "id": "6hrpt",
-  "long_name": "6 Hour Point",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "hour",
-  "label": "6hrPt"
-}
-    ,{
-  "description": "daily mean samples",
-  "id": "day",
-  "long_name": "Daily Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "day",
-  "label": "day"
-}
-    ,{
-  "description": "decadal mean samples",
-  "id": "dec",
-  "long_name": "Decadal Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "decade",
-  "label": "dec"
-}
-    ,{
-  "description": "fixed (time invariant) field",
-  "id": "fx",
-  "long_name": "Fixed Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "none",
-  "label": "fx"
-}
-    ,{
-  "description": "monthly mean samples",
-  "id": "mon",
-  "long_name": "Monthly Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "month",
-  "label": "mon"
-}
-    ,{
-  "description": "monthly climatology computed from monthly mean samples",
-  "id": "monc",
-  "long_name": "Monthly Climatology",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "month",
-  "label": "monC"
-}
-    ,{
-  "description": "sampled monthly, at specified time point within the time period",
-  "id": "monpt",
-  "long_name": "Monthly Point",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "month",
-  "label": "monPt"
-}
-    ,{
-  "description": "sampled sub-hourly, at specified time point within an hour",
-  "id": "subhrpt",
-  "long_name": "Sub-Hourly Point",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "minute",
-  "label": "subhrPt"
-}
-    ,{
-  "description": "annual mean samples",
-  "id": "yr",
-  "long_name": "Yearly Frequency",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "year",
-  "label": "yr"
-}
-    ,{
-  "description": "sampled yearly, at specified time point within the time period",
-  "id": "yrpt",
-  "long_name": "Yearly Point",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ],
-  "unit": "year",
-  "label": "yrPt"
-}
+      "description": "sampled hourly",
+      "id": "1hr",
+      "long_name": "1 Hourly Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "hour",
+      "label": "1hr"
+    },
+    {
+      "description": "monthly-mean diurnal cycle resolving each day into 1-hour means",
+      "id": "1hrcm",
+      "long_name": "1 Hour Climatology Monthly",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "hour",
+      "label": "1hrCM"
+    },
+    {
+      "description": "sampled hourly, at specified time point within an hour",
+      "id": "1hrpt",
+      "long_name": "1 Hour Point",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "hour",
+      "label": "1hrPt"
+    },
+    {
+      "description": "3 hourly mean samples",
+      "id": "3hr",
+      "long_name": "3 Hourly Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "hour",
+      "label": "3hr"
+    },
+    {
+      "description": "sampled 3 hourly, at specified time point within the time period",
+      "id": "3hrpt",
+      "long_name": "3 Hour Point",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "hour",
+      "label": "3hrPt"
+    },
+    {
+      "description": "6 hourly mean samples",
+      "id": "6hr",
+      "long_name": "6 Hourly Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "hour",
+      "label": "6hr"
+    },
+    {
+      "description": "sampled 6 hourly, at specified time point within the time period",
+      "id": "6hrpt",
+      "long_name": "6 Hour Point",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "hour",
+      "label": "6hrPt"
+    },
+    {
+      "description": "daily mean samples",
+      "id": "day",
+      "long_name": "Daily Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "day",
+      "label": "day"
+    },
+    {
+      "description": "decadal mean samples",
+      "id": "dec",
+      "long_name": "Decadal Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "decade",
+      "label": "dec"
+    },
+    {
+      "description": "fixed (time invariant) field",
+      "id": "fx",
+      "long_name": "Fixed Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "none",
+      "label": "fx"
+    },
+    {
+      "description": "monthly mean samples",
+      "id": "mon",
+      "long_name": "Monthly Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "month",
+      "label": "mon"
+    },
+    {
+      "description": "monthly climatology computed from monthly mean samples",
+      "id": "monc",
+      "long_name": "Monthly Climatology",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "month",
+      "label": "monC"
+    },
+    {
+      "description": "sampled monthly, at specified time point within the time period",
+      "id": "monpt",
+      "long_name": "Monthly Point",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "month",
+      "label": "monPt"
+    },
+    {
+      "description": "sampled sub-hourly, at specified time point within an hour",
+      "id": "subhrpt",
+      "long_name": "Sub-Hourly Point",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "minute",
+      "label": "subhrPt"
+    },
+    {
+      "description": "annual mean samples",
+      "id": "yr",
+      "long_name": "Yearly Frequency",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "year",
+      "label": "yr"
+    },
+    {
+      "description": "sampled yearly, at specified time point within the time period",
+      "id": "yrpt",
+      "long_name": "Yearly Point",
+      "type": [
+        "wcrp:frequency",
+        "universal"
+      ],
+      "unit": "year",
+      "label": "yrPt"
+    }
   ]
 }

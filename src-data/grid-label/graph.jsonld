@@ -1,512 +1,512 @@
 {
   "@context": {
-  "@base": "https://wcrp-cmip.github.io/WCRP-universe/grid-label/",
-  "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/grid-label/",
-  "entries": "@none",
-  "id": "@id",
-  "type": "@type",
-  "cf": "https://wcrp-cmip.github.io/CF/",
-  "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
-  "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
-  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
-  "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
-  "variables": "https://wcrp-cmip.github.io/MIP-variables/"
-},
+    "@base": "https://wcrp-cmip.github.io/WCRP-universe/grid-label/",
+    "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/grid-label/",
+    "entries": "@none",
+    "id": "@id",
+    "type": "@type",
+    "cf": "https://wcrp-cmip.github.io/CF/",
+    "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
+    "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
+    "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
+    "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
+    "variables": "https://wcrp-cmip.github.io/MIP-variables/"
+  },
   "@graph": [
     {
-  "description": "global mean data",
-  "id": "gm",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gm",
-  "long_label": "Greenland"
-}
-    ,{
-  "description": "data reported on a model's native grid",
-  "id": "gn",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gn",
-  "long_label": "Grid Native Greenland"
-}
-    ,{
-  "description": "data reported on a native grid in the region of Antarctica",
-  "id": "gna",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gna",
-  "long_label": "Grid Native Antarctica Greenland"
-}
-    ,{
-  "description": "data reported on a native grid in the region of Greenland",
-  "id": "gng",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gng",
-  "long_label": "Grid Native Greenland"
-}
-    ,{
-  "description": "zonal mean data reported on a model's native latitude grid",
-  "id": "gnz",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gnz",
-  "long_label": "Grid Native Greenland Zonal Mean"
-}
-    ,{
-  "description": "regridded data reported on the data provider's preferred target grid",
-  "id": "gr",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr",
-  "long_label": "Regridded Greenland"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr1",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr1",
-  "long_label": "Regridded Greenland Alternate 1"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr1a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr1a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr1g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr1g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr1z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr1z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr2",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr2",
-  "long_label": "Regridded Greenland Alternate 2"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr2a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr2a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr2g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr2g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr2z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr2z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr3",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr3",
-  "long_label": "Regridded Greenland Alternate 3"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr3a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr3a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr3g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr3g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr3z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr3z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr4",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr4",
-  "long_label": "Regridded Greenland Alternate 4"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr4a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr4a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr4g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr4g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr4z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr4z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr5",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr5",
-  "long_label": "Regridded Greenland Alternate 5"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr5a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr5a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr5g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr5g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr5z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr5z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr6",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr6",
-  "long_label": "Regridded Greenland Alternate 6"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr6a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr6a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr6g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr6g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr6z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr6z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr7",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr7",
-  "long_label": "Regridded Greenland Alternate 7"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr7a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr7a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr7g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr7g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr7z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr7z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr8",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr8",
-  "long_label": "Regridded Greenland Alternate 8"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr8a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr8a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr8g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr8g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr8z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr8z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr9",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr9",
-  "long_label": "Regridded Greenland Alternate 9"
-}
-    ,{
-  "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr9a",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr9a",
-  "long_label": "Regridded Antarctica Greenland Alternate a"
-}
-    ,{
-  "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
-  "id": "gr9g",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr9g",
-  "long_label": "Regridded Greenland Alternate g"
-}
-    ,{
-  "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
-  "id": "gr9z",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gr9z",
-  "long_label": "Regridded Greenland Zonal Mean Alternate z"
-}
-    ,{
-  "description": "regridded data in the region of Antarctica reported on the data provider's preferred target grid",
-  "id": "gra",
-  "region": "antarctica",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "gra",
-  "long_label": "Regridded Antarctica Greenland"
-}
-    ,{
-  "description": "regridded data in the region of Greenland reported on the data provider's preferred target grid",
-  "id": "grg",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "grg",
-  "long_label": "Regridded Greenland"
-}
-    ,{
-  "description": "regridded zonal mean data reported on the data provider's preferred latitude target grid",
-  "id": "grz",
-  "region": "greenland",
-  "type": [
-    "wcrp:grid_label",
-    "universal"
-  ],
-  "label": "grz",
-  "long_label": "Regridded Greenland Zonal Mean"
-}
+      "description": "global mean data",
+      "id": "gm",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gm",
+      "long_label": "Greenland"
+    },
+    {
+      "description": "data reported on a model's native grid",
+      "id": "gn",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gn",
+      "long_label": "Grid Native Greenland"
+    },
+    {
+      "description": "data reported on a native grid in the region of Antarctica",
+      "id": "gna",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gna",
+      "long_label": "Grid Native Antarctica Greenland"
+    },
+    {
+      "description": "data reported on a native grid in the region of Greenland",
+      "id": "gng",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gng",
+      "long_label": "Grid Native Greenland"
+    },
+    {
+      "description": "zonal mean data reported on a model's native latitude grid",
+      "id": "gnz",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gnz",
+      "long_label": "Grid Native Greenland Zonal Mean"
+    },
+    {
+      "description": "regridded data reported on the data provider's preferred target grid",
+      "id": "gr",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr",
+      "long_label": "Regridded Greenland"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr1",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr1",
+      "long_label": "Regridded Greenland Alternate 1"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr1a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr1a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr1g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr1g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr1z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr1z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr2",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr2",
+      "long_label": "Regridded Greenland Alternate 2"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr2a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr2a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr2g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr2g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr2z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr2z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr3",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr3",
+      "long_label": "Regridded Greenland Alternate 3"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr3a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr3a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr3g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr3g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr3z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr3z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr4",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr4",
+      "long_label": "Regridded Greenland Alternate 4"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr4a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr4a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr4g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr4g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr4z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr4z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr5",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr5",
+      "long_label": "Regridded Greenland Alternate 5"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr5a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr5a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr5g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr5g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr5z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr5z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr6",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr6",
+      "long_label": "Regridded Greenland Alternate 6"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr6a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr6a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr6g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr6g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr6z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr6z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr7",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr7",
+      "long_label": "Regridded Greenland Alternate 7"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr7a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr7a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr7g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr7g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr7z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr7z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr8",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr8",
+      "long_label": "Regridded Greenland Alternate 8"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr8a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr8a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr8g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr8g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr8z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr8z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr9",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr9",
+      "long_label": "Regridded Greenland Alternate 9"
+    },
+    {
+      "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr9a",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr9a",
+      "long_label": "Regridded Antarctica Greenland Alternate a"
+    },
+    {
+      "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
+      "id": "gr9g",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr9g",
+      "long_label": "Regridded Greenland Alternate g"
+    },
+    {
+      "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
+      "id": "gr9z",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gr9z",
+      "long_label": "Regridded Greenland Zonal Mean Alternate z"
+    },
+    {
+      "description": "regridded data in the region of Antarctica reported on the data provider's preferred target grid",
+      "id": "gra",
+      "region": "antarctica",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "gra",
+      "long_label": "Regridded Antarctica Greenland"
+    },
+    {
+      "description": "regridded data in the region of Greenland reported on the data provider's preferred target grid",
+      "id": "grg",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "grg",
+      "long_label": "Regridded Greenland"
+    },
+    {
+      "description": "regridded zonal mean data reported on the data provider's preferred latitude target grid",
+      "id": "grz",
+      "region": "greenland",
+      "type": [
+        "wcrp:grid_label",
+        "universal"
+      ],
+      "label": "grz",
+      "long_label": "Regridded Greenland Zonal Mean"
+    }
   ]
 }
