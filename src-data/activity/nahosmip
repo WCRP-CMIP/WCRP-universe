@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "nahosmip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://www.tipes.dk/na-hosing-mip/",
+  "label": "NAHosMIP",
+  "long-label": "North Atlantic Hosing Model Intercomparison Project",
+  "description": ""
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "firemip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://www.senckenberg.de/en/institutes/sbik-f/quantitative-biogeography/qb-projects/firemip/",
+  "label": "FireMIP",
+  "long-label": "Fire Modeling Intercomparison Project",
+  "description": ""
+}

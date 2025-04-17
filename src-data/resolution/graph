@@ -1,0 +1,182 @@
+{
+  "@context": {
+  "@base": "https://wcrp-cmip.github.io/WCRP-universe/resolution/",
+  "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/resolution/",
+  "entries": "@none",
+  "id": "@id",
+  "type": "@type",
+  "cf": "https://wcrp-cmip.github.io/CF/",
+  "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
+  "cmip7": "https://wcrp-cmip.github.io/CMIP7_CVs/",
+  "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
+  "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
+  "variables": "https://wcrp-cmip.github.io/MIP-variables/"
+},
+  "@graph": [
+    {
+  "description": "Resolution of 0.5 km",
+  "id": "0.5km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "0.5",
+  "label": "0.5 km"
+}
+    ,{
+  "description": "Resolution of 10000 km",
+  "id": "10000km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "10000",
+  "label": "10000 km"
+}
+    ,{
+  "description": "Resolution of 1000 km",
+  "id": "1000km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "1000",
+  "label": "1000 km"
+}
+    ,{
+  "description": "Resolution of 100 km",
+  "id": "100km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "100",
+  "label": "100 km"
+}
+    ,{
+  "description": "Resolution of 10 km",
+  "id": "10km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "10",
+  "label": "10 km"
+}
+    ,{
+  "description": "Resolution of 1 km",
+  "id": "1km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "1",
+  "label": "1 km"
+}
+    ,{
+  "description": "Resolution of 1x1 degree",
+  "id": "1x1degree",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "degree",
+  "value": "1x1",
+  "label": "1x1 degree"
+}
+    ,{
+  "description": "Resolution of 2.5 km",
+  "id": "2.5km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "2.5",
+  "label": "2.5 km"
+}
+    ,{
+  "description": "Resolution of 2500 km",
+  "id": "2500km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "2500",
+  "label": "2500 km"
+}
+    ,{
+  "description": "Resolution of 250 km",
+  "id": "250km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "250",
+  "label": "250 km"
+}
+    ,{
+  "description": "Resolution of 25 km",
+  "id": "25km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "25",
+  "label": "25 km"
+}
+    ,{
+  "description": "Resolution of 5000 km",
+  "id": "5000km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "5000",
+  "label": "5000 km"
+}
+    ,{
+  "description": "Resolution of 500 km",
+  "id": "500km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "500",
+  "label": "500 km"
+}
+    ,{
+  "description": "Resolution of 50 km",
+  "id": "50km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "50",
+  "label": "50 km"
+}
+    ,{
+  "description": "Resolution of 5 km",
+  "id": "5km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "value": "5",
+  "label": "5 km"
+}
+  ]
+}

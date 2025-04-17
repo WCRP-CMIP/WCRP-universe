@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "methanemip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "tba",
+  "label": "MethaneMIP",
+  "long-label": "MethaneMIP: Investigating the near-term climate benefits of methane mitigation",
+  "description": ""
+}

@@ -1,0 +1,11 @@
+{
+    "@context": "_context_",
+    "id": "cc-by-4.0",
+    "label": "CC BY 4.0",
+    "long_label": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "type": [
+        "wcrp:license",
+        "universal"
+    ]
+}

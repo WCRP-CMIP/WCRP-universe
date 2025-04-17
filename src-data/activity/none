@@ -1,0 +1,11 @@
+{
+    "@context": "_context_",
+    "id": "none",
+    "type": [
+        "wcrp:activity",
+        "universal"
+    ],
+    "description": "'none' entry permissable only for the experiment parent id. ",
+    "url": "",
+    "label": "none"
+}

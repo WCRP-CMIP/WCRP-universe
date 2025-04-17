@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "ppemip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "To",
+  "label": "PPEMIP",
+  "long-label": "Perturbed Parameter Ensemble Model Inter-comparaison Project",
+  "description": ""
+}
