@@ -1,0 +1,13 @@
+{
+    "id": "ec-earth",
+    "type": "wcrp:model-family",
+    "label": "EC-Earth",
+    "description": "Community-developed Earth system model based on IFS",
+    "origin": "EC-Earth Consortium (EC-Earth Consortium)",
+    "permissible_realms": [
+        "atmos",
+        "land",
+        "ocean",
+        "seaice"
+    ]
+}

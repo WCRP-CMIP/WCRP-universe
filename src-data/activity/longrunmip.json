@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "longrunmip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://www.longrunmip.org/",
+  "label": "LongRunMIP",
+  "long-label": "LongRunMIP",
+  "description": ""
+}

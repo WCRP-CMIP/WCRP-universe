@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "omip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://OceanMIP.github.io",
+  "label": "OMIP",
+  "long-label": "Ocean Model Intercomparison Project",
+  "description": ""
+}

@@ -1,0 +1,32 @@
+{
+    "id": "ua",
+    "type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "label": "UA",
+    "ror": "03m2x1q45",
+    "long_label": "University of Arizona",
+    "url": [
+        "http://www.arizona.edu/"
+    ],
+    "established": 1885,
+    "kind": "Education",
+    "labels": [],
+    "aliases": [],
+    "acronyms": [
+        "UA"
+    ],
+    "location": {
+        "id": "universal:location/03m2x1q45",
+        "type": "wcrp:location",
+        "lat": 32.22174,
+        "lon": 32.22174,
+        "city": "Tucson",
+        "country": [
+            "United States",
+            "US"
+        ]
+    }
+}

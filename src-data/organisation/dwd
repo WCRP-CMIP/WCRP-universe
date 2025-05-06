@@ -1,0 +1,32 @@
+{
+    "id": "dwd",
+    "type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "label": "DWD",
+    "ror": "02nrqs528",
+    "long_label": "German Meteorological Service",
+    "url": [
+        "http://www.dwd.de/"
+    ],
+    "established": 1952,
+    "kind": "Facility",
+    "labels": [],
+    "aliases": [],
+    "acronyms": [
+        "DWD"
+    ],
+    "location": {
+        "id": "universal:location/02nrqs528",
+        "type": "wcrp:location",
+        "lat": 50.10061,
+        "lon": 50.10061,
+        "city": "Offenbach",
+        "country": [
+            "Germany",
+            "DE"
+        ]
+    }
+}

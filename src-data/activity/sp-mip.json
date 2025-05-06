@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "sp-mip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "",
+  "label": "SP-MIP",
+  "long-label": "Soil Parameter Model Intercomparison Project",
+  "description": ""
+}

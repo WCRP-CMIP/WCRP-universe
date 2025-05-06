@@ -1,0 +1,12 @@
+{
+  "@context": "_context_",
+  "id": "whatifmip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "In",
+  "label": "WhatIfMIP",
+  "long-label": "What If Modeling Intercomparison Project",
+  "description": ""
+}

@@ -1,0 +1,32 @@
+{
+    "id": "osu",
+    "type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "label": "OSU",
+    "ror": "00ysfqy60",
+    "long_label": "Oregon State University",
+    "url": [
+        "https://oregonstate.edu"
+    ],
+    "established": 1868,
+    "kind": "Education",
+    "labels": [],
+    "aliases": [],
+    "acronyms": [
+        "OSU"
+    ],
+    "location": {
+        "id": "universal:location/00ysfqy60",
+        "type": "wcrp:location",
+        "lat": 44.56457,
+        "lon": 44.56457,
+        "city": "Corvallis",
+        "country": [
+            "United States",
+            "US"
+        ]
+    }
+}
