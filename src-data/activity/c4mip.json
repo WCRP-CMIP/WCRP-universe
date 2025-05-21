@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "C4MIP experiments focus on carbon cycle feedbacks and interactions, including 1pctCO2-bgc and esm-flat10-cdr experiments.",
   "id": "c4mip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Coupled Climate Carbon Cycle MIP",
   "url": "https://gmd.copernicus.org/articles/9/2853/2016/gmd-9-2853-2016.pdf",
-  "label": "C4MIP",
-  "long-label": "Coupled Climate Carbon Cycle MIP",
-  "description": "C4MIP experiments focus on carbon cycle feedbacks and interactions, including 1pctCO2-bgc and esm-flat10-cdr experiments."
+  "validation-key": "C4MIP"
 }

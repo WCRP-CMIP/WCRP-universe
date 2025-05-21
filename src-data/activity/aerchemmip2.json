@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "aerchemmip2",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Aerosol Chemistry Model Intercomparison Project phase 2",
   "url": "https://wiki.met.no/aerocom/aerchemmip/start",
-  "label": "AerChemMIP2",
-  "long-label": "Aerosol Chemistry Model Intercomparison Project phase 2",
-  "description": ""
+  "validation-key": "AerChemMIP2"
 }

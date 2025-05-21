@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "ceresmip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "CERES-era Model Intercomparison Project",
   "url": "https://data.giss.nasa.gov/CERESMIP",
-  "label": "CERESMIP",
-  "long-label": "CERES-era Model Intercomparison Project",
-  "description": ""
+  "validation-key": "CERESMIP"
 }

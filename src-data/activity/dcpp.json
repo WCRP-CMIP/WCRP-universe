@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "DCPP focuses on decadal climate predictions and initialized experiments like prediction for 2025-2036.",
   "id": "dcpp",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Decadal Climate Prediction Project",
   "url": "https://gmd.copernicus.org/articles/9/3751/2016/gmd-9-3751-2016.pdf",
-  "label": "DCPP",
-  "long-label": "Decadal Climate Prediction Project",
-  "description": "DCPP focuses on decadal climate predictions and initialized experiments like prediction for 2025-2036."
+  "validation-key": "DCPP"
 }

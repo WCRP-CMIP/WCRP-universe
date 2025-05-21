@@ -1,12 +1,12 @@
 {
-    "@context": "_context_",
-    "description": "Resolution of 2500 km",
-    "id": "2500km",
-    "type": [
-        "wcrp:resolution",
-        "universal"
-    ],
-    "unit": "km",
-    "value": "2500",
-    "label": "2500 km"
+  "@context": "_context_",
+  "description": "Resolution of 2500 km",
+  "id": "2500km",
+  "type": [
+    "wcrp:resolution",
+    "universal"
+  ],
+  "unit": "km",
+  "validation-key": "2500 km",
+  "value": "2500"
 }

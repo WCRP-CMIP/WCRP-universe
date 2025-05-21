@@ -1,32 +1,32 @@
 {
-    "id": "fzj",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "FZJ"
+  ],
+  "aliases": [],
+  "established": 1956,
+  "id": "fzj",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Jülich",
+    "country": [
+      "Germany",
+      "DE"
     ],
-    "label": "FZJ",
-    "ror": "02nv7yv05",
-    "long_label": "Forschungszentrum J\u00fclich",
-    "url": [
-        "https://www.fz-juelich.de"
-    ],
-    "established": 1956,
-    "kind": "Facility",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "FZJ"
-    ],
-    "location": {
-        "id": "universal:location/02nv7yv05",
-        "type": "wcrp:location",
-        "lat": 50.92149,
-        "lon": 50.92149,
-        "city": "J\u00fclich",
-        "country": [
-            "Germany",
-            "DE"
-        ]
-    }
+    "id": "universal:location/02nv7yv05",
+    "lat": 50.92149,
+    "lon": 50.92149,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Forschungszentrum Jülich",
+  "ror": "02nv7yv05",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.fz-juelich.de"
+  ],
+  "validation-key": "FZJ"
 }

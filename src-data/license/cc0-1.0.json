@@ -1,11 +1,11 @@
 {
-    "@context": "_context_",
-    "id": "cc0-1.0",
-    "label": "CC0 1.0",
-    "long_label": "Creative Commons CC0 1.0 Universal Public Domain Dedication",
-    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": [
-        "wcrp:license",
-        "universal"
-    ]
+  "@context": "_context_",
+  "id": "cc0-1.0",
+  "ui-label": "Creative Commons CC0 1.0 Universal Public Domain Dedication",
+  "type": [
+    "wcrp:license",
+    "universal"
+  ],
+  "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "validation-key": "CC0 1.0"
 }

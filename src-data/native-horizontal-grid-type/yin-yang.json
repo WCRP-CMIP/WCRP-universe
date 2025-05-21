@@ -1,0 +1,10 @@
+{
+  "description": "two overlapping grid patches",
+  "id": "yin-yang",
+  "type": [
+    "wcrp:native-horizontal-grid-type",
+    "universal"
+  ],
+  "ui-label": "Yin yang",
+  "validation-key": "yin-yang"
+}

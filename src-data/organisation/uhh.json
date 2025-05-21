@@ -1,34 +1,34 @@
 {
-    "id": "uhh",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "UHH"
+  ],
+  "aliases": [
+    "University of Hamburg"
+  ],
+  "established": 1919,
+  "id": "uhh",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "city": "Hamburg",
+    "country": [
+      "Germany",
+      "DE"
     ],
-    "label": "UHH",
-    "ror": "00g30e956",
-    "long_label": "Universit\u00e4t Hamburg",
-    "url": [
-        "http://www.uni-hamburg.de"
-    ],
-    "established": 1919,
-    "kind": "Education",
-    "labels": [],
-    "aliases": [
-        "University of Hamburg"
-    ],
-    "acronyms": [
-        "UHH"
-    ],
-    "location": {
-        "id": "universal:location/00g30e956",
-        "type": "wcrp:location",
-        "lat": 53.55073,
-        "lon": 53.55073,
-        "city": "Hamburg",
-        "country": [
-            "Germany",
-            "DE"
-        ]
-    }
+    "id": "universal:location/00g30e956",
+    "lat": 53.55073,
+    "lon": 53.55073,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Universität Hamburg",
+  "ror": "00g30e956",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.uni-hamburg.de"
+  ],
+  "validation-key": "UHH"
 }

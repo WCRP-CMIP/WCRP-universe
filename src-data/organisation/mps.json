@@ -1,32 +1,32 @@
 {
-    "id": "mps",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "MPS"
+  ],
+  "aliases": [],
+  "established": 1934,
+  "id": "mps",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Göttingen",
+    "country": [
+      "Germany",
+      "DE"
     ],
-    "label": "MPS",
-    "ror": "02j6gm739",
-    "long_label": "Max Planck Institute for Solar System Research",
-    "url": [
-        "http://www.mps.mpg.de/en"
-    ],
-    "established": 1934,
-    "kind": "Facility",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "MPS"
-    ],
-    "location": {
-        "id": "universal:location/02j6gm739",
-        "type": "wcrp:location",
-        "lat": 51.53443,
-        "lon": 51.53443,
-        "city": "G\u00f6ttingen",
-        "country": [
-            "Germany",
-            "DE"
-        ]
-    }
+    "id": "universal:location/02j6gm739",
+    "lat": 51.53443,
+    "lon": 51.53443,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Max Planck Institute for Solar System Research",
+  "ror": "02j6gm739",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.mps.mpg.de/en"
+  ],
+  "validation-key": "MPS"
 }

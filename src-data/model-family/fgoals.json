@@ -1,7 +1,7 @@
 {
-    "id": "fgoals",
-    "type": "wcrp:model-family",
-    "label": "FGOALS",
-    "description": "Flexible Global Ocean-Atmosphere-Land System Model",
-    "origin": "IAP (Institute of Atmospheric Physics)"
+  "description": "Flexible Global Ocean-Atmosphere-Land System Model",
+  "id": "fgoals",
+  "origin": "IAP (Institute of Atmospheric Physics)",
+  "type": "wcrp:model-family",
+  "validation-key": "FGOALS"
 }

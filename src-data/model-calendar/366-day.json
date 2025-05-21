@@ -1,0 +1,10 @@
+{
+  "description": "a calendar in which every year is a leap year, i",
+  "id": "366-day",
+  "type": [
+    "wcrp:model-calendar",
+    "universal"
+  ],
+  "ui-label": "366 day",
+  "validation-key": "366-day"
+}

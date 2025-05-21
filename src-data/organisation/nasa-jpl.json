@@ -1,35 +1,35 @@
 {
-    "id": "nasa-jpl",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "JPL"
+  ],
+  "aliases": [
+    "Jet Propulsion Lab",
+    "Jet Propulsion Laboratory, California Institute of Technology"
+  ],
+  "established": 1936,
+  "id": "nasa-jpl",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "La Cañada Flintridge",
+    "country": [
+      "United States",
+      "US"
     ],
-    "label": "NASA-JPL",
-    "ror": "027k65916",
-    "long_label": "Jet Propulsion Laboratory",
-    "url": [
-        "http://www.jpl.nasa.gov/"
-    ],
-    "established": 1936,
-    "kind": "Facility",
-    "labels": [],
-    "aliases": [
-        "Jet Propulsion Lab",
-        "Jet Propulsion Laboratory, California Institute of Technology"
-    ],
-    "acronyms": [
-        "JPL"
-    ],
-    "location": {
-        "id": "universal:location/027k65916",
-        "type": "wcrp:location",
-        "lat": 34.19917,
-        "lon": 34.19917,
-        "city": "La Ca\u00f1ada Flintridge",
-        "country": [
-            "United States",
-            "US"
-        ]
-    }
+    "id": "universal:location/027k65916",
+    "lat": 34.19917,
+    "lon": 34.19917,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Jet Propulsion Laboratory",
+  "ror": "027k65916",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.jpl.nasa.gov/"
+  ],
+  "validation-key": "NASA-JPL"
 }

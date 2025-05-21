@@ -1,38 +1,38 @@
 {
-    "@context": "_context_",
-    "id": "nuist",
-    "acronyms": [
-        "NU",
-        "NJU "
-    ],
-    "aliases": [
-        "Nanking University"
-    ],
-    "established": 1902,
-    "labels": [],
-    "location": {
-        "id": "universal:location/01rxvg760",
-        "@nest": {
-            "city": "Nanjing",
-            "country": [
-                "China",
-                "CN"
-            ],
-            "lat": 32.056111,
-            "lon": 118.775
-        },
-        "type": "location"
+  "@context": "_context_",
+  "acronyms": [
+    "NU",
+    "NJU "
+  ],
+  "aliases": [
+    "Nanking University"
+  ],
+  "established": 1902,
+  "id": "nuist",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "@nest": {
+      "city": "Nanjing",
+      "country": [
+        "China",
+        "CN"
+      ],
+      "lat": 32.056111,
+      "lon": 118.775
     },
-    "ror": "01rxvg760",
-    "kind": "Education",
-    "url": [
-        "http://www.nju.edu.cn/english/"
-    ],
-    "type": [
-        "universal",
-        "wcrp:institution",
-        "wcrp:organisation"
-    ],
-    "long_label": "Nanjing University",
-    "label": "NUIST"
+    "id": "universal:location/01rxvg760",
+    "type": "location"
+  },
+  "ui-label": "Nanjing University",
+  "ror": "01rxvg760",
+  "type": [
+    "universal",
+    "wcrp:institution",
+    "wcrp:organisation"
+  ],
+  "url": [
+    "http://www.nju.edu.cn/english/"
+  ],
+  "validation-key": "NUIST"
 }

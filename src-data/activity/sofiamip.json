@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "sofiamip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Southern Ocean Freshwater Input from Antarctica Model Intercomparison Project",
   "url": "https://sofiamip.github.io/",
-  "label": "SOFIAMIP",
-  "long-label": "Southern Ocean Freshwater Input from Antarctica Model Intercomparison Project",
-  "description": ""
+  "validation-key": "SOFIAMIP"
 }

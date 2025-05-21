@@ -1,32 +1,32 @@
 {
-    "id": "uobergen",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "UiB"
+  ],
+  "aliases": [],
+  "established": 1946,
+  "id": "uobergen",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "city": "Bergen",
+    "country": [
+      "Norway",
+      "NO"
     ],
-    "label": "UoBergen",
-    "ror": "03zga2b32",
-    "long_label": "University of Bergen",
-    "url": [
-        "http://www.uib.no/"
-    ],
-    "established": 1946,
-    "kind": "Education",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "UiB"
-    ],
-    "location": {
-        "id": "universal:location/03zga2b32",
-        "type": "wcrp:location",
-        "lat": 60.39299,
-        "lon": 60.39299,
-        "city": "Bergen",
-        "country": [
-            "Norway",
-            "NO"
-        ]
-    }
+    "id": "universal:location/03zga2b32",
+    "lat": 60.39299,
+    "lon": 60.39299,
+    "type": "wcrp:location"
+  },
+  "ui-label": "University of Bergen",
+  "ror": "03zga2b32",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.uib.no/"
+  ],
+  "validation-key": "UoBergen"
 }

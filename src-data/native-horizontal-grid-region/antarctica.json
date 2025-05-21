@@ -1,0 +1,10 @@
+{
+  "description": "the geographical region of Antarctica, as defined by the CF standardised regions",
+  "id": "antarctica",
+  "type": [
+    "wcrp:native-horizontal-grid-region",
+    "universal"
+  ],
+  "ui-label": "Antarctica",
+  "validation-key": "antarctica"
+}

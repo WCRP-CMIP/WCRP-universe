@@ -1,11 +1,11 @@
 {
-    "@context": "_context_",
-    "id": "ramip",
-    "type": [
-        "wcrp:activity",
-        "universal"
-    ],
-    "description": "Regional Aerosol Model Intercomparison Project",
-    "url": "https://ramip.ncas.ac.uk",
-    "label": "RAMIP"
+  "@context": "_context_",
+  "description": "Regional Aerosol Model Intercomparison Project",
+  "id": "ramip",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "https://ramip.ncas.ac.uk",
+  "validation-key": "RAMIP"
 }

@@ -1,33 +1,33 @@
 {
-    "@context": "_context_",
-    "id": "ncas",
-    "acronyms": [],
-    "aliases": [],
-    "established": 1997,
-    "labels": [],
-    "location": {
-        "id": "universal:location/03q36cn05",
-        "@nest": {
-            "city": "Islamabad",
-            "country": [
-                "Pakistan",
-                "PK"
-            ],
-            "lat": 33.72148,
-            "lon": 73.04329
-        },
-        "type": "location"
+  "@context": "_context_",
+  "acronyms": [],
+  "aliases": [],
+  "established": 1997,
+  "id": "ncas",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "@nest": {
+      "city": "Islamabad",
+      "country": [
+        "Pakistan",
+        "PK"
+      ],
+      "lat": 33.72148,
+      "lon": 73.04329
     },
-    "ror": "03q36cn05",
-    "kind": "Facility",
-    "url": [
-        "http://www.uksresearch.com/"
-    ],
-    "type": [
-        "universal",
-        "wcrp:institution",
-        "wcrp:organisation"
-    ],
-    "long_label": "Uks",
-    "label": "NCAS"
+    "id": "universal:location/03q36cn05",
+    "type": "location"
+  },
+  "ui-label": "Uks",
+  "ror": "03q36cn05",
+  "type": [
+    "universal",
+    "wcrp:institution",
+    "wcrp:organisation"
+  ],
+  "url": [
+    "http://www.uksresearch.com/"
+  ],
+  "validation-key": "NCAS"
 }

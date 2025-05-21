@@ -1,0 +1,10 @@
+{
+  "description": "the total number of grid points stays constant, but grid points can be dynamically relocated",
+  "id": "dynamically-stretched",
+  "type": [
+    "wcrp:native-horizontal-grid-temporal-refinement",
+    "universal"
+  ],
+  "ui-label": "Dynamically stretched",
+  "validation-key": "dynamically-stretched"
+}

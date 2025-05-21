@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "volmip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Model Intercomparison Project on the climate response to Volcanic forcing",
   "url": "www.volmip.org",
-  "label": "VolMIP",
-  "long-label": "Model Intercomparison Project on the climate response to Volcanic forcing",
-  "description": ""
+  "validation-key": "VolMIP"
 }

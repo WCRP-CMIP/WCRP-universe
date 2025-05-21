@@ -1,12 +1,12 @@
 {
-    "@context": "_context_",
-    "description": "annual mean samples",
-    "id": "yr",
-    "long_name": "Yearly Frequency",
-    "type": [
-        "wcrp:frequency",
-        "universal"
-    ],
-    "unit": "year",
-    "label": "yr"
+  "@context": "_context_",
+  "description": "annual mean samples",
+  "id": "yr",
+  "long_name": "Yearly Frequency",
+  "type": [
+    "wcrp:frequency",
+    "universal"
+  ],
+  "unit": "year",
+  "validation-key": "yr"
 }

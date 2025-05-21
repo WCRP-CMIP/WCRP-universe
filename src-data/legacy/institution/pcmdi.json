@@ -1,41 +1,41 @@
 {
-    "@context": "_context_",
-    "id": "pcmdi",
-    "acronyms": [
-        "LLNL",
-        "LLL"
-    ],
-    "aliases": [
-        "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory",
-        "U.S. Department of Energy National Nuclear Security Administration Los Alamos National Laboratory",
-        "United States Department of Energy Los Alamos National Laboratory",
-        "U.S. Department of Energy Los Alamos National Laboratory"
-    ],
-    "established": 1952,
-    "labels": [],
-    "location": {
-        "id": "universal:location/041nk4h53",
-        "@nest": {
-            "city": "Livermore",
-            "country": [
-                "United States",
-                "US"
-            ],
-            "lat": 37.68187,
-            "lon": -121.76801
-        },
-        "type": "location"
+  "@context": "_context_",
+  "acronyms": [
+    "LLNL",
+    "LLL"
+  ],
+  "aliases": [
+    "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory",
+    "U.S. Department of Energy National Nuclear Security Administration Los Alamos National Laboratory",
+    "United States Department of Energy Los Alamos National Laboratory",
+    "U.S. Department of Energy Los Alamos National Laboratory"
+  ],
+  "established": 1952,
+  "id": "pcmdi",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "@nest": {
+      "city": "Livermore",
+      "country": [
+        "United States",
+        "US"
+      ],
+      "lat": 37.68187,
+      "lon": -121.76801
     },
-    "ror": "041nk4h53",
-    "kind": "Facility",
-    "url": [
-        "https://www.llnl.gov/"
-    ],
-    "type": [
-        "universal",
-        "wcrp:institution",
-        "wcrp:organisation"
-    ],
-    "long_label": "Lawrence Livermore National Laboratory",
-    "label": "PCMDI"
+    "id": "universal:location/041nk4h53",
+    "type": "location"
+  },
+  "ui-label": "Lawrence Livermore National Laboratory",
+  "ror": "041nk4h53",
+  "type": [
+    "universal",
+    "wcrp:institution",
+    "wcrp:organisation"
+  ],
+  "url": [
+    "https://www.llnl.gov/"
+  ],
+  "validation-key": "PCMDI"
 }

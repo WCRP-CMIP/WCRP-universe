@@ -1,38 +1,38 @@
 {
-    "id": "llnl",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "LLL",
+    "LLNL"
+  ],
+  "aliases": [
+    "U.S. Department of Energy Lawrence Livermore National Laboratory",
+    "U.S. Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory",
+    "United States Department of Energy Lawrence Livermore National Laboratory",
+    "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory"
+  ],
+  "established": 1952,
+  "id": "llnl",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Livermore",
+    "country": [
+      "United States",
+      "US"
     ],
-    "label": "LLNL",
-    "ror": "041nk4h53",
-    "long_label": "Lawrence Livermore National Laboratory",
-    "url": [
-        "https://www.llnl.gov"
-    ],
-    "established": 1952,
-    "kind": "Facility",
-    "labels": [],
-    "aliases": [
-        "U.S. Department of Energy Lawrence Livermore National Laboratory",
-        "U.S. Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory",
-        "United States Department of Energy Lawrence Livermore National Laboratory",
-        "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory"
-    ],
-    "acronyms": [
-        "LLL",
-        "LLNL"
-    ],
-    "location": {
-        "id": "universal:location/041nk4h53",
-        "type": "wcrp:location",
-        "lat": 37.68187,
-        "lon": 37.68187,
-        "city": "Livermore",
-        "country": [
-            "United States",
-            "US"
-        ]
-    }
+    "id": "universal:location/041nk4h53",
+    "lat": 37.68187,
+    "lon": 37.68187,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Lawrence Livermore National Laboratory",
+  "ror": "041nk4h53",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.llnl.gov"
+  ],
+  "validation-key": "LLNL"
 }

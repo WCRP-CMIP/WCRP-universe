@@ -1,32 +1,32 @@
 {
-    "id": "thu",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "THU"
+  ],
+  "aliases": [],
+  "established": 1911,
+  "id": "thu",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "city": "Beijing",
+    "country": [
+      "China",
+      "CN"
     ],
-    "label": "THU",
-    "ror": "03cve4549",
-    "long_label": "Tsinghua University",
-    "url": [
-        "https://www.tsinghua.edu.cn"
-    ],
-    "established": 1911,
-    "kind": "Education",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "THU"
-    ],
-    "location": {
-        "id": "universal:location/03cve4549",
-        "type": "wcrp:location",
-        "lat": 39.9075,
-        "lon": 39.9075,
-        "city": "Beijing",
-        "country": [
-            "China",
-            "CN"
-        ]
-    }
+    "id": "universal:location/03cve4549",
+    "lat": 39.9075,
+    "lon": 39.9075,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Tsinghua University",
+  "ror": "03cve4549",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.tsinghua.edu.cn"
+  ],
+  "validation-key": "THU"
 }

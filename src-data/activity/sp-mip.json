@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "sp-mip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Soil Parameter Model Intercomparison Project",
   "url": "",
-  "label": "SP-MIP",
-  "long-label": "Soil Parameter Model Intercomparison Project",
-  "description": ""
+  "validation-key": "SP-MIP"
 }

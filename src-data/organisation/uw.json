@@ -1,32 +1,32 @@
 {
-    "id": "uw",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "UW"
+  ],
+  "aliases": [],
+  "established": 1861,
+  "id": "uw",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "city": "Seattle",
+    "country": [
+      "United States",
+      "US"
     ],
-    "label": "UW",
-    "ror": "00cvxb145",
-    "long_label": "University of Washington",
-    "url": [
-        "https://www.washington.edu"
-    ],
-    "established": 1861,
-    "kind": "Education",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "UW"
-    ],
-    "location": {
-        "id": "universal:location/00cvxb145",
-        "type": "wcrp:location",
-        "lat": 47.60621,
-        "lon": 47.60621,
-        "city": "Seattle",
-        "country": [
-            "United States",
-            "US"
-        ]
-    }
+    "id": "universal:location/00cvxb145",
+    "lat": 47.60621,
+    "lon": 47.60621,
+    "type": "wcrp:location"
+  },
+  "ui-label": "University of Washington",
+  "ror": "00cvxb145",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.washington.edu"
+  ],
+  "validation-key": "UW"
 }

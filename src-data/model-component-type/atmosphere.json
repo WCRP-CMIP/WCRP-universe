@@ -1,0 +1,10 @@
+{
+  "description": "dynamical, thermodynamical, and physical processes in the atmosphere",
+  "id": "atmosphere",
+  "type": [
+    "wcrp:model-component-type",
+    "universal"
+  ],
+  "ui-label": "Atmosphere",
+  "validation-key": "atmosphere"
+}

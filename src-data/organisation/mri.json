@@ -1,34 +1,34 @@
 {
-    "id": "mri",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "JMA"
+  ],
+  "aliases": [
+    "Kishō-chō"
+  ],
+  "established": 1956,
+  "id": "mri",
+  "kind": "Other",
+  "labels": [],
+  "location": {
+    "city": "Tokyo",
+    "country": [
+      "Japan",
+      "JP"
     ],
-    "label": "MRI",
-    "ror": "02772kk97",
-    "long_label": "Japan Meteorological Agency",
-    "url": [
-        "http://www.jma.go.jp/jma/indexe.html"
-    ],
-    "established": 1956,
-    "kind": "Other",
-    "labels": [],
-    "aliases": [
-        "Kish\u014d-ch\u014d"
-    ],
-    "acronyms": [
-        "JMA"
-    ],
-    "location": {
-        "id": "universal:location/02772kk97",
-        "type": "wcrp:location",
-        "lat": 35.6895,
-        "lon": 35.6895,
-        "city": "Tokyo",
-        "country": [
-            "Japan",
-            "JP"
-        ]
-    }
+    "id": "universal:location/02772kk97",
+    "lat": 35.6895,
+    "lon": 35.6895,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Japan Meteorological Agency",
+  "ror": "02772kk97",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.jma.go.jp/jma/indexe.html"
+  ],
+  "validation-key": "MRI"
 }

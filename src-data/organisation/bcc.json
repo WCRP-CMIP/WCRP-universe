@@ -1,30 +1,30 @@
 {
-    "id": "bcc",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [],
+  "aliases": [],
+  "established": 2008,
+  "id": "bcc",
+  "kind": "Company",
+  "labels": [],
+  "location": {
+    "city": "Beijing",
+    "country": [
+      "China",
+      "CN"
     ],
-    "label": "BCC",
-    "ror": "01spyyb53",
-    "long_label": "Beijing Biocytogen (China)",
-    "url": [
-        "http://www.bbctg.com.cn/"
-    ],
-    "established": 2008,
-    "kind": "Company",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [],
-    "location": {
-        "id": "universal:location/01spyyb53",
-        "type": "wcrp:location",
-        "lat": 39.9075,
-        "lon": 39.9075,
-        "city": "Beijing",
-        "country": [
-            "China",
-            "CN"
-        ]
-    }
+    "id": "universal:location/01spyyb53",
+    "lat": 39.9075,
+    "lon": 39.9075,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Beijing Biocytogen (China)",
+  "ror": "01spyyb53",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.bbctg.com.cn/"
+  ],
+  "validation-key": "BCC"
 }

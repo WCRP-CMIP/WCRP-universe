@@ -1,0 +1,10 @@
+{
+  "description": "Parametric atmosphere hybrid sigma pressure coordinate",
+  "id": "atmosphere-hybrid-sigma-pressure-coordinate",
+  "type": [
+    "wcrp:native-vertical-grid-coordinate",
+    "universal"
+  ],
+  "ui-label": "Atmosphere hybrid sigma pressure coordinate",
+  "validation-key": "atmosphere-hybrid-sigma-pressure-coordinate"
+}

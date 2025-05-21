@@ -1,32 +1,32 @@
 {
-    "id": "cas",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "CAS"
+  ],
+  "aliases": [],
+  "established": 1949,
+  "id": "cas",
+  "kind": "Funder",
+  "labels": [],
+  "location": {
+    "city": "Beijing",
+    "country": [
+      "China",
+      "CN"
     ],
-    "label": "CAS",
-    "ror": "034t30j35",
-    "long_label": "Chinese Academy of Sciences",
-    "url": [
-        "http://english.cas.cn/"
-    ],
-    "established": 1949,
-    "kind": "Funder",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "CAS"
-    ],
-    "location": {
-        "id": "universal:location/034t30j35",
-        "type": "wcrp:location",
-        "lat": 39.9075,
-        "lon": 39.9075,
-        "city": "Beijing",
-        "country": [
-            "China",
-            "CN"
-        ]
-    }
+    "id": "universal:location/034t30j35",
+    "lat": 39.9075,
+    "lon": 39.9075,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Chinese Academy of Sciences",
+  "ror": "034t30j35",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://english.cas.cn/"
+  ],
+  "validation-key": "CAS"
 }

@@ -1,0 +1,10 @@
+{
+  "description": "a calendar with the Gregorian rules for leap-years extended to dates before 1582-10-15",
+  "id": "proleptic-gregorian",
+  "type": [
+    "wcrp:model-calendar",
+    "universal"
+  ],
+  "ui-label": "Proleptic gregorian",
+  "validation-key": "proleptic-gregorian"
+}

@@ -1,11 +1,11 @@
 {
-    "@context": "_context_",
-    "id": "none",
-    "type": [
-        "wcrp:activity",
-        "universal"
-    ],
-    "description": "'none' entry permissable only for the experiment parent id. ",
-    "url": "",
-    "label": "none"
+  "@context": "_context_",
+  "description": "'none' entry permissable only for the experiment parent id. ",
+  "id": "none",
+  "type": [
+    "wcrp:activity",
+    "universal"
+  ],
+  "url": "",
+  "validation-key": "none"
 }

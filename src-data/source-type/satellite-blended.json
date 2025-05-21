@@ -1,10 +1,10 @@
 {
-    "@context": "_context_",
-    "description": "gridded product based on both in-situ instruments and satellite measurements",
-    "id": "satellite-blended",
-    "type": [
-        "wcrp:source-type",
-        "universal"
-    ],
-    "label": "satellite_blended"
+  "@context": "_context_",
+  "description": "gridded product based on both in-situ instruments and satellite measurements",
+  "id": "satellite-blended",
+  "type": [
+    "wcrp:source-type",
+    "universal"
+  ],
+  "validation-key": "satellite_blended"
 }

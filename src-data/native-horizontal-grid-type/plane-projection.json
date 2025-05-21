@@ -1,0 +1,10 @@
+{
+  "description": "any transformation employed to represent the spherical surface of the globe on a plane",
+  "id": "plane-projection",
+  "type": [
+    "wcrp:native-horizontal-grid-type",
+    "universal"
+  ],
+  "ui-label": "Plane projection",
+  "validation-key": "plane-projection"
+}

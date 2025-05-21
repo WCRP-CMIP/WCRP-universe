@@ -1,0 +1,10 @@
+{
+  "description": "the total number of grid points stays constant during the model run and there is no grid refinement, i",
+  "id": "static",
+  "type": [
+    "wcrp:native-horizontal-grid-temporal-refinement",
+    "universal"
+  ],
+  "ui-label": "Static",
+  "validation-key": "static"
+}

@@ -1,32 +1,32 @@
 {
-    "id": "dkrz",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "DKRZ"
+  ],
+  "aliases": [],
+  "established": 1987,
+  "id": "dkrz",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Hamburg",
+    "country": [
+      "Germany",
+      "DE"
     ],
-    "label": "DKRZ",
-    "ror": "03ztgj037",
-    "long_label": "German Climate Computing Centre",
-    "url": [
-        "https://www.dkrz.de/"
-    ],
-    "established": 1987,
-    "kind": "Facility",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "DKRZ"
-    ],
-    "location": {
-        "id": "universal:location/03ztgj037",
-        "type": "wcrp:location",
-        "lat": 53.55073,
-        "lon": 53.55073,
-        "city": "Hamburg",
-        "country": [
-            "Germany",
-            "DE"
-        ]
-    }
+    "id": "universal:location/03ztgj037",
+    "lat": 53.55073,
+    "lon": 53.55073,
+    "type": "wcrp:location"
+  },
+  "ui-label": "German Climate Computing Centre",
+  "ror": "03ztgj037",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.dkrz.de/"
+  ],
+  "validation-key": "DKRZ"
 }

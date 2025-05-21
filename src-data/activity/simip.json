@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "simip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Sea Ice Model Intercomparison Project",
   "url": "https://climate-cryosphere.org/simip-about/",
-  "label": "SIMIP",
-  "long-label": "Sea Ice Model Intercomparison Project",
-  "description": ""
+  "validation-key": "SIMIP"
 }

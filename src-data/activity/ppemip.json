@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "ppemip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Perturbed Parameter Ensemble Model Inter-comparaison Project",
   "url": "To",
-  "label": "PPEMIP",
-  "long-label": "Perturbed Parameter Ensemble Model Inter-comparaison Project",
-  "description": ""
+  "validation-key": "PPEMIP"
 }

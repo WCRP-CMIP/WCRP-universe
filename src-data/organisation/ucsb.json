@@ -1,34 +1,34 @@
 {
-    "id": "ucsb",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "UCSB"
+  ],
+  "aliases": [
+    "UC Santa Barbara"
+  ],
+  "established": 1891,
+  "id": "ucsb",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "city": "Santa Barbara",
+    "country": [
+      "United States",
+      "US"
     ],
-    "label": "UCSB",
-    "ror": "02t274463",
-    "long_label": "University of California, Santa Barbara",
-    "url": [
-        "https://www.ucsb.edu"
-    ],
-    "established": 1891,
-    "kind": "Education",
-    "labels": [],
-    "aliases": [
-        "UC Santa Barbara"
-    ],
-    "acronyms": [
-        "UCSB"
-    ],
-    "location": {
-        "id": "universal:location/02t274463",
-        "type": "wcrp:location",
-        "lat": 34.42083,
-        "lon": 34.42083,
-        "city": "Santa Barbara",
-        "country": [
-            "United States",
-            "US"
-        ]
-    }
+    "id": "universal:location/02t274463",
+    "lat": 34.42083,
+    "lon": 34.42083,
+    "type": "wcrp:location"
+  },
+  "ui-label": "University of California, Santa Barbara",
+  "ror": "02t274463",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.ucsb.edu"
+  ],
+  "validation-key": "UCSB"
 }

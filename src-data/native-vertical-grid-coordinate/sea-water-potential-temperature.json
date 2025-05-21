@@ -1,0 +1,10 @@
+{
+  "description": "Sea water potential temperature is the temperature a parcel of sea water would have if moved adiabatically to sea level pressure",
+  "id": "sea-water-potential-temperature",
+  "type": [
+    "wcrp:native-vertical-grid-coordinate",
+    "universal"
+  ],
+  "ui-label": "Sea water potential temperature",
+  "validation-key": "sea-water-potential-temperature"
+}

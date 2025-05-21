@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "firemip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Fire Modeling Intercomparison Project",
   "url": "https://www.senckenberg.de/en/institutes/sbik-f/quantitative-biogeography/qb-projects/firemip/",
-  "label": "FireMIP",
-  "long-label": "Fire Modeling Intercomparison Project",
-  "description": ""
+  "validation-key": "FireMIP"
 }

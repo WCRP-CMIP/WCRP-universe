@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "misomip2",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Marine Ice Sheet-Ocean Model Intercomparions Project",
   "url": "https://misomip.github.io/",
-  "label": "MISOMIP2",
-  "long-label": "Marine Ice Sheet-Ocean Model Intercomparions Project",
-  "description": ""
+  "validation-key": "MISOMIP2"
 }

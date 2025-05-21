@@ -1,39 +1,39 @@
 {
-    "id": "noaa-ncei",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "NCEI",
+    "NOAA NCEI"
+  ],
+  "aliases": [
+    "National Centers for Environmental Information",
+    "National Climatic Data Center",
+    "U.S. National Centers for Environmental Information",
+    "United States National Centers for Environmental Information",
+    "United States National Environmental Satellites, Data, and Information Service National Centers for Environmental Information"
+  ],
+  "established": 1934,
+  "id": "noaa-ncei",
+  "kind": "Funder",
+  "labels": [],
+  "location": {
+    "city": "Asheville",
+    "country": [
+      "United States",
+      "US"
     ],
-    "label": "NOAA-NCEI",
-    "ror": "04r0wrp59",
-    "long_label": "NOAA National Centers for Environmental Information",
-    "url": [
-        "https://www.ncei.noaa.gov"
-    ],
-    "established": 1934,
-    "kind": "Funder",
-    "labels": [],
-    "aliases": [
-        "National Centers for Environmental Information",
-        "National Climatic Data Center",
-        "U.S. National Centers for Environmental Information",
-        "United States National Centers for Environmental Information",
-        "United States National Environmental Satellites, Data, and Information Service National Centers for Environmental Information"
-    ],
-    "acronyms": [
-        "NCEI",
-        "NOAA NCEI"
-    ],
-    "location": {
-        "id": "universal:location/04r0wrp59",
-        "type": "wcrp:location",
-        "lat": 35.60095,
-        "lon": 35.60095,
-        "city": "Asheville",
-        "country": [
-            "United States",
-            "US"
-        ]
-    }
+    "id": "universal:location/04r0wrp59",
+    "lat": 35.60095,
+    "lon": 35.60095,
+    "type": "wcrp:location"
+  },
+  "ui-label": "NOAA National Centers for Environmental Information",
+  "ror": "04r0wrp59",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.ncei.noaa.gov"
+  ],
+  "validation-key": "NOAA-NCEI"
 }

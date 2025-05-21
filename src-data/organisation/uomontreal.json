@@ -1,32 +1,32 @@
 {
-    "id": "uomontreal",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "UdeM"
+  ],
+  "aliases": [],
+  "established": 1878,
+  "id": "uomontreal",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "city": "Montreal",
+    "country": [
+      "Canada",
+      "CA"
     ],
-    "label": "UoMontreal",
-    "ror": "0161xgx34",
-    "long_label": "Universit\u00e9 de Montr\u00e9al",
-    "url": [
-        "https://www.umontreal.ca"
-    ],
-    "established": 1878,
-    "kind": "Education",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "UdeM"
-    ],
-    "location": {
-        "id": "universal:location/0161xgx34",
-        "type": "wcrp:location",
-        "lat": 45.50884,
-        "lon": 45.50884,
-        "city": "Montreal",
-        "country": [
-            "Canada",
-            "CA"
-        ]
-    }
+    "id": "universal:location/0161xgx34",
+    "lat": 45.50884,
+    "lon": 45.50884,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Université de Montréal",
+  "ror": "0161xgx34",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.umontreal.ca"
+  ],
+  "validation-key": "UoMontreal"
 }

@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "nahosmip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "North Atlantic Hosing Model Intercomparison Project",
   "url": "https://www.tipes.dk/na-hosing-mip/",
-  "label": "NAHosMIP",
-  "long-label": "North Atlantic Hosing Model Intercomparison Project",
-  "description": ""
+  "validation-key": "NAHosMIP"
 }

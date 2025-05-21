@@ -1,35 +1,35 @@
 {
-    "@context": "_context_",
-    "id": "cccma",
-    "acronyms": [
-        "ECCC"
-    ],
-    "aliases": [],
-    "established": 1971,
-    "labels": [],
-    "location": {
-        "id": "universal:location/026ny0e17",
-        "@nest": {
-            "city": "Gatineau",
-            "country": [
-                "Canada",
-                "CA"
-            ],
-            "lat": 45.425373,
-            "lon": -75.699862
-        },
-        "type": "location"
+  "@context": "_context_",
+  "acronyms": [
+    "ECCC"
+  ],
+  "aliases": [],
+  "established": 1971,
+  "id": "cccma",
+  "kind": "Government",
+  "labels": [],
+  "location": {
+    "@nest": {
+      "city": "Gatineau",
+      "country": [
+        "Canada",
+        "CA"
+      ],
+      "lat": 45.425373,
+      "lon": -75.699862
     },
-    "ror": "026ny0e17",
-    "kind": "Government",
-    "url": [
-        "https://www.canada.ca/en/environment-climate-change.html"
-    ],
-    "type": [
-        "universal",
-        "wcrp:institution",
-        "wcrp:organisation"
-    ],
-    "long_label": "Environment and Climate Change Canada",
-    "label": "CCCma"
+    "id": "universal:location/026ny0e17",
+    "type": "location"
+  },
+  "ui-label": "Environment and Climate Change Canada",
+  "ror": "026ny0e17",
+  "type": [
+    "universal",
+    "wcrp:institution",
+    "wcrp:organisation"
+  ],
+  "url": [
+    "https://www.canada.ca/en/environment-climate-change.html"
+  ],
+  "validation-key": "CCCma"
 }

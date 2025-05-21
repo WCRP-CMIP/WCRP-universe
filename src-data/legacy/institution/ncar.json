@@ -1,35 +1,35 @@
 {
-    "@context": "_context_",
-    "id": "ncar",
-    "acronyms": [
-        "NCAR"
-    ],
-    "aliases": [],
-    "established": 1930,
-    "labels": [],
-    "location": {
-        "id": "universal:location/05cvfcr44",
-        "@nest": {
-            "city": "Boulder",
-            "country": [
-                "United States",
-                "US"
-            ],
-            "lat": 40.01499,
-            "lon": 40.01499
-        },
-        "type": "location"
+  "@context": "_context_",
+  "acronyms": [
+    "NCAR"
+  ],
+  "aliases": [],
+  "established": 1930,
+  "id": "ncar",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "@nest": {
+      "city": "Boulder",
+      "country": [
+        "United States",
+        "US"
+      ],
+      "lat": 40.01499,
+      "lon": 40.01499
     },
-    "ror": "05cvfcr44",
-    "kind": "Facility",
-    "url": [
-        "https://ncar.ucar.edu/"
-    ],
-    "type": [
-        "universal",
-        "wcrp:institution",
-        "wcrp:organisation"
-    ],
-    "long_label": "National Center for Atmospheric Research",
-    "label": "NCAR"
+    "id": "universal:location/05cvfcr44",
+    "type": "location"
+  },
+  "ui-label": "National Center for Atmospheric Research",
+  "ror": "05cvfcr44",
+  "type": [
+    "universal",
+    "wcrp:institution",
+    "wcrp:organisation"
+  ],
+  "url": [
+    "https://ncar.ucar.edu/"
+  ],
+  "validation-key": "NCAR"
 }

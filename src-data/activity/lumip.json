@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "lumip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Land-Use Model Intercomparison Project",
   "url": "https://www.cesm.ucar.edu/projects/cmip6/lumip",
-  "label": "LUMIP",
-  "long-label": "Land-Use Model Intercomparison Project",
-  "description": ""
+  "validation-key": "LUMIP"
 }

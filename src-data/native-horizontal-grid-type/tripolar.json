@@ -1,0 +1,10 @@
+{
+  "description": "a global curvilinear ocean grid with a southern pole and two northern poles all placed over land",
+  "id": "tripolar",
+  "type": [
+    "wcrp:native-horizontal-grid-type",
+    "universal"
+  ],
+  "ui-label": "Tripolar",
+  "validation-key": "tripolar"
+}

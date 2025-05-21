@@ -1,0 +1,10 @@
+{
+  "description": "Depth is the vertical distance below the earth’s surface",
+  "id": "depth",
+  "type": [
+    "wcrp:native-vertical-grid-coordinate",
+    "universal"
+  ],
+  "ui-label": "Depth",
+  "validation-key": "depth"
+}

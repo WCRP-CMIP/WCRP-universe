@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "aera-mip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Adaptive Emission Reduction Approach Modelling Intercomparison Project",
   "url": "",
-  "label": "AERA-MIP",
-  "long-label": "Adaptive Emission Reduction Approach Modelling Intercomparison Project",
-  "description": ""
+  "validation-key": "AERA-MIP"
 }

@@ -1,10 +1,10 @@
 {
-    "@context": "_context_",
-    "description": "biogeochemistry model component that at the very least accounts for carbon reservoirs and fluxes in the atmosphere, terrestrial biosphere, and ocean",
-    "id": "bgc",
-    "type": [
-        "wcrp:source-type",
-        "universal"
-    ],
-    "label": "BGC"
+  "@context": "_context_",
+  "description": "biogeochemistry model component that at the very least accounts for carbon reservoirs and fluxes in the atmosphere, terrestrial biosphere, and ocean",
+  "id": "bgc",
+  "type": [
+    "wcrp:source-type",
+    "universal"
+  ],
+  "validation-key": "BGC"
 }

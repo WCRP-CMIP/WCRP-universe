@@ -1,32 +1,32 @@
 {
-    "id": "rss",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "RSS"
+  ],
+  "aliases": [],
+  "established": 1974,
+  "id": "rss",
+  "kind": "Company",
+  "labels": [],
+  "location": {
+    "city": "Santa Rosa",
+    "country": [
+      "United States",
+      "US"
     ],
-    "label": "RSS",
-    "ror": "01vp8h012",
-    "long_label": "Remote Sensing Systems (United States)",
-    "url": [
-        "http://www.remss.com/"
-    ],
-    "established": 1974,
-    "kind": "Company",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "RSS"
-    ],
-    "location": {
-        "id": "universal:location/01vp8h012",
-        "type": "wcrp:location",
-        "lat": 38.44047,
-        "lon": 38.44047,
-        "city": "Santa Rosa",
-        "country": [
-            "United States",
-            "US"
-        ]
-    }
+    "id": "universal:location/01vp8h012",
+    "lat": 38.44047,
+    "lon": 38.44047,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Remote Sensing Systems (United States)",
+  "ror": "01vp8h012",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.remss.com/"
+  ],
+  "validation-key": "RSS"
 }

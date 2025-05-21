@@ -1,12 +1,12 @@
 {
   "@context": "_context_",
+  "description": "",
   "id": "mumip",
   "type": [
     "wcrp:activity",
     "universal"
   ],
+  "ui-label": "Model Uncertainty Model Intercomparison Project",
   "url": "https://mumip.web.ox.ac.uk",
-  "label": "MUMIP",
-  "long-label": "Model Uncertainty Model Intercomparison Project",
-  "description": ""
+  "validation-key": "MUMIP"
 }

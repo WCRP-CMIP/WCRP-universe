@@ -1,0 +1,10 @@
+{
+  "description": "a calendar with no leap years, i",
+  "id": "365-day",
+  "type": [
+    "wcrp:model-calendar",
+    "universal"
+  ],
+  "ui-label": "365 day",
+  "validation-key": "365-day"
+}

@@ -1,32 +1,32 @@
 {
-    "id": "pnnl-jgcri",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "JGCRI"
+  ],
+  "aliases": [],
+  "established": 2001,
+  "id": "pnnl-jgcri",
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Riverdale Park",
+    "country": [
+      "United States",
+      "US"
     ],
-    "label": "PNNL-JGCRI",
-    "ror": "058cmd703",
-    "long_label": "Joint Global Change Research Institute",
-    "url": [
-        "https://www.pnnl.gov/projects/jgcri"
-    ],
-    "established": 2001,
-    "kind": "Facility",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "JGCRI"
-    ],
-    "location": {
-        "id": "universal:location/058cmd703",
-        "type": "wcrp:location",
-        "lat": 38.96344,
-        "lon": 38.96344,
-        "city": "Riverdale Park",
-        "country": [
-            "United States",
-            "US"
-        ]
-    }
+    "id": "universal:location/058cmd703",
+    "lat": 38.96344,
+    "lon": 38.96344,
+    "type": "wcrp:location"
+  },
+  "ui-label": "Joint Global Change Research Institute",
+  "ror": "058cmd703",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "https://www.pnnl.gov/projects/jgcri"
+  ],
+  "validation-key": "PNNL-JGCRI"
 }

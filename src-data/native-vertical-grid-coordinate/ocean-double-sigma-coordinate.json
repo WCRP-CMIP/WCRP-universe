@@ -1,0 +1,10 @@
+{
+  "description": "Parametric ocean double sigma coordinate",
+  "id": "ocean-double-sigma-coordinate",
+  "type": [
+    "wcrp:native-vertical-grid-coordinate",
+    "universal"
+  ],
+  "ui-label": "Ocean double sigma coordinate",
+  "validation-key": "ocean-double-sigma-coordinate"
+}

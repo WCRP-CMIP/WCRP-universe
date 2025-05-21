@@ -1,32 +1,32 @@
 {
-    "id": "ntu",
-    "type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+  "acronyms": [
+    "NTU"
+  ],
+  "aliases": [],
+  "established": 1928,
+  "id": "ntu",
+  "kind": "Education",
+  "labels": [],
+  "location": {
+    "city": "Taipei",
+    "country": [
+      "Taiwan",
+      "TW"
     ],
-    "label": "NTU",
-    "ror": "05bqach95",
-    "long_label": "National Taiwan University",
-    "url": [
-        "http://www.ntu.edu.tw/english/"
-    ],
-    "established": 1928,
-    "kind": "Education",
-    "labels": [],
-    "aliases": [],
-    "acronyms": [
-        "NTU"
-    ],
-    "location": {
-        "id": "universal:location/05bqach95",
-        "type": "wcrp:location",
-        "lat": 25.05306,
-        "lon": 25.05306,
-        "city": "Taipei",
-        "country": [
-            "Taiwan",
-            "TW"
-        ]
-    }
+    "id": "universal:location/05bqach95",
+    "lat": 25.05306,
+    "lon": 25.05306,
+    "type": "wcrp:location"
+  },
+  "ui-label": "National Taiwan University",
+  "ror": "05bqach95",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ],
+  "url": [
+    "http://www.ntu.edu.tw/english/"
+  ],
+  "validation-key": "NTU"
 }

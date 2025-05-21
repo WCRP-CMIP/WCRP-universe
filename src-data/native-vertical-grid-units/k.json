@@ -1,0 +1,10 @@
+{
+  "description": "unit for temperature",
+  "id": "k",
+  "type": [
+    "wcrp:native-vertical-grid-units",
+    "universal"
+  ],
+  "ui-label": "kelvin",
+  "validation-key": "K"
+}

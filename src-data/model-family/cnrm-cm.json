@@ -1,12 +1,12 @@
 {
-    "id": "cnrm-cm",
-    "type": "wcrp:model-family",
-    "label": "CNRM-CM",
-    "description": "Centre National de Recherches M\u00e9t\u00e9orologiques model",
-    "origin": "CNRM (Centre National de Recherches M\u00e9t\u00e9orologiques)",
-    "permissible_realms": [
-        "atmos",
-        "land",
-        "ocean"
-    ]
+  "description": "Centre National de Recherches Météorologiques model",
+  "id": "cnrm-cm",
+  "origin": "CNRM (Centre National de Recherches Météorologiques)",
+  "permissible_realms": [
+    "atmos",
+    "land",
+    "ocean"
+  ],
+  "type": "wcrp:model-family",
+  "validation-key": "CNRM-CM"
 }
