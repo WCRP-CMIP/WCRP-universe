@@ -1,0 +1,34 @@
+{
+  "id": "inm",
+  "validation-key": "INM",
+  "ui-label": "Institute of Numerical Mathematics",
+  "description": "",
+  "acronyms": [
+    "INM RAS"
+  ],
+  "aliases": [],
+  "established": 1980,
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Moscow",
+    "country": [
+      "Russia",
+      "RU"
+    ],
+    "id": "universal:location/00520ey40",
+    "lat": 55.75222,
+    "lon": 55.75222,
+    "type": "wcrp:location"
+  },
+  "ror": "00520ey40",
+  "url": [
+    "http://www.inm.ras.ru/inm_en_ver/index.htm"
+  ],
+  "@context": "_context_",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "mpi-b",
+  "validation-key": "MPI-B",
+  "ui-label": "Max Planck Institute for Biogeochemistry",
+  "description": "",
+  "acronyms": [
+    "MPI-BGC"
+  ],
+  "aliases": [
+    "MPI Biogeochemistry"
+  ],
+  "established": 1997,
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Jena",
+    "country": [
+      "Germany",
+      "DE"
+    ],
+    "id": "universal:location/051yxp643",
+    "lat": 50.92878,
+    "lon": 50.92878,
+    "type": "wcrp:location"
+  },
+  "ror": "051yxp643",
+  "url": [
+    "https://www.bgc-jena.mpg.de"
+  ],
+  "@context": "_context_",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "nasa-larc",
+  "validation-key": "NASA-LaRC",
+  "ui-label": "Langley Research Center",
+  "description": "",
+  "acronyms": [
+    "LaRC"
+  ],
+  "aliases": [],
+  "established": 1917,
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Hampton",
+    "country": [
+      "United States",
+      "US"
+    ],
+    "id": "universal:location/0399mhs52",
+    "lat": 37.02987,
+    "lon": 37.02987,
+    "type": "wcrp:location"
+  },
+  "ror": "0399mhs52",
+  "url": [
+    "http://www.nasa.gov/langley"
+  ],
+  "@context": "_context_",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ]
+}

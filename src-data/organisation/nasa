@@ -1,0 +1,38 @@
+{
+  "id": "nasa",
+  "validation-key": "NASA",
+  "ui-label": "National Aeronautics and Space Administration",
+  "description": "",
+  "acronyms": [
+    "NASA",
+    "NASA HQ"
+  ],
+  "aliases": [
+    "Mary W. Jackson Headquarters Building",
+    "NASA Headquarters"
+  ],
+  "established": 1958,
+  "kind": "Funder",
+  "labels": [],
+  "location": {
+    "city": "Washington",
+    "country": [
+      "United States",
+      "US"
+    ],
+    "id": "universal:location/027ka1x80",
+    "lat": 38.89511,
+    "lon": 38.89511,
+    "type": "wcrp:location"
+  },
+  "ror": "027ka1x80",
+  "url": [
+    "http://www.nasa.gov"
+  ],
+  "@context": "_context_",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ]
+}
