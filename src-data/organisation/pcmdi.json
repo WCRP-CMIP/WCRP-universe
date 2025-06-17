@@ -1,0 +1,42 @@
+{
+  "id": "pcmdi",
+  "validation-key": "PCMDI",
+  "ui-label": "PCMDI: Earth System Model Evaluation Project",
+  "description": "",
+  "acronyms": [
+    "LLL",
+    "LLNL",
+    "PCMDI"
+  ],
+  "aliases": [
+    "Program for Climate Model Diagnosis and Intercomparison",
+    "U.S. Department of Energy Lawrence Livermore National Laboratory",
+    "U.S. Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory",
+    "United States Department of Energy Lawrence Livermore National Laboratory",
+    "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory"
+  ],
+  "established": 1989,
+  "kind": "Facility",
+  "labels": [],
+  "location": {
+    "city": "Livermore",
+    "country": [
+      "United States",
+      "US"
+    ],
+    "id": "universal:location/02k3nmd98",
+    "lat": 37.68187,
+    "lon": 37.68187,
+    "type": "wcrp:location"
+  },
+  "ror": "02k3nmd98",
+  "url": [
+    "https://pcmdi.llnl.gov"
+  ],
+  "@context": "_context_",
+  "type": [
+    "wcrp:organisation",
+    "wcrp:institution",
+    "universal"
+  ]
+}
