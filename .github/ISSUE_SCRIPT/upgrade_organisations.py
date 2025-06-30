@@ -20,6 +20,7 @@ sys.path.append(str(Path(__file__).parent))
 
 import update_ror
 from cmipld.utils import git
+from cmipld.utils.json import sorted_json
 from cmipld.tests.jsonld import organisation
 from pydantic import ValidationError
 
@@ -71,8 +72,28 @@ def process_organization_file(filepath, dry_run=False):
             validation_key = data.get('validation-key')
             
             if not ror or ror == 'pending':
-                print(f"⚠️  No valid ROR for {filepath}, keeping existing data...")
-                # Still recommit with proper author
+                print(f"⚠️  No valid ROR for {filepath}, checking if sorting needed...")
+                # Check if the file needs sorting
+                with open(filepath, 'r') as f:
+                    current_data = json.load(f)
+                
+                # Sort the data
+                sorted_data = sorted_json(current_data)
+                
+                # Compare to see if sorting changed anything
+                current_json = json.dumps(current_data, indent=2)
+                sorted_json_str = json.dumps(sorted_data, indent=2)
+                
+                if current_json != sorted_json_str:
+                    print(f"🔄 {'Would sort' if dry_run else 'Sorting'} {validation_key} file")
+                    if not dry_run:
+                        with open(filepath, 'w') as f:
+                            json.dump(sorted_data, f, indent=2)
+                            f.write('\n')
+                        print(f"✅ Sorted {validation_key}")
+                else:
+                    print(f"ℹ️  {validation_key} already properly sorted")
+                    return False
             else:
                 print(f"🔄 {'Would update' if dry_run else 'Updating'} institution data from ROR: {ror}")
                 if not dry_run:
@@ -83,19 +104,25 @@ def process_organization_file(filepath, dry_run=False):
                         # Validate the data
                         organisation.institution(**updated_data)
                         
+                        # Sort the updated data
+                        updated_data = sorted_json(updated_data)
+                        
                         # Check if the data has actually changed
                         with open(filepath, 'r') as f:
                             current_data = json.load(f)
                         
-                        # Compare the data (normalize by dumping both to strings with same formatting)
-                        current_json = json.dumps(current_data, sort_keys=True, indent=2)
-                        updated_json = json.dumps(updated_data, sort_keys=True, indent=2)
+                        # Sort current data for comparison
+                        current_data_sorted = sorted_json(current_data)
+                        
+                        # Compare the sorted data
+                        current_json = json.dumps(current_data_sorted, indent=2)
+                        updated_json = json.dumps(updated_data, indent=2)
                         
                         if current_json == updated_json:
                             print(f"ℹ️  No changes needed for {validation_key} - data is up to date")
                             return False  # No changes needed
                         
-                        # Save the updated data
+                        # Save the updated and sorted data
                         with open(filepath, 'w') as f:
                             json.dump(updated_data, f, indent=2)
                             f.write('\n')  # Add newline at end of file
@@ -114,12 +141,18 @@ def process_organization_file(filepath, dry_run=False):
                         # Get updated data from ROR
                         updated_data = update_ror.get_institution(ror, validation_key)
                         
+                        # Sort the updated data
+                        updated_data = sorted_json(updated_data)
+                        
                         # Check if the data would change
                         with open(filepath, 'r') as f:
                             current_data = json.load(f)
                         
-                        current_json = json.dumps(current_data, sort_keys=True, indent=2)
-                        updated_json = json.dumps(updated_data, sort_keys=True, indent=2)
+                        # Sort current data for comparison
+                        current_data_sorted = sorted_json(current_data)
+                        
+                        current_json = json.dumps(current_data_sorted, indent=2)
+                        updated_json = json.dumps(updated_data, indent=2)
                         
                         if current_json == updated_json:
                             print(f"ℹ️  No changes needed for {validation_key} - data is up to date")
@@ -130,7 +163,28 @@ def process_organization_file(filepath, dry_run=False):
                         print(f"⚠️  Could not check for updates: {e}")
                     
         elif 'wcrp:consortium' in ldtypes:
-            print(f"ℹ️  Consortium type - no ROR update needed, will recommit...")
+            print(f"ℹ️  Consortium type - checking if sorting needed...")
+            # Check if the file needs sorting
+            with open(filepath, 'r') as f:
+                current_data = json.load(f)
+            
+            # Sort the data
+            sorted_data = sorted_json(current_data)
+            
+            # Compare to see if sorting changed anything
+            current_json = json.dumps(current_data, indent=2)
+            sorted_json_str = json.dumps(sorted_data, indent=2)
+            
+            if current_json != sorted_json_str:
+                print(f"🔄 {'Would sort' if dry_run else 'Sorting'} consortium file")
+                if not dry_run:
+                    with open(filepath, 'w') as f:
+                        json.dump(sorted_data, f, indent=2)
+                        f.write('\n')
+                    print(f"✅ Sorted consortium")
+            else:
+                print(f"ℹ️  Consortium already properly sorted")
+                return False
         else:
             print(f"⚠️  Unknown type in {filepath}, skipping...")
             return None
