@@ -20,7 +20,8 @@ sys.path.append(str(Path(__file__).parent))
 
 import update_ror
 from cmipld.utils import git
-from cmipld.utils.json import sorted_json
+from cmipld.utils.json import validate_and_fix_json
+
 from cmipld.tests.jsonld import organisation
 from pydantic import ValidationError
 
@@ -78,13 +79,18 @@ def process_organization_file(filepath, dry_run=False):
                     current_data = json.load(f)
                 
                 # Sort the data
-                sorted_data = sorted_json(current_data)
+                sorted_data = validate_and_fix_json(current_data)
                 
-                # Compare to see if sorting changed anything
-                current_json = json.dumps(current_data, indent=2)
-                sorted_json_str = json.dumps(sorted_data, indent=2)
+                # Compare the actual file order with sorted order
+                # Read the raw file to preserve its exact formatting
+                with open(filepath, 'r') as f:
+                    current_file_content = f.read().strip()
                 
-                if current_json != sorted_json_str:
+                # Generate what the sorted file would look like
+                sorted_file_content = json.dumps(sorted_data, indent=2)
+                
+                # Compare the file contents directly
+                if current_file_content != sorted_file_content:
                     print(f"🔄 {'Would sort' if dry_run else 'Sorting'} {validation_key} file")
                     if not dry_run:
                         with open(filepath, 'w') as f:
@@ -105,21 +111,18 @@ def process_organization_file(filepath, dry_run=False):
                         organisation.institution(**updated_data)
                         
                         # Sort the updated data
-                        updated_data = sorted_json(updated_data)
+                        updated_data = validate_and_fix_json(updated_data)
                         
-                        # Check if the data has actually changed
+                        # Check if the data or order has actually changed
+                        # Read the current file as-is
                         with open(filepath, 'r') as f:
-                            current_data = json.load(f)
+                            current_file_content = f.read().strip()
                         
-                        # Sort current data for comparison
-                        current_data_sorted = sorted_json(current_data)
+                        # Generate what the updated file would look like
+                        updated_file_content = json.dumps(updated_data, indent=2)
                         
-                        # Compare the sorted data
-                        current_json = json.dumps(current_data_sorted, indent=2)
-                        updated_json = json.dumps(updated_data, indent=2)
-                        
-                        if current_json == updated_json:
-                            print(f"ℹ️  No changes needed for {validation_key} - data is up to date")
+                        if current_file_content == updated_file_content:
+                            print(f"ℹ️  No changes needed for {validation_key} - data and order are up to date")
                             return False  # No changes needed
                         
                         # Save the updated and sorted data
@@ -142,14 +145,14 @@ def process_organization_file(filepath, dry_run=False):
                         updated_data = update_ror.get_institution(ror, validation_key)
                         
                         # Sort the updated data
-                        updated_data = sorted_json(updated_data)
+                        updated_data = validate_and_fix_json(updated_data)
                         
                         # Check if the data would change
                         with open(filepath, 'r') as f:
                             current_data = json.load(f)
                         
                         # Sort current data for comparison
-                        current_data_sorted = sorted_json(current_data)
+                        current_data_sorted = validate_and_fix_json(current_data)
                         
                         current_json = json.dumps(current_data_sorted, indent=2)
                         updated_json = json.dumps(updated_data, indent=2)
@@ -169,13 +172,18 @@ def process_organization_file(filepath, dry_run=False):
                 current_data = json.load(f)
             
             # Sort the data
-            sorted_data = sorted_json(current_data)
+            sorted_data = validate_and_fix_json(current_data)
             
-            # Compare to see if sorting changed anything
-            current_json = json.dumps(current_data, indent=2)
-            sorted_json_str = json.dumps(sorted_data, indent=2)
+            # Compare the actual file order with sorted order
+            # Read the raw file to preserve its exact formatting
+            with open(filepath, 'r') as f:
+                current_file_content = f.read().strip()
             
-            if current_json != sorted_json_str:
+            # Generate what the sorted file would look like
+            sorted_file_content = json.dumps(sorted_data, indent=2)
+            
+            # Compare the file contents directly
+            if current_file_content != sorted_file_content:
                 print(f"🔄 {'Would sort' if dry_run else 'Sorting'} consortium file")
                 if not dry_run:
                     with open(filepath, 'w') as f:
