@@ -14,7 +14,7 @@
   "established": 1936,
   "kind": "Facility",
   "labels": [
-    "Laboratorio de Propulsi\u00f3n a Chorro"
+    "Laboratorio de Propulsión a Chorro"
   ],
   "aliases": [
     "Jet Propulsion Lab",
@@ -28,7 +28,7 @@
     "type": "wcrp:location",
     "lat": 34.19917,
     "lon": -118.18785,
-    "city": "La Ca\u00f1ada Flintridge",
+    "city": "La Cañada Flintridge",
     "country": [
       "United States",
       "US"

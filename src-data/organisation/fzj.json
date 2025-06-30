@@ -7,14 +7,14 @@
   ],
   "validation-key": "FZJ",
   "ror": "02nv7yv05",
-  "ui-label": "Forschungszentrum J\u00fclich",
+  "ui-label": "Forschungszentrum Jülich",
   "url": [
     "https://www.fz-juelich.de"
   ],
   "established": 1956,
   "kind": "Facility",
   "labels": [
-    "J\u00fclich Research Centre"
+    "Jülich Research Centre"
   ],
   "aliases": [],
   "acronyms": [
@@ -25,7 +25,7 @@
     "type": "wcrp:location",
     "lat": 50.92149,
     "lon": 6.36267,
-    "city": "J\u00fclich",
+    "city": "Jülich",
     "country": [
       "Germany",
       "DE"

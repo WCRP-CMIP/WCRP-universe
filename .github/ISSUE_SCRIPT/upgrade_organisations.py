@@ -1,17 +1,10 @@
 #!/usr/bin/env python3
 """
-Script to reprocess all organization files with their original authors.
-This script:
-1. Gets all organization JSON files from src-data/organisation/
-2. Retrieves the latest committer for each file
-3. Reprocesses the file using update_ror if it's an institution
-4. Recommits the file with the original author
+Update all the organisation institution files keeping the original authors. 
 
 Usage:
     python upgrade_organizations.py [--dry-run]
     
-Options:
-    --dry-run    Show what would be done without making actual changes
 """
 
 import sys

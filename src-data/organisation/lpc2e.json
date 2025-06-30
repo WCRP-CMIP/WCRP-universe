@@ -7,7 +7,7 @@
   ],
   "validation-key": "LPC2E",
   "ror": "049k66y27",
-  "ui-label": "Laboratoire de Physique et Chimie de l\u2019Environnement et de l\u2019Espace",
+  "ui-label": "Laboratoire de Physique et Chimie de l’Environnement et de l’Espace",
   "url": [
     "https://www.lpc2e.cnrs.fr"
   ],
@@ -24,7 +24,7 @@
     "type": "wcrp:location",
     "lat": 47.90289,
     "lon": 1.90389,
-    "city": "Orl\u00e9ans",
+    "city": "Orléans",
     "country": [
       "France",
       "FR"

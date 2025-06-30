@@ -14,8 +14,8 @@
   "established": 1936,
   "kind": "Facility",
   "labels": [
-    "Eidgen\u00f6ssische Anstalt f\u00fcr Wasserversorgung, Abwasserreinigung und Gew\u00e4sserschutz",
-    "Institut f\u00e9d\u00e9ral pour l\u2019am\u00e9nagement, l\u2019\u00e9puration et la protection des eaux"
+    "Eidgenössische Anstalt für Wasserversorgung, Abwasserreinigung und Gewässerschutz",
+    "Institut fédéral pour l’aménagement, l’épuration et la protection des eaux"
   ],
   "aliases": [],
   "acronyms": [
@@ -26,7 +26,7 @@
     "type": "wcrp:location",
     "lat": 47.39724,
     "lon": 8.61872,
-    "city": "D\u00fcbendorf",
+    "city": "Dübendorf",
     "country": [
       "Switzerland",
       "CH"

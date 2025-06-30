@@ -14,7 +14,7 @@
   "established": 1934,
   "kind": "Facility",
   "labels": [
-    "Max-Planck-Institut f\u00fcr Sonnensystemforschung"
+    "Max-Planck-Institut für Sonnensystemforschung"
   ],
   "aliases": [],
   "acronyms": [
@@ -25,7 +25,7 @@
     "type": "wcrp:location",
     "lat": 51.53443,
     "lon": 9.93228,
-    "city": "G\u00f6ttingen",
+    "city": "Göttingen",
     "country": [
       "Germany",
       "DE"
