@@ -1,0 +1,126 @@
+{
+  "@context": "_context_",
+  "id": "solaris-heppa",
+  "type": [
+    "wcrp:consortium",
+    "universal",
+    "wcrp:organisation"
+  ],
+  "changes": "",
+  "description": "",
+  "members": {
+    "aor": {
+      "current": true,
+      "from": 2025,
+      "to": "-"
+    },
+    "auot": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "bas": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "eawag": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "fmi": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "fuberlin": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "geomar": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "gsfc": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "iaa-csic": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "issi": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "kit": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "lasp": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "lpc2e": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "mohc": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "mps": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "ncar": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "pmod": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "uobergen": {
+      "current": true,
+      "from": 2025,
+      "to": "-"
+    },
+    "uoleeds": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "uomontreal": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "uootago": {
+      "current": true,
+      "from": 2013,
+      "to": 2022
+    },
+    "uooulu": {
+      "current": true,
+      "from": 2025,
+      "to": "-"
+    }
+  },
+  "ui-label": "SOLARIS HEPPA Consortium",
+  "url": "https://solarisheppa.geomar.de",
+  "validation-key": "SOLARIS HEPPA"
+}
