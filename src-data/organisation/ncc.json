@@ -1,0 +1,52 @@
+{
+  "@context": "_context_",
+  "id": "ncc",
+  "type": [
+    "wcrp:consortium",
+    "universal",
+    "wcrp:organisation"
+  ],
+  "changes": "",
+  "description": "",
+  "members": {
+    "met-norway": {
+      "current": false,
+      "from": 2016,
+      "to": 2022
+    },
+    "nersc": {
+      "current": false,
+      "from": 2016,
+      "to": 2022
+    },
+    "nilu": {
+      "current": false,
+      "from": 2016,
+      "to": 2022
+    },
+    "noresm": {
+      "current": false,
+      "from": 2016,
+      "to": 2022
+    },
+    "uib": {
+      "current": false,
+      "from": 2016,
+      "to": 2022
+    },
+    "uio": {
+      "current": false,
+      "from": 2016,
+      "to": 2022
+    },
+    "uni": {
+      "current": false,
+      "from": 2016,
+      "to": 2022
+    }
+  },
+  "status": "active",
+  "ui-label": "NCC Consortium",
+  "url": "",
+  "validation-key": "NCC"
+}
