@@ -11,7 +11,7 @@
         "chem",
         "bgc"
     ],
-    "description": "DECK: 1pctCO2",
+    "description": "1% per year increase in atmospheric CO2",
     "end_year": null,
     "experiment": "1 percent per year increase in CO2",
     "min_number_yrs_per_sim": 150,
