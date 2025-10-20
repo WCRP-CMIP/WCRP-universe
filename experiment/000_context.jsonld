@@ -18,7 +18,7 @@
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/activity/"
       },
-      "@resolve": "full"
+      "resolve": "full"
     },
     "description": {
       "@id": "https://schema.org/description"
@@ -35,7 +35,7 @@
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/source_type/"
       },
-      "@resolve": "reference"
+      "resolve": "reference"
     },
     "additional_allowed_model_components": {
       "@id": "https://espri-mod.github.io/mip-cmor-tables/additional_allowed_model_component/",
@@ -43,7 +43,7 @@
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/source_type/"
       },
-      "@resolve": "reference"
+      "resolve": "reference"
     },
     "start_year": "http://schema.org/startDate",
     "end_year": "http://schema.org/endDate",
@@ -75,7 +75,7 @@
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/experiment/"
       },
-      "@resolve": "shallow"
+      "resolve": "shallow"
     },
     "parent_mip_era": {
       "@id": "https://espri-mod.github.io/mip-cmor-tables/parent_mip_era/",
