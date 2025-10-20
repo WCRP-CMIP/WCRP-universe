@@ -1,4 +1,10 @@
 {
+  "esgvoc_resolve_modes": {
+    "activity": "full",
+    "required_model_components": "reference",
+    "additional_allowed_model_components": "reference",
+    "parent_experiment": "shallow"
+  },
   "@context": {
     "@base": "https://espri-mod.github.io/mip-cmor-tables/experiment/",
     "@vocab": "http://schema.org/",
@@ -17,8 +23,7 @@
       "@type": "@id",
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/activity/"
-      },
-      "resolve": "full"
+      }
     },
     "description": {
       "@id": "https://schema.org/description"
@@ -34,16 +39,14 @@
       "@type": "@id",
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/source_type/"
-      },
-      "resolve": "reference"
+      }
     },
     "additional_allowed_model_components": {
       "@id": "https://espri-mod.github.io/mip-cmor-tables/additional_allowed_model_component/",
       "@type": "@id",
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/source_type/"
-      },
-      "resolve": "reference"
+      }
     },
     "start_year": "http://schema.org/startDate",
     "end_year": "http://schema.org/endDate",
@@ -74,8 +77,7 @@
       "@type": "@id",
       "@context": {
         "@base": "https://espri-mod.github.io/mip-cmor-tables/experiment/"
-      },
-      "resolve": "shallow"
+      }
     },
     "parent_mip_era": {
       "@id": "https://espri-mod.github.io/mip-cmor-tables/parent_mip_era/",
