@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "aerosol",
+    "type": "component_type",
+    "drs_name": "aerosol",
+    "description": "The behaviour and evolution of aerosols suspended in the atmosphere."
+}

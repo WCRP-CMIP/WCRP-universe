@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "julian",
+    "type": "calendar",
+    "drs_name": "julian",
+    "description": "The Julian calendar, in which a year is a leap year if it is divisible by 4, even if it is also divisible by 100."
+}

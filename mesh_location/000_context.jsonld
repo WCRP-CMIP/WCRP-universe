@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/mesh_location/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "mesh_location": "https://espri-mod.github.io/mip-cmor-tables/mesh_location/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}

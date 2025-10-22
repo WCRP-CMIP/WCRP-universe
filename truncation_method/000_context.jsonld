@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/truncation_method/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "truncation_method": "https://espri-mod.github.io/mip-cmor-tables/truncation_method/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}

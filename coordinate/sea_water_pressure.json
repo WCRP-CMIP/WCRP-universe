@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sea_water_pressure",
+    "type": "coordinate",
+    "drs_name": "sea_water_pressure",
+    "description": "Sea water pressure is the pressure that exists in the medium of sea water."
+}

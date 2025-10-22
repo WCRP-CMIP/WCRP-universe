@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "plane_projection",
+    "type": "grid_type",
+    "drs_name": "plane_projection",
+    "description": "Any transformation employed to represent the spherical surface of the globe on a plane."
+}

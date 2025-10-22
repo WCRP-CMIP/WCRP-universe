@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "standard",
+    "type": "calendar",
+    "drs_name": "standard",
+    "description": "A mixed Gregorian/Julian calendar which is Gregorian after 1582-10-15, and Julian before."
+}

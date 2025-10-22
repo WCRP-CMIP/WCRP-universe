@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "proleptic_gregorian",
+    "type": "calendar",
+    "drs_name": "proleptic_gregorian",
+    "description": "A calendar with the Gregorian rules for leap-years extended to dates before 1582-10-15."
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tripolar",
+    "type": "grid_type",
+    "drs_name": "tripolar",
+    "description": "A global curvilinear ocean grid with a southern pole and two northern poles all placed over land."
+}

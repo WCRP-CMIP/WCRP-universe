@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/calendar/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "calendar": "https://espri-mod.github.io/mip-cmor-tables/calendar/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}

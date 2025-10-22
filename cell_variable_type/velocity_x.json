@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "velocity_x",
+    "type": "cell_variable_type",
+    "drs_name": "velocity_x",
+    "description": "Variables representing the X component of the velocity vector. For a grid defined by spherical polar coordinates, the X direction is longitude."
+}

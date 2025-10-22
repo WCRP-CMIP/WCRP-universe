@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "none",
+    "type": "calendar",
+    "drs_name": "none",
+    "description": "No calendar."
+}

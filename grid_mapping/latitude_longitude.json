@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "latitude_longitude",
+    "type": "grid_mapping",
+    "drs_name": "latitude_longitude",
+    "description": ""
+}

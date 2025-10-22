@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "air_potential_temperature",
+    "type": "coordinate",
+    "drs_name": "air_potential_temperature",
+    "description": "Air potential temperature is the temperature a parcel of air would have if moved dry adiabatically to a standard pressure."
+}

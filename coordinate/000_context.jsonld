@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/coordinate/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "coordinate": "https://espri-mod.github.io/mip-cmor-tables/coordinate/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "none",
+    "type": "coordinate",
+    "drs_name": "none",
+    "description": "(Not a standard name) There is no vertical dimension."
+}

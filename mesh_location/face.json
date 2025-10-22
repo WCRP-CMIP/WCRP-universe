@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "face",
+    "type": "mesh_location",
+    "drs_name": "face",
+    "description": "A face is two-dimensional and corresponds to a surface enclosed by a set of edges."
+}

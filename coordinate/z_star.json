@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "z_star",
+    "type": "coordinate",
+    "drs_name": "z_star",
+    "description": "The z* coordinate of Adcroft and Campin (2004)."
+}

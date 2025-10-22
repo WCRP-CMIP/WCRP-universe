@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "geostationary",
+    "type": "grid_mapping",
+    "drs_name": "geostationary",
+    "description": ""
+}

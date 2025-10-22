@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "node",
+    "type": "mesh_location",
+    "drs_name": "node",
+    "description": "A node is zero-dimensional and corresponds to a point in space."
+}

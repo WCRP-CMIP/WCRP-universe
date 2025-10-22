@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/horizontal_units/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "horizontal_units": "https://espri-mod.github.io/mip-cmor-tables/horizontal_units/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}

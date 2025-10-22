@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vertical_perspective",
+    "type": "grid_mapping",
+    "drs_name": "vertical_perspective",
+    "description": ""
+}

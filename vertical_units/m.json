@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "m",
+    "type": "vertical_units",
+    "drs_name": "m",
+    "description": "metre (unit for length)."
+}

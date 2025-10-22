@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth",
+    "type": "coordinate",
+    "drs_name": "depth",
+    "description": "Depth is the vertical distance below the earth's surface."
+}

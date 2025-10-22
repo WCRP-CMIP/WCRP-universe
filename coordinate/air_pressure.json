@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "air_pressure",
+    "type": "coordinate",
+    "drs_name": "air_pressure",
+    "description": "Air pressure is the pressure that exists in the medium of air."
+}

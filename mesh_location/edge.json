@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "edge",
+    "type": "mesh_location",
+    "drs_name": "edge",
+    "description": "An edge is one-dimensional and corresponds to a line connecting two nodes."
+}

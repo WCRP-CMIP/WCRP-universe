@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "geopotential_height",
+    "type": "coordinate",
+    "drs_name": "geopotential_height",
+    "description": "Geopotential height is the geopotential divided by the standard acceleration due to gravity."
+}

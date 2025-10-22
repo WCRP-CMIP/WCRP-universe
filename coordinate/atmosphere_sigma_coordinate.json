@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "atmosphere_sigma_coordinate",
+    "type": "coordinate",
+    "drs_name": "atmosphere_sigma_coordinate",
+    "description": "Parametric atmosphere sigma coordinate."
+}

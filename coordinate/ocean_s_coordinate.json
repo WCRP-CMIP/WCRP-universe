@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ocean_s_coordinate",
+    "type": "coordinate",
+    "drs_name": "ocean_s_coordinate",
+    "description": "Parametric ocean s-coordinate."
+}

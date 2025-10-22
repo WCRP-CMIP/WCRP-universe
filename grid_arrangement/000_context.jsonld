@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/grid_arrangement/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "grid_arrangement": "https://espri-mod.github.io/mip-cmor-tables/grid_arrangement/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}

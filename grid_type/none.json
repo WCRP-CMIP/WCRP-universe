@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "none",
+    "type": "grid_type",
+    "drs_name": "none",
+    "description": "There is no horizontal grid."
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lambert_cylindrical_equal_area",
+    "type": "grid_mapping",
+    "drs_name": "lambert_cylindrical_equal_area",
+    "description": ""
+}

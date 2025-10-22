@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "unstructured_polygonal",
+    "type": "grid_type",
+    "drs_name": "unstructured_polygonal",
+    "description": "An unstructured mesh consisting of arbitrary polygons."
+}

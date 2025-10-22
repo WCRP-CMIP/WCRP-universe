@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/grid_mapping/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "grid_mapping": "https://espri-mod.github.io/mip-cmor-tables/grid_mapping/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}

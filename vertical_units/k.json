@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "k",
+    "type": "vertical_units",
+    "drs_name": "k",
+    "description": "kelvin (unit for temperature)."
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "velocity_y",
+    "type": "cell_variable_type",
+    "drs_name": "velocity_y",
+    "description": "Variables representing the Y component of the velocity vector. For a grid defined by spherical polar coordinates, the Y direction is latitude."
+}

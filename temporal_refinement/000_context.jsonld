@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/temporal_refinement/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "temporal_refinement": "https://espri-mod.github.io/mip-cmor-tables/temporal_refinement/",
+        "description": {"@id": "https://schema.org/description"}
+    }
+}
