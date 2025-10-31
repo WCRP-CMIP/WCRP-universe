@@ -1,11 +1,12 @@
 {
-  "@id": "land",
-  "validation-key": "LAND",
-  "ui-label": "",
-  "description": "land model run uncoupled from the atmosphere",
-  "@context": "_context",
-  "@type": [
-    "esgf:source-type",
-    "universal"
-  ]
+    "validation_key": "LAND",
+    "ui_label": "",
+    "description": "land model run uncoupled from the atmosphere",
+    "@context": "_context",
+    "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+    ],
+    "@id": "land"
 }

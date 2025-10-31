@@ -1,11 +1,12 @@
 {
-  "@id": "height",
-  "validation-key": "height",
-  "ui-label": "Height",
-  "description": "Height is the vertical distance above the earth’s surface",
-  "@context": "_context",
-  "@type": [
-    "esgf:native-vertical-grid-coordinate",
-    "universal"
-  ]
+    "validation_key": "height",
+    "ui_label": "Height",
+    "description": "Height is the vertical distance above the earth’s surface",
+    "@context": "_context",
+    "@type": [
+        "wcrp:native_vertical_grid_coordinate",
+        "esgvoc:NativeVerticalGridCoordinate",
+        "universal"
+    ],
+    "@id": "height"
 }

@@ -1,11 +1,12 @@
 {
-  "@id": "unstructured-triangular",
-  "validation-key": "unstructured-triangular",
-  "ui-label": "Unstructured triangular",
-  "description": "an unstructured mesh consisting solely of triangles",
-  "@context": "_context",
-  "@type": [
-    "esgf:native-horizontal-grid-type",
-    "universal"
-  ]
+    "validation_key": "unstructured-triangular",
+    "ui_label": "Unstructured triangular",
+    "description": "an unstructured mesh consisting solely of triangles",
+    "@context": "_context",
+    "@type": [
+        "wcrp:native_horizontal_grid_type",
+        "esgvoc:NativeHorizontalGridType",
+        "universal"
+    ],
+    "@id": "unstructured-triangular"
 }

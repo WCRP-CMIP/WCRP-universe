@@ -1,11 +1,12 @@
 {
-  "@id": "atmosphere-sigma-coordinate",
-  "validation-key": "atmosphere-sigma-coordinate",
-  "ui-label": "Atmosphere sigma coordinate",
-  "description": "Parametric atmosphere sigma coordinate",
-  "@context": "_context",
-  "@type": [
-    "esgf:native-vertical-grid-coordinate",
-    "universal"
-  ]
+    "validation_key": "atmosphere-sigma-coordinate",
+    "ui_label": "Atmosphere sigma coordinate",
+    "description": "Parametric atmosphere sigma coordinate",
+    "@context": "_context",
+    "@type": [
+        "wcrp:native_vertical_grid_coordinate",
+        "esgvoc:NativeVerticalGridCoordinate",
+        "universal"
+    ],
+    "@id": "atmosphere-sigma-coordinate"
 }

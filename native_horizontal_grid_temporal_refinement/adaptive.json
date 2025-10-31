@@ -1,11 +1,12 @@
 {
-  "@id": "adaptive",
-  "validation-key": "adaptive",
-  "ui-label": "Adaptive",
-  "description": "the total number of grid points varies during the model run",
-  "@context": "_context",
-  "@type": [
-    "esgf:native-horizontal-grid-temporal-refinement",
-    "universal"
-  ]
+    "validation_key": "adaptive",
+    "ui_label": "Adaptive",
+    "description": "the total number of grid points varies during the model run",
+    "@context": "_context",
+    "@type": [
+        "wcrp:native_horizontal_grid_temporal_refinement",
+        "esgvoc:NativeHorizontalGridTemporalRefinement",
+        "universal"
+    ],
+    "@id": "adaptive"
 }

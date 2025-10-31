@@ -1,11 +1,12 @@
 {
-  "@id": "ocean-double-sigma-coordinate",
-  "validation-key": "ocean-double-sigma-coordinate",
-  "ui-label": "Ocean double sigma coordinate",
-  "description": "Parametric ocean double sigma coordinate",
-  "@context": "_context",
-  "@type": [
-    "esgf:native-vertical-grid-coordinate",
-    "universal"
-  ]
+    "validation_key": "ocean-double-sigma-coordinate",
+    "ui_label": "Ocean double sigma coordinate",
+    "description": "Parametric ocean double sigma coordinate",
+    "@context": "_context",
+    "@type": [
+        "wcrp:native_vertical_grid_coordinate",
+        "esgvoc:NativeVerticalGridCoordinate",
+        "universal"
+    ],
+    "@id": "ocean-double-sigma-coordinate"
 }

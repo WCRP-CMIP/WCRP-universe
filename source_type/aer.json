@@ -1,11 +1,12 @@
 {
-  "@id": "aer",
-  "validation-key": "AER",
-  "ui-label": "",
-  "description": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)",
-  "@context": "_context",
-  "@type": [
-    "esgf:source-type",
-    "universal"
-  ]
+    "validation_key": "AER",
+    "ui_label": "",
+    "description": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)",
+    "@context": "_context",
+    "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+    ],
+    "@id": "aer"
 }

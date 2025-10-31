@@ -1,11 +1,12 @@
 {
-  "@id": "satellite-blended",
-  "validation-key": "satellite_blended",
-  "ui-label": "",
-  "description": "gridded product based on both in-situ instruments and satellite measurements",
-  "@context": "_context",
-  "@type": [
-    "esgf:source-type",
-    "universal"
-  ]
+    "validation_key": "satellite_blended",
+    "ui_label": "",
+    "description": "gridded product based on both in-situ instruments and satellite measurements",
+    "@context": "_context",
+    "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+    ],
+    "@id": "satellite-blended"
 }

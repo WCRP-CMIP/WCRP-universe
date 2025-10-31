@@ -1,11 +1,12 @@
 {
-  "@id": "yin-yang",
-  "validation-key": "yin-yang",
-  "ui-label": "Yin yang",
-  "description": "two overlapping grid patches",
-  "@context": "_context",
-  "@type": [
-    "esgf:native-horizontal-grid-type",
-    "universal"
-  ]
+    "validation_key": "yin-yang",
+    "ui_label": "Yin yang",
+    "description": "two overlapping grid patches",
+    "@context": "_context",
+    "@type": [
+        "wcrp:native_horizontal_grid_type",
+        "esgvoc:NativeHorizontalGridType",
+        "universal"
+    ],
+    "@id": "yin-yang"
 }

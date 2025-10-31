@@ -1,12 +1,13 @@
 {
-  "@id": "gr",
-  "validation-key": "gr",
-  "ui-label": "Regridded Greenland",
-  "description": "regridded data reported on the data provider's preferred target grid",
-  "region": "greenland",
-  "@context": "_context",
-  "@type": [
-    "esgf:grid-label:['esgf:grid_label', 'universal']",
-    "esgf:grid-label"
-  ]
+    "validation_key": "gr",
+    "ui_label": "Regridded Greenland",
+    "description": "regridded data reported on the data provider's preferred target grid",
+    "region": "greenland",
+    "@context": "_context",
+    "@type": [
+        "wcrp:grid_label",
+        "esgvoc:GridLabel",
+        "universal"
+    ],
+    "@id": "gr"
 }
