@@ -1,4 +1,3 @@
-
 name: ∆ src-data
 description: Sync JSON and @context changes from src-data to production, applying relevant updates.
 permissions:
@@ -11,9 +10,9 @@ on:
     branches:
       - "src-data"
     # Temporarily remove path restrictions to test if that's the issue
-    paths:
-      - '**/*.json'
-      - '**/_context'
+    # paths:
+    #   - '**/*.json'
+    #   - '**/_context'
   workflow_dispatch:
     inputs:
       debug:
@@ -25,7 +24,24 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-
+      - name: Debug trigger information
+        run: |
+          echo "🔍 Workflow triggered!"
+          echo "Event: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "Commit SHA: ${{ github.sha }}"
+          echo "Actor: ${{ github.actor }}"
+          
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            echo "=== Push event details ==="
+            echo "Before: ${{ github.event.before }}"
+            echo "After: ${{ github.event.after }}"
+            echo "Forced: ${{ github.event.forced }}"
+            echo "Compare URL: ${{ github.event.compare }}"
+          fi
+          
       - name: Checkout production branch
         uses: actions/checkout@v4
         with:
@@ -51,7 +67,6 @@ jobs:
           
           echo "=== After cleaning ==="
           ls -la || true
-          
       - name: Restore path from src-data branch
         uses: WCRP-CMIP/CMIPLD/actions/fetch_branch_path@main
         with:
