@@ -1,8 +1,8 @@
 
-        # Contribution Guidelines
-        Possible links to contribute are provided here. 
-        
-        ### Core CVs
+# Contribution Guidelines
+Possible links to contribute are provided here. 
+
+### Core CVs
 
 - [activity](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=activity.yml)
 - [frequency](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=frequency.yml)
@@ -30,5 +30,3 @@
 ### Organizations
 
 - [organisation](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=organisation.yml)
-### Ungrouped Forms
-
