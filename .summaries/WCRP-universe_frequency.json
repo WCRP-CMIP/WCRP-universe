@@ -1,0 +1,126 @@
+{
+    "Header": {
+        "file": "WCRP-universe_frequency.json",
+        "file_creation_date": "2025-11-10T12:45:45.706911",
+        "version": "fatal: No names found, cannot describe anything.",
+        "checksum": "md5: d1249796023967201f2766385e3ccef4",
+        "repo_url": "https://github.com/WCRP-CMIP/WCRP-universe",
+        "repo_prefix": "universal",
+        "last_commit": "41d1430154ee1b341395ce4c031cf7e10ca19cb4",
+        "comment": "This is an automatically generated file. Do not edit."
+    },
+    "frequency": {
+        "1hr": {
+            "description": "sampled hourly",
+            "long_name": "1 Hourly Frequency",
+            "ui_label": "",
+            "unit": "hour",
+            "validation_key": "1hr"
+        },
+        "1hrCM": {
+            "description": "monthly-mean diurnal cycle resolving each day into 1-hour means",
+            "long_name": "1 Hour Climatology Monthly",
+            "ui_label": "",
+            "unit": "hour",
+            "validation_key": "1hrCM"
+        },
+        "1hrPt": {
+            "description": "sampled hourly, at specified time point within an hour",
+            "long_name": "1 Hour Point",
+            "ui_label": "",
+            "unit": "hour",
+            "validation_key": "1hrPt"
+        },
+        "3hr": {
+            "description": "3 hourly mean samples",
+            "long_name": "3 Hourly Frequency",
+            "ui_label": "",
+            "unit": "hour",
+            "validation_key": "3hr"
+        },
+        "3hrPt": {
+            "description": "sampled 3 hourly, at specified time point within the time period",
+            "long_name": "3 Hour Point",
+            "ui_label": "",
+            "unit": "hour",
+            "validation_key": "3hrPt"
+        },
+        "6hr": {
+            "description": "6 hourly mean samples",
+            "long_name": "6 Hourly Frequency",
+            "ui_label": "",
+            "unit": "hour",
+            "validation_key": "6hr"
+        },
+        "6hrPt": {
+            "description": "sampled 6 hourly, at specified time point within the time period",
+            "long_name": "6 Hour Point",
+            "ui_label": "",
+            "unit": "hour",
+            "validation_key": "6hrPt"
+        },
+        "day": {
+            "description": "daily mean samples",
+            "long_name": "Daily Frequency",
+            "ui_label": "",
+            "unit": "day",
+            "validation_key": "day"
+        },
+        "dec": {
+            "description": "decadal mean samples",
+            "long_name": "Decadal Frequency",
+            "ui_label": "",
+            "unit": "decade",
+            "validation_key": "dec"
+        },
+        "fx": {
+            "description": "fixed (time invariant) field",
+            "long_name": "Fixed Frequency",
+            "ui_label": "",
+            "unit": "none",
+            "validation_key": "fx"
+        },
+        "mon": {
+            "description": "monthly mean samples",
+            "long_name": "Monthly Frequency",
+            "ui_label": "",
+            "unit": "month",
+            "validation_key": "mon"
+        },
+        "monC": {
+            "description": "monthly climatology computed from monthly mean samples",
+            "long_name": "Monthly Climatology",
+            "ui_label": "",
+            "unit": "month",
+            "validation_key": "monC"
+        },
+        "monPt": {
+            "description": "sampled monthly, at specified time point within the time period",
+            "long_name": "Monthly Point",
+            "ui_label": "",
+            "unit": "month",
+            "validation_key": "monPt"
+        },
+        "subhrPt": {
+            "description": "sampled sub-hourly, at specified time point within an hour",
+            "long_name": "Sub-Hourly Point",
+            "ui_label": "",
+            "unit": "minute",
+            "validation_key": "subhrPt"
+        },
+        "yr": {
+            "description": "annual mean samples",
+            "long_name": "Yearly Frequency",
+            "ui_label": "",
+            "unit": "year",
+            "validation_key": "yr"
+        },
+        "yrPt": {
+            "description": "sampled yearly, at specified time point within the time period",
+            "long_name": "Yearly Point",
+            "ui_label": "",
+            "unit": "year",
+            "validation_key": "yrPt"
+        }
+    }
+}

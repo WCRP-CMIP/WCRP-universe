@@ -1,10 +1,13 @@
 import cmipld
+import os
 from cmipld.utils.ldparse import *
 from cmipld.utils.checksum import version
 
 me = __file__.split('/')[-1].replace('.py','')
 
 def run(whoami, path, name, url, io):
+    
+    os.popen(f"ld2graph {me}").read()
     
     url = f'{whoami}:{me}/graph.jsonld'
     
