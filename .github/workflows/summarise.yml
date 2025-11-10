@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Get a list of directories with updated files
+      - name: Install CMIPLD
         id: install-cmipld
         uses: WCRP-CMIP/CMIPLD/actions/cmipld@main
       
@@ -31,7 +31,7 @@ jobs:
 
       - name: generate the summaries
         run: |
-          generate_summary .github/GENERATE_SUMMARY/
+          generate_summary .github/GENERATE_SUMMARIES/
 
       - name: List summary files
         run: ls -R .summaries/
@@ -42,6 +42,7 @@ jobs:
         with:
           name: summaries
           path: .summaries/
+          include-hidden-files: true
           
       
   display-main:
