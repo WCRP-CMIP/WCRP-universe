@@ -10,7 +10,7 @@ def run(whoami, path, name, url, io):
     
     data = cmipld.get(url,depth=1)['@graph']
     
-    summary = name_extract(data)
+    summary = name_entry(data)
     
-    location = f'{path}/{whoami}_{me}.json'
+    location = f'{path}/{name.lower()}_{me}.json'
     return location, me, summary

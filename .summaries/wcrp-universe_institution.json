@@ -1,12 +1,12 @@
 {
     "Header": {
-        "file": "universal_institution.json",
-        "file_creation_date": "2025-11-10T13:17:40.203613",
+        "file": "wcrp-universe_institution.json",
+        "file_creation_date": "2025-11-10T14:31:52.617702",
         "version": "fatal: No names found, cannot describe anything.",
         "checksum": "md5: 8f416a441f66274f59f6c15198946be1",
         "repo_url": "https://github.com/WCRP-CMIP/WCRP-universe",
         "repo_prefix": "universal",
-        "last_commit": "a46e34237ff404df9af39981bae70127941396bd",
+        "last_commit": "531808c2f593356dd248ef81f5e781e4980e9373",
         "comment": "This is an automatically generated file. Do not edit."
     },
     "institution": {

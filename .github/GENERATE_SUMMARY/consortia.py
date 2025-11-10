@@ -17,7 +17,7 @@ def run(whoami, path, name, url, io):
     
     
     for i in summary:
-        summary[i] = set(summary[i].get('members', {}).keys())
+        summary[i] = set(summary[i].get('members', dict()).keys())
     
-    location = f'{path}/{whoami}_{me}.json'
+    location = f'{path}/{name.lower()}_{me}.json'
     return location, me, summary

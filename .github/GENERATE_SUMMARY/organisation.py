@@ -12,5 +12,5 @@ def run(whoami, path, name, url, io):
     
     summary = name_entry(data,'ui_label')
     
-    location = f'{path}/{whoami}_{me}.json'
+    location = f'{path}/{name.lower()}_{me}.json'
     return location, me, summary
