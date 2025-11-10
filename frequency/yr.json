@@ -1,6 +1,7 @@
 {
     "validation_key": "yr",
     "ui_label": "",
+    "approx_interval": 365.0,
     "description": "annual mean samples",
     "long_name": "Yearly Frequency",
     "unit": "year",

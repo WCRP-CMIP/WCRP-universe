@@ -1,6 +1,7 @@
 {
     "validation_key": "6hr",
     "ui_label": "",
+    "approx_interval": 0.25,
     "description": "6 hourly mean samples",
     "long_name": "6 Hourly Frequency",
     "unit": "hour",

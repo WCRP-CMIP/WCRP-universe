@@ -1,6 +1,7 @@
 {
     "validation_key": "fx",
     "ui_label": "",
+    "approx_interval": 0,
     "description": "fixed (time invariant) field",
     "long_name": "Fixed Frequency",
     "unit": "none",

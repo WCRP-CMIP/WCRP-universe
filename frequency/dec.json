@@ -1,6 +1,7 @@
 {
     "validation_key": "dec",
     "ui_label": "",
+    "approx_interval": 3650.0,
     "description": "decadal mean samples",
     "long_name": "Decadal Frequency",
     "unit": "decade",

@@ -7,17 +7,17 @@ me = __file__.split('/')[-1].replace('.py','')
 
 def run(whoami, path, name, url, io):
     
-    os.popen(f"ld2graph {me}").read()
+    
     
     url = f'{whoami}:organisation/graph.jsonld'
     
     data = cmipld.get(url,depth=1)['@graph']
     
-    summary = name_extract(data,['validation-key','ui-label','url','members'])
+    summary = name_extract(data,['validation-key','ui_label','url','members'])
     
     
     for i in summary:
-        summary[i] = set(summary[i]['members'].keys())
+        summary[i] = set(summary[i].get('members', {}).keys())
     
-    location = f'{path}/{name}_{me}.json'
+    location = f'{path}/{whoami}_{me}.json'
     return location, me, summary
