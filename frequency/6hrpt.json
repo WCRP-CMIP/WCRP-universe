@@ -1,6 +1,7 @@
 {
     "validation_key": "6hrPt",
     "ui_label": "",
+    "approx_interval": 0.25,
     "description": "sampled 6 hourly, at specified time point within the time period",
     "long_name": "6 Hour Point",
     "unit": "hour",

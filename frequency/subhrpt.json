@@ -1,6 +1,7 @@
 {
     "validation_key": "subhrPt",
     "ui_label": "",
+    "approx_interval": 0.04166667,
     "description": "sampled sub-hourly, at specified time point within an hour",
     "long_name": "Sub-Hourly Point",
     "unit": "minute",

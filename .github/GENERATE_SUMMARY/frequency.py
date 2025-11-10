@@ -7,7 +7,7 @@ me = __file__.split('/')[-1].replace('.py','')
 
 def run(whoami, path, name, url, io):
     
-    os.popen(f"ld2graph {me}").read()
+    
     
     url = f'{whoami}:{me}/graph.jsonld'
     
@@ -17,5 +17,5 @@ def run(whoami, path, name, url, io):
     
     summary = name_extract(data)
     
-    location = f'{path}/{name}_{me}.json'
+    location = f'{path}/{whoami}_{me}.json'
     return location, me, summary

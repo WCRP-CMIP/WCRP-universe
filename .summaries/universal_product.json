@@ -1,0 +1,34 @@
+{
+    "Header": {
+        "file": "universal_product.json",
+        "file_creation_date": "2025-11-10T13:17:40.570706",
+        "version": "fatal: No names found, cannot describe anything.",
+        "checksum": "md5: 1804a446b90a10f3f75055682a5a9132",
+        "repo_url": "https://github.com/WCRP-CMIP/WCRP-universe",
+        "repo_prefix": "universal",
+        "last_commit": "a46e34237ff404df9af39981bae70127941396bd",
+        "comment": "This is an automatically generated file. Do not edit."
+    },
+    "product": {
+        "derived": {
+            "description": "Data that has been processed or transformed from raw model output. Derived data includes value-added products such as anomalies, indices, or other statistics that are computed from the original model outputs.",
+            "ui_label": "",
+            "validation_key": "derived"
+        },
+        "forcing-dataset": {
+            "description": "Data sets used to drive model simulations. These include external factors like greenhouse gas concentrations, solar radiation, and land use changes that influence the climate model outputs.",
+            "ui_label": "",
+            "validation_key": "forcing-dataset"
+        },
+        "model-output": {
+            "description": "Output produced from a model simulation. This includes the various data points and metrics generated as a result of running climate models, which simulate physical, chemical, and biological processes affecting the climate system.",
+            "ui_label": "",
+            "validation_key": "model-output"
+        },
+        "observations": {
+            "description": "Data collected from direct measurements of the climate system. This includes data from ground stations, satellites, buoys, and other observational platforms, which serve as a reference for validating and comparing model outputs.",
+            "ui_label": "",
+            "validation_key": "observations"
+        }
+    }
+}

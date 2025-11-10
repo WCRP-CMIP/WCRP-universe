@@ -1,12 +1,12 @@
 {
     "Header": {
-        "file": "WCRP-universe_activity.json",
-        "file_creation_date": "2025-11-10T12:45:46.693915",
+        "file": "universal_activity.json",
+        "file_creation_date": "2025-11-10T12:50:11.471882",
         "version": "fatal: No names found, cannot describe anything.",
         "checksum": "md5: 57f0ad6ba0e9b45edc1d624a85e84aaa",
         "repo_url": "https://github.com/WCRP-CMIP/WCRP-universe",
         "repo_prefix": "universal",
-        "last_commit": "41d1430154ee1b341395ce4c031cf7e10ca19cb4",
+        "last_commit": "a46e34237ff404df9af39981bae70127941396bd",
         "comment": "This is an automatically generated file. Do not edit."
     },
     "activity": {
