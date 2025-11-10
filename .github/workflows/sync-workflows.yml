@@ -39,6 +39,9 @@ jobs:
 
           # Copy workflows directory from remote main if present
           git checkout origin/main -- .github/workflows/ || true
+
+          # Copy workflows directory from remote main if present
+          git checkout origin/main -- .github/GENERATE_SUMMARY/ || true
           
           # Copy CONTRIBUTING.md from remote main if present
           git cat-file -e origin/main:.github/CONTRIBUTING.md 2>/dev/null && \

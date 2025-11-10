@@ -1,4 +1,4 @@
-name: generate_summaries
+name: ⌮ Summarise
 description: generate a summary from the src-data branch and sync to production
 permissions:
   contents: write
@@ -32,6 +32,10 @@ jobs:
       - name: generate the summaries
         run: |
           generate_summary .github/GENERATE_SUMMARY/
+
+      - name: List summary files
+        run: ls -R .summaries/
+      
 
       - name: Upload folder as artifact
         uses: actions/upload-artifact@v4
