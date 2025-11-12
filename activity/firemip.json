@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "type": "activity",
+  "id": "firemip",
+  "name": "FireMIP",
+  "cmip_acronym": "FireMIP",
+  "long_name": "Fire Modeling Intercomparison Project",
+  "url": "https://www.senckenberg.de/en/institutes/sbik-f/quantitative-biogeography/qb-projects/firemip/",
+  "drs_name": "FireMIP"
+}
