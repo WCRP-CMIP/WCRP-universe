@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "type": "activity",
+  "id": "irrmip",
+  "name": "IRRMIP",
+  "cmip_acronym": "IRRMIP",
+  "long_name": "Irrigation Model Intercomparison Project",
+  "url": "https://hydr.vub.be/projects/irrmip",
+  "drs_name": "IRRMIP"
+}
