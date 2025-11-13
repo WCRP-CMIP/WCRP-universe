@@ -1,0 +1,20 @@
+name: ⚇ CI
+description: Run a series of continuous integration tasks.
+permissions:
+  contents: write
+  pages: write
+  actions: write
+  id-token: write
+
+
+on:
+  schedule:
+    - cron: "1 1 * * 6"
+
+  workflow_dispatch:
+
+
+jobs:
+
+  links:
+    uses: WCRP-CMIP/CMIPLD/.github/workflows/linkcheck.yml@main
