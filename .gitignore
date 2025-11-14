@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# But not these file types
+!*.csv
+!*.md
+!*.CSV
+!*.MD
+
+# Don't ignore the .gitignore file itself
+!.gitignore
+
+# Don't ignore directories (so git can traverse them)
+!*/
+
+# If you want to keep specific directories or their contents
+# uncomment and modify the following:
+# !specific_folder/
+# !specific_folder/**
