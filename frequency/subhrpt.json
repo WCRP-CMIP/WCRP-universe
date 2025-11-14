@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "validation_key": "subhrPt",
     "ui_label": "",
     "description": "sampled sub-hourly, at specified time point within an hour",
@@ -12,4 +13,19 @@
         "universal"
     ],
     "@id": "subhrpt"
+=======
+  "validation_key": "subhrPt",
+  "ui_label": "",
+  "approx_interval": 0.04166667,
+  "description": "sampled sub-hourly, at specified time point within an hour",
+  "long_name": "Sub-Hourly Point",
+  "unit": "minute",
+  "@context": "_context",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "subhrpt"
+>>>>>>> ecfbed5a (correct context)
 }

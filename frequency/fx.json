@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "validation_key": "fx",
     "ui_label": "",
     "description": "fixed (time invariant) field",
@@ -12,4 +13,19 @@
         "universal"
     ],
     "@id": "fx"
+=======
+  "validation_key": "fx",
+  "ui_label": "",
+  "approx_interval": 0,
+  "description": "fixed (time invariant) field",
+  "long_name": "Fixed Frequency",
+  "unit": "none",
+  "@context": "_context",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "fx"
+>>>>>>> ecfbed5a (correct context)
 }

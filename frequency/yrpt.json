@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "validation_key": "yrPt",
     "ui_label": "",
     "description": "sampled yearly, at specified time point within the time period",
@@ -12,4 +13,19 @@
         "universal"
     ],
     "@id": "yrpt"
+=======
+  "validation_key": "yrPt",
+  "ui_label": "",
+  "approx_interval": 365.0,
+  "description": "sampled yearly, at specified time point within the time period",
+  "long_name": "Yearly Point",
+  "unit": "year",
+  "@context": "_context",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "yrpt"
+>>>>>>> ecfbed5a (correct context)
 }

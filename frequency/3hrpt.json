@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "validation_key": "3hrPt",
     "ui_label": "",
     "description": "sampled 3 hourly, at specified time point within the time period",
@@ -12,4 +13,19 @@
         "universal"
     ],
     "@id": "3hrpt"
+=======
+  "validation_key": "3hrPt",
+  "ui_label": "",
+  "approx_interval": 0.125,
+  "description": "sampled 3 hourly, at specified time point within the time period",
+  "long_name": "3 Hour Point",
+  "unit": "hour",
+  "@context": "_context",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "3hrpt"
+>>>>>>> ecfbed5a (correct context)
 }
