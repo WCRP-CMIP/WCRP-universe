@@ -1,8 +1,8 @@
 {
     "validation_key": "3hr",
     "ui_label": "",
-    "approx_interval": 0.125,
     "description": "3 hourly mean samples",
+    "approx_interval": 0.125,
     "long_name": "3 Hourly Frequency",
     "unit": "hour",
     "@context": "_context",

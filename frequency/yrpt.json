@@ -1,8 +1,8 @@
 {
     "validation_key": "yrPt",
     "ui_label": "",
-    "approx_interval": 365.0,
     "description": "sampled yearly, at specified time point within the time period",
+    "approx_interval": 365.0,
     "long_name": "Yearly Point",
     "unit": "year",
     "@context": "_context",

@@ -1,8 +1,8 @@
 {
     "validation_key": "monC",
     "ui_label": "",
-    "approx_interval": 30,
     "description": "monthly climatology computed from monthly mean samples",
+    "approx_interval": 30,
     "long_name": "Monthly Climatology",
     "unit": "month",
     "@context": "_context",

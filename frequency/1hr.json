@@ -1,8 +1,8 @@
 {
     "validation_key": "1hr",
     "ui_label": "",
-    "approx_interval": 0.04166667,
     "description": "sampled hourly",
+    "approx_interval": 0.04166667,
     "long_name": "1 Hourly Frequency",
     "unit": "hour",
     "@context": "_context",
