@@ -1,0 +1,31 @@
+{
+<<<<<<< HEAD
+    "validation_key": "monPt",
+    "ui_label": "",
+    "description": "sampled monthly, at specified time point within the time period",
+    "approx_interval": 30,
+    "long_name": "Monthly Point",
+    "unit": "month",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "monpt"
+=======
+  "validation_key": "monPt",
+  "ui_label": "",
+  "approx_interval": 30,
+  "description": "sampled monthly, at specified time point within the time period",
+  "long_name": "Monthly Point",
+  "unit": "month",
+  "@context": "_context",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "monpt"
+>>>>>>> ecfbed5a (correct context)
+}
