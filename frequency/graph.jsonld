@@ -1,0 +1,216 @@
+{
+  "@context": {
+  "@base": "https://wcrp-cmip.github.io/WCRP-universe/frequency/",
+  "@vocab": "https://esgf.github.io/esgf-vocab/api_documentation/data_descriptors.html#esgvoc.api.data_descriptors.Frequency."
+},
+  "@graph": [
+    {
+  "validation_key": "1hr",
+  "ui_label": "1 Hourly Frequency",
+  "approx_interval": 0.04166667,
+  "description": "sampled hourly",
+  "unit": "hour",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "1hr"
+}
+    ,{
+  "validation_key": "1hrCM",
+  "ui_label": "1 Hour Climatology Monthly",
+  "approx_interval": 30.0,
+  "description": "monthly-mean diurnal cycle resolving each day into 1-hour means",
+  "unit": "hour",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "1hrcm"
+}
+    ,{
+  "validation_key": "1hrPt",
+  "ui_label": "1 Hour Point",
+  "approx_interval": 0.04166667,
+  "description": "sampled hourly, at specified time point within an hour",
+  "unit": "hour",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "1hrpt"
+}
+    ,{
+  "validation_key": "3hr",
+  "ui_label": "3 Hourly Frequency",
+  "approx_interval": 0.125,
+  "description": "3 hourly mean samples",
+  "unit": "hour",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "3hr"
+}
+    ,{
+  "validation_key": "3hrPt",
+  "ui_label": "3 Hour Point",
+  "approx_interval": 0.125,
+  "description": "sampled 3 hourly, at specified time point within the time period",
+  "unit": "hour",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "3hrpt"
+}
+    ,{
+  "validation_key": "6hr",
+  "ui_label": "6 Hourly Frequency",
+  "approx_interval": 0.25,
+  "description": "6 hourly mean samples",
+  "unit": "hour",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "6hr"
+}
+    ,{
+  "validation_key": "6hrPt",
+  "ui_label": "6 Hour Point",
+  "approx_interval": 0.25,
+  "description": "sampled 6 hourly, at specified time point within the time period",
+  "unit": "hour",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "6hrpt"
+}
+    ,{
+  "validation_key": "day",
+  "ui_label": "Daily Frequency",
+  "approx_interval": 1.0,
+  "description": "daily mean samples",
+  "unit": "day",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "day"
+}
+    ,{
+  "validation_key": "dec",
+  "ui_label": "Decadal Frequency",
+  "approx_interval": 3650.0,
+  "description": "decadal mean samples",
+  "unit": "decade",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "dec"
+}
+    ,{
+  "validation_key": "fx",
+  "ui_label": "Fixed Frequency",
+  "approx_interval": 0,
+  "description": "fixed (time invariant) field",
+  "unit": "none",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "fx"
+}
+    ,{
+  "validation_key": "mon",
+  "ui_label": "Monthly Frequency",
+  "approx_interval": 30,
+  "description": "monthly mean samples",
+  "unit": "month",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "mon"
+}
+    ,{
+  "validation_key": "monC",
+  "ui_label": "Monthly Climatology",
+  "approx_interval": 30,
+  "description": "monthly climatology computed from monthly mean samples",
+  "unit": "month",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "monc"
+}
+    ,{
+  "validation_key": "monPt",
+  "ui_label": "Monthly Point",
+  "approx_interval": 30,
+  "description": "sampled monthly, at specified time point within the time period",
+  "unit": "month",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "monpt"
+}
+    ,{
+  "validation_key": "subhrPt",
+  "ui_label": "Sub-Hourly Point",
+  "approx_interval": 0.04166667,
+  "description": "sampled sub-hourly, at specified time point within an hour",
+  "unit": "minute",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "subhrpt"
+}
+    ,{
+  "validation_key": "yr",
+  "ui_label": "Yearly Frequency",
+  "approx_interval": 365.0,
+  "description": "annual mean samples",
+  "unit": "year",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "yr"
+}
+    ,{
+  "validation_key": "yrPt",
+  "ui_label": "Yearly Point",
+  "approx_interval": 365.0,
+  "description": "sampled yearly, at specified time point within the time period",
+  "unit": "year",
+  "@type": [
+    "wcrp:frequency",
+    "esgvoc:Frequency",
+    "universal"
+  ],
+  "@id": "yrpt"
+}
+  ]
+}
