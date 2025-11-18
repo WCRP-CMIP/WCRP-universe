@@ -1,24 +1,8 @@
 {
-<<<<<<< HEAD
-    "validation_key": "6hrPt",
-    "ui_label": "",
-    "description": "sampled 6 hourly, at specified time point within the time period",
-    "approx_interval": 0.25,
-    "long_name": "6 Hour Point",
-    "unit": "hour",
-    "@context": "_context",
-    "@type": [
-        "wcrp:frequency",
-        "esgvoc:Frequency",
-        "universal"
-    ],
-    "@id": "6hrpt"
-=======
   "validation_key": "6hrPt",
-  "ui_label": "",
+  "ui_label": "6 Hour Point",
   "approx_interval": 0.25,
   "description": "sampled 6 hourly, at specified time point within the time period",
-  "long_name": "6 Hour Point",
   "unit": "hour",
   "@context": "_context",
   "@type": [
@@ -27,5 +11,4 @@
     "universal"
   ],
   "@id": "6hrpt"
->>>>>>> ecfbed5a (correct context)
 }

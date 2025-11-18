@@ -1,24 +1,8 @@
 {
-<<<<<<< HEAD
-    "validation_key": "1hrCM",
-    "ui_label": "",
-    "description": "monthly-mean diurnal cycle resolving each day into 1-hour means",
-    "approx_interval": 30.0,
-    "long_name": "1 Hour Climatology Monthly",
-    "unit": "hour",
-    "@context": "_context",
-    "@type": [
-        "wcrp:frequency",
-        "esgvoc:Frequency",
-        "universal"
-    ],
-    "@id": "1hrcm"
-=======
   "validation_key": "1hrCM",
-  "ui_label": "",
+  "ui_label": "1 Hour Climatology Monthly",
   "approx_interval": 30.0,
   "description": "monthly-mean diurnal cycle resolving each day into 1-hour means",
-  "long_name": "1 Hour Climatology Monthly",
   "unit": "hour",
   "@context": "_context",
   "@type": [
@@ -27,5 +11,4 @@
     "universal"
   ],
   "@id": "1hrcm"
->>>>>>> ecfbed5a (correct context)
 }

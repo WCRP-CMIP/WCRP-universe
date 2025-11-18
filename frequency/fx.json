@@ -1,24 +1,8 @@
 {
-<<<<<<< HEAD
-    "validation_key": "fx",
-    "ui_label": "",
-    "description": "fixed (time invariant) field",
-    "approx_interval": 0,
-    "long_name": "Fixed Frequency",
-    "unit": "none",
-    "@context": "_context",
-    "@type": [
-        "wcrp:frequency",
-        "esgvoc:Frequency",
-        "universal"
-    ],
-    "@id": "fx"
-=======
   "validation_key": "fx",
-  "ui_label": "",
+  "ui_label": "Fixed Frequency",
   "approx_interval": 0,
   "description": "fixed (time invariant) field",
-  "long_name": "Fixed Frequency",
   "unit": "none",
   "@context": "_context",
   "@type": [
@@ -27,5 +11,4 @@
     "universal"
   ],
   "@id": "fx"
->>>>>>> ecfbed5a (correct context)
 }

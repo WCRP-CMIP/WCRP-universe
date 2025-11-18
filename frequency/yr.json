@@ -1,24 +1,8 @@
 {
-<<<<<<< HEAD
-    "validation_key": "yr",
-    "ui_label": "",
-    "description": "annual mean samples",
-    "approx_interval": 365.0,
-    "long_name": "Yearly Frequency",
-    "unit": "year",
-    "@context": "_context",
-    "@type": [
-        "wcrp:frequency",
-        "esgvoc:Frequency",
-        "universal"
-    ],
-    "@id": "yr"
-=======
   "validation_key": "yr",
-  "ui_label": "",
+  "ui_label": "Yearly Frequency",
   "approx_interval": 365.0,
   "description": "annual mean samples",
-  "long_name": "Yearly Frequency",
   "unit": "year",
   "@context": "_context",
   "@type": [
@@ -27,5 +11,4 @@
     "universal"
   ],
   "@id": "yr"
->>>>>>> ecfbed5a (correct context)
 }
