@@ -1,24 +1,8 @@
 {
-<<<<<<< HEAD
-    "validation_key": "dec",
-    "ui_label": "",
-    "description": "decadal mean samples",
-    "approx_interval": 3650.0,
-    "long_name": "Decadal Frequency",
-    "unit": "decade",
-    "@context": "_context",
-    "@type": [
-        "wcrp:frequency",
-        "esgvoc:Frequency",
-        "universal"
-    ],
-    "@id": "dec"
-=======
   "validation_key": "dec",
-  "ui_label": "",
+  "ui_label": "Decadal Frequency",
   "approx_interval": 3650.0,
   "description": "decadal mean samples",
-  "long_name": "Decadal Frequency",
   "unit": "decade",
   "@context": "_context",
   "@type": [
@@ -27,5 +11,4 @@
     "universal"
   ],
   "@id": "dec"
->>>>>>> ecfbed5a (correct context)
 }

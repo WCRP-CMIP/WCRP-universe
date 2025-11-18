@@ -1,24 +1,8 @@
 {
-<<<<<<< HEAD
-    "validation_key": "3hr",
-    "ui_label": "",
-    "description": "3 hourly mean samples",
-    "approx_interval": 0.125,
-    "long_name": "3 Hourly Frequency",
-    "unit": "hour",
-    "@context": "_context",
-    "@type": [
-        "wcrp:frequency",
-        "esgvoc:Frequency",
-        "universal"
-    ],
-    "@id": "3hr"
-=======
   "validation_key": "3hr",
-  "ui_label": "",
+  "ui_label": "3 Hourly Frequency",
   "approx_interval": 0.125,
   "description": "3 hourly mean samples",
-  "long_name": "3 Hourly Frequency",
   "unit": "hour",
   "@context": "_context",
   "@type": [
@@ -27,5 +11,4 @@
     "universal"
   ],
   "@id": "3hr"
->>>>>>> ecfbed5a (correct context)
 }

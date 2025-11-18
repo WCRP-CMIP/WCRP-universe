@@ -1,24 +1,8 @@
 {
-<<<<<<< HEAD
-    "validation_key": "mon",
-    "ui_label": "",
-    "description": "monthly mean samples",
-    "approx_interval": 30,
-    "long_name": "Monthly Frequency",
-    "unit": "month",
-    "@context": "_context",
-    "@type": [
-        "wcrp:frequency",
-        "esgvoc:Frequency",
-        "universal"
-    ],
-    "@id": "mon"
-=======
   "validation_key": "mon",
-  "ui_label": "",
+  "ui_label": "Monthly Frequency",
   "approx_interval": 30,
   "description": "monthly mean samples",
-  "long_name": "Monthly Frequency",
   "unit": "month",
   "@context": "_context",
   "@type": [
@@ -27,5 +11,4 @@
     "universal"
   ],
   "@id": "mon"
->>>>>>> ecfbed5a (correct context)
 }
