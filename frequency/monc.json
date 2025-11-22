@@ -1,14 +1,14 @@
 {
-  "validation_key": "monC",
-  "ui_label": "Monthly Climatology",
-  "approx_interval": 30,
-  "description": "monthly climatology computed from monthly mean samples",
-  "unit": "month",
-  "@context": "_context",
-  "@type": [
-    "wcrp:frequency",
-    "esgvoc:Frequency",
-    "universal"
-  ],
-  "@id": "monc"
+    "validation_key": "monC",
+    "ui_label": "Monthly Climatology",
+    "description": "monthly climatology computed from monthly mean samples",
+    "approx_interval": 30,
+    "unit": "month",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "monc"
 }
