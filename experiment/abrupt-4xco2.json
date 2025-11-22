@@ -18,6 +18,6 @@
     "required_model_components": [
         "aogcm"
     ],
-    "start_timestamp": "1850-01-01",
+    "start_timestamp": null,
     "tier": 1
 }
