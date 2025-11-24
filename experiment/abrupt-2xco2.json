@@ -4,6 +4,8 @@
     "type": "experiment",
     "description": "Abrupt doubling of atmospheric carbon dioxide levels. All other conditions are kept the same as piControl.",
     "drs_name": "abrupt-2xCO2",
+    "start_timestamp": null,
+    "end_timestamp": null,
     "activity": "cfmip",
     "additional_allowed_model_components": [
         "aer",
@@ -11,13 +13,11 @@
         "bgc"
     ],
     "branch_information": "Branch from piControl at a time of your choosing",
-    "end_timestamp": null,
     "min_ensemble_size": 1,
     "parent_activity": "cmip",
     "parent_experiment": "picontrol",
     "required_model_components": [
         "aogcm"
     ],
-    "start_timestamp": null,
     "tier": 1
 }

@@ -4,6 +4,8 @@
     "type": "experiment",
     "description": "Simulation of the climate of the recent past with prescribed sea surface temperatures and sea ice concentrations.",
     "drs_name": "amip",
+    "start_timestamp": null,
+    "end_timestamp": null,
     "activity": "cmip",
     "additional_allowed_model_components": [
         "aer",
@@ -17,5 +19,6 @@
     "parent_mip_era": null,
     "required_model_components": [
         "agcm"
-    ]
+    ],
+    "tier": 1
 }
