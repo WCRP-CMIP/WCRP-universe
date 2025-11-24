@@ -27,16 +27,47 @@ class ExperimentUniverse(BaseModel):
     description: str
     activity: str
     additional_allowed_model_components: list[str]
-    branch_information: str | None
+    branch_information: str | None = "dont_write"
     end_timestamp: datetime | None
     min_ensemble_size: int
-    min_number_yrs_per_sim: float | None
-    parent_activity: str | None
-    parent_experiment: str | None
-    parent_mip_era: str | None
+    min_number_yrs_per_sim: float | None | str = "dont_write"
+    parent_activity: str | None = "dont_write"
+    parent_experiment: str | None = "dont_write"
+    parent_mip_era: str | None = "dont_write"
     required_model_components: list[str]
     start_timestamp: datetime | None
-    tier: int
+    tier: int | str = "dont_write"
+
+    def write_file(self, universe_root: Path) -> None:
+        id = self.drs_name.lower()
+        content = {
+            "@context": "000_context.jsonld",
+            "id": id,
+            "type": "experiment",
+            "drs_name": self.drs_name,
+            "description": self.description,
+            "activity": self.activity,
+            "additional_allowed_model_components": self.additional_allowed_model_components,
+            "end_timestamp": self.end_timestamp,
+            "min_ensemble_size": self.min_ensemble_size,
+            "required_model_components": self.required_model_components,
+            "start_timestamp": self.start_timestamp,
+        }
+
+        for attr in (
+            "branch_information",
+            "min_number_yrs_per_sim",
+            "parent_activity",
+            "parent_experiment",
+            "parent_mip_era",
+            "tier",
+        ):
+            val = getattr(self, attr)
+            if val != "dont_write":
+                content[attr] = val
+
+        out_file = str(universe_root / "experiment" / f"{id}.json")
+        write_file(out_file, content)
 
 
 class ExperimentProject(BaseModel):
@@ -66,7 +97,7 @@ class ExperimentProject(BaseModel):
             if val != "dont_write":
                 content[attr] = val
 
-        out_file = str(project_root / f"experiment/{self.id}.json")
+        out_file = str(project_root / "experiment" / f"{self.id}.json")
         write_file(out_file, content)
 
 
@@ -140,11 +171,11 @@ class Holder(BaseModel):
             end_timestamp=None,
             min_ensemble_size=1,
             # Defined in project
-            min_number_yrs_per_sim=None,
+            min_number_yrs_per_sim="dont_write",
             parent_activity="cmip",
             parent_experiment="picontrol",
             # Defined in project
-            parent_mip_era=None,
+            parent_mip_era="dont_write",
             required_model_components=["aogcm"],
             start_timestamp=None,
             tier=1,
@@ -165,15 +196,43 @@ class Holder(BaseModel):
 
         return self
 
-    def write_files(self, project_root: Path) -> None:
+    def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
 
+        for experiment_universe in self.experiments_universe:
+            experiment_universe.write_file(universe_root)
+
+
+def sort_keys(
+    content: dict[str, Any],
+    header_keys: tuple[str, ...] = (
+        "@context",
+        "id",
+        "type",
+        "description",
+        "drs_name",
+    ),
+) -> dict[str, Any]:
+    res = {}
+    for k in header_keys:
+        if k in content:
+            res[k] = content[k]
+
+    for k in sorted(content):
+        if k in header_keys:
+            continue
+
+        res[k] = content[k]
+
+    return res
+
 
 def write_file(out_file: str, content: dict[str, Any]) -> None:
-    assert False, "TODO: sort into order I like"
+    content_sorted = sort_keys(content)
     with open(out_file, "w") as fh:
-        json.dump(content, fh, indent=4)
+        json.dump(content_sorted, fh, indent=4)
+        fh.write("\n")
 
     print(f"Wrote {out_file}")
 
@@ -186,6 +245,7 @@ def get_tier(experiment: str) -> int:
 def main():
     REPO_ROOT = Path(__file__).parents[1]
     project_root = REPO_ROOT / ".." / "CMIP7-CVs"
+    universe_root = REPO_ROOT
 
     holder = Holder(experiments_project=[], experiments_universe=[], activities=[])
 
@@ -197,7 +257,7 @@ def main():
     # Write out universe experiment entries
     # Write out project activity entries
 
-    holder.write_files(project_root=project_root)
+    holder.write_files(project_root=project_root, universe_root=universe_root)
     assert False
     bases = ["vl", "ln", "l", "ml", "m", "hl", "h"]
 
