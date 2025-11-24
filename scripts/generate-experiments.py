@@ -458,6 +458,18 @@ def main():
     holder.add_1pctco2_entries()
     holder.add_abruptco2_entries()
     holder.add_amip_entries()
+    # piControl
+    # hist
+    # scenarios
+    # scenarios for AerChemMIP
+    # ERF piClim*
+    # Rest of C4MIP stuff
+    # DAMIP
+    # dcpp
+    # GeoMIP
+    # LMIP
+    # PMIP
+
     # Generate entries as objects
     # Write out project experiment entries
     # Write out universe experiment entries
