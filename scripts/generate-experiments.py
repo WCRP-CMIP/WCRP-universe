@@ -113,6 +113,18 @@ class ActivityProject(BaseModel):
     experiments: list[str]
     urls: list[str]
 
+    def write_file(self, project_root: Path) -> None:
+        content = {
+            "@context": "000_context.jsonld",
+            "id": self.id,
+            "type": "activity",
+            "experiments": sorted(self.experiments),
+            "urls": sorted(self.urls),
+        }
+
+        out_file = str(project_root / "activity" / f"{self.id}.json")
+        write_file(out_file, content)
+
 
 class Holder(BaseModel):
     """
@@ -202,6 +214,9 @@ class Holder(BaseModel):
 
         for experiment_universe in self.experiments_universe:
             experiment_universe.write_file(universe_root)
+
+        for activity in self.activities:
+            activity.write_file(project_root)
 
 
 def sort_keys(
