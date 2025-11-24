@@ -145,6 +145,20 @@ class Holder(BaseModel):
     def initialise_activities(self) -> "Holder":
         self.activities = [
             ActivityProject(
+                id="c4mip",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-17-8141-2024",
+                    "https://doi.org/10.5194/egusphere-2024-3356",
+                    "https://doi.org/10.5194/gmd-9-2853-2016",
+                ],
+            ),
+            ActivityProject(
+                id="cfmip",
+                experiments=[],
+                urls=["https://doi.org/10.5194/gmd-10-359-2017"],
+            ),
+            ActivityProject(
                 id="cmip",
                 experiments=[],
                 urls=["https://doi.org/10.5194/gmd-18-6671-2025"],
@@ -153,11 +167,6 @@ class Holder(BaseModel):
                 id="scenariomip",
                 experiments=[],
                 urls=["https://doi.org/10.5194/egusphere-2024-3765"],
-            ),
-            ActivityProject(
-                id="cfmip",
-                experiments=[],
-                urls=["https://doi.org/10.5194/gmd-10-359-2017"],
             ),
         ]
 
@@ -176,40 +185,78 @@ class Holder(BaseModel):
         return self
 
     def add_1pctco2_entries(self) -> "Holder":
-        univ = ExperimentUniverse(
-            drs_name="1pctCO2",
-            description=(
-                "1% per year increase in atmospheric carbon dioxide levels. "
-                "All other conditions are kept the same as piControl."
+        for (
+            drs_name,
+            description_start,
+            activity,
+            required_model_components,
+            additional_allowed_model_components,
+        ) in (
+            (
+                "1pctCO2",
+                "",
+                "cmip",
+                ["aogcm"],
+                ["aer", "chem", "bgc"],
             ),
-            activity="cmip",
-            additional_allowed_model_components=["aer", "chem", "bgc"],
-            branch_information="Branch from piControl at a time of your choosing",
-            end_timestamp=None,
-            min_ensemble_size=1,
-            # Defined in project
-            min_number_yrs_per_sim="dont_write",
-            parent_activity="cmip",
-            parent_experiment="picontrol",
-            # Defined in project
-            parent_mip_era="dont_write",
-            required_model_components=["aogcm"],
-            start_timestamp=None,
-            tier=1,
-        )
+            (
+                "1pctCO2-bgc",
+                (
+                    "Biogeochemically coupled simulation "
+                    "(i.e. the carbon cycle only 'sees' the increase in atmospheric carbon dioxide, "
+                    "not any change in temperature) of a "
+                ),
+                "c4mip",
+                ["aogcm", "bgc"],
+                ["aer", "chem"],
+            ),
+            (
+                "1pctCO2-rad",
+                (
+                    "Radiatively coupled simulation "
+                    "(i.e. the carbon cycle only 'sees' the increase in temperature, "
+                    "not any change in atmospheric carbon dioxide) of a "
+                ),
+                "c4mip",
+                ["aogcm", "bgc"],
+                ["aer", "chem"],
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=(
+                    f"{description_start}"
+                    "1% per year increase in atmospheric carbon dioxide levels. "
+                    "All other conditions are kept the same as piControl."
+                ),
+                activity=activity,
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information="Branch from piControl at a time of your choosing",
+                end_timestamp=None,
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity="cmip",
+                parent_experiment="picontrol",
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=required_model_components,
+                start_timestamp=None,
+                tier=1,
+            )
 
-        self.experiments_universe.append(univ)
+            self.experiments_universe.append(univ)
 
-        proj = ExperimentProject(
-            id=univ.drs_name.lower(),
-            activity=univ.activity,
-            min_number_yrs_per_sim=150,
-            parent_mip_era="cmip7",
-            tier=1,
-        )
-        self.experiments_project.append(proj)
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                min_number_yrs_per_sim=150,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
 
-        self.add_experiment_to_activity(proj)
+            self.add_experiment_to_activity(proj)
 
         return self
 
