@@ -152,6 +152,13 @@ class Holder(BaseModel):
     def initialise_activities(self) -> "Holder":
         self.activities = [
             ActivityProject(
+                id="aerchemmip",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-10-585-2017",
+                ],
+            ),
+            ActivityProject(
                 id="c4mip",
                 experiments=[],
                 urls=[
@@ -625,6 +632,10 @@ class Holder(BaseModel):
         return res
 
     @staticmethod
+    def get_scenario_drs_name(scenario_acronym: str) -> str:
+        return f"scen7-{scenario_acronym}"
+
+    @staticmethod
     def get_scenario_esm_drs_name(scenario_drs_name: str) -> str:
         return f"esm-{scenario_drs_name}"
 
@@ -678,7 +689,7 @@ class Holder(BaseModel):
         ]
 
         for acronym, description_base in acronym_descriptions:
-            drs_name = f"scen7-{acronym}"
+            drs_name = self.get_scenario_drs_name(acronym)
             drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
             if "CMIP7 ScenarioMIP" not in description_base:
                 raise AssertionError(description_base)
@@ -729,6 +740,82 @@ class Holder(BaseModel):
             self.experiments_universe.append(univ_esm_ext)
             self.experiments_project.append(proj_esm_ext)
             self.add_experiment_to_activity(proj_esm_ext)
+
+        return self
+
+    def add_scenario_aerchemmip_entries(self) -> "Holder":
+        for base in ["vl", "h"]:
+            conc_driven_drs_name = self.get_scenario_drs_name(base)
+            for base_drs_name in [
+                conc_driven_drs_name,
+                self.get_scenario_esm_drs_name(conc_driven_drs_name),
+            ]:
+                base_experiment_universe_l = [
+                    v for v in self.experiments_universe if v.drs_name == base_drs_name
+                ]
+                if len(base_experiment_universe_l) != 1:
+                    raise AssertionError(base_drs_name)
+                base_experiment_universe = base_experiment_universe_l[0]
+
+                for (
+                    suffix,
+                    required_model_components,
+                    additional_allowed_model_components,
+                    desc_suffix,
+                ) in (
+                    (
+                        "-AQ",
+                        ["aogcm", "aer", "chem"],
+                        ["bgc"],
+                        (
+                            "This is for models with interactive chemistry. "
+                            "Models without interactive chemistry should run "
+                            f"`{base_experiment_universe.drs_name}-Aer` instead."
+                        ),
+                    ),
+                    (
+                        "-Aer",
+                        ["aogcm", "aer"],
+                        ["bgc", "chem"],
+                        (
+                            "This is for models without interactive chemistry. "
+                            "Models with interactive chemistry should run "
+                            f"`{base_experiment_universe.drs_name}-Aq` instead."
+                        ),
+                    ),
+                ):
+                    aerchemmip_experiment_universe = (
+                        base_experiment_universe.model_copy()
+                    )
+                    aerchemmip_experiment_universe.drs_name = (
+                        f"{aerchemmip_experiment_universe.drs_name}{suffix}"
+                    )
+                    aerchemmip_experiment_universe.activity = "aerchemmip"
+
+                    desc_base = aerchemmip_experiment_universe.description.split(
+                        " Run with prescribed"
+                    )[0]
+                    aerchemmip_experiment_universe.description = (
+                        f"{desc_base} "
+                        "Altered to use high aerosol and tropospheric non-methane ozone precursor emissions. "
+                        f"{desc_suffix}"
+                    )
+
+                    aerchemmip_experiment_universe.min_ensemble_size = 3
+                    aerchemmip_experiment_universe.required_model_components = (
+                        required_model_components
+                    )
+                    aerchemmip_experiment_universe.additional_allowed_model_components = additional_allowed_model_components
+
+                    aerchemmip_experiment_project = self.get_scenario_project(
+                        aerchemmip_experiment_universe
+                    )
+                    self.experiments_universe.append(aerchemmip_experiment_universe)
+                    self.experiments_project.append(aerchemmip_experiment_project)
+                    self.add_experiment_to_activity(aerchemmip_experiment_project)
+
+        # Not sure what hist-piAQ is or how it is defined.
+        # TODO: ask someone to translate/write this for me
 
         return self
 
@@ -799,7 +886,7 @@ def main():
     holder.add_picontrol_entries()
     holder.add_historical_entries()
     holder.add_scenario_entries()
-    # scenarios for AerChemMIP
+    holder.add_scenario_aerchemmip_entries()
     # ERF piClim*
     # Rest of C4MIP stuff
     # DAMIP
