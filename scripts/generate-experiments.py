@@ -28,14 +28,14 @@ class ExperimentUniverse(BaseModel):
     activity: str
     additional_allowed_model_components: list[str]
     branch_information: str | None = "dont_write"
-    end_timestamp: datetime | None
+    end_timestamp: datetime | None | str
     min_ensemble_size: int
     min_number_yrs_per_sim: float | None | str = "dont_write"
     parent_activity: str | None = "dont_write"
     parent_experiment: str | None = "dont_write"
     parent_mip_era: str | None = "dont_write"
     required_model_components: list[str]
-    start_timestamp: datetime | None
+    start_timestamp: datetime | None | str
     tier: int | str = "dont_write"
 
     def write_file(self, universe_root: Path) -> None:
@@ -48,10 +48,8 @@ class ExperimentUniverse(BaseModel):
             "description": self.description,
             "activity": self.activity,
             "additional_allowed_model_components": self.additional_allowed_model_components,
-            "end_timestamp": self.end_timestamp,
             "min_ensemble_size": self.min_ensemble_size,
             "required_model_components": self.required_model_components,
-            "start_timestamp": self.start_timestamp,
         }
 
         for attr in (
@@ -61,6 +59,8 @@ class ExperimentUniverse(BaseModel):
             "parent_experiment",
             "parent_mip_era",
             "tier",
+            "start_timestamp",
+            "end_timestamp",
         ):
             val = getattr(self, attr)
             if val != "dont_write":
@@ -496,6 +496,81 @@ class Holder(BaseModel):
 
         return self
 
+    def add_historical_entries(self) -> "Holder":
+        for (
+            drs_name,
+            description,
+            parent_experiment,
+            branch_information,
+        ) in (
+            (
+                "historical",
+                (
+                    "Simulation of the climate of the recent past "
+                    "(typically meaning 1850 to present-day) "
+                    "with prescribed carbon dioxide concentrations "
+                    "(for prescribed carbon dioxide emissions, see `esm-hist`)."
+                ),
+                "picontrol",
+                "Branch from piControl at a time of your choosing",
+            ),
+            (
+                "esm-hist",
+                (
+                    "Simulation of the climate of the recent past "
+                    "(typically meaning 1850 to present-day) "
+                    "with prescribed carbon dioxide emissions "
+                    "(for prescribed carbon dioxide concentrations, see `historical`)."
+                ),
+                "esm-picontrol",
+                "Branch from esm-piControl at a time of your choosing",
+            ),
+        ):
+            if drs_name.startswith("esm-"):
+                additional_allowed_model_components = ["aer", "chem"]
+                required_model_components = ["aogcm", "bgc"]
+
+            else:
+                additional_allowed_model_components = ["aer", "chem", "bgc"]
+                required_model_components = ["aogcm"]
+
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="cmip",
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=branch_information,
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity="cmip",
+                parent_experiment=parent_experiment,
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=required_model_components,
+                start_timestamp="1850-01-01",
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                end_timestamp="2021-12-31",
+                start_timestamp="1850-01-01",
+                min_number_yrs_per_sim=172,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -561,6 +636,7 @@ def main():
     holder.add_abruptco2_entries()
     holder.add_amip_entries()
     holder.add_picontrol_entries()
+    holder.add_historical_entries()
     # hist
     # scenarios
     # scenarios for AerChemMIP
