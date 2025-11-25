@@ -394,6 +394,108 @@ class Holder(BaseModel):
 
         return self
 
+    def add_picontrol_entries(self) -> "Holder":
+        for (
+            drs_name,
+            description,
+            min_number_yrs_per_sim,
+            tier,
+            parent_experiment,
+            branch_information,
+        ) in (
+            (
+                "piControl",
+                (
+                    "Pre-industrial control simulation "
+                    "with prescribed carbon dioxide concentrations "
+                    "(for prescribed carbon dioxide emissions, see `esm-piControl`). "
+                    "Used to characterise natural variability and unforced behaviour."
+                ),
+                400,
+                1,
+                "picontrol-spinup",
+                "Branch from `piControl-spinup` at a time of your choosing",
+            ),
+            (
+                "piControl-spinup",
+                (
+                    "Spin-up simulation. "
+                    "Used to get the model into a state of approximate radiative equilibrium "
+                    "before starting the `piControl` simulation."
+                ),
+                None,
+                3,
+                None,
+                None,
+            ),
+            (
+                "esm-piControl",
+                (
+                    "Pre-industrial control simulation "
+                    "with prescribed carbon dioxide emissions "
+                    "(for prescribed carbon dioxide concentrations, see `piControl`). "
+                    "Used to characterise natural variability and unforced behaviour."
+                ),
+                400,
+                1,
+                "esm-picontrol-spinup",
+                "Branch from `esm-piControl-spinup` at a time of your choosing",
+            ),
+            (
+                "esm-piControl-spinup",
+                (
+                    "Spin-up simulation. "
+                    "Used to get the model into a state of approximate radiative equilibrium "
+                    "before starting the `esm-piControl` simulation."
+                ),
+                None,
+                3,
+                None,
+                None,
+            ),
+        ):
+            if drs_name.startswith("esm-"):
+                additional_allowed_model_components = ["aer", "chem"]
+                required_model_components = ["aogcm", "bgc"]
+
+            else:
+                additional_allowed_model_components = ["aer", "chem", "bgc"]
+                required_model_components = ["aogcm"]
+
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="cmip",
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=branch_information,
+                end_timestamp=None,
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity=None if parent_experiment is None else "cmip",
+                parent_experiment=parent_experiment,
+                # Defined in project
+                parent_mip_era=None if parent_experiment is None else "dont_write",
+                required_model_components=required_model_components,
+                start_timestamp=None,
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_mip_era="cmip7" if parent_experiment is not None else None,
+                tier=tier,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -458,7 +560,7 @@ def main():
     holder.add_1pctco2_entries()
     holder.add_abruptco2_entries()
     holder.add_amip_entries()
-    # piControl
+    holder.add_picontrol_entries()
     # hist
     # scenarios
     # scenarios for AerChemMIP
