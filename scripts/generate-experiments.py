@@ -82,7 +82,7 @@ class ExperimentProject(BaseModel):
     activity: str
     start_timestamp: datetime | None | str = "dont_write"
     end_timestamp: datetime | None | str = "dont_write"
-    min_number_yrs_per_sim: int | None = "dont_write"
+    min_number_yrs_per_sim: float | None | str = "dont_write"
     parent_mip_era: str | None = "dont_write"
     tier: int
 
@@ -571,6 +571,197 @@ class Holder(BaseModel):
 
         return self
 
+    @staticmethod
+    def get_scenario_tier(drs_name: str) -> int:
+        # TODO: update
+        return 1
+
+    @staticmethod
+    def get_scenario_project(
+        scenario_universe: ExperimentUniverse,
+    ) -> ExperimentProject:
+        res = ExperimentProject(
+            id=scenario_universe.drs_name.lower(),
+            activity=scenario_universe.activity,
+            start_timestamp=scenario_universe.start_timestamp,
+            end_timestamp=scenario_universe.end_timestamp,
+            min_number_yrs_per_sim=scenario_universe.min_number_yrs_per_sim,
+            parent_mip_era="cmip7",
+            tier=scenario_universe.tier,
+        )
+
+        return res
+
+    def get_scenario_extension(
+        self,
+        scenario: ExperimentUniverse,
+    ) -> ExperimentUniverse:
+        res = scenario.model_copy()
+
+        scenario_start_timestamp_dt = datetime.strptime(
+            scenario.start_timestamp, "%Y-%m-%d"
+        )
+        scenario_end_timestamp_dt = datetime.strptime(
+            scenario.end_timestamp, "%Y-%m-%d"
+        )
+
+        extension_start_timestamp = f"{scenario_end_timestamp_dt.year + 1}-01-01"
+        # TODO: check
+        extension_end_timestamp = "2500-12-31"
+
+        res.description = f"Extension of `{scenario.drs_name}` beyond {scenario_end_timestamp_dt.year}."
+        # Unclear to me how this is meant to work.
+        # scenario ends at 2100-12-31, extensions starts at 2101-01-01.
+        # Is it an implied join rather than a true overlap
+        # (like we have for piControl to historical)?
+        res.branch_information = f"Branch from `{scenario.drs_name}` at {scenario_end_timestamp_dt.strftime('%Y-%m-%d')}"
+
+        res.start_timestamp = extension_start_timestamp
+        res.end_timestamp = extension_end_timestamp
+
+        res.min_number_yrs_per_sim = 50.0
+        res.parent_activity = scenario.activity
+        res.parent_experiment = scenario.drs_name.lower()
+        res.drs_name = f"{scenario.drs_name}-ext"
+        res.tier = self.get_scenario_tier(res.drs_name)
+
+        return res
+
+    def add_scenario_entries(self) -> "Holder":
+        acronym_descriptions = [
+            ("vl", "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future."),
+            (
+                "ln",
+                "PLACEHOLDER TBC. CMIP7 ScenarioMIP low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future.",
+            ),
+            ("l", "PLACEHOLDER TBC. CMIP7 ScenarioMIP low emissions future."),
+            (
+                "ml",
+                "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium followed by low (from 2040) emissions future.",
+            ),
+            ("m", "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium emissions future."),
+            (
+                "hl",
+                "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future.",
+            ),
+            ("h", "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future."),
+        ]
+
+        for acronym, description_base in acronym_descriptions:
+            drs_name = f"scen7-{acronym}"
+            drs_name_esm_scenario = f"esm-scen7-{acronym}"
+            if "CMIP7 ScenarioMIP" not in description_base:
+                raise AssertionError(description_base)
+
+            description = (
+                f"{description_base} Run with prescribed carbon dioxide concentrations "
+                f"(for prescribed carbon dioxide emissions, see `{drs_name_esm_scenario}`)"
+            )
+
+            univ_base = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="scenariomip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information="Branch from `historical` at 2022-01-01.",
+                # TODO: check if 2100-21-31 or 2100-01-01
+                end_timestamp="2100-12-31",
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=79.0,
+                parent_activity="cmip",
+                parent_experiment="historical",
+                parent_mip_era="cmip7",
+                required_model_components=["aogcm"],
+                start_timestamp="2022-01-01",
+                tier=self.get_scenario_tier(drs_name),
+            )
+
+            proj_base = self.get_scenario_project(univ_base)
+
+            self.experiments_universe.append(univ_base)
+            self.experiments_project.append(proj_base)
+            self.add_experiment_to_activity(proj_base)
+
+            univ_ext = self.get_scenario_extension(univ_base)
+            proj_ext = self.get_scenario_project(univ_ext)
+            self.experiments_universe.append(univ_ext)
+            self.experiments_project.append(proj_ext)
+            self.add_experiment_to_activity(proj_ext)
+
+        for (
+            drs_name,
+            description,
+            parent_experiment,
+            branch_information,
+        ) in (
+            (
+                "historical",
+                (
+                    "Simulation of the climate of the recent past "
+                    "(typically meaning 1850 to present-day) "
+                    "with prescribed carbon dioxide concentrations "
+                    "(for prescribed carbon dioxide emissions, see `esm-hist`)."
+                ),
+                "picontrol",
+                "Branch from piControl at a time of your choosing",
+            ),
+            (
+                "esm-hist",
+                (
+                    "Simulation of the climate of the recent past "
+                    "(typically meaning 1850 to present-day) "
+                    "with prescribed carbon dioxide emissions "
+                    "(for prescribed carbon dioxide concentrations, see `historical`)."
+                ),
+                "esm-picontrol",
+                "Branch from esm-piControl at a time of your choosing",
+            ),
+        ):
+            if drs_name.startswith("esm-"):
+                additional_allowed_model_components = ["aer", "chem"]
+                required_model_components = ["aogcm", "bgc"]
+
+            else:
+                additional_allowed_model_components = ["aer", "chem", "bgc"]
+                required_model_components = ["aogcm"]
+
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="cmip",
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=branch_information,
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity="cmip",
+                parent_experiment=parent_experiment,
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=required_model_components,
+                start_timestamp="1850-01-01",
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                end_timestamp="2021-12-31",
+                start_timestamp="1850-01-01",
+                min_number_yrs_per_sim=172,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -637,8 +828,7 @@ def main():
     holder.add_amip_entries()
     holder.add_picontrol_entries()
     holder.add_historical_entries()
-    # hist
-    # scenarios
+    holder.add_scenario_entries()
     # scenarios for AerChemMIP
     # ERF piClim*
     # Rest of C4MIP stuff
