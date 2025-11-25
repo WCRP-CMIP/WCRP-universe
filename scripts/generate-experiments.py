@@ -642,6 +642,9 @@ class Holder(BaseModel):
             .replace("carbon dioxide emissions,", "carbon dioxide concentrations,")
             .replace(res.drs_name, scenario.drs_name)
         )
+        res.required_model_components = ["aogcm", "bgc"]
+        res.additional_allowed_model_components = ["aer", "chem"]
+
         if scenario.parent_experiment != "historical":
             raise AssertionError
 
