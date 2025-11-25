@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-ln",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-ln`)",
+    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-ln`).",
     "drs_name": "scen7-ln",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",

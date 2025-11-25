@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-h",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-h`)",
+    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-h`).",
     "drs_name": "scen7-h",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",

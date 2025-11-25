@@ -598,9 +598,6 @@ class Holder(BaseModel):
     ) -> ExperimentUniverse:
         res = scenario.model_copy()
 
-        scenario_start_timestamp_dt = datetime.strptime(
-            scenario.start_timestamp, "%Y-%m-%d"
-        )
         scenario_end_timestamp_dt = datetime.strptime(
             scenario.end_timestamp, "%Y-%m-%d"
         )
@@ -627,6 +624,36 @@ class Holder(BaseModel):
 
         return res
 
+    @staticmethod
+    def get_scenario_esm_drs_name(scenario_drs_name: str) -> str:
+        return f"esm-{scenario_drs_name}"
+
+    def get_scenario_esm(
+        self,
+        scenario: ExperimentUniverse,
+    ) -> ExperimentUniverse:
+        res = scenario.model_copy()
+
+        res.drs_name = self.get_scenario_esm_drs_name(scenario.drs_name)
+        res.description = (
+            scenario.description.replace(
+                "carbon dioxide concentrations", "carbon dioxide emissions"
+            )
+            .replace("carbon dioxide emissions,", "carbon dioxide concentrations,")
+            .replace(res.drs_name, scenario.drs_name)
+        )
+        if scenario.parent_experiment != "historical":
+            raise AssertionError
+
+        res.parent_experiment = "esm-hist"
+        res.branch_information = scenario.branch_information.replace(
+            scenario.parent_experiment, res.parent_experiment
+        )
+
+        res.tier = self.get_scenario_tier(res.drs_name)
+
+        return res
+
     def add_scenario_entries(self) -> "Holder":
         acronym_descriptions = [
             ("vl", "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future."),
@@ -649,13 +676,13 @@ class Holder(BaseModel):
 
         for acronym, description_base in acronym_descriptions:
             drs_name = f"scen7-{acronym}"
-            drs_name_esm_scenario = f"esm-scen7-{acronym}"
+            drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
             if "CMIP7 ScenarioMIP" not in description_base:
                 raise AssertionError(description_base)
 
             description = (
                 f"{description_base} Run with prescribed carbon dioxide concentrations "
-                f"(for prescribed carbon dioxide emissions, see `{drs_name_esm_scenario}`)"
+                f"(for prescribed carbon dioxide emissions, see `{drs_name_esm_scenario}`)."
             )
 
             univ_base = ExperimentUniverse(
@@ -688,77 +715,17 @@ class Holder(BaseModel):
             self.experiments_project.append(proj_ext)
             self.add_experiment_to_activity(proj_ext)
 
-        for (
-            drs_name,
-            description,
-            parent_experiment,
-            branch_information,
-        ) in (
-            (
-                "historical",
-                (
-                    "Simulation of the climate of the recent past "
-                    "(typically meaning 1850 to present-day) "
-                    "with prescribed carbon dioxide concentrations "
-                    "(for prescribed carbon dioxide emissions, see `esm-hist`)."
-                ),
-                "picontrol",
-                "Branch from piControl at a time of your choosing",
-            ),
-            (
-                "esm-hist",
-                (
-                    "Simulation of the climate of the recent past "
-                    "(typically meaning 1850 to present-day) "
-                    "with prescribed carbon dioxide emissions "
-                    "(for prescribed carbon dioxide concentrations, see `historical`)."
-                ),
-                "esm-picontrol",
-                "Branch from esm-piControl at a time of your choosing",
-            ),
-        ):
-            if drs_name.startswith("esm-"):
-                additional_allowed_model_components = ["aer", "chem"]
-                required_model_components = ["aogcm", "bgc"]
+            univ_esm = self.get_scenario_esm(univ_base)
+            proj_esm = self.get_scenario_project(univ_esm)
+            self.experiments_universe.append(univ_esm)
+            self.experiments_project.append(proj_esm)
+            self.add_experiment_to_activity(proj_esm)
 
-            else:
-                additional_allowed_model_components = ["aer", "chem", "bgc"]
-                required_model_components = ["aogcm"]
-
-            univ = ExperimentUniverse(
-                drs_name=drs_name,
-                description=description,
-                activity="cmip",
-                additional_allowed_model_components=additional_allowed_model_components,
-                branch_information=branch_information,
-                # Defined in project
-                end_timestamp="dont_write",
-                min_ensemble_size=1,
-                # Defined in project
-                min_number_yrs_per_sim="dont_write",
-                parent_activity="cmip",
-                parent_experiment=parent_experiment,
-                # Defined in project
-                parent_mip_era="dont_write",
-                required_model_components=required_model_components,
-                start_timestamp="1850-01-01",
-                tier=1,
-            )
-
-            self.experiments_universe.append(univ)
-
-            proj = ExperimentProject(
-                id=univ.drs_name.lower(),
-                activity=univ.activity,
-                end_timestamp="2021-12-31",
-                start_timestamp="1850-01-01",
-                min_number_yrs_per_sim=172,
-                parent_mip_era="cmip7",
-                tier=1,
-            )
-            self.experiments_project.append(proj)
-
-            self.add_experiment_to_activity(proj)
+            univ_esm_ext = self.get_scenario_extension(univ_esm)
+            proj_esm_ext = self.get_scenario_project(univ_esm_ext)
+            self.experiments_universe.append(univ_esm_ext)
+            self.experiments_project.append(proj_esm_ext)
+            self.add_experiment_to_activity(proj_esm_ext)
 
         return self
 
@@ -844,6 +811,7 @@ def main():
     # Write out project activity entries
 
     holder.write_files(project_root=project_root, universe_root=universe_root)
+    assert False, "Add esm ext"
     assert False
     bases = ["vl", "ln", "l", "ml", "m", "hl", "h"]
 
