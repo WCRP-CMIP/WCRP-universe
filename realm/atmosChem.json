@@ -1,7 +1,0 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "atmoschem",
-    "type": "realm",
-    "description": "Dataset which applies (or mostly applies) to components of the Earth system related to atmospheric chemistry.",
-    "drs_name": "atmosChem"
-}
