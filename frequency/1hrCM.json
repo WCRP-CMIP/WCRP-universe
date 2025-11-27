@@ -1,9 +1,0 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "1hrcm",
-    "type": "frequency",
-    "description": "Monthly climatology (i.e. mean over a number of months) at hourly resolution.",
-    "drs_name": "1hrCM",
-    "interval": 1.0,
-    "units": "hour"
-}

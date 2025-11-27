@@ -1,9 +1,0 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "1hr",
-    "type": "frequency",
-    "description": "Hourly samples.",
-    "drs_name": "1hr",
-    "interval": 1.0,
-    "units": "hour"
-}
