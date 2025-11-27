@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fx",
+    "type": "frequency",
+    "description": "Fixed field i.e. no time dimension and therefore no applicable frequency information.",
+    "drs_name": "fx",
+    "interval": null,
+    "units": null
+}

@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "subhrpt",
+    "type": "frequency",
+    "description": "Sub-hourly (i.e. more frequently than once per hour) samples. This is a legacy label that indicated that the sample was a point sample i.e. represented the value at a specific point in time. This information is now conveyed via the temporal label instead.",
+    "drs_name": "subhrPt",
+    "interval": null,
+    "units": "minute"
+}
