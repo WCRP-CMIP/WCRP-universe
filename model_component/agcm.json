@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "agcm",
+    "type": "model_component",
+    "description": "Atmosphere general circulation model.",
+    "drs_name": "AGCM"
+}

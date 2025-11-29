@@ -8,7 +8,7 @@ import json
 def main():
     for id, drs_name, description, cf_standard_region, iso_region in (
         ("global", "glb", "The entire globe i.e. earth.", "global", None),
-        ("antarctica", "ata", "Antarcica.", "antarctica", "ata"),
+        ("antarctica", "ata", "Antarctica.", "antarctica", "ata"),
         ("greenland", "grl", "Greenland.", "greenland", "grl"),
         (
             "30s-90s",
