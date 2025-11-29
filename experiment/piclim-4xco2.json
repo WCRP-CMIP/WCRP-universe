@@ -4,21 +4,22 @@
     "type": "experiment",
     "description": "In combination with `piClim-control`, quantifies a quadrupling of atmospheric carbon dioxide's (4xCO2's) effective radiative forcing (ERF). Same as `piClim-control`, except atmospheric carbon dioxide concentrations are set to four times `piControl` levels.",
     "drs_name": "piClim-4xCO2",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
     "activity": "cmip",
     "additional_allowed_model_components": [
         "aer",
         "chem",
         "bgc"
     ],
-    "branch_information": "Branch from piControl at a time of your choosing",
-    "end_timestamp": null,
+    "branch_information": null,
     "min_ensemble_size": 1,
-    "min_number_yrs_per_sim": 30,
-    "parent_activity": "cmip",
-    "parent_experiment": "picontrol",
+    "parent_activity": null,
+    "parent_experiment": null,
+    "parent_mip_era": null,
     "required_model_components": [
         "agcm"
     ],
-    "start_timestamp": null,
     "tier": 1
 }

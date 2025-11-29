@@ -819,6 +819,162 @@ class Holder(BaseModel):
 
         return self
 
+    def add_piclim_entries(self) -> "Holder":
+        def get_purturbation_description(
+            quantifies: str, forcing_diff_from_picontrol: str
+        ) -> str:
+            description_full = (
+                "In combination with `piClim-control`, "
+                f"quantifies present-day {quantifies} effective radiative forcing (ERF). "
+                f"Same as `piClim-control`, except {forcing_diff_from_picontrol} use present-day values "
+                "(typically the last year of the `historical` simulation within the same CMIP era "
+                "e.g. 2014 values for CMIP6, 2021 values for CMIP7)."
+            )
+
+            return description_full
+
+        for (
+            drs_name,
+            description,
+            activity,
+            # No parent for these?
+            # parent_experiment,
+            required_model_components,
+            additional_allowed_model_components,
+            # No parent for these?
+            # branch_information,
+            tier,
+        ) in (
+            (
+                "piClim-control",
+                (
+                    "Baseline for effective radiative forcing (ERF) calculations. "
+                    "`piControl` with prescribed sea-surface temperatures "
+                    "and sea-ice concentrations."
+                ),
+                "cmip",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-anthro",
+                get_purturbation_description(
+                    "total anthropogenic",
+                    "all anthropogenic forcings",
+                ),
+                "cmip",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-4xCO2",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies a quadrupling of atmospheric carbon dioxide's "
+                    "(4xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels."
+                ),
+                "cmip",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+            ),
+            # TODO: check whether there is one missing here
+            (
+                "piClim-CH4",
+                get_purturbation_description(
+                    "methane",
+                    # TODO: check whether concentrations or emissions
+                    "methane atmospheric forcing",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-N2O",
+                get_purturbation_description(
+                    "nitrous oxide",
+                    # TODO: check whether concentrations or emissions
+                    "nitrous oxide atmospheric forcing",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-NOx",
+                get_purturbation_description(
+                    "nitrous oxide (NOx)",
+                    # TODO: confirm tha this is emissions
+                    "nitrous oxide (NOx) emissions",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-ODS",
+                get_purturbation_description(
+                    "ozone-depleting substances'",
+                    # TODO: check whether concentrations or emissions
+                    "ozone-depleting substance atmospheric forcing",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-SO2",
+                get_purturbation_description(
+                    "sulfur (dioxide)",
+                    "sulfur emissions",
+                ),
+                "aerchemmip",
+                ["agcm", "aer"],
+                ["chem", "bgc"],
+                1,
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity=activity,
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=None,
+                end_timestamp=None,
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=30,
+                parent_activity=None,
+                parent_experiment=None,
+                parent_mip_era=None,
+                required_model_components=required_model_components,
+                start_timestamp=None,
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                parent_mip_era="dont_write",
+                tier=tier,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -887,6 +1043,7 @@ def main():
     holder.add_historical_entries()
     holder.add_scenario_entries()
     holder.add_scenario_aerchemmip_entries()
+    holder.add_piclim_entries()
     # ERF piClim*
     # Rest of C4MIP stuff
     # DAMIP
