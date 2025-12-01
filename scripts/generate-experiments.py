@@ -83,6 +83,7 @@ class ExperimentProject(BaseModel):
     start_timestamp: datetime | None | str = "dont_write"
     end_timestamp: datetime | None | str = "dont_write"
     min_number_yrs_per_sim: float | None | str = "dont_write"
+    min_ensemble_size: int | str = "dont_write"
     parent_mip_era: str | None = "dont_write"
     tier: int
 
@@ -98,6 +99,7 @@ class ExperimentProject(BaseModel):
             "start_timestamp",
             "end_timestamp",
             "min_number_yrs_per_sim",
+            "min_ensemble_size",
             "parent_mip_era",
         ):
             val = getattr(self, attr)
@@ -176,6 +178,11 @@ class Holder(BaseModel):
                 id="cmip",
                 experiments=[],
                 urls=["https://doi.org/10.5194/gmd-18-6671-2025"],
+            ),
+            ActivityProject(
+                id="damip",
+                experiments=[],
+                urls=["https://doi.org/10.5194/gmd-18-4399-2025"],
             ),
             ActivityProject(
                 id="rfmip",
@@ -1151,6 +1158,55 @@ class Holder(BaseModel):
 
         return self
 
+    def add_damip_entries(self) -> "Holder":
+        for drs_name, forcing in (
+            ("hist-aer", "aerosol"),
+            ("hist-GHG", "aerosol"),
+            ("hist-nat", "aerosol"),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=(
+                    f"Response to historical {forcing} forcing "
+                    "(with extension using forcings from the `m` scenario simulation)."
+                    f"All other conditions are kept the same as piControl."
+                ),
+                activity="damip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information="Branch from piControl at a time of your choosing",
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity="cmip",
+                parent_experiment="picontrol",
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=["aogcm"],
+                # Defined in project
+                start_timestamp="1850-01-01",
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                start_timestamp="1850-01-01",
+                end_timestamp="2035-12-31",
+                min_number_yrs_per_sim=186,
+                min_ensemble_size=3,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -1221,8 +1277,7 @@ def main():
     holder.add_scenario_aerchemmip_entries()
     holder.add_piclim_entries()
     holder.add_flat10_entries()
-
-    # TODO: DAMIP
+    holder.add_damip_entries()
 
     # TODO: DCPP
     # I couldn't figure out why ssp245 was mentioned
@@ -1231,62 +1286,7 @@ def main():
     # LMIP
     # PMIP
 
-    # Generate entries as objects
-    # Write out project experiment entries
-    # Write out universe experiment entries
-    # Write out project activity entries
-
     holder.write_files(project_root=project_root, universe_root=universe_root)
-    assert False, "Add esm ext"
-    assert False
-    bases = ["vl", "ln", "l", "ml", "m", "hl", "h"]
-
-    experiment_list = []
-    for base in bases:
-        for prefix in [
-            "scen7-",
-            "esm-scen7-",
-        ]:
-            for suffix in [
-                "",
-                "-ext",
-            ]:
-                experiment_name = f"{prefix}{base}{suffix}"
-
-                id = experiment_name.lower()
-
-                content = {
-                    "@context": "000_context.jsonld",
-                    "id": id,
-                    "type": "experiment",
-                    "drs_name": experiment_name,
-                    "activity": "scenariomip",
-                    "additional_allowed_model_components": ["aer", "chem", "bgc"],
-                    "required_model_components": ["aogcm"],
-                }
-
-                out_file = f"experiment/{id}.json"
-                with open(out_file, "w") as fh:
-                    json.dump(content, fh, indent=4)
-
-                print(f"Wrote {out_file}")
-                experiment_list.append(id)
-
-    experiment_list = sorted(experiment_list)
-    out_file = "activity/scenariomip.json"
-    content = {
-        "@context": "000_context.jsonld",
-        "id": "scenariomip",
-        "type": "activity",
-        "description": "Future scenario experiments. Exploration of the future climate under a (selected) range of possible boundary conditions",
-        "drs_name": "ScenarioMIP",
-        "experiments": experiment_list,
-        "urls": ["https://doi.org/10.5194/egusphere-2024-3765"],
-    }
-    with open(out_file, "w") as fh:
-        json.dump(content, fh, indent=4)
-
-    print(f"Wrote {out_file}")
 
 
 if __name__ == "__main__":
