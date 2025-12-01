@@ -975,6 +975,92 @@ class Holder(BaseModel):
 
         return self
 
+    def add_flat10_entries(self) -> "Holder":
+        univ_flat10 = ExperimentUniverse(
+            drs_name="esm-flat10",
+            description="10 PgC / yr constant carbon dioxide emissions.",
+            activity="c4mip",
+            additional_allowed_model_components=["aer", "chem"],
+            branch_information="Branch from `esm-piControl` at a time of your choosing",
+            end_timestamp=None,
+            min_ensemble_size=1,
+            min_number_yrs_per_sim=100.0,
+            parent_activity="cmip",
+            parent_experiment="picontrol",
+            # Defined in project
+            parent_mip_era="dont_write",
+            required_model_components=["aogcm", "bgc"],
+            start_timestamp=None,
+            tier=1,
+        )
+
+        self.experiments_universe.append(univ_flat10)
+
+        proj_flat10 = ExperimentProject(
+            id=univ_flat10.drs_name.lower(),
+            activity=univ_flat10.activity,
+            parent_mip_era="cmip7",
+            tier=1,
+        )
+        self.experiments_project.append(proj_flat10)
+        self.add_experiment_to_activity(proj_flat10)
+
+        for (
+            drs_name,
+            description,
+            branch_information,
+            min_number_yrs_per_sim,
+        ) in (
+            (
+                "esm-flat10-cdr",
+                (
+                    "Extension of `esm-flat10` where emissions decline linearly to -10 PgC / yr "
+                    "then stay constant until cumulative emissions "
+                    "(including the emissions in `esm-flat10`) reach zero. "
+                    "An extra 20 years is included at the end to allow for calculating averages over different time windows."
+                ),
+                "Branch from `esm-flat10` at the end of year 100.",
+                220.0,
+            ),
+            (
+                "esm-flat10-zec",
+                "Extension of `esm-flat10` with zero emissions.",
+                "Branch from `esm-flat10` at the end of year 100.",
+                100.0,
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity=univ_flat10.activity,
+                additional_allowed_model_components=univ_flat10.additional_allowed_model_components,
+                branch_information=branch_information,
+                end_timestamp=None,
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_activity=univ_flat10.activity,
+                parent_experiment=proj_flat10.id,
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=univ_flat10.required_model_components,
+                start_timestamp=None,
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -1044,8 +1130,7 @@ def main():
     holder.add_scenario_entries()
     holder.add_scenario_aerchemmip_entries()
     holder.add_piclim_entries()
-    # ERF piClim*
-    # Rest of C4MIP stuff
+    holder.add_flat10_entries()
     # DAMIP
     # dcpp
     # GeoMIP
