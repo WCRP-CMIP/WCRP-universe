@@ -178,6 +178,14 @@ class Holder(BaseModel):
                 urls=["https://doi.org/10.5194/gmd-18-6671-2025"],
             ),
             ActivityProject(
+                id="rfmip",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-9-3447-2016",
+                    "https://doi.org/10.5194/acp-20-9591-2020",
+                ],
+            ),
+            ActivityProject(
                 id="scenariomip",
                 experiments=[],
                 urls=["https://doi.org/10.5194/egusphere-2024-3765"],
@@ -814,8 +822,8 @@ class Holder(BaseModel):
                     self.experiments_project.append(aerchemmip_experiment_project)
                     self.add_experiment_to_activity(aerchemmip_experiment_project)
 
+        # TODO: ask someone to translate/write hist-piAQ for me.
         # Not sure what hist-piAQ is or how it is defined.
-        # TODO: ask someone to translate/write this for me
 
         return self
 
@@ -939,6 +947,17 @@ class Holder(BaseModel):
                     "sulfur emissions",
                 ),
                 "aerchemmip",
+                ["agcm", "aer"],
+                ["chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-aer",
+                get_purturbation_description(
+                    "aerosol",
+                    "anthropogenic aerosol emissions",
+                ),
+                "rfmip",
                 ["agcm", "aer"],
                 ["chem", "bgc"],
                 1,
@@ -1130,9 +1149,14 @@ def main():
     holder.add_scenario_entries()
     holder.add_scenario_aerchemmip_entries()
     holder.add_piclim_entries()
+    # TODO: piClim RFMIP
     holder.add_flat10_entries()
-    # DAMIP
-    # dcpp
+
+    # TODO: DAMIP
+
+    # TODO: DCPP
+    # I couldn't figure out why ssp245 was mentioned
+
     # GeoMIP
     # LMIP
     # PMIP
