@@ -574,8 +574,8 @@ class Holder(BaseModel):
             proj = ExperimentProject(
                 id=univ.drs_name.lower(),
                 activity=univ.activity,
-                end_timestamp="2021-12-31",
                 start_timestamp="1850-01-01",
+                end_timestamp="2021-12-31",
                 min_number_yrs_per_sim=172,
                 parent_mip_era="cmip7",
                 tier=1,
@@ -992,6 +992,77 @@ class Holder(BaseModel):
 
             self.add_experiment_to_activity(proj)
 
+        for (
+            drs_name,
+            description,
+            required_model_components,
+            additional_allowed_model_components,
+        ) in (
+            (
+                "piClim-histaer",
+                (
+                    "Simulation of the historical period with prescribed sea-surface temperatures "
+                    "and sea-ice concentrations. "
+                    "Aerosol emissions follow the `historical` experiment "
+                    "while all other forcings follow `piControl` "
+                    "to allow for a (approximate) diagnosis of "
+                    "transient historical aerosol effective radiative forcing (ERF) "
+                    "(can be compared with `piClim-aer` which provides a more precise "
+                    "quantification of present-day aerosol ERF)."
+                ),
+                ["aogcm", "aer"],
+                ["chem", "bgc"],
+            ),
+            (
+                "piClim-histall",
+                (
+                    "Simulation of the historical period with prescribed sea-surface temperatures "
+                    "and sea-ice concentrations. "
+                    "All forcings follow the `historical` experiment "
+                    "to allow for a (approximate) diagnosis of "
+                    "transient historical effective radiative forcing (ERF)."
+                    "(can be compared with the `piClim-*` experiments which provide a more precise "
+                    "quantification of present-day ERF from various forcers)."
+                ),
+                ["aogcm", "aer"],
+                ["chem", "bgc"],
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="rfmip",
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=None,
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity=None,
+                parent_experiment=None,
+                parent_mip_era=None,
+                required_model_components=required_model_components,
+                start_timestamp="1850-01-01",
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                start_timestamp="1850-01-01",
+                # TODO: check why these are called `*hist*`
+                # when they are meant to extend to 2100.
+                end_timestamp="2100-12-31",
+                min_number_yrs_per_sim=251,
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
         return self
 
     def add_flat10_entries(self) -> "Holder":
@@ -1149,7 +1220,6 @@ def main():
     holder.add_scenario_entries()
     holder.add_scenario_aerchemmip_entries()
     holder.add_piclim_entries()
-    # TODO: piClim RFMIP
     holder.add_flat10_entries()
 
     # TODO: DAMIP
