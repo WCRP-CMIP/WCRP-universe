@@ -1096,7 +1096,7 @@ class Holder(BaseModel):
             min_ensemble_size=1,
             min_number_yrs_per_sim=100.0,
             parent_activity="cmip",
-            parent_experiment="picontrol",
+            parent_experiment="esm-picontrol",
             # Defined in project
             parent_mip_era="dont_write",
             required_model_components=["aogcm", "bgc"],

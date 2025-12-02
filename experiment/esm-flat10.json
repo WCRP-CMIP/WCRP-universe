@@ -15,7 +15,7 @@
     "branch_information": "Branch from `esm-piControl` at a time of your choosing",
     "min_ensemble_size": 1,
     "parent_activity": "cmip",
-    "parent_experiment": "picontrol",
+    "parent_experiment": "esm-picontrol",
     "required_model_components": [
         "aogcm",
         "bgc"
