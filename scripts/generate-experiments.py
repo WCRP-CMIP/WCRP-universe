@@ -203,6 +203,14 @@ class Holder(BaseModel):
                 urls=["https://doi.org/10.5194/gmd-9-2809-2016"],
             ),
             ActivityProject(
+                id="pmip",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-10-3979-2017",
+                    "https://doi.org/10.5194/cp-19-883-2023",
+                ],
+            ),
+            ActivityProject(
                 id="rfmip",
                 experiments=[],
                 urls=[
@@ -278,7 +286,7 @@ class Holder(BaseModel):
                 ),
                 activity=activity,
                 additional_allowed_model_components=additional_allowed_model_components,
-                branch_information="Branch from piControl at a time of your choosing",
+                branch_information="Branch from `piControl` at a time of your choosing",
                 end_timestamp=None,
                 min_ensemble_size=1,
                 # Defined in project
@@ -332,7 +340,7 @@ class Holder(BaseModel):
                 ),
                 activity=activity,
                 additional_allowed_model_components=["aer", "chem", "bgc"],
-                branch_information="Branch from piControl at a time of your choosing",
+                branch_information="Branch from `piControl` at a time of your choosing",
                 end_timestamp=None,
                 min_ensemble_size=1,
                 # Defined in project
@@ -552,7 +560,7 @@ class Holder(BaseModel):
                     "(for prescribed carbon dioxide emissions, see `esm-hist`)."
                 ),
                 "picontrol",
-                "Branch from piControl at a time of your choosing",
+                "Branch from `piControl` at a time of your choosing",
             ),
             (
                 "esm-hist",
@@ -1191,7 +1199,7 @@ class Holder(BaseModel):
                 ),
                 activity="damip",
                 additional_allowed_model_components=["aer", "chem", "bgc"],
-                branch_information="Branch from piControl at a time of your choosing",
+                branch_information="Branch from `piControl` at a time of your choosing",
                 # Defined in project
                 end_timestamp="dont_write",
                 min_ensemble_size=1,
@@ -1353,6 +1361,45 @@ class Holder(BaseModel):
 
         return self
 
+    def add_pmip_entries(self) -> "Holder":
+        drs_name = "abrupt-127k"
+        description = (
+            "Simulation to examine the response to orbital and greenhouse gas concentration changes "
+            "associated with the last interglacial (127 000 years before present)."
+        )
+
+        univ = ExperimentUniverse(
+            drs_name=drs_name,
+            description=description,
+            activity="pmip",
+            additional_allowed_model_components=["aer", "chem", "bgc"],
+            branch_information="Branch from `piControl` at a time of your choosing",
+            end_timestamp=None,
+            min_ensemble_size=1,
+            min_number_yrs_per_sim=100.0,
+            parent_activity="cmip",
+            parent_experiment="picontrol",
+            parent_mip_era="dont_write",
+            required_model_components=["aogcm"],
+            start_timestamp=None,
+            tier=1,
+        )
+
+        self.experiments_universe.append(univ)
+
+        proj = ExperimentProject(
+            id=univ.drs_name.lower(),
+            activity=univ.activity,
+            min_number_yrs_per_sim=100.0,
+            parent_mip_era="cmip7",
+            tier=1,
+        )
+        self.experiments_project.append(proj)
+
+        self.add_experiment_to_activity(proj)
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -1430,8 +1477,7 @@ def main():
 
     holder.add_geomip_entries()
     holder.add_lmip_entries()
-    # LMIP
-    # PMIP
+    holder.add_pmip_entries()
 
     holder.write_files(project_root=project_root, universe_root=universe_root)
 
