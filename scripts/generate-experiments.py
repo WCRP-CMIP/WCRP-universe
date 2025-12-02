@@ -80,6 +80,7 @@ class ExperimentProject(BaseModel):
 
     id: str
     activity: str
+    description: str = "dont_write"
     start_timestamp: datetime | None | str = "dont_write"
     end_timestamp: datetime | None | str = "dont_write"
     min_number_yrs_per_sim: float | None | str = "dont_write"
@@ -96,6 +97,7 @@ class ExperimentProject(BaseModel):
         }
 
         for attr in (
+            "description",
             "start_timestamp",
             "end_timestamp",
             "min_number_yrs_per_sim",
@@ -1168,8 +1170,8 @@ class Holder(BaseModel):
                 drs_name=drs_name,
                 description=(
                     f"Response to historical {forcing} forcing "
-                    "(with extension using forcings from the `m` scenario simulation)."
-                    f"All other conditions are kept the same as piControl."
+                    "(often with extension using forcings from a scenario simulation specific to the CMIP phase). "
+                    "All other conditions are kept the same as piControl."
                 ),
                 activity="damip",
                 additional_allowed_model_components=["aer", "chem", "bgc"],
@@ -1193,6 +1195,11 @@ class Holder(BaseModel):
 
             proj = ExperimentProject(
                 id=univ.drs_name.lower(),
+                description=(
+                    f"Response to historical {forcing} forcing "
+                    "(with extension using forcings from the `m` scenario simulation). "
+                    "All other conditions are kept the same as piControl."
+                ),
                 activity=univ.activity,
                 start_timestamp="1850-01-01",
                 end_timestamp="2035-12-31",

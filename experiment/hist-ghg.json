@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "hist-ghg",
     "type": "experiment",
-    "description": "Response to historical aerosol forcing (with extension using forcings from the `m` scenario simulation).All other conditions are kept the same as piControl.",
+    "description": "Response to historical aerosol forcing (often with extension using forcings from a scenario simulation specific to the CMIP phase). All other conditions are kept the same as piControl.",
     "drs_name": "hist-GHG",
     "start_timestamp": "1850-01-01",
     "activity": "damip",
