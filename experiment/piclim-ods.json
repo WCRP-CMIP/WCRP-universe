@@ -2,33 +2,24 @@
     "@context": "000_context.jsonld",
     "id": "piclim-ods",
     "type": "experiment",
-    "experiment_id": "piClim-ODS",
-    "activity_id": [
-        "aerchemmip"
-    ],
+    "description": "In combination with `piClim-control`, quantifies present-day ozone-depleting substances' effective radiative forcing (ERF). Same as `piClim-control`, except ozone-depleting substance atmospheric forcing use present-day values (typically the last year of the `historical` simulation within the same CMIP era e.g. 2014 values for CMIP6, 2021 values for CMIP7).",
+    "drs_name": "piClim-ODS",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
+    "activity": "aerchemmip",
     "additional_allowed_model_components": [
-        "agcm",
-        "chem"
+        "aer",
+        "bgc"
     ],
-    "description": "1. Detailed experiment configuration An atmosphere only configuration following piClim-control but using present-day (2021) ozone depleting substances (ODSs)  2. Required model settings We encourage modelling centres to include as much atmospheric composition capability as possible. But, as a minimum, models should have stratospheric chemistry. And the experimental setup should be consistent with other AerChemMIP2 experiments, particularly piClim-control.   3. Experiment conditions  4. Links to relevant references Fiedler et al. (in prep.) AerChemMIP2 - Unraveling the role of reactive gases, aerosols, and land use for air quality and climate change in CMIP7  5. Similarities to CMIP6 experiments piClim-HC  6. Forcing differences from parent experiment Present-day (2021) ozone depleting substances",
-    "end_year": null,
-    "experiment": "Pre-industrial climatology with present-day ozone depleting substances",
-    "min_number_yrs_per_sim": "30",
-    "parent_activity_id": [
-        "rfmip",
-        "aerchemmip"
-    ],
-    "parent_experiment_id": [
-        "piclim-control"
-    ],
+    "branch_information": null,
+    "min_ensemble_size": 1,
+    "parent_activity": null,
+    "parent_experiment": null,
+    "parent_mip_era": null,
     "required_model_components": [
         "agcm",
         "chem"
     ],
-    "start_year": null,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "1",
-    "drs_name": "piClim-ODS"
+    "tier": 1
 }
