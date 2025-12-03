@@ -162,6 +162,13 @@ class Holder(BaseModel):
     def initialise_activities(self) -> "Holder":
         self.activities = [
             ActivityProject(
+                id="aerchemmip",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-10-585-2017",
+                ],
+            ),
+            ActivityProject(
                 id="c4mip",
                 experiments=[],
                 urls=[
@@ -179,6 +186,24 @@ class Holder(BaseModel):
                 id="cmip",
                 experiments=[],
                 urls=["https://doi.org/10.5194/gmd-18-6671-2025"],
+            ),
+            ActivityProject(
+                id="damip",
+                experiments=[],
+                urls=["https://doi.org/10.5194/gmd-18-4399-2025"],
+            ),
+            ActivityProject(
+                id="pmip",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-10-3979-2017",
+                    "https://doi.org/10.5194/cp-19-883-2023",
+                ],
+            ),
+            ActivityProject(
+                id="scenariomip",
+                experiments=[],
+                urls=["https://doi.org/10.5194/egusphere-2024-3765"],
             ),
         ]
 
@@ -326,6 +351,676 @@ class Holder(BaseModel):
 
         return self
 
+    def add_amip_entries(self) -> "Holder":
+        for (
+            drs_name,
+            description,
+            activity,
+            start_timestamp,
+            end_timestamp,
+            min_number_yrs_per_sim,
+        ) in (
+            (
+                "amip",
+                "Simulation of the climate of the recent past with prescribed sea surface temperatures and sea ice concentrations.",
+                "cmip",
+                "1979-01-01",
+                "2021-12-31",
+                43,
+            ),
+            (
+                "amip-p4k",
+                "Same as `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions.",
+                "cfmip",
+                "1979-01-01",
+                "2021-12-31",
+                43,
+            ),
+            (
+                "amip-piForcing",
+                (
+                    "Same as `amip` simulation, except it starts in 1870 "
+                    "and all forcings are set to pre-industrial levels "
+                    "rather than time-varying forcings."
+                ),
+                "cfmip",
+                "1870-01-01",
+                "2021-12-31",
+                152,
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity=activity,
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information=None,
+                end_timestamp=None,
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity=None,
+                parent_experiment=None,
+                parent_mip_era=None,
+                required_model_components=["agcm"],
+                start_timestamp=None,
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                start_timestamp=start_timestamp,
+                end_timestamp=end_timestamp,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
+    def add_picontrol_entries(self) -> "Holder":
+        for (
+            drs_name,
+            description,
+            min_number_yrs_per_sim,
+            tier,
+            parent_experiment,
+            branch_information,
+        ) in (
+            (
+                "piControl",
+                (
+                    "Pre-industrial control simulation "
+                    "with prescribed carbon dioxide concentrations "
+                    "(for prescribed carbon dioxide emissions, see `esm-piControl`). "
+                    "Used to characterise natural variability and unforced behaviour."
+                ),
+                400,
+                1,
+                "picontrol-spinup",
+                "Branch from `piControl-spinup` at a time of your choosing",
+            ),
+            (
+                "piControl-spinup",
+                (
+                    "Spin-up simulation. "
+                    "Used to get the model into a state of approximate radiative equilibrium "
+                    "before starting the `piControl` simulation."
+                ),
+                None,
+                3,
+                None,
+                None,
+            ),
+            (
+                "esm-piControl",
+                (
+                    "Pre-industrial control simulation "
+                    "with prescribed carbon dioxide emissions "
+                    "(for prescribed carbon dioxide concentrations, see `piControl`). "
+                    "Used to characterise natural variability and unforced behaviour."
+                ),
+                400,
+                1,
+                "esm-picontrol-spinup",
+                "Branch from `esm-piControl-spinup` at a time of your choosing",
+            ),
+            (
+                "esm-piControl-spinup",
+                (
+                    "Spin-up simulation. "
+                    "Used to get the model into a state of approximate radiative equilibrium "
+                    "before starting the `esm-piControl` simulation."
+                ),
+                None,
+                3,
+                None,
+                None,
+            ),
+        ):
+            if drs_name.startswith("esm-"):
+                additional_allowed_model_components = ["aer", "chem"]
+                required_model_components = ["aogcm", "bgc"]
+
+            else:
+                additional_allowed_model_components = ["aer", "chem", "bgc"]
+                required_model_components = ["aogcm"]
+
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="cmip",
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=branch_information,
+                end_timestamp=None,
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity=None if parent_experiment is None else "cmip",
+                parent_experiment=parent_experiment,
+                # Defined in project
+                parent_mip_era=None if parent_experiment is None else "dont_write",
+                required_model_components=required_model_components,
+                start_timestamp=None,
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_mip_era="cmip7" if parent_experiment is not None else None,
+                tier=tier,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
+    def add_historical_entries(self) -> "Holder":
+        for (
+            drs_name,
+            description,
+            parent_experiment,
+            branch_information,
+        ) in (
+            (
+                "historical",
+                (
+                    "Simulation of the climate of the recent past "
+                    "(typically meaning 1850 to present-day) "
+                    "with prescribed carbon dioxide concentrations "
+                    "(for prescribed carbon dioxide emissions, see `esm-hist`)."
+                ),
+                "picontrol",
+                "Branch from `piControl` at a time of your choosing",
+            ),
+            (
+                "esm-hist",
+                (
+                    "Simulation of the climate of the recent past "
+                    "(typically meaning 1850 to present-day) "
+                    "with prescribed carbon dioxide emissions "
+                    "(for prescribed carbon dioxide concentrations, see `historical`)."
+                ),
+                "esm-picontrol",
+                "Branch from esm-piControl at a time of your choosing",
+            ),
+        ):
+            if drs_name.startswith("esm-"):
+                additional_allowed_model_components = ["aer", "chem"]
+                required_model_components = ["aogcm", "bgc"]
+
+            else:
+                additional_allowed_model_components = ["aer", "chem", "bgc"]
+                required_model_components = ["aogcm"]
+
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="cmip",
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=branch_information,
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity="cmip",
+                parent_experiment=parent_experiment,
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=required_model_components,
+                start_timestamp="1850-01-01",
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                start_timestamp="1850-01-01",
+                end_timestamp="2021-12-31",
+                min_number_yrs_per_sim=172,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
+    def add_flat10_entries(self) -> "Holder":
+        univ_flat10 = ExperimentUniverse(
+            drs_name="esm-flat10",
+            description="10 PgC / yr constant carbon dioxide emissions.",
+            activity="c4mip",
+            additional_allowed_model_components=["aer", "chem"],
+            branch_information="Branch from `esm-piControl` at a time of your choosing",
+            end_timestamp=None,
+            min_ensemble_size=1,
+            min_number_yrs_per_sim=100.0,
+            parent_activity="cmip",
+            parent_experiment="esm-picontrol",
+            # Defined in project
+            parent_mip_era="dont_write",
+            required_model_components=["aogcm", "bgc"],
+            start_timestamp=None,
+            tier=1,
+        )
+
+        self.experiments_universe.append(univ_flat10)
+
+        proj_flat10 = ExperimentProject(
+            id=univ_flat10.drs_name.lower(),
+            activity=univ_flat10.activity,
+            parent_mip_era="cmip7",
+            tier=1,
+        )
+        self.experiments_project.append(proj_flat10)
+        self.add_experiment_to_activity(proj_flat10)
+
+        for (
+            drs_name,
+            description,
+            branch_information,
+            min_number_yrs_per_sim,
+        ) in (
+            (
+                "esm-flat10-cdr",
+                (
+                    "Extension of `esm-flat10` where emissions decline linearly to -10 PgC / yr "
+                    "then stay constant until cumulative emissions "
+                    "(including the emissions in `esm-flat10`) reach zero. "
+                    "An extra 20 years is included at the end to allow for calculating averages over different time windows."
+                ),
+                "Branch from `esm-flat10` at the end of year 100.",
+                220.0,
+            ),
+            (
+                "esm-flat10-zec",
+                "Extension of `esm-flat10` with zero emissions.",
+                "Branch from `esm-flat10` at the end of year 100.",
+                100.0,
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity=univ_flat10.activity,
+                additional_allowed_model_components=univ_flat10.additional_allowed_model_components,
+                branch_information=branch_information,
+                end_timestamp=None,
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_activity=univ_flat10.activity,
+                parent_experiment=proj_flat10.id,
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=univ_flat10.required_model_components,
+                start_timestamp=None,
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
+    def add_damip_entries(self) -> "Holder":
+        for drs_name, forcing in (
+            ("hist-aer", "aerosol"),
+            ("hist-GHG", "aerosol"),
+            ("hist-nat", "aerosol"),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=(
+                    f"Response to historical {forcing} forcing "
+                    "(often with extension using forcings from a scenario simulation specific to the CMIP phase). "
+                    "All other conditions are kept the same as piControl."
+                ),
+                activity="damip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information="Branch from `piControl` at a time of your choosing",
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity="cmip",
+                parent_experiment="picontrol",
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=["aogcm"],
+                # Defined in project
+                start_timestamp="1850-01-01",
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                description=(
+                    f"Response to historical {forcing} forcing "
+                    "(with extension using forcings from the `m` scenario simulation). "
+                    "All other conditions are kept the same as piControl."
+                ),
+                activity=univ.activity,
+                start_timestamp="1850-01-01",
+                end_timestamp="2035-12-31",
+                min_number_yrs_per_sim=186,
+                min_ensemble_size=3,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
+    def add_pmip_entries(self) -> "Holder":
+        drs_name = "abrupt-127k"
+        description = (
+            "Simulation to examine the response to orbital and greenhouse gas concentration changes "
+            "associated with the last interglacial (127 000 years before present)."
+        )
+
+        univ = ExperimentUniverse(
+            drs_name=drs_name,
+            description=description,
+            activity="pmip",
+            additional_allowed_model_components=["aer", "chem", "bgc"],
+            branch_information="Branch from `piControl` at a time of your choosing",
+            end_timestamp=None,
+            min_ensemble_size=1,
+            min_number_yrs_per_sim=100.0,
+            parent_activity="cmip",
+            parent_experiment="picontrol",
+            parent_mip_era="dont_write",
+            required_model_components=["aogcm"],
+            start_timestamp=None,
+            tier=1,
+        )
+
+        self.experiments_universe.append(univ)
+
+        proj = ExperimentProject(
+            id=univ.drs_name.lower(),
+            activity=univ.activity,
+            min_number_yrs_per_sim=100.0,
+            parent_mip_era="cmip7",
+            tier=1,
+        )
+        self.experiments_project.append(proj)
+
+        self.add_experiment_to_activity(proj)
+
+        return self
+
+    @staticmethod
+    def get_scenario_tier(drs_name: str) -> int:
+        # TODO: update
+        return 1
+
+    @staticmethod
+    def get_scenario_project(
+        scenario_universe: ExperimentUniverse,
+    ) -> ExperimentProject:
+        res = ExperimentProject(
+            id=scenario_universe.drs_name.lower(),
+            activity=scenario_universe.activity,
+            start_timestamp=scenario_universe.start_timestamp,
+            end_timestamp=scenario_universe.end_timestamp,
+            min_number_yrs_per_sim=scenario_universe.min_number_yrs_per_sim,
+            parent_mip_era="cmip7",
+            tier=scenario_universe.tier,
+        )
+
+        return res
+
+    def get_scenario_extension(
+        self,
+        scenario: ExperimentUniverse,
+    ) -> ExperimentUniverse:
+        res = scenario.model_copy()
+
+        scenario_end_timestamp_dt = datetime.strptime(
+            scenario.end_timestamp, "%Y-%m-%d"
+        )
+
+        extension_start_timestamp = f"{scenario_end_timestamp_dt.year + 1}-01-01"
+        # TODO: check
+        extension_end_timestamp = "2500-12-31"
+
+        res.description = f"Extension of `{scenario.drs_name}` beyond {scenario_end_timestamp_dt.year}."
+        # Unclear to me how this is meant to work.
+        # scenario ends at 2100-12-31, extensions starts at 2101-01-01.
+        # Is it an implied join rather than a true overlap
+        # (like we have for piControl to historical)?
+        res.branch_information = f"Branch from `{scenario.drs_name}` at {scenario_end_timestamp_dt.strftime('%Y-%m-%d')}"
+
+        res.start_timestamp = extension_start_timestamp
+        res.end_timestamp = extension_end_timestamp
+
+        res.min_number_yrs_per_sim = 50.0
+        res.parent_activity = scenario.activity
+        res.parent_experiment = scenario.drs_name.lower()
+        res.drs_name = f"{scenario.drs_name}-ext"
+        res.tier = self.get_scenario_tier(res.drs_name)
+
+        return res
+
+    @staticmethod
+    def get_scenario_drs_name(scenario_acronym: str) -> str:
+        return f"scen7-{scenario_acronym}"
+
+    @staticmethod
+    def get_scenario_esm_drs_name(scenario_drs_name: str) -> str:
+        return f"esm-{scenario_drs_name}"
+
+    def get_scenario_esm(
+        self,
+        scenario: ExperimentUniverse,
+    ) -> ExperimentUniverse:
+        res = scenario.model_copy()
+
+        res.drs_name = self.get_scenario_esm_drs_name(scenario.drs_name)
+        res.description = (
+            scenario.description.replace(
+                "carbon dioxide concentrations", "carbon dioxide emissions"
+            )
+            .replace("carbon dioxide emissions,", "carbon dioxide concentrations,")
+            .replace(res.drs_name, scenario.drs_name)
+        )
+        res.required_model_components = ["aogcm", "bgc"]
+        res.additional_allowed_model_components = ["aer", "chem"]
+
+        if scenario.parent_experiment != "historical":
+            raise AssertionError
+
+        res.parent_experiment = "esm-hist"
+        res.branch_information = scenario.branch_information.replace(
+            scenario.parent_experiment, res.parent_experiment
+        )
+
+        res.tier = self.get_scenario_tier(res.drs_name)
+
+        return res
+
+    def add_scenario_entries(self) -> "Holder":
+        acronym_descriptions = [
+            ("vl", "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future."),
+            (
+                "ln",
+                "PLACEHOLDER TBC. CMIP7 ScenarioMIP low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future.",
+            ),
+            ("l", "PLACEHOLDER TBC. CMIP7 ScenarioMIP low emissions future."),
+            (
+                "ml",
+                "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium followed by low (from 2040) emissions future.",
+            ),
+            ("m", "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium emissions future."),
+            (
+                "hl",
+                "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future.",
+            ),
+            ("h", "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future."),
+        ]
+
+        for acronym, description_base in acronym_descriptions:
+            drs_name = self.get_scenario_drs_name(acronym)
+            drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
+            if "CMIP7 ScenarioMIP" not in description_base:
+                raise AssertionError(description_base)
+
+            description = (
+                f"{description_base} Run with prescribed carbon dioxide concentrations "
+                f"(for prescribed carbon dioxide emissions, see `{drs_name_esm_scenario}`)."
+            )
+
+            univ_base = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="scenariomip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information="Branch from `historical` at 2022-01-01.",
+                # TODO: check if 2100-21-31 or 2100-01-01
+                end_timestamp="2100-12-31",
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=79.0,
+                parent_activity="cmip",
+                parent_experiment="historical",
+                parent_mip_era="cmip7",
+                required_model_components=["aogcm"],
+                start_timestamp="2022-01-01",
+                tier=self.get_scenario_tier(drs_name),
+            )
+
+            proj_base = self.get_scenario_project(univ_base)
+
+            self.experiments_universe.append(univ_base)
+            self.experiments_project.append(proj_base)
+            self.add_experiment_to_activity(proj_base)
+
+            univ_ext = self.get_scenario_extension(univ_base)
+            proj_ext = self.get_scenario_project(univ_ext)
+            self.experiments_universe.append(univ_ext)
+            self.experiments_project.append(proj_ext)
+            self.add_experiment_to_activity(proj_ext)
+
+            univ_esm = self.get_scenario_esm(univ_base)
+            proj_esm = self.get_scenario_project(univ_esm)
+            self.experiments_universe.append(univ_esm)
+            self.experiments_project.append(proj_esm)
+            self.add_experiment_to_activity(proj_esm)
+
+            univ_esm_ext = self.get_scenario_extension(univ_esm)
+            proj_esm_ext = self.get_scenario_project(univ_esm_ext)
+            self.experiments_universe.append(univ_esm_ext)
+            self.experiments_project.append(proj_esm_ext)
+            self.add_experiment_to_activity(proj_esm_ext)
+
+        return self
+
+    def add_scenario_aerchemmip_entries(self) -> "Holder":
+        for base in ["vl", "h"]:
+            conc_driven_drs_name = self.get_scenario_drs_name(base)
+            for base_drs_name in [
+                conc_driven_drs_name,
+                self.get_scenario_esm_drs_name(conc_driven_drs_name),
+            ]:
+                base_experiment_universe_l = [
+                    v for v in self.experiments_universe if v.drs_name == base_drs_name
+                ]
+                if len(base_experiment_universe_l) != 1:
+                    raise AssertionError(base_drs_name)
+                base_experiment_universe = base_experiment_universe_l[0]
+
+                for (
+                    suffix,
+                    required_model_components,
+                    additional_allowed_model_components,
+                    desc_suffix,
+                ) in (
+                    (
+                        "-AQ",
+                        ["aogcm", "aer", "chem"],
+                        ["bgc"],
+                        (
+                            "This is for models with interactive chemistry. "
+                            "Models without interactive chemistry should run "
+                            f"`{base_experiment_universe.drs_name}-Aer` instead."
+                        ),
+                    ),
+                    (
+                        "-Aer",
+                        ["aogcm", "aer"],
+                        ["bgc", "chem"],
+                        (
+                            "This is for models without interactive chemistry. "
+                            "Models with interactive chemistry should run "
+                            f"`{base_experiment_universe.drs_name}-Aq` instead."
+                        ),
+                    ),
+                ):
+                    aerchemmip_experiment_universe = (
+                        base_experiment_universe.model_copy()
+                    )
+                    aerchemmip_experiment_universe.drs_name = (
+                        f"{aerchemmip_experiment_universe.drs_name}{suffix}"
+                    )
+                    aerchemmip_experiment_universe.activity = "aerchemmip"
+
+                    desc_base = aerchemmip_experiment_universe.description.split(
+                        " Run with prescribed"
+                    )[0]
+                    aerchemmip_experiment_universe.description = (
+                        f"{desc_base} "
+                        "Altered to use high aerosol and tropospheric non-methane ozone precursor emissions. "
+                        f"{desc_suffix}"
+                    )
+
+                    aerchemmip_experiment_universe.min_ensemble_size = 3
+                    aerchemmip_experiment_universe.required_model_components = (
+                        required_model_components
+                    )
+                    aerchemmip_experiment_universe.additional_allowed_model_components = additional_allowed_model_components
+
+                    aerchemmip_experiment_project = self.get_scenario_project(
+                        aerchemmip_experiment_universe
+                    )
+                    self.experiments_universe.append(aerchemmip_experiment_universe)
+                    self.experiments_project.append(aerchemmip_experiment_project)
+                    self.add_experiment_to_activity(aerchemmip_experiment_project)
+
+        # TODO: ask someone to translate/write hist-piAQ for me.
+        # Not sure what hist-piAQ is or how it is defined.
+
+        return self
+
     def write_files(self, project_root: Path, universe_root: Path) -> None:
         for experiment_project in self.experiments_project:
             experiment_project.write_file(project_root)
@@ -384,6 +1079,14 @@ def main():
 
     holder.add_1pctco2_entries()
     holder.add_abruptco2_entries()
+    holder.add_amip_entries()
+    holder.add_picontrol_entries()
+    holder.add_historical_entries()
+    holder.add_flat10_entries()
+    holder.add_damip_entries()
+    holder.add_pmip_entries()
+    holder.add_scenario_entries()
+    holder.add_scenario_aerchemmip_entries()
 
     holder.write_files(project_root=project_root, universe_root=universe_root)
 
