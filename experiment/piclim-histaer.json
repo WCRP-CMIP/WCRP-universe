@@ -2,32 +2,22 @@
     "@context": "000_context.jsonld",
     "id": "piclim-histaer",
     "type": "experiment",
-    "experiment_id": "piClim-histaer",
-    "activity_id": [
-        "rfmip"
-    ],
+    "description": "Simulation of the historical period with prescribed sea-surface temperatures and sea-ice concentrations. Aerosol emissions follow the `historical` experiment while all other forcings follow `piControl` to allow for a (approximate) diagnosis of transient historical aerosol effective radiative forcing (ERF) (can be compared with `piClim-aer` which provides a more precise quantification of present-day aerosol ERF).",
+    "drs_name": "piClim-histaer",
+    "start_timestamp": "1850-01-01",
+    "activity": "rfmip",
     "additional_allowed_model_components": [
-        "aer",
         "chem",
         "bgc"
     ],
-    "description": "Time-varying forcing by aerosols. SST and sea ice fixed at preindustrial control. Interactive vegetation",
-    "end_year": 2100,
-    "experiment": "transient effective radiative forcing by aerosols",
-    "min_number_yrs_per_sim": "251",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "picontrol"
-    ],
+    "branch_information": null,
+    "min_ensemble_size": 1,
+    "parent_activity": null,
+    "parent_experiment": null,
+    "parent_mip_era": null,
     "required_model_components": [
-        "agcm"
+        "aogcm",
+        "aer"
     ],
-    "start_year": 1850,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "2",
-    "drs_name": "piClim-histaer"
+    "tier": 1
 }
