@@ -847,13 +847,11 @@ class Holder(BaseModel):
                 ["aer", "chem", "bgc"],
                 1,
             ),
-            # TODO: check whether there is one missing here
             (
                 "piClim-CH4",
                 get_purturbation_description(
                     "methane",
-                    # TODO: check whether concentrations or emissions
-                    "methane atmospheric forcing",
+                    "methane concentrations or emissions (as appropriate for the model)",
                 ),
                 "aerchemmip",
                 ["agcm", "chem"],
@@ -864,8 +862,7 @@ class Holder(BaseModel):
                 "piClim-N2O",
                 get_purturbation_description(
                     "nitrous oxide",
-                    # TODO: check whether concentrations or emissions
-                    "nitrous oxide atmospheric forcing",
+                    "nitrous oxide concentrations or emissions (as appropriate for the model)",
                 ),
                 "aerchemmip",
                 ["agcm", "chem"],
@@ -876,7 +873,6 @@ class Holder(BaseModel):
                 "piClim-NOx",
                 get_purturbation_description(
                     "nitrous oxide (NOx)",
-                    # TODO: confirm tha this is emissions
                     "nitrous oxide (NOx) emissions",
                 ),
                 "aerchemmip",
@@ -888,8 +884,7 @@ class Holder(BaseModel):
                 "piClim-ODS",
                 get_purturbation_description(
                     "ozone-depleting substances'",
-                    # TODO: check whether concentrations or emissions
-                    "ozone-depleting substance atmospheric forcing",
+                    "ozone-depleting substances concentrations",
                 ),
                 "aerchemmip",
                 ["agcm", "chem"],

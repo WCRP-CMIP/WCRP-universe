@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "piclim-ch4",
     "type": "experiment",
-    "description": "In combination with `piClim-control`, quantifies present-day methane effective radiative forcing (ERF). Same as `piClim-control`, except methane atmospheric forcing use present-day values (typically the last year of the `historical` simulation within the same CMIP era e.g. 2014 values for CMIP6, 2021 values for CMIP7).",
+    "description": "In combination with `piClim-control`, quantifies present-day methane effective radiative forcing (ERF). Same as `piClim-control`, except methane concentrations or emissions (as appropriate for the model) use present-day values (typically the last year of the `historical` simulation within the same CMIP era e.g. 2014 values for CMIP6, 2021 values for CMIP7).",
     "drs_name": "piClim-CH4",
     "start_timestamp": null,
     "end_timestamp": null,
