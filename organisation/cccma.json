@@ -1,23 +1,14 @@
 {
-    "@id": "cccma",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
-    ],
-    "validation-key": "CCCma",
-    "ror": "01ge8wp14",
-    "ui-label": "Climate Modelling Laboratory",
-    "url": [
-        "https://climatelab.com.au/"
-    ],
+    "validation_key": "CCCma",
+    "ui_label": "Climate Modelling Laboratory",
+    "description": "",
+    "acronyms": [],
+    "aliases": [],
     "established": null,
     "kind": "facility",
     "labels": [
         "Climate Modelling Laboratory"
     ],
-    "aliases": [],
-    "acronyms": [],
     "location": [
         {
             "@id": "universal:location/01ge8wp14",
@@ -32,5 +23,16 @@
             "lng": 153.0901,
             "name": "Noosa"
         }
-    ]
+    ],
+    "ror": "01ge8wp14",
+    "url": [
+        "https://climatelab.com.au/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cccma"
 }
