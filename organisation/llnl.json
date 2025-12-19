@@ -1,22 +1,10 @@
 {
-    "@id": "llnl",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
-    ],
-    "validation-key": "LLNL",
-    "ror": "041nk4h53",
-    "ui-label": "Lawrence Livermore National Laboratory",
-    "url": [
-        "https://www.llnl.gov",
-        "http://en.wikipedia.org/wiki/Lawrence_Livermore_National_Laboratory"
-    ],
-    "established": 1952,
-    "kind": "facility",
-    "labels": [
-        "Laboratorio Nacional Lawrence Livermore",
-        "Lawrence Livermore National Laboratory"
+    "validation_key": "LLNL",
+    "ui_label": "Lawrence Livermore National Laboratory",
+    "description": "",
+    "acronyms": [
+        "LLL",
+        "LLNL"
     ],
     "aliases": [
         "U.S. Department of Energy Lawrence Livermore National Laboratory",
@@ -24,9 +12,11 @@
         "United States Department of Energy Lawrence Livermore National Laboratory",
         "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory"
     ],
-    "acronyms": [
-        "LLL",
-        "LLNL"
+    "established": 1952,
+    "kind": "facility",
+    "labels": [
+        "Laboratorio Nacional Lawrence Livermore",
+        "Lawrence Livermore National Laboratory"
     ],
     "location": [
         {
@@ -42,5 +32,17 @@
             "lng": -121.76801,
             "name": "Livermore"
         }
-    ]
+    ],
+    "ror": "041nk4h53",
+    "url": [
+        "https://www.llnl.gov",
+        "http://en.wikipedia.org/wiki/Lawrence_Livermore_National_Laboratory"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "llnl"
 }
