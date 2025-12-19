@@ -1,27 +1,17 @@
 {
-    "@id": "dwd",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "DWD",
+    "ui_label": "Deutscher Wetterdienst",
+    "description": "",
+    "acronyms": [
+        "DWD"
     ],
-    "validation-key": "DWD",
-    "ror": "02nrqs528",
-    "ui-label": "Deutscher Wetterdienst",
-    "url": [
-        "https://www.dwd.de",
-        "http://en.wikipedia.org/wiki/Deutscher_Wetterdienst"
+    "aliases": [
+        "German Meteorological Service"
     ],
     "established": 1952,
     "kind": "facility",
     "labels": [
         "Deutscher Wetterdienst"
-    ],
-    "aliases": [
-        "German Meteorological Service"
-    ],
-    "acronyms": [
-        "DWD"
     ],
     "location": [
         {
@@ -37,5 +27,17 @@
             "lng": 8.76647,
             "name": "Offenbach"
         }
-    ]
+    ],
+    "ror": "02nrqs528",
+    "url": [
+        "https://www.dwd.de",
+        "http://en.wikipedia.org/wiki/Deutscher_Wetterdienst"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "dwd"
 }
