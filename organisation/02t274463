@@ -1,0 +1,43 @@
+{
+    "@id": "ucsb",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "UCSB",
+    "ror": "02t274463",
+    "ui-label": "University of California, Santa Barbara",
+    "url": [
+        "https://www.ucsb.edu",
+        "http://en.wikipedia.org/wiki/University_of_California,_Santa_Barbara"
+    ],
+    "established": 1891,
+    "kind": "education",
+    "labels": [
+        "Universidad de California en Santa B\u00e1rbara",
+        "University of California, Santa Barbara",
+        "Universit\u00e9 de Californie \u00e0 Santa Barbara"
+    ],
+    "aliases": [
+        "UC Santa Barbara"
+    ],
+    "acronyms": [
+        "UCSB"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02t274463",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CA",
+            "country_subdivision_name": "California",
+            "lat": 34.42083,
+            "lng": -119.69819,
+            "name": "Santa Barbara"
+        }
+    ]
+}

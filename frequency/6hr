@@ -1,0 +1,14 @@
+{
+    "validation_key": "6hr",
+    "ui_label": "6 Hourly Frequency",
+    "description": "6 hourly mean samples",
+    "approx_interval": 0.25,
+    "unit": "hour",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "6hr"
+}

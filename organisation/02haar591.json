@@ -1,0 +1,39 @@
+{
+    "@id": "ipsl",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "IPSL",
+    "ror": "02haar591",
+    "ui-label": "Institut Pierre-Simon Laplace",
+    "url": [
+        "https://www.ipsl.fr/en/",
+        "https://en.wikipedia.org/wiki/Institut_Pierre_Simon_Laplace"
+    ],
+    "established": 1991,
+    "kind": "facility",
+    "labels": [
+        "Institut Pierre-Simon Laplace"
+    ],
+    "aliases": [],
+    "acronyms": [
+        "IPSL"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02haar591",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "FR",
+            "country_name": "France",
+            "country_subdivision_code": "IDF",
+            "country_subdivision_name": "\u00cele-de-France",
+            "lat": 48.85341,
+            "lng": 2.3488,
+            "name": "Paris"
+        }
+    ]
+}
