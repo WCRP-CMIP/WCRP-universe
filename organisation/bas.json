@@ -1,25 +1,15 @@
 {
-    "@id": "bas",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "BAS",
+    "ui_label": "British Antarctic Survey",
+    "description": "",
+    "acronyms": [
+        "BAS"
     ],
-    "validation-key": "BAS",
-    "ror": "01rhff309",
-    "ui-label": "British Antarctic Survey",
-    "url": [
-        "https://www.bas.ac.uk/",
-        "https://en.wikipedia.org/wiki/British_Antarctic_Survey"
-    ],
+    "aliases": [],
     "established": 1962,
     "kind": "funder",
     "labels": [
         "British Antarctic Survey"
-    ],
-    "aliases": [],
-    "acronyms": [
-        "BAS"
     ],
     "location": [
         {
@@ -35,5 +25,17 @@
             "lng": 0.11667,
             "name": "Cambridge"
         }
-    ]
+    ],
+    "ror": "01rhff309",
+    "url": [
+        "https://www.bas.ac.uk/",
+        "https://en.wikipedia.org/wiki/British_Antarctic_Survey"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "bas"
 }
