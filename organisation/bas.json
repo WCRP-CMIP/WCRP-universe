@@ -1,34 +1,39 @@
 {
-    "validation_key": "BAS",
-    "ui_label": "British Antarctic Survey",
-    "description": "",
+    "@id": "bas",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "BAS",
+    "ror": "01rhff309",
+    "ui-label": "British Antarctic Survey",
+    "url": [
+        "https://www.bas.ac.uk/",
+        "https://en.wikipedia.org/wiki/British_Antarctic_Survey"
+    ],
+    "established": 1962,
+    "kind": "funder",
+    "labels": [
+        "British Antarctic Survey"
+    ],
+    "aliases": [],
     "acronyms": [
         "BAS"
     ],
-    "aliases": [],
-    "established": 1962,
-    "kind": "Government",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/01rhff309",
-        "@type": "esgf:location",
-        "lat": 52.2,
-        "lon": 0.11667,
-        "city": "Cambridge",
-        "country": [
-            "United Kingdom",
-            "GB"
-        ]
-    },
-    "ror": "01rhff309",
-    "url": [
-        "https://www.bas.ac.uk/"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "bas"
+    "location": [
+        {
+            "@id": "universal:location/01rhff309",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 52.2,
+            "lng": 0.11667,
+            "name": "Cambridge"
+        }
+    ]
 }

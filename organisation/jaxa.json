@@ -1,39 +1,43 @@
 {
-    "validation_key": "JAXA",
-    "ui_label": "Japan Aerospace Exploration Agency",
-    "description": "",
+    "@id": "jaxa",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "JAXA",
+    "ror": "059yhyy33",
+    "ui-label": "Japan Aerospace Exploration Agency",
+    "url": [
+        "https://www.jaxa.jp",
+        "https://en.wikipedia.org/wiki/JAXA"
+    ],
+    "established": 2003,
+    "kind": "facility",
+    "labels": [
+        "Japan Aerospace Exploration Agency",
+        "\u5b87\u5b99\u822a\u7a7a\u7814\u7a76\u958b\u767a\u6a5f\u69cb"
+    ],
+    "aliases": [
+        "Dokuritsu-gy\u014dsei-h\u014djin Uch\u016b K\u014dk\u016b Kenky\u016b Kaihatsu Kik\u014d",
+        "Independent Administrative Institution on Aerospace Research and Development"
+    ],
     "acronyms": [
         "JAXA"
     ],
-    "aliases": [
-        "Dokuritsu-gyōsei-hōjin Uchū Kōkū Kenkyū Kaihatsu Kikō",
-        "Independent Administrative Institution on Aerospace Research and Development"
-    ],
-    "established": 2003,
-    "kind": "Facility",
-    "labels": [
-        "宇宙航空研究開発機構"
-    ],
-    "location": {
-        "@id": "universal:location/059yhyy33",
-        "@type": "esgf:location",
-        "lat": 35.6895,
-        "lon": 139.69171,
-        "city": "Tokyo",
-        "country": [
-            "Japan",
-            "JP"
-        ]
-    },
-    "ror": "059yhyy33",
-    "url": [
-        "https://www.jaxa.jp"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "jaxa"
+    "location": [
+        {
+            "@id": "universal:location/059yhyy33",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "JP",
+            "country_name": "Japan",
+            "country_subdivision_code": "13",
+            "country_subdivision_name": "Tokyo",
+            "lat": 35.6895,
+            "lng": 139.69171,
+            "name": "Tokyo"
+        }
+    ]
 }

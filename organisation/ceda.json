@@ -1,34 +1,39 @@
 {
-    "validation_key": "CEDA",
-    "ui_label": "Centre for Environmental Data Analysis",
-    "description": "",
+    "@id": "ceda",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "CEDA",
+    "ror": "04j4kad11",
+    "ui-label": "Centre for Environmental Data Analysis",
+    "url": [
+        "https://www.ceda.ac.uk/",
+        "https://en.wikipedia.org/wiki/Centre_for_Environmental_Data_Analysis"
+    ],
+    "established": 2005,
+    "kind": "government",
+    "labels": [
+        "Centre for Environmental Data Analysis"
+    ],
+    "aliases": [],
     "acronyms": [
         "CEDA"
     ],
-    "aliases": [],
-    "established": 2005,
-    "kind": "Government",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/04j4kad11",
-        "@type": "esgf:location",
-        "lat": 53.41667,
-        "lon": -0.96667,
-        "city": "Harwell",
-        "country": [
-            "United Kingdom",
-            "GB"
-        ]
-    },
-    "ror": "04j4kad11",
-    "url": [
-        "https://www.ceda.ac.uk/"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "ceda"
+    "location": [
+        {
+            "@id": "universal:location/04j4kad11",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 53.41667,
+            "lng": -0.96667,
+            "name": "Harwell"
+        }
+    ]
 }

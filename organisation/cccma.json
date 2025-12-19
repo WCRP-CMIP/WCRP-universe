@@ -1,36 +1,36 @@
 {
-    "validation_key": "CCCma",
-    "ui_label": "Environment and Climate Change Canada",
-    "description": "",
-    "acronyms": [
-        "ECCC"
-    ],
-    "aliases": [],
-    "established": 1971,
-    "kind": "Funder",
-    "labels": [
-        "Environnement et Changement Climatique Canada"
-    ],
-    "location": {
-        "@id": "universal:location/026ny0e17",
-        "@type": "esgf:location",
-        "lat": 45.41117,
-        "lon": -75.69812,
-        "city": "Ottawa",
-        "country": [
-            "Canada",
-            "CA"
-        ]
-    },
-    "ror": "026ny0e17",
-    "url": [
-        "https://www.canada.ca/en/environment-climate-change.html"
-    ],
-    "@context": "_context",
+    "@id": "cccma",
     "@type": [
         "wcrp:organisation",
-        "esgvoc:Organisation",
+        "wcrp:institution",
         "universal"
     ],
-    "@id": "cccma"
+    "validation-key": "CCCma",
+    "ror": "01ge8wp14",
+    "ui-label": "Climate Modelling Laboratory",
+    "url": [
+        "https://climatelab.com.au/"
+    ],
+    "established": null,
+    "kind": "facility",
+    "labels": [
+        "Climate Modelling Laboratory"
+    ],
+    "aliases": [],
+    "acronyms": [],
+    "location": [
+        {
+            "@id": "universal:location/01ge8wp14",
+            "@type": "wcrp:location",
+            "continent_code": "OC",
+            "continent_name": "Oceania",
+            "country_code": "AU",
+            "country_name": "Australia",
+            "country_subdivision_code": "QLD",
+            "country_subdivision_name": "Queensland",
+            "lat": -26.39433,
+            "lng": 153.0901,
+            "name": "Noosa"
+        }
+    ]
 }

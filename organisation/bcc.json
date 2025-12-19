@@ -1,32 +1,37 @@
 {
-    "validation_key": "BCC",
-    "ui_label": "Beijing Biocytogen (China)",
-    "description": "",
-    "acronyms": [],
-    "aliases": [],
-    "established": 2008,
-    "kind": "Company",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/01spyyb53",
-        "@type": "esgf:location",
-        "lat": 39.9075,
-        "lon": 116.39723,
-        "city": "Beijing",
-        "country": [
-            "China",
-            "CN"
-        ]
-    },
-    "ror": "01spyyb53",
-    "url": [
-        "http://www.bbctg.com.cn/"
-    ],
-    "@context": "_context",
+    "@id": "bcc",
     "@type": [
         "wcrp:organisation",
-        "esgvoc:Organisation",
+        "wcrp:institution",
         "universal"
     ],
-    "@id": "bcc"
+    "validation-key": "BCC",
+    "ror": "03kb2jw75",
+    "ui-label": "Beijing Climate Center",
+    "url": [
+        "http://bcc.ncc-cma.net"
+    ],
+    "established": 2003,
+    "kind": "facility",
+    "labels": [
+        "Beijing Climate Center",
+        "\u56fd\u5bb6\u6c14\u5019\u4e2d\u5fc3"
+    ],
+    "aliases": [],
+    "acronyms": [],
+    "location": [
+        {
+            "@id": "universal:location/03kb2jw75",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "CN",
+            "country_name": "China",
+            "country_subdivision_code": "BJ",
+            "country_subdivision_name": "Beijing",
+            "lat": 39.9075,
+            "lng": 116.39723,
+            "name": "Beijing"
+        }
+    ]
 }

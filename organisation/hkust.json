@@ -1,34 +1,39 @@
 {
-    "validation_key": "HKUST",
-    "ui_label": "Hong Kong University of Science and Technology",
-    "description": "",
+    "@id": "hkust",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "HKUST",
+    "ror": "00q4vv597",
+    "ui-label": "Hong Kong University of Science and Technology",
+    "url": [
+        "https://hkust.edu.hk",
+        "http://en.wikipedia.org/wiki/Hong_Kong_University_of_Science_and_Technology"
+    ],
+    "established": 1991,
+    "kind": "education",
+    "labels": [
+        "Hong Kong University of Science and Technology"
+    ],
+    "aliases": [],
     "acronyms": [
         "HKUST"
     ],
-    "aliases": [],
-    "established": 1991,
-    "kind": "Education",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/00q4vv597",
-        "@type": "esgf:location",
-        "lat": 22.27832,
-        "lon": 114.17469,
-        "city": "Hong Kong",
-        "country": [
-            "Hong Kong",
-            "HK"
-        ]
-    },
-    "ror": "00q4vv597",
-    "url": [
-        "https://hkust.edu.hk"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "hkust"
+    "location": [
+        {
+            "@id": "universal:location/00q4vv597",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "HK",
+            "country_name": "Hong Kong",
+            "country_subdivision_code": null,
+            "country_subdivision_name": null,
+            "lat": 22.27832,
+            "lng": 114.17469,
+            "name": "Hong Kong"
+        }
+    ]
 }

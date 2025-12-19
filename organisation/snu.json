@@ -1,38 +1,42 @@
 {
-    "validation_key": "SNU",
-    "ui_label": "Seoul National University",
-    "description": "",
-    "acronyms": [
-        "SNU"
+    "@id": "snu",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "SNU",
+    "ror": "04h9pn542",
+    "ui-label": "Seoul National University",
+    "url": [
+        "https://www.snu.ac.kr",
+        "http://en.wikipedia.org/wiki/Seoul_National_University"
+    ],
+    "established": 1946,
+    "kind": "education",
+    "labels": [
+        "Seoul National University",
+        "\uc11c\uc6b8\ub300\ud559\uad50"
     ],
     "aliases": [
         "Seoul Daehakgyo"
     ],
-    "established": 1946,
-    "kind": "Education",
-    "labels": [
-        "서울대학교"
+    "acronyms": [
+        "SNU"
     ],
-    "location": {
-        "@id": "universal:location/04h9pn542",
-        "@type": "esgf:location",
-        "lat": 37.566,
-        "lon": 126.9784,
-        "city": "Seoul",
-        "country": [
-            "South Korea",
-            "KR"
-        ]
-    },
-    "ror": "04h9pn542",
-    "url": [
-        "https://www.snu.ac.kr"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "snu"
+    "location": [
+        {
+            "@id": "universal:location/04h9pn542",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "KR",
+            "country_name": "South Korea",
+            "country_subdivision_code": "11",
+            "country_subdivision_name": "Seoul",
+            "lat": 37.566,
+            "lng": 126.9784,
+            "name": "Seoul"
+        }
+    ]
 }

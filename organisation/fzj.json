@@ -1,36 +1,41 @@
 {
-    "validation_key": "FZJ",
-    "ui_label": "Forschungszentrum Jülich",
-    "description": "",
-    "acronyms": [
-        "FZJ"
-    ],
-    "aliases": [],
-    "established": 1956,
-    "kind": "Facility",
-    "labels": [
-        "Jülich Research Centre"
-    ],
-    "location": {
-        "@id": "universal:location/02nv7yv05",
-        "@type": "esgf:location",
-        "lat": 50.92149,
-        "lon": 6.36267,
-        "city": "Jülich",
-        "country": [
-            "Germany",
-            "DE"
-        ]
-    },
-    "ror": "02nv7yv05",
-    "url": [
-        "https://www.fz-juelich.de"
-    ],
-    "@context": "_context",
+    "@id": "fzj",
     "@type": [
         "wcrp:organisation",
-        "esgvoc:Organisation",
+        "wcrp:institution",
         "universal"
     ],
-    "@id": "fzj"
+    "validation-key": "FZJ",
+    "ror": "037vx0145",
+    "ui-label": "Projekttr\u00e4ger J\u00fclich",
+    "url": [
+        "https://www.ptj.de",
+        "https://de.wikipedia.org/wiki/Projekttr%C3%A4ger_J%C3%BClich"
+    ],
+    "established": 1974,
+    "kind": "other",
+    "labels": [
+        "Projekttr\u00e4ger J\u00fclich"
+    ],
+    "aliases": [
+        "Project Management J\u00fclich"
+    ],
+    "acronyms": [
+        "PtJ"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/037vx0145",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "NW",
+            "country_subdivision_name": "North Rhine-Westphalia",
+            "lat": 50.92149,
+            "lng": 6.36267,
+            "name": "J\u00fclich"
+        }
+    ]
 }

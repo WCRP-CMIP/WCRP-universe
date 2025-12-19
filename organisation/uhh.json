@@ -1,38 +1,42 @@
 {
-    "validation_key": "UHH",
-    "ui_label": "Universität Hamburg",
-    "description": "",
+    "@id": "uhh",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "UHH",
+    "ror": "00g30e956",
+    "ui-label": "Universit\u00e4t Hamburg",
+    "url": [
+        "http://www.uni-hamburg.de",
+        "http://en.wikipedia.org/wiki/University_of_Hamburg"
+    ],
+    "established": 1919,
+    "kind": "education",
+    "labels": [
+        "University of Hamburg",
+        "Universit\u00e4t Hamburg"
+    ],
+    "aliases": [
+        "Hamburg University"
+    ],
     "acronyms": [
         "UHH"
     ],
-    "aliases": [
-        "University of Hamburg"
-    ],
-    "established": 1919,
-    "kind": "Education",
-    "labels": [
-        "Hamburg University"
-    ],
-    "location": {
-        "@id": "universal:location/00g30e956",
-        "@type": "esgf:location",
-        "lat": 53.55073,
-        "lon": 9.99302,
-        "city": "Hamburg",
-        "country": [
-            "Germany",
-            "DE"
-        ]
-    },
-    "ror": "00g30e956",
-    "url": [
-        "http://www.uni-hamburg.de"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "uhh"
+    "location": [
+        {
+            "@id": "universal:location/00g30e956",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "HH",
+            "country_subdivision_name": "Hamburg",
+            "lat": 53.55073,
+            "lng": 9.99302,
+            "name": "Hamburg"
+        }
+    ]
 }

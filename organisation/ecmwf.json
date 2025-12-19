@@ -1,34 +1,39 @@
 {
-    "validation_key": "ECMWF",
-    "ui_label": "European Centre for Medium-Range Weather Forecasts",
-    "description": "",
+    "@id": "ecmwf",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "ECMWF",
+    "ror": "014w0fd65",
+    "ui-label": "European Centre for Medium-Range Weather Forecasts",
+    "url": [
+        "http://www.ecmwf.int/",
+        "http://en.wikipedia.org/wiki/European_Centre_for_Medium-Range_Weather_Forecasts"
+    ],
+    "established": 1975,
+    "kind": "funder",
+    "labels": [
+        "European Centre for Medium-Range Weather Forecasts"
+    ],
+    "aliases": [],
     "acronyms": [
         "ECMWF"
     ],
-    "aliases": [],
-    "established": 1975,
-    "kind": "Other",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/014w0fd65",
-        "@type": "esgf:location",
-        "lat": 51.45625,
-        "lon": -0.97113,
-        "city": "Reading",
-        "country": [
-            "United Kingdom",
-            "GB"
-        ]
-    },
-    "ror": "014w0fd65",
-    "url": [
-        "http://www.ecmwf.int/"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "ecmwf"
+    "location": [
+        {
+            "@id": "universal:location/014w0fd65",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 51.45625,
+            "lng": -0.97113,
+            "name": "Reading"
+        }
+    ]
 }

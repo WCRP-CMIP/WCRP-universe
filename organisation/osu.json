@@ -1,37 +1,41 @@
 {
-    "validation_key": "OSU",
-    "ui_label": "Oregon State University",
-    "description": "",
+    "@id": "osu",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "OSU",
+    "ror": "00ysfqy60",
+    "ui-label": "Oregon State University",
+    "url": [
+        "https://oregonstate.edu",
+        "http://en.wikipedia.org/wiki/Oregon_State_University"
+    ],
+    "established": 1868,
+    "kind": "education",
+    "labels": [
+        "Oregon State University",
+        "Universidad Estatal de Oreg\u00f3n",
+        "Universit\u00e9 d'\u00c9tat de l'Oregon"
+    ],
+    "aliases": [],
     "acronyms": [
         "OSU"
     ],
-    "aliases": [],
-    "established": 1868,
-    "kind": "Education",
-    "labels": [
-        "Universidad Estatal de Oregón",
-        "Université d'État de l'Oregon"
-    ],
-    "location": {
-        "@id": "universal:location/00ysfqy60",
-        "@type": "esgf:location",
-        "lat": 44.56457,
-        "lon": -123.26204,
-        "city": "Corvallis",
-        "country": [
-            "United States",
-            "US"
-        ]
-    },
-    "ror": "00ysfqy60",
-    "url": [
-        "https://oregonstate.edu"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "osu"
+    "location": [
+        {
+            "@id": "universal:location/00ysfqy60",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "OR",
+            "country_subdivision_name": "Oregon",
+            "lat": 44.56457,
+            "lng": -123.26204,
+            "name": "Corvallis"
+        }
+    ]
 }
