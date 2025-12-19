@@ -1,29 +1,19 @@
 {
-    "@id": "jaxa",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "JAXA",
+    "ui_label": "Japan Aerospace Exploration Agency",
+    "description": "",
+    "acronyms": [
+        "JAXA"
     ],
-    "validation-key": "JAXA",
-    "ror": "059yhyy33",
-    "ui-label": "Japan Aerospace Exploration Agency",
-    "url": [
-        "https://www.jaxa.jp",
-        "https://en.wikipedia.org/wiki/JAXA"
+    "aliases": [
+        "Dokuritsu-gyōsei-hōjin Uchū Kōkū Kenkyū Kaihatsu Kikō",
+        "Independent Administrative Institution on Aerospace Research and Development"
     ],
     "established": 2003,
     "kind": "facility",
     "labels": [
         "Japan Aerospace Exploration Agency",
-        "\u5b87\u5b99\u822a\u7a7a\u7814\u7a76\u958b\u767a\u6a5f\u69cb"
-    ],
-    "aliases": [
-        "Dokuritsu-gy\u014dsei-h\u014djin Uch\u016b K\u014dk\u016b Kenky\u016b Kaihatsu Kik\u014d",
-        "Independent Administrative Institution on Aerospace Research and Development"
-    ],
-    "acronyms": [
-        "JAXA"
+        "宇宙航空研究開発機構"
     ],
     "location": [
         {
@@ -39,5 +29,17 @@
             "lng": 139.69171,
             "name": "Tokyo"
         }
-    ]
+    ],
+    "ror": "059yhyy33",
+    "url": [
+        "https://www.jaxa.jp",
+        "https://en.wikipedia.org/wiki/JAXA"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "jaxa"
 }
