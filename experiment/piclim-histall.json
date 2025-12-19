@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "piclim-histall",
     "type": "experiment",
-    "description": "Simulation of the historical period with prescribed sea-surface temperatures and sea-ice concentrations. All forcings follow the `historical` experiment to allow for a (approximate) diagnosis of transient historical effective radiative forcing (ERF).(can be compared with the `piClim-*` experiments which provide a more precise quantification of present-day ERF from various forcers).",
+    "description": "Simulation of the historical period with prescribed sea-surface temperatures and sea-ice concentrations (the slightly confusing name is a legacy thing). All forcings follow the `historical` experiment then a future experiment to allow for a (approximate) diagnosis of transient historical effective radiative forcing (ERF) (can be compared with the `piClim-*` experiments which provide a more precise quantification of present-day ERF from various forcers).",
     "drs_name": "piClim-histall",
     "start_timestamp": "1850-01-01",
     "activity": "rfmip",

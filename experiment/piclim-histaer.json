@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "piclim-histaer",
     "type": "experiment",
-    "description": "Simulation of the historical period with prescribed sea-surface temperatures and sea-ice concentrations. Aerosol emissions follow the `historical` experiment while all other forcings follow `piControl` to allow for a (approximate) diagnosis of transient historical aerosol effective radiative forcing (ERF) (can be compared with `piClim-aer` which provides a more precise quantification of present-day aerosol ERF).",
+    "description": "Simulation of the historical and future period with prescribed sea-surface temperatures and sea-ice concentrations (the slightly confusing name is a legacy thing). Aerosol emissions follow the `historical` experiment then a future experiment while all other forcings follow `piControl` to allow for a (approximate) diagnosis of transient historical aerosol effective radiative forcing (ERF) (can be compared with `piClim-aer` which provides a more precise quantification of present-day aerosol ERF).",
     "drs_name": "piClim-histaer",
     "start_timestamp": "1850-01-01",
     "activity": "rfmip",

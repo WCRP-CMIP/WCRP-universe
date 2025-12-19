@@ -983,20 +983,26 @@ class Holder(BaseModel):
         for (
             drs_name,
             description,
+            get_description_project,
             required_model_components,
             additional_allowed_model_components,
         ) in (
             (
                 "piClim-histaer",
                 (
-                    "Simulation of the historical period with prescribed sea-surface temperatures "
-                    "and sea-ice concentrations. "
-                    "Aerosol emissions follow the `historical` experiment "
+                    "Simulation of the historical and future period with prescribed sea-surface temperatures "
+                    "and sea-ice concentrations "
+                    "(the slightly confusing name is a legacy thing). "
+                    "Aerosol emissions follow the `historical` experiment then a future experiment "
                     "while all other forcings follow `piControl` "
                     "to allow for a (approximate) diagnosis of "
                     "transient historical aerosol effective radiative forcing (ERF) "
                     "(can be compared with `piClim-aer` which provides a more precise "
                     "quantification of present-day aerosol ERF)."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
                 ),
                 ["aogcm", "aer"],
                 ["chem", "bgc"],
@@ -1005,12 +1011,17 @@ class Holder(BaseModel):
                 "piClim-histall",
                 (
                     "Simulation of the historical period with prescribed sea-surface temperatures "
-                    "and sea-ice concentrations. "
-                    "All forcings follow the `historical` experiment "
+                    "and sea-ice concentrations "
+                    "(the slightly confusing name is a legacy thing). "
+                    "All forcings follow the `historical` experiment then a future experiment "
                     "to allow for a (approximate) diagnosis of "
-                    "transient historical effective radiative forcing (ERF)."
+                    "transient historical effective radiative forcing (ERF) "
                     "(can be compared with the `piClim-*` experiments which provide a more precise "
                     "quantification of present-day ERF from various forcers)."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
                 ),
                 ["aogcm", "aer"],
                 ["chem", "bgc"],
@@ -1037,12 +1048,13 @@ class Holder(BaseModel):
 
             self.experiments_universe.append(univ)
 
+            description_project = get_description_project(description)
+
             proj = ExperimentProject(
                 id=univ.drs_name.lower(),
                 activity=univ.activity,
+                description=description_project,
                 start_timestamp="1850-01-01",
-                # TODO: check why these are called `*hist*`
-                # when they are meant to extend to 2100.
                 end_timestamp="2100-12-31",
                 min_number_yrs_per_sim=251,
                 tier=1,
