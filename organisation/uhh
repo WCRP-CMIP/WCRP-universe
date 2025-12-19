@@ -1,0 +1,44 @@
+{
+    "validation_key": "UHH",
+    "ui_label": "Universität Hamburg",
+    "description": "",
+    "acronyms": [
+        "UHH"
+    ],
+    "aliases": [
+        "Hamburg University"
+    ],
+    "established": 1919,
+    "kind": "education",
+    "labels": [
+        "University of Hamburg",
+        "Universität Hamburg"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00g30e956",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "HH",
+            "country_subdivision_name": "Hamburg",
+            "lat": 53.55073,
+            "lng": 9.99302,
+            "name": "Hamburg"
+        }
+    ],
+    "ror": "00g30e956",
+    "url": [
+        "http://www.uni-hamburg.de",
+        "http://en.wikipedia.org/wiki/University_of_Hamburg"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uhh"
+}

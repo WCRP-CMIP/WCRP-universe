@@ -1,0 +1,48 @@
+{
+    "validation_key": "NOAA-NCEI",
+    "ui_label": "NOAA National Centers for Environmental Information",
+    "description": "",
+    "acronyms": [
+        "NCEI",
+        "NOAA NCEI"
+    ],
+    "aliases": [
+        "National Centers for Environmental Information",
+        "National Climatic Data Center",
+        "U.S. National Centers for Environmental Information",
+        "United States National Centers for Environmental Information",
+        "United States National Environmental Satellites, Data, and Information Service National Centers for Environmental Information"
+    ],
+    "established": 1934,
+    "kind": "funder",
+    "labels": [
+        "NOAA National Centers for Environmental Information"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04r0wrp59",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "NC",
+            "country_subdivision_name": "North Carolina",
+            "lat": 35.60095,
+            "lng": -82.55402,
+            "name": "Asheville"
+        }
+    ],
+    "ror": "04r0wrp59",
+    "url": [
+        "https://www.ncei.noaa.gov",
+        "https://en.wikipedia.org/wiki/National_Centers_for_Environmental_Information"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "noaa-ncei"
+}
