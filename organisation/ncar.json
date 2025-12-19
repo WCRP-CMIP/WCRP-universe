@@ -1,25 +1,15 @@
 {
-    "@id": "ncar",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "NCAR",
+    "ui_label": "National Centre for Atmospheric Science",
+    "description": "",
+    "acronyms": [
+        "NCAS"
     ],
-    "validation-key": "NCAR",
-    "ror": "01wwwe276",
-    "ui-label": "National Centre for Atmospheric Science",
-    "url": [
-        "https://ncas.ac.uk/",
-        "http://en.wikipedia.org/wiki/National_Centre_for_Atmospheric_Science"
-    ],
+    "aliases": [],
     "established": 2002,
     "kind": "funder",
     "labels": [
         "National Centre for Atmospheric Science"
-    ],
-    "aliases": [],
-    "acronyms": [
-        "NCAS"
     ],
     "location": [
         {
@@ -35,5 +25,17 @@
             "lng": -1.54785,
             "name": "Leeds"
         }
-    ]
+    ],
+    "ror": "01wwwe276",
+    "url": [
+        "https://ncas.ac.uk/",
+        "http://en.wikipedia.org/wiki/National_Centre_for_Atmospheric_Science"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ncar"
 }
