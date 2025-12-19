@@ -1,6 +1,8 @@
 # Ignore everything
 *
 
+**/.DS_Store
+
 # But not these file types
 !*.csv
 !*.md
