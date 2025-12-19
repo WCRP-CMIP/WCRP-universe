@@ -1,36 +1,41 @@
 {
-    "validation_key": "CAS",
-    "ui_label": "Chinese Academy of Sciences",
-    "description": "",
-    "acronyms": [
-        "CAS"
-    ],
-    "aliases": [],
-    "established": 1949,
-    "kind": "Funder",
-    "labels": [
-        "中国科学院"
-    ],
-    "location": {
-        "@id": "universal:location/034t30j35",
-        "@type": "esgf:location",
-        "lat": 39.9075,
-        "lon": 116.39723,
-        "city": "Beijing",
-        "country": [
-            "China",
-            "CN"
-        ]
-    },
-    "ror": "034t30j35",
-    "url": [
-        "http://english.cas.cn/"
-    ],
-    "@context": "_context",
+    "@id": "cas",
     "@type": [
         "wcrp:organisation",
-        "esgvoc:Organisation",
+        "wcrp:institution",
         "universal"
     ],
-    "@id": "cas"
+    "validation-key": "CAS",
+    "ror": "0424h4e32",
+    "ui-label": "Institute of Atmospheric Physics",
+    "url": [
+        "http://english.iap.cas.cn/au"
+    ],
+    "established": 1928,
+    "kind": "facility",
+    "labels": [
+        "Institute of Atmospheric Physics",
+        "\u4e2d\u56fd\u79d1\u5b66\u9662\u5927\u6c14\u7269\u7406\u7814\u7a76\u6240"
+    ],
+    "aliases": [
+        "Institute of Meteorology of Academia Sinica"
+    ],
+    "acronyms": [
+        "IAP"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/0424h4e32",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "CN",
+            "country_name": "China",
+            "country_subdivision_code": "BJ",
+            "country_subdivision_name": "Beijing",
+            "lat": 39.9075,
+            "lng": 116.39723,
+            "name": "Beijing"
+        }
+    ]
 }

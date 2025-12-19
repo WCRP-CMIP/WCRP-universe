@@ -1,10 +1,21 @@
 {
-    "validation_key": "NOAA-NCEI",
-    "ui_label": "NOAA National Centers for Environmental Information",
-    "description": "",
-    "acronyms": [
-        "NCEI",
-        "NOAA NCEI"
+    "@id": "noaa-ncei",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "NOAA-NCEI",
+    "ror": "04r0wrp59",
+    "ui-label": "NOAA National Centers for Environmental Information",
+    "url": [
+        "https://www.ncei.noaa.gov",
+        "https://en.wikipedia.org/wiki/National_Centers_for_Environmental_Information"
+    ],
+    "established": 1934,
+    "kind": "funder",
+    "labels": [
+        "NOAA National Centers for Environmental Information"
     ],
     "aliases": [
         "National Centers for Environmental Information",
@@ -13,29 +24,23 @@
         "United States National Centers for Environmental Information",
         "United States National Environmental Satellites, Data, and Information Service National Centers for Environmental Information"
     ],
-    "established": 1934,
-    "kind": "Funder",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/04r0wrp59",
-        "@type": "esgf:location",
-        "lat": 35.60095,
-        "lon": -82.55402,
-        "city": "Asheville",
-        "country": [
-            "United States",
-            "US"
-        ]
-    },
-    "ror": "04r0wrp59",
-    "url": [
-        "https://www.ncei.noaa.gov"
+    "acronyms": [
+        "NCEI",
+        "NOAA NCEI"
     ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "noaa-ncei"
+    "location": [
+        {
+            "@id": "universal:location/04r0wrp59",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "NC",
+            "country_subdivision_name": "North Carolina",
+            "lat": 35.60095,
+            "lng": -82.55402,
+            "name": "Asheville"
+        }
+    ]
 }

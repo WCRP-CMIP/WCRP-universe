@@ -1,41 +1,46 @@
 {
-    "validation_key": "UCLA",
-    "ui_label": "University of California, Los Angeles",
-    "description": "",
-    "acronyms": [
-        "UCLA"
+    "@id": "ucla",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "UCLA",
+    "ror": "046rm7j60",
+    "ui-label": "University of California, Los Angeles",
+    "url": [
+        "https://www.ucla.edu",
+        "http://en.wikipedia.org/wiki/University_of_California,_Los_Angeles"
+    ],
+    "established": 1919,
+    "kind": "education",
+    "labels": [
+        "Universidad de California en Los \u00c1ngeles",
+        "University of California, Los Angeles",
+        "Universit\u00e9 de Californie \u00e0 Los Angeles"
     ],
     "aliases": [
         "State Normal School at Los Angeles",
+        "UC Los Angeles",
         "University of California Southern Branch",
         "University of California at Los Angeles"
     ],
-    "established": 1919,
-    "kind": "Education",
-    "labels": [
-        "Universidad de California en Los Ángeles",
-        "Université de Californie à Los Angeles"
+    "acronyms": [
+        "UCLA"
     ],
-    "location": {
-        "@id": "universal:location/046rm7j60",
-        "@type": "esgf:location",
-        "lat": 34.05223,
-        "lon": -118.24368,
-        "city": "Los Angeles",
-        "country": [
-            "United States",
-            "US"
-        ]
-    },
-    "ror": "046rm7j60",
-    "url": [
-        "https://www.ucla.edu"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "ucla"
+    "location": [
+        {
+            "@id": "universal:location/046rm7j60",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CA",
+            "country_subdivision_name": "California",
+            "lat": 34.05223,
+            "lng": -118.24368,
+            "name": "Los Angeles"
+        }
+    ]
 }

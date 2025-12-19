@@ -1,36 +1,40 @@
 {
-    "validation_key": "THU",
-    "ui_label": "Tsinghua University",
-    "description": "",
+    "@id": "thu",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "THU",
+    "ror": "03cve4549",
+    "ui-label": "Tsinghua University",
+    "url": [
+        "https://www.tsinghua.edu.cn",
+        "http://en.wikipedia.org/wiki/Tsinghua_University"
+    ],
+    "established": 1911,
+    "kind": "education",
+    "labels": [
+        "Tsinghua University",
+        "\u6e05\u534e\u5927\u5b66"
+    ],
+    "aliases": [],
     "acronyms": [
         "THU"
     ],
-    "aliases": [],
-    "established": 1911,
-    "kind": "Education",
-    "labels": [
-        "清华大学"
-    ],
-    "location": {
-        "@id": "universal:location/03cve4549",
-        "@type": "esgf:location",
-        "lat": 39.9075,
-        "lon": 116.39723,
-        "city": "Beijing",
-        "country": [
-            "China",
-            "CN"
-        ]
-    },
-    "ror": "03cve4549",
-    "url": [
-        "https://www.tsinghua.edu.cn"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "thu"
+    "location": [
+        {
+            "@id": "universal:location/03cve4549",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "CN",
+            "country_name": "China",
+            "country_subdivision_code": "BJ",
+            "country_subdivision_name": "Beijing",
+            "lat": 39.9075,
+            "lng": 116.39723,
+            "name": "Beijing"
+        }
+    ]
 }

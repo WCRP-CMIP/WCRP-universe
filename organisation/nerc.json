@@ -1,34 +1,39 @@
 {
-    "validation_key": "NERC",
-    "ui_label": "Natural Environment Research Council",
-    "description": "",
+    "@id": "nerc",
+    "@type": [
+        "wcrp:organisation",
+        "wcrp:institution",
+        "universal"
+    ],
+    "validation-key": "NERC",
+    "ror": "02b5d8509",
+    "ui-label": "Natural Environment Research Council",
+    "url": [
+        "https://www.ukri.org/councils/nerc/",
+        "http://en.wikipedia.org/wiki/Natural_Environment_Research_Council"
+    ],
+    "established": 1965,
+    "kind": "funder",
+    "labels": [
+        "Natural Environment Research Council"
+    ],
+    "aliases": [],
     "acronyms": [
         "NERC"
     ],
-    "aliases": [],
-    "established": 1965,
-    "kind": "Government",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/02b5d8509",
-        "@type": "esgf:location",
-        "lat": 51.55797,
-        "lon": -1.78116,
-        "city": "Swindon",
-        "country": [
-            "United Kingdom",
-            "GB"
-        ]
-    },
-    "ror": "02b5d8509",
-    "url": [
-        "https://www.ukri.org/councils/nerc/"
-    ],
-    "@context": "_context",
-    "@type": [
-        "wcrp:organisation",
-        "esgvoc:Organisation",
-        "universal"
-    ],
-    "@id": "nerc"
+    "location": [
+        {
+            "@id": "universal:location/02b5d8509",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 51.55797,
+            "lng": -1.78116,
+            "name": "Swindon"
+        }
+    ]
 }

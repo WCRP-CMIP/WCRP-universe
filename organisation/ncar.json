@@ -1,37 +1,39 @@
 {
-    "validation_key": "NCAR",
-    "ui_label": "NSF National Center for Atmospheric Research",
-    "description": "",
-    "acronyms": [
-        "NCAR"
-    ],
-    "aliases": [
-        "National Center for Atmospheric Research",
-        "National Science Foundation National Center for Atmospheric Research"
-    ],
-    "established": 1930,
-    "kind": "Facility",
-    "labels": [],
-    "location": {
-        "@id": "universal:location/05cvfcr44",
-        "@type": "esgf:location",
-        "lat": 40.01499,
-        "lon": -105.27055,
-        "city": "Boulder",
-        "country": [
-            "United States",
-            "US"
-        ]
-    },
-    "ror": "05cvfcr44",
-    "url": [
-        "https://ncar.ucar.edu/"
-    ],
-    "@context": "_context",
+    "@id": "ncar",
     "@type": [
         "wcrp:organisation",
-        "esgvoc:Organisation",
+        "wcrp:institution",
         "universal"
     ],
-    "@id": "ncar"
+    "validation-key": "NCAR",
+    "ror": "01wwwe276",
+    "ui-label": "National Centre for Atmospheric Science",
+    "url": [
+        "https://ncas.ac.uk/",
+        "http://en.wikipedia.org/wiki/National_Centre_for_Atmospheric_Science"
+    ],
+    "established": 2002,
+    "kind": "funder",
+    "labels": [
+        "National Centre for Atmospheric Science"
+    ],
+    "aliases": [],
+    "acronyms": [
+        "NCAS"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01wwwe276",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 53.79648,
+            "lng": -1.54785,
+            "name": "Leeds"
+        }
+    ]
 }
