@@ -1,27 +1,17 @@
 {
-    "@id": "fmi",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "FMI",
+    "ui_label": "Finnish Meteorological Institute",
+    "description": "",
+    "acronyms": [
+        "FMI"
     ],
-    "validation-key": "FMI",
-    "ror": "05hppb561",
-    "ui-label": "Finnish Meteorological Institute",
-    "url": [
-        "http://en.ilmatieteenlaitos.fi/",
-        "https://en.wikipedia.org/wiki/Finnish_Meteorological_Institute"
-    ],
+    "aliases": [],
     "established": 1838,
     "kind": "government",
     "labels": [
         "Finnish Meteorological Institute",
         "Ilmatieteen Laitos",
         "Meteorologiska Institutet"
-    ],
-    "aliases": [],
-    "acronyms": [
-        "FMI"
     ],
     "location": [
         {
@@ -37,5 +27,17 @@
             "lng": 24.93545,
             "name": "Helsinki"
         }
-    ]
+    ],
+    "ror": "05hppb561",
+    "url": [
+        "http://en.ilmatieteenlaitos.fi/",
+        "https://en.wikipedia.org/wiki/Finnish_Meteorological_Institute"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "fmi"
 }
