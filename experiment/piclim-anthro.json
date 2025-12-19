@@ -2,24 +2,31 @@
     "@context": "000_context.jsonld",
     "id": "piclim-anthro",
     "type": "experiment",
-    "description": "In combination with `piClim-control`, quantifies present-day total anthropogenic effective radiative forcing (ERF). Same as `piClim-control`, except all anthropogenic forcings use present-day values (typically the last year of the `historical` simulation within the same CMIP era e.g. 2014 values for CMIP6, 2021 values for CMIP7).",
-    "drs_name": "piClim-anthro",
-    "start_timestamp": null,
-    "end_timestamp": null,
-    "min_number_yrs_per_sim": 30.0,
-    "activity": "cmip",
+    "experiment_id": "piClim-anthro",
+    "activity_id": [
+        "rfmip"
+    ],
     "additional_allowed_model_components": [
         "aer",
-        "chem",
-        "bgc"
+        "chem"
     ],
-    "branch_information": null,
-    "min_ensemble_size": 1,
-    "parent_activity": null,
-    "parent_experiment": null,
-    "parent_mip_era": null,
+    "description": "As in piClim-control but with present-day anthropogenic forcing (greenhouse gases, ozone, aerosols and land-use)",
+    "end_year": null,
+    "experiment": "effective radiative forcing by present day anthropogenic agents",
+    "min_number_yrs_per_sim": "30",
+    "parent_activity_id": [
+        "cmip"
+    ],
+    "parent_experiment_id": [
+        "picontrol"
+    ],
     "required_model_components": [
         "agcm"
     ],
-    "tier": 1
+    "start_year": null,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1",
+    "drs_name": "piClim-anthro"
 }

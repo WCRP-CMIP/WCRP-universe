@@ -1,0 +1,23 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g90",
+  "type": "horizontal_grid_cell",
+  "description": "Demo entry - do not use",
+  "drs_name": "g90",
+  "grid_type": "regular_latitude_longitude",
+  "grid_mapping": "albers_conical_equal_area",
+  "region": "global",
+  "temporal_refinement": "static",
+  "x_resolution": "100",
+  "y_resolution": null,
+  "horizontal_units": "km",
+  "southernmost_latitude": -89.5,
+  "westernmost_longitude": 0.5,
+  "n_cells": 64800,
+  "truncation_method": null,
+  "truncation_number": null,
+  "resolution_range_km": [
+    1.0,
+    140.0
+  ]
+}
