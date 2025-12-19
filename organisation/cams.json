@@ -1,33 +1,23 @@
 {
-    "@id": "cams",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "CAMS",
+    "ui_label": "Chinese Academy of Medical Sciences & Peking Union Medical College",
+    "description": "",
+    "acronyms": [
+        "CAMS",
+        "CAMS&PUMC",
+        "PUMC"
     ],
-    "validation-key": "CAMS",
-    "ror": "02drdmm93",
-    "ui-label": "Chinese Academy of Medical Sciences & Peking Union Medical College",
-    "url": [
-        "http://www.cams.ac.cn/",
-        "https://en.wikipedia.org/wiki/Peking_Union_Medical_College"
+    "aliases": [
+        "Chinese Academy of Medical Sciences",
+        "Peking Union Medical College",
+        "中国医学科学院",
+        "北京协和医学院"
     ],
     "established": 1956,
     "kind": "education",
     "labels": [
         "Chinese Academy of Medical Sciences & Peking Union Medical College",
-        "\u4e2d\u56fd\u533b\u5b66\u79d1\u5b66\u9662\u5317\u4eac\u534f\u548c\u533b\u5b66\u9662"
-    ],
-    "aliases": [
-        "Chinese Academy of Medical Sciences",
-        "Peking Union Medical College",
-        "\u4e2d\u56fd\u533b\u5b66\u79d1\u5b66\u9662",
-        "\u5317\u4eac\u534f\u548c\u533b\u5b66\u9662"
-    ],
-    "acronyms": [
-        "CAMS",
-        "CAMS&PUMC",
-        "PUMC"
+        "中国医学科学院北京协和医学院"
     ],
     "location": [
         {
@@ -43,5 +33,17 @@
             "lng": 116.39723,
             "name": "Beijing"
         }
-    ]
+    ],
+    "ror": "02drdmm93",
+    "url": [
+        "http://www.cams.ac.cn/",
+        "https://en.wikipedia.org/wiki/Peking_Union_Medical_College"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cams"
 }

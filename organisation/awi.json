@@ -1,28 +1,18 @@
 {
-    "@id": "awi",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
-    ],
-    "validation-key": "AWI",
-    "ror": "032e6b942",
-    "ui-label": "Alfred-Wegener-Institut Helmholtz-Zentrum f\u00fcr Polar- und Meeresforschung",
-    "url": [
-        "https://www.awi.de",
-        "https://en.wikipedia.org/wiki/Alfred_Wegener_Institute_for_Polar_and_Marine_Research"
-    ],
-    "established": 1980,
-    "kind": "facility",
-    "labels": [
-        "Alfred-Wegener-Institut Helmholtz-Zentrum f\u00fcr Polar- und Meeresforschung"
+    "validation_key": "AWI",
+    "ui_label": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
+    "description": "",
+    "acronyms": [
+        "AWI"
     ],
     "aliases": [
         "Alfred Wegener Institute for Polar and Marine Research",
         "Alfred-Wegener-Institut"
     ],
-    "acronyms": [
-        "AWI"
+    "established": 1980,
+    "kind": "facility",
+    "labels": [
+        "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung"
     ],
     "location": [
         {
@@ -38,5 +28,17 @@
             "lng": 8.59298,
             "name": "Bremerhaven"
         }
-    ]
+    ],
+    "ror": "032e6b942",
+    "url": [
+        "https://www.awi.de",
+        "https://en.wikipedia.org/wiki/Alfred_Wegener_Institute_for_Polar_and_Marine_Research"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "awi"
 }

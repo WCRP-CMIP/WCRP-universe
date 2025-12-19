@@ -1,24 +1,15 @@
 {
-    "@id": "bcc",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
-    ],
-    "validation-key": "BCC",
-    "ror": "03kb2jw75",
-    "ui-label": "Beijing Climate Center",
-    "url": [
-        "http://bcc.ncc-cma.net"
-    ],
+    "validation_key": "BCC",
+    "ui_label": "Beijing Climate Center",
+    "description": "",
+    "acronyms": [],
+    "aliases": [],
     "established": 2003,
     "kind": "facility",
     "labels": [
         "Beijing Climate Center",
-        "\u56fd\u5bb6\u6c14\u5019\u4e2d\u5fc3"
+        "国家气候中心"
     ],
-    "aliases": [],
-    "acronyms": [],
     "location": [
         {
             "@id": "universal:location/03kb2jw75",
@@ -33,5 +24,16 @@
             "lng": 116.39723,
             "name": "Beijing"
         }
-    ]
+    ],
+    "ror": "03kb2jw75",
+    "url": [
+        "http://bcc.ncc-cma.net"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "bcc"
 }

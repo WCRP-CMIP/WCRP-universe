@@ -1,27 +1,17 @@
 {
-    "@id": "fzj",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "FZJ",
+    "ui_label": "Projektträger Jülich",
+    "description": "",
+    "acronyms": [
+        "PtJ"
     ],
-    "validation-key": "FZJ",
-    "ror": "037vx0145",
-    "ui-label": "Projekttr\u00e4ger J\u00fclich",
-    "url": [
-        "https://www.ptj.de",
-        "https://de.wikipedia.org/wiki/Projekttr%C3%A4ger_J%C3%BClich"
+    "aliases": [
+        "Project Management Jülich"
     ],
     "established": 1974,
     "kind": "other",
     "labels": [
-        "Projekttr\u00e4ger J\u00fclich"
-    ],
-    "aliases": [
-        "Project Management J\u00fclich"
-    ],
-    "acronyms": [
-        "PtJ"
+        "Projektträger Jülich"
     ],
     "location": [
         {
@@ -35,7 +25,19 @@
             "country_subdivision_name": "North Rhine-Westphalia",
             "lat": 50.92149,
             "lng": 6.36267,
-            "name": "J\u00fclich"
+            "name": "Jülich"
         }
-    ]
+    ],
+    "ror": "037vx0145",
+    "url": [
+        "https://www.ptj.de",
+        "https://de.wikipedia.org/wiki/Projekttr%C3%A4ger_J%C3%BClich"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "fzj"
 }

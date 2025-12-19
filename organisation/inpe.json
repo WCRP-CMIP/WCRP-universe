@@ -1,26 +1,16 @@
 {
-    "@id": "inpe",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "INPE",
+    "ui_label": "Instituto Nacional de Pesquisas Espaciais",
+    "description": "",
+    "acronyms": [
+        "INPE"
     ],
-    "validation-key": "INPE",
-    "ror": "04xbn6x09",
-    "ui-label": "Instituto Nacional de Pesquisas Espaciais",
-    "url": [
-        "https://www.gov.br/inpe/pt-br",
-        "https://en.wikipedia.org/wiki/National_Institute_for_Space_Research"
-    ],
+    "aliases": [],
     "established": 1971,
     "kind": "facility",
     "labels": [
         "Instituto Nacional de Pesquisas Espaciais",
         "National Institute for Space Research"
-    ],
-    "aliases": [],
-    "acronyms": [
-        "INPE"
     ],
     "location": [
         {
@@ -31,10 +21,22 @@
             "country_code": "BR",
             "country_name": "Brazil",
             "country_subdivision_code": "SP",
-            "country_subdivision_name": "S\u00e3o Paulo",
+            "country_subdivision_name": "São Paulo",
             "lat": -23.17944,
             "lng": -45.88694,
-            "name": "S\u00e3o Jos\u00e9 dos Campos"
+            "name": "São José dos Campos"
         }
-    ]
+    ],
+    "ror": "04xbn6x09",
+    "url": [
+        "https://www.gov.br/inpe/pt-br",
+        "https://en.wikipedia.org/wiki/National_Institute_for_Space_Research"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "inpe"
 }

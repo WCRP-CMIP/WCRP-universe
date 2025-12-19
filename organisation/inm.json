@@ -1,29 +1,20 @@
 {
-    "@id": "inm",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
-    ],
-    "validation-key": "INM",
-    "ror": "00wfve797",
-    "ui-label": "Institute of Sociology",
-    "url": [
-        "http://www.isras.org/"
-    ],
-    "established": 1968,
-    "kind": "facility",
-    "labels": [
-        "Institute of Sociology",
-        "\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442 \u0441\u043e\u0446\u0438\u043e\u043b\u043e\u0433\u0438\u0438 \u0420\u0410\u041d"
+    "validation_key": "INM",
+    "ui_label": "Institute of Sociology",
+    "description": "",
+    "acronyms": [
+        "ISRAS"
     ],
     "aliases": [
         "Federal State Institution of Science Institute of Sociology of the Russian Academy of Sciences",
         "Institut Sotsiologii RAN",
         "Sociological institute of Russian Academy of Science"
     ],
-    "acronyms": [
-        "ISRAS"
+    "established": 1968,
+    "kind": "facility",
+    "labels": [
+        "Institute of Sociology",
+        "Институт социологии РАН"
     ],
     "location": [
         {
@@ -39,5 +30,16 @@
             "lng": 37.61556,
             "name": "Moscow"
         }
-    ]
+    ],
+    "ror": "00wfve797",
+    "url": [
+        "http://www.isras.org/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "inm"
 }

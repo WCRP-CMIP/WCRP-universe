@@ -1,26 +1,16 @@
 {
-    "@id": "cccr-iitm",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "CCCR-IITM",
+    "ui_label": "Indian Institute of Tropical Meteorology",
+    "description": "",
+    "acronyms": [
+        "IITM"
     ],
-    "validation-key": "CCCR-IITM",
-    "ror": "03jf2m686",
-    "ui-label": "Indian Institute of Tropical Meteorology",
-    "url": [
-        "http://www.tropmet.res.in/",
-        "https://en.wikipedia.org/wiki/Indian_Institute_of_Tropical_Meteorology"
-    ],
+    "aliases": [],
     "established": 1962,
     "kind": "facility",
     "labels": [
         "Indian Institute of Tropical Meteorology",
-        "\u092d\u093e\u0930\u0924\u0940\u092f \u0909\u0937\u094d\u0923\u092a\u094d\u0930\u0926\u0947\u0936\u0940\u092f \u0939\u0935\u093e\u092e\u093e\u0928\u0936\u093e\u0938\u094d\u0924\u094d\u0930 \u0938\u0902\u0938\u094d\u0925\u093e"
-    ],
-    "aliases": [],
-    "acronyms": [
-        "IITM"
+        "भारतीय उष्णप्रदेशीय हवामानशास्त्र संस्था"
     ],
     "location": [
         {
@@ -36,5 +26,17 @@
             "lng": 73.85535,
             "name": "Pune"
         }
-    ]
+    ],
+    "ror": "03jf2m686",
+    "url": [
+        "http://www.tropmet.res.in/",
+        "https://en.wikipedia.org/wiki/Indian_Institute_of_Tropical_Meteorology"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cccr-iitm"
 }

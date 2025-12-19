@@ -1,28 +1,18 @@
 {
-    "@id": "nuist",
-    "@type": [
-        "wcrp:organisation",
-        "wcrp:institution",
-        "universal"
+    "validation_key": "NUIST",
+    "ui_label": "Nanjing University of Information Science and Technology",
+    "description": "",
+    "acronyms": [
+        "NUIST"
     ],
-    "validation-key": "NUIST",
-    "ror": "02y0rxk19",
-    "ui-label": "Nanjing University of Information Science and Technology",
-    "url": [
-        "http://www.nuist.edu.cn",
-        "https://en.wikipedia.org/wiki/Nanjing_University_of_Information_Science_and_Technology"
+    "aliases": [
+        "Nan Xin Da"
     ],
     "established": 1960,
     "kind": "education",
     "labels": [
         "Nanjing University of Information Science and Technology",
-        "\u5357\u4eac\u4fe1\u606f\u5de5\u7a0b\u5927\u5b66"
-    ],
-    "aliases": [
-        "Nan Xin Da"
-    ],
-    "acronyms": [
-        "NUIST"
+        "南京信息工程大学"
     ],
     "location": [
         {
@@ -38,5 +28,17 @@
             "lng": 118.77778,
             "name": "Nanjing"
         }
-    ]
+    ],
+    "ror": "02y0rxk19",
+    "url": [
+        "http://www.nuist.edu.cn",
+        "https://en.wikipedia.org/wiki/Nanjing_University_of_Information_Science_and_Technology"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "nuist"
 }
