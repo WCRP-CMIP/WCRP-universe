@@ -1,0 +1,101 @@
+{
+  "@context": {
+  "@base": "https://wcrp-cmip.github.io/WCRP-universe/calendar/",
+  "@vocab": "https://esgf.github.io/esgf-vocab/api_documentation/data_descriptors.html#esgvoc.api.data_descriptors.Calendar.",
+  "alias": {
+    "@container": "@set"
+  }
+},
+  "@graph": [
+    {
+  "validation_key": "360_day",
+  "ui_label": "360-day",
+  "description": "A calendar in which each year consists of 12 months of exactly 30 days each. This calendar is commonly used in climate models for computational convenience.",
+  "alias": [],
+  "@type": [
+    "wcrp:calendar",
+    "esgvoc:Calendar",
+    "universal"
+  ],
+  "@id": "360-day"
+}
+    ,{
+  "validation_key": "365_day",
+  "ui_label": "365-day (No Leap)",
+  "description": "A calendar in which each year consists of 365 days with no leap years. All months have their standard lengths (28 days for February).",
+  "alias": [
+    "noleap"
+  ],
+  "@type": [
+    "wcrp:calendar",
+    "esgvoc:Calendar",
+    "universal"
+  ],
+  "@id": "365-day"
+}
+    ,{
+  "validation_key": "366_day",
+  "ui_label": "366-day (All Leap)",
+  "description": "A calendar in which each year consists of 366 days, i.e., every year is a leap year with February having 29 days.",
+  "alias": [
+    "all_leap"
+  ],
+  "@type": [
+    "wcrp:calendar",
+    "esgvoc:Calendar",
+    "universal"
+  ],
+  "@id": "366-day"
+}
+    ,{
+  "validation_key": "julian",
+  "ui_label": "Julian",
+  "description": "Julian calendar with leap year every four years without exception. This calendar was in use prior to the Gregorian calendar reform of 1582.",
+  "alias": [],
+  "@type": [
+    "wcrp:calendar",
+    "esgvoc:Calendar",
+    "universal"
+  ],
+  "@id": "julian"
+}
+    ,{
+  "validation_key": "none",
+  "ui_label": "None",
+  "description": "No calendar - used for data without a temporal dimension or for time-invariant fields.",
+  "alias": [],
+  "@type": [
+    "wcrp:calendar",
+    "esgvoc:Calendar",
+    "universal"
+  ],
+  "@id": "none"
+}
+    ,{
+  "validation_key": "proleptic_gregorian",
+  "ui_label": "Proleptic Gregorian",
+  "description": "A calendar with the Gregorian rules for leap-years extended to dates before 1582-10-15. All dates consistent with these rules are allowed, both before and after 1582-10-15.",
+  "alias": [],
+  "@type": [
+    "wcrp:calendar",
+    "esgvoc:Calendar",
+    "universal"
+  ],
+  "@id": "proleptic-gregorian"
+}
+    ,{
+  "validation_key": "standard",
+  "ui_label": "Standard (Gregorian)",
+  "description": "Mixed Gregorian/Julian calendar as defined by UDUNITS. This is the default calendar assumed if no calendar attribute is specified. A deprecated alternative name for this calendar is 'gregorian'.",
+  "alias": [
+    "gregorian"
+  ],
+  "@type": [
+    "wcrp:calendar",
+    "esgvoc:Calendar",
+    "universal"
+  ],
+  "@id": "standard"
+}
+  ]
+}
