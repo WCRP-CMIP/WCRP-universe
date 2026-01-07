@@ -14,6 +14,8 @@
 
 # Don't ignore directories (so git can traverse them)
 !*/
+!*/*.json
+!*/_context
 
 # If you want to keep specific directories or their contents
 # uncomment and modify the following:

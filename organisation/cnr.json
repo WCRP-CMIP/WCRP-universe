@@ -1,0 +1,42 @@
+{
+    "validation_key": "CNR",
+    "ui_label": "National Research Council",
+    "description": "",
+    "acronyms": [
+        "CNR"
+    ],
+    "aliases": [],
+    "established": 1923,
+    "kind": "funder",
+    "labels": [
+        "Consiglio Nazionale delle Ricerche",
+        "National Research Council"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04zaypm56",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "IT",
+            "country_name": "Italy",
+            "country_subdivision_code": "62",
+            "country_subdivision_name": "Lazio",
+            "lat": 41.89193,
+            "lng": 12.51133,
+            "name": "Rome"
+        }
+    ],
+    "ror": "04zaypm56",
+    "url": [
+        "https://www.cnr.it",
+        "http://en.wikipedia.org/wiki/National_Research_Council_%28Italy%29"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cnr"
+}
