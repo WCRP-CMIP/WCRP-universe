@@ -1,0 +1,43 @@
+{
+    "validation_key": "NAU",
+    "ui_label": "Northern Arizona University",
+    "description": "",
+    "acronyms": [
+        "NAU"
+    ],
+    "aliases": [
+        "Arizona State College of Flagstaff"
+    ],
+    "established": 1899,
+    "kind": "education",
+    "labels": [
+        "Northern Arizona University"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/0272j5188",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "AZ",
+            "country_subdivision_name": "Arizona",
+            "lat": 35.19807,
+            "lng": -111.65127,
+            "name": "Flagstaff"
+        }
+    ],
+    "ror": "0272j5188",
+    "url": [
+        "https://www.nau.edu/",
+        "http://en.wikipedia.org/wiki/Northern_Arizona_University"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "nau"
+}

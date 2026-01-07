@@ -1,0 +1,42 @@
+{
+    "validation_key": "UBC",
+    "ui_label": "University of British Columbia",
+    "description": "",
+    "acronyms": [
+        "UBC"
+    ],
+    "aliases": [],
+    "established": 1908,
+    "kind": "education",
+    "labels": [
+        "University of British Columbia",
+        "Université de la colombie-britannique"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03rmrcq20",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "CA",
+            "country_name": "Canada",
+            "country_subdivision_code": "BC",
+            "country_subdivision_name": "British Columbia",
+            "lat": 49.24966,
+            "lng": -123.11934,
+            "name": "Vancouver"
+        }
+    ],
+    "ror": "03rmrcq20",
+    "url": [
+        "https://www.ubc.ca/",
+        "https://en.wikipedia.org/wiki/University_of_British_Columbia"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ubc"
+}

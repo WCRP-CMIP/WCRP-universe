@@ -1,0 +1,43 @@
+{
+    "validation_key": "LiU",
+    "ui_label": "Linköping University",
+    "description": "",
+    "acronyms": [
+        "LiU"
+    ],
+    "aliases": [],
+    "established": 1969,
+    "kind": "education",
+    "labels": [
+        "Linköping University",
+        "Linköpingin Yliopisto",
+        "Linköpings Universitet"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05ynxx418",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "SE",
+            "country_name": "Sweden",
+            "country_subdivision_code": "E",
+            "country_subdivision_name": "Östergötland",
+            "lat": 58.41086,
+            "lng": 15.62157,
+            "name": "Linköping"
+        }
+    ],
+    "ror": "05ynxx418",
+    "url": [
+        "https://liu.se/",
+        "http://en.wikipedia.org/wiki/Link%C3%B6ping_University"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "liu"
+}

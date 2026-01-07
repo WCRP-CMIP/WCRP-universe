@@ -1,0 +1,44 @@
+{
+    "validation_key": "NLR",
+    "ui_label": "Netherlands Aerospace Centre",
+    "description": "",
+    "acronyms": [
+        "NLR"
+    ],
+    "aliases": [
+        "National Aerospace Laboratory"
+    ],
+    "established": 1961,
+    "kind": "nonprofit",
+    "labels": [
+        "Nationaal Lucht- en Ruimtevaartlaboratorium",
+        "Netherlands Aerospace Centre"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/022sw4578",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "NL",
+            "country_name": "The Netherlands",
+            "country_subdivision_code": "NH",
+            "country_subdivision_name": "North Holland",
+            "lat": 52.37403,
+            "lng": 4.88969,
+            "name": "Amsterdam"
+        }
+    ],
+    "ror": "022sw4578",
+    "url": [
+        "https://www.nlr.org",
+        "http://en.wikipedia.org/wiki/National_Aerospace_Laboratory"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "nlr"
+}

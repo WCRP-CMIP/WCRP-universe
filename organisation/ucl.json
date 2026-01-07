@@ -1,0 +1,45 @@
+{
+    "validation_key": "UCL",
+    "ui_label": "University College London",
+    "description": "",
+    "acronyms": [
+        "UCL"
+    ],
+    "aliases": [
+        "London University",
+        "University College, London"
+    ],
+    "established": 1826,
+    "kind": "education",
+    "labels": [
+        "Coleg Prifysgol Llundain",
+        "University College London"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02jx3x895",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 51.50853,
+            "lng": -0.12574,
+            "name": "London"
+        }
+    ],
+    "ror": "02jx3x895",
+    "url": [
+        "http://www.ucl.ac.uk/",
+        "http://en.wikipedia.org/wiki/University_College_London"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ucl"
+}

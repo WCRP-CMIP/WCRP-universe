@@ -1,0 +1,44 @@
+{
+    "validation_key": "TUM",
+    "ui_label": "Technical University of Munich",
+    "description": "",
+    "acronyms": [
+        "TUM"
+    ],
+    "aliases": [
+        "Technische Universitaet Muenchen"
+    ],
+    "established": 1868,
+    "kind": "education",
+    "labels": [
+        "Technical University of Munich",
+        "Technische Universität München"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02kkvpp62",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "BY",
+            "country_subdivision_name": "Bavaria",
+            "lat": 48.13743,
+            "lng": 11.57549,
+            "name": "Munich"
+        }
+    ],
+    "ror": "02kkvpp62",
+    "url": [
+        "https://www.tum.de",
+        "http://en.wikipedia.org/wiki/Technische_Universit%C3%A4t_M%C3%BCnchen"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "tum"
+}

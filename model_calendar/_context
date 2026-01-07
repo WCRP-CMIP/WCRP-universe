@@ -1,6 +1,7 @@
 {
     "@context": {
-        "@base": "https://wcrp-cmip.github.io/WCRP-universe/model_calendar/",
-        "@vocab": "https://esgf.github.io/esgf-vocab/api_documentation/data_descriptors.html#esgvoc.api.data_descriptors.ModelCalendar."
+        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/model_calendar/",
+        "@base": "https://universal.mipcvs.dev/model_calendar/",
+        "@vocab": "https://universal.mipcvs.dev/docs/contents/ModelCalendar/"
     }
 }

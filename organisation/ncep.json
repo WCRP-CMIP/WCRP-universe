@@ -1,0 +1,48 @@
+{
+    "validation_key": "NCEP",
+    "ui_label": "NOAA National Centers for Environmental Prediction",
+    "description": "",
+    "acronyms": [
+        "NCEP",
+        "NOAA NCEP"
+    ],
+    "aliases": [
+        "NOAA NWS National Centers for Environmental Prediction",
+        "U.S. National Centers for Environmental Prediction",
+        "U.S. National Weather Service National Centers for Environmental Prediction",
+        "United States National Centers for Environmental Prediction",
+        "United States National Weather Service National Centers for Environmental Prediction"
+    ],
+    "established": 1994,
+    "kind": "government",
+    "labels": [
+        "NOAA National Centers for Environmental Prediction"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00ndyev54",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "MD",
+            "country_subdivision_name": "Maryland",
+            "lat": 38.98067,
+            "lng": -76.93692,
+            "name": "College Park"
+        }
+    ],
+    "ror": "00ndyev54",
+    "url": [
+        "http://www.ncep.noaa.gov/",
+        "https://en.wikipedia.org/wiki/National_Centers_for_Environmental_Prediction"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ncep"
+}

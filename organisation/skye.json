@@ -1,0 +1,43 @@
+{
+    "validation_key": "SKYE",
+    "ui_label": "Finnish Environment Institute",
+    "description": "",
+    "acronyms": [
+        "SYKE"
+    ],
+    "aliases": [],
+    "established": 1995,
+    "kind": "funder",
+    "labels": [
+        "Finlands miljöcentral",
+        "Finnish Environment Institute",
+        "Suomen ympäristökeskus"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/013nat269",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "FI",
+            "country_name": "Finland",
+            "country_subdivision_code": "18",
+            "country_subdivision_name": "Uusimaa",
+            "lat": 60.16952,
+            "lng": 24.93545,
+            "name": "Helsinki"
+        }
+    ],
+    "ror": "013nat269",
+    "url": [
+        "http://www.syke.fi/en-US",
+        "https://en.wikipedia.org/wiki/Finnish_Environment_Institute"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "skye"
+}

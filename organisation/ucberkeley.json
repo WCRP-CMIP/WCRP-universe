@@ -1,0 +1,47 @@
+{
+    "validation_key": "UCBerkeley",
+    "ui_label": "University of California, Berkeley",
+    "description": "",
+    "acronyms": [
+        "UCB"
+    ],
+    "aliases": [
+        "Cal Berkeley",
+        "UC Berkeley",
+        "University of California at Berkeley"
+    ],
+    "established": 1868,
+    "kind": "education",
+    "labels": [
+        "Universidad de California en Berkeley",
+        "University of California, Berkeley",
+        "Université de Californie à Berkeley"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01an7q238",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CA",
+            "country_subdivision_name": "California",
+            "lat": 37.87159,
+            "lng": -122.27275,
+            "name": "Berkeley"
+        }
+    ],
+    "ror": "01an7q238",
+    "url": [
+        "https://www.berkeley.edu",
+        "http://en.wikipedia.org/wiki/University_of_California,_Berkeley"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ucberkeley"
+}

@@ -1,0 +1,41 @@
+{
+    "validation_key": "UNSTIM",
+    "ui_label": "National University of Sciences, Technologies, Engineering and Mathematics",
+    "description": "",
+    "acronyms": [
+        "UNSTIM"
+    ],
+    "aliases": [],
+    "established": 2014,
+    "kind": "education",
+    "labels": [
+        "National University of Sciences, Technologies, Engineering and Mathematics",
+        "Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/0421qr997",
+            "@type": "wcrp:location",
+            "continent_code": "AF",
+            "continent_name": "Africa",
+            "country_code": "BJ",
+            "country_name": "Benin",
+            "country_subdivision_code": "AQ",
+            "country_subdivision_name": "Atlantique",
+            "lat": 6.44852,
+            "lng": 2.35566,
+            "name": "Abomey-Calavi"
+        }
+    ],
+    "ror": "0421qr997",
+    "url": [
+        "https://unstim.bj"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "unstim"
+}

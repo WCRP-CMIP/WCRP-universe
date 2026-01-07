@@ -1,0 +1,41 @@
+{
+    "validation_key": "CESDAC",
+    "ui_label": "International Sustainable Energy Development Centre",
+    "description": "",
+    "acronyms": [
+        "ISEDC"
+    ],
+    "aliases": [],
+    "established": null,
+    "kind": "facility",
+    "labels": [
+        "International Sustainable Energy Development Centre",
+        "Международный центр устойчивого энергетического развития под эгидой ЮНЕСКО"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02q5jeq02",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "RU",
+            "country_name": "Russia",
+            "country_subdivision_code": "MOW",
+            "country_subdivision_name": "Moscow",
+            "lat": 55.75222,
+            "lng": 37.61556,
+            "name": "Moscow"
+        }
+    ],
+    "ror": "02q5jeq02",
+    "url": [
+        "http://www.isedc-u.com"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cesdac"
+}

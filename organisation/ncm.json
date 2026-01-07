@@ -1,0 +1,41 @@
+{
+    "validation_key": "NCM",
+    "ui_label": "National Center for Meteorology",
+    "description": "",
+    "acronyms": [
+        "NCM"
+    ],
+    "aliases": [],
+    "established": null,
+    "kind": "government",
+    "labels": [
+        "National Center for Meteorology",
+        "المركز الوطني للارصاد"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/046wpj017",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "SA",
+            "country_name": "Saudi Arabia",
+            "country_subdivision_code": "02",
+            "country_subdivision_name": "Mecca Region",
+            "lat": 21.49012,
+            "lng": 39.18624,
+            "name": "Jeddah"
+        }
+    ],
+    "ror": "046wpj017",
+    "url": [
+        "https://ncm.gov.sa/ar/Pages/default.aspx"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ncm"
+}

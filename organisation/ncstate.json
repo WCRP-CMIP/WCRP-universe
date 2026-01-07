@@ -1,0 +1,43 @@
+{
+    "validation_key": "NCState",
+    "ui_label": "North Carolina State University",
+    "description": "",
+    "acronyms": [
+        "NCSU"
+    ],
+    "aliases": [],
+    "established": 1887,
+    "kind": "education",
+    "labels": [
+        "North Carolina State University",
+        "Universidad Estatal de Carolina del Norte",
+        "Université d'État de caroline du nord"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04tj63d06",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "NC",
+            "country_subdivision_name": "North Carolina",
+            "lat": 35.7721,
+            "lng": -78.63861,
+            "name": "Raleigh"
+        }
+    ],
+    "ror": "04tj63d06",
+    "url": [
+        "https://www.ncsu.edu/",
+        "http://en.wikipedia.org/wiki/North_Carolina_State_University"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ncstate"
+}

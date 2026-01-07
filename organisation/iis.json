@@ -1,0 +1,42 @@
+{
+    "validation_key": "IIS",
+    "ui_label": "Indian Institute of Soil Science",
+    "description": "",
+    "acronyms": [
+        "IISS"
+    ],
+    "aliases": [],
+    "established": 1988,
+    "kind": "facility",
+    "labels": [
+        "Indian Institute of Soil Science",
+        "भाकृअनुप-भारतीय मृदा विज्ञान संस्थान"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05j873a45",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "IN",
+            "country_name": "India",
+            "country_subdivision_code": "MP",
+            "country_subdivision_name": "Madhya Pradesh",
+            "lat": 23.25469,
+            "lng": 77.40289,
+            "name": "Bhopal"
+        }
+    ],
+    "ror": "05j873a45",
+    "url": [
+        "http://www.iiss.nic.in/index.html",
+        "https://en.wikipedia.org/wiki/Indian_Institute_of_Soil_Science"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "iis"
+}

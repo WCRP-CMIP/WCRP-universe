@@ -1,0 +1,43 @@
+{
+    "validation_key": "HEREON",
+    "ui_label": "Helmholtz-Zentrum Hereon",
+    "description": "",
+    "acronyms": [
+        "HZG"
+    ],
+    "aliases": [
+        "Helmholtz-Zentrum Geesthacht Centre for Materials and Coastal Research"
+    ],
+    "established": 1956,
+    "kind": "government",
+    "labels": [
+        "Helmholtz-Zentrum Hereon"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03qjp1d79",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "SH",
+            "country_subdivision_name": "Schleswig-Holstein",
+            "lat": 53.43575,
+            "lng": 10.3779,
+            "name": "Geesthacht"
+        }
+    ],
+    "ror": "03qjp1d79",
+    "url": [
+        "https://www.hereon.de/",
+        "https://de.wikipedia.org/wiki/Helmholtz-Zentrum_Hereon"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "hereon"
+}

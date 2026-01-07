@@ -1,0 +1,42 @@
+{
+    "validation_key": "CIAT",
+    "ui_label": "International Center for Tropical Agriculture",
+    "description": "",
+    "acronyms": [
+        "CIAT"
+    ],
+    "aliases": [],
+    "established": 1967,
+    "kind": "funder",
+    "labels": [
+        "Centro Internacional de Agricultura Tropical",
+        "International Center for Tropical Agriculture"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/037wny167",
+            "@type": "wcrp:location",
+            "continent_code": "SA",
+            "continent_name": "South America",
+            "country_code": "CO",
+            "country_name": "Colombia",
+            "country_subdivision_code": "VAC",
+            "country_subdivision_name": "Valle del Cauca Department",
+            "lat": 3.43722,
+            "lng": -76.5225,
+            "name": "Santiago de Cali"
+        }
+    ],
+    "ror": "037wny167",
+    "url": [
+        "https://alliancebioversityciat.org/",
+        "https://en.wikipedia.org/wiki/International_Center_for_Tropical_Agriculture"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ciat"
+}

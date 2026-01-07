@@ -1,0 +1,40 @@
+{
+    "validation_key": "FACET",
+    "ui_label": "Fundación Ciencias Exactas y Naturales",
+    "description": "",
+    "acronyms": [
+        "FUNDACEN"
+    ],
+    "aliases": [],
+    "established": 1990,
+    "kind": "nonprofit",
+    "labels": [
+        "Fundación Ciencias Exactas y Naturales"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05rxmkq09",
+            "@type": "wcrp:location",
+            "continent_code": "SA",
+            "continent_name": "South America",
+            "country_code": "AR",
+            "country_name": "Argentina",
+            "country_subdivision_code": "C",
+            "country_subdivision_name": "Buenos Aires F.D.",
+            "lat": -34.61315,
+            "lng": -58.37723,
+            "name": "Buenos Aires"
+        }
+    ],
+    "ror": "05rxmkq09",
+    "url": [
+        "http://www.fundacen.org.ar/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "facet"
+}

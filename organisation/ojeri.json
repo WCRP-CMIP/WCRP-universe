@@ -1,0 +1,41 @@
+{
+    "validation_key": "OJERI",
+    "ui_label": "Chilean Institute for Disaster Resilience",
+    "description": "",
+    "acronyms": [],
+    "aliases": [
+        "Itrend"
+    ],
+    "established": 2019,
+    "kind": "nonprofit",
+    "labels": [
+        "Chilean Institute for Disaster Resilience",
+        "Instituto para la Resiliencia ante Desastres"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02v3vzd60",
+            "@type": "wcrp:location",
+            "continent_code": "SA",
+            "continent_name": "South America",
+            "country_code": "CL",
+            "country_name": "Chile",
+            "country_subdivision_code": "RM",
+            "country_subdivision_name": "Santiago Metropolitan",
+            "lat": -33.43107,
+            "lng": -70.60454,
+            "name": "Providencia"
+        }
+    ],
+    "ror": "02v3vzd60",
+    "url": [
+        "https://itrend.cl"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ojeri"
+}

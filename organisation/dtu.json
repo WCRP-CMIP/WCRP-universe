@@ -1,0 +1,43 @@
+{
+    "validation_key": "DTU",
+    "ui_label": "Technical University of Denmark",
+    "description": "",
+    "acronyms": [
+        "DTU"
+    ],
+    "aliases": [],
+    "established": 1829,
+    "kind": "education",
+    "labels": [
+        "Danmarks Tekniske Universitet",
+        "Dänemarks Technische Universität",
+        "Technical University of Denmark"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04qtj9h94",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DK",
+            "country_name": "Denmark",
+            "country_subdivision_code": "84",
+            "country_subdivision_name": "Capital Region",
+            "lat": 55.77044,
+            "lng": 12.50378,
+            "name": "Kongens Lyngby"
+        }
+    ],
+    "ror": "04qtj9h94",
+    "url": [
+        "https://dtu.dk",
+        "http://en.wikipedia.org/wiki/Technical_University_of_Denmark"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "dtu"
+}

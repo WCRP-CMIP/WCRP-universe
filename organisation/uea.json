@@ -1,0 +1,42 @@
+{
+    "validation_key": "UEA",
+    "ui_label": "University of East Anglia",
+    "description": "",
+    "acronyms": [
+        "UEA"
+    ],
+    "aliases": [],
+    "established": 1963,
+    "kind": "education",
+    "labels": [
+        "Prifysgol Dwyrain Anglia",
+        "University of East Anglia"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/026k5mg93",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 52.62783,
+            "lng": 1.29834,
+            "name": "Norwich"
+        }
+    ],
+    "ror": "026k5mg93",
+    "url": [
+        "https://www.uea.ac.uk/",
+        "http://en.wikipedia.org/wiki/University_of_East_Anglia"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uea"
+}

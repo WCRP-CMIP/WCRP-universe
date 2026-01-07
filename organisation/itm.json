@@ -1,0 +1,40 @@
+{
+    "validation_key": "ITM",
+    "ui_label": "Instituto Tecnológico Metropolitano",
+    "description": "",
+    "acronyms": [
+        "ITM"
+    ],
+    "aliases": [],
+    "established": 1992,
+    "kind": "education",
+    "labels": [
+        "Instituto Tecnológico Metropolitano"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03zb5p722",
+            "@type": "wcrp:location",
+            "continent_code": "SA",
+            "continent_name": "South America",
+            "country_code": "CO",
+            "country_name": "Colombia",
+            "country_subdivision_code": "ANT",
+            "country_subdivision_name": "Antioquia",
+            "lat": 6.25184,
+            "lng": -75.56359,
+            "name": "Medellín"
+        }
+    ],
+    "ror": "03zb5p722",
+    "url": [
+        "http://www.itm.edu.co/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "itm"
+}

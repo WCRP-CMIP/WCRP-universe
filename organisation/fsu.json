@@ -1,0 +1,43 @@
+{
+    "validation_key": "FSU",
+    "ui_label": "Florida State University",
+    "description": "",
+    "acronyms": [
+        "FSU"
+    ],
+    "aliases": [],
+    "established": 1851,
+    "kind": "education",
+    "labels": [
+        "Florida State University",
+        "Universidad Estatal de Florida",
+        "Université d'État de Floride"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05g3dte14",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "FL",
+            "country_subdivision_name": "Florida",
+            "lat": 30.43826,
+            "lng": -84.28073,
+            "name": "Tallahassee"
+        }
+    ],
+    "ror": "05g3dte14",
+    "url": [
+        "https://www.fsu.edu/",
+        "http://en.wikipedia.org/wiki/Florida_State_University"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "fsu"
+}

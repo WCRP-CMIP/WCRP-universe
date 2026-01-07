@@ -1,0 +1,46 @@
+{
+    "validation_key": "LBNL",
+    "ui_label": "Lawrence Berkeley National Laboratory",
+    "description": "",
+    "acronyms": [
+        "LBL",
+        "LBNL"
+    ],
+    "aliases": [
+        "Berkeley Lab",
+        "United States Department of Energy Office of Science Lawrence Berkeley National Laboratory"
+    ],
+    "established": 1931,
+    "kind": "facility",
+    "labels": [
+        "Laboratoire national lawrence-berkeley",
+        "Lawrence Berkeley National Laboratory"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02jbv0t02",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CA",
+            "country_subdivision_name": "California",
+            "lat": 37.87159,
+            "lng": -122.27275,
+            "name": "Berkeley"
+        }
+    ],
+    "ror": "02jbv0t02",
+    "url": [
+        "https://www.lbl.gov/",
+        "https://en.wikipedia.org/wiki/Lawrence_Berkeley_National_Laboratory"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "lbnl"
+}

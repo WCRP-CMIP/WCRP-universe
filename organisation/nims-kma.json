@@ -1,0 +1,41 @@
+{
+    "validation_key": "NIMS-KMA",
+    "ui_label": "National Institute of Meteorological Sciences",
+    "description": "",
+    "acronyms": [
+        "NIMS"
+    ],
+    "aliases": [],
+    "established": 1978,
+    "kind": "facility",
+    "labels": [
+        "National Institute of Meteorological Sciences",
+        "국립기상과학원"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04m2hj141",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "KR",
+            "country_name": "South Korea",
+            "country_subdivision_code": "49",
+            "country_subdivision_name": "Jeju-do",
+            "lat": 33.25333,
+            "lng": 126.56181,
+            "name": "Seogwipo"
+        }
+    ],
+    "ror": "04m2hj141",
+    "url": [
+        "http://www.nimr.go.kr/AE/MA/main.jsp"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "nims-kma"
+}

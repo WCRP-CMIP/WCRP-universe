@@ -1,0 +1,48 @@
+{
+    "validation_key": "CETESB",
+    "ui_label": "CETESB - Companhia Ambiental do Estado de São Paulo",
+    "description": "",
+    "acronyms": [
+        "CETESB"
+    ],
+    "aliases": [
+        "CETESB - Compañia Ambiental del Estado de São Paulo",
+        "CETESB - Environmental Company of the State of São Paulo",
+        "CETESB - São Paulo State Environment Company",
+        "Companhia Ambiental do Estado de São Paulo",
+        "Environmental Company of the State of São Paulo",
+        "São Paulo State Environment Company"
+    ],
+    "established": 1968,
+    "kind": "funder",
+    "labels": [
+        "CETESB - Companhia Ambiental do Estado de São Paulo"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05thfhs30",
+            "@type": "wcrp:location",
+            "continent_code": "SA",
+            "continent_name": "South America",
+            "country_code": "BR",
+            "country_name": "Brazil",
+            "country_subdivision_code": "SP",
+            "country_subdivision_name": "São Paulo",
+            "lat": -23.5475,
+            "lng": -46.63611,
+            "name": "São Paulo"
+        }
+    ],
+    "ror": "05thfhs30",
+    "url": [
+        "https://cetesb.sp.gov.br",
+        "https://pt.wikipedia.org/wiki/Companhia_Ambiental_do_Estado_de_S%C3%A3o_Paulo"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cetesb"
+}

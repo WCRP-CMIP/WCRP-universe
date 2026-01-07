@@ -1,0 +1,46 @@
+{
+    "validation_key": "HUJI",
+    "ui_label": "Hebrew University of Jerusalem",
+    "description": "",
+    "acronyms": [
+        "HUJI"
+    ],
+    "aliases": [
+        "Al-Jami'ah al-Ibriyyah fi al-Quds",
+        "Ha-Universita ha-Ivrit bi-Yerushalayim"
+    ],
+    "established": 1925,
+    "kind": "education",
+    "labels": [
+        "Hebrew University of Jerusalem",
+        "האוניברסיטה העברית בירושלים",
+        "الجامعة العبرية في القدس"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03qxff017",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "IL",
+            "country_name": "Israel",
+            "country_subdivision_code": "JM",
+            "country_subdivision_name": "Jerusalem",
+            "lat": 31.76904,
+            "lng": 35.21633,
+            "name": "Jerusalem"
+        }
+    ],
+    "ror": "03qxff017",
+    "url": [
+        "http://new.huji.ac.il/en",
+        "http://en.wikipedia.org/wiki/Hebrew_University_of_Jerusalem"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "huji"
+}

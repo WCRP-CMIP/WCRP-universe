@@ -1,0 +1,43 @@
+{
+    "validation_key": "CREAF",
+    "ui_label": "Centre for Research on Ecology and Forestry Applications",
+    "description": "",
+    "acronyms": [
+        "CREAF",
+        "CREAF-CERCA"
+    ],
+    "aliases": [],
+    "established": 1987,
+    "kind": "facility",
+    "labels": [
+        "Centre de Recerca Ecològica i Aplicacions Forestals",
+        "Centre for Research on Ecology and Forestry Applications",
+        "Centro de Investigación Ecológica y Aplicaciones Forestales"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03abrgd14",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "country_subdivision_code": "CT",
+            "country_subdivision_name": "Catalonia",
+            "lat": 41.49109,
+            "lng": 2.14079,
+            "name": "Cerdanyola del Vallès"
+        }
+    ],
+    "ror": "03abrgd14",
+    "url": [
+        "https://www.creaf.cat"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "creaf"
+}

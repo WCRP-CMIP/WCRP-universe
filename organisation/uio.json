@@ -1,0 +1,45 @@
+{
+    "validation_key": "UiO",
+    "ui_label": "University of Oslo",
+    "description": "",
+    "acronyms": [
+        "UiO"
+    ],
+    "aliases": [
+        "Royal Frederick University"
+    ],
+    "established": 1811,
+    "kind": "education",
+    "labels": [
+        "Oslon Yliopisto",
+        "Universitetet i Oslo",
+        "University of Oslo"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01xtthb56",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "NO",
+            "country_name": "Norway",
+            "country_subdivision_code": "03",
+            "country_subdivision_name": "Oslo",
+            "lat": 59.91273,
+            "lng": 10.74609,
+            "name": "Oslo"
+        }
+    ],
+    "ror": "01xtthb56",
+    "url": [
+        "http://www.uio.no/english/",
+        "http://en.wikipedia.org/wiki/University_of_Oslo"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uio"
+}

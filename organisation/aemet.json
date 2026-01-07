@@ -1,0 +1,45 @@
+{
+    "validation_key": "AEMET",
+    "ui_label": "Agencia Estatal de Meteorología",
+    "description": "",
+    "acronyms": [
+        "AEMET"
+    ],
+    "aliases": [],
+    "established": 1887,
+    "kind": "funder",
+    "labels": [
+        "Agencia Estatal de Meteorología",
+        "Agència Estatal de Meteorologia",
+        "Instituto Central Meteorológico",
+        "Meteorologiako Estatu Agentzia",
+        "State Meteorological Agency"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04kxf1r09",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "country_subdivision_code": "MD",
+            "country_subdivision_name": "Madrid",
+            "lat": 40.4165,
+            "lng": -3.70256,
+            "name": "Madrid"
+        }
+    ],
+    "ror": "04kxf1r09",
+    "url": [
+        "http://www.aemet.es/en/portada",
+        "https://en.wikipedia.org/wiki/Agencia_Estatal_de_Meteorolog%C3%ADa"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "aemet"
+}

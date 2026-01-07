@@ -1,0 +1,44 @@
+{
+    "validation_key": "CSIC",
+    "ui_label": "Consejo Superior de Investigaciones Científicas",
+    "description": "",
+    "acronyms": [
+        "CSIC"
+    ],
+    "aliases": [],
+    "established": 1939,
+    "kind": "funder",
+    "labels": [
+        "Consejo Superior de Investigaciones Científicas",
+        "Consell Superior d'Investigacions Científiques",
+        "Consello Superior de Investigacións Científicas",
+        "Spanish National Research Council"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02gfc7t72",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "country_subdivision_code": "MD",
+            "country_subdivision_name": "Madrid",
+            "lat": 40.4165,
+            "lng": -3.70256,
+            "name": "Madrid"
+        }
+    ],
+    "ror": "02gfc7t72",
+    "url": [
+        "https://www.csic.es",
+        "https://en.wikipedia.org/wiki/Spanish_National_Research_Council"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "csic"
+}

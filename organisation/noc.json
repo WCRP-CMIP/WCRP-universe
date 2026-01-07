@@ -1,0 +1,41 @@
+{
+    "validation_key": "NOC",
+    "ui_label": "National Oceanography Centre",
+    "description": "",
+    "acronyms": [
+        "NOC"
+    ],
+    "aliases": [],
+    "established": 2010,
+    "kind": "facility",
+    "labels": [
+        "National Oceanography Centre"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00874hx02",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 50.90395,
+            "lng": -1.40428,
+            "name": "Southampton"
+        }
+    ],
+    "ror": "00874hx02",
+    "url": [
+        "https://noc.ac.uk",
+        "http://en.wikipedia.org/wiki/National_Oceanography_Centre"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "noc"
+}

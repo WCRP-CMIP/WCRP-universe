@@ -1,0 +1,45 @@
+{
+    "validation_key": "ESA",
+    "ui_label": "European Space Agency",
+    "description": "",
+    "acronyms": [
+        "ASE",
+        "ESA"
+    ],
+    "aliases": [],
+    "established": 1975,
+    "kind": "funder",
+    "labels": [
+        "Agence Spatiale Européenne",
+        "Agència Espacial Europea",
+        "Europako Espazio Agentzia",
+        "European Space Agency"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03wd9za21",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "FR",
+            "country_name": "France",
+            "country_subdivision_code": "IDF",
+            "country_subdivision_name": "Île-de-France",
+            "lat": 48.85341,
+            "lng": 2.3488,
+            "name": "Paris"
+        }
+    ],
+    "ror": "03wd9za21",
+    "url": [
+        "http://www.esa.int/ESA",
+        "https://en.wikipedia.org/wiki/European_Space_Agency"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "esa"
+}

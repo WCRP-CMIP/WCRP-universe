@@ -1,0 +1,41 @@
+{
+    "validation_key": "ULB",
+    "ui_label": "Université Libre de Bruxelles",
+    "description": "",
+    "acronyms": [
+        "ULB"
+    ],
+    "aliases": [],
+    "established": 1834,
+    "kind": "education",
+    "labels": [
+        "Université Libre de Bruxelles"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01r9htc13",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "BE",
+            "country_name": "Belgium",
+            "country_subdivision_code": "BRU",
+            "country_subdivision_name": "Brussels Capital",
+            "lat": 50.85045,
+            "lng": 4.34878,
+            "name": "Brussels"
+        }
+    ],
+    "ror": "01r9htc13",
+    "url": [
+        "https://www.ulb.be",
+        "http://en.wikipedia.org/wiki/Universit%C3%A9_libre_de_Bruxelles"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ulb"
+}

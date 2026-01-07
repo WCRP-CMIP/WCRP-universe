@@ -1,0 +1,41 @@
+{
+    "validation_key": "R-CCS",
+    "ui_label": "RIKEN Center for Computational Science",
+    "description": "",
+    "acronyms": [
+        "CCS"
+    ],
+    "aliases": [],
+    "established": 2010,
+    "kind": "facility",
+    "labels": [
+        "RIKEN Center for Computational Science",
+        "国立研究開発法人理化学研究所計算科学研究センター"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03r519674",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "JP",
+            "country_name": "Japan",
+            "country_subdivision_code": "28",
+            "country_subdivision_name": "Hyōgo",
+            "lat": 34.6913,
+            "lng": 135.183,
+            "name": "Kobe"
+        }
+    ],
+    "ror": "03r519674",
+    "url": [
+        "https://www.r-ccs.riken.jp/jp/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "r-ccs"
+}

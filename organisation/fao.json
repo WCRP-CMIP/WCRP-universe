@@ -1,0 +1,44 @@
+{
+    "validation_key": "FAO",
+    "ui_label": "Organisasi Riset Pertanian dan Pangan",
+    "description": "",
+    "acronyms": [
+        "ORPP"
+    ],
+    "aliases": [
+        "Badan Penelitian dan Pengembangan Pertanian"
+    ],
+    "established": 2022,
+    "kind": "funder",
+    "labels": [
+        "Food and Agriculture Research Organization",
+        "Organisasi Riset Pertanian dan Pangan"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/008d63v91",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "ID",
+            "country_name": "Indonesia",
+            "country_subdivision_code": "JK",
+            "country_subdivision_name": "Jakarta",
+            "lat": -6.21462,
+            "lng": 106.84513,
+            "name": "Jakarta"
+        }
+    ],
+    "ror": "008d63v91",
+    "url": [
+        "https://brin.go.id/orpp",
+        "https://id.wikipedia.org/wiki/Organisasi_Riset_Pertanian_dan_Pangan"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "fao"
+}
