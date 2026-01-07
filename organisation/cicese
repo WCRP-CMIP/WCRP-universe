@@ -1,0 +1,42 @@
+{
+    "validation_key": "CICESE",
+    "ui_label": "Centro de Investigación Científica y de Educación Superior de Ensenada",
+    "description": "",
+    "acronyms": [
+        "CICESE"
+    ],
+    "aliases": [],
+    "established": 1973,
+    "kind": "facility",
+    "labels": [
+        "Center for Scientific Research and Higher Education at Ensenada",
+        "Centro de Investigación Científica y de Educación Superior de Ensenada"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04znhwb73",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "MX",
+            "country_name": "Mexico",
+            "country_subdivision_code": "BCN",
+            "country_subdivision_name": "Baja California",
+            "lat": 31.87149,
+            "lng": -116.60071,
+            "name": "Ensenada"
+        }
+    ],
+    "ror": "04znhwb73",
+    "url": [
+        "https://cicese.edu.mx",
+        "https://en.wikipedia.org/wiki/Ensenada_Center_for_Scientific_Research_and_Higher_Education"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cicese"
+}

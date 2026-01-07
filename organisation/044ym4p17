@@ -1,0 +1,39 @@
+{
+    "validation_key": "IEK",
+    "ui_label": "Climate and Energy Fund",
+    "description": "",
+    "acronyms": [],
+    "aliases": [],
+    "established": 2007,
+    "kind": "funder",
+    "labels": [
+        "Climate and Energy Fund",
+        "Klima und Energiefonds"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/044ym4p17",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "AT",
+            "country_name": "Austria",
+            "country_subdivision_code": "9",
+            "country_subdivision_name": "Vienna",
+            "lat": 48.20849,
+            "lng": 16.37208,
+            "name": "Vienna"
+        }
+    ],
+    "ror": "044ym4p17",
+    "url": [
+        "https://www.klimafonds.gv.at/home-en-US/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "iek"
+}

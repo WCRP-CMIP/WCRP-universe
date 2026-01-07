@@ -1,0 +1,45 @@
+{
+    "validation_key": "CU",
+    "ui_label": "University of Colorado Boulder",
+    "description": "",
+    "acronyms": [
+        "UCB"
+    ],
+    "aliases": [
+        "CU-Boulder"
+    ],
+    "established": 1876,
+    "kind": "education",
+    "labels": [
+        "Universidad de Colorado en Boulder",
+        "University of Colorado Boulder",
+        "Université du Colorado à Boulder"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02ttsq026",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CO",
+            "country_subdivision_name": "Colorado",
+            "lat": 40.01499,
+            "lng": -105.27055,
+            "name": "Boulder"
+        }
+    ],
+    "ror": "02ttsq026",
+    "url": [
+        "http://www.colorado.edu/",
+        "http://en.wikipedia.org/wiki/University_of_Colorado_Boulder"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cu"
+}
