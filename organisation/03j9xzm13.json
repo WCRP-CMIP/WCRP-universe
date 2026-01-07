@@ -1,0 +1,49 @@
+{
+    "validation_key": "NRL",
+    "ui_label": "Naval Research Laboratory Optical Sciences Division",
+    "description": "",
+    "acronyms": [],
+    "aliases": [
+        "Applied Optics Branch",
+        "NRL Optical Sciences Division",
+        "Naval Research Laboratory Applied Optics Branch",
+        "Naval Research Laboratory Naval Research Laboratory Optical Sciences Division",
+        "Naval Research Laboratory Optical Physics Branch",
+        "Naval Research Laboratory Optical Techniques Branch",
+        "Naval Research Laboratory Photonics Technology Branch",
+        "Optical Physics Branch",
+        "Optical Techniques Branch",
+        "Photonics Technology Branch"
+    ],
+    "established": null,
+    "kind": "facility",
+    "labels": [
+        "Naval Research Laboratory Optical Sciences Division"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03j9xzm13",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "DC",
+            "country_subdivision_name": "District of Columbia",
+            "lat": 38.89511,
+            "lng": -77.03637,
+            "name": "Washington"
+        }
+    ],
+    "ror": "03j9xzm13",
+    "url": [
+        "https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Optical-Sciences/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "nrl"
+}

@@ -1,0 +1,44 @@
+{
+    "validation_key": "CNRM",
+    "ui_label": "National Meteorological Satellite Center",
+    "description": "",
+    "acronyms": [
+        "NMSC"
+    ],
+    "aliases": [
+        "기상청 국가기상위성센터"
+    ],
+    "established": 2009,
+    "kind": "facility",
+    "labels": [
+        "National Meteorological Satellite Center",
+        "국가기상위성센터"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/043zvrs33",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "KR",
+            "country_name": "South Korea",
+            "country_subdivision_code": "43",
+            "country_subdivision_name": "North Chungcheong",
+            "lat": 36.85667,
+            "lng": 127.44333,
+            "name": "Chinch'ŏn"
+        }
+    ],
+    "ror": "043zvrs33",
+    "url": [
+        "https://nmsc.kma.go.kr",
+        "https://ko.wikipedia.org/wiki/%EA%B5%AD%EA%B0%80%EA%B8%B0%EC%83%81%EC%9C%84%EC%84%B1%EC%84%BC%ED%84%B0"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cnrm"
+}

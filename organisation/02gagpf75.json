@@ -1,0 +1,45 @@
+{
+    "validation_key": "NORCE",
+    "ui_label": "NORCE Research AS",
+    "description": "",
+    "acronyms": [
+        "NORCE"
+    ],
+    "aliases": [
+        "NORCE Norwegian Research Centre",
+        "NORCE Norwegian Research Centre AS",
+        "Norwegian Research Centre"
+    ],
+    "established": 2017,
+    "kind": "facility",
+    "labels": [
+        "NORCE Research AS"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02gagpf75",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "NO",
+            "country_name": "Norway",
+            "country_subdivision_code": "46",
+            "country_subdivision_name": "Vestland",
+            "lat": 60.39299,
+            "lng": 5.32415,
+            "name": "Bergen"
+        }
+    ],
+    "ror": "02gagpf75",
+    "url": [
+        "https://www.norceresearch.no",
+        "https://en.wikipedia.org/wiki/Norwegian_Research_Centre"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "norce"
+}

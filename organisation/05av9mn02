@@ -1,0 +1,41 @@
+{
+    "validation_key": "PML",
+    "ui_label": "Plymouth Marine Laboratory",
+    "description": "",
+    "acronyms": [
+        "PML"
+    ],
+    "aliases": [],
+    "established": 1988,
+    "kind": "facility",
+    "labels": [
+        "Plymouth Marine Laboratory"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05av9mn02",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 50.37153,
+            "lng": -4.14305,
+            "name": "Plymouth"
+        }
+    ],
+    "ror": "05av9mn02",
+    "url": [
+        "http://www.pml.ac.uk/",
+        "http://en.wikipedia.org/wiki/Plymouth_Marine_Laboratory"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "pml"
+}
