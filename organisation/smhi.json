@@ -1,0 +1,45 @@
+{
+    "validation_key": "SMHI",
+    "ui_label": "Swedish Meteorological and Hydrological Institute",
+    "description": "",
+    "acronyms": [
+        "SMHI"
+    ],
+    "aliases": [
+        "Sveriges Meteorologiska och Hydrologiska Institut"
+    ],
+    "established": 1971,
+    "kind": "funder",
+    "labels": [
+        "Ruotsin meteorologinen ja hydrologinen laitos",
+        "Sveriges meteorologiska och hydrologiska institut",
+        "Swedish Meteorological and Hydrological Institute"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00hgzve81",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "SE",
+            "country_name": "Sweden",
+            "country_subdivision_code": "E",
+            "country_subdivision_name": "Östergötland",
+            "lat": 58.59419,
+            "lng": 16.1826,
+            "name": "Norrköping"
+        }
+    ],
+    "ror": "00hgzve81",
+    "url": [
+        "https://www.smhi.se",
+        "https://en.wikipedia.org/wiki/Swedish_Meteorological_and_Hydrological_Institute"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "smhi"
+}
