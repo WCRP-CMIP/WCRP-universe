@@ -1,7 +1,0 @@
-{
-    "@context": {
-        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/organisation/",
-        "@base": "https://universal.mipcvs.dev/organisation/",
-        "@vocab": "https://universal.mipcvs.dev/docs/contents/Organisation/"
-    }
-}
