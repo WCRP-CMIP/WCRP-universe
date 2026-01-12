@@ -1,16 +1,7 @@
 {
-<<<<<<< HEAD
     "@context": {
         "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/calendar/",
-        "@base": "universal.mipcvs.dev/calendar/",
-        "@vocab": "universal.mipcvs.dev/docs/contents/Calendar/"
-=======
-  "@context": {
-    "@version": 1.1,
-    "@base": "https://universal.mipcvs.dev/calendar/",
-    "@vocab": "https://universal.mipcvs.dev/docs/contents/Calendar/",
-    "alias": {
-      "@container": "@set"
->>>>>>> 15d010b0 (emd properties)
+        "@base": "https://universal.mipcvs.dev/calendar/",
+        "@vocab": "https://universal.mipcvs.dev/docs/contents/Calendar/"
     }
 }
