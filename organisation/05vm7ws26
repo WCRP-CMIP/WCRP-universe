@@ -1,0 +1,44 @@
+{
+    "validation_key": "ICAR",
+    "ui_label": "ICAR-National Bureau of Soil Survey and Land Use Planning",
+    "description": "",
+    "acronyms": [
+        "NBSS&LUP"
+    ],
+    "aliases": [
+        "National Bureau of Soil Survey and Land Use Planning",
+        "राष्ट्रीय मृदा सर्वेक्षण एवं भूमि उपयोग नियोजन ब्यूरो"
+    ],
+    "established": 1976,
+    "kind": "facility",
+    "labels": [
+        "ICAR-National Bureau of Soil Survey and Land Use Planning",
+        "भा.कृ.अ.प.- राष्ट्रीय मृदा सर्वेक्षण एवं भूमि उपयोग नियोजन ब्यूरो"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05vm7ws26",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "IN",
+            "country_name": "India",
+            "country_subdivision_code": "MH",
+            "country_subdivision_name": "Maharashtra",
+            "lat": 21.14631,
+            "lng": 79.08491,
+            "name": "Nagpur"
+        }
+    ],
+    "ror": "05vm7ws26",
+    "url": [
+        "https://icar-nbsslup.org.in"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "icar"
+}

@@ -1,0 +1,45 @@
+{
+    "validation_key": "UNIST",
+    "ui_label": "Ulsan National Institute of Science and Technology",
+    "description": "",
+    "acronyms": [
+        "UNIST"
+    ],
+    "aliases": [
+        "Ulsan Gwahak Gisul Daehakgyo",
+        "울산과학기술대학교"
+    ],
+    "established": 2007,
+    "kind": "education",
+    "labels": [
+        "Ulsan National Institute of Science and Technology",
+        "울산과학기술원"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/017cjz748",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "KR",
+            "country_name": "South Korea",
+            "country_subdivision_code": "31",
+            "country_subdivision_name": "Ulsan",
+            "lat": 35.53722,
+            "lng": 129.31667,
+            "name": "Ulsan"
+        }
+    ],
+    "ror": "017cjz748",
+    "url": [
+        "https://www.unist.ac.kr",
+        "https://en.wikipedia.org/wiki/Ulsan_National_Institute_of_Science_and_Technology"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "unist"
+}

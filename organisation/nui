@@ -1,0 +1,42 @@
+{
+    "validation_key": "NUI",
+    "ui_label": "National University of Ireland",
+    "description": "",
+    "acronyms": [
+        "NUI"
+    ],
+    "aliases": [],
+    "established": 1908,
+    "kind": "education",
+    "labels": [
+        "National University of Ireland",
+        "Ollscoil na hÉireann"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00shsf120",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "IE",
+            "country_name": "Ireland",
+            "country_subdivision_code": "L",
+            "country_subdivision_name": "Leinster",
+            "lat": 53.33306,
+            "lng": -6.24889,
+            "name": "Dublin"
+        }
+    ],
+    "ror": "00shsf120",
+    "url": [
+        "http://www.nui.ie/",
+        "http://en.wikipedia.org/wiki/National_University_of_Ireland"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "nui"
+}

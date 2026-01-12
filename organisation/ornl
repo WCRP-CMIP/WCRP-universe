@@ -1,0 +1,44 @@
+{
+    "validation_key": "ORNL",
+    "ui_label": "Oak Ridge National Laboratory",
+    "description": "",
+    "acronyms": [
+        "ORNL"
+    ],
+    "aliases": [
+        "Office of Science Oak Ridge National Laboratory",
+        "United States Department of Energy Office of Science Oak Ridge National Laboratory"
+    ],
+    "established": 1943,
+    "kind": "facility",
+    "labels": [
+        "Oak Ridge National Laboratory"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01qz5mb56",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "TN",
+            "country_subdivision_name": "Tennessee",
+            "lat": 36.01036,
+            "lng": -84.26964,
+            "name": "Oak Ridge"
+        }
+    ],
+    "ror": "01qz5mb56",
+    "url": [
+        "https://www.ornl.gov",
+        "http://en.wikipedia.org/wiki/Oak_Ridge_National_Laboratory"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ornl"
+}

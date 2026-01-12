@@ -1,0 +1,16 @@
+{
+    "validation_key": "land_ice",
+    "ui_label": "Land Ice",
+    "description": "Land Ice",
+    "alias": [
+        "landice",
+        "landIce"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:scientific_domain",
+        "esgvoc:ScientificDomain",
+        "universal"
+    ],
+    "@id": "land-ice"
+}

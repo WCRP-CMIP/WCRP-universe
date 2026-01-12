@@ -1,0 +1,43 @@
+{
+    "validation_key": "IDRC",
+    "ui_label": "International Development Research Centre",
+    "description": "",
+    "acronyms": [
+        "CRDI",
+        "IDRC"
+    ],
+    "aliases": [],
+    "established": 1970,
+    "kind": "funder",
+    "labels": [
+        "Centre de recherches pour le développement international",
+        "International Development Research Centre"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/0445x0472",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "CA",
+            "country_name": "Canada",
+            "country_subdivision_code": "ON",
+            "country_subdivision_name": "Ontario",
+            "lat": 45.41117,
+            "lng": -75.69812,
+            "name": "Ottawa"
+        }
+    ],
+    "ror": "0445x0472",
+    "url": [
+        "http://www.idrc.ca/EN/Pages/default.aspx",
+        "http://en.wikipedia.org/wiki/International_Development_Research_Centre"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "idrc"
+}

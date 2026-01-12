@@ -1,0 +1,12 @@
+{
+    "validation_key": "vorticity",
+    "ui_label": "Vorticity",
+    "description": "Vorticity and related rotational variables.",
+    "@context": "_context",
+    "@type": [
+        "universal",
+        "wcrp:cell_variable_type",
+        "esgvoc:CellVariableType"
+    ],
+    "@id": "vorticity"
+}
