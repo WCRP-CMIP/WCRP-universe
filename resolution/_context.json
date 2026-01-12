@@ -1,0 +1,7 @@
+{
+    "@context": {
+        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/resolution/",
+        "@base": "universal.mipcvs.dev/resolution/",
+        "@vocab": "universal.mipcvs.dev/docs/contents/Resolution/"
+    }
+}

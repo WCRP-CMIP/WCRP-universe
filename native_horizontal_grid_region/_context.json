@@ -1,0 +1,7 @@
+{
+    "@context": {
+        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/native_horizontal_grid_region/",
+        "@base": "universal.mipcvs.dev/native_horizontal_grid_region/",
+        "@vocab": "universal.mipcvs.dev/docs/contents/NativeHorizontalGridRegion/"
+    }
+}

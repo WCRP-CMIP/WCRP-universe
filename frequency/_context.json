@@ -1,0 +1,7 @@
+{
+    "@context": {
+        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/frequency/",
+        "@base": "universal.mipcvs.dev/frequency/",
+        "@vocab": "universal.mipcvs.dev/docs/contents/Frequency/"
+    }
+}

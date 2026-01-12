@@ -1,0 +1,7 @@
+{
+    "@context": {
+        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/archive_id/",
+        "@base": "universal.mipcvs.dev/archive_id/",
+        "@vocab": "universal.mipcvs.dev/docs/contents/ArchiveId/"
+    }
+}

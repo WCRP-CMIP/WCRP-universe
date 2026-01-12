@@ -1,0 +1,42 @@
+{
+    "validation_key": "IITM",
+    "ui_label": "Indian Institute of Tropical Meteorology",
+    "description": "",
+    "acronyms": [
+        "IITM"
+    ],
+    "aliases": [],
+    "established": 1962,
+    "kind": "facility",
+    "labels": [
+        "Indian Institute of Tropical Meteorology",
+        "भारतीय उष्णप्रदेशीय हवामानशास्त्र संस्था"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03jf2m686",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "IN",
+            "country_name": "India",
+            "country_subdivision_code": "MH",
+            "country_subdivision_name": "Maharashtra",
+            "lat": 18.51957,
+            "lng": 73.85535,
+            "name": "Pune"
+        }
+    ],
+    "ror": "03jf2m686",
+    "url": [
+        "http://www.tropmet.res.in/",
+        "https://en.wikipedia.org/wiki/Indian_Institute_of_Tropical_Meteorology"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "iitm"
+}

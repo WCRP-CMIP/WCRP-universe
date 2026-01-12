@@ -1,0 +1,7 @@
+{
+    "@context": {
+        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/model_calendar/",
+        "@base": "universal.mipcvs.dev/model_calendar/",
+        "@vocab": "universal.mipcvs.dev/docs/contents/ModelCalendar/"
+    }
+}

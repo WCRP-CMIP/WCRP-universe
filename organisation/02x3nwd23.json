@@ -1,0 +1,42 @@
+{
+    "validation_key": "ISDR",
+    "ui_label": "Institute for Sustainable Development",
+    "description": "",
+    "acronyms": [
+        "ISD"
+    ],
+    "aliases": [
+        "Inštitut za Trajnostni Razvoj"
+    ],
+    "established": 1995,
+    "kind": "nonprofit",
+    "labels": [
+        "Institute for Sustainable Development"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02x3nwd23",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "SI",
+            "country_name": "Slovenia",
+            "country_subdivision_code": "061",
+            "country_subdivision_name": "Ljubljana",
+            "lat": 46.05108,
+            "lng": 14.50513,
+            "name": "Ljubljana"
+        }
+    ],
+    "ror": "02x3nwd23",
+    "url": [
+        "http://www.itr.si/home"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "isdr"
+}
