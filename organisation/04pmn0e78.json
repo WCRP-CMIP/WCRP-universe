@@ -1,0 +1,42 @@
+{
+    "validation_key": "UAH",
+    "ui_label": "Universidad de Alcalá",
+    "description": "",
+    "acronyms": [
+        "UAH"
+    ],
+    "aliases": [],
+    "established": 1499,
+    "kind": "education",
+    "labels": [
+        "Universidad de Alcalá",
+        "University of Alcalá"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04pmn0e78",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "country_subdivision_code": "MD",
+            "country_subdivision_name": "Madrid",
+            "lat": 40.48205,
+            "lng": -3.35996,
+            "name": "Alcalá de Henares"
+        }
+    ],
+    "ror": "04pmn0e78",
+    "url": [
+        "https://uah.es",
+        "https://en.wikipedia.org/wiki/University_of_Alcal%C3%A1"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uah"
+}
