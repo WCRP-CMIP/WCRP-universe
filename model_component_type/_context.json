@@ -1,7 +1,0 @@
-{
-    "@context": {
-        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/model_component_type/",
-        "@base": "universal.mipcvs.dev/model_component_type/",
-        "@vocab": "universal.mipcvs.dev/docs/contents/ModelComponentType/"
-    }
-}

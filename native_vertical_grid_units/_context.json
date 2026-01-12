@@ -1,7 +1,0 @@
-{
-    "@context": {
-        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/native_vertical_grid_units/",
-        "@base": "universal.mipcvs.dev/native_vertical_grid_units/",
-        "@vocab": "universal.mipcvs.dev/docs/contents/NativeVerticalGridUnits/"
-    }
-}

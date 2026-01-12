@@ -1,7 +1,0 @@
-{
-    "@context": {
-        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/license/",
-        "@base": "universal.mipcvs.dev/license/",
-        "@vocab": "universal.mipcvs.dev/docs/contents/License/"
-    }
-}
