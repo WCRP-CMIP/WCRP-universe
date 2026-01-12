@@ -1,0 +1,44 @@
+{
+    "validation_key": "ANL",
+    "ui_label": "Argonne National Laboratory",
+    "description": "",
+    "acronyms": [
+        "ANL"
+    ],
+    "aliases": [
+        "United States Department of Energy Office of Science Argonne National Laboratory"
+    ],
+    "established": 1946,
+    "kind": "facility",
+    "labels": [
+        "Argonne National Laboratory",
+        "Laboratorio Nacional Argonne"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05gvnxz63",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "IL",
+            "country_subdivision_name": "Illinois",
+            "lat": 41.67364,
+            "lng": -88.00173,
+            "name": "Lemont"
+        }
+    ],
+    "ror": "05gvnxz63",
+    "url": [
+        "https://www.anl.gov",
+        "http://en.wikipedia.org/wiki/Argonne_National_Laboratory"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "anl"
+}

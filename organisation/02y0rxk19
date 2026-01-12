@@ -1,0 +1,44 @@
+{
+    "validation_key": "NUIST",
+    "ui_label": "Nanjing University of Information Science and Technology",
+    "description": "",
+    "acronyms": [
+        "NUIST"
+    ],
+    "aliases": [
+        "Nan Xin Da"
+    ],
+    "established": 1960,
+    "kind": "education",
+    "labels": [
+        "Nanjing University of Information Science and Technology",
+        "南京信息工程大学"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02y0rxk19",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "CN",
+            "country_name": "China",
+            "country_subdivision_code": "JS",
+            "country_subdivision_name": "Jiangsu",
+            "lat": 32.06167,
+            "lng": 118.77778,
+            "name": "Nanjing"
+        }
+    ],
+    "ror": "02y0rxk19",
+    "url": [
+        "http://www.nuist.edu.cn",
+        "https://en.wikipedia.org/wiki/Nanjing_University_of_Information_Science_and_Technology"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "nuist"
+}

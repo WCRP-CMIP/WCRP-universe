@@ -1,0 +1,44 @@
+{
+    "validation_key": "GERICS",
+    "ui_label": "Climate Service Center",
+    "description": "",
+    "acronyms": [
+        "GERICS"
+    ],
+    "aliases": [
+        "GERICS Climate Service Center",
+        "GERICS Climate Service Center Germany"
+    ],
+    "established": 2014,
+    "kind": "facility",
+    "labels": [
+        "Climate Service Center"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/022rwzq94",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "HH",
+            "country_subdivision_name": "Hamburg",
+            "lat": 53.55073,
+            "lng": 9.99302,
+            "name": "Hamburg"
+        }
+    ],
+    "ror": "022rwzq94",
+    "url": [
+        "http://www.climate-service-center.de",
+        "https://de.wikipedia.org/wiki/Climate_Service_Center_Germany"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "gerics"
+}

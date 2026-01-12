@@ -1,0 +1,43 @@
+{
+    "validation_key": "UTAustin",
+    "ui_label": "The University of Texas at Austin",
+    "description": "",
+    "acronyms": [],
+    "aliases": [
+        "UT Austin"
+    ],
+    "established": 1876,
+    "kind": "education",
+    "labels": [
+        "The University of Texas at Austin",
+        "Universidad de Texas en Austin",
+        "Université du texas à austin"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00hj54h04",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "TX",
+            "country_subdivision_name": "Texas",
+            "lat": 30.26715,
+            "lng": -97.74306,
+            "name": "Austin"
+        }
+    ],
+    "ror": "00hj54h04",
+    "url": [
+        "http://www.utexas.edu/",
+        "http://en.wikipedia.org/wiki/University_of_Texas_at_Austin"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "utaustin"
+}

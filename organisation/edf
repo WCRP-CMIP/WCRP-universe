@@ -1,0 +1,42 @@
+{
+    "validation_key": "EDF",
+    "ui_label": "EDF Energy North America",
+    "description": "",
+    "acronyms": [],
+    "aliases": [
+        "EDF Energy NA"
+    ],
+    "established": 1946,
+    "kind": "company",
+    "labels": [
+        "EDF Energy North America",
+        "Électricité de France"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04pq5sx96",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CA",
+            "country_subdivision_name": "California",
+            "lat": 32.71571,
+            "lng": -117.16472,
+            "name": "San Diego"
+        }
+    ],
+    "ror": "04pq5sx96",
+    "url": [
+        "https://edfenergyna.com",
+        "https://en.wikipedia.org/wiki/%C3%89lectricit%C3%A9_de_France"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "edf"
+}

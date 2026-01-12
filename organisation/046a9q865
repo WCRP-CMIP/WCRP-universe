@@ -1,0 +1,41 @@
+{
+    "validation_key": "ESSTI",
+    "ui_label": "Space Science Institute",
+    "description": "",
+    "acronyms": [
+        "SSI"
+    ],
+    "aliases": [],
+    "established": 1992,
+    "kind": "nonprofit",
+    "labels": [
+        "Space Science Institute"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/046a9q865",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CO",
+            "country_subdivision_name": "Colorado",
+            "lat": 40.01499,
+            "lng": -105.27055,
+            "name": "Boulder"
+        }
+    ],
+    "ror": "046a9q865",
+    "url": [
+        "http://www.spacescience.org/",
+        "https://en.wikipedia.org/wiki/Space_Science_Institute"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "essti"
+}
