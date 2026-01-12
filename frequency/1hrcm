@@ -1,0 +1,14 @@
+{
+    "validation_key": "1hrCM",
+    "ui_label": "1 Hour Climatology Monthly",
+    "description": "monthly-mean diurnal cycle resolving each day into 1-hour means",
+    "approx_interval": 30.0,
+    "unit": "hour",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "1hrcm"
+}

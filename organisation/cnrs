@@ -1,0 +1,42 @@
+{
+    "validation_key": "CNRS",
+    "ui_label": "Centre National de la Recherche Scientifique",
+    "description": "",
+    "acronyms": [
+        "CNRS"
+    ],
+    "aliases": [],
+    "established": 1939,
+    "kind": "funder",
+    "labels": [
+        "Centre National de la Recherche Scientifique",
+        "French National Centre for Scientific Research"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02feahw73",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "FR",
+            "country_name": "France",
+            "country_subdivision_code": "IDF",
+            "country_subdivision_name": "Île-de-France",
+            "lat": 48.85341,
+            "lng": 2.3488,
+            "name": "Paris"
+        }
+    ],
+    "ror": "02feahw73",
+    "url": [
+        "https://www.cnrs.fr",
+        "http://en.wikipedia.org/wiki/Centre_national_de_la_recherche_scientifique"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cnrs"
+}

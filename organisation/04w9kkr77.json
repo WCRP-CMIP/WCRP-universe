@@ -1,0 +1,44 @@
+{
+    "validation_key": "TUBITAK",
+    "ui_label": "Scientific and Technological Research Council of Turkey",
+    "description": "",
+    "acronyms": [
+        "TÜBİTAK"
+    ],
+    "aliases": [
+        "Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
+    ],
+    "established": 1963,
+    "kind": "funder",
+    "labels": [
+        "Scientific and Technological Research Council of Turkey",
+        "Türkiyə Elmi və Texnoloji Tədqiqat Şurası"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04w9kkr77",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "TR",
+            "country_name": "Türkiye",
+            "country_subdivision_code": "06",
+            "country_subdivision_name": "Ankara",
+            "lat": 39.91987,
+            "lng": 32.85427,
+            "name": "Ankara"
+        }
+    ],
+    "ror": "04w9kkr77",
+    "url": [
+        "http://www.tubitak.gov.tr/en",
+        "https://en.wikipedia.org/wiki/Scientific_and_Technological_Research_Council_of_Turkey"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "tubitak"
+}

@@ -1,0 +1,40 @@
+{
+    "validation_key": "IRD",
+    "ui_label": "Institut de Recherche pour le Développement",
+    "description": "",
+    "acronyms": [
+        "IRD"
+    ],
+    "aliases": [],
+    "established": 1937,
+    "kind": "government",
+    "labels": [
+        "Institut de Recherche pour le Développement"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00bnthp71",
+            "@type": "wcrp:location",
+            "continent_code": "AF",
+            "continent_name": "Africa",
+            "country_code": "CG",
+            "country_name": "Congo Republic",
+            "country_subdivision_code": "BZV",
+            "country_subdivision_name": "Brazzaville",
+            "lat": -4.26613,
+            "lng": 15.28318,
+            "name": "Brazzaville"
+        }
+    ],
+    "ror": "00bnthp71",
+    "url": [
+        "http://www.congo.ird.fr/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ird"
+}
