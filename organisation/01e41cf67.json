@@ -1,0 +1,48 @@
+{
+    "validation_key": "LANL",
+    "ui_label": "Los Alamos National Laboratory",
+    "description": "",
+    "acronyms": [
+        "LANL"
+    ],
+    "aliases": [
+        "U.S. Department of Energy Los Alamos National Laboratory",
+        "U.S. Department of Energy National Nuclear Security Administration Los Alamos National Laboratory",
+        "United States Department of Energy Los Alamos National Laboratory",
+        "United States Department of Energy National Nuclear Security Administration Los Alamos National Laboratory"
+    ],
+    "established": 1943,
+    "kind": "facility",
+    "labels": [
+        "Laboratoire national de los alamos",
+        "Laboratorio Nacional de Los Álamos",
+        "Los Alamos National Laboratory"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01e41cf67",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "NM",
+            "country_subdivision_name": "New Mexico",
+            "lat": 35.88808,
+            "lng": -106.30697,
+            "name": "Los Alamos"
+        }
+    ],
+    "ror": "01e41cf67",
+    "url": [
+        "http://lanl.gov/",
+        "http://en.wikipedia.org/wiki/Los_Alamos_National_Laboratory"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "lanl"
+}

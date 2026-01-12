@@ -1,0 +1,46 @@
+{
+    "validation_key": "MRI",
+    "ui_label": "Meteorological Research Institute",
+    "description": "",
+    "acronyms": [],
+    "aliases": [
+        "Kishōkenkyūsho",
+        "Meteorological Research Institute, Japan",
+        "きしょうけんきゅうしょ",
+        "キショウケンキュウショ",
+        "気象研究所"
+    ],
+    "established": 1946,
+    "kind": "facility",
+    "labels": [
+        "Meteorological Research Institute",
+        "気象庁気象研究所"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/031gqrq04",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "JP",
+            "country_name": "Japan",
+            "country_subdivision_code": "08",
+            "country_subdivision_name": "Ibaraki",
+            "lat": 36.2,
+            "lng": 140.1,
+            "name": "Tsukuba"
+        }
+    ],
+    "ror": "031gqrq04",
+    "url": [
+        "http://www.mri-jma.go.jp",
+        "https://ja.wikipedia.org/wiki/%E6%B0%97%E8%B1%A1%E7%A0%94%E7%A9%B6%E6%89%80"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "mri"
+}

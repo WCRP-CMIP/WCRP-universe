@@ -1,0 +1,46 @@
+{
+    "validation_key": "UCM",
+    "ui_label": "Universidad Complutense de Madrid",
+    "description": "",
+    "acronyms": [
+        "UCM"
+    ],
+    "aliases": [
+        "Universidad de Madrid"
+    ],
+    "established": 1293,
+    "kind": "education",
+    "labels": [
+        "Complutense University of Madrid",
+        "Madrilgo Complutense Unibertsitatea",
+        "Universidad Complutense de Madrid",
+        "Universidade Complutense de Madrid"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02p0gd045",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "ES",
+            "country_name": "Spain",
+            "country_subdivision_code": "MD",
+            "country_subdivision_name": "Madrid",
+            "lat": 40.4165,
+            "lng": -3.70256,
+            "name": "Madrid"
+        }
+    ],
+    "ror": "02p0gd045",
+    "url": [
+        "https://www.ucm.es",
+        "http://en.wikipedia.org/wiki/Complutense_University_of_Madrid"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ucm"
+}

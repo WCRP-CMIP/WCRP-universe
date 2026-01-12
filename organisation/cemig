@@ -1,0 +1,41 @@
+{
+    "validation_key": "CEMIG",
+    "ui_label": "Companhia Energética de Minas Gerais (Brazil)",
+    "description": "",
+    "acronyms": [
+        "CEMIG"
+    ],
+    "aliases": [],
+    "established": 1952,
+    "kind": "company",
+    "labels": [
+        "Companhia Energética de Minas Gerais (Brazil)"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02kbrsj34",
+            "@type": "wcrp:location",
+            "continent_code": "SA",
+            "continent_name": "South America",
+            "country_code": "BR",
+            "country_name": "Brazil",
+            "country_subdivision_code": "MG",
+            "country_subdivision_name": "Minas Gerais",
+            "lat": -19.92083,
+            "lng": -43.93778,
+            "name": "Belo Horizonte"
+        }
+    ],
+    "ror": "02kbrsj34",
+    "url": [
+        "http://www.cemig.com.br/en-us/Pages/default.aspx",
+        "https://en.wikipedia.org/wiki/CEMIG"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cemig"
+}

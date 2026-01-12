@@ -1,0 +1,14 @@
+{
+    "validation_key": "dec",
+    "ui_label": "Decadal Frequency",
+    "description": "decadal mean samples",
+    "approx_interval": 3650.0,
+    "unit": "decade",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "dec"
+}

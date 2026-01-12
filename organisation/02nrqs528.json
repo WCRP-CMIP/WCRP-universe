@@ -1,0 +1,43 @@
+{
+    "validation_key": "DWD",
+    "ui_label": "Deutscher Wetterdienst",
+    "description": "",
+    "acronyms": [
+        "DWD"
+    ],
+    "aliases": [
+        "German Meteorological Service"
+    ],
+    "established": 1952,
+    "kind": "facility",
+    "labels": [
+        "Deutscher Wetterdienst"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02nrqs528",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "HE",
+            "country_subdivision_name": "Hesse",
+            "lat": 50.10061,
+            "lng": 8.76647,
+            "name": "Offenbach"
+        }
+    ],
+    "ror": "02nrqs528",
+    "url": [
+        "https://www.dwd.de",
+        "http://en.wikipedia.org/wiki/Deutscher_Wetterdienst"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "dwd"
+}

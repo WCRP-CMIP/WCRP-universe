@@ -1,0 +1,46 @@
+{
+    "validation_key": "UoH",
+    "ui_label": "University of Hyderabad",
+    "description": "",
+    "acronyms": [
+        "UoH"
+    ],
+    "aliases": [
+        "Hyderabad Central University"
+    ],
+    "established": 1974,
+    "kind": "education",
+    "labels": [
+        "University of Hyderabad",
+        "हैदराबाद विश्वविद्यालय",
+        "হায়দ্রাবাদ বিশ্ববিদ্যালয়",
+        "హైదరాబాదు విశ్వవిద్యాలయము"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04a7rxb17",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "IN",
+            "country_name": "India",
+            "country_subdivision_code": "TS",
+            "country_subdivision_name": "Telangana",
+            "lat": 17.38405,
+            "lng": 78.45636,
+            "name": "Hyderabad"
+        }
+    ],
+    "ror": "04a7rxb17",
+    "url": [
+        "https://uohyd.ac.in",
+        "http://en.wikipedia.org/wiki/University_of_Hyderabad"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uoh"
+}
