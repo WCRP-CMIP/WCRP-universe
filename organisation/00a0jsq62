@@ -1,0 +1,41 @@
+{
+    "validation_key": "LSHTM",
+    "ui_label": "London School of Hygiene & Tropical Medicine",
+    "description": "",
+    "acronyms": [
+        "LSHTM"
+    ],
+    "aliases": [],
+    "established": 1899,
+    "kind": "education",
+    "labels": [
+        "London School of Hygiene & Tropical Medicine"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00a0jsq62",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "GB",
+            "country_name": "United Kingdom",
+            "country_subdivision_code": "ENG",
+            "country_subdivision_name": "England",
+            "lat": 51.50853,
+            "lng": -0.12574,
+            "name": "London"
+        }
+    ],
+    "ror": "00a0jsq62",
+    "url": [
+        "http://www.lshtm.ac.uk/",
+        "http://en.wikipedia.org/wiki/London_School_of_Hygiene_%26_Tropical_Medicine"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "lshtm"
+}

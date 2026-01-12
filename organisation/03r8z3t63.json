@@ -1,0 +1,43 @@
+{
+    "validation_key": "UNSW",
+    "ui_label": "UNSW Sydney",
+    "description": "",
+    "acronyms": [
+        "UNSW"
+    ],
+    "aliases": [
+        "University of New South Wales"
+    ],
+    "established": 1949,
+    "kind": "education",
+    "labels": [
+        "UNSW Sydney"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03r8z3t63",
+            "@type": "wcrp:location",
+            "continent_code": "OC",
+            "continent_name": "Oceania",
+            "country_code": "AU",
+            "country_name": "Australia",
+            "country_subdivision_code": "NSW",
+            "country_subdivision_name": "New South Wales",
+            "lat": -33.86785,
+            "lng": 151.20732,
+            "name": "Sydney"
+        }
+    ],
+    "ror": "03r8z3t63",
+    "url": [
+        "https://www.unsw.edu.au/",
+        "http://en.wikipedia.org/wiki/University_of_New_South_Wales"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "unsw"
+}

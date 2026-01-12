@@ -1,0 +1,42 @@
+{
+    "validation_key": "UGA",
+    "ui_label": "Université Grenoble Alpes",
+    "description": "",
+    "acronyms": [
+        "UGA"
+    ],
+    "aliases": [],
+    "established": 2016,
+    "kind": "education",
+    "labels": [
+        "Grenoble Alpes University",
+        "Université Grenoble Alpes"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02rx3b187",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "FR",
+            "country_name": "France",
+            "country_subdivision_code": "ARA",
+            "country_subdivision_name": "Auvergne-Rhône-Alpes",
+            "lat": 45.1787,
+            "lng": 5.76281,
+            "name": "Saint-Martin-d'Hères"
+        }
+    ],
+    "ror": "02rx3b187",
+    "url": [
+        "https://www.univ-grenoble-alpes.fr",
+        "https://en.wikipedia.org/wiki/Grenoble_Alpes_University"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uga"
+}
