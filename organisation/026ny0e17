@@ -1,0 +1,42 @@
+{
+    "validation_key": "ECCC",
+    "ui_label": "Environment and Climate Change Canada",
+    "description": "",
+    "acronyms": [
+        "ECCC"
+    ],
+    "aliases": [],
+    "established": 1971,
+    "kind": "funder",
+    "labels": [
+        "Environment and Climate Change Canada",
+        "Environnement et Changement Climatique Canada"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/026ny0e17",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "CA",
+            "country_name": "Canada",
+            "country_subdivision_code": "ON",
+            "country_subdivision_name": "Ontario",
+            "lat": 45.41117,
+            "lng": -75.69812,
+            "name": "Ottawa"
+        }
+    ],
+    "ror": "026ny0e17",
+    "url": [
+        "https://www.canada.ca/en/environment-climate-change.html",
+        "https://en.wikipedia.org/wiki/Environment_and_Climate_Change_Canada"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "eccc"
+}
