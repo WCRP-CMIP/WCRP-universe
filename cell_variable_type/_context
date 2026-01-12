@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://universal.mipcvs.dev/cell_variable_type/",
+    "@vocab": "https://universal.mipcvs.dev/docs/contents/CellVariableType/"
+  }
+}

@@ -1,6 +1,16 @@
 {
+<<<<<<< HEAD
     "@context": {
-        "@base": "https://wcrp-cmip.github.io/WCRP-universe/region/",
-        "@vocab": "https://esgf.github.io/esgf-vocab/api_documentation/data_descriptors.html#esgvoc.api.data_descriptors.Region."
+        "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/region/",
+        "@base": "universal.mipcvs.dev/region/",
+        "@vocab": "universal.mipcvs.dev/docs/contents/Region/"
     }
 }
+=======
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://universal.mipcvs.dev/region/",
+    "@vocab": "https://universal.mipcvs.dev/docs/contents/Region/"
+  }
+}
+>>>>>>> 15d010b0 (emd properties)
