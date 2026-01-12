@@ -1,0 +1,185 @@
+{
+  "@context": {
+  "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/grid_mapping/",
+  "@base": "https://universal.mipcvs.dev/grid_mapping/",
+  "@vocab": "https://universal.mipcvs.dev/docs/contents/GridMapping/"
+},
+  "@graph": [
+    {
+  "validation_key": "albers_conical_equal_area",
+  "ui_label": "Albers Conical Equal Area",
+  "description": "A projection that preserves area but not shape, creating accurate representations of large, east-west-oriented land masses, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "albers-conical-equal-area"
+}
+    ,{
+  "validation_key": "azimuthal_equidistant",
+  "ui_label": "Azimuthal Equidistant",
+  "description": "A projection that maintains the correct distance and direction from a central point to all other points on the map, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "azimuthal-equidistant"
+}
+    ,{
+  "validation_key": "geostationary",
+  "ui_label": "Geostationary",
+  "description": "A type of azimuthal projection designed to show the Earth as it appears to a geostationary satellite, offering a perspective that minimizes distortion for areas under view, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "geostationary"
+}
+    ,{
+  "validation_key": "healpix",
+  "ui_label": "HEALPix",
+  "description": "The hierarchical equal area isolatitude pixelisation of a sphere based on subdivision of a distorted rhombic dodecahedron (HEALPix), as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "healpix"
+}
+    ,{
+  "validation_key": "lambert_azimuthal_equal_area",
+  "ui_label": "Lambert Azimuthal Equal Area",
+  "description": "A projection that accurately preserves the area of all regions on a map, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "lambert-azimuthal-equal-area"
+}
+    ,{
+  "validation_key": "lambert_conformal_conic",
+  "ui_label": "Lambert Conformal Conic",
+  "description": "A projection that preserves the shape of small areas by using a cone placed over the Earth's surface, with the projection onto the cone occurring along lines radiating from the Earth's centre, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "lambert-conformal-conic"
+}
+    ,{
+  "validation_key": "lambert_cylindrical_equal_area",
+  "ui_label": "Lambert Cylindrical Equal Area",
+  "description": "A cylindrical map projection that preserves area accurately but distorts shape, especially away from the equator, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "lambert-cylindrical-equal-area"
+}
+    ,{
+  "validation_key": "latitude_longitude",
+  "ui_label": "Latitude-Longitude",
+  "description": "A projection that treats latitude and longitude as planar X and Y coordinates, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "latitude-longitude"
+}
+    ,{
+  "validation_key": "mercator",
+  "ui_label": "Mercator",
+  "description": "Cylindrical map projection preserving angles, commonly used for ocean models.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "mercator"
+}
+    ,{
+  "validation_key": "orthographic",
+  "ui_label": "Orthographic",
+  "description": "A form of parallel projection in which all the projection lines are orthogonal to the projection plane, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "orthographic"
+}
+    ,{
+  "validation_key": "polar_stereographic",
+  "ui_label": "Polar Stereographic",
+  "description": "An azimuthal projection that maps the Earth's surface onto a flat plane from a view point at one pole, projecting points from the globe to a plane tangent to the opposite pole, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "polar-stereographic"
+}
+    ,{
+  "validation_key": "rotated_latitude_longitude",
+  "ui_label": "Rotated Latitude-Longitude",
+  "description": "A geographic coordinate system where the traditional north pole is shifted to a different location, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "rotated-latitude-longitude"
+}
+    ,{
+  "validation_key": "sinusoidal",
+  "ui_label": "Sinusoidal",
+  "description": "An equal-area projection that accurately represents area but distorts shape, especially at the edges, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "sinusoidal"
+}
+    ,{
+  "validation_key": "stereographic",
+  "ui_label": "Stereographic",
+  "description": "A projection that preserves the angles between intersecting lines and curves on the sphere, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "stereographic"
+}
+    ,{
+  "validation_key": "transverse_mercator",
+  "ui_label": "Transverse Mercator",
+  "description": "A projection that rotates the Mercator projection cylinder 90 degrees to be tangent to the Earth along a meridian instead of the equator, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "transverse-mercator"
+}
+    ,{
+  "validation_key": "vertical_perspective",
+  "ui_label": "Vertical Perspective",
+  "description": "A projection used to represent the Earth from a point of view directly above its centre, as defined by the CF conventions.",
+  "@type": [
+    "universal",
+    "wcrp:grid_mapping",
+    "esgvoc:GridMapping"
+  ],
+  "@id": "vertical-perspective"
+}
+  ]
+}
