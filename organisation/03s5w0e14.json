@@ -1,0 +1,40 @@
+{
+    "validation_key": "IIHS",
+    "ui_label": "Indian Institute for Human Settlements",
+    "description": "",
+    "acronyms": [
+        "IIHS"
+    ],
+    "aliases": [],
+    "established": null,
+    "kind": "education",
+    "labels": [
+        "Indian Institute for Human Settlements"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03s5w0e14",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "IN",
+            "country_name": "India",
+            "country_subdivision_code": "KA",
+            "country_subdivision_name": "Karnataka",
+            "lat": 12.97194,
+            "lng": 77.59369,
+            "name": "Bengaluru"
+        }
+    ],
+    "ror": "03s5w0e14",
+    "url": [
+        "http://iihs.co.in/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "iihs"
+}

@@ -1,0 +1,40 @@
+{
+    "validation_key": "ENVEO",
+    "ui_label": "Environmental Earth Observation Information Technology (Austria)",
+    "description": "",
+    "acronyms": [
+        "ENVEO IT"
+    ],
+    "aliases": [],
+    "established": 2001,
+    "kind": "company",
+    "labels": [
+        "Environmental Earth Observation Information Technology (Austria)"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/04ezd4121",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "AT",
+            "country_name": "Austria",
+            "country_subdivision_code": "7",
+            "country_subdivision_name": "Tyrol",
+            "lat": 47.26266,
+            "lng": 11.39454,
+            "name": "Innsbruck"
+        }
+    ],
+    "ror": "04ezd4121",
+    "url": [
+        "https://www.enveo.at/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "enveo"
+}

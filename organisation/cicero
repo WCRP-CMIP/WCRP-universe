@@ -1,0 +1,42 @@
+{
+    "validation_key": "CICERO",
+    "ui_label": "CICERO Center for International Climate Research",
+    "description": "",
+    "acronyms": [
+        "CICERO"
+    ],
+    "aliases": [],
+    "established": 1990,
+    "kind": "facility",
+    "labels": [
+        "CICERO Center for International Climate Research",
+        "CICERO Senter for Klimaforskning"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01gw5dy53",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "NO",
+            "country_name": "Norway",
+            "country_subdivision_code": "03",
+            "country_subdivision_name": "Oslo",
+            "lat": 59.91273,
+            "lng": 10.74609,
+            "name": "Oslo"
+        }
+    ],
+    "ror": "01gw5dy53",
+    "url": [
+        "https://cicero.oslo.no",
+        "https://en.wikipedia.org/wiki/Centre_for_International_Climate_and_Environmental_Research"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cicero"
+}

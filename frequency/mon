@@ -1,0 +1,14 @@
+{
+    "validation_key": "mon",
+    "ui_label": "Monthly Frequency",
+    "description": "monthly mean samples",
+    "approx_interval": 30,
+    "unit": "month",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "mon"
+}

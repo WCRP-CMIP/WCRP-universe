@@ -1,0 +1,43 @@
+{
+    "validation_key": "UCLouvain",
+    "ui_label": "UCLouvain",
+    "description": "",
+    "acronyms": [],
+    "aliases": [
+        "Université catholique de Belgique",
+        "Université catholique de Louvain"
+    ],
+    "established": 1425,
+    "kind": "education",
+    "labels": [
+        "Catholic University of Louvain",
+        "UCLouvain"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02495e989",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "BE",
+            "country_name": "Belgium",
+            "country_subdivision_code": "WAL",
+            "country_subdivision_name": "Wallonia",
+            "lat": 50.66829,
+            "lng": 4.61443,
+            "name": "Louvain-la-Neuve"
+        }
+    ],
+    "ror": "02495e989",
+    "url": [
+        "https://uclouvain.be",
+        "http://en.wikipedia.org/wiki/Universit%C3%A9_catholique_de_Louvain"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uclouvain"
+}

@@ -1,0 +1,42 @@
+{
+    "validation_key": "KAUST",
+    "ui_label": "King Abdullah University of Science and Technology",
+    "description": "",
+    "acronyms": [
+        "KAUST"
+    ],
+    "aliases": [],
+    "established": 2009,
+    "kind": "education",
+    "labels": [
+        "King Abdullah University of Science and Technology",
+        "جامعة الملك عبد الله للعلوم والتقنية"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01q3tbs38",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "SA",
+            "country_name": "Saudi Arabia",
+            "country_subdivision_code": "02",
+            "country_subdivision_name": "Mecca Region",
+            "lat": 21.49012,
+            "lng": 39.18624,
+            "name": "Jeddah"
+        }
+    ],
+    "ror": "01q3tbs38",
+    "url": [
+        "https://www.kaust.edu.sa",
+        "http://en.wikipedia.org/wiki/King_Abdullah_University_of_Science_and_Technology"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "kaust"
+}

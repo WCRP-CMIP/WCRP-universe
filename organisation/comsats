@@ -1,0 +1,41 @@
+{
+    "validation_key": "COMSATS",
+    "ui_label": "International Centre for Climate Change and Development",
+    "description": "",
+    "acronyms": [
+        "ICCCAD"
+    ],
+    "aliases": [],
+    "established": 2009,
+    "kind": "facility",
+    "labels": [
+        "International Centre for Climate Change and Development"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02dpmge29",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "BD",
+            "country_name": "Bangladesh",
+            "country_subdivision_code": "C",
+            "country_subdivision_name": "Dhaka Division",
+            "lat": 23.7104,
+            "lng": 90.40744,
+            "name": "Dhaka"
+        }
+    ],
+    "ror": "02dpmge29",
+    "url": [
+        "http://www.icccad.net/",
+        "https://en.wikipedia.org/wiki/International_Centre_for_Climate_Change_and_Development"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "comsats"
+}
