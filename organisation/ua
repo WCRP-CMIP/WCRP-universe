@@ -1,0 +1,42 @@
+{
+    "validation_key": "UA",
+    "ui_label": "University of Arizona",
+    "description": "",
+    "acronyms": [
+        "UA"
+    ],
+    "aliases": [],
+    "established": 1885,
+    "kind": "education",
+    "labels": [
+        "Universidad de Arizona",
+        "University of Arizona"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03m2x1q45",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "AZ",
+            "country_subdivision_name": "Arizona",
+            "lat": 32.22174,
+            "lng": -110.92648,
+            "name": "Tucson"
+        }
+    ],
+    "ror": "03m2x1q45",
+    "url": [
+        "http://www.arizona.edu/",
+        "http://en.wikipedia.org/wiki/University_of_Arizona"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ua"
+}

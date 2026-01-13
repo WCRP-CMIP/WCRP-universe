@@ -1,0 +1,44 @@
+{
+    "validation_key": "DLR",
+    "ui_label": "German Society for Aeronautics and Astronautics",
+    "description": "",
+    "acronyms": [
+        "DGLR"
+    ],
+    "aliases": [
+        "Deutsche Gesellschaft für Luft- und Raumfahrt"
+    ],
+    "established": 1912,
+    "kind": "other",
+    "labels": [
+        "Deutsche Gesellschaft für Luft- und Raumfahrt - Lilienthal-Oberth e.V.",
+        "German Society for Aeronautics and Astronautics"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05xj12p61",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "NW",
+            "country_subdivision_name": "North Rhine-Westphalia",
+            "lat": 50.73438,
+            "lng": 7.09549,
+            "name": "Bonn"
+        }
+    ],
+    "ror": "05xj12p61",
+    "url": [
+        "https://dglr.de",
+        "https://en.wikipedia.org/wiki/German_Society_for_Aeronautics_and_Astronautics"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "dlr"
+}

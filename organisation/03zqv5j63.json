@@ -1,0 +1,41 @@
+{
+    "validation_key": "APCC",
+    "ui_label": "APEC Climate Center",
+    "description": "",
+    "acronyms": [
+        "APCC"
+    ],
+    "aliases": [],
+    "established": 2005,
+    "kind": "government",
+    "labels": [
+        "APEC Climate Center"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03zqv5j63",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "KR",
+            "country_name": "South Korea",
+            "country_subdivision_code": "26",
+            "country_subdivision_name": "Busan",
+            "lat": 35.10168,
+            "lng": 129.03004,
+            "name": "Busan"
+        }
+    ],
+    "ror": "03zqv5j63",
+    "url": [
+        "https://apcc21.org/",
+        "https://en.wikipedia.org/wiki/APEC_Climate_Center"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "apcc"
+}

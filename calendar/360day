@@ -1,0 +1,13 @@
+{
+    "validation_key": "360_day",
+    "ui_label": "360-day",
+    "description": "A calendar in which each year consists of 12 months of exactly 30 days each. This calendar is commonly used in climate models for computational convenience.",
+    "alias": [],
+    "@context": "_context",
+    "@type": [
+        "wcrp:calendar",
+        "esgvoc:Calendar",
+        "universal"
+    ],
+    "@id": "360day"
+}

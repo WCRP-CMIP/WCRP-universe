@@ -1,0 +1,39 @@
+{
+    "validation_key": "CNRM-CERFACS",
+    "ui_label": "Météo-France",
+    "description": "",
+    "acronyms": [],
+    "aliases": [],
+    "established": 1995,
+    "kind": "other",
+    "labels": [
+        "Météo-France"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/0233st365",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "FR",
+            "country_name": "France",
+            "country_subdivision_code": "OCC",
+            "country_subdivision_name": "Occitanie",
+            "lat": 43.60426,
+            "lng": 1.44367,
+            "name": "Toulouse"
+        }
+    ],
+    "ror": "0233st365",
+    "url": [
+        "http://www.meteofrance.com/accueil",
+        "https://en.wikipedia.org/wiki/M%C3%A9t%C3%A9o-France"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "cnrm-cerfacs"
+}
