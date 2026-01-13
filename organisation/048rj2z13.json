@@ -1,0 +1,44 @@
+{
+    "validation_key": "MEXT",
+    "ui_label": "Ministry of Education, Culture, Sports, Science and Technology",
+    "description": "",
+    "acronyms": [
+        "MEXT"
+    ],
+    "aliases": [
+        "Monbu-kagaku-shō"
+    ],
+    "established": 1871,
+    "kind": "funder",
+    "labels": [
+        "Ministry of Education, Culture, Sports, Science and Technology",
+        "文部科学省"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/048rj2z13",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "JP",
+            "country_name": "Japan",
+            "country_subdivision_code": "13",
+            "country_subdivision_name": "Tokyo",
+            "lat": 35.6895,
+            "lng": 139.69171,
+            "name": "Tokyo"
+        }
+    ],
+    "ror": "048rj2z13",
+    "url": [
+        "http://www.mext.go.jp/english/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Education,_Culture,_Sports,_Science_and_Technology"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "mext"
+}

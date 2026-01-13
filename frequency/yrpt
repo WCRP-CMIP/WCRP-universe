@@ -1,0 +1,14 @@
+{
+    "validation_key": "yrPt",
+    "ui_label": "Yearly Point",
+    "description": "sampled yearly, at specified time point within the time period",
+    "approx_interval": 365.0,
+    "unit": "year",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "yrpt"
+}
