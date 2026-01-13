@@ -1,0 +1,45 @@
+name: "Add/Modify: Units"
+description: Add or modify a unit definition in WCRP Universe
+title: "Add/Modify: Units: <Type name here>"
+labels: ['delta', 'units', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Units
+        
+        Unit definitions for climate data.
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase)
+      placeholder: "e.g. m"
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+      placeholder: "e.g. meters"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description

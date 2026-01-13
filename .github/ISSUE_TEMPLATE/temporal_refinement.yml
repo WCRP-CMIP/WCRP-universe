@@ -1,0 +1,43 @@
+name: "Add/Modify: Temporal Refinement"
+description: Add or modify a temporal refinement in WCRP Universe
+title: "Add/Modify: Temporal Refinement: <Type name here>"
+labels: ['delta', 'temporal_refinement', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Temporal Refinement
+        
+        Temporal refinement options for grid data.
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase)
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description

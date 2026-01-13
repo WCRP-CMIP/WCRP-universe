@@ -1,0 +1,45 @@
+name: "Add/Modify: Grid Type"
+description: Add or modify a grid type in WCRP Universe
+title: "Add/Modify: Grid Type: <Type name here>"
+labels: ['delta', 'grid_type', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Grid Type
+        
+        Grid types for climate model data.
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase with hyphens)
+      placeholder: "e.g. regular-latitude-longitude"
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+      placeholder: "e.g. Regular Latitude-Longitude"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the grid type

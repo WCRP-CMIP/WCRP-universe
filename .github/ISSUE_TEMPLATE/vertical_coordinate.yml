@@ -1,0 +1,44 @@
+name: "Add/Modify: Vertical Coordinate"
+description: Add or modify a vertical coordinate type in WCRP Universe
+title: "Add/Modify: Vertical Coordinate: <Type name here>"
+labels: ['delta', 'vertical_coordinate', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Vertical Coordinate
+        
+        Vertical coordinate types for climate model grids.
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase with hyphens)
+      placeholder: "e.g. atmosphere-hybrid-sigma-pressure-coordinate"
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the coordinate type

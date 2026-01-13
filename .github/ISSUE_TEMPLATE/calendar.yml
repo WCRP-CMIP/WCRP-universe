@@ -1,0 +1,52 @@
+name: "Add/Modify: Calendar"
+description: Add or modify a calendar type in WCRP Universe
+title: "Add/Modify: Calendar: <Type calendar name here>"
+labels: ['delta', 'calendar', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Calendar
+        
+        Calendar types for climate model data.
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase)
+      placeholder: "e.g. standard"
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+      placeholder: "e.g. Standard (Gregorian)"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description
+
+  - type: input
+    id: alias
+    attributes:
+      label: Aliases
+      description: Alternative names (comma-separated)
+      placeholder: "e.g. gregorian"

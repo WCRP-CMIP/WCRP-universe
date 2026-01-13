@@ -1,0 +1,6 @@
+field_order,field_type,field_id,label,description,data_source,required,placeholder,options_type,default_value
+1,markdown,header,,"## Add/Modify: Vertical Coordinate\n\nVertical coordinate types for climate model grids.",none,false,,,
+2,dropdown,issue_kind,Issue Type,New or modify existing,issue_kind,true,,list,0
+3,input,validation_key,Validation Key,Unique identifier (lowercase with hyphens),none,true,e.g. atmosphere-hybrid-sigma-pressure-coordinate,,
+4,input,ui_label,UI Label,Display name,none,false,,,
+5,textarea,description,Description,Detailed description of the coordinate type,none,false,,,

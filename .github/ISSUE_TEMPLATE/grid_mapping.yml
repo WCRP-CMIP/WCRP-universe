@@ -1,0 +1,45 @@
+name: "Add/Modify: Grid Mapping"
+description: Add or modify a grid mapping/projection in WCRP Universe
+title: "Add/Modify: Grid Mapping: <Type name here>"
+labels: ['delta', 'grid_mapping', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Grid Mapping
+        
+        Map projection types for climate model grids.
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase with hyphens)
+      placeholder: "e.g. latitude-longitude"
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+      placeholder: "e.g. Latitude-Longitude"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the projection

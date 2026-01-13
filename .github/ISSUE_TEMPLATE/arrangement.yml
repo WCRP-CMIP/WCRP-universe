@@ -1,0 +1,45 @@
+name: "Add/Modify: Arrangement"
+description: Add or modify a grid arrangement in WCRP Universe
+title: "Add/Modify: Arrangement: <Type arrangement name here>"
+labels: ['delta', 'arrangement', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Arrangement
+        
+        Grid staggering arrangement (e.g. Arakawa grids).
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase with hyphens)
+      placeholder: "e.g. arakawa-c"
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+      placeholder: "e.g. Arakawa C-grid"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the arrangement

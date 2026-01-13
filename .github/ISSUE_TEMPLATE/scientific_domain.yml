@@ -1,0 +1,52 @@
+name: "Add/Modify: Scientific Domain"
+description: Add or modify a scientific domain/realm in WCRP Universe
+title: "Add/Modify: Scientific Domain: <Type name here>"
+labels: ['delta', 'scientific_domain', 'Review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add/Modify: Scientific Domain
+        
+        Scientific domains/realms for climate modeling.
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation Key
+      description: Unique identifier (lowercase)
+      placeholder: "e.g. atmosphere"
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: UI Label
+      description: Display name
+      placeholder: "e.g. Atmosphere"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description
+
+  - type: input
+    id: alias
+    attributes:
+      label: Aliases
+      description: Alternative names (comma-separated)
+      placeholder: "e.g. atmos"
