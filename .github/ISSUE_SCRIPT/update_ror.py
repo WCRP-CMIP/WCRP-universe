@@ -1,10 +1,10 @@
 
-
 import cmipld
 import json
+from cmipld.utils.jsontools import sort_json_keys
 
 
-repopath = './src-data/organisation/'
+repopath = './organisation/'
 
 
 def get_institution(ror, acronym):
@@ -47,10 +47,10 @@ def get_institution(ror, acronym):
     # Extract location from v2 format
     location_data = ror_data.get('locations', [{}])[0].get('geonames_details', {})
     
-    result =  {
-        "id": f"{cmip_acronym.lower()}",
-        "type": ['wcrp:organisation',f'wcrp:{mytype}','universal'],
-        "validation_key": cmip_acronym,
+    result = {
+        "@context": "_context",
+        "@id": f"{cmip_acronym.lower()}",
+        "@type": ['wcrp:organisation', f'wcrp:{mytype}'],
         "ror": ror_data['id'].split('/')[-1],
         "ui_label": get_display_name(ror_data.get('names', [])),
         "url": get_links(ror_data.get('links', [])),
@@ -60,19 +60,16 @@ def get_institution(ror, acronym):
         "aliases": get_names_by_type(ror_data.get('names', []), 'alias'),
         "acronyms": get_names_by_type(ror_data.get('names', []), 'acronym'),
         "location": {
-            "id": f"universal:location/{ror_data['id'].split('/')[-1]}",
-            "type": "wcrp:location",
+            "@id": f"location/{ror_data['id'].split('/')[-1]}",
+            "@type": "wcrp:location",
             "lat": location_data.get('lat'),
             "lon": location_data.get('lng'),
             "city": location_data.get('name'),
             "country": [location_data.get('country_code'), location_data.get('country_name')] if location_data.get('country_name') else None
         }         
-        #  can reverse match consortiums or members from here.    
     }
     
-    return result
-
-    
+    return sort_json_keys(result)
 
 
 if __name__ == '__main__':
@@ -80,25 +77,24 @@ if __name__ == '__main__':
     import glob
     
     files = glob.glob(repopath+'*.json')
-    # print(files)
     
     def update(file):
         
         data = json.load(open(file))
         
         match data:
-            case {"type":ldtypes} if 'wcrp:institution' in ldtypes:
-                data = get_institution(data['ror'],data['validation_key'])
+            case {"@type": ldtypes} if 'wcrp:institution' in ldtypes:
+                data = get_institution(data['ror'], data['@id'])
                     
-            case {"type":ldtypes} if 'wcrp:consortium' in ldtypes:
+            case {"@type": ldtypes} if 'wcrp:consortium' in ldtypes:
                 errors = []
                 return errors
                 
         with open(file,'w') as f:
-            json.dump(data,f,indent=4) 
+            json.dump(data, f, indent=4) 
         
     # run on all files
-    errors = p_map(update,files)
+    errors = p_map(update, files)
     errors = [i for i in errors if i]
         
     if errors: 
@@ -109,22 +105,17 @@ if __name__ == '__main__':
             
         console.print(Text("Validation Errors", style="bold red underline"))
 
-        # Create a table
         table = Table(show_header=True, header_style="bold white")
         
-        table.add_column("Type", style="bold green")  # Green
-        table.add_column("Item", style="bold blue")  # Blue
-        table.add_column("Warnings", style="red")  # Red for errors (bullet points)
+        table.add_column("Type", style="bold green")
+        table.add_column("Item", style="bold blue")
+        table.add_column("Warnings", style="red")
 
-
-        for kind,ror,validation_key,err in errors:
-            # print('eee',err)
+        for kind, ror, validation_key, err in errors:
             table.add_row(
                 kind,
                 f"{ror}: {validation_key}",
                 f"[{err['loc'][0]}]:\n {err['msg']}"
             )
 
-
         console.print(table)
-            

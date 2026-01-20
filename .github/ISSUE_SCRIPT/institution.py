@@ -14,10 +14,6 @@ sys.path.append(str(Path(__file__).parent))
 
 import update_ror
 import json
-import os
-
-
-OUTPUT_PATH = './src-data/organisation/'
 
 
 def similarity(name1, name2):
@@ -37,7 +33,8 @@ def run(issue, packet, dry_run=False):
         dry_run: If True, still process but data won't be written by caller
         
     Returns:
-        tuple: (data_dict, output_path) or None if validation fails
+        tuple: (data_dict, None) or None if validation fails
+               Output path is set by new_issue.py
     """
     prefix = "[DRY RUN] " if dry_run else ""
     
@@ -54,7 +51,6 @@ def run(issue, packet, dry_run=False):
         return None
     
     data_id = acronym.lower().replace(' ', '-').replace('_', '-')
-    output_path = os.path.join(OUTPUT_PATH, f"{data_id}.json")
     
     print(f"{prefix}Acronym: {acronym}")
     print(f"{prefix}ID: {data_id}")
@@ -86,16 +82,16 @@ def run(issue, packet, dry_run=False):
         # Create basic data without ROR
         print(f"\n{prefix}Creating entry without ROR data (pending)")
         data = {
-            "id": data_id,
-            "type": ['wcrp:organisation', 'wcrp:institution', 'universal'],
-            "validation_key": acronym,
+            "@context": "_context",
+            "@id": data_id,
+            "@type": ['wcrp:organisation', 'wcrp:institution'],
         }
         
         if full_name:
             data['ui_label'] = full_name
     
-    print(f"\n{prefix}Output path: {output_path}")
     print(f"\n{prefix}Generated data:")
     print(json.dumps(data, indent=4))
     
-    return (data, output_path)
+    # Return data only - output path is set by new_issue.py
+    return (data, None)
