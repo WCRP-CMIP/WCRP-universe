@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: License',
     'description': 'Add or modify a license in WCRP Universe',
     'title': 'Add/Modify: License: <Type license name here>',
-    'labels': ['delta', 'license', 'Review'],
+    'labels': ['delta', 'license', 'Review', 'keep-open'],
     'issue_category': 'license'
 }
 

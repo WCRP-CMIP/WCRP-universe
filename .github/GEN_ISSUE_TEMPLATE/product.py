@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Product',
     'description': 'Add or modify a product type in WCRP Universe',
     'title': 'Add/Modify: Product: <Type product name here>',
-    'labels': ['delta', 'product', 'Review'],
+    'labels': ['delta', 'product', 'Review', 'keep-open'],
     'issue_category': 'product'
 }
 

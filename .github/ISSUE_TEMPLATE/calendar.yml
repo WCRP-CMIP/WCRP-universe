@@ -1,7 +1,7 @@
 name: "Add/Modify: Calendar"
 description: Add or modify a calendar type in WCRP Universe
 title: "Add/Modify: Calendar: <Type calendar name here>"
-labels: ['delta', 'calendar', 'Review']
+labels: ['delta', 'calendar', 'Review', 'keep-open']
 body:
   - type: markdown
     attributes:
@@ -9,18 +9,6 @@ body:
         ## Add/Modify: Calendar
         
         Calendar types for climate model data.
-
-  - type: dropdown
-    id: issue_kind
-    attributes:
-      label: Issue Type
-      description: New or modify existing
-      options:
-        - "New"
-        - "Modify"
-      default: 0
-    validations:
-      required: true
 
   - type: input
     id: validation_key
@@ -50,3 +38,24 @@ body:
       label: Aliases
       description: Alternative names (comma-separated)
       placeholder: "e.g. gregorian"
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: collaborators
+    attributes:
+      label: Additional Collaborators
+      description: |
+        To add attribution to additional members include their GitHub usernames (only) separated by a comma.
+      placeholder: "e.g. user1"
+      default:  user3

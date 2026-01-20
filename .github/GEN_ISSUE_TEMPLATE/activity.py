@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Activity',
     'description': 'Add or modify an activity in WCRP Universe',
     'title': 'Add/Modify: Activity: <Type activity name here>',
-    'labels': ['delta', 'activity', 'Review'],
+    'labels': ['delta', 'activity', 'Review', 'keep-open'],
     'issue_category': 'activity'
 }
 

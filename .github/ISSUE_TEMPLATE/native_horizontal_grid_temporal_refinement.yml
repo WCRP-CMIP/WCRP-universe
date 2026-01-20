@@ -1,24 +1,12 @@
 name: "Add/Modify: Native Horizontal Grid Temporal Refinement"
 description: Add or modify a grid temporal refinement in WCRP Universe
 title: "Add/Modify: Grid Temporal Refinement: <Type name here>"
-labels: ['delta', 'grid-temporal-refinement', 'Review']
+labels: ['delta', 'grid-temporal-refinement', 'Review', 'keep-open']
 body:
   - type: markdown
     attributes:
       value: |
         # Add/Modify: Native Horizontal Grid Temporal Refinement
-
-  - type: dropdown
-    id: issue_kind
-    attributes:
-      label: Issue Type
-      description: New or modify existing
-      options:
-        - "New"
-        - "Modify"
-      default: 0
-    validations:
-      required: true
 
   - type: input
     id: validation_key
@@ -41,3 +29,24 @@ body:
     attributes:
       label: Description
       description: Detailed description
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: collaborators
+    attributes:
+      label: Additional Collaborators
+      description: |
+        To add attribution to additional members include their GitHub usernames (only) separated by a comma.
+      placeholder: "e.g. user1"
+      default:  user3

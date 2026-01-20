@@ -1,24 +1,12 @@
 name: "Add/Modify: Source Type"
 description: Add or modify a source type in WCRP Universe
 title: "Add/Modify: Source Type: <Type source type name here>"
-labels: ['delta', 'source-type', 'Review']
+labels: ['delta', 'source-type', 'Review', 'keep-open']
 body:
   - type: markdown
     attributes:
       value: |
         # Add/Modify: Source Type
-
-  - type: dropdown
-    id: issue_kind
-    attributes:
-      label: Issue Type
-      description: New or modify existing
-      options:
-        - "New"
-        - "Modify"
-      default: 0
-    validations:
-      required: true
 
   - type: input
     id: validation_key
@@ -41,3 +29,24 @@ body:
     attributes:
       label: Description
       description: Detailed description
+
+  - type: dropdown
+    id: issue_kind
+    attributes:
+      label: Issue Type
+      description: New or modify existing
+      options:
+        - "New"
+        - "Modify"
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: collaborators
+    attributes:
+      label: Additional Collaborators
+      description: |
+        To add attribution to additional members include their GitHub usernames (only) separated by a comma.
+      placeholder: "e.g. user1"
+      default:  user3

@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Resolution',
     'description': 'Add or modify a resolution in WCRP Universe',
     'title': 'Add/Modify: Resolution: <Type resolution here>',
-    'labels': ['delta', 'resolution', 'Review'],
+    'labels': ['delta', 'resolution', 'Review', 'keep-open'],
     'issue_category': 'resolution'
 }
 

@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Units',
     'description': 'Add or modify a unit definition in WCRP Universe',
     'title': 'Add/Modify: Units: <Type name here>',
-    'labels': ['delta', 'units', 'Review'],
+    'labels': ['delta', 'units', 'Review', 'keep-open'],
     'issue_category': 'units'
 }
 

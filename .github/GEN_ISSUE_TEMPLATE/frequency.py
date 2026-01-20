@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Frequency',
     'description': 'Add or modify a frequency in WCRP Universe',
     'title': 'Add/Modify: Frequency: <Type frequency name here>',
-    'labels': ['delta', 'frequency', 'Review'],
+    'labels': ['delta', 'frequency', 'Review', 'keep-open'],
     'issue_category': 'frequency'
 }
 

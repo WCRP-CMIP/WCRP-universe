@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Vertical Coordinate',
     'description': 'Add or modify a vertical coordinate type in WCRP Universe',
     'title': 'Add/Modify: Vertical Coordinate: <Type name here>',
-    'labels': ['delta', 'vertical_coordinate', 'Review'],
+    'labels': ['delta', 'vertical_coordinate', 'Review', 'keep-open'],
     'issue_category': 'vertical_coordinate'
 }
 

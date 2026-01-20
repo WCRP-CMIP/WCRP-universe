@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Source Type',
     'description': 'Add or modify a source type in WCRP Universe',
     'title': 'Add/Modify: Source Type: <Type source type name here>',
-    'labels': ['delta', 'source-type', 'Review'],
+    'labels': ['delta', 'source-type', 'Review', 'keep-open'],
     'issue_category': 'source_type'
 }
 

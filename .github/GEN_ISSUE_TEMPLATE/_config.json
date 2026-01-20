@@ -46,7 +46,8 @@
             "vertical_coordinate"
         ],
         "Organizations": [
-            "organisation"
+            "organisation",
+            "consortium"
         ],
         "Other": [
             "cell_variable_type"

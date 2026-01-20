@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Native Horizontal Grid Type',
     'description': 'Add or modify a native horizontal grid type in WCRP Universe',
     'title': 'Add/Modify: Grid Type: <Type grid type here>',
-    'labels': ['delta', 'grid-type', 'Review'],
+    'labels': ['delta', 'grid-type', 'Review', 'keep-open'],
     'issue_category': 'native_horizontal_grid_type'
 }
 

@@ -4,7 +4,7 @@ TEMPLATE_CONFIG = {
     'name': 'Add: Institution',
     'description': 'Type: Institution',
     'title': 'Add: Institution: <Type Institution Acronym Here>',
-    'labels': ['alpha', 'institution', 'organisation', 'universe', 'Review'],
+    'labels': ['alpha', 'institution', 'organisation', 'universe', 'Review', 'keep-open'],
     'issue_category': 'organisation'
 }
 
