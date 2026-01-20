@@ -2,8 +2,6 @@
 
 import cmipld
 import json
-from cmipld.tests.jsonld import organisation
-from pydantic import  ValidationError
 
 
 repopath = './src-data/organisation/'
@@ -13,7 +11,8 @@ def get_institution(ror, acronym):
 
     mytype = 'institution'
 
-    ror_template = 'https://api.ror.org/organizations/{}'
+    # ROR API v2 endpoint
+    ror_template = 'https://api.ror.org/v2/organizations/{}'
 
     url = ror_template.format(ror)
 
@@ -24,32 +23,54 @@ def get_institution(ror, acronym):
     # ensure the acronym has no _
     cmip_acronym = acronym.replace('_','-')
     
+    # Helper functions for ROR v2 data extraction
+    def get_display_name(names):
+        """Get the ror_display name from names array"""
+        for name in names:
+            if 'ror_display' in name.get('types', []):
+                return name['value']
+        return names[0]['value'] if names else None
     
-    ror_data =  {
+    def get_names_by_type(names, name_type):
+        """Extract names by type (label, acronym, alias)"""
+        return [n['value'] for n in names if name_type in n.get('types', [])]
+    
+    def get_labels(names):
+        """Get label names (excluding ror_display and acronyms)"""
+        return [n['value'] for n in names 
+                if 'label' in n.get('types', []) and 'ror_display' not in n.get('types', [])]
+    
+    def get_links(links):
+        """Extract website URLs from links array"""
+        return [link['value'] for link in links if link.get('type') == 'website']
+    
+    # Extract location from v2 format
+    location_data = ror_data.get('locations', [{}])[0].get('geonames_details', {})
+    
+    result =  {
         "id": f"{cmip_acronym.lower()}",
         "type": ['wcrp:organisation',f'wcrp:{mytype}','universal'],
-        "validation-key": cmip_acronym,
+        "validation_key": cmip_acronym,
         "ror": ror_data['id'].split('/')[-1],
-        "ui-label": ror_data['name'],
-        "url": ror_data.get('links', []) ,
+        "ui_label": get_display_name(ror_data.get('names', [])),
+        "url": get_links(ror_data.get('links', [])),
         "established": ror_data.get('established'),
         "kind": ror_data.get('types', [])[0] if ror_data.get('types') else None,
-        "labels": [i['label'] for i in ror_data.get('labels', [])],
-        "aliases": ror_data.get('aliases', []),
-        "acronyms": ror_data.get('acronyms', []),
+        "labels": get_labels(ror_data.get('names', [])),
+        "aliases": get_names_by_type(ror_data.get('names', []), 'alias'),
+        "acronyms": get_names_by_type(ror_data.get('names', []), 'acronym'),
         "location": {
             "id": f"universal:location/{ror_data['id'].split('/')[-1]}",
             "type": "wcrp:location",
-            "lat":  ror_data['addresses'][0].get('lat') if ror_data.get('addresses') else None,
-            "lon":  ror_data['addresses'][0].get('lng') if ror_data.get('addresses') else None,
-            "city": ror_data['addresses'][0].get('city') if ror_data.get('addresses') else None,
-            "country": list(ror_data['country'].values())  if ror_data.get('country') else None
-        
+            "lat": location_data.get('lat'),
+            "lon": location_data.get('lng'),
+            "city": location_data.get('name'),
+            "country": [location_data.get('country_code'), location_data.get('country_name')] if location_data.get('country_name') else None
         }         
         #  can reverse match consortiums or members from here.    
     }
     
-    return ror_data
+    return result
 
     
 
@@ -67,13 +88,8 @@ if __name__ == '__main__':
         
         match data:
             case {"type":ldtypes} if 'wcrp:institution' in ldtypes:
-                try:
-                    data = get_institution(data['ror'],data['validation-key'])
-                    organisation.institution(**data)
-                except ValidationError as err:
-                    return 'institution',data['ror'],data['validation-key'],err.errors()[0]
+                data = get_institution(data['ror'],data['validation_key'])
                     
-                
             case {"type":ldtypes} if 'wcrp:consortium' in ldtypes:
                 errors = []
                 return errors

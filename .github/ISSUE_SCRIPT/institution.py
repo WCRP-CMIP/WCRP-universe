@@ -1,139 +1,101 @@
+"""
+Institution Issue Handler
+
+Processes institution submissions, fetches ROR data, validates, 
+and returns the JSON data to be written.
+
+Returns:
+    tuple: (data_dict, output_path) or None if processing fails
+"""
+
 import sys
 from pathlib import Path
-# set the path to read update_ror. 
 sys.path.append(str(Path(__file__).parent))
 
 import update_ror
-import json,os
-from cmipld.utils import git
-from  cmipld.tests import jsonld as tests
-from cmipld.tests.jsonld.organisation import ror
+import json
+import os
 
 
-path = './src-data/organisation/'
+OUTPUT_PATH = './src-data/organisation/'
 
 
 def similarity(name1, name2):
-    '''
-    This function looks at the similarity between two strings and returns a percentage similarity.
-    
-    NB Difflib should come bundled with the standard python pagages e.g. conda
-    '''
+    """Calculate similarity between two strings as a percentage"""
     from difflib import SequenceMatcher
-    
     matcher = SequenceMatcher(None, name1, name2)
-    similarity = matcher.ratio() * 100
-
-    return similarity
+    return matcher.ratio() * 100
 
 
-
-
-def run(issue,packet):
-    # print('issue',issue)
+def run(issue, packet, dry_run=False):
+    """
+    Process institution issue and return data to write.
     
-    git.update_summary(f"### Issue content\n ```json\n{json.dumps(issue,indent=4)}\n```")
-    
-    ror = issue['ror']
-    acronym = issue['acronym']
-    id = acronym.lower()
-    
-
-    # update the issue title and create an issue branch
-    title = f'{issue["issue-type"].capitalize()}_{acronym}'
-    git.update_issue_title(title)
-    git.newbranch(title)
-    
-    acronym_test = tests.field_test(tests.components.id.id_field)
-    ror_test = tests.field_test(tests.organisation.ror.ror_field)
-    # testclass = tests.multi_field_test([tests.organisation.ror.ror_field,tests.components.id.id_field])
-    
-    if ror != 'pending':
-    
-        tests.run_checks(acronym_test,{"id" : id})
-        tests.run_checks(ror_test,{"ror" : ror})
+    Args:
+        issue: Parsed issue content (dict)
+        packet: Raw issue data including labels, author, etc.
+        dry_run: If True, still process but data won't be written by caller
         
-
-        data = update_ror.get_institution(ror, acronym)
-
-        ranking = similarity(issue['full-name-of-the-organisation'], data['ui-label'])
-        
-        git.update_summary(f"### Similarity\nThe similarity between the full name ({issue['full-name-of-the-organisation']}) of the organisation and the ui-label ({data['ui-label']}) is {ranking}%")
-        
-        
-        if ranking < 80:
-            git.update_issue(f"*Warning:* \n The similarity between the full name ({issue['full-name-of-the-organisation']}) of the organisation and the ui-label ({data['ui-label']}) is {int(ranking)}%")
+    Returns:
+        tuple: (data_dict, output_path) or None if validation fails
+    """
+    prefix = "[DRY RUN] " if dry_run else ""
+    
+    print(f"\n{prefix}Processing institution...")
+    print(f"{'='*60}")
+    
+    # Extract fields
+    ror_id = issue.get('ror', issue.get('description', '')).strip()
+    acronym = issue.get('acronym', issue.get('label', '')).strip()
+    full_name = issue.get('full_name_of_the_organisation', issue.get('long_label', '')).strip()
+    
+    if not acronym:
+        print(f"{prefix}❌ Error: No acronym provided")
+        return None
+    
+    data_id = acronym.lower().replace(' ', '-').replace('_', '-')
+    output_path = os.path.join(OUTPUT_PATH, f"{data_id}.json")
+    
+    print(f"{prefix}Acronym: {acronym}")
+    print(f"{prefix}ID: {data_id}")
+    print(f"{prefix}ROR: {ror_id or 'pending'}")
+    print(f"{prefix}Full name: {full_name}")
+    
+    # Build data based on ROR availability
+    if ror_id and ror_id.lower() != 'pending':
+        # Fetch ROR data
+        print(f"\n{prefix}Fetching ROR data...")
+        try:
+            data = update_ror.get_institution(ror_id, acronym)
             
+            # Check name similarity
+            ror_name = data.get('ui_label', '')
+            ranking = similarity(full_name, ror_name)
+            
+            print(f"{prefix}Name similarity: {ranking:.1f}%")
+            print(f"  Provided: {full_name}")
+            print(f"  From ROR: {ror_name}")
+            
+            if ranking < 80:
+                print(f"\n{prefix}⚠️  Warning: Low similarity ({int(ranking)}%)")
+                
+        except Exception as e:
+            print(f"{prefix}❌ Error fetching ROR data: {e}")
+            return None
     else:
-
-        tests.run_checks(acronym_test,{"id" : id})
-        
+        # Create basic data without ROR
+        print(f"\n{prefix}Creating entry without ROR data (pending)")
         data = {
-                    "id": f"{id}",
-                    "type": ['wcrp:organisation',f'wcrp:{issue['issue-type']}','universal'],
-                    "validation-key": acronym,    
-                }        
-
-    git.update_summary(f"### Data content\n ```json\n{json.dumps(data,indent=4)}\n```")
-    
-    
-    
-    
-    
-    
-    
-    # write the data to a file
-
-    outfile = path+id+'.json'
-    print('writing to',outfile)
-    json.dump(data,open(outfile,'w'),indent=4)
-    print('done')
-
-
-    print(os.popen(f"less {outfile}").read())
-    
-    # git branch commit and push function
-    
-    # if we are happy, and have gotten this far: 
-    
-# <<<<<<< update-organizations-from-ror
-    # Get the author from the packet (GitHub issue submitter)
-    # This is the username of the person who submitted the issue
-    author = packet.get('author')
-# =======
-#     if 'submitter' in issue: 
-#         # override the current author
-#         os.environ['ISSUE_SUBMITTER'] = issue['submitter']
-# >>>>>>> main
-    
-    # If there's a specific submitter field in the issue form, use that instead
-    if 'submitter' in issue and issue['submitter']:
-        author = issue['submitter']
-    
-    # Fallback to environment variable if neither is available
-    if not author:
-        author = os.environ.get('OVERRIDE_AUTHOR', 'unknown')
-    
-# <<<<<<< update-organizations-from-ror
-    # Set the environment variable for other git operations that might need it
-    if author:
-        os.environ['OVERRIDE_AUTHOR'] = author
-# =======
-#     # # add files
-#     # git.addall()
-
-#     # git.addfile(outfile)
-#     # commmit them
-
-#     author = os.environ.get('ISSUE_SUBMITTER')
-# >>>>>>> main
-    
-    # Commit the file with the correct author
-    git.commit_one(outfile, author, comment=f'New entry {acronym} in {issue["issue-type"]} files.', branch=title)
-    
-    # Create pull request with the same author
-    git.newpull(title, author, json.dumps(issue, indent=4), title, os.environ['ISSUE_NUMBER'])
-    
-    
+            "id": data_id,
+            "type": ['wcrp:organisation', 'wcrp:institution', 'universal'],
+            "validation_key": acronym,
+        }
         
+        if full_name:
+            data['ui_label'] = full_name
     
+    print(f"\n{prefix}Output path: {output_path}")
+    print(f"\n{prefix}Generated data:")
+    print(json.dumps(data, indent=4))
+    
+    return (data, output_path)

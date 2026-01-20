@@ -3,7 +3,7 @@
 TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Native Horizontal Grid Temporal Refinement',
     'description': 'Add or modify a grid temporal refinement in WCRP Universe',
-    'title': 'Add/Modify: Grid Temporal Refinement: <Type name here>',
+    'title': 'Add/Modify: Native Horizontal Grid Temporal Refinement',
     'labels': ['delta', 'grid-temporal-refinement', 'Review', 'keep-open'],
     'issue_category': 'native_horizontal_grid_temporal_refinement'
 }

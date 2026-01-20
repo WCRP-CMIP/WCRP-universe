@@ -1,6 +1,6 @@
 name: "Add/Modify: Truncation Method"
 description: Add or modify a truncation method in WCRP Universe
-title: "Add/Modify: Truncation Method: <Type name here>"
+title: "Add/Modify: Truncation Method"
 labels: ['delta', 'truncation_method', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

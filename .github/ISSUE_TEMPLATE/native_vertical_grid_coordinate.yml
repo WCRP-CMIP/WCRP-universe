@@ -1,6 +1,6 @@
 name: "Add/Modify: Native Vertical Grid Coordinate"
 description: Add or modify a vertical grid coordinate in WCRP Universe
-title: "Add/Modify: Vertical Coordinate: <Type coordinate here>"
+title: "Add/Modify: Native Vertical Grid Coordinate"
 labels: ['delta', 'vertical-coordinate', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

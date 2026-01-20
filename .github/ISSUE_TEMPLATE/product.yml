@@ -1,6 +1,6 @@
 name: "Add/Modify: Product"
 description: Add or modify a product type in WCRP Universe
-title: "Add/Modify: Product: <Type product name here>"
+title: "Add/Modify: Product"
 labels: ['delta', 'product', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

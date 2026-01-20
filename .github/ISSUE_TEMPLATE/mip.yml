@@ -1,6 +1,6 @@
 name: "Add/Modify: MIP"
 description: Add or modify a MIP in WCRP Universe
-title: "Add/Modify: MIP: <Type MIP name here>"
+title: "Add/Modify: MIP"
 labels: ['delta', 'mip', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

@@ -1,6 +1,6 @@
 name: "Add/Modify: Model Calendar"
 description: Add or modify a model calendar in WCRP Universe
-title: "Add/Modify: Model Calendar: <Type calendar name here>"
+title: "Add/Modify: Model Calendar"
 labels: ['delta', 'model-calendar', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

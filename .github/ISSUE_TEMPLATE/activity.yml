@@ -1,6 +1,6 @@
 name: "Add/Modify: Activity"
 description: Add or modify an activity in WCRP Universe
-title: "Add/Modify: Activity: <Type activity name here>"
+title: "Add/Modify: Activity"
 labels: ['delta', 'activity', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

@@ -1,6 +1,6 @@
 name: "Add/Modify: Scientific Domain"
 description: Add or modify a scientific domain/realm in WCRP Universe
-title: "Add/Modify: Scientific Domain: <Type name here>"
+title: "Add/Modify: Scientific Domain"
 labels: ['delta', 'scientific_domain', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -42,7 +42,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

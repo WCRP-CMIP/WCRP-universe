@@ -1,6 +1,6 @@
 name: "Add/Modify: Resolution"
 description: Add or modify a resolution in WCRP Universe
-title: "Add/Modify: Resolution: <Type resolution here>"
+title: "Add/Modify: Resolution"
 labels: ['delta', 'resolution', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

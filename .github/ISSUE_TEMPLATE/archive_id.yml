@@ -1,6 +1,6 @@
 name: "Add/Modify: Archive ID"
 description: Add or modify an archive ID in WCRP Universe
-title: "Add/Modify: Archive ID: <Type archive name here>"
+title: "Add/Modify: Archive ID"
 labels: ['delta', 'archive-id', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

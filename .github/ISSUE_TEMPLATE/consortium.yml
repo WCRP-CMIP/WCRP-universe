@@ -1,6 +1,6 @@
 name: "Add/Modify: Consortium"
 description: Add or modify a consortium (group of institutions) in WCRP Universe
-title: "Add/Modify: Consortium: <Type consortium name here>"
+title: "Add/Modify: Consortium"
 labels: ['delta', 'organisation', 'consortium', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -377,7 +377,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"
@@ -392,4 +392,4 @@ body:
       label: Additional Collaborators
       description: |
         To add attribution to additional members include their GitHub usernames (only) separated by a comma.
-      placeholder: "e.g. user1"
+      placeholder: "e.g. user1 user2 user3"

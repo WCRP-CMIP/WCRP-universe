@@ -6,7 +6,7 @@ from cmipld.utils.ldparse import name_extract
 TEMPLATE_CONFIG = {
     'name': 'Add/Modify: Consortium',
     'description': 'Add or modify a consortium (group of institutions) in WCRP Universe',
-    'title': 'Add/Modify: Consortium: <Type consortium name here>',
+    'title': 'Add/Modify: Consortium',
     'labels': ['delta', 'organisation', 'consortium', 'Review', 'keep-open'],
     'issue_category': 'consortium'
 }

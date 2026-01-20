@@ -1,6 +1,6 @@
 name: "Add/Modify: Vertical Coordinate"
 description: Add or modify a vertical coordinate type in WCRP Universe
-title: "Add/Modify: Vertical Coordinate: <Type name here>"
+title: "Add/Modify: Vertical Coordinate"
 labels: ['delta', 'vertical_coordinate', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -34,7 +34,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"

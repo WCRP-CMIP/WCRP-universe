@@ -1,6 +1,6 @@
 name: "Add/Modify: License"
 description: Add or modify a license in WCRP Universe
-title: "Add/Modify: License: <Type license name here>"
+title: "Add/Modify: License"
 labels: ['delta', 'license', 'Review', 'keep-open']
 body:
   - type: markdown
@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: issue_kind
     attributes:
-      label: Issue Type
+      label: Issue Kind
       description: New or modify existing
       options:
         - "New"
