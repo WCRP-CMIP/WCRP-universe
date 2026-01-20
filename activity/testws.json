@@ -1,0 +1,12 @@
+{
+    "validation_key": "testws",
+    "ui_label": "test2",
+    "description": "dont use",
+    "@context": "_context",
+    "@type": [
+        "wcrp:activity",
+        "esgvoc:Activity",
+        "universal"
+    ],
+    "@id": "testws"
+}
