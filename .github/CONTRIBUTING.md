@@ -185,23 +185,23 @@ The following links will open pre-filled GitHub issues with content from the sel
 <details name="calendar">
 <summary>Calendar (9 entries)</summary>
 
-- [360_day](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+360_day&issue_kind=%22Modify%22&alias=&validation_key=360_day&ui_label=360-day&description=A+calendar+in+which+each+year+consists+of+12+months+of+exactly+30+days+each.+This+calendar+is+commonly+used+in+climate+models+for+computational+convenience.)
+- [360_day](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+360_day&issue_kind=%22Modify%22&validation_key=360_day&ui_label=360-day&description=A+calendar+in+which+each+year+consists+of+12+months+of+exactly+30+days+each.+This+calendar+is+commonly+used+in+climate+models+for+computational+convenience.&alias=)
 
-- [365_day](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+365_day&issue_kind=%22Modify%22&alias=noleap&validation_key=365_day&ui_label=365-day+%28No+Leap%29&description=A+calendar+in+which+each+year+consists+of+365+days+with+no+leap+years.+All+months+have+their+standard+lengths+%2828+days+for+February%29.)
+- [365_day](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+365_day&issue_kind=%22Modify%22&validation_key=365_day&ui_label=365-day+%28No+Leap%29&description=A+calendar+in+which+each+year+consists+of+365+days+with+no+leap+years.+All+months+have+their+standard+lengths+%2828+days+for+February%29.&alias=noleap)
 
-- [366_day](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+366_day&issue_kind=%22Modify%22&alias=all_leap&validation_key=366_day&ui_label=366-day+%28All+Leap%29&description=A+calendar+in+which+each+year+consists+of+366+days%2C+i.e.%2C+every+year+is+a+leap+year+with+February+having+29+days.)
+- [366_day](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+366_day&issue_kind=%22Modify%22&validation_key=366_day&ui_label=366-day+%28All+Leap%29&description=A+calendar+in+which+each+year+consists+of+366+days%2C+i.e.%2C+every+year+is+a+leap+year+with+February+having+29+days.&alias=all_leap)
 
-- [julian](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+julian&issue_kind=%22Modify%22&alias=&validation_key=julian&ui_label=Julian&description=Julian+calendar+with+leap+year+every+four+years+without+exception.+This+calendar+was+in+use+prior+to+the+Gregorian+calendar+reform+of+1582.)
+- [julian](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+julian&issue_kind=%22Modify%22&validation_key=julian&ui_label=Julian&description=Julian+calendar+with+leap+year+every+four+years+without+exception.+This+calendar+was+in+use+prior+to+the+Gregorian+calendar+reform+of+1582.&alias=)
 
-- [none](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+none&issue_kind=%22Modify%22&alias=&validation_key=none&ui_label=None&description=No+calendar+-+used+for+data+without+a+temporal+dimension+or+for+time-invariant+fields.)
+- [none](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+none&issue_kind=%22Modify%22&validation_key=none&ui_label=None&description=No+calendar+-+used+for+data+without+a+temporal+dimension+or+for+time-invariant+fields.&alias=)
 
-- [proleptic_gregorian](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+proleptic_gregorian&issue_kind=%22Modify%22&alias=&validation_key=proleptic_gregorian&ui_label=Proleptic+Gregorian&description=A+calendar+with+the+Gregorian+rules+for+leap-years+extended+to+dates+before+1582-10-15.+All+dates+consistent+with+these+rules+are+allowed%2C+both+before+and+after+1582-10-15.)
+- [proleptic_gregorian](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+proleptic_gregorian&issue_kind=%22Modify%22&validation_key=proleptic_gregorian&ui_label=Proleptic+Gregorian&description=A+calendar+with+the+Gregorian+rules+for+leap-years+extended+to+dates+before+1582-10-15.+All+dates+consistent+with+these+rules+are+allowed%2C+both+before+and+after+1582-10-15.&alias=)
 
-- [standard](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+standard&issue_kind=%22Modify%22&alias=gregorian&validation_key=standard&ui_label=Standard+%28Gregorian%29&description=Mixed+Gregorian%2FJulian+calendar+as+defined+by+UDUNITS.+This+is+the+default+calendar+assumed+if+no+calendar+attribute+is+specified.+A+deprecated+alternative+name+for+this+calendar+is+%27gregorian%27.)
+- [standard](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+standard&issue_kind=%22Modify%22&validation_key=standard&ui_label=Standard+%28Gregorian%29&description=Mixed+Gregorian%2FJulian+calendar+as+defined+by+UDUNITS.+This+is+the+default+calendar+assumed+if+no+calendar+attribute+is+specified.+A+deprecated+alternative+name+for+this+calendar+is+%27gregorian%27.&alias=gregorian)
 
-- [tai](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+tai&issue_kind=%22Modify%22&alias=&validation_key=tai&ui_label=TAI&description=The+Gregorian+calendar+without+leap+seconds+that+is+based+on+International+Atomic+Time+%28TAI%29%2C+as+defined+by+the+CF+conventions.)
+- [tai](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+tai&issue_kind=%22Modify%22&validation_key=tai&ui_label=TAI&description=The+Gregorian+calendar+without+leap+seconds+that+is+based+on+International+Atomic+Time+%28TAI%29%2C+as+defined+by+the+CF+conventions.&alias=)
 
-- [utc](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+utc&issue_kind=%22Modify%22&alias=&validation_key=utc&ui_label=UTC&description=The+Gregorian+calendar+with+leap+seconds+prescribed+by+Coordinated+Universal+Time+%28UTC%29%2C+as+defined+by+the+CF+conventions.)
+- [utc](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+utc&issue_kind=%22Modify%22&validation_key=utc&ui_label=UTC&description=The+Gregorian+calendar+with+leap+seconds+prescribed+by+Coordinated+Universal+Time+%28UTC%29%2C+as+defined+by+the+CF+conventions.&alias=)
 
 </details>
 
@@ -1084,21 +1084,21 @@ The following links will open pre-filled GitHub issues with content from the sel
 <details name="scientific_domain">
 <summary>Scientific Domain (8 entries)</summary>
 
-- [aerosol](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+aerosol&issue_kind=%22Modify%22&alias=aerosol&validation_key=aerosol&ui_label=Aerosol&description=Aerosol)
+- [aerosol](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+aerosol&issue_kind=%22Modify%22&validation_key=aerosol&ui_label=Aerosol&description=Aerosol&alias=aerosol)
 
-- [atmosphere](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+atmosphere&issue_kind=%22Modify%22&alias=atmos&validation_key=atmosphere&ui_label=Atmosphere&description=Atmosphere)
+- [atmosphere](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+atmosphere&issue_kind=%22Modify%22&validation_key=atmosphere&ui_label=Atmosphere&description=Atmosphere&alias=atmos)
 
-- [atmospheric_chemistry](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+atmospheric_chemistry&issue_kind=%22Modify%22&alias=atmoschem%2C+atmosChem&validation_key=atmospheric_chemistry&ui_label=Atmospheric+Chemistry&description=Atmospheric+Chemistry)
+- [atmospheric_chemistry](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+atmospheric_chemistry&issue_kind=%22Modify%22&validation_key=atmospheric_chemistry&ui_label=Atmospheric+Chemistry&description=Atmospheric+Chemistry&alias=atmoschem%2C+atmosChem)
 
-- [land_ice](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+land_ice&issue_kind=%22Modify%22&alias=landice%2C+landIce&validation_key=land_ice&ui_label=Land+Ice&description=Land+Ice)
+- [land_ice](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+land_ice&issue_kind=%22Modify%22&validation_key=land_ice&ui_label=Land+Ice&description=Land+Ice&alias=landice%2C+landIce)
 
-- [land_surface](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+land_surface&issue_kind=%22Modify%22&alias=land&validation_key=land_surface&ui_label=Land+Surface+and+Subsurface&description=Land+Surface+and+Subsurface)
+- [land_surface](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+land_surface&issue_kind=%22Modify%22&validation_key=land_surface&ui_label=Land+Surface+and+Subsurface&description=Land+Surface+and+Subsurface&alias=land)
 
-- [ocean](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+ocean&issue_kind=%22Modify%22&alias=ocean&validation_key=ocean&ui_label=Ocean&description=Ocean)
+- [ocean](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+ocean&issue_kind=%22Modify%22&validation_key=ocean&ui_label=Ocean&description=Ocean&alias=ocean)
 
-- [ocean_biogeochemistry](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+ocean_biogeochemistry&issue_kind=%22Modify%22&alias=ocnbgchem%2C+ocnBgchem&validation_key=ocean_biogeochemistry&ui_label=Ocean+Biogeochemistry&description=Ocean+Biogeochemistry)
+- [ocean_biogeochemistry](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+ocean_biogeochemistry&issue_kind=%22Modify%22&validation_key=ocean_biogeochemistry&ui_label=Ocean+Biogeochemistry&description=Ocean+Biogeochemistry&alias=ocnbgchem%2C+ocnBgchem)
 
-- [sea_ice](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+sea_ice&issue_kind=%22Modify%22&alias=seaice%2C+seaIce&validation_key=sea_ice&ui_label=Sea+Ice&description=Sea+Ice)
+- [sea_ice](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+sea_ice&issue_kind=%22Modify%22&validation_key=sea_ice&ui_label=Sea+Ice&description=Sea+Ice&alias=seaice%2C+seaIce)
 
 </details>
 
