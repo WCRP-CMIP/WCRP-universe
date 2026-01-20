@@ -66,6 +66,7 @@ The following forms are available for this repository, and can be used to add or
 ### Organizations
 
 - [organisation](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=organisation.yml)
+- [consortium](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=consortium.yml)
 ### Other
 
 - [cell_variable_type](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=cell_variable_type.yml)
