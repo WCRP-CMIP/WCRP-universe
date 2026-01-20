@@ -23,7 +23,7 @@ import update_ror
 from cmipld.utils import git,jsontools
 
 # Path to organization data
-repopath = './src-data/organisation/'
+repopath = './organisation/'
 
 
 def update(filepath, author, dry_run=False, update=False, comment='from upgrade_organisations.py'):
@@ -66,18 +66,19 @@ def process_organization_file(filepath, dry_run=False):
             original_data = json.loads(original_content, object_pairs_hook=OrderedDict)
         
         # Check if it's an institution or consortium
-        if 'type' not in original_data:
-            print(f"⚠️  No type field in {filepath}, skipping...")
+        if '@type' not in original_data:
+            print(f"⚠️  No @type field in {filepath}, skipping...")
             
             return None
             
-        ldtypes = original_data.get('type', [])
+        ldtypes = original_data.get('@type', [])
         
         # Process based on type
         if 'wcrp:institution' in ldtypes:
             # Get required fields
             ror = original_data.get('ror')
-            validation_key = original_data.get('validation-key')
+            # Use validation_key for correct case, fall back to @id
+            acronym = original_data.get('validation_key', original_data.get('@id', ''))
             
             if not ror or ror == 'pending':
                 print(f"⚠️  No valid ROR for {filepath}, skipping...")
@@ -87,7 +88,7 @@ def process_organization_file(filepath, dry_run=False):
                 print(f"🔄 Updating institution data from ROR: {ror}")
                 try:
                     # Get updated data from ROR
-                    new_data = update_ror.get_institution(ror, validation_key)
+                    new_data = update_ror.get_institution(ror, acronym)
                     
                     # Check if data changed
                     if json.dumps(original_data, sort_keys=True) == json.dumps(new_data, sort_keys=True):

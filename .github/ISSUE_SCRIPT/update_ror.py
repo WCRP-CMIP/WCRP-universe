@@ -51,6 +51,7 @@ def get_institution(ror, acronym):
         "@context": "_context",
         "@id": f"{cmip_acronym.lower()}",
         "@type": ['wcrp:organisation', f'wcrp:{mytype}'],
+        "validation_key": acronym,  # Same case as provided
         "ror": ror_data['id'].split('/')[-1],
         "ui_label": get_display_name(ror_data.get('names', [])),
         "url": get_links(ror_data.get('links', [])),
@@ -84,7 +85,9 @@ if __name__ == '__main__':
         
         match data:
             case {"@type": ldtypes} if 'wcrp:institution' in ldtypes:
-                data = get_institution(data['ror'], data['@id'])
+                # Use validation_key for correct case, fall back to @id
+                acronym = data.get('validation_key', data.get('@id', ''))
+                data = get_institution(data['ror'], acronym)
                     
             case {"@type": ldtypes} if 'wcrp:consortium' in ldtypes:
                 errors = []
