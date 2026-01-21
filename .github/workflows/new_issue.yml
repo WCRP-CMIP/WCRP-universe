@@ -1,0 +1,22 @@
+name: ⊕ New Issue Processing
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  issues: write
+  contents: write
+  id-token: write
+  pull-requests: write
+
+jobs:
+  new-issue:
+    runs-on: ubuntu-latest
+    # Only run if the issue has the 'Review' label
+    if: contains(github.event.issue.labels.*.name, 'Review')
+
+    steps:
+      - name: Run the parser on a new issue
+        id: new-issue-action
+        uses: WCRP-CMIP/CMIPLD/actions/new-issue@main
