@@ -82,7 +82,7 @@ if __name__ == '__main__':
                 errors = []
                 return errors
                 
-        with open(file,'w') as f:
+        with open(file, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False) 
         
     # run on all files
