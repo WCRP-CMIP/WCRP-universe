@@ -1,0 +1,37 @@
+{
+  "@context": {
+  "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/truncation_method/",
+  "@base": "https://universal.mipcvs.dev/truncation_method/",
+  "@vocab": "https://universal.mipcvs.dev/docs/contents/TruncationMethod/"
+},
+  "@graph": [
+    {
+  "validation_key": "rhomboidal",
+  "ui_label": "Rhomboidal Truncation",
+  "description": "Rhomboidal truncation in spectral space where |m| ≤ M and |n-m| ≤ N. Provides more uniform resolution across latitudes than triangular truncation.",
+  "alias": [
+    "R"
+  ],
+  "@type": [
+    "universal",
+    "wcrp:truncation_method",
+    "esgvoc:TruncationMethod"
+  ],
+  "@id": "rhomboidal"
+}
+    ,{
+  "validation_key": "triangular",
+  "ui_label": "Triangular Truncation",
+  "description": "Triangular truncation in spectral space where total wavenumber m+n ≤ N. Common notation: TL (triangular linear) or TQ (triangular quadratic).",
+  "alias": [
+    "T"
+  ],
+  "@type": [
+    "universal",
+    "wcrp:truncation_method",
+    "esgvoc:TruncationMethod"
+  ],
+  "@id": "triangular"
+}
+  ]
+}
