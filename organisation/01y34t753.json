@@ -1,0 +1,40 @@
+{
+    "validation_key": "FIO",
+    "ui_label": "First Institute of Oceanography",
+    "description": "",
+    "acronyms": [
+        "FIO"
+    ],
+    "aliases": [],
+    "established": 1958,
+    "kind": "facility",
+    "labels": [
+        "First Institute of Oceanography"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/01y34t753",
+            "@type": "wcrp:location",
+            "continent_code": "AS",
+            "continent_name": "Asia",
+            "country_code": "CN",
+            "country_name": "China",
+            "country_subdivision_code": "SD",
+            "country_subdivision_name": "Shandong",
+            "lat": 36.06488,
+            "lng": 120.38042,
+            "name": "Qingdao"
+        }
+    ],
+    "ror": "01y34t753",
+    "url": [
+        "http://en.fio.org.cn"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "fio"
+}

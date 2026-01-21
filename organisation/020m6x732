@@ -1,0 +1,45 @@
+{
+    "validation_key": "DMI",
+    "ui_label": "Danish Meteorological Institute",
+    "description": "",
+    "acronyms": [
+        "DMI"
+    ],
+    "aliases": [
+        "Danmarks Meteorologiske Institut",
+        "National Danish Meteorological Institute",
+        "The National Danish Meteorological Institute"
+    ],
+    "established": 1872,
+    "kind": "facility",
+    "labels": [
+        "Danish Meteorological Institute"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/020m6x732",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DK",
+            "country_name": "Denmark",
+            "country_subdivision_code": "84",
+            "country_subdivision_name": "Capital Region",
+            "lat": 55.67594,
+            "lng": 12.56553,
+            "name": "Copenhagen"
+        }
+    ],
+    "ror": "020m6x732",
+    "url": [
+        "https://www.dmi.dk",
+        "https://en.wikipedia.org/wiki/Danish_Meteorological_Institute"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "dmi"
+}

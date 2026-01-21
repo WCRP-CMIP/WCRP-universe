@@ -1,0 +1,45 @@
+{
+    "validation_key": "UCT",
+    "ui_label": "University of Cape Town",
+    "description": "",
+    "acronyms": [
+        "UCT"
+    ],
+    "aliases": [
+        "South African College"
+    ],
+    "established": 1829,
+    "kind": "education",
+    "labels": [
+        "Universiteit van Kaapstad",
+        "University of Cape Town",
+        "iYunivesithi yaseKapa"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03p74gp79",
+            "@type": "wcrp:location",
+            "continent_code": "AF",
+            "continent_name": "Africa",
+            "country_code": "ZA",
+            "country_name": "South Africa",
+            "country_subdivision_code": "WC",
+            "country_subdivision_name": "Western Cape",
+            "lat": -33.96333,
+            "lng": 18.47639,
+            "name": "Rondebosch"
+        }
+    ],
+    "ror": "03p74gp79",
+    "url": [
+        "https://uct.ac.za",
+        "http://en.wikipedia.org/wiki/University_of_Cape_Town"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "uct"
+}

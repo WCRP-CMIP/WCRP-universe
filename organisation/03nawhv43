@@ -1,0 +1,45 @@
+{
+    "validation_key": "UCRiverside",
+    "ui_label": "University of California, Riverside",
+    "description": "",
+    "acronyms": [
+        "UCR"
+    ],
+    "aliases": [
+        "UC Riverside"
+    ],
+    "established": 1954,
+    "kind": "education",
+    "labels": [
+        "Universidad de California en Riverside",
+        "University of California, Riverside",
+        "Université de Californie à Riverside"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/03nawhv43",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "CA",
+            "country_subdivision_name": "California",
+            "lat": 33.95335,
+            "lng": -117.39616,
+            "name": "Riverside"
+        }
+    ],
+    "ror": "03nawhv43",
+    "url": [
+        "https://www.ucr.edu",
+        "http://en.wikipedia.org/wiki/University_of_California,_Riverside"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "ucriverside"
+}

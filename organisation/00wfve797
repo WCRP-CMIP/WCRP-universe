@@ -1,0 +1,45 @@
+{
+    "validation_key": "INM",
+    "ui_label": "Institute of Sociology",
+    "description": "",
+    "acronyms": [
+        "ISRAS"
+    ],
+    "aliases": [
+        "Federal State Institution of Science Institute of Sociology of the Russian Academy of Sciences",
+        "Institut Sotsiologii RAN",
+        "Sociological institute of Russian Academy of Science"
+    ],
+    "established": 1968,
+    "kind": "facility",
+    "labels": [
+        "Institute of Sociology",
+        "Институт социологии РАН"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/00wfve797",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "RU",
+            "country_name": "Russia",
+            "country_subdivision_code": "MOW",
+            "country_subdivision_name": "Moscow",
+            "lat": 55.75222,
+            "lng": 37.61556,
+            "name": "Moscow"
+        }
+    ],
+    "ror": "00wfve797",
+    "url": [
+        "http://www.isras.org/"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "inm"
+}
