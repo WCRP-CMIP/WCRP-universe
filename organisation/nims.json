@@ -1,36 +1,35 @@
 {
     "validation_key": "NIMS",
-    "ui_label": "Korea Meteorological Administration",
+    "ui_label": "National Institute of Meteorological Sciences",
     "description": "",
     "acronyms": [
-        "KMA"
+        "NIMS"
     ],
     "aliases": [],
-    "established": 1990,
-    "kind": "funder",
+    "established": 1978,
+    "kind": "facility",
     "labels": [
-        "Korea Meteorological Administration",
-        "기상청"
+        "National Institute of Meteorological Sciences",
+        "국립기상과학원"
     ],
     "location": [
         {
-            "@id": "universal:location/04nrmrg07",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "KR",
             "country_name": "South Korea",
-            "country_subdivision_code": "11",
-            "country_subdivision_name": "Seoul",
-            "lat": 37.566,
-            "lng": 126.9784,
-            "name": "Seoul"
+            "country_subdivision_code": "49",
+            "country_subdivision_name": "Jeju-do",
+            "lat": 33.25333,
+            "lng": 126.56181,
+            "name": "Seogwipo",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04m2hj141"
         }
     ],
-    "ror": "04nrmrg07",
+    "ror": "04m2hj141",
     "url": [
-        "https://www.kma.go.kr/kma",
-        "https://en.wikipedia.org/wiki/Korea_Meteorological_Administration"
+        "http://www.nimr.go.kr/AE/MA/main.jsp"
     ],
     "@context": "_context",
     "@type": [
