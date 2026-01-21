@@ -9,28 +9,22 @@
     "established": 1990,
     "kind": "funder",
     "labels": [
-        "Korea Meteorological Administration",
-        "기상청"
+        "\uae30\uc0c1\uccad"
     ],
-    "location": [
-        {
-            "@id": "universal:location/04nrmrg07",
-            "@type": "wcrp:location",
-            "continent_code": "AS",
-            "continent_name": "Asia",
-            "country_code": "KR",
-            "country_name": "South Korea",
-            "country_subdivision_code": "11",
-            "country_subdivision_name": "Seoul",
-            "lat": 37.566,
-            "lng": 126.9784,
-            "name": "Seoul"
-        }
-    ],
+    "location": {
+        "city": "Seoul",
+        "country": [
+            "KR",
+            "South Korea"
+        ],
+        "lat": 37.566,
+        "lon": 126.9784,
+        "@type": "wcrp:location",
+        "@id": "location/04nrmrg07"
+    },
     "ror": "04nrmrg07",
     "url": [
-        "https://www.kma.go.kr/kma",
-        "https://en.wikipedia.org/wiki/Korea_Meteorological_Administration"
+        "https://www.kma.go.kr/kma"
     ],
     "@context": "_context",
     "@type": [
