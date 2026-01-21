@@ -1,0 +1,12 @@
+{
+    "validation_key": "atmosphere_hybrid_sigma_pressure_coordinate",
+    "ui_label": "Atmosphere Hybrid Sigma Pressure Coordinate",
+    "description": "Parametric atmosphere hybrid sigma pressure coordinate, as defined by the CF conventions.",
+    "@context": "_context",
+    "@type": [
+        "universal",
+        "wcrp:vertical_coordinate",
+        "esgvoc:VerticalCoordinate"
+    ],
+    "@id": "atmosphere-hybrid-sigma-pressure-coordinate"
+}

@@ -1,0 +1,62 @@
+{
+    "validation_key": "NOAA",
+    "ui_label": "National Oceanic and Atmospheric Administration",
+    "description": "",
+    "acronyms": [
+        "NOAA"
+    ],
+    "aliases": [
+        "National Oceanic & Atmospheric Administration",
+        "National Oceanographic and Atmospheric Administration",
+        "U.S. DOC National Oceanic and Atmospheric Administration",
+        "U.S. Department of Commerce Oceanic and Atmospheric Administration",
+        "U.S. Department of Commerce. National Oceanic and Atmospheric Administration",
+        "U.S. Dept. of Commerce National Oceanic and Atmospheric Administration",
+        "U.S. National Oceanic & Atmospheric Administration",
+        "U.S. National Oceanic and Atmospheric Administration",
+        "U.S. National Oceanographic Atmospheric Administration",
+        "U.S. National Oceanographic and Atmospheric Administration",
+        "U.S. Oceanic and Atmospheric Administration",
+        "United States Department of Commerce National Oceanic and Atmospheric Administration",
+        "United States Department of Commerce Oceanic and Atmospheric Administration",
+        "United States Dept. of Commerce National Oceanic and Atmospheric Administration",
+        "United States National Oceanic & Atmospheric Administration",
+        "United States National Oceanic and Atmospheric Administration",
+        "United States National Oceanographic Atmospheric Administration",
+        "United States National Oceanographic and Atmospheric Administration",
+        "United States Oceanic and Atmospheric Administration"
+    ],
+    "established": 1970,
+    "kind": "funder",
+    "labels": [
+        "Administración Nacional Oceánica y Atmosférica",
+        "National Oceanic and Atmospheric Administration"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02z5nhe81",
+            "@type": "wcrp:location",
+            "continent_code": "NA",
+            "continent_name": "North America",
+            "country_code": "US",
+            "country_name": "United States",
+            "country_subdivision_code": "DC",
+            "country_subdivision_name": "District of Columbia",
+            "lat": 38.89511,
+            "lng": -77.03637,
+            "name": "Washington"
+        }
+    ],
+    "ror": "02z5nhe81",
+    "url": [
+        "http://www.noaa.gov/",
+        "https://en.wikipedia.org/wiki/National_Oceanic_and_Atmospheric_Administration"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "noaa"
+}

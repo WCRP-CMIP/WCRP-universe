@@ -1,0 +1,12 @@
+{
+    "validation_key": "linear_spectral_gaussian",
+    "ui_label": "Linear Spectral Gaussian",
+    "description": "A spectral Gaussian grid for which the smallest spectral wavelength is represented by 2 grid points.",
+    "@context": "_context",
+    "@type": [
+        "universal",
+        "wcrp:grid_type",
+        "esgvoc:GridType"
+    ],
+    "@id": "linear-spectral-gaussian"
+}

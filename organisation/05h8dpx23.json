@@ -1,0 +1,43 @@
+{
+    "validation_key": "RWE",
+    "ui_label": "RWE (Germany)",
+    "description": "",
+    "acronyms": [
+        "RWE"
+    ],
+    "aliases": [],
+    "established": 1898,
+    "kind": "company",
+    "labels": [
+        "RWE (Germany)",
+        "Rheinisch-Westfälisches Elektrizitätswerk Aktiengesellschaft",
+        "Rhine-Westfalia Electricity Factory"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/05h8dpx23",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "NW",
+            "country_subdivision_name": "North Rhine-Westphalia",
+            "lat": 51.45657,
+            "lng": 7.01228,
+            "name": "Essen"
+        }
+    ],
+    "ror": "05h8dpx23",
+    "url": [
+        "https://www.group.rwe/en",
+        "http://en.wikipedia.org/wiki/RWE"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "rwe"
+}

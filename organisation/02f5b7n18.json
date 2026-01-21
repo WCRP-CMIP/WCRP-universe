@@ -1,0 +1,42 @@
+{
+    "validation_key": "MPI-C",
+    "ui_label": "Max Planck Institute for Chemistry",
+    "description": "",
+    "acronyms": [],
+    "aliases": [
+        "Otto Hahn Institute"
+    ],
+    "established": 1911,
+    "kind": "facility",
+    "labels": [
+        "Max Planck Institut für Chemie - Otto Hahn Institut",
+        "Max Planck Institute for Chemistry"
+    ],
+    "location": [
+        {
+            "@id": "universal:location/02f5b7n18",
+            "@type": "wcrp:location",
+            "continent_code": "EU",
+            "continent_name": "Europe",
+            "country_code": "DE",
+            "country_name": "Germany",
+            "country_subdivision_code": "RP",
+            "country_subdivision_name": "Rheinland-Pfalz",
+            "lat": 49.98419,
+            "lng": 8.2791,
+            "name": "Mainz"
+        }
+    ],
+    "ror": "02f5b7n18",
+    "url": [
+        "http://www.mpic.de/",
+        "http://en.wikipedia.org/wiki/Max_Planck_Institute_for_Chemistry"
+    ],
+    "@context": "_context",
+    "@type": [
+        "wcrp:organisation",
+        "esgvoc:Organisation",
+        "universal"
+    ],
+    "@id": "mpi-c"
+}
