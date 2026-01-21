@@ -15,6 +15,7 @@ Functions:
 """
 
 import sys
+import os
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent))
 
@@ -31,6 +32,50 @@ def similarity(name1, name2):
     return matcher.ratio() * 100
 
 
+def add_label(label):
+    """Add a label to the current issue"""
+    if 'ISSUE_NUMBER' in os.environ:
+        issue_number = os.environ['ISSUE_NUMBER']
+        os.popen(f'gh issue edit {issue_number} --add-label "{label}"').read()
+        print(f"Added label: {label}")
+
+
+def post_issue_comment(comment):
+    """Post a comment to the current issue"""
+    if 'ISSUE_NUMBER' in os.environ:
+        issue_number = os.environ['ISSUE_NUMBER']
+        # Escape single quotes in comment
+        escaped = comment.replace("'", "'\"'\"'")
+        os.popen(f"gh issue comment {issue_number} --body '{escaped}'").read()
+        print(f"Posted comment to issue #{issue_number}")
+
+
+def build_summary(acronym, full_name, ror_id, ror_name, ranking, warnings):
+    """Build a summary comment for the issue"""
+    status = "✅ Passed" if not warnings else "⚠️ Needs Review"
+    
+    summary = f"""## Institution Validation Summary
+
+| Field | Value |
+|-------|-------|
+| **Status** | {status} |
+| **Acronym** | `{acronym}` |
+| **Full Name (provided)** | {full_name or '_not provided_'} |
+| **Full Name (from ROR)** | {ror_name or '_not available_'} |
+| **ROR ID** | `{ror_id or 'pending'}` |
+| **Name Similarity** | {f'{ranking:.1f}%' if ranking is not None else '_n/a_'} |
+
+"""
+    
+    if warnings:
+        summary += "### ⚠️ Warnings\n\n"
+        for warning in warnings:
+            summary += f"- {warning}\n"
+        summary += "\nPlease review and confirm this submission is correct.\n"
+    
+    return summary
+
+
 def run(issue, packet, dry_run=False):
     """
     Build initial institution data from issue.
@@ -44,6 +89,9 @@ def run(issue, packet, dry_run=False):
         tuple: (data_dict, None) or None if validation fails
     """
     prefix = "[DRY RUN] " if dry_run else ""
+    warnings = []
+    ranking = None
+    ror_name = None
     
     print(f"\n{prefix}Processing institution...")
     print(f"{'='*60}")
@@ -80,7 +128,17 @@ def run(issue, packet, dry_run=False):
                 print(f"  From ROR: {ror_name}")
                 
                 if ranking < 80:
-                    print(f"\n{prefix}⚠️  Warning: Low similarity ({int(ranking)}%)")
+                    warning_msg = f"Low name similarity ({ranking:.1f}%): '{full_name}' vs '{ror_name}'"
+                    warnings.append(warning_msg)
+                    print(f"\n{prefix}⚠️  Warning: {warning_msg}")
+            
+            # Post summary and add label if needed
+            if not dry_run:
+                summary = build_summary(acronym, full_name, ror_id, ror_name, ranking, warnings)
+                post_issue_comment(summary)
+                
+                if warnings:
+                    add_label("needs-review")
             
             print(f"\n{prefix}Generated data from ROR:")
             print(json.dumps(data, indent=4))
@@ -88,7 +146,9 @@ def run(issue, packet, dry_run=False):
             return (data, None)
             
         except Exception as e:
-            print(f"{prefix}⚠️  Warning: Could not fetch ROR data: {e}")
+            warning_msg = f"Could not fetch ROR data: {e}"
+            warnings.append(warning_msg)
+            print(f"{prefix}⚠️  Warning: {warning_msg}")
             print(f"{prefix}Creating basic entry without ROR data")
     
     # Build basic data without ROR
@@ -104,6 +164,16 @@ def run(issue, packet, dry_run=False):
     
     if ror_id and ror_id.lower() not in ['pending', '', 'none']:
         data['ror'] = ror_id
+    
+    # Post summary for non-ROR entries
+    if not dry_run:
+        if not ror_id or ror_id.lower() in ['pending', '', 'none']:
+            warnings.append("No ROR ID provided - institution data is incomplete")
+        summary = build_summary(acronym, full_name, ror_id, ror_name, ranking, warnings)
+        post_issue_comment(summary)
+        
+        if warnings:
+            add_label("needs-review")
     
     print(f"\n{prefix}Generated data (no ROR):")
     print(json.dumps(data, indent=4))
@@ -137,7 +207,7 @@ def update(data, parsed_issue, issue, dry_run=False):
     
     # Extract ROR from issue
     ror_id = parsed_issue.get('ror', parsed_issue.get('description', '')).strip()
-    acronym = data.get('@id', '').replace('-', '_')
+    acronym = data.get('validation_key', data.get('@id', '').replace('-', '_'))
     full_name = parsed_issue.get('full_name_of_the_organisation', 
                                   parsed_issue.get('long_label', '')).strip()
     
@@ -161,6 +231,8 @@ def update(data, parsed_issue, issue, dry_run=False):
             
             if ranking < 80:
                 print(f"\n{prefix}⚠️  Warning: Low similarity ({int(ranking)}%)")
+                if not dry_run:
+                    add_label("needs-review")
         
         # Merge ROR data into validated data
         # Preserve @context, @id from validated data
