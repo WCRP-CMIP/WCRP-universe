@@ -6,8 +6,9 @@ on:
       - main
     paths:
       - '.github/workflows/**'
-      - '.github/CONTRIBUTING.md'
       - '.github/prepublish/*'
+      - '.github/ISSUE_SCRIPT/**'
+      - '.github/*.md'
 
   workflow_dispatch:
 
@@ -35,6 +36,7 @@ jobs:
         run: |
           mkdir -p .github/workflows
           mkdir -p .github/prepublish
+          mkdir -p .github/ISSUE_SCRIPT
 
           # Ensure remote main is available (works in detached HEAD)
           git fetch origin main --depth=1 || true
@@ -44,10 +46,14 @@ jobs:
 
           # Copy prepublish directory from remote main if present
           git checkout origin/main -- .github/prepublish/ || true
+
+          # Copy ISSUE_SCRIPT directory from remote main if present
+          git checkout origin/main -- .github/ISSUE_SCRIPT/ || true
           
-          # Copy CONTRIBUTING.md from remote main if present
-          git cat-file -e origin/main:.github/CONTRIBUTING.md 2>/dev/null && \
-            git checkout origin/main -- .github/CONTRIBUTING.md || true
+          # Copy all .md files from .github
+          for f in $(git ls-tree --name-only origin/main .github/ | grep '\.md$'); do
+            git checkout origin/main -- "$f" || true
+          done
       
       - name: Commit and push
         uses: EndBug/add-and-commit@v9
