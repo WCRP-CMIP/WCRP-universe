@@ -1,4 +1,3 @@
-
 import cmipld
 import json
 from cmipld.utils.jsontools import sort_json_keys
@@ -23,51 +22,41 @@ def get_institution(ror, acronym):
     # ensure the acronym has no _
     cmip_acronym = acronym.replace('_','-')
     
-    # Helper functions for ROR v2 data extraction
-    def get_display_name(names):
-        """Get the ror_display name from names array"""
-        for name in names:
-            if 'ror_display' in name.get('types', []):
-                return name['value']
-        return names[0]['value'] if names else None
+    # v2 helper: get display name
+    names = ror_data.get('names', [])
+    display_name = next((n['value'] for n in names if 'ror_display' in n.get('types', [])), names[0]['value'] if names else None)
     
-    def get_names_by_type(names, name_type):
-        """Extract names by type (label, acronym, alias)"""
-        return [n['value'] for n in names if name_type in n.get('types', [])]
-    
-    def get_labels(names):
-        """Get label names (excluding ror_display and acronyms)"""
-        return [n['value'] for n in names 
-                if 'label' in n.get('types', []) and 'ror_display' not in n.get('types', [])]
-    
-    def get_links(links):
-        """Extract website URLs from links array"""
-        return [link['value'] for link in links if link.get('type') == 'website']
-    
-    # Extract location from v2 format
-    location_data = ror_data.get('locations', [{}])[0].get('geonames_details', {})
+    # v2 helper: extract location - keep all geonames fields
+    loc = ror_data.get('locations', [{}])[0].get('geonames_details', {})
     
     result = {
-        "@context": "_context",
         "@id": f"{cmip_acronym.lower()}",
         "@type": ['wcrp:organisation', f'wcrp:{mytype}'],
-        "validation_key": acronym,  # Same case as provided
+        "validation_key": acronym,
         "ror": ror_data['id'].split('/')[-1],
-        "ui_label": get_display_name(ror_data.get('names', [])),
-        "url": get_links(ror_data.get('links', [])),
+        "ui_label": display_name,
+        "url": [l['value'] for l in ror_data.get('links', [])],  # ALL links
         "established": ror_data.get('established'),
-        "kind": ror_data.get('types', [])[0] if ror_data.get('types') else None,
-        "labels": get_labels(ror_data.get('names', [])),
-        "aliases": get_names_by_type(ror_data.get('names', []), 'alias'),
-        "acronyms": get_names_by_type(ror_data.get('names', []), 'acronym'),
-        "location": {
-            "@id": f"location/{ror_data['id'].split('/')[-1]}",
-            "@type": "wcrp:location",
-            "lat": location_data.get('lat'),
-            "lon": location_data.get('lng'),
-            "city": location_data.get('name'),
-            "country": [location_data.get('country_code'), location_data.get('country_name')] if location_data.get('country_name') else None
-        }         
+        "kind": ror_data.get('types', [None])[0],  # First type only
+        "labels": [n['value'] for n in names if 'label' in n.get('types', [])],  # Just values
+        "aliases": [n['value'] for n in names if 'alias' in n.get('types', [])],
+        "acronyms": [n['value'] for n in names if 'acronym' in n.get('types', [])],
+        "location": [
+            {
+                "@id": f"universal:location/{ror_data['id'].split('/')[-1]}",
+                "@type": "wcrp:location",
+                "lat": loc.get('lat'),
+                "lng": loc.get('lng'),
+                "name": loc.get('name'),
+                "country_code": loc.get('country_code'),
+                "country_name": loc.get('country_name'),
+                "country_subdivision_code": loc.get('country_subdivision_code'),
+                "country_subdivision_name": loc.get('country_subdivision_name'),
+                "continent_code": loc.get('continent_code'),
+                "continent_name": loc.get('continent_name'),
+            }
+        ],
+        "@context": "_context",
     }
     
     return sort_json_keys(result)
@@ -94,7 +83,7 @@ if __name__ == '__main__':
                 return errors
                 
         with open(file,'w') as f:
-            json.dump(data, f, indent=4) 
+            json.dump(data, f, indent=4, ensure_ascii=False) 
         
     # run on all files
     errors = p_map(update, files)
