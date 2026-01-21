@@ -141,7 +141,7 @@ def run(issue, packet, dry_run=False):
                     add_label("needs-review")
             
             print(f"\n{prefix}Generated data from ROR:")
-            print(json.dumps(data, indent=4))
+            print(json.dumps(data, indent=4, ensure_ascii=False))
             
             return (data, None)
             
@@ -176,7 +176,7 @@ def run(issue, packet, dry_run=False):
             add_label("needs-review")
     
     print(f"\n{prefix}Generated data (no ROR):")
-    print(json.dumps(data, indent=4))
+    print(json.dumps(data, indent=4, ensure_ascii=False))
     
     return (data, None)
 
