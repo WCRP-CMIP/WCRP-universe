@@ -1,0 +1,37 @@
+# Close linked issues when PRs are merged to src-data branch
+#
+# NOTE: GitHub only auto-closes issues (via "Resolves #123") when PRs are 
+# merged into the DEFAULT branch (main). Since our data PRs target src-data,
+# we need this workflow to close linked issues after merge.
+#
+# PRs merged to main will auto-close issues without this workflow.
+
+name: ✓ Close Issue on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [src-data]
+
+permissions:
+  issues: write
+
+jobs:
+  close-issue:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close linked issue
+        run: |
+          # Extract issue number from PR body (looks for "Resolves #123")
+          ISSUE=$(echo "$BODY" | grep -oP 'Resolves #\K\d+' | head -1)
+          if [ -n "$ISSUE" ]; then
+            echo "Closing issue #$ISSUE"
+            gh issue close "$ISSUE" -R "$REPO" --comment "✅ Closed by PR #${{ github.event.pull_request.number }}"
+          else
+            echo "No linked issue found in PR body"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BODY: ${{ github.event.pull_request.body }}
+          REPO: ${{ github.repository }}

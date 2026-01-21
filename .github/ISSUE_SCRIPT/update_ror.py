@@ -70,7 +70,7 @@ if __name__ == '__main__':
     
     def update(file):
         
-        data = json.load(open(file))
+        data = json.load(open(file, encoding='utf-8'))
         
         match data:
             case {"@type": ldtypes} if 'wcrp:institution' in ldtypes:
