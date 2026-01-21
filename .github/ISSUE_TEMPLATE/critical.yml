@@ -1,0 +1,38 @@
+name: 🚨 Critical Issue
+description: Report a critical issue requiring immediate attention
+labels: ["critical", "keep-open"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "🔴 Critical - System breaking"
+        - "🟠 High - Major functionality affected"
+        - "🟡 Medium - Important but workaround exists"
+    validations:
+      required: true
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: Brief description of the issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Detailed Description
+      description: Provide as much detail as possible
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who/what is affected? What are the consequences?
+    validations:
+      required: false
