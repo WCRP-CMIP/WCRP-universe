@@ -5,10 +5,10 @@
     <link>https://github.com/WCRP-CMIP/WCRP-universe</link>
     <description>Commits and releases for WCRP-universe (WCRP-universe)</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jan 2026 13:21:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 13:29:03 +0000</lastBuildDate>
     <atom:link href="https://github.com/WCRP-CMIP/WCRP-universe/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[WCRP-universe] 📝 Correcting institution: nims (#104)</title>
+      <title>[WCRP-universe]: organisation</title>
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</guid>
       <pubDate>Wed, 21 Jan 2026 01:21:17 +0000</pubDate>
@@ -20,6 +20,7 @@
 &lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; title=&quot;kyungon&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
  &lt;strong&gt;wolfiex&lt;/strong&gt; &amp;amp; &lt;strong&gt;kyungon&lt;/strong&gt;
 &lt;/div&gt;
+&lt;p style=&quot;margin:12px 0;&quot;&gt;&lt;strong&gt;Correcting institution: nims (#104)&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
@@ -30,7 +31,7 @@
 &lt;/div&gt;</description>
     </item>
     <item>
-      <title>[WCRP-universe] 📝 New institution: kma (#105)</title>
+      <title>[WCRP-universe]: organisation</title>
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</guid>
       <pubDate>Wed, 21 Jan 2026 01:18:14 +0000</pubDate>
@@ -42,6 +43,7 @@
 &lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; title=&quot;kyungon&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
  &lt;strong&gt;wolfiex&lt;/strong&gt; &amp;amp; &lt;strong&gt;kyungon&lt;/strong&gt;
 &lt;/div&gt;
+&lt;p style=&quot;margin:12px 0;&quot;&gt;&lt;strong&gt;New institution: kma (#105)&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
@@ -52,11 +54,12 @@
 &lt;/div&gt;</description>
     </item>
     <item>
-      <title>[WCRP-universe] 📝 Adding entries for the EMD</title>
+      <title>[WCRP-universe]: arrangement, calendar, cell_variable_type, grid_mapping, grid_type, model_calendar, model_component_type, native_horizontal_grid_type, organisation, realm, region, scientific_domain, temporal_refinement, truncation_method, units, vertical_coordinate</title>
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749</guid>
       <pubDate>Wed, 07 Jan 2026 14:38:32 +0000</pubDate>
       <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
+&lt;p style=&quot;margin:12px 0;&quot;&gt;&lt;strong&gt;Adding entries for the EMD&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
