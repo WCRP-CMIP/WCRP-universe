@@ -5,56 +5,46 @@
     <link>https://github.com/WCRP-CMIP/WCRP-universe</link>
     <description>Commits and releases for WCRP-universe (WCRP-universe)</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jan 2026 13:29:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 13:35:45 +0000</lastBuildDate>
     <atom:link href="https://github.com/WCRP-CMIP/WCRP-universe/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[WCRP-universe]: organisation</title>
+      <title>[WCRP-universe]: Organisation (~1)</title>
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</guid>
       <pubDate>Wed, 21 Jan 2026 01:21:17 +0000</pubDate>
       <dc:creator>wolfiex</dc:creator>
       <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
-&lt;div style=&quot;margin-bottom:12px;&quot;&gt;
-&lt;img src=&quot;https://github.com/wolfiex.png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; title=&quot;wolfiex&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
- 
-&lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; title=&quot;kyungon&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
- &lt;strong&gt;wolfiex&lt;/strong&gt; &amp;amp; &lt;strong&gt;kyungon&lt;/strong&gt;
-&lt;/div&gt;
+&lt;p style=&quot;margin-bottom:12px;&quot;&gt;👤 &lt;strong&gt;wolfiex&lt;/strong&gt; &amp;amp; &lt;strong&gt;kyungon&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;margin:12px 0;&quot;&gt;&lt;strong&gt;Correcting institution: nims (#104)&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
-&lt;li&gt;&lt;code&gt;organisation&lt;/code&gt; (&lt;span style=&quot;color:#b08800;&quot;&gt;~1&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Organisation&lt;/code&gt; (&lt;span style=&quot;color:#b08800;&quot;&gt;~1&lt;/span&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p style=&quot;margin-top:12px;&quot;&gt;&lt;a href=&quot;https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39&quot;&gt;View commit f93c191 on GitHub →&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     <item>
-      <title>[WCRP-universe]: organisation</title>
+      <title>[WCRP-universe]: Organisation (~1)</title>
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</guid>
       <pubDate>Wed, 21 Jan 2026 01:18:14 +0000</pubDate>
       <dc:creator>wolfiex</dc:creator>
       <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
-&lt;div style=&quot;margin-bottom:12px;&quot;&gt;
-&lt;img src=&quot;https://github.com/wolfiex.png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; title=&quot;wolfiex&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
- 
-&lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; title=&quot;kyungon&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
- &lt;strong&gt;wolfiex&lt;/strong&gt; &amp;amp; &lt;strong&gt;kyungon&lt;/strong&gt;
-&lt;/div&gt;
+&lt;p style=&quot;margin-bottom:12px;&quot;&gt;👤 &lt;strong&gt;wolfiex&lt;/strong&gt; &amp;amp; &lt;strong&gt;kyungon&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;margin:12px 0;&quot;&gt;&lt;strong&gt;New institution: kma (#105)&lt;/strong&gt;&lt;/p&gt;
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
-&lt;li&gt;&lt;code&gt;organisation&lt;/code&gt; (&lt;span style=&quot;color:#b08800;&quot;&gt;~1&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Organisation&lt;/code&gt; (&lt;span style=&quot;color:#b08800;&quot;&gt;~1&lt;/span&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p style=&quot;margin-top:12px;&quot;&gt;&lt;a href=&quot;https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086&quot;&gt;View commit 5fc9843 on GitHub →&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     <item>
-      <title>[WCRP-universe]: arrangement, calendar, cell_variable_type, grid_mapping, grid_type, model_calendar, model_component_type, native_horizontal_grid_type, organisation, realm, region, scientific_domain, temporal_refinement, truncation_method, units, vertical_coordinate</title>
+      <title>[WCRP-universe]: Arrangement (+5), Calendar (+9), Cell Variable Type (+5), Grid Mapping (+16), Grid Type (+22), Model Calendar (-7), Model Component Type (-3), Native Horizontal Grid Type (↻1), Organisation (+231), Realm (↻3), Region (+9, -4), Scientific Domain (+5), Temporal Refinement (+3), Truncation Method (+2), Units (+5), Vertical Coordinate (+20)</title>
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749</guid>
       <pubDate>Wed, 07 Jan 2026 14:38:32 +0000</pubDate>
@@ -63,22 +53,22 @@
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
-&lt;li&gt;&lt;code&gt;arrangement&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;calendar&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+9&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cell_variable_type&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;grid_mapping&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+16&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;grid_type&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+22&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;model_calendar&lt;/code&gt; (&lt;span style=&quot;color:#cb2431;&quot;&gt;-7&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;model_component_type&lt;/code&gt; (&lt;span style=&quot;color:#cb2431;&quot;&gt;-3&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;native_horizontal_grid_type&lt;/code&gt; (&lt;span style=&quot;color:#6f42c1;&quot;&gt;↻1&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;organisation&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+231&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;realm&lt;/code&gt; (&lt;span style=&quot;color:#6f42c1;&quot;&gt;↻3&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;region&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+9&lt;/span&gt; &lt;span style=&quot;color:#cb2431;&quot;&gt;-4&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;scientific_domain&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;temporal_refinement&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+3&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;truncation_method&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+2&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;units&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;vertical_coordinate&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+20&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Arrangement&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Calendar&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+9&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Cell Variable Type&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Grid Mapping&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+16&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Grid Type&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+22&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Model Calendar&lt;/code&gt; (&lt;span style=&quot;color:#cb2431;&quot;&gt;-7&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Model Component Type&lt;/code&gt; (&lt;span style=&quot;color:#cb2431;&quot;&gt;-3&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Native Horizontal Grid Type&lt;/code&gt; (&lt;span style=&quot;color:#6f42c1;&quot;&gt;↻1&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Organisation&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+231&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Realm&lt;/code&gt; (&lt;span style=&quot;color:#6f42c1;&quot;&gt;↻3&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Region&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+9&lt;/span&gt; &lt;span style=&quot;color:#cb2431;&quot;&gt;-4&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Scientific Domain&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Temporal Refinement&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+3&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Truncation Method&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+2&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Units&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Vertical Coordinate&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+20&lt;/span&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p style=&quot;margin-top:12px;&quot;&gt;&lt;a href=&quot;https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749&quot;&gt;View commit 6b8889d on GitHub →&lt;/a&gt;&lt;/p&gt;
