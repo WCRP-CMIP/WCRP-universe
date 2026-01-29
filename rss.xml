@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>[WCRP-universe] WCRP-universe Updates</title>
+    <link>https://github.com/WCRP-CMIP/WCRP-universe</link>
+    <description>Commits and releases for WCRP-universe (WCRP-universe)</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jan 2026 13:10:42 +0000</lastBuildDate>
+    <atom:link href="https://github.com/WCRP-CMIP/WCRP-universe/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>📝 Correcting institution: nims (#104)</title>
+      <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</link>
+      <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</guid>
+      <pubDate>Wed, 21 Jan 2026 01:21:17 +0000</pubDate>
+      <dc:creator>github-actions[bot]</dc:creator>
+      <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
+&lt;div style=&quot;margin-bottom:12px;&quot;&gt;
+&lt;img src=&quot;https://github.com/github-actions[bot].png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:8px;&quot; /&gt;
+&lt;strong&gt;github-actions[bot]&lt;/strong&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-bottom:12px;color:#666;&quot;&gt;
+&lt;span&gt;Co-authored by: &lt;/span&gt;
+&lt;img src=&quot;https://github.com/wolfiex.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
+&lt;span&gt;wolfiex&lt;/span&gt;
+, 
+&lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
+&lt;span&gt;kyungon&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:12px;&quot;&gt;
+&lt;strong&gt;Changes on src-data:&lt;/strong&gt;
+&lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
+&lt;li&gt;&lt;code&gt;organisation&lt;/code&gt; (&lt;span style=&quot;color:#b08800;&quot;&gt;~1&lt;/span&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p style=&quot;margin-top:12px;&quot;&gt;&lt;a href=&quot;https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39&quot;&gt;View commit f93c191 on GitHub →&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>📝 New institution: kma (#105)</title>
+      <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</link>
+      <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</guid>
+      <pubDate>Wed, 21 Jan 2026 01:18:14 +0000</pubDate>
+      <dc:creator>github-actions[bot]</dc:creator>
+      <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
+&lt;div style=&quot;margin-bottom:12px;&quot;&gt;
+&lt;img src=&quot;https://github.com/github-actions[bot].png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:8px;&quot; /&gt;
+&lt;strong&gt;github-actions[bot]&lt;/strong&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-bottom:12px;color:#666;&quot;&gt;
+&lt;span&gt;Co-authored by: &lt;/span&gt;
+&lt;img src=&quot;https://github.com/wolfiex.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
+&lt;span&gt;wolfiex&lt;/span&gt;
+, 
+&lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:4px;&quot; /&gt;
+&lt;span&gt;kyungon&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:12px;&quot;&gt;
+&lt;strong&gt;Changes on src-data:&lt;/strong&gt;
+&lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
+&lt;li&gt;&lt;code&gt;organisation&lt;/code&gt; (&lt;span style=&quot;color:#b08800;&quot;&gt;~1&lt;/span&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p style=&quot;margin-top:12px;&quot;&gt;&lt;a href=&quot;https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086&quot;&gt;View commit 5fc9843 on GitHub →&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>📝 Adding entries for the EMD</title>
+      <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749</link>
+      <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749</guid>
+      <pubDate>Wed, 07 Jan 2026 14:38:32 +0000</pubDate>
+      <dc:creator>cmip-ipo-bot</dc:creator>
+      <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
+&lt;div style=&quot;margin-bottom:12px;&quot;&gt;
+&lt;img src=&quot;https://github.com/cmip-ipo-bot.png?size=32&quot; width=&quot;24&quot; height=&quot;24&quot; style=&quot;border-radius:50%;vertical-align:middle;margin-right:8px;&quot; /&gt;
+&lt;strong&gt;cmip-ipo-bot&lt;/strong&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:12px;&quot;&gt;
+&lt;strong&gt;Changes on src-data:&lt;/strong&gt;
+&lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
+&lt;li&gt;&lt;code&gt;arrangement&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;calendar&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+9&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cell_variable_type&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid_mapping&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+16&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid_type&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+22&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;model_calendar&lt;/code&gt; (&lt;span style=&quot;color:#cb2431;&quot;&gt;-7&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;model_component_type&lt;/code&gt; (&lt;span style=&quot;color:#cb2431;&quot;&gt;-3&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;native_horizontal_grid_type&lt;/code&gt; (&lt;span style=&quot;color:#6f42c1;&quot;&gt;↻1&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;organisation&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+231&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;realm&lt;/code&gt; (&lt;span style=&quot;color:#6f42c1;&quot;&gt;↻3&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;region&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+9&lt;/span&gt; &lt;span style=&quot;color:#cb2431;&quot;&gt;-4&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scientific_domain&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;temporal_refinement&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+3&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;truncation_method&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+2&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;units&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+5&lt;/span&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vertical_coordinate&lt;/code&gt; (&lt;span style=&quot;color:#22863a;&quot;&gt;+20&lt;/span&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p style=&quot;margin-top:12px;&quot;&gt;&lt;a href=&quot;https://github.com/WCRP-CMIP/WCRP-universe/commit/6b8889d1ac5ac8142ca338d750ae5289c4495749&quot;&gt;View commit 6b8889d on GitHub →&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
