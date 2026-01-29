@@ -1,19 +1,31 @@
 <?xml version="1.0" ?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cmip="https://wcrp-cmip.github.io/CMIP-LD/rss/" version="2.0">
   <channel>
     <title>[WCRP-universe] WCRP-universe Updates</title>
     <link>https://github.com/WCRP-CMIP/WCRP-universe</link>
     <description>Commits and releases for WCRP-universe (WCRP-universe)</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jan 2026 14:19:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 15:07:58 +0000</lastBuildDate>
+    <cmip:prefix>WCRP-universe</cmip:prefix>
+    <cmip:color>#666666</cmip:color>
     <atom:link href="https://github.com/WCRP-CMIP/WCRP-universe/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>~1 Organisation</title>
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/f93c191cabba8136e6de199ff9efa77e415c9e39</guid>
       <pubDate>Wed, 21 Jan 2026 01:21:17 +0000</pubDate>
+      <dc:creator>wolfiex</dc:creator>
+      <cmip:avatar username="wolfiex" name="wolfiex">https://github.com/wolfiex.png?size=32</cmip:avatar>
+      <cmip:avatar username="kyungon" name="kyungon">https://github.com/kyungon.png?size=32</cmip:avatar>
       <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
 &lt;p style=&quot;margin:0 0 12px 0;&quot;&gt;&lt;strong&gt;Correcting institution: nims (#104)&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin:0 0 12px 0;&quot;&gt;
+&lt;a href=&quot;https://github.com/wolfiex&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;&quot;&gt;&lt;img src=&quot;https://github.com/wolfiex.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; title=&quot;wolfiex&quot; style=&quot;border-radius:50%;vertical-align:middle;&quot; /&gt;&lt;/a&gt;
+ 
+&lt;a href=&quot;https://github.com/kyungon&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;&quot;&gt;&lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; title=&quot;kyungon&quot; style=&quot;border-radius:50%;vertical-align:middle;&quot; /&gt;&lt;/a&gt;
+ 
+&lt;a href=&quot;https://github.com/wolfiex&quot; target=&quot;_blank&quot;&gt;wolfiex&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/kyungon&quot; target=&quot;_blank&quot;&gt;kyungon&lt;/a&gt;
+&lt;/p&gt;
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
@@ -28,8 +40,18 @@
       <link>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</link>
       <guid>https://github.com/WCRP-CMIP/WCRP-universe/commit/5fc984331a26ce06dce8794b36fb8ba821682086</guid>
       <pubDate>Wed, 21 Jan 2026 01:18:14 +0000</pubDate>
+      <dc:creator>wolfiex</dc:creator>
+      <cmip:avatar username="wolfiex" name="wolfiex">https://github.com/wolfiex.png?size=32</cmip:avatar>
+      <cmip:avatar username="kyungon" name="kyungon">https://github.com/kyungon.png?size=32</cmip:avatar>
       <description>&lt;div style=&quot;font-family:system-ui,sans-serif;&quot;&gt;
 &lt;p style=&quot;margin:0 0 12px 0;&quot;&gt;&lt;strong&gt;New institution: kma (#105)&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;margin:0 0 12px 0;&quot;&gt;
+&lt;a href=&quot;https://github.com/wolfiex&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;&quot;&gt;&lt;img src=&quot;https://github.com/wolfiex.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; title=&quot;wolfiex&quot; style=&quot;border-radius:50%;vertical-align:middle;&quot; /&gt;&lt;/a&gt;
+ 
+&lt;a href=&quot;https://github.com/kyungon&quot; target=&quot;_blank&quot; style=&quot;text-decoration:none;&quot;&gt;&lt;img src=&quot;https://github.com/kyungon.png?size=32&quot; width=&quot;20&quot; height=&quot;20&quot; title=&quot;kyungon&quot; style=&quot;border-radius:50%;vertical-align:middle;&quot; /&gt;&lt;/a&gt;
+ 
+&lt;a href=&quot;https://github.com/wolfiex&quot; target=&quot;_blank&quot;&gt;wolfiex&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/kyungon&quot; target=&quot;_blank&quot;&gt;kyungon&lt;/a&gt;
+&lt;/p&gt;
 &lt;div style=&quot;margin-top:12px;&quot;&gt;
 &lt;strong&gt;Changes on src-data:&lt;/strong&gt;
 &lt;ul style=&quot;margin:8px 0;padding-left:20px;&quot;&gt;
