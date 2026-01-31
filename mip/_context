@@ -2,6 +2,7 @@
     "@context": {
         "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/mip/",
         "@base": "https://universal.mipcvs.dev/mip/",
+        "@esgvoc": "Mip",
         "@vocab": "https://universal.mipcvs.dev/docs/contents/Mip/"
     }
 }
