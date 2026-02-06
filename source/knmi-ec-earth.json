@@ -1,18 +1,17 @@
 {
     "@context": "000_context.jsonld",
-    "id": "ictp-regcm4-7",
+    "id": "knmi-ec-earth",
     "type": "source",
-    "drs_name": "ICTP-RegCM4-7",
+    "drs_name": "KNMI-EC-EARTH",
     "activity_participation": [
-        "cordex",
         "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [
-        "ictp"
+        "knmi"
     ],
-    "label": "ICTP-RegCM4-7",
-    "label_extended": "ICTP Regional Climate Model",
+    "label": "KNMI-EC-EARTH",
+    "label_extended": "KNMI-EC-EARTH",
     "license": {},
     "model_component": null,
     "release_year": null

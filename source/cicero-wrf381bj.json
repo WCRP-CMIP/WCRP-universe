@@ -1,18 +1,17 @@
 {
     "@context": "000_context.jsonld",
-    "id": "ictp-regcm4-7",
+    "id": "cicero-wrf381bj",
     "type": "source",
-    "drs_name": "ICTP-RegCM4-7",
+    "drs_name": "CICERO-WRF381BJ",
     "activity_participation": [
-        "cordex",
         "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [
-        "ictp"
+        "cicero"
     ],
-    "label": "ICTP-RegCM4-7",
-    "label_extended": "ICTP Regional Climate Model",
+    "label": "CICERO-WRF381BJ",
+    "label_extended": "WRF381BJ",
     "license": {},
     "model_component": null,
     "release_year": null

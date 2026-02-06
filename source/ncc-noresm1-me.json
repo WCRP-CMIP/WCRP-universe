@@ -1,18 +1,17 @@
 {
     "@context": "000_context.jsonld",
-    "id": "ictp-regcm4-7",
+    "id": "ncc-noresm1-me",
     "type": "source",
-    "drs_name": "ICTP-RegCM4-7",
+    "drs_name": "NCC-NorESM1-ME",
     "activity_participation": [
-        "cordex",
         "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [
-        "ictp"
+        "ncc"
     ],
-    "label": "ICTP-RegCM4-7",
-    "label_extended": "ICTP Regional Climate Model",
+    "label": "NCC-NorESM1-ME",
+    "label_extended": "NCC-NorESM1-ME",
     "license": {},
     "model_component": null,
     "release_year": null

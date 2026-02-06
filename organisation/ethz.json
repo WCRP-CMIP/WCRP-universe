@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ethz",
+    "type": "organisation",
+    "drs_name": "ETHZ",
+    "description": "ethz institute"
+}

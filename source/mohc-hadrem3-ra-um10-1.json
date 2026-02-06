@@ -1,18 +1,17 @@
 {
     "@context": "000_context.jsonld",
-    "id": "ictp-regcm4-7",
+    "id": "mohc-hadrem3-ra-um10-1",
     "type": "source",
-    "drs_name": "ICTP-RegCM4-7",
+    "drs_name": "MOHC-HADREM3-RA-UM10-1",
     "activity_participation": [
-        "cordex",
         "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [
-        "ictp"
+        "mohc"
     ],
-    "label": "ICTP-RegCM4-7",
-    "label_extended": "ICTP Regional Climate Model",
+    "label": "MOHC-HADREM3-RA-UM10-1",
+    "label_extended": "HadREM3-RA-UM10-1",
     "license": {},
     "model_component": null,
     "release_year": null

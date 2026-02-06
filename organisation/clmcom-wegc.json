@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-wegc",
+    "type": "organisation",
+    "drs_name": "CLMCOM-WEGC",
+    "description": "clmcom-wegc institute"
+}

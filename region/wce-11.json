@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wce-11",
+    "type": "region",
+    "description": "Nesting Central Europe West",
+    "drs_name": "WCE-11"
+}

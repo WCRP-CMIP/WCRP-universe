@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "auth-mc",
+    "type": "organisation",
+    "drs_name": "AUTH-MC",
+    "description": "auth-mc institute"
+}

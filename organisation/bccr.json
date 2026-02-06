@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "bccr",
+    "type": "organisation",
+    "drs_name": "BCCR",
+    "description": "bccr institute"
+}
