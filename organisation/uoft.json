@@ -12,8 +12,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03dbr7087",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "CA",
@@ -22,7 +20,9 @@
             "country_subdivision_name": "Ontario",
             "lat": 43.70643,
             "lng": -79.39864,
-            "name": "Toronto"
+            "name": "Toronto",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03dbr7087"
         }
     ],
     "ror": "03dbr7087",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uoft"
 }

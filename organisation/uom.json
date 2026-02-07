@@ -11,15 +11,15 @@
     "kind": "Education",
     "labels": [],
     "location": {
-        "@id": "universal:location/01ej9dk98",
-        "@type": "esgf:location",
-        "lat": -37.814,
-        "lon": 144.96332,
         "city": "Melbourne",
         "country": [
             "Australia",
             "AU"
-        ]
+        ],
+        "lat": -37.814,
+        "lon": 144.96332,
+        "@type": "esgf:location",
+        "@id": "universal:location/01ej9dk98"
     },
     "ror": "01ej9dk98",
     "url": [
@@ -29,7 +29,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uom"
 }

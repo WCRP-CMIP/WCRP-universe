@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/058zxsr17",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "SE",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "Stockholm",
             "lat": 59.32938,
             "lng": 18.06871,
-            "name": "Stockholm"
+            "name": "Stockholm",
+            "@type": "wcrp:location",
+            "@id": "universal:location/058zxsr17"
         }
     ],
     "ror": "058zxsr17",
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ccrs"
 }

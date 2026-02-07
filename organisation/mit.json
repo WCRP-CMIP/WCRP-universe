@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/042nb2s44",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Massachusetts",
             "lat": 42.3751,
             "lng": -71.10561,
-            "name": "Cambridge"
+            "name": "Cambridge",
+            "@type": "wcrp:location",
+            "@id": "universal:location/042nb2s44"
         }
     ],
     "ror": "042nb2s44",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "mit"
 }

@@ -10,15 +10,15 @@
     "kind": "Facility",
     "labels": [],
     "location": {
-        "@id": "universal:location/02gtrqv93",
-        "@type": "esgf:location",
-        "lat": 46.80429,
-        "lon": 9.83723,
         "city": "Davos",
         "country": [
             "Switzerland",
             "CH"
-        ]
+        ],
+        "lat": 46.80429,
+        "lon": 9.83723,
+        "@type": "esgf:location",
+        "@id": "universal:location/02gtrqv93"
     },
     "ror": "02gtrqv93",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pmod"
 }

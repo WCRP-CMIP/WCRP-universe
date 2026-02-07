@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/032e6b942",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Bremen",
             "lat": 53.53615,
             "lng": 8.59298,
-            "name": "Bremerhaven"
+            "name": "Bremerhaven",
+            "@type": "wcrp:location",
+            "@id": "universal:location/032e6b942"
         }
     ],
     "ror": "032e6b942",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "awi"
 }

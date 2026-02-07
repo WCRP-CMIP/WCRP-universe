@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02y0rxk19",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "CN",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Jiangsu",
             "lat": 32.06167,
             "lng": 118.77778,
-            "name": "Nanjing"
+            "name": "Nanjing",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02y0rxk19"
         }
     ],
     "ror": "02y0rxk19",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nuist"
 }

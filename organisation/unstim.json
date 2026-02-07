@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0421qr997",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "BJ",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Atlantique",
             "lat": 6.44852,
             "lng": 2.35566,
-            "name": "Abomey-Calavi"
+            "name": "Abomey-Calavi",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0421qr997"
         }
     ],
     "ror": "0421qr997",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "unstim"
 }

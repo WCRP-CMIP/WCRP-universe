@@ -10,15 +10,15 @@
     "kind": "Facility",
     "labels": [],
     "location": {
-        "@id": "universal:location/0399mhs52",
-        "@type": "esgf:location",
-        "lat": 37.02987,
-        "lon": -76.34522,
         "city": "Hampton",
         "country": [
             "United States",
             "US"
-        ]
+        ],
+        "lat": 37.02987,
+        "lon": -76.34522,
+        "@type": "esgf:location",
+        "@id": "universal:location/0399mhs52"
     },
     "ror": "0399mhs52",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nasa-larc"
 }

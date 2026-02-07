@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05j873a45",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "IN",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Madhya Pradesh",
             "lat": 23.25469,
             "lng": 77.40289,
-            "name": "Bhopal"
+            "name": "Bhopal",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05j873a45"
         }
     ],
     "ror": "05j873a45",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "iis"
 }

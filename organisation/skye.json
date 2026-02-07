@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/013nat269",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FI",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Uusimaa",
             "lat": 60.16952,
             "lng": 24.93545,
-            "name": "Helsinki"
+            "name": "Helsinki",
+            "@type": "wcrp:location",
+            "@id": "universal:location/013nat269"
         }
     ],
     "ror": "013nat269",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "skye"
 }

@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/044jxhp58",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FR",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Brittany",
             "lat": 48.39029,
             "lng": -4.48628,
-            "name": "Brest"
+            "name": "Brest",
+            "@type": "wcrp:location",
+            "@id": "universal:location/044jxhp58"
         }
     ],
     "ror": "044jxhp58",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ifremer"
 }

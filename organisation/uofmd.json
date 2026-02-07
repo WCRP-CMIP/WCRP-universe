@@ -13,15 +13,15 @@
         "Université du Maryland"
     ],
     "location": {
-        "@id": "universal:location/047s2c258",
-        "@type": "esgf:location",
-        "lat": 38.98067,
-        "lon": -76.93692,
         "city": "College Park",
         "country": [
             "United States",
             "US"
-        ]
+        ],
+        "lat": 38.98067,
+        "lon": -76.93692,
+        "@type": "esgf:location",
+        "@id": "universal:location/047s2c258"
     },
     "ror": "047s2c258",
     "url": [
@@ -31,7 +31,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uofmd"
 }

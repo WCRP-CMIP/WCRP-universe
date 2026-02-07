@@ -8,15 +8,15 @@
     "kind": "Education",
     "labels": [],
     "location": {
-        "@id": "universal:location/01jmxt844",
-        "@type": "esgf:location",
-        "lat": -45.87416,
-        "lon": 170.50361,
         "city": "Dunedin",
         "country": [
             "New Zealand",
             "NZ"
-        ]
+        ],
+        "lat": -45.87416,
+        "lon": 170.50361,
+        "@type": "esgf:location",
+        "@id": "universal:location/01jmxt844"
     },
     "ror": "01jmxt844",
     "url": [
@@ -26,7 +26,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uootago"
 }

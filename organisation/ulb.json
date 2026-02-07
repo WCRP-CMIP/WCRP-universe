@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01r9htc13",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "BE",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Brussels Capital",
             "lat": 50.85045,
             "lng": 4.34878,
-            "name": "Brussels"
+            "name": "Brussels",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01r9htc13"
         }
     ],
     "ror": "01r9htc13",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ulb"
 }

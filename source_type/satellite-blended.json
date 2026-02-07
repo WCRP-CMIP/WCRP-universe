@@ -6,7 +6,8 @@
     "@type": [
         "wcrp:source_type",
         "esgvoc:SourceType",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "satellite-blended"
 }

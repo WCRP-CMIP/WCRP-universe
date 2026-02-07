@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05av9mn02",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "England",
             "lat": 50.37153,
             "lng": -4.14305,
-            "name": "Plymouth"
+            "name": "Plymouth",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05av9mn02"
         }
     ],
     "ror": "05av9mn02",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pml"
 }

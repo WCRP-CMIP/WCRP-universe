@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02nrqs528",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Hesse",
             "lat": 50.10061,
             "lng": 8.76647,
-            "name": "Offenbach"
+            "name": "Offenbach",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02nrqs528"
         }
     ],
     "ror": "02nrqs528",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "dwd"
 }

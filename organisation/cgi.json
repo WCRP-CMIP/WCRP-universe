@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00804ej42",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Washington",
             "lat": 47.81065,
             "lng": -122.37736,
-            "name": "Edmonds"
+            "name": "Edmonds",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00804ej42"
         }
     ],
     "ror": "00804ej42",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cgi"
 }

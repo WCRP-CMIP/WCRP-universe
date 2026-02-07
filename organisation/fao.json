@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/008d63v91",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "ID",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Jakarta",
             "lat": -6.21462,
             "lng": 106.84513,
-            "name": "Jakarta"
+            "name": "Jakarta",
+            "@type": "wcrp:location",
+            "@id": "universal:location/008d63v91"
         }
     ],
     "ror": "008d63v91",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "fao"
 }

@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/022sw4578",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NL",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "North Holland",
             "lat": 52.37403,
             "lng": 4.88969,
-            "name": "Amsterdam"
+            "name": "Amsterdam",
+            "@type": "wcrp:location",
+            "@id": "universal:location/022sw4578"
         }
     ],
     "ror": "022sw4578",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nlr"
 }

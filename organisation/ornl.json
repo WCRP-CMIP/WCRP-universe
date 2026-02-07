@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01qz5mb56",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Tennessee",
             "lat": 36.01036,
             "lng": -84.26964,
-            "name": "Oak Ridge"
+            "name": "Oak Ridge",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01qz5mb56"
         }
     ],
     "ror": "01qz5mb56",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ornl"
 }

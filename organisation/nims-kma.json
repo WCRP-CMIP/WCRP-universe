@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04m2hj141",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "KR",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Jeju-do",
             "lat": 33.25333,
             "lng": 126.56181,
-            "name": "Seogwipo"
+            "name": "Seogwipo",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04m2hj141"
         }
     ],
     "ror": "04m2hj141",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nims-kma"
 }

@@ -12,15 +12,15 @@
         "University of Montreal"
     ],
     "location": {
-        "@id": "universal:location/0161xgx34",
-        "@type": "esgf:location",
-        "lat": 45.50884,
-        "lon": -73.58781,
         "city": "Montreal",
         "country": [
             "Canada",
             "CA"
-        ]
+        ],
+        "lat": 45.50884,
+        "lon": -73.58781,
+        "@type": "esgf:location",
+        "@id": "universal:location/0161xgx34"
     },
     "ror": "0161xgx34",
     "url": [
@@ -30,7 +30,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uomontreal"
 }

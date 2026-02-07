@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04pq5sx96",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "California",
             "lat": 32.71571,
             "lng": -117.16472,
-            "name": "San Diego"
+            "name": "San Diego",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04pq5sx96"
         }
     ],
     "ror": "04pq5sx96",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "edf"
 }

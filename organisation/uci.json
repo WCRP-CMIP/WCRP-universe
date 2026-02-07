@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04gyf1771",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "California",
             "lat": 33.66946,
             "lng": -117.82311,
-            "name": "Irvine"
+            "name": "Irvine",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04gyf1771"
         }
     ],
     "ror": "04gyf1771",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uci"
 }

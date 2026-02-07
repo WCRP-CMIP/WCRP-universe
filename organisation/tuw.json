@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03rn5p709",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "AT",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Vienna",
             "lat": 48.20849,
             "lng": 16.37208,
-            "name": "Vienna"
+            "name": "Vienna",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03rn5p709"
         }
     ],
     "ror": "03rn5p709",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "tuw"
 }

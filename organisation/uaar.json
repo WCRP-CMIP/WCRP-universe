@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/035zn2q74",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "PK",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Punjab",
             "lat": 33.59733,
             "lng": 73.0479,
-            "name": "Rawalpindi"
+            "name": "Rawalpindi",
+            "@type": "wcrp:location",
+            "@id": "universal:location/035zn2q74"
         }
     ],
     "ror": "035zn2q74",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uaar"
 }

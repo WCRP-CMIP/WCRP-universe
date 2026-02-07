@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00js75b59",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Thuringia",
             "lat": 50.92878,
             "lng": 11.5899,
-            "name": "Jena"
+            "name": "Jena",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00js75b59"
         }
     ],
     "ror": "00js75b59",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "mpi-g"
 }

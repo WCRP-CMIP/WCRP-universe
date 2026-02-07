@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02f5b7n18",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Rheinland-Pfalz",
             "lat": 49.98419,
             "lng": 8.2791,
-            "name": "Mainz"
+            "name": "Mainz",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02f5b7n18"
         }
     ],
     "ror": "02f5b7n18",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "mpi-c"
 }

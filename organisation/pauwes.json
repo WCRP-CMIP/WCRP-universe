@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04qe65e37",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "DZ",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Tlemcen",
             "lat": 34.87833,
             "lng": -1.315,
-            "name": "Tlemcen"
+            "name": "Tlemcen",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04qe65e37"
         }
     ],
     "ror": "04qe65e37",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pauwes"
 }

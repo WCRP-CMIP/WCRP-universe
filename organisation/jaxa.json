@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/059yhyy33",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "JP",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Tokyo",
             "lat": 35.6895,
             "lng": 139.69171,
-            "name": "Tokyo"
+            "name": "Tokyo",
+            "@type": "wcrp:location",
+            "@id": "universal:location/059yhyy33"
         }
     ],
     "ror": "059yhyy33",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "jaxa"
 }

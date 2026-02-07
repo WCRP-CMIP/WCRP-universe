@@ -20,8 +20,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01e41cf67",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -30,7 +28,9 @@
             "country_subdivision_name": "New Mexico",
             "lat": 35.88808,
             "lng": -106.30697,
-            "name": "Los Alamos"
+            "name": "Los Alamos",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01e41cf67"
         }
     ],
     "ror": "01e41cf67",
@@ -42,7 +42,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "lanl"
 }

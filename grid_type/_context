@@ -1,8 +1,8 @@
 {
     "@context": {
         "@alt_base": "https://wcrp-cmip.github.io/WCRP-universe/grid_type/",
-        "@base": "https://universal.mipcvs.dev/grid_type/",
+        "@base": "https://https://github.com/wcrp-cmip/WCRP-universe/.mipcvs.dev/grid_type/",
         "@esgvoc": "GridType",
-        "@vocab": "https://universal.mipcvs.dev/docs/contents/GridType/"
+        "@vocab": "https://https://github.com/wcrp-cmip/WCRP-universe/.mipcvs.dev/docs/contents/GridType/"
     }
 }

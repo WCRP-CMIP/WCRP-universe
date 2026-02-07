@@ -10,15 +10,15 @@
     "kind": "Government",
     "labels": [],
     "location": {
-        "@id": "universal:location/04xbqmj23",
-        "@type": "esgf:location",
-        "lat": 17.38405,
-        "lon": 78.45636,
         "city": "Hyderabad",
         "country": [
             "India",
             "IN"
-        ]
+        ],
+        "lat": 17.38405,
+        "lon": 78.45636,
+        "@type": "esgf:location",
+        "@id": "universal:location/04xbqmj23"
     },
     "ror": "04xbqmj23",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "esso"
 }

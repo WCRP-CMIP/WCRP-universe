@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/010bg5245",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NL",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Utrecht",
             "lat": 52.11,
             "lng": 5.18056,
-            "name": "De Bilt"
+            "name": "De Bilt",
+            "@type": "wcrp:location",
+            "@id": "universal:location/010bg5245"
         }
     ],
     "ror": "010bg5245",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ec-earth-consortium"
 }

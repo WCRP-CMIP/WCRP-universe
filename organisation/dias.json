@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03tyqfz83",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Pennsylvania",
             "lat": 40.79339,
             "lng": -77.86,
-            "name": "State College"
+            "name": "State College",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03tyqfz83"
         }
     ],
     "ror": "03tyqfz83",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "dias"
 }

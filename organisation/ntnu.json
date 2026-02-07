@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05xg72x27",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NO",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Trøndelag",
             "lat": 63.43049,
             "lng": 10.39506,
-            "name": "Trondheim"
+            "name": "Trondheim",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05xg72x27"
         }
     ],
     "ror": "05xg72x27",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ntnu"
 }

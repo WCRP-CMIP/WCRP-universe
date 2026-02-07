@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03wd9za21",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FR",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Île-de-France",
             "lat": 48.85341,
             "lng": 2.3488,
-            "name": "Paris"
+            "name": "Paris",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03wd9za21"
         }
     ],
     "ror": "03wd9za21",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "esa"
 }

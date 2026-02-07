@@ -11,15 +11,15 @@
     "kind": "Facility",
     "labels": [],
     "location": {
-        "@id": "universal:location/049k66y27",
-        "@type": "esgf:location",
-        "lat": 47.90289,
-        "lon": 1.90389,
         "city": "Orléans",
         "country": [
             "France",
             "FR"
-        ]
+        ],
+        "lat": 47.90289,
+        "lon": 1.90389,
+        "@type": "esgf:location",
+        "@id": "universal:location/049k66y27"
     },
     "ror": "049k66y27",
     "url": [
@@ -29,7 +29,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "lpc2e"
 }

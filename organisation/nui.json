@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00shsf120",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "IE",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Leinster",
             "lat": 53.33306,
             "lng": -6.24889,
-            "name": "Dublin"
+            "name": "Dublin",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00shsf120"
         }
     ],
     "ror": "00shsf120",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nui"
 }

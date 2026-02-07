@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03m2x1q45",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Arizona",
             "lat": 32.22174,
             "lng": -110.92648,
-            "name": "Tucson"
+            "name": "Tucson",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03m2x1q45"
         }
     ],
     "ror": "03m2x1q45",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ua"
 }

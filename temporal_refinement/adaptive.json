@@ -6,7 +6,8 @@
     "@type": [
         "universal",
         "wcrp:temporal_refinement",
-        "esgvoc:TemporalRefinement"
+        "esgvoc:TemporalRefinement",
+        "undefined"
     ],
     "@id": "adaptive"
 }

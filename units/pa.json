@@ -11,7 +11,8 @@
     "@type": [
         "universal",
         "wcrp:units",
-        "esgvoc:Units"
+        "esgvoc:Units",
+        "undefined"
     ],
     "@id": "pa"
 }

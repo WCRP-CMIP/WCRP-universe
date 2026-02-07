@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02e2c7k09",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NL",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "South Holland",
             "lat": 52.00667,
             "lng": 4.35556,
-            "name": "Delft"
+            "name": "Delft",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02e2c7k09"
         }
     ],
     "ror": "02e2c7k09",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "tudelft"
 }

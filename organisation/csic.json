@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02gfc7t72",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "ES",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Madrid",
             "lat": 40.4165,
             "lng": -3.70256,
-            "name": "Madrid"
+            "name": "Madrid",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02gfc7t72"
         }
     ],
     "ror": "02gfc7t72",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "csic"
 }

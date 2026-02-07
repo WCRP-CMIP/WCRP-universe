@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04pmn0e78",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "ES",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Madrid",
             "lat": 40.48205,
             "lng": -3.35996,
-            "name": "Alcalá de Henares"
+            "name": "Alcalá de Henares",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04pmn0e78"
         }
     ],
     "ror": "04pmn0e78",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uah"
 }

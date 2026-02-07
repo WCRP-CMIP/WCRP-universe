@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0217xr937",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Colorado",
             "lat": 39.36887,
             "lng": -107.03282,
-            "name": "Basalt"
+            "name": "Basalt",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0217xr937"
         }
     ],
     "ror": "0217xr937",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "igci"
 }

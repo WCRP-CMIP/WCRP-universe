@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02ttsq026",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Colorado",
             "lat": 40.01499,
             "lng": -105.27055,
-            "name": "Boulder"
+            "name": "Boulder",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02ttsq026"
         }
     ],
     "ror": "02ttsq026",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cu"
 }

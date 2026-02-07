@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05ect4e57",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Louisiana",
             "lat": 30.44332,
             "lng": -91.18747,
-            "name": "Baton Rouge"
+            "name": "Baton Rouge",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05ect4e57"
         }
     ],
     "ror": "05ect4e57",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "lsu"
 }

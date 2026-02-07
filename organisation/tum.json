@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02kkvpp62",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Bavaria",
             "lat": 48.13743,
             "lng": 11.57549,
-            "name": "Munich"
+            "name": "Munich",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02kkvpp62"
         }
     ],
     "ror": "02kkvpp62",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "tum"
 }

@@ -6,7 +6,8 @@
     "@type": [
         "universal",
         "wcrp:arrangement",
-        "esgvoc:Arrangement"
+        "esgvoc:Arrangement",
+        "undefined"
     ],
     "@id": "arakawa-a"
 }

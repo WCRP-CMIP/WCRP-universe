@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/040kx1j83",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "ES",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Cantabria",
             "lat": 43.46472,
             "lng": -3.80444,
-            "name": "Santander"
+            "name": "Santander",
+            "@type": "wcrp:location",
+            "@id": "universal:location/040kx1j83"
         }
     ],
     "ror": "040kx1j83",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ifca"
 }

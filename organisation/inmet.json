@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03m6sha91",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "TN",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Tunis Governorate",
             "lat": 36.81897,
             "lng": 10.16579,
-            "name": "Tunis"
+            "name": "Tunis",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03m6sha91"
         }
     ],
     "ror": "03m6sha91",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "inmet"
 }

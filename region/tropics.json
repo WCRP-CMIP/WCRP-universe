@@ -10,7 +10,8 @@
     "@type": [
         "universal",
         "wcrp:region",
-        "esgvoc:Region"
+        "esgvoc:Region",
+        "undefined"
     ],
     "@id": "tropics"
 }

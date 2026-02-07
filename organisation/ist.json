@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01tmmzv45",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "PK",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Islamabad",
             "lat": 33.72148,
             "lng": 73.04329,
-            "name": "Islamabad"
+            "name": "Islamabad",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01tmmzv45"
         }
     ],
     "ror": "01tmmzv45",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ist"
 }

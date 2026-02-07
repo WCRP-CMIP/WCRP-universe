@@ -7,7 +7,8 @@
     "@type": [
         "universal",
         "wcrp:calendar",
-        "esgvoc:Calendar"
+        "esgvoc:Calendar",
+        "undefined"
     ],
     "@id": "tai"
 }

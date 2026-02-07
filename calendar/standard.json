@@ -9,7 +9,8 @@
     "@type": [
         "wcrp:calendar",
         "esgvoc:Calendar",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "standard"
 }

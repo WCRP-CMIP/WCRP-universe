@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02f013h18",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "IT",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "Emilia-Romagna",
             "lat": 44.47563,
             "lng": 11.27495,
-            "name": "Casalecchio di Reno"
+            "name": "Casalecchio di Reno",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02f013h18"
         }
     ],
     "ror": "02f013h18",
@@ -33,7 +33,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cineca"
 }

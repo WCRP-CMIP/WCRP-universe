@@ -9,7 +9,8 @@
     "@type": [
         "universal",
         "wcrp:truncation_method",
-        "esgvoc:TruncationMethod"
+        "esgvoc:TruncationMethod",
+        "undefined"
     ],
     "@id": "triangular"
 }

@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/000ehr937",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FR",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Île-de-France",
             "lat": 48.71828,
             "lng": 2.2498,
-            "name": "Palaiseau"
+            "name": "Palaiseau",
+            "@type": "wcrp:location",
+            "@id": "universal:location/000ehr937"
         }
     ],
     "ror": "000ehr937",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "lmd"
 }

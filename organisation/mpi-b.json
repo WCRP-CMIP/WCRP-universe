@@ -14,15 +14,15 @@
         "Max-Planck-Institut für Biogeochemie"
     ],
     "location": {
-        "@id": "universal:location/051yxp643",
-        "@type": "esgf:location",
-        "lat": 50.92878,
-        "lon": 11.5899,
         "city": "Jena",
         "country": [
             "Germany",
             "DE"
-        ]
+        ],
+        "lat": 50.92878,
+        "lon": 11.5899,
+        "@type": "esgf:location",
+        "@id": "universal:location/051yxp643"
     },
     "ror": "051yxp643",
     "url": [
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "mpi-b"
 }

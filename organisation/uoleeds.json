@@ -10,15 +10,15 @@
         "Prifysgol Leeds"
     ],
     "location": {
-        "@id": "universal:location/024mrxd33",
-        "@type": "esgf:location",
-        "lat": 53.79648,
-        "lon": -1.54785,
         "city": "Leeds",
         "country": [
             "United Kingdom",
             "GB"
-        ]
+        ],
+        "lat": 53.79648,
+        "lon": -1.54785,
+        "@type": "esgf:location",
+        "@id": "universal:location/024mrxd33"
     },
     "ror": "024mrxd33",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uoleeds"
 }

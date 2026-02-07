@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/017zqws13",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Minnesota",
             "lat": 44.97997,
             "lng": -93.26384,
-            "name": "Minneapolis"
+            "name": "Minneapolis",
+            "@type": "wcrp:location",
+            "@id": "universal:location/017zqws13"
         }
     ],
     "ror": "017zqws13",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "umn"
 }

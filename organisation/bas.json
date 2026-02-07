@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01rhff309",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "England",
             "lat": 52.2,
             "lng": 0.11667,
-            "name": "Cambridge"
+            "name": "Cambridge",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01rhff309"
         }
     ],
     "ror": "01rhff309",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "bas"
 }

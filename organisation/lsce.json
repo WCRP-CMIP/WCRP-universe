@@ -19,8 +19,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03dsd0g48",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FR",
@@ -29,7 +27,9 @@
             "country_subdivision_name": "Île-de-France",
             "lat": 48.68333,
             "lng": 2.13333,
-            "name": "Gif-sur-Yvette"
+            "name": "Gif-sur-Yvette",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03dsd0g48"
         }
     ],
     "ror": "03dsd0g48",
@@ -41,7 +41,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "lsce"
 }

@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02nwh8244",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "NG",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Imo State",
             "lat": 5.48363,
             "lng": 7.03325,
-            "name": "Owerri"
+            "name": "Owerri",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02nwh8244"
         }
     ],
     "ror": "02nwh8244",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "eth-zürich"
 }

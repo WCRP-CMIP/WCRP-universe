@@ -6,7 +6,8 @@
     "@type": [
         "universal",
         "wcrp:region",
-        "esgvoc:Region"
+        "esgvoc:Region",
+        "undefined"
     ],
     "@id": "30s-90s"
 }

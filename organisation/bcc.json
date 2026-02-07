@@ -12,8 +12,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03kb2jw75",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "CN",
@@ -22,7 +20,9 @@
             "country_subdivision_name": "Beijing",
             "lat": 39.9075,
             "lng": 116.39723,
-            "name": "Beijing"
+            "name": "Beijing",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03kb2jw75"
         }
     ],
     "ror": "03kb2jw75",
@@ -33,7 +33,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "bcc"
 }

@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/037vx0145",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "North Rhine-Westphalia",
             "lat": 50.92149,
             "lng": 6.36267,
-            "name": "Jülich"
+            "name": "Jülich",
+            "@type": "wcrp:location",
+            "@id": "universal:location/037vx0145"
         }
     ],
     "ror": "037vx0145",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "fzj"
 }

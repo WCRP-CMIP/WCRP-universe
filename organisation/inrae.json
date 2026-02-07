@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05y503v71",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "MA",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Rabat-Salé-Kénitra",
             "lat": 34.01325,
             "lng": -6.83255,
-            "name": "Rabat"
+            "name": "Rabat",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05y503v71"
         }
     ],
     "ror": "05y503v71",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "inrae"
 }

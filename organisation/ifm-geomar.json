@@ -14,15 +14,15 @@
         "GEOMAR Helmholtz-Zentrum für Ozeanforschung Kiel"
     ],
     "location": {
-        "@id": "universal:location/02h2x0161",
-        "@type": "esgf:location",
-        "lat": 54.32133,
-        "lon": 10.13489,
         "city": "Kiel",
         "country": [
             "Germany",
             "DE"
-        ]
+        ],
+        "lat": 54.32133,
+        "lon": 10.13489,
+        "@type": "esgf:location",
+        "@id": "universal:location/02h2x0161"
     },
     "ror": "02h2x0161",
     "url": [
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ifm-geomar"
 }

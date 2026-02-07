@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01tf11a61",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "IT",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Apulia",
             "lat": 40.35481,
             "lng": 18.17244,
-            "name": "Lecce"
+            "name": "Lecce",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01tf11a61"
         }
     ],
     "ror": "01tf11a61",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cmcc"
 }

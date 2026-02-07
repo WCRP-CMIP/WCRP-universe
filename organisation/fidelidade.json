@@ -12,8 +12,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/035qk7d98",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "PT",
@@ -22,7 +20,9 @@
             "country_subdivision_name": "Lisbon",
             "lat": 38.71667,
             "lng": -9.13333,
-            "name": "Lisbon"
+            "name": "Lisbon",
+            "@type": "wcrp:location",
+            "@id": "universal:location/035qk7d98"
         }
     ],
     "ror": "035qk7d98",
@@ -33,7 +33,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "fidelidade"
 }

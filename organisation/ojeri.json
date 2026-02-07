@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02v3vzd60",
-            "@type": "wcrp:location",
             "continent_code": "SA",
             "continent_name": "South America",
             "country_code": "CL",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Santiago Metropolitan",
             "lat": -33.43107,
             "lng": -70.60454,
-            "name": "Providencia"
+            "name": "Providencia",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02v3vzd60"
         }
     ],
     "ror": "02v3vzd60",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ojeri"
 }

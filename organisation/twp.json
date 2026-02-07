@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02ratyz17",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "Baden-Wurttemberg",
             "lat": 49.4891,
             "lng": 8.46694,
-            "name": "Mannheim"
+            "name": "Mannheim",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02ratyz17"
         }
     ],
     "ror": "02ratyz17",
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "twp"
 }

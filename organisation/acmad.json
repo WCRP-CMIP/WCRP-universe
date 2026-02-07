@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03777v328",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "NE",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Niamey",
             "lat": 13.51366,
             "lng": 2.1098,
-            "name": "Niamey"
+            "name": "Niamey",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03777v328"
         }
     ],
     "ror": "03777v328",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "acmad"
 }

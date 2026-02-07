@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01q3tbs38",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "SA",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Mecca Region",
             "lat": 21.49012,
             "lng": 39.18624,
-            "name": "Jeddah"
+            "name": "Jeddah",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01q3tbs38"
         }
     ],
     "ror": "01q3tbs38",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "kaust"
 }

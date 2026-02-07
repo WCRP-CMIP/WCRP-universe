@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00q7d9z06",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NO",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Akershus",
             "lat": 59.95597,
             "lng": 11.04918,
-            "name": "Lillestrøm"
+            "name": "Lillestrøm",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00q7d9z06"
         }
     ],
     "ror": "00q7d9z06",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nilu"
 }

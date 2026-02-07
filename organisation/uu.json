@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04pp8hn57",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NL",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Utrecht",
             "lat": 52.09083,
             "lng": 5.12222,
-            "name": "Utrecht"
+            "name": "Utrecht",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04pp8hn57"
         }
     ],
     "ror": "04pp8hn57",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uu"
 }

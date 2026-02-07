@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/026k5mg93",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "England",
             "lat": 52.62783,
             "lng": 1.29834,
-            "name": "Norwich"
+            "name": "Norwich",
+            "@type": "wcrp:location",
+            "@id": "universal:location/026k5mg93"
         }
     ],
     "ror": "026k5mg93",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uea"
 }

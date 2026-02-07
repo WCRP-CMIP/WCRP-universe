@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04y4t7k95",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "IT",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Friuli Venezia Giulia",
             "lat": 45.64953,
             "lng": 13.77678,
-            "name": "Trieste"
+            "name": "Trieste",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04y4t7k95"
         }
     ],
     "ror": "04y4t7k95",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ogs"
 }

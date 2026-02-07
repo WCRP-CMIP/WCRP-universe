@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01gxqm489",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Massachusetts",
             "lat": 42.47731,
             "lng": -72.60787,
-            "name": "South Deerfield"
+            "name": "South Deerfield",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01gxqm489"
         }
     ],
     "ror": "01gxqm489",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "sal"
 }

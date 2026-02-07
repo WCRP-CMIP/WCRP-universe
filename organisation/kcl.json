@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0220mzb33",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "England",
             "lat": 51.50853,
             "lng": -0.12574,
-            "name": "London"
+            "name": "London",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0220mzb33"
         }
     ],
     "ror": "0220mzb33",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "kcl"
 }

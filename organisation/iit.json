@@ -20,8 +20,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00582g326",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "IN",
@@ -30,7 +28,9 @@
             "country_subdivision_name": "Uttarakhand",
             "lat": 29.86632,
             "lng": 77.89118,
-            "name": "Roorkee"
+            "name": "Roorkee",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00582g326"
         }
     ],
     "ror": "00582g326",
@@ -42,7 +42,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "iit"
 }

@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02495e989",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "BE",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Wallonia",
             "lat": 50.66829,
             "lng": 4.61443,
-            "name": "Louvain-la-Neuve"
+            "name": "Louvain-la-Neuve",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02495e989"
         }
     ],
     "ror": "02495e989",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uclouvain"
 }

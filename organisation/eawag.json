@@ -13,15 +13,15 @@
         "Institut fédéral pour l’aménagement, l’épuration et la protection des eaux"
     ],
     "location": {
-        "@id": "universal:location/00pc48d59",
-        "@type": "esgf:location",
-        "lat": 47.39724,
-        "lon": 8.61872,
         "city": "Dübendorf",
         "country": [
             "Switzerland",
             "CH"
-        ]
+        ],
+        "lat": 47.39724,
+        "lon": 8.61872,
+        "@type": "esgf:location",
+        "@id": "universal:location/00pc48d59"
     },
     "ror": "00pc48d59",
     "url": [
@@ -31,7 +31,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "eawag"
 }

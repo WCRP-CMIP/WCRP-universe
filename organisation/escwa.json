@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03yqyyy69",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "LB",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Beyrouth",
             "lat": 33.89332,
             "lng": 35.50157,
-            "name": "Beirut"
+            "name": "Beirut",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03yqyyy69"
         }
     ],
     "ror": "03yqyyy69",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "escwa"
 }

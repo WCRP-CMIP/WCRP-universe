@@ -16,15 +16,15 @@
         "ETH di Zurigo"
     ],
     "location": {
-        "@id": "universal:location/05a28rw58",
-        "@type": "esgf:location",
-        "lat": 47.36667,
-        "lon": 8.55,
         "city": "Zurich",
         "country": [
             "Switzerland",
             "CH"
-        ]
+        ],
+        "lat": 47.36667,
+        "lon": 8.55,
+        "@type": "esgf:location",
+        "@id": "universal:location/05a28rw58"
     },
     "ror": "05a28rw58",
     "url": [
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "iaceth"
 }

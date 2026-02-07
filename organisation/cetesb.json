@@ -20,8 +20,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05thfhs30",
-            "@type": "wcrp:location",
             "continent_code": "SA",
             "continent_name": "South America",
             "country_code": "BR",
@@ -30,7 +28,9 @@
             "country_subdivision_name": "São Paulo",
             "lat": -23.5475,
             "lng": -46.63611,
-            "name": "São Paulo"
+            "name": "São Paulo",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05thfhs30"
         }
     ],
     "ror": "05thfhs30",
@@ -42,7 +42,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cetesb"
 }

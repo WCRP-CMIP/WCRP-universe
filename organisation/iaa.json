@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04ka0vh05",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "ES",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Andalusia",
             "lat": 37.18817,
             "lng": -3.60667,
-            "name": "Granada"
+            "name": "Granada",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04ka0vh05"
         }
     ],
     "ror": "04ka0vh05",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "iaa"
 }

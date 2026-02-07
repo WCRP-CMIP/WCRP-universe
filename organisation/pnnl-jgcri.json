@@ -10,15 +10,15 @@
     "kind": "Facility",
     "labels": [],
     "location": {
-        "@id": "universal:location/058cmd703",
-        "@type": "esgf:location",
-        "lat": 38.96344,
-        "lon": -76.93164,
         "city": "Riverdale Park",
         "country": [
             "United States",
             "US"
-        ]
+        ],
+        "lat": 38.96344,
+        "lon": -76.93164,
+        "@type": "esgf:location",
+        "@id": "universal:location/058cmd703"
     },
     "ror": "058cmd703",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pnnl-jgcri"
 }

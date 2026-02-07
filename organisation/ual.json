@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01vme4277",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Georgia",
             "lat": 31.57851,
             "lng": -84.15574,
-            "name": "Albany"
+            "name": "Albany",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01vme4277"
         }
     ],
     "ror": "01vme4277",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ual"
 }

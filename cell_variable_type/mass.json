@@ -6,7 +6,8 @@
     "@type": [
         "universal",
         "wcrp:cell_variable_type",
-        "esgvoc:CellVariableType"
+        "esgvoc:CellVariableType",
+        "undefined"
     ],
     "@id": "mass"
 }

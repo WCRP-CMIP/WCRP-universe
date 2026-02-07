@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03qjp1d79",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Schleswig-Holstein",
             "lat": 53.43575,
             "lng": 10.3779,
-            "name": "Geesthacht"
+            "name": "Geesthacht",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03qjp1d79"
         }
     ],
     "ror": "03qjp1d79",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "hereon"
 }

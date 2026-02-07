@@ -13,15 +13,15 @@
         "Osservatorio Astronomico di Roma"
     ],
     "location": {
-        "@id": "universal:location/02hnp4676",
-        "@type": "esgf:location",
-        "lat": 41.89193,
-        "lon": 12.51133,
         "city": "Rome",
         "country": [
             "Italy",
             "IT"
-        ]
+        ],
+        "lat": 41.89193,
+        "lon": 12.51133,
+        "@type": "esgf:location",
+        "@id": "universal:location/02hnp4676"
     },
     "ror": "02hnp4676",
     "url": [
@@ -31,7 +31,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "aor"
 }

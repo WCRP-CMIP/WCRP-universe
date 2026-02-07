@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03nawhv43",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "California",
             "lat": 33.95335,
             "lng": -117.39616,
-            "name": "Riverside"
+            "name": "Riverside",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03nawhv43"
         }
     ],
     "ror": "03nawhv43",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ucriverside"
 }

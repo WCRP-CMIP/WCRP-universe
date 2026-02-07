@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05apxxy63",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "KR",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Daejeon",
             "lat": 36.34913,
             "lng": 127.38493,
-            "name": "Daejeon"
+            "name": "Daejeon",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05apxxy63"
         }
     ],
     "ror": "05apxxy63",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "kaist"
 }

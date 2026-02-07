@@ -19,8 +19,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/000h6jb29",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -29,7 +27,9 @@
             "country_subdivision_name": "Saxony",
             "lat": 51.33962,
             "lng": 12.37129,
-            "name": "Leipzig"
+            "name": "Leipzig",
+            "@type": "wcrp:location",
+            "@id": "universal:location/000h6jb29"
         }
     ],
     "ror": "000h6jb29",
@@ -41,7 +41,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ufz"
 }

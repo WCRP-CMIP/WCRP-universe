@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00g76w893",
-            "@type": "wcrp:location",
             "continent_code": "OC",
             "continent_name": "Oceania",
             "country_code": "AU",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "South Australia",
             "lat": -34.92866,
             "lng": 138.59863,
-            "name": "Adelaide"
+            "name": "Adelaide",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00g76w893"
         }
     ],
     "ror": "00g76w893",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "arccss"
 }

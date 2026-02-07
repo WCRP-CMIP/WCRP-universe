@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05xj12p61",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "North Rhine-Westphalia",
             "lat": 50.73438,
             "lng": 7.09549,
-            "name": "Bonn"
+            "name": "Bonn",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05xj12p61"
         }
     ],
     "ror": "05xj12p61",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "dlr"
 }

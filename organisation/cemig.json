@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02kbrsj34",
-            "@type": "wcrp:location",
             "continent_code": "SA",
             "continent_name": "South America",
             "country_code": "BR",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Minas Gerais",
             "lat": -19.92083,
             "lng": -43.93778,
-            "name": "Belo Horizonte"
+            "name": "Belo Horizonte",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02kbrsj34"
         }
     ],
     "ror": "02kbrsj34",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cemig"
 }

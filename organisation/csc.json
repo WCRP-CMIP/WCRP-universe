@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04m8m1253",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FI",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Uusimaa",
             "lat": 60.2052,
             "lng": 24.6522,
-            "name": "Espoo"
+            "name": "Espoo",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04m8m1253"
         }
     ],
     "ror": "04m8m1253",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "csc"
 }

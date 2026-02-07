@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03q60bw50",
-            "@type": "wcrp:location",
             "continent_code": "SA",
             "continent_name": "South America",
             "country_code": "CO",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Caldas Department",
             "lat": 5.06889,
             "lng": -75.51738,
-            "name": "Manizales"
+            "name": "Manizales",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03q60bw50"
         }
     ],
     "ror": "03q60bw50",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cenicafé"
 }

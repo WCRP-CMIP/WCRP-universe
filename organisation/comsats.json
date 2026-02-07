@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02dpmge29",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "BD",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Dhaka Division",
             "lat": 23.7104,
             "lng": 90.40744,
-            "name": "Dhaka"
+            "name": "Dhaka",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02dpmge29"
         }
     ],
     "ror": "02dpmge29",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "comsats"
 }

@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04je6yw13",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "SN",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Dakar",
             "lat": 14.6937,
             "lng": -17.44406,
-            "name": "Dakar"
+            "name": "Dakar",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04je6yw13"
         }
     ],
     "ror": "04je6yw13",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ucad"
 }

@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01wwwe276",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "England",
             "lat": 53.79648,
             "lng": -1.54785,
-            "name": "Leeds"
+            "name": "Leeds",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01wwwe276"
         }
     ],
     "ror": "01wwwe276",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ncas"
 }

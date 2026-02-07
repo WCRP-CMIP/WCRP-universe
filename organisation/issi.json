@@ -10,15 +10,15 @@
     "kind": "Nonprofit",
     "labels": [],
     "location": {
-        "@id": "universal:location/01xm30661",
-        "@type": "esgf:location",
-        "lat": 46.94809,
-        "lon": 7.44744,
         "city": "Bern",
         "country": [
             "Switzerland",
             "CH"
-        ]
+        ],
+        "lat": 46.94809,
+        "lon": 7.44744,
+        "@type": "esgf:location",
+        "@id": "universal:location/01xm30661"
     },
     "ror": "01xm30661",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "issi"
 }

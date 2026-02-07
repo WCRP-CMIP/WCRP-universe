@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03abrgd14",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "ES",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Catalonia",
             "lat": 41.49109,
             "lng": 2.14079,
-            "name": "Cerdanyola del Vallès"
+            "name": "Cerdanyola del Vallès",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03abrgd14"
         }
     ],
     "ror": "03abrgd14",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "creaf"
 }

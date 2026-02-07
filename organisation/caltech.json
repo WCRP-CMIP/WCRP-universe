@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05dxps055",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "California",
             "lat": 34.14778,
             "lng": -118.14452,
-            "name": "Pasadena"
+            "name": "Pasadena",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05dxps055"
         }
     ],
     "ror": "05dxps055",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "caltech"
 }

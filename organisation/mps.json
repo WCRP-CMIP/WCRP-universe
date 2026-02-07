@@ -12,15 +12,15 @@
         "Max-Planck-Institut für Sonnensystemforschung"
     ],
     "location": {
-        "@id": "universal:location/02j6gm739",
-        "@type": "esgf:location",
-        "lat": 51.53443,
-        "lon": 9.93228,
         "city": "Göttingen",
         "country": [
             "Germany",
             "DE"
-        ]
+        ],
+        "lat": 51.53443,
+        "lon": 9.93228,
+        "@type": "esgf:location",
+        "@id": "universal:location/02j6gm739"
     },
     "ror": "02j6gm739",
     "url": [
@@ -30,7 +30,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "mps"
 }

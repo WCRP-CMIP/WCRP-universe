@@ -10,15 +10,15 @@
     "kind": "Facility",
     "labels": [],
     "location": {
-        "@id": "universal:location/02k3nmd98",
-        "@type": "esgf:location",
-        "lat": 37.68187,
-        "lon": -121.76801,
         "city": "Livermore",
         "country": [
             "United States",
             "US"
-        ]
+        ],
+        "lat": 37.68187,
+        "lon": -121.76801,
+        "@type": "esgf:location",
+        "@id": "universal:location/02k3nmd98"
     },
     "ror": "02k3nmd98",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pcmdi"
 }

@@ -6,7 +6,8 @@
     "@type": [
         "universal",
         "wcrp:grid_mapping",
-        "esgvoc:GridMapping"
+        "esgvoc:GridMapping",
+        "undefined"
     ],
     "@id": "rotated-latitude-longitude"
 }

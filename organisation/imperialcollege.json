@@ -12,15 +12,15 @@
         "Coleg Imperial Llundain"
     ],
     "location": {
-        "@id": "universal:location/041kmwe10",
-        "@type": "esgf:location",
-        "lat": 51.50853,
-        "lon": -0.12574,
         "city": "London",
         "country": [
             "United Kingdom",
             "GB"
-        ]
+        ],
+        "lat": 51.50853,
+        "lon": -0.12574,
+        "@type": "esgf:location",
+        "@id": "universal:location/041kmwe10"
     },
     "ror": "041kmwe10",
     "url": [
@@ -30,7 +30,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "imperialcollege"
 }

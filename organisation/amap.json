@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00hgq1a05",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NO",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Oslo",
             "lat": 59.91273,
             "lng": 10.74609,
-            "name": "Oslo"
+            "name": "Oslo",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00hgq1a05"
         }
     ],
     "ror": "00hgq1a05",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "amap"
 }

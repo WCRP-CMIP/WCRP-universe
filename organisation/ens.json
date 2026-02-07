@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01dp7jr64",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "BI",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Bujumbura Mairie",
             "lat": -3.38193,
             "lng": 29.36142,
-            "name": "Bujumbura"
+            "name": "Bujumbura",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01dp7jr64"
         }
     ],
     "ror": "01dp7jr64",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ens"
 }

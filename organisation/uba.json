@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0329ynx05",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Saxony-Anhalt",
             "lat": 51.83864,
             "lng": 12.24555,
-            "name": "Dessau"
+            "name": "Dessau",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0329ynx05"
         }
     ],
     "ror": "0329ynx05",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uba"
 }

@@ -12,15 +12,15 @@
         "Université de la saskatchewan"
     ],
     "location": {
-        "@id": "universal:location/010x8gc63",
-        "@type": "esgf:location",
-        "lat": 52.13238,
-        "lon": -106.66892,
         "city": "Saskatoon",
         "country": [
             "Canada",
             "CA"
-        ]
+        ],
+        "lat": 52.13238,
+        "lon": -106.66892,
+        "@type": "esgf:location",
+        "@id": "universal:location/010x8gc63"
     },
     "ror": "010x8gc63",
     "url": [
@@ -30,7 +30,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uosask"
 }

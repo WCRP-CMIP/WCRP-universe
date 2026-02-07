@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00kkbzr26",
-            "@type": "wcrp:location",
             "continent_code": "SA",
             "continent_name": "South America",
             "country_code": "AR",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Buenos Aires F.D.",
             "lat": -34.61315,
             "lng": -58.37723,
-            "name": "Buenos Aires"
+            "name": "Buenos Aires",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00kkbzr26"
         }
     ],
     "ror": "00kkbzr26",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "boku"
 }

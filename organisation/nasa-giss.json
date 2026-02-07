@@ -10,15 +10,15 @@
     "kind": "Facility",
     "labels": [],
     "location": {
-        "@id": "universal:location/01cyfxe35",
-        "@type": "esgf:location",
-        "lat": 40.71427,
-        "lon": -74.00597,
         "city": "New York",
         "country": [
             "United States",
             "US"
-        ]
+        ],
+        "lat": 40.71427,
+        "lon": -74.00597,
+        "@type": "esgf:location",
+        "@id": "universal:location/01cyfxe35"
     },
     "ror": "01cyfxe35",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nasa-giss"
 }

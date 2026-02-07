@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0375jbm11",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "England",
             "lat": 52.6386,
             "lng": -1.13169,
-            "name": "Leicester"
+            "name": "Leicester",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0375jbm11"
         }
     ],
     "ror": "0375jbm11",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nceo"
 }

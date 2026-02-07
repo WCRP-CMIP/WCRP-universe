@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03zga2b32",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NO",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Vestland",
             "lat": 60.39299,
             "lng": 5.32415,
-            "name": "Bergen"
+            "name": "Bergen",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03zga2b32"
         }
     ],
     "ror": "03zga2b32",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uib"
 }

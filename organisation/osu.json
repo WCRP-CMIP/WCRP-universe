@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00ysfqy60",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Oregon",
             "lat": 44.56457,
             "lng": -123.26204,
-            "name": "Corvallis"
+            "name": "Corvallis",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00ysfqy60"
         }
     ],
     "ror": "00ysfqy60",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "osu"
 }

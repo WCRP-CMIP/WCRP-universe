@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0193j3v20",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "MX",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Mexico City",
             "lat": 19.42847,
             "lng": -99.12766,
-            "name": "Mexico City"
+            "name": "Mexico City",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0193j3v20"
         }
     ],
     "ror": "0193j3v20",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cima"
 }

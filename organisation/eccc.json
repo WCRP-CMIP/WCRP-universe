@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/026ny0e17",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "CA",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Ontario",
             "lat": 45.41117,
             "lng": -75.69812,
-            "name": "Ottawa"
+            "name": "Ottawa",
+            "@type": "wcrp:location",
+            "@id": "universal:location/026ny0e17"
         }
     ],
     "ror": "026ny0e17",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "eccc"
 }

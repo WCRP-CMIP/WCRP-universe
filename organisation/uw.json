@@ -13,15 +13,15 @@
         "Université de Washington"
     ],
     "location": {
-        "@id": "universal:location/00cvxb145",
-        "@type": "esgf:location",
-        "lat": 47.60621,
-        "lon": -122.33207,
         "city": "Seattle",
         "country": [
             "United States",
             "US"
-        ]
+        ],
+        "lat": 47.60621,
+        "lon": -122.33207,
+        "@type": "esgf:location",
+        "@id": "universal:location/00cvxb145"
     },
     "ror": "00cvxb145",
     "url": [
@@ -31,7 +31,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uw"
 }

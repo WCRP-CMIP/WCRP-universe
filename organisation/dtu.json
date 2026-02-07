@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04qtj9h94",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DK",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Capital Region",
             "lat": 55.77044,
             "lng": 12.50378,
-            "name": "Kongens Lyngby"
+            "name": "Kongens Lyngby",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04qtj9h94"
         }
     ],
     "ror": "04qtj9h94",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "dtu"
 }

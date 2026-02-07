@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04hxcaz34",
-            "@type": "wcrp:location",
             "continent_code": "OC",
             "continent_name": "Oceania",
             "country_code": "NZ",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Auckland",
             "lat": -36.84853,
             "lng": 174.76349,
-            "name": "Auckland"
+            "name": "Auckland",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04hxcaz34"
         }
     ],
     "ror": "04hxcaz34",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "niwa"
 }

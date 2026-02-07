@@ -8,7 +8,8 @@
     "@type": [
         "wcrp:resolution",
         "esgvoc:Resolution",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "50km"
 }

@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04cvvej54",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Massachusetts",
             "lat": 41.5515,
             "lng": -70.61475,
-            "name": "Falmouth"
+            "name": "Falmouth",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04cvvej54"
         }
     ],
     "ror": "04cvvej54",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "wcrc"
 }

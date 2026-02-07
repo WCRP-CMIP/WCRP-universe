@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03dtebk39",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GR",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Attica",
             "lat": 37.98376,
             "lng": 23.72784,
-            "name": "Athens"
+            "name": "Athens",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03dtebk39"
         }
     ],
     "ror": "03dtebk39",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "noa"
 }

@@ -6,7 +6,8 @@
     "@type": [
         "wcrp:product",
         "esgvoc:Product",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "observations"
 }

@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04tj63d06",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "North Carolina",
             "lat": 35.7721,
             "lng": -78.63861,
-            "name": "Raleigh"
+            "name": "Raleigh",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04tj63d06"
         }
     ],
     "ror": "04tj63d06",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ncstate"
 }

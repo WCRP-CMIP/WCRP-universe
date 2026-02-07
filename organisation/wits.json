@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03jyr9x65",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "JP",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Chiba",
             "lat": 35.6,
             "lng": 140.11667,
-            "name": "Chiba"
+            "name": "Chiba",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03jyr9x65"
         }
     ],
     "ror": "03jyr9x65",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "wits"
 }

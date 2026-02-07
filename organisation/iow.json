@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03xh9nq73",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Mecklenburg-Vorpommern",
             "lat": 54.1767,
             "lng": 12.08402,
-            "name": "Warnemünde"
+            "name": "Warnemünde",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03xh9nq73"
         }
     ],
     "ror": "03xh9nq73",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "iow"
 }

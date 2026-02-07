@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05vm7ws26",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "IN",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Maharashtra",
             "lat": 21.14631,
             "lng": 79.08491,
-            "name": "Nagpur"
+            "name": "Nagpur",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05vm7ws26"
         }
     ],
     "ror": "05vm7ws26",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "icar"
 }

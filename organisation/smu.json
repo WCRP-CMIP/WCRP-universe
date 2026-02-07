@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/050qmg959",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "SG",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "SG.01",
             "lat": 1.28967,
             "lng": 103.85007,
-            "name": "Singapore"
+            "name": "Singapore",
+            "@type": "wcrp:location",
+            "@id": "universal:location/050qmg959"
         }
     ],
     "ror": "050qmg959",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "smu"
 }

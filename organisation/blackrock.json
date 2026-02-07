@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/031dc4703",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "New York",
             "lat": 40.71427,
             "lng": -74.00597,
-            "name": "New York"
+            "name": "New York",
+            "@type": "wcrp:location",
+            "@id": "universal:location/031dc4703"
         }
     ],
     "ror": "031dc4703",
@@ -33,7 +33,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "blackrock"
 }

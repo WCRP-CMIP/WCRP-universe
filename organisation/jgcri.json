@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/058cmd703",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Maryland",
             "lat": 38.96344,
             "lng": -76.93164,
-            "name": "Riverdale Park"
+            "name": "Riverdale Park",
+            "@type": "wcrp:location",
+            "@id": "universal:location/058cmd703"
         }
     ],
     "ror": "058cmd703",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "jgcri"
 }

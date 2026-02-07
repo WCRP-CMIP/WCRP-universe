@@ -13,15 +13,15 @@
     "kind": "Education",
     "labels": [],
     "location": {
-        "@id": "universal:location/046ak2485",
-        "@type": "esgf:location",
-        "lat": 52.52437,
-        "lon": 13.41053,
         "city": "Berlin",
         "country": [
             "Germany",
             "DE"
-        ]
+        ],
+        "lat": 52.52437,
+        "lon": 13.41053,
+        "@type": "esgf:location",
+        "@id": "universal:location/046ak2485"
     },
     "ror": "046ak2485",
     "url": [
@@ -31,7 +31,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "fuberlin"
 }

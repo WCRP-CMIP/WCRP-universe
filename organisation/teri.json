@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03h7kv823",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "SI",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Ljubljana",
             "lat": 46.05108,
             "lng": 14.50513,
-            "name": "Ljubljana"
+            "name": "Ljubljana",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03h7kv823"
         }
     ],
     "ror": "03h7kv823",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "teri"
 }

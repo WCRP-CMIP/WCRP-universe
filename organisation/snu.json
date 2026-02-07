@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04h9pn542",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "KR",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Seoul",
             "lat": 37.566,
             "lng": 126.9784,
-            "name": "Seoul"
+            "name": "Seoul",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04h9pn542"
         }
     ],
     "ror": "04h9pn542",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "snu"
 }

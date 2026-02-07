@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05bqach95",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "TW",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Taiwan",
             "lat": 25.05306,
             "lng": 121.52639,
-            "name": "Taipei"
+            "name": "Taipei",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05bqach95"
         }
     ],
     "ror": "05bqach95",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ntu"
 }

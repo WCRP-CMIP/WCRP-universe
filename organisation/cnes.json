@@ -12,15 +12,15 @@
         "National Centre for Space Studies"
     ],
     "location": {
-        "@id": "universal:location/04h1h0y33",
-        "@type": "esgf:location",
-        "lat": 48.85341,
-        "lon": 2.3488,
         "city": "Paris",
         "country": [
             "France",
             "FR"
-        ]
+        ],
+        "lat": 48.85341,
+        "lon": 2.3488,
+        "@type": "esgf:location",
+        "@id": "universal:location/04h1h0y33"
     },
     "ror": "04h1h0y33",
     "url": [
@@ -30,7 +30,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cnes"
 }

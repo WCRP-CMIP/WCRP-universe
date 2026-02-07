@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05h8dpx23",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "North Rhine-Westphalia",
             "lat": 51.45657,
             "lng": 7.01228,
-            "name": "Essen"
+            "name": "Essen",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05h8dpx23"
         }
     ],
     "ror": "05h8dpx23",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "rwe"
 }

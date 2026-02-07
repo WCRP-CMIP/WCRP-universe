@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04zaypm56",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "IT",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Lazio",
             "lat": 41.89193,
             "lng": 12.51133,
-            "name": "Rome"
+            "name": "Rome",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04zaypm56"
         }
     ],
     "ror": "04zaypm56",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cnr"
 }

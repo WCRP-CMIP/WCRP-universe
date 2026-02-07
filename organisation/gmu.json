@@ -12,8 +12,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02jqj7156",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -22,7 +20,9 @@
             "country_subdivision_name": "Virginia",
             "lat": 38.84622,
             "lng": -77.30637,
-            "name": "Fairfax"
+            "name": "Fairfax",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02jqj7156"
         }
     ],
     "ror": "02jqj7156",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "gmu"
 }

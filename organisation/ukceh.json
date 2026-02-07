@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00pggkr55",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -26,11 +24,11 @@
             "country_subdivision_name": "England",
             "lat": 51.59982,
             "lng": -1.1248,
-            "name": "Wallingford"
+            "name": "Wallingford",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00pggkr55"
         },
         {
-            "@id": "universal:location/00pggkr55",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -39,11 +37,11 @@
             "country_subdivision_name": "Wales",
             "lat": 53.2223,
             "lng": -4.13579,
-            "name": "Bangor"
+            "name": "Bangor",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00pggkr55"
         },
         {
-            "@id": "universal:location/00pggkr55",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -52,11 +50,11 @@
             "country_subdivision_name": "Scotland",
             "lat": 55.94973,
             "lng": -3.19333,
-            "name": "Edinburgh"
+            "name": "Edinburgh",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00pggkr55"
         },
         {
-            "@id": "universal:location/00pggkr55",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -65,11 +63,11 @@
             "country_subdivision_name": "England",
             "lat": 54.11667,
             "lng": -2.76667,
-            "name": "Lancaster"
+            "name": "Lancaster",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00pggkr55"
         },
         {
-            "@id": "universal:location/00pggkr55",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "GH",
@@ -78,7 +76,9 @@
             "country_subdivision_name": "Greater Accra",
             "lat": 5.55602,
             "lng": -0.1969,
-            "name": "Accra"
+            "name": "Accra",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00pggkr55"
         }
     ],
     "ror": "00pggkr55",
@@ -90,7 +90,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ukceh"
 }

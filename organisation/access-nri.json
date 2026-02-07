@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03qhv9c02",
-            "@type": "wcrp:location",
             "continent_code": "OC",
             "continent_name": "Oceania",
             "country_code": "AU",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Australian Capital Territory",
             "lat": -35.28346,
             "lng": 149.12807,
-            "name": "Canberra"
+            "name": "Canberra",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03qhv9c02"
         }
     ],
     "ror": "03qhv9c02",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "access-nri"
 }

@@ -6,7 +6,8 @@
     "@type": [
         "wcrp:region",
         "esgvoc:Region",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "shem"
 }

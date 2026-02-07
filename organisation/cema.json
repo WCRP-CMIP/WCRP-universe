@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/040933v44",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Maryland",
             "lat": 38.98067,
             "lng": -76.93692,
-            "name": "College Park"
+            "name": "College Park",
+            "@type": "wcrp:location",
+            "@id": "universal:location/040933v44"
         }
     ],
     "ror": "040933v44",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cema"
 }

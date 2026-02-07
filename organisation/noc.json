@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00874hx02",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "England",
             "lat": 50.90395,
             "lng": -1.40428,
-            "name": "Southampton"
+            "name": "Southampton",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00874hx02"
         }
     ],
     "ror": "00874hx02",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "noc"
 }

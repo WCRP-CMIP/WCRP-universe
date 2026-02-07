@@ -13,15 +13,15 @@
         "Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης"
     ],
     "location": {
-        "@id": "universal:location/02j61yw88",
-        "@type": "esgf:location",
-        "lat": 40.64361,
-        "lon": 22.93086,
         "city": "Thessaloniki",
         "country": [
             "Greece",
             "GR"
-        ]
+        ],
+        "lat": 40.64361,
+        "lon": 22.93086,
+        "@type": "esgf:location",
+        "@id": "universal:location/02j61yw88"
     },
     "ror": "02j61yw88",
     "url": [
@@ -31,7 +31,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "auot"
 }

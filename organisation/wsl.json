@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04bs5yc70",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "CH",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Zurich",
             "lat": 47.35515,
             "lng": 8.44256,
-            "name": "Birmensdorf"
+            "name": "Birmensdorf",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04bs5yc70"
         }
     ],
     "ror": "04bs5yc70",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "wsl"
 }

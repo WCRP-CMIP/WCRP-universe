@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/032m55064",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "KR",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Busan",
             "lat": 35.10168,
             "lng": 129.03004,
-            "name": "Busan"
+            "name": "Busan",
+            "@type": "wcrp:location",
+            "@id": "universal:location/032m55064"
         }
     ],
     "ror": "032m55064",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "kiost"
 }

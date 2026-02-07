@@ -10,15 +10,15 @@
         "Oulun yliopisto"
     ],
     "location": {
-        "@id": "universal:location/03yj89h83",
-        "@type": "esgf:location",
-        "lat": 65.01236,
-        "lon": 25.46816,
         "city": "Oulu",
         "country": [
             "Finland",
             "FI"
-        ]
+        ],
+        "lat": 65.01236,
+        "lon": 25.46816,
+        "@type": "esgf:location",
+        "@id": "universal:location/03yj89h83"
     },
     "ror": "03yj89h83",
     "url": [
@@ -28,7 +28,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uooulu"
 }

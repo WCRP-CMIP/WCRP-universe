@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04t3en479",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Baden-Wurttemberg",
             "lat": 49.00937,
             "lng": 8.40444,
-            "name": "Karlsruhe"
+            "name": "Karlsruhe",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04t3en479"
         }
     ],
     "ror": "04t3en479",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "kit"
 }

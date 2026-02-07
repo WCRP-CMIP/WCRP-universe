@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/007z06v19",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "Virginia",
             "lat": 38.80484,
             "lng": -77.04692,
-            "name": "Alexandria"
+            "name": "Alexandria",
+            "@type": "wcrp:location",
+            "@id": "universal:location/007z06v19"
         }
     ],
     "ror": "007z06v19",
@@ -33,7 +33,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cgisc"
 }

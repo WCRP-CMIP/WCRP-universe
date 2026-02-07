@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03p74gp79",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "ZA",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Western Cape",
             "lat": -33.96333,
             "lng": 18.47639,
-            "name": "Rondebosch"
+            "name": "Rondebosch",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03p74gp79"
         }
     ],
     "ror": "03p74gp79",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uct"
 }

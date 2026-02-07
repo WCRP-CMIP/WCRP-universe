@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04znhwb73",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "MX",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Baja California",
             "lat": 31.87149,
             "lng": -116.60071,
-            "name": "Ensenada"
+            "name": "Ensenada",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04znhwb73"
         }
     ],
     "ror": "04znhwb73",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cicese"
 }

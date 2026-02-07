@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0272j5188",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Arizona",
             "lat": 35.19807,
             "lng": -111.65127,
-            "name": "Flagstaff"
+            "name": "Flagstaff",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0272j5188"
         }
     ],
     "ror": "0272j5188",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "nau"
 }

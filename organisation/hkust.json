@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00q4vv597",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "HK",
@@ -23,7 +21,9 @@
             "country_subdivision_name": null,
             "lat": 22.27832,
             "lng": 114.17469,
-            "name": "Hong Kong"
+            "name": "Hong Kong",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00q4vv597"
         }
     ],
     "ror": "00q4vv597",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "hkust"
 }

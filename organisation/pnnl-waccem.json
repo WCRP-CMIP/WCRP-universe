@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05h992307",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Washington",
             "lat": 46.28569,
             "lng": -119.28446,
-            "name": "Richland"
+            "name": "Richland",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05h992307"
         }
     ],
     "ror": "05h992307",
@@ -38,7 +38,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pnnl-waccem"
 }

@@ -25,8 +25,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03vmn1898",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -35,7 +33,9 @@
             "country_subdivision_name": "New Jersey",
             "lat": 40.34872,
             "lng": -74.65905,
-            "name": "Princeton"
+            "name": "Princeton",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03vmn1898"
         }
     ],
     "ror": "03vmn1898",
@@ -47,7 +47,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "noaa-gfdl"
 }

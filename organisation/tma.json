@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01zg6vj90",
-            "@type": "wcrp:location",
             "continent_code": "AF",
             "continent_name": "Africa",
             "country_code": "TZ",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Dar es Salaam Region",
             "lat": -6.82349,
             "lng": 39.26951,
-            "name": "Dar es Salaam"
+            "name": "Dar es Salaam",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01zg6vj90"
         }
     ],
     "ror": "01zg6vj90",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "tma"
 }

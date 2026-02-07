@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03zb5p722",
-            "@type": "wcrp:location",
             "continent_code": "SA",
             "continent_name": "South America",
             "country_code": "CO",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Antioquia",
             "lat": 6.25184,
             "lng": -75.56359,
-            "name": "Medellín"
+            "name": "Medellín",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03zb5p722"
         }
     ],
     "ror": "03zb5p722",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "itm"
 }

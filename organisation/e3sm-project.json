@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/032khhz22",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "GB",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "England",
             "lat": 52.6291,
             "lng": -2.0577,
-            "name": "Essington"
+            "name": "Essington",
+            "@type": "wcrp:location",
+            "@id": "universal:location/032khhz22"
         }
     ],
     "ror": "032khhz22",
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "e3sm-project"
 }

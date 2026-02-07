@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02dzbc556",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FR",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Occitanie",
             "lat": 43.60426,
             "lng": 1.44367,
-            "name": "Toulouse"
+            "name": "Toulouse",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02dzbc556"
         }
     ],
     "ror": "02dzbc556",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cerfacs"
 }

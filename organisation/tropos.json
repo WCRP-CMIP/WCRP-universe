@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03a5xsc56",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Saxony",
             "lat": 51.33962,
             "lng": 12.37129,
-            "name": "Leipzig"
+            "name": "Leipzig",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03a5xsc56"
         }
     ],
     "ror": "03a5xsc56",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "tropos"
 }

@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03e8s1d88",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Brandenburg",
             "lat": 52.39886,
             "lng": 13.06566,
-            "name": "Potsdam"
+            "name": "Potsdam",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03e8s1d88"
         }
     ],
     "ror": "03e8s1d88",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pik"
 }

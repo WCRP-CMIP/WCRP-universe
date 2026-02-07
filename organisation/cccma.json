@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01ge8wp14",
-            "@type": "wcrp:location",
             "continent_code": "OC",
             "continent_name": "Oceania",
             "country_code": "AU",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "Queensland",
             "lat": -26.39433,
             "lng": 153.0901,
-            "name": "Noosa"
+            "name": "Noosa",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01ge8wp14"
         }
     ],
     "ror": "01ge8wp14",
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cccma"
 }

@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04frnva71",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "CH",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Geneva",
             "lat": 46.20222,
             "lng": 6.14569,
-            "name": "Geneva"
+            "name": "Geneva",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04frnva71"
         }
     ],
     "ror": "04frnva71",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "wwrp"
 }

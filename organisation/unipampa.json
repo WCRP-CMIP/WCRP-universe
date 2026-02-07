@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/003qt4p19",
-            "@type": "wcrp:location",
             "continent_code": "SA",
             "continent_name": "South America",
             "country_code": "BR",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Rio Grande do Sul",
             "lat": -31.33139,
             "lng": -54.10694,
-            "name": "Bagé"
+            "name": "Bagé",
+            "@type": "wcrp:location",
+            "@id": "universal:location/003qt4p19"
         }
     ],
     "ror": "003qt4p19",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "unipampa"
 }

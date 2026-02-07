@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03r8z3t63",
-            "@type": "wcrp:location",
             "continent_code": "OC",
             "continent_name": "Oceania",
             "country_code": "AU",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "New South Wales",
             "lat": -33.86785,
             "lng": 151.20732,
-            "name": "Sydney"
+            "name": "Sydney",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03r8z3t63"
         }
     ],
     "ror": "03r8z3t63",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "unsw"
 }

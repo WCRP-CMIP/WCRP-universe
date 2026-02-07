@@ -14,15 +14,15 @@
     "kind": "Company",
     "labels": [],
     "location": {
-        "@id": "universal:location/01kk86953",
-        "@type": "esgf:location",
-        "lat": -37.814,
-        "lon": 144.96332,
         "city": "Melbourne",
         "country": [
             "Australia",
             "AU"
-        ]
+        ],
+        "lat": -37.814,
+        "lon": 144.96332,
+        "@type": "esgf:location",
+        "@id": "universal:location/01kk86953"
     },
     "ror": "01kk86953",
     "url": [
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cr"
 }

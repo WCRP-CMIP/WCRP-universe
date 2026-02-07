@@ -12,15 +12,15 @@
     "kind": "Education",
     "labels": [],
     "location": {
-        "@id": "universal:location/0036rpn28",
-        "@type": "esgf:location",
-        "lat": 47.12187,
-        "lon": -88.56901,
         "city": "Houghton",
         "country": [
             "United States",
             "US"
-        ]
+        ],
+        "lat": 47.12187,
+        "lon": -88.56901,
+        "@type": "esgf:location",
+        "@id": "universal:location/0036rpn28"
     },
     "ror": "0036rpn28",
     "url": [
@@ -30,7 +30,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "mtu"
 }

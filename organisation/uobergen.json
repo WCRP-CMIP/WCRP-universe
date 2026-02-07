@@ -14,15 +14,15 @@
         "Universitetet i Bergen"
     ],
     "location": {
-        "@id": "universal:location/03zga2b32",
-        "@type": "esgf:location",
-        "lat": 60.39299,
-        "lon": 5.32415,
         "city": "Bergen",
         "country": [
             "Norway",
             "NO"
-        ]
+        ],
+        "lat": 60.39299,
+        "lon": 5.32415,
+        "@type": "esgf:location",
+        "@id": "universal:location/03zga2b32"
     },
     "ror": "03zga2b32",
     "url": [
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uobergen"
 }

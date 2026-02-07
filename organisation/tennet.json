@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02dyts510",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NL",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Gelderland",
             "lat": 51.98,
             "lng": 5.91111,
-            "name": "Arnhem"
+            "name": "Arnhem",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02dyts510"
         }
     ],
     "ror": "02dyts510",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "tennet"
 }

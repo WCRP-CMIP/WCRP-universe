@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01j240j59",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "IR",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Tehran",
             "lat": 35.69439,
             "lng": 51.42151,
-            "name": "Tehran"
+            "name": "Tehran",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01j240j59"
         }
     ],
     "ror": "01j240j59",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "asmerc"
 }

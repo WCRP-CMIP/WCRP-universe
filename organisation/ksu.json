@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05p1j8758",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Kansas",
             "lat": 39.18361,
             "lng": -96.57167,
-            "name": "Manhattan"
+            "name": "Manhattan",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05p1j8758"
         }
     ],
     "ror": "05p1j8758",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ksu"
 }

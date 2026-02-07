@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02x681a42",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "CH",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Zurich",
             "lat": 47.39724,
             "lng": 8.61872,
-            "name": "Dübendorf"
+            "name": "Dübendorf",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02x681a42"
         }
     ],
     "ror": "02x681a42",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "empa"
 }

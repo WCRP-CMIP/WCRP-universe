@@ -16,8 +16,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05mv8mg96",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "IN",
@@ -26,7 +24,9 @@
             "country_subdivision_name": "Karnataka",
             "lat": 12.97194,
             "lng": 77.59369,
-            "name": "Bengaluru"
+            "name": "Bengaluru",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05mv8mg96"
         }
     ],
     "ror": "05mv8mg96",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "gti"
 }

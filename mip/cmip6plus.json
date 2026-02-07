@@ -9,7 +9,8 @@
     "@type": [
         "wcrp:mip",
         "esgvoc:Mip",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "cmip6plus"
 }

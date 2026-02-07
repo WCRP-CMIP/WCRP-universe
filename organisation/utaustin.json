@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00hj54h04",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Texas",
             "lat": 30.26715,
             "lng": -97.74306,
-            "name": "Austin"
+            "name": "Austin",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00hj54h04"
         }
     ],
     "ror": "00hj54h04",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "utaustin"
 }

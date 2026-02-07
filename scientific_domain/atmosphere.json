@@ -9,7 +9,8 @@
     "@type": [
         "wcrp:scientific_domain",
         "esgvoc:ScientificDomain",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "atmosphere"
 }

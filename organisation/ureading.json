@@ -8,15 +8,15 @@
     "kind": "Education",
     "labels": [],
     "location": {
-        "@id": "universal:location/05v62cm79",
-        "@type": "esgf:location",
-        "lat": 51.45625,
-        "lon": -0.97113,
         "city": "Reading",
         "country": [
             "United Kingdom",
             "GB"
-        ]
+        ],
+        "lat": 51.45625,
+        "lon": -0.97113,
+        "@type": "esgf:location",
+        "@id": "universal:location/05v62cm79"
     },
     "ror": "05v62cm79",
     "url": [
@@ -26,7 +26,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ureading"
 }

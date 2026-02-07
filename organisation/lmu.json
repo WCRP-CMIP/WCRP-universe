@@ -19,8 +19,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05591te55",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "DE",
@@ -29,7 +27,9 @@
             "country_subdivision_name": "Bavaria",
             "lat": 48.13743,
             "lng": 11.57549,
-            "name": "Munich"
+            "name": "Munich",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05591te55"
         }
     ],
     "ror": "05591te55",
@@ -41,7 +41,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "lmu"
 }

@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/052x1hs80",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "NL",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "South Holland",
             "lat": 52.07667,
             "lng": 4.29861,
-            "name": "The Hague"
+            "name": "The Hague",
+            "@type": "wcrp:location",
+            "@id": "universal:location/052x1hs80"
         }
     ],
     "ror": "052x1hs80",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "pbl"
 }

@@ -11,8 +11,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/0565gth98",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "CA",
@@ -21,7 +19,9 @@
             "country_subdivision_name": "Quebec",
             "lat": 45.50884,
             "lng": -73.58781,
-            "name": "Montreal"
+            "name": "Montreal",
+            "@type": "wcrp:location",
+            "@id": "universal:location/0565gth98"
         }
     ],
     "ror": "0565gth98",
@@ -32,7 +32,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ouranos"
 }

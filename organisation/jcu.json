@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/04gsp2c11",
-            "@type": "wcrp:location",
             "continent_code": "OC",
             "continent_name": "Oceania",
             "country_code": "AU",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Queensland",
             "lat": -19.26639,
             "lng": 146.80569,
-            "name": "Townsville"
+            "name": "Townsville",
+            "@type": "wcrp:location",
+            "@id": "universal:location/04gsp2c11"
         }
     ],
     "ror": "04gsp2c11",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "jcu"
 }

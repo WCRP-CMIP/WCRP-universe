@@ -17,8 +17,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00hgzve81",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "SE",
@@ -27,7 +25,9 @@
             "country_subdivision_name": "Östergötland",
             "lat": 58.59419,
             "lng": 16.1826,
-            "name": "Norrköping"
+            "name": "Norrköping",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00hgzve81"
         }
     ],
     "ror": "00hgzve81",
@@ -39,7 +39,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "smhi"
 }

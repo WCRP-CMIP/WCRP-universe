@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/01y34t753",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "CN",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "Shandong",
             "lat": 36.06488,
             "lng": 120.38042,
-            "name": "Qingdao"
+            "name": "Qingdao",
+            "@type": "wcrp:location",
+            "@id": "universal:location/01y34t753"
         }
     ],
     "ror": "01y34t753",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "fio-qlnm"
 }

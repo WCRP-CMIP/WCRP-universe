@@ -15,8 +15,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/05ynxx418",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "SE",
@@ -25,7 +23,9 @@
             "country_subdivision_name": "Östergötland",
             "lat": 58.41086,
             "lng": 15.62157,
-            "name": "Linköping"
+            "name": "Linköping",
+            "@type": "wcrp:location",
+            "@id": "universal:location/05ynxx418"
         }
     ],
     "ror": "05ynxx418",
@@ -37,7 +37,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "liu"
 }

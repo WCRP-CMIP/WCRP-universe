@@ -13,8 +13,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/03tzscr25",
-            "@type": "wcrp:location",
             "continent_code": "NA",
             "continent_name": "North America",
             "country_code": "US",
@@ -23,7 +21,9 @@
             "country_subdivision_name": "District of Columbia",
             "lat": 38.89511,
             "lng": -77.03637,
-            "name": "Washington"
+            "name": "Washington",
+            "@type": "wcrp:location",
+            "@id": "universal:location/03tzscr25"
         }
     ],
     "ror": "03tzscr25",
@@ -35,7 +35,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "boem"
 }

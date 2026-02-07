@@ -12,8 +12,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/00mrw8k38",
-            "@type": "wcrp:location",
             "continent_code": "AS",
             "continent_name": "Asia",
             "country_code": "TH",
@@ -22,7 +20,9 @@
             "country_subdivision_name": "Bangkok",
             "lat": 13.75398,
             "lng": 100.50144,
-            "name": "Bangkok"
+            "name": "Bangkok",
+            "@type": "wcrp:location",
+            "@id": "universal:location/00mrw8k38"
         }
     ],
     "ror": "00mrw8k38",
@@ -34,7 +34,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "ru-core"
 }

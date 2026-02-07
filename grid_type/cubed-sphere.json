@@ -6,7 +6,8 @@
     "@type": [
         "universal",
         "wcrp:grid_type",
-        "esgvoc:GridType"
+        "esgvoc:GridType",
+        "undefined"
     ],
     "@id": "cubed-sphere"
 }

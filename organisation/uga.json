@@ -14,8 +14,6 @@
     ],
     "location": [
         {
-            "@id": "universal:location/02rx3b187",
-            "@type": "wcrp:location",
             "continent_code": "EU",
             "continent_name": "Europe",
             "country_code": "FR",
@@ -24,7 +22,9 @@
             "country_subdivision_name": "Auvergne-Rhône-Alpes",
             "lat": 45.1787,
             "lng": 5.76281,
-            "name": "Saint-Martin-d'Hères"
+            "name": "Saint-Martin-d'Hères",
+            "@type": "wcrp:location",
+            "@id": "universal:location/02rx3b187"
         }
     ],
     "ror": "02rx3b187",
@@ -36,7 +36,8 @@
     "@type": [
         "wcrp:organisation",
         "esgvoc:Organisation",
-        "universal"
+        "universal",
+        "undefined"
     ],
     "@id": "uga"
 }
