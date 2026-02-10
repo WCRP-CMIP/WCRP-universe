@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "type": "activity",
+    "id": "cordex-fpsconv",
+    "name": "CORDEX-FPSCONV",
+    "cmip_acronym": "CORDEX-FPSCONV",
+    "long_name": "CORDEX Flagship Pilot Study on Convective phenomena at high resolution over Europe and the Mediterranean",
+    "url": null,
+    "drs_name": "CORDEX-FPSCONV"
+}

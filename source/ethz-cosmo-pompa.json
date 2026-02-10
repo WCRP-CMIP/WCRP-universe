@@ -1,18 +1,17 @@
 {
     "@context": "000_context.jsonld",
-    "id": "ictp-regcm4-7",
+    "id": "ethz-cosmo-pompa",
     "type": "source",
-    "drs_name": "ICTP-RegCM4-7",
+    "drs_name": "ETHZ-COSMO-POMPA",
     "activity_participation": [
-        "cordex",
         "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [
-        "ictp"
+        "ethz"
     ],
-    "label": "ICTP-RegCM4-7",
-    "label_extended": "ICTP Regional Climate Model",
+    "label": "ETHZ-COSMO-POMPA",
+    "label_extended": "COSMO-pompa",
     "license": {},
     "model_component": null,
     "release_year": null

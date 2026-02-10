@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hclimcom",
+    "type": "organisation",
+    "drs_name": "HCLIMCOM",
+    "description": "hclimcom institute"
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "can-11",
+    "type": "region",
+    "description": "Nesting Canary Islands and Madeira",
+    "drs_name": "CAN-11"
+}

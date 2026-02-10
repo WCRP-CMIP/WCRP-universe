@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "med-11",
+    "type": "region",
+    "description": "Nesting Mediterranean",
+    "drs_name": "MED-11"
+}

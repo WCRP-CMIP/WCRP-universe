@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "alp-3i",
+    "type": "region",
+    "description": "Greater Alpine Region",
+    "drs_name": "ALP-3I"
+}

@@ -1,18 +1,17 @@
 {
     "@context": "000_context.jsonld",
-    "id": "ictp-regcm4-7",
+    "id": "hclimcom-hclim38-arome",
     "type": "source",
-    "drs_name": "ICTP-RegCM4-7",
+    "drs_name": "HCLIMCOM-HCLIM38-AROME",
     "activity_participation": [
-        "cordex",
         "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [
-        "ictp"
+        "hclimcom"
     ],
-    "label": "ICTP-RegCM4-7",
-    "label_extended": "ICTP Regional Climate Model",
+    "label": "HCLIMCOM-HCLIM38-AROME",
+    "label_extended": "HCLIM38-AROME",
     "license": {},
     "model_component": null,
     "release_year": null

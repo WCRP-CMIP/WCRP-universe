@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "alp-25",
+    "type": "region",
+    "description": "Nesting Greater Alpine Region",
+    "drs_name": "ALP-25"
+}

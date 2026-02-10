@@ -1,18 +1,17 @@
 {
     "@context": "000_context.jsonld",
-    "id": "ictp-regcm4-7",
+    "id": "ipsl-wegc-wrf381da",
     "type": "source",
-    "drs_name": "ICTP-RegCM4-7",
+    "drs_name": "IPSL-WEGC-WRF381DA",
     "activity_participation": [
-        "cordex",
         "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [
-        "ictp"
+        "ipsl-wegc"
     ],
-    "label": "ICTP-RegCM4-7",
-    "label_extended": "ICTP Regional Climate Model",
+    "label": "IPSL-WEGC-WRF381DA",
+    "label_extended": "WRF381DA",
     "license": {},
     "model_component": null,
     "release_year": null
