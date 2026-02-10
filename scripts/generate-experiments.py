@@ -1066,7 +1066,7 @@ class Holder(BaseModel):
 
         # TODO: ask someone to translate/write hist-piAQ for me.
         # Not sure what hist-piAQ is or how it is defined.
-        # Need to get AerChemMIP people to way in as this comment wasn't enough:
+        # Need to get AerChemMIP people to weigh in as this comment wasn't enough:
         # https://github.com/WCRP-CMIP/WCRP-universe/pull/85#discussion_r2609747439
 
     def add_geomip_entries(self) -> "Holder":
