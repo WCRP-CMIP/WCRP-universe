@@ -221,6 +221,14 @@ class Holder(BaseModel):
                 ],
             ),
             ActivityProject(
+                id="rfmip",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-9-3447-2016",
+                    "https://doi.org/10.5194/acp-20-9591-2020",
+                ],
+            ),
+            ActivityProject(
                 id="scenariomip",
                 experiments=[],
                 urls=["https://doi.org/10.5194/egusphere-2024-3765"],
@@ -812,6 +820,261 @@ class Holder(BaseModel):
 
         return self
 
+    def add_piclim_entries(self) -> "Holder":
+        def get_purturbation_description(
+            quantifies: str, forcing_diff_from_picontrol: str
+        ) -> str:
+            description_full = (
+                "In combination with `piClim-control`, "
+                f"quantifies present-day {quantifies} effective radiative forcing (ERF). "
+                f"Same as `piClim-control`, except {forcing_diff_from_picontrol} use present-day values "
+                "(typically the last year of the `historical` simulation within the same CMIP era "
+                "e.g. 2014 values for CMIP6, 2021 values for CMIP7)."
+            )
+
+            return description_full
+
+        for (
+            drs_name,
+            description,
+            activity,
+            # No parent for these?
+            # parent_experiment,
+            required_model_components,
+            additional_allowed_model_components,
+            # No parent for these?
+            # branch_information,
+            tier,
+        ) in (
+            (
+                "piClim-control",
+                (
+                    "Baseline for effective radiative forcing (ERF) calculations. "
+                    "`piControl` with prescribed sea-surface temperatures "
+                    "and sea-ice concentrations."
+                ),
+                "cmip",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-anthro",
+                get_purturbation_description(
+                    "total anthropogenic",
+                    "all anthropogenic forcings",
+                ),
+                "cmip",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-4xCO2",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies a quadrupling of atmospheric carbon dioxide's "
+                    "(4xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels."
+                ),
+                "cmip",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-CH4",
+                get_purturbation_description(
+                    "methane",
+                    "methane concentrations or emissions (as appropriate for the model)",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-N2O",
+                get_purturbation_description(
+                    "nitrous oxide",
+                    "nitrous oxide concentrations or emissions (as appropriate for the model)",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-NOx",
+                get_purturbation_description(
+                    "nitrous oxide (NOx)",
+                    "nitrous oxide (NOx) emissions",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-ODS",
+                get_purturbation_description(
+                    "ozone-depleting substances'",
+                    "ozone-depleting substances concentrations",
+                ),
+                "aerchemmip",
+                ["agcm", "chem"],
+                ["aer", "bgc"],
+                1,
+            ),
+            (
+                "piClim-SO2",
+                get_purturbation_description(
+                    "sulfur (dioxide)",
+                    "sulfur emissions",
+                ),
+                "aerchemmip",
+                ["agcm", "aer"],
+                ["chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-aer",
+                get_purturbation_description(
+                    "aerosol",
+                    "anthropogenic aerosol emissions",
+                ),
+                "rfmip",
+                ["agcm", "aer"],
+                ["chem", "bgc"],
+                1,
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity=activity,
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=None,
+                end_timestamp=None,
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=30,
+                parent_activity=None,
+                parent_experiment=None,
+                parent_mip_era=None,
+                required_model_components=required_model_components,
+                start_timestamp=None,
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                parent_mip_era="dont_write",
+                tier=tier,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        for (
+            drs_name,
+            description,
+            get_description_project,
+            required_model_components,
+            additional_allowed_model_components,
+        ) in (
+            (
+                "piClim-histaer",
+                (
+                    "Simulation of the historical and future period with prescribed sea-surface temperatures "
+                    "and sea-ice concentrations "
+                    "(the slightly confusing name is a legacy thing). "
+                    "Aerosol emissions follow the `historical` experiment then a future experiment "
+                    "while all other forcings follow `piControl` "
+                    "to allow for a (approximate) diagnosis of "
+                    "transient historical aerosol effective radiative forcing (ERF) "
+                    "(can be compared with `piClim-aer` which provides a more precise "
+                    "quantification of present-day aerosol ERF)."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
+                ),
+                ["aogcm", "aer"],
+                ["chem", "bgc"],
+            ),
+            (
+                "piClim-histall",
+                (
+                    "Simulation of the historical period with prescribed sea-surface temperatures "
+                    "and sea-ice concentrations "
+                    "(the slightly confusing name is a legacy thing). "
+                    "All forcings follow the `historical` experiment then a future experiment "
+                    "to allow for a (approximate) diagnosis of "
+                    "transient historical effective radiative forcing (ERF) "
+                    "(can be compared with the `piClim-*` experiments which provide a more precise "
+                    "quantification of present-day ERF from various forcers)."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
+                ),
+                ["aogcm", "aer"],
+                ["chem", "bgc"],
+            ),
+        ):
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="rfmip",
+                additional_allowed_model_components=additional_allowed_model_components,
+                branch_information=None,
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=1,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity=None,
+                parent_experiment=None,
+                parent_mip_era=None,
+                required_model_components=required_model_components,
+                start_timestamp="1850-01-01",
+                tier=1,
+            )
+
+            self.experiments_universe.append(univ)
+
+            description_project = get_description_project(description)
+
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                description=description_project,
+                start_timestamp="1850-01-01",
+                end_timestamp="2100-12-31",
+                min_number_yrs_per_sim=251,
+                tier=1,
+            )
+            self.experiments_project.append(proj)
+
+            self.add_experiment_to_activity(proj)
+
+        return self
+
+    def write_files(self, project_root: Path, universe_root: Path) -> None:
+        for experiment_project in self.experiments_project:
+            experiment_project.write_file(project_root)
+
+        for experiment_universe in self.experiments_universe:
+            experiment_universe.write_file(universe_root)
+
+        for activity in self.activities:
+            activity.write_file(project_root)
+
     @staticmethod
     def get_scenario_tier(drs_name: str) -> int:
         # A bit stupid, because in practice everything ends up being tier 1,
@@ -1210,6 +1473,7 @@ def main():
     holder.add_flat10_entries()
     holder.add_damip_entries()
     holder.add_pmip_entries()
+    holder.add_piclim_entries()
     holder.add_scenario_entries()
     holder.add_scenario_aerchemmip_entries()
     holder.add_geomip_entries()
