@@ -1,0 +1,17 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g103",
+  "type": "horizontal_grid_cell",
+  "name": "g103",
+  "region": "global",
+  "grid_type": "regular_latitude_longitude",
+  "grid_mapping": "latitude_longitude",
+  "temporal_refinement": "static",
+  "drs_name": "g103",
+  "x_resolution": 1.0,
+  "y_resolution": 1.0,
+  "horizontal_units": "degree",
+  "southernmost_latitude": -89.5,
+  "westernmost_longitude": 0.5,
+  "n_cells": 64800
+}
