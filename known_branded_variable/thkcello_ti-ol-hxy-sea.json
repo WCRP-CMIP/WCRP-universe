@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "thkcello_ti-ol-hxy-sea",
   "type": "known_branded_variable",
   "drs_name": "thkcello_ti-ol-hxy-sea",
@@ -16,13 +17,12 @@
   ],
   "cell_methods": "area: mean where sea",
   "cell_measures": "area: areacello volume: volcello",
-  "history": "",
+  "history": ": registered",
   "realm": "ocean",
   "temporal_label": "ti",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

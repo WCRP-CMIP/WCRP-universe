@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "tsn_tavg-u-hxy-lnd",
   "type": "known_branded_variable",
   "drs_name": "tsn_tavg-u-hxy-lnd",
@@ -14,15 +15,14 @@
     "latitude",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean (weighted by snow mass on land)",
+  "cell_methods": "depth: area: time: mean where land (weighted by snow mass on land)",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "landIce",
+  "history": ": registered",
+  "realm": "land ice",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

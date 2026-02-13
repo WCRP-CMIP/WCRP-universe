@@ -1,8 +1,9 @@
 {
+  "@context": "000_context.jsonld",
   "id": "tropoz_tavg-u-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "tropoz_tavg-u-hxy-u",
-  "cf_standard_name": "equivalent_thickness_at_stp_of_atmosphere_ozone_content",
+  "cf_standard_name": "equivalent_thickness_at_stp_of_troposphere_ozone_content",
   "cf_units": "m",
   "cf_sn_status": "approved",
   "variable_root_name": "tropoz",
@@ -16,13 +17,12 @@
   ],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": "",
+  "history": ": registered",
   "realm": "aerosol",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Provisional - discussion required",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

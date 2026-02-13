@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "sfdsi_tavg-u-hxy-sea",
   "type": "known_branded_variable",
   "drs_name": "sfdsi_tavg-u-hxy-sea",
@@ -8,7 +9,7 @@
   "variable_root_name": "sfdsi",
   "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-sea",
-  "description": "This field is physical, and it arises since sea ice has a nonzero salt content, so it exchanges salt with the liquid ocean upon melting and freezing.\n",
+  "description": "Basal salt flux into ocean from sea ice. This field is physical, and it arises since sea ice has a nonzero salt content, so it exchanges salt with the liquid ocean upon melting and freezing.\n",
   "dimensions": [
     "longitude",
     "latitude",
@@ -16,13 +17,12 @@
   ],
   "cell_methods": "area: mean where sea time: mean",
   "cell_measures": "area: areacello",
-  "history": "",
+  "history": ": registered",
   "realm": "ocean",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": "down"
 }

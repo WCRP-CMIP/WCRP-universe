@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "sfpm25_tavg-h2m-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "sfpm25_tavg-h2m-hxy-u",
@@ -8,22 +9,21 @@
   "variable_root_name": "sfpm25",
   "var_def_qualifier": "",
   "branding_suffix_name": "tavg-h2m-hxy-u",
-  "description": "Mass fraction of atmospheric particulate compounds with an aerodynamic diameter of less than or equal to 2.5 micrometers. To specify the relative humidity and temperature at which the particle size applies, provide scalar coordinate variables with the standard names of \"relative\\_humidity\" and \"air\\_temperature\".\n",
+  "description": "Daily mean PM2.5 mass mixing ratio near surface.\n",
   "dimensions": [
     "longitude",
     "latitude",
     "time",
-    "lowerModelLayer"
+    "height2m"
   ],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": "",
+  "history": ": registered",
   "realm": "aerosol",
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Provisional - likely accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

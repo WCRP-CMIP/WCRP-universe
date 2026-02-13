@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "cli_tavg-al-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "cli_tavg-al-hxy-u",
@@ -8,7 +9,7 @@
   "variable_root_name": "cli",
   "var_def_qualifier": "",
   "branding_suffix_name": "tavg-al-hxy-u",
-  "description": "Calculated as the mass of cloud ice  in the grid cell divided by the mass of air (including the water in all phases) in the grid cell.  This includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.\n",
+  "description": "Includes both large-scale and convective cloud.  This is calculated as the mass of cloud ice in the grid cell divided by the mass of air (including the water in all phases) in the grid cell. It includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.\n",
   "dimensions": [
     "longitude",
     "latitude",
@@ -17,13 +18,12 @@
   ],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "atmos",
+  "history": ": registered",
+  "realm": "atmospheric",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }
