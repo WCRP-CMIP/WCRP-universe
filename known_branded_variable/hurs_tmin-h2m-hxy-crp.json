@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "hurs_tmin-h2m-hxy-crp",
   "type": "known_branded_variable",
   "drs_name": "hurs_tmin-h2m-hxy-crp",
@@ -17,13 +18,12 @@
   ],
   "cell_methods": "area: mean where crops time: minimum",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "atmos",
+  "history": ": registered",
+  "realm": "atmospheric",
   "temporal_label": "tmin",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
   "area_label": "crp",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

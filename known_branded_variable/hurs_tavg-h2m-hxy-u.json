@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "hurs_tavg-h2m-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "hurs_tavg-h2m-hxy-u",
@@ -8,7 +9,7 @@
   "variable_root_name": "hurs",
   "var_def_qualifier": "",
   "branding_suffix_name": "tavg-h2m-hxy-u",
-  "description": "Relative humidity at 2m above the surface\n",
+  "description": "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.\n",
   "dimensions": [
     "longitude",
     "latitude",
@@ -17,13 +18,12 @@
   ],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "atmos",
+  "history": ": registered",
+  "realm": "atmospheric",
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

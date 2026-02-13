@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "o2min_tavg-u-hxy-sea",
   "type": "known_branded_variable",
   "drs_name": "o2min_tavg-u-hxy-sea",
@@ -16,13 +17,12 @@
   ],
   "cell_methods": "area: mean where sea time: mean",
   "cell_measures": "area: areacello",
-  "history": "",
-  "realm": "ocnBgchem",
+  "history": ": registered",
+  "realm": "ocean biogeochemistry",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

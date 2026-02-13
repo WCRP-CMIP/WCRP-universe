@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "albisccp_tavg-u-hxy-cl",
   "type": "known_branded_variable",
   "drs_name": "albisccp_tavg-u-hxy-cl",
@@ -8,21 +9,20 @@
   "variable_root_name": "albisccp",
   "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-cl",
-  "description": "time-means weighted by the ISCCP Total Cloud Fraction - see <https://www.cfmip.org/tools-and-data/cosp> \n",
+  "description": "Time-means are weighted by the ISCCP Total Cloud Fraction - see  <https://www.cfmip.org/tools-and-data/cosp>. Values will be missing where there are no clouds or no sunlight. \n",
   "dimensions": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: time: mean where cloud",
+  "cell_methods": "area: time: mean where cloud (weighted by ISCCP total cloud area)",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "atmos",
+  "history": ": registered",
+  "realm": "atmospheric",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "cl",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

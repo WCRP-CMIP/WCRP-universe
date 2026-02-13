@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "slthick_ti-sl-hxy-lnd",
   "type": "known_branded_variable",
   "drs_name": "slthick_ti-sl-hxy-lnd",
@@ -16,13 +17,12 @@
   ],
   "cell_methods": "area: mean where land",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "land",
+  "history": ": registered",
+  "realm": "land surface",
   "temporal_label": "ti",
   "vertical_label": "sl",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "noaahi2m_tmax-h2m-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "noaahi2m_tmax-h2m-hxy-u",
@@ -17,13 +18,12 @@
   ],
   "cell_methods": "area: mean time: maximum",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "atmos",
+  "history": ": registered",
+  "realm": "atmospheric",
   "temporal_label": "tmax",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

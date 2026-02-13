@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "drynh3_tavg-u-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "drynh3_tavg-u-hxy-u",
@@ -8,7 +9,7 @@
   "variable_root_name": "drynh3",
   "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-u",
-  "description": "Monthly Dry Deposition Rate of NH3 at surface\n",
+  "description": "Daily Dry Deposition Rate of NH3 at surface. Vertically integrated throughout the column to the surface.\n",
   "dimensions": [
     "longitude",
     "latitude",
@@ -16,13 +17,12 @@
   ],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": "",
-  "realm": "atmosChem",
+  "history": ": registered",
+  "realm": "atmospheric chemistry",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }
