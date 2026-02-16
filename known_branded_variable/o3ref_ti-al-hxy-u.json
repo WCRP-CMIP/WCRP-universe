@@ -18,7 +18,7 @@
   "cell_methods": "area: mean",
   "cell_measures": "area: areacella",
   "history": ": registered",
-  "realm": "atmospheric chemistry",
+  "realm": "atmosChem",
   "temporal_label": "ti",
   "vertical_label": "al",
   "horizontal_label": "hxy",

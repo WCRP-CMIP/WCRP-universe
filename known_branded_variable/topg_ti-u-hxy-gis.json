@@ -17,7 +17,7 @@
   "cell_methods": "area: mean where grounded_ice_sheet",
   "cell_measures": "area: areacellg",
   "history": ": registered",
-  "realm": "land ice",
+  "realm": "landIce",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",

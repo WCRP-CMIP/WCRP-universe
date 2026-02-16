@@ -16,7 +16,7 @@
   "cell_methods": "height: area: time: mean (with all samples weighted by the number of moles of air in the sample)",
   "cell_measures": "",
   "history": ": registered",
-  "realm": "atmospheric chemistry",
+  "realm": "atmosChem",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",

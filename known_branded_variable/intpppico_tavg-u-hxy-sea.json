@@ -18,7 +18,7 @@
   "cell_methods": "area: mean where sea depth: sum where sea (over entire ocean column) time: mean",
   "cell_measures": "area: areacello",
   "history": ": registered",
-  "realm": "ocean biogeochemistry",
+  "realm": "ocnBgchem",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

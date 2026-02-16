@@ -18,7 +18,7 @@
   "cell_methods": "area: time: mean",
   "cell_measures": "--MODEL",
   "history": ": registered",
-  "realm": "sea ice",
+  "realm": "seaIce",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

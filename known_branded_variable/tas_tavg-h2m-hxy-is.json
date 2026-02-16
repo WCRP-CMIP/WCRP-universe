@@ -19,7 +19,7 @@
   "cell_methods": "area: time: mean where ice_sheet",
   "cell_measures": "area: areacella",
   "history": ": registered",
-  "realm": "land ice",
+  "realm": "landIce",
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",

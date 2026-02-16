@@ -19,7 +19,7 @@
   "cell_methods": "area: mean time: minimum within days time: mean over days",
   "cell_measures": "area: areacella",
   "history": ": registered",
-  "realm": "atmospheric",
+  "realm": "atmos",
   "temporal_label": "tminavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",

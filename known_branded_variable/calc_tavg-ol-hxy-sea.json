@@ -19,7 +19,7 @@
   "cell_methods": "area: mean where sea time: mean",
   "cell_measures": "area: areacello volume: volcello",
   "history": ": registered",
-  "realm": "ocean biogeochemistry",
+  "realm": "ocnBgchem",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",

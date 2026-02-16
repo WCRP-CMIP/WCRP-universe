@@ -19,7 +19,7 @@
   "cell_methods": "area: mean time: mean within years time: mean over years",
   "cell_measures": "area: areacella",
   "history": ": registered",
-  "realm": "atmospheric",
+  "realm": "atmos",
   "temporal_label": "tclm",
   "vertical_label": "alh",
   "horizontal_label": "hxy",

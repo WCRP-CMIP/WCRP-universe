@@ -20,7 +20,7 @@
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
   "history": ": registered",
-  "realm": "atmospheric",
+  "realm": "atmos",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

@@ -18,7 +18,7 @@
   "cell_methods": "area: mean where land time: mean (weighted by snow mass on land)",
   "cell_measures": "area: areacella",
   "history": ": registered",
-  "realm": "land ice",
+  "realm": "landIce",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

@@ -16,7 +16,7 @@
   "cell_methods": "area: sum where floating_ice_shelf (mask=sftflf) time: mean",
   "cell_measures": "",
   "history": ": registered",
-  "realm": "land ice",
+  "realm": "landIce",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
