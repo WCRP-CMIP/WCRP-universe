@@ -71,11 +71,11 @@ The following forms are available for this repository, and can be used to add or
 
 - [cell_variable_type](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=cell_variable_type.yml)
 
-## 2 Modifying or reusing existing entries
+## 2. Modifying or reusing existing entries
 
 The following links will open pre-filled GitHub issues with content from the selected files. These can be used to update entries or make new ones. 
 
-<details name="activity">
+<details markdown="1" name="activity">
 <summary>Activity (40 entries)</summary>
 
 - [AERA-MIP](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=activity.yml&title=Modify%3A+Activity%3A+AERA-MIP&issue_kind=%22Modify%22&description=&validation_key=AERA-MIP&ui_label=Adaptive+Emission+Reduction+Approach+Modelling+Intercomparison+Project)
@@ -160,14 +160,14 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="archive_id">
+<details markdown="1" name="archive_id">
 <summary>Archive Id (1 entries)</summary>
 
 - [WCRP](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=archive_id.yml&title=Modify%3A+Archive+Id%3A+WCRP&issue_kind=%22Modify%22&description=A+collection+of+datasets+from+the+AMIP+and+CMIP+project+phases%2C+along+with+project+supporting+datasets+from+the+input4MIPs+%28forcing+datasets+used+to+drive+CMIP+simulations%29+and+obs4MIPs+%28observational+datasets+used+to+evaluate+CMIP+simulations%2C+and+numerous+other+supporting+activities&validation_key=WCRP&ui_label=)
 
 </details>
 
-<details name="arrangement">
+<details markdown="1" name="arrangement">
 <summary>Arrangement (5 entries)</summary>
 
 - [arakawa-a](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=arrangement.yml&title=Modify%3A+Arrangement%3A+arakawa-a&issue_kind=%22Modify%22&description=The+Arakawa+A+grid+places+mass-+and+velocity-related+quantities+at+the+same+location+on+each+grid+cell.&validation_key=arakawa-a&ui_label=Arakawa+A-grid)
@@ -182,7 +182,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="calendar">
+<details markdown="1" name="calendar">
 <summary>Calendar (9 entries)</summary>
 
 - [360_day](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=calendar.yml&title=Modify%3A+Calendar%3A+360_day&issue_kind=%22Modify%22&description=A+calendar+in+which+each+year+consists+of+12+months+of+exactly+30+days+each.+This+calendar+is+commonly+used+in+climate+models+for+computational+convenience.&validation_key=360_day&alias=&ui_label=360-day)
@@ -205,7 +205,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="cell_variable_type">
+<details markdown="1" name="cell_variable_type">
 <summary>Cell Variable Type (5 entries)</summary>
 
 - [mass](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=cell_variable_type.yml&title=Modify%3A+Cell+Variable+Type%3A+mass&issue_kind=%22Modify%22&description=Mass-related+variables%2C+including+those+representing+thermodynamic+and+hydrodynamic+quantities.&validation_key=mass&ui_label=Mass)
@@ -220,7 +220,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="frequency">
+<details markdown="1" name="frequency">
 <summary>Frequency (16 entries)</summary>
 
 - [1hrCM](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=frequency.yml&title=Modify%3A+Frequency%3A+1hrCM&issue_kind=%22Modify%22&description=monthly-mean+diurnal+cycle+resolving+each+day+into+1-hour+means&validation_key=1hrCM&ui_label=1+Hour+Climatology+Monthly)
@@ -257,7 +257,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="grid_mapping">
+<details markdown="1" name="grid_mapping">
 <summary>Grid Mapping (16 entries)</summary>
 
 - [albers_conical_equal_area](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=grid_mapping.yml&title=Modify%3A+Grid+Mapping%3A+albers_conical_equal_area&issue_kind=%22Modify%22&description=A+projection+that+preserves+area+but+not+shape%2C+creating+accurate+representations+of+large%2C+east-west-oriented+land+masses%2C+as+defined+by+the+CF+conventions.&validation_key=albers_conical_equal_area&ui_label=Albers+Conical+Equal+Area)
@@ -294,7 +294,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="grid_type">
+<details markdown="1" name="grid_type">
 <summary>Grid Type (23 entries)</summary>
 
 - [cubed_sphere](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=grid_type.yml&title=Modify%3A+Grid+Type%3A+cubed_sphere&issue_kind=%22Modify%22&description=The+spherical+surface+is+defined+as+six+coupled+logically+square+regions.&validation_key=cubed_sphere&ui_label=Cubed+Sphere)
@@ -345,7 +345,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="license">
+<details markdown="1" name="license">
 <summary>License (4 entries)</summary>
 
 - [CC BY 4.0](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=license.yml&title=Modify%3A+License%3A+CC+BY+4.0&issue_kind=%22Modify%22&description=&validation_key=CC+BY+4.0&ui_label=Creative+Commons+Attribution+4.0+International)
@@ -358,7 +358,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="mip">
+<details markdown="1" name="mip">
 <summary>Mip (4 entries)</summary>
 
 - [CMIP5](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=mip.yml&title=Modify%3A+Mip%3A+CMIP5&issue_kind=%22Modify%22&description=&validation_key=CMIP5&ui_label=)
@@ -371,7 +371,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="organisation">
+<details markdown="1" name="organisation">
 <summary>Organisation (316 entries)</summary>
 
 - [ACCESS-NRI](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=organisation.yml&title=Modify%3A+Organisation%3A+ACCESS-NRI&issue_kind=%22Modify%22&description=)
@@ -1008,7 +1008,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="product">
+<details markdown="1" name="product">
 <summary>Product (4 entries)</summary>
 
 - [derived](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=product.yml&title=Modify%3A+Product%3A+derived&issue_kind=%22Modify%22&description=Data+that+has+been+processed+or+transformed+from+raw+model+output.+Derived+data+includes+value-added+products+such+as+anomalies%2C+indices%2C+or+other+statistics+that+are+computed+from+the+original+model+outputs.&validation_key=derived&ui_label=)
@@ -1021,7 +1021,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="region">
+<details markdown="1" name="region">
 <summary>Region (10 entries)</summary>
 
 - [30s-90s](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=region.yml&title=Modify%3A+Region%3A+30s-90s&issue_kind=%22Modify%22&description=The+geographical+region+of+the+Earth%27s+surface+between+30+and+90+degrees+south.&validation_key=30s-90s&ui_label=30S-90S)
@@ -1046,7 +1046,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="resolution">
+<details markdown="1" name="resolution">
 <summary>Resolution (15 entries)</summary>
 
 - [0.5 km](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=resolution.yml&title=Modify%3A+Resolution%3A+0.5+km&issue_kind=%22Modify%22&description=Resolution+of+0.5+km&validation_key=0.5+km&ui_label=)
@@ -1081,7 +1081,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="scientific_domain">
+<details markdown="1" name="scientific_domain">
 <summary>Scientific Domain (8 entries)</summary>
 
 - [aerosol](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=scientific_domain.yml&title=Modify%3A+Scientific+Domain%3A+aerosol&issue_kind=%22Modify%22&description=Aerosol&validation_key=aerosol&alias=aerosol&ui_label=Aerosol)
@@ -1102,7 +1102,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="source_type">
+<details markdown="1" name="source_type">
 <summary>Source Type (14 entries)</summary>
 
 - [AER](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=source_type.yml&title=Modify%3A+Source+Type%3A+AER&issue_kind=%22Modify%22&description=aerosol+treatment+in+an+atmospheric+model+where+concentrations+are+calculated+based+on+emissions%2C+transformation%2C+and+removal+processes+%28rather+than+being+prescribed+or+omitted+entirely%29&validation_key=AER&ui_label=)
@@ -1135,7 +1135,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="temporal_refinement">
+<details markdown="1" name="temporal_refinement">
 <summary>Temporal Refinement (3 entries)</summary>
 
 - [adaptive](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=temporal_refinement.yml&title=Modify%3A+Temporal+Refinement%3A+adaptive&issue_kind=%22Modify%22&description=Grid+resolution+changes+dynamically+during+the+simulation+based+on+solution+features.&validation_key=adaptive&ui_label=Adaptive)
@@ -1146,7 +1146,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="truncation_method">
+<details markdown="1" name="truncation_method">
 <summary>Truncation Method (2 entries)</summary>
 
 - [rhomboidal](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=truncation_method.yml&title=Modify%3A+Truncation+Method%3A+rhomboidal&issue_kind=%22Modify%22&description=Rhomboidal+truncation+in+spectral+space+where+%7Cm%7C+%E2%89%A4+M+and+%7Cn-m%7C+%E2%89%A4+N.+Provides+more+uniform+resolution+across+latitudes+than+triangular+truncation.&validation_key=rhomboidal&ui_label=Rhomboidal+Truncation)
@@ -1155,7 +1155,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="units">
+<details markdown="1" name="units">
 <summary>Units (5 entries)</summary>
 
 - [degree](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=units.yml&title=Modify%3A+Units%3A+degree&issue_kind=%22Modify%22&description=Angular+measurement+in+degrees+for+latitude%2Flongitude+coordinates.&validation_key=degree&ui_label=Degrees)
@@ -1170,7 +1170,7 @@ The following links will open pre-filled GitHub issues with content from the sel
 
 </details>
 
-<details name="vertical_coordinate">
+<details markdown="1" name="vertical_coordinate">
 <summary>Vertical Coordinate (20 entries)</summary>
 
 - [air_potential_temperature](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=vertical_coordinate.yml&title=Modify%3A+Vertical+Coordinate%3A+air_potential_temperature&issue_kind=%22Modify%22&description=Air+potential+temperature+is+the+temperature+a+parcel+of+air+would+have+if+moved+dry+adiabatically+to+a+standard+pressure%2C+as+defined+by+the+CF+conventions.&validation_key=air_potential_temperature&ui_label=Air+Potential+Temperature)
