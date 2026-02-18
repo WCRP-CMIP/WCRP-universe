@@ -3,5 +3,7 @@
     "id": "alp-3i",
     "type": "region",
     "description": "Greater Alpine Region",
-    "drs_name": "ALP-3I"
+    "drs_name": "ALP-3I",
+    "cf_standard_region": null,
+    "iso_region": null
 }
