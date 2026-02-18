@@ -3,5 +3,8 @@
     "id": "fzj-idl",
     "type": "organisation",
     "drs_name": "FZJ-IDL",
+    "members": [
+        "fzj-idl"
+    ],
     "description": "fzj-idl institute"
 }

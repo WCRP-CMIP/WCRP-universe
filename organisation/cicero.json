@@ -3,5 +3,8 @@
     "id": "cicero",
     "type": "organisation",
     "drs_name": "CICERO",
+    "members": [
+        "cicero"
+    ],
     "description": "cicero institute"
 }

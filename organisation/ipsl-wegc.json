@@ -3,5 +3,8 @@
     "id": "ipsl-wegc",
     "type": "organisation",
     "drs_name": "IPSL-WEGC",
+    "members": [
+        "ipsl-wegc"
+    ],
     "description": "ipsl-wegc institute"
 }

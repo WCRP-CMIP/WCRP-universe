@@ -3,5 +3,8 @@
     "id": "bccr",
     "type": "organisation",
     "drs_name": "BCCR",
+    "members": [
+        "bccr"
+    ],
     "description": "bccr institute"
 }

@@ -3,5 +3,8 @@
     "id": "ethz",
     "type": "organisation",
     "drs_name": "ETHZ",
+    "members": [
+        "ethz"
+    ],
     "description": "ethz institute"
 }

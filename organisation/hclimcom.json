@@ -3,5 +3,8 @@
     "id": "hclimcom",
     "type": "organisation",
     "drs_name": "HCLIMCOM",
+    "members": [
+        "hclimcom"
+    ],
     "description": "hclimcom institute"
 }

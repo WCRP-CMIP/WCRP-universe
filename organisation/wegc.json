@@ -3,5 +3,8 @@
     "id": "wegc",
     "type": "organisation",
     "drs_name": "WEGC",
+    "members": [
+        "wegc"
+    ],
     "description": "wegc institute"
 }
