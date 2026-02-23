@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "hus_tpt-al-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "hus_tpt-al-hxy-u",
@@ -8,7 +9,7 @@
   "variable_root_name": "hus",
   "var_def_qualifier": "",
   "branding_suffix_name": "tpt-al-hxy-u",
-  "description": "Specific Humidity\n",
+  "description": "Specific humidity is the mass fraction of water vapor in (moist) air.\n",
   "dimensions": [
     "longitude",
     "latitude",
@@ -17,13 +18,12 @@
   ],
   "cell_methods": "area: mean time: point",
   "cell_measures": "area: areacella",
-  "history": "",
+  "history": ": registered",
   "realm": "atmos",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

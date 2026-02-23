@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "reffclws_tpt-al-hxy-scl",
   "type": "known_branded_variable",
   "drs_name": "reffclws_tpt-al-hxy-scl",
@@ -17,13 +18,12 @@
   ],
   "cell_methods": "area: mean where stratiform_cloud time: point",
   "cell_measures": "area: areacella",
-  "history": "",
+  "history": ": registered",
   "realm": "atmos",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hxy",
   "area_label": "scl",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

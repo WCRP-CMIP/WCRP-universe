@@ -1,8 +1,9 @@
 {
+  "@context": "000_context.jsonld",
   "id": "exppob_tavg-u-hxy-sea",
   "type": "known_branded_variable",
   "drs_name": "exppob_tavg-u-hxy-sea",
-  "cf_standard_name": "sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water",
+  "cf_standard_name": "sinking_mole_flux_at_sea_floor_of_particulate_organic_phosphorus_in_sea_water ",
   "cf_units": "mol m-2 s-1",
   "cf_sn_status": "approved",
   "variable_root_name": "exppob",
@@ -12,18 +13,16 @@
   "dimensions": [
     "longitude",
     "latitude",
-    "time",
-    "seafloor"
+    "time"
   ],
   "cell_methods": "area: mean where sea time: mean",
   "cell_measures": "area: areacello",
-  "history": "",
+  "history": ": registered",
   "realm": "ocnBgchem",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "Provisional - likely accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": "down"
 }

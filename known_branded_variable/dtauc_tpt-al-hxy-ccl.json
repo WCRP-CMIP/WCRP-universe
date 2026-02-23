@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "dtauc_tpt-al-hxy-ccl",
   "type": "known_branded_variable",
   "drs_name": "dtauc_tpt-al-hxy-ccl",
@@ -17,13 +18,12 @@
   ],
   "cell_methods": "area: mean where convective_cloud time: point",
   "cell_measures": "area: areacella",
-  "history": "",
+  "history": ": registered",
   "realm": "atmos",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hxy",
   "area_label": "ccl",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }
