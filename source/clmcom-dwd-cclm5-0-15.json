@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-dwd-cclm5-0-15",
+    "type": "source",
+    "drs_name": "CLMCOM-DWD-CCLM5-0-15",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "clmcom-dwd"
+    ],
+    "label": "CLMCOM-DWD-CCLM5-0-15",
+    "label_extended": "CCLM5-0-15",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

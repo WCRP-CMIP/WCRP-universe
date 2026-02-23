@@ -4,7 +4,8 @@
     "type": "source",
     "drs_name": "GERICS-REMO2015",
     "activity_participation": [
-        "cordex"
+        "cordex",
+        "cordex-fpsconv"
     ],
     "cohort": [],
     "organisation_id": [

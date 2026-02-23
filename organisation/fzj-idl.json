@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fzj-idl",
+    "type": "organisation",
+    "drs_name": "FZJ-IDL",
+    "members": [
+        "fzj-idl"
+    ],
+    "description": "fzj-idl institute"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-eth-cosmo-crclim",
+    "type": "source",
+    "drs_name": "CLMCOM-ETH-COSMO-CRCLIM",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "clmcom-eth"
+    ],
+    "label": "CLMCOM-ETH-COSMO-CRCLIM",
+    "label_extended": "COSMO-crCLIM",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

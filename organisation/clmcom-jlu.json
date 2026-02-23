@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-jlu",
+    "type": "organisation",
+    "drs_name": "CLMCOM-JLU",
+    "members": [
+        "clmcom-jlu"
+    ],
+    "description": "clmcom-jlu institute"
+}

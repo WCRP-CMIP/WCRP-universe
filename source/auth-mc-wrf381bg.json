@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "auth-mc-wrf381bg",
+    "type": "source",
+    "drs_name": "AUTH-MC-WRF381BG",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "auth-mc"
+    ],
+    "label": "AUTH-MC-WRF381BG",
+    "label_extended": "WRF381BG",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

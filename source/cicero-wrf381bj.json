@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cicero-wrf381bj",
+    "type": "source",
+    "drs_name": "CICERO-WRF381BJ",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "cicero"
+    ],
+    "label": "CICERO-WRF381BJ",
+    "label_extended": "WRF381BJ",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

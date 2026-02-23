@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mohc-hadrem3-ra-um10-1",
+    "type": "source",
+    "drs_name": "MOHC-HADREM3-RA-UM10-1",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "mohc"
+    ],
+    "label": "MOHC-HADREM3-RA-UM10-1",
+    "label_extended": "HadREM3-RA-UM10-1",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

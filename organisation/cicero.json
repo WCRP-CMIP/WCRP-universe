@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cicero",
+    "type": "organisation",
+    "drs_name": "CICERO",
+    "members": [
+        "cicero"
+    ],
+    "description": "cicero institute"
+}

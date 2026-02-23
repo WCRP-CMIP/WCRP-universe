@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ipsl-wegc-wrf381da",
+    "type": "source",
+    "drs_name": "IPSL-WEGC-WRF381DA",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "ipsl-wegc"
+    ],
+    "label": "IPSL-WEGC-WRF381DA",
+    "label_extended": "WRF381DA",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

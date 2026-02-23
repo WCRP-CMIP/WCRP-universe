@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-wegc-cclm5-0-09",
+    "type": "source",
+    "drs_name": "CLMCOM-WEGC-CCLM5-0-09",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "clmcom-wegc"
+    ],
+    "label": "CLMCOM-WEGC-CCLM5-0-09",
+    "label_extended": "CCLM5-0-09",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}
