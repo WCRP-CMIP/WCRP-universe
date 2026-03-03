@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "siarea_tavg-u-hm-u",
   "type": "known_branded_variable",
   "drs_name": "siarea_tavg-u-hm-u",
@@ -14,13 +15,12 @@
   ],
   "cell_methods": "area: sum time: mean",
   "cell_measures": "",
-  "history": "",
+  "history": ": registered",
   "realm": "seaIce",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
   "area_label": "u",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }
