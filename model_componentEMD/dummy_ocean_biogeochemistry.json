@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "dummy_ocean_biogeochemistry",
+  "type": "model_componentEMD",
+  "component": "ocean_biogeochemistry",
+  "name": "Dummy Ocean Biogeochemistry",
+  "family": "Dummy",
+  "description": "Dummy ocean biogeochemistry component for testing purposes. Do not use in production.",
+  "code_base": "private",
+  "references": [
+    "dummy_model_ref_001"
+  ],
+  "drs_name": "Dummy Ocean Biogeochemistry",
+  "horizontal_computational_grid": "h999",
+  "vertical_computational_grid": "v999"
+}
