@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "nsoil",
     "type": "variable",
-    "description": "Nitrogen Mass in Soil Pool",
     "drs_name": "nSoil",
-    "long_name": null,
+    "description": "\"Content\" indicates a quantity per unit area. The \"soil content\" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including \"content_of_soil_layer\" are used.",
+    "long_name": "Nitrogen Mass in Soil Pool",
     "standard_name": "soil_mass_content_of_nitrogen",
     "units": "kg m-2"
 }

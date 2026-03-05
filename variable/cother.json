@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "cother",
     "type": "variable",
-    "description": "Carbon Mass in Vegetation Components Other than Leaves, Stems and Roots",
     "drs_name": "cOther",
-    "long_name": null,
+    "description": "\"Content\" indicates a quantity per unit area.  \"Miscellaneous living matter\" means all those parts of plants that are not leaf, stem, root or other separately named components. The term \"plants\" refers to the kingdom of plants in the modern classification which excludes fungi. Plants are autotrophs i.e. \"producers\" of biomass using carbon obtained from carbon dioxide.",
+    "long_name": "Carbon Mass in Vegetation Components Other than Leaves, Stems and Roots",
     "standard_name": "miscellaneous_living_matter_mass_content_of_carbon",
     "units": "kg m-2"
 }

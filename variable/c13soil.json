@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "c13soil",
     "type": "variable",
-    "description": "Mass of 13C in Soil Pool",
     "drs_name": "c13Soil",
-    "long_name": null,
+    "description": "\"Content\" indicates a quantity per unit area. The \"soil content\" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including \"content_of_soil_layer\" are used. \"C\" means the element carbon and \"13C\" is the stable isotope \"carbon-13\", having six protons and seven neutrons.",
+    "long_name": "Mass of 13C in Soil Pool",
     "standard_name": "soil_mass_content_of_13C",
     "units": "kg m-2"
 }
