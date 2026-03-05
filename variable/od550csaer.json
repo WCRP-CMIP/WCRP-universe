@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "od550csaer",
     "type": "variable",
-    "description": "Ambient Aerosol Optical Thickness at 550nm",
     "drs_name": "od550csaer",
-    "long_name": null,
-    "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol_particles",
+    "description": "AOD from aerosols assuming cloud free fraction of gridbox if od550aer is for all-sky. The original description in the data request suggest that this would mean dry aerosol, but after discussing with AerChemMIP2 this seems to be wrong and normal calculation in the cloud free fraction is correct.\n\nThe optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-\"optical_thickness\") on traversing the path. The atmosphere optical thickness applies to radiation passing through the entire atmosphere. A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. \"Aerosol\" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. The specification of a physical process by the phrase \"due_to_\" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Phrase \"assuming_cloud_free\" means the cloud free fraction of the grid box.",
+    "long_name": "Ambient Aerosol Optical Thickness at 550nm",
+    "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol_particles_assuming_clear_sky",
     "units": "1"
 }

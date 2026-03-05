@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "mmrso4",
     "type": "variable",
-    "description": "Aerosol Sulfate Mass Mixing Ratio",
     "drs_name": "mmrso4",
-    "long_name": null,
+    "description": "Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X).  \"Mass_fraction_of_sulfate\" means that the mass is expressed as mass of SO4. \"Aerosol\" means the system of suspended liquid or solid particles in air (except cloud droplets) and their carrier gas, the air itself. Aerosol particles take up ambient water (a process known as hygroscopic growth) depending on the relative humidity and the composition of the particles. \"Dry aerosol particles\" means aerosol particles without any water uptake.",
+    "long_name": "Aerosol Sulfate Mass Mixing Ratio",
     "standard_name": "mass_fraction_of_sulfate_dry_aerosol_particles_in_air",
-    "units": "kg kg-1"
+    "units": "1"
 }

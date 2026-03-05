@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "emilnox",
     "type": "variable",
-    "description": "Layer-Integrated Lightning Production of NOx",
     "drs_name": "emilnox",
-    "long_name": null,
-    "standard_name": "tendency_of_atmosphere_moles_of_nox_expressed_as_nitrogen",
-    "units": "mol s-1"
+    "description": "\"tendency_of_X\" means derivative of X with respect to time.  \"Content\" indicates a quantity per unit area.  \"Nox\" means nitric oxide (NO) and nitrogen dioxide (NO2). \"Emission\" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface).  \"Emission\" is a process entirely distinct from \"re-emission\" which is used in some standard names.",
+    "long_name": "Layer-Integrated Lightning Production of NOx",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_due_to_emission",
+    "units": "kg m-2 s-1"
 }

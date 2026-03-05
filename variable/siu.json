@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "siu",
     "type": "variable",
-    "description": "X-Component of Sea-Ice Velocity",
     "drs_name": "siu",
-    "long_name": null,
+    "description": "A velocity is a vector quantity. \"x\" indicates a vector component along the grid x-axis, positive with increasing x. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "X-Component of Sea-Ice Velocity",
     "standard_name": "sea_ice_x_velocity",
     "units": "m s-1"
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "hno3",
     "type": "variable",
-    "description": "HNO3 Volume Mixing Ratio",
     "drs_name": "hno3",
-    "long_name": null,
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "HNO3 Volume Mixing Ratio",
     "standard_name": "mole_fraction_of_nitric_acid_in_air",
-    "units": "mol mol-1"
+    "units": "1"
 }

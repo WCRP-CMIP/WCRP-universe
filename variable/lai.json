@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "lai",
     "type": "variable",
-    "description": "Leaf Area Index",
     "drs_name": "lai",
-    "long_name": null,
+    "description": "\"X_area\" means the horizontal area occupied by X within the grid cell.",
+    "long_name": "Leaf Area Index",
     "standard_name": "leaf_area_index",
     "units": "1"
 }

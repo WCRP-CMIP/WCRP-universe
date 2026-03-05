@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "vmo",
     "type": "variable",
-    "description": "Ocean Mass Y Transport",
     "drs_name": "vmo",
-    "long_name": null,
+    "description": "\"y\" indicates a vector component along the grid y-axis, positive with increasing y.",
+    "long_name": "Ocean Mass Y Transport",
     "standard_name": "ocean_mass_y_transport",
     "units": "kg s-1"
 }

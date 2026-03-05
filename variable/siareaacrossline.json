@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "siareaacrossline",
     "type": "variable",
-    "description": "Sea-Ice Area Flux Through Straits",
     "drs_name": "siareaacrossline",
-    "long_name": null,
+    "description": "Transport \"across_line\" means that which crosses a particular line on the Earth's surface; formally this means the integral along the line of the normal component of the transport. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Area Flux Through Straits",
     "standard_name": "sea_ice_area_transport_across_line",
     "units": "m2 s-1"
 }

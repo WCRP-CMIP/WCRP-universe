@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sisaltmass",
     "type": "variable",
-    "description": "Mass of Salt in Sea Ice per Area",
     "drs_name": "sisaltmass",
-    "long_name": null,
+    "description": "\"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs. \"Content\" indicates a quantity per unit area. The \"sea_ice content\" of a quantity refers to the vertical integral from the surface down to the bottom of the sea ice.",
+    "long_name": "Mass of Salt in Sea Ice",
     "standard_name": "sea_ice_mass_content_of_salt",
     "units": "kg m-2"
 }

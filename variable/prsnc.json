@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "prsnc",
     "type": "variable",
-    "description": "Convective Snowfall Flux",
     "drs_name": "prsnc",
-    "long_name": null,
+    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Convective Snowfall Flux",
     "standard_name": "convective_snowfall_flux",
     "units": "kg m-2 s-1"
 }

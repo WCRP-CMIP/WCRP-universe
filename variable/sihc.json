@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sihc",
     "type": "variable",
-    "description": "Sea-Ice Heat Content per Unit Area",
     "drs_name": "sihc",
-    "long_name": null,
-    "standard_name": "sea_ice_temperature_expressed_as_heat_content",
+    "description": "Enthalpy of sea ice per unit area. This includes both the latent and sensible heat contributions. Liquid water at 0 degC is assumed to have an enthalpy content of 0 J. This variable does not include enthalpy of snow, but does include enthalpy of brine. Enthalpy content is always negative since both the sensible and the latent heat contributions are smaller than that of liquid water. Enthalpy is conserved under variations of pressure. When these can be neglected, enthalpy content is identical to internal energy content (apart from an arbitrary additive constant), and sometimes referred to as \"heat content\".",
+    "long_name": "Sea-Ice Heat Content",
+    "standard_name": "sea_ice_enthalpy_content",
     "units": "J m-2"
 }

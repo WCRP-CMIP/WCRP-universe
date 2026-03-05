@@ -3,8 +3,8 @@
     "id": "sftof",
     "type": "variable",
     "drs_name": "sftof",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "description": "\"Area fraction\" is the fraction of a grid cell's horizontal area that has some characteristic of interest. It is evaluated as the area of interest divided by the grid cell area. It may be expressed as a fraction, a percentage, or any other dimensionless representation of a fraction.",
+    "long_name": "Sea Area Percentage",
+    "standard_name": "sea_area_fraction",
+    "units": "1"
 }

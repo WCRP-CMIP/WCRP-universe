@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "fgdms",
     "type": "variable",
-    "description": "Surface Upward Flux of DMS",
     "drs_name": "fgdms",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Upward\" indicates a vector component which is positive when directed upward (negative downward). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. The chemical formula for dimethyl sulfide is (CH3)2S.  Dimethyl sulfide is sometimes referred to as DMS.",
+    "long_name": "Surface Upward Flux of DMS",
     "standard_name": "surface_upward_mole_flux_of_dimethyl_sulfide",
     "units": "mol m-2 s-1"
 }

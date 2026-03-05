@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "hcl",
     "type": "variable",
-    "description": "HCl Volume Mixing Ratio",
     "drs_name": "hcl",
-    "long_name": null,
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of hydrogen chloride is HCl.",
+    "long_name": "HCl Volume Mixing Ratio",
     "standard_name": "mole_fraction_of_hydrogen_chloride_in_air",
-    "units": "mol mol-1"
+    "units": "1"
 }

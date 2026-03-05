@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "c2h4",
     "type": "variable",
-    "drs_name": "C2H4",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "drs_name": "c2h4",
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "C2H4 volume mixing ratio",
+    "standard_name": "mole_fraction_of_ethene_in_air",
+    "units": "1"
 }

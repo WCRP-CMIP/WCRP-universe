@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "mrros",
     "type": "variable",
-    "description": "Surface Runoff",
     "drs_name": "mrros",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. Runoff is the liquid water which drains from land. If not specified, \"runoff\" refers to the sum of surface runoff and subsurface drainage. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Surface Runoff",
     "standard_name": "surface_runoff_flux",
     "units": "kg m-2 s-1"
 }

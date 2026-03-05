@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "siv",
     "type": "variable",
-    "description": "Y-Component of Sea-Ice Velocity",
     "drs_name": "siv",
-    "long_name": null,
+    "description": "A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Y-Component of Sea-Ice Velocity",
     "standard_name": "sea_ice_y_velocity",
     "units": "m s-1"
 }

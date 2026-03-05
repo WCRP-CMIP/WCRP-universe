@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sfriver",
     "type": "variable",
-    "description": "Salt Flux into Sea Water from Rivers",
     "drs_name": "sfriver",
-    "long_name": null,
+    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"River\" refers to water in the fluvial system (stream and floodplain).",
+    "long_name": "Salt Flux into Sea Water from Rivers",
     "standard_name": "salt_flux_into_sea_water_from_rivers",
     "units": "kg m-2 s-1"
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tnhusa",
     "type": "variable",
-    "description": "Tendency of Specific Humidity Due to Advection",
     "drs_name": "tnhusa",
-    "long_name": null,
+    "description": "The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. \"tendency_of_X\" means derivative of X with respect to time. \"specific\" means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.",
+    "long_name": "Tendency of Specific Humidity Due to Advection",
     "standard_name": "tendency_of_specific_humidity_due_to_advection",
     "units": "s-1"
 }

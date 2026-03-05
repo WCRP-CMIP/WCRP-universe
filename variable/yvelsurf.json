@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "yvelsurf",
     "type": "variable",
-    "description": "Y-Component of Land Ice Surface Velocity",
     "drs_name": "yvelsurf",
-    "long_name": null,
+    "description": "\"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y. The surface called \"surface\" means the lower boundary of the atmosphere.",
+    "long_name": "Y-Component of Land Ice Surface Velocity",
     "standard_name": "land_ice_surface_y_velocity",
     "units": "m s-1"
 }

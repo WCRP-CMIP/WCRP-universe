@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sidivvel",
     "type": "variable",
-    "description": "Divergence of the Sea-Ice Velocity Field",
     "drs_name": "sidivvel",
-    "long_name": null,
+    "description": "The phrase \"[horizontal_]divergence_of_X\" means [horizontal] divergence of a vector X; if X does not have a vertical component then \"horizontal\" should be omitted. A velocity is a vector quantity. Sea ice velocity is defined as a two-dimensional vector, with no vertical component. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Divergence of the Sea-Ice Velocity Field",
     "standard_name": "divergence_of_sea_ice_velocity",
     "units": "s-1"
 }

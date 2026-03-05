@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depthsl",
+    "type": "variable",
+    "drs_name": "depthsl",
+    "description": "Depth is the vertical distance below the surface.",
+    "long_name": "Total (Cumulative) Thickness of All Soil Layers",
+    "standard_name": "depth",
+    "units": "m"
+}

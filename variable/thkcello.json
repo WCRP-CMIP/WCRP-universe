@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "thkcello",
     "type": "variable",
-    "description": "Ocean Model Cell Thickness",
     "drs_name": "thkcello",
-    "long_name": null,
+    "description": "\"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
+    "long_name": "Ocean Model Cell Thickness",
     "standard_name": "cell_thickness",
     "units": "m"
 }

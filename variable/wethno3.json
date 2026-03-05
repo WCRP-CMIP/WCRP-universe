@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wethno3",
+    "type": "variable",
+    "drs_name": "wethno3",
+    "description": "\"tendency_of_X\" means derivative of X with respect to time.  \"Content\" indicates a quantity per unit area.  \"Wet deposition\" means deposition by precipitation.",
+    "long_name": "Wet deposition of HNO3",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_nitric_acid_due_to_wet_deposition",
+    "units": "kg m-2 s-1"
+}

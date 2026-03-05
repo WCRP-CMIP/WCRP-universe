@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "dgw",
     "type": "variable",
-    "description": "Change in Groundwater",
     "drs_name": "dgw",
-    "long_name": null,
+    "description": "The phrase \"change_over_time_in_X\" means change in a quantity X over a time-interval, which should be defined by the bounds of the time coordinate. \"Water\" means water in all phases. Groundwater is subsurface water below the depth of the water table. \"Amount\" means mass per unit area.",
+    "long_name": "Change in Groundwater",
     "standard_name": "change_over_time_in_groundwater_amount",
     "units": "kg m-2"
 }

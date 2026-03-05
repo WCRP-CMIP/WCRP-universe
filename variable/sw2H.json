@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sw2H",
+    "type": "variable",
+    "drs_name": "sw2H",
+    "description": "The phrase \"ratio_of_X_to_Y\" means X/Y. The phrase \"isotope_ratio\" is used in the construction isotope_ratio_of_A_to_B where A and B are both named isotopes. It means the ratio of the number of atoms of A to the number of atoms of B present within a medium. \"H\" means the element \"hydrogen\" and \"2H\" is the stable isotope \"hydrogen-2\", usually called \"deuterium\". \"1H\" is the stable isotope \"hydrogen-1\". The phrase \"in_sea_water_excluding_solutes_and_solids\" means that the standard name refers only to the chemical compound water and does not include material that may be dissolved or suspended in the aqueous medium.",
+    "long_name": "Isotopic Ratio of Deuterium in Sea Water",
+    "standard_name": "isotope_ratio_of_2H_to_1H_in_sea_water_excluding_solutes_and_solids",
+    "units": "1"
+}

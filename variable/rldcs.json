@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "rldcs",
     "type": "variable",
-    "description": "Downwelling Clear-Sky Longwave Radiation",
     "drs_name": "rldcs",
-    "long_name": null,
+    "description": "Downwelling radiation is radiation from above. It does not mean \"net downward\". The sign convention is that \"upwelling\" is positive upwards and \"downwelling\" is positive downwards. The term \"longwave\" means longwave radiation. When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. A phrase assuming_condition indicates that the named quantity is the value which would obtain if all  aspects of the system were unaltered except for the assumption of the  circumstances specified by the condition. \"Clear sky\" means in the absence of clouds.",
+    "long_name": "Downwelling Clear-Sky Longwave Radiation",
     "standard_name": "downwelling_longwave_flux_in_air_assuming_clear_sky",
     "units": "W m-2"
 }

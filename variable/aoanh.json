@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "aoanh",
     "type": "variable",
-    "description": "Northern Hemisphere Tracer Lifetime",
     "drs_name": "aoanh",
-    "long_name": null,
+    "description": "The quantity with standard name tracer_lifetime is the total length of time a passive tracer exists within a medium. Passive tracers are used in models to study processes such as transport and deposition.",
+    "long_name": "Northern Hemisphere Tracer Lifetime",
     "standard_name": "tracer_lifetime",
-    "units": "yr"
+    "units": "s"
 }

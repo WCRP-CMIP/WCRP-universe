@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "rsut",
     "type": "variable",
-    "description": "TOA Outgoing Shortwave Radiation",
     "drs_name": "rsut",
-    "long_name": null,
+    "description": "\"shortwave\" means shortwave radiation. \"toa\" means top of atmosphere. The TOA outgoing shortwave flux is the reflected and scattered solar radiative flux i.e. the \"upwelling\" TOA shortwave flux, sometimes called the \"outgoing shortwave radiation\" or \"OSR\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "TOA Outgoing Shortwave Radiation",
     "standard_name": "toa_outgoing_shortwave_flux",
     "units": "W m-2"
 }

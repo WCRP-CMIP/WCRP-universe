@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "c13Veg",
+    "type": "variable",
+    "drs_name": "c13Veg",
+    "description": "\"Content\" indicates a quantity per unit area. \"Vegetation\" means any living plants e.g. trees, shrubs, grass. \"C\" means the element carbon and \"13C\" is the stable isotope \"carbon-13\", having six protons and seven neutrons.",
+    "long_name": "Mass of 13C in Vegetation",
+    "standard_name": "vegetation_mass_content_of_13C",
+    "units": "kg m-2"
+}
