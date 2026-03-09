@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tnpeo",
     "type": "variable",
-    "description": "Tendency of Ocean Potential Energy Content",
     "drs_name": "tnpeo",
-    "long_name": null,
+    "description": "\"Content\" indicates a quantity per unit area.  Potential energy is the sum of the gravitational potential energy relative to the geoid and the centripetal potential energy. (The geopotential is the specific potential energy.)  \"tendency_of_X\" means derivative of X with respect to time.",
+    "long_name": "Tendency of Ocean Potential Energy Content",
     "standard_name": "tendency_of_ocean_potential_energy_content",
     "units": "W m-2"
 }

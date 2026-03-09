@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "knmi-ec-earth",
+    "type": "source",
+    "drs_name": "KNMI-EC-EARTH",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "knmi"
+    ],
+    "label": "KNMI-EC-EARTH",
+    "label_extended": "KNMI-EC-EARTH",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

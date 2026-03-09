@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tdps",
     "type": "variable",
-    "description": "2m Dewpoint Temperature",
     "drs_name": "tdps",
-    "long_name": null,
+    "description": "Dew point temperature is the temperature at which a parcel of air reaches saturation upon being cooled at constant pressure and specific humidity. It is strongly recommended that a variable with this standard name should have a units_metadata attribute, with one of the values \"on-scale\" or \"difference\", whichever is appropriate for the data, because it is essential to know whether the temperature is on-scale (meaning relative to the origin of the scale indicated by the units) or refers to temperature differences (implying that the origin of the temperature scale is irrevelant), in order to convert the units correctly (cf. https://cfconventions.org/cf-conventions/cf-conventions.html#temperature-units).",
+    "long_name": "2m Dewpoint Temperature",
     "standard_name": "dew_point_temperature",
     "units": "K"
 }

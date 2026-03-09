@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "nleaf",
     "type": "variable",
-    "description": "Nitrogen Mass in Leaves",
     "drs_name": "nLeaf",
-    "long_name": null,
+    "description": "\"Content\" indicates a quantity per unit area.",
+    "long_name": "Nitrogen Mass in Leaves",
     "standard_name": "leaf_mass_content_of_nitrogen",
     "units": "kg m-2"
 }

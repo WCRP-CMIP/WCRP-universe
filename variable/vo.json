@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "vo",
     "type": "variable",
-    "description": "Sea Water Y Velocity",
     "drs_name": "vo",
-    "long_name": null,
+    "description": "A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y.",
+    "long_name": "Sea Water Y Velocity",
     "standard_name": "sea_water_y_velocity",
     "units": "m s-1"
 }

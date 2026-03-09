@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "hfy",
     "type": "variable",
-    "description": "Ocean Heat Y Transport",
     "drs_name": "hfy",
-    "long_name": null,
+    "description": "\"y\" indicates a vector component along the grid y-axis, positive with increasing y.",
+    "long_name": "Ocean Heat Y Transport",
     "standard_name": "ocean_heat_y_transport",
     "units": "W"
 }

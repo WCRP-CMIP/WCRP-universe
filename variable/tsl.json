@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tsl",
     "type": "variable",
-    "description": "Temperature of Soil",
     "drs_name": "tsl",
-    "long_name": null,
+    "description": "Soil temperature is the bulk temperature of the soil, not the surface (skin) temperature. \"Soil\" means the near-surface layer where plants sink their roots. For subsurface temperatures that extend beneath the soil layer or in areas where there is no surface soil layer, the standard name temperature_in_ground should be used. It is strongly recommended that a variable with this standard name should have a units_metadata attribute, with one of the values \"on-scale\" or \"difference\", whichever is appropriate for the data, because it is essential to know whether the temperature is on-scale (meaning relative to the origin of the scale indicated by the units) or refers to temperature differences (implying that the origin of the temperature scale is irrevelant), in order to convert the units correctly (cf. https://cfconventions.org/cf-conventions/cf-conventions.html#temperature-units).",
+    "long_name": "Temperature of Soil",
     "standard_name": "soil_temperature",
     "units": "K"
 }

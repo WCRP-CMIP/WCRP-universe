@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "fvegsoil",
     "type": "variable",
-    "description": "Total Carbon Mass Flux from Vegetation Directly to Soil",
     "drs_name": "fVegSoil",
-    "long_name": null,
+    "description": "\"Vegetation\" means any plants e.g. trees, shrubs, grass.  \"Litter\" is dead plant material in or above the soil. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Total Carbon Mass Flux from Vegetation Directly to Soil",
     "standard_name": "carbon_mass_flux_into_soil_from_vegetation_excluding_litter",
     "units": "kg m-2 s-1"
 }

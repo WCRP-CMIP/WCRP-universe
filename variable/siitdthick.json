@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "siitdthick",
     "type": "variable",
-    "description": "Sea-Ice Thickness in Thickness Categories",
     "drs_name": "siitdthick",
-    "long_name": null,
+    "description": "\"Thickness\" means the vertical extent of a layer. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Thickness in Ice Thickness Categories",
     "standard_name": "sea_ice_thickness",
     "units": "m"
 }

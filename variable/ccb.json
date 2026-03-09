@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "ccb",
     "type": "variable",
-    "description": "Air Pressure at Convective Cloud Base",
     "drs_name": "ccb",
-    "long_name": null,
+    "description": "The phrase \"cloud_base\" refers to the base of the lowest cloud. Convective cloud is that produced by the convection schemes in an atmosphere model. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.",
+    "long_name": "Air Pressure at Convective Cloud Base",
     "standard_name": "air_pressure_at_convective_cloud_base",
     "units": "Pa"
 }

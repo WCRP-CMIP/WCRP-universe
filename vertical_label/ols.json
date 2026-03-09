@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ols",
+    "type": "vertical_label",
+    "description": "Data is reported for the surface level of the model's ocean model.",
+    "drs_name": "ols"
+}

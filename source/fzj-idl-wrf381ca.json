@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fzj-idl-wrf381ca",
+    "type": "source",
+    "drs_name": "FZJ-IDL-WRF381CA",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "fzj-idl"
+    ],
+    "label": "FZJ-IDL-WRF381CA",
+    "label_extended": "WRF381CA",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

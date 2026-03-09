@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "clic",
     "type": "variable",
-    "description": "Mass Fraction of Convective Cloud Ice",
     "drs_name": "clic",
-    "long_name": null,
+    "description": "Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). Convective cloud is that produced by the convection schemes in an atmosphere model.",
+    "long_name": "Mass Fraction of Convective Cloud Ice",
     "standard_name": "mass_fraction_of_convective_cloud_ice_in_air",
     "units": "1"
 }

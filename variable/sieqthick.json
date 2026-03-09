@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sieqthick",
+    "type": "variable",
+    "drs_name": "sieqthick",
+    "description": "\"Thickness\" means the vertical extent of a layer. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Volume per Area",
+    "standard_name": "sea_ice_thickness",
+    "units": "m"
+}

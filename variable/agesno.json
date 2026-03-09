@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "agesno",
     "type": "variable",
-    "description": "Mean Age of Snow",
     "drs_name": "agesno",
-    "long_name": null,
+    "description": "\"Age of surface snow\" means the length of time elapsed since the snow accumulated on the earth's surface. Surface snow refers to the snow on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants.",
+    "long_name": "Mean Age of Snow",
     "standard_name": "age_of_surface_snow",
     "units": "day"
 }

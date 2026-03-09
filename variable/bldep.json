@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "bldep",
     "type": "variable",
-    "description": "Boundary Layer Depth",
     "drs_name": "bldep",
-    "long_name": null,
+    "description": "The atmosphere boundary layer thickness is the \"depth\" or \"height\" of the (atmosphere) planetary boundary layer.",
+    "long_name": "Minimum PBL Height",
     "standard_name": "atmosphere_boundary_layer_thickness",
     "units": "m"
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "wfo",
     "type": "variable",
-    "description": "Water Flux into Sea Water",
     "drs_name": "wfo",
-    "long_name": null,
+    "description": "\"Water\" means water in all phases. The water flux into sea water is the freshwater entering as a result of precipitation, evaporation, river inflow, sea ice effects and water flux relaxation and correction (if applied). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Water Flux into Sea Water",
     "standard_name": "water_flux_into_sea_water",
     "units": "kg m-2 s-1"
 }

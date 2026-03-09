@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sfx",
+    "type": "variable",
+    "drs_name": "sfx",
+    "description": "\"x\" indicates a vector component along the grid x-axis, positive with increasing x. Salt transport refers to the mass of salt being transported.",
+    "long_name": "3D Ocean Salt Mass X Transport",
+    "standard_name": "ocean_salt_x_transport",
+    "units": "1e-3 kg s-1"
+}

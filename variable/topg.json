@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "topg",
     "type": "variable",
-    "description": "Bedrock Altitude",
     "drs_name": "topg",
-    "long_name": null,
+    "description": "Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level. \"Bedrock\" is the solid Earth surface beneath land ice, ocean water or soil.",
+    "long_name": "Bedrock Altitude",
     "standard_name": "bedrock_altitude",
     "units": "m"
 }

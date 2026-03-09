@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "phalf",
     "type": "variable",
-    "description": "Pressure on Model Half-Levels",
     "drs_name": "phalf",
-    "long_name": null,
+    "description": "Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.",
+    "long_name": "Pressure on Model Half-Levels",
     "standard_name": "air_pressure",
     "units": "Pa"
 }

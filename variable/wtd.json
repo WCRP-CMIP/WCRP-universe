@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "wtd",
     "type": "variable",
-    "description": "Water Table Depth",
     "drs_name": "wtd",
-    "long_name": null,
+    "description": "Depth is the vertical distance below the surface. The water table is the surface below which the soil is saturated with water such that all pore spaces are filled.",
+    "long_name": "Water Table Depth",
     "standard_name": "water_table_depth",
     "units": "m"
 }

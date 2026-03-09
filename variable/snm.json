@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "snm",
     "type": "variable",
-    "description": "Surface Snow Melt",
     "drs_name": "snm",
-    "long_name": null,
+    "description": "Surface snow refers to the snow on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants. The surface called \"surface\" means the lower boundary of the atmosphere. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Surface Snow Melt",
     "standard_name": "surface_snow_melt_flux",
     "units": "kg m-2 s-1"
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "siflfwdrain",
     "type": "variable",
-    "description": "Freshwater Flux from Sea-Ice Surface",
     "drs_name": "siflfwdrain",
-    "long_name": null,
+    "description": "The water flux into the ocean is the freshwater entering the sea water as a result of precipitation, evaporation, river inflow, sea ice effects and water flux correction (if applied). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. The specification of a physical process by the phrase \"due_to_\" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. \"Surface drainage\" refers to all melt water forming at the sea ice surface and subsequently running into the sea.",
+    "long_name": "Freshwater Flux from Sea-Ice Surface",
     "standard_name": "water_flux_into_sea_water_due_to_surface_drainage",
     "units": "kg m-2 s-1"
 }

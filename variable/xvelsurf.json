@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "xvelsurf",
     "type": "variable",
-    "description": "X-Component of Land Ice Surface Velocity",
     "drs_name": "xvelsurf",
-    "long_name": null,
+    "description": "\"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. A velocity is a vector quantity. \"x\" indicates a vector component along the grid x-axis, positive with increasing x. The surface called \"surface\" means the lower boundary of the atmosphere.",
+    "long_name": "X-Component of Land Ice Surface Velocity",
     "standard_name": "land_ice_surface_x_velocity",
     "units": "m s-1"
 }

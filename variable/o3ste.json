@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "o3ste",
     "type": "variable",
-    "description": "Stratospheric Ozone Tracer Volume Mixing Ratio",
     "drs_name": "o3ste",
-    "long_name": null,
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "Stratospheric Ozone Tracer Volume Mixing Ratio",
     "standard_name": "mole_fraction_of_ozone_in_air",
-    "units": "mol mol-1"
+    "units": "1"
 }

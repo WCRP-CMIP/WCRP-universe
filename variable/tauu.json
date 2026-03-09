@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tauu",
     "type": "variable",
-    "description": "Surface Downward Eastward Wind Stress",
     "drs_name": "tauu",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Surface stress\" means the shear stress (force per unit area) exerted by the wind at the surface. A downward stress is a downward flux of momentum. Over large bodies of water, wind stress can drive near-surface currents. \"Downward\" indicates a vector component which is positive when directed downward (negative upward). \"Eastward\" indicates a vector component which is positive when directed eastward (negative westward). \"Downward eastward\" indicates the ZX component of a tensor. A downward eastward stress is a downward flux of eastward momentum, which accelerates the lower medium eastward and the upper medium westward.",
+    "long_name": "Surface Downward Eastward Wind Stress",
     "standard_name": "surface_downward_eastward_stress",
     "units": "Pa"
 }

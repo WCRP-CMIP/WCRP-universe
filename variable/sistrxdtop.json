@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sistrxdtop",
     "type": "variable",
-    "description": "X-Component of Atmospheric Stress on Sea Ice",
     "drs_name": "sistrxdtop",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Surface stress\" means the shear stress (force per unit area) exerted by the wind at the surface. A downward stress is a downward flux of momentum. Over large bodies of water, wind stress can drive near-surface currents. \"Downward\" indicates a vector component which is positive when directed downward (negative upward). \"x\" indicates a vector component along the grid x-axis, positive with increasing x. \"Downward x\" indicates the ZX component of a tensor. A downward x stress is a downward flux of momentum, which accelerates the lower medium in the direction of increasing x and and the upper medium in the direction of decreasing x.",
+    "long_name": "X-Component of Atmospheric Stress on Sea Ice",
     "standard_name": "surface_downward_x_stress",
-    "units": "N m-2"
+    "units": "Pa"
 }

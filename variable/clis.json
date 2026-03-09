@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "clis",
     "type": "variable",
-    "description": "Mass Fraction of Stratiform Cloud Ice",
     "drs_name": "clis",
-    "long_name": null,
+    "description": "Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). In an atmosphere model, stratiform cloud is that produced by large-scale convergence (not the convection schemes).",
+    "long_name": "Mass Fraction of Stratiform Cloud Ice",
     "standard_name": "mass_fraction_of_stratiform_cloud_ice_in_air",
     "units": "1"
 }

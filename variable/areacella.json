@@ -3,8 +3,8 @@
     "id": "areacella",
     "type": "variable",
     "drs_name": "areacella",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "description": "\"Cell_area\" is the horizontal area of a gridcell.",
+    "long_name": "Grid-Cell Area for Atmospheric Grid Variables",
+    "standard_name": "cell_area",
+    "units": "m2"
 }

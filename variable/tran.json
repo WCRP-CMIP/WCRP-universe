@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tran",
     "type": "variable",
-    "description": "Transpiration",
     "drs_name": "tran",
-    "long_name": null,
+    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. Transpiration is the process by which liquid water in plant stomata is transferred as water vapor into the atmosphere.",
+    "long_name": "Transpiration",
     "standard_name": "transpiration_flux",
     "units": "kg m-2 s-1"
 }

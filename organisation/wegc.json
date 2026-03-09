@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wegc",
+    "type": "organisation",
+    "drs_name": "WEGC",
+    "members": [
+        "wegc"
+    ],
+    "description": "wegc institute"
+}

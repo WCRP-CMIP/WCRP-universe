@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tropoz",
     "type": "variable",
-    "description": "Tropospheric Ozone Column",
     "drs_name": "tropoz",
-    "long_name": null,
-    "standard_name": "equivalent_thickness_at_stp_of_atmosphere_ozone_content",
+    "description": "\"stp\" means standard temperature (0 degC) and pressure (101325 Pa). \"Content\" indicates a quantity per unit area. The \"content of troposphere\" of a quantity refers to the vertical integral within the atmosphere's troposphere. The equivalent thickness at STP of a particular constituent of the atmosphere is the thickness of the layer that the gas would occupy if it was separated from the other constituents and gathered together at STP. equivalent_thickness_at_stp_of_ozone_content_of_atmosphere_layer is usually measured in Dobson Units which are equivalent to 446.2 micromoles m-2 or an equivalent thickness at STP of 10 micrometers.",
+    "long_name": "Tropospheric Ozone Column",
+    "standard_name": "equivalent_thickness_at_stp_of_troposphere_ozone_content",
     "units": "m"
 }
