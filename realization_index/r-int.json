@@ -3,5 +3,5 @@
     "id": "r-int",
     "type": "realization_index",
     "description": "Is regexp missing from context? Realization index that follows the convention of always starting with 'r' before being followed by any integer.",
-    "regex": "^r(?P<realization_index>\\d+)$"
+    "regex": "^r\\d+$"
 }
