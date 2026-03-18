@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "rootd",
     "type": "variable",
-    "description": "Maximum Root Depth",
     "drs_name": "rootd",
-    "long_name": null,
+    "description": "Depth is the vertical distance below the surface. The root depth is maximum depth of soil reached by plant roots, from which they can extract moisture.",
+    "long_name": "Maximum Root Depth",
     "standard_name": "root_depth",
     "units": "m"
 }

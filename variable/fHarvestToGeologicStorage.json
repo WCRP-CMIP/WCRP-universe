@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fHarvestToGeologicStorage",
+    "type": "variable",
+    "drs_name": "fHarvestToGeologicStorage",
+    "description": "The flux of carbon from biomass that is intentionally stored in long-term geological reservoirs as a carbon dioxide removal process. This is most closely related to the quantity with standard name mass_flux_of_carbon_into_forestry_and_agricultural_products_due_to_crop_harvesting which represents the flux due to product pools. For the purpose of simulations that include intentional carbon dioxide removal from biomass (e.g., biomass energy with carbon capture and storage (BECCS)), it is necessary to be able to separate the fluxes to indefinitely long-term (i.e. geologic storage) pools from shorter- and medium-term cycling product pools. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Harvested Biomass That Goes into Geological Storage",
+    "standard_name": "mass_flux_of_carbon_from_biomass_into_geological_storage",
+    "units": "kg m-2 s-1"
+}

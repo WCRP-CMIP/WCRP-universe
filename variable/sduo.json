@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sduo",
+    "type": "variable",
+    "drs_name": "sduo",
+    "description": "A velocity is a vector quantity. \"Eastward\" indicates a vector component which is positive when directed eastward (negative westward). The Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation.",
+    "long_name": "Eastward Surface Stokes Drift",
+    "standard_name": "sea_surface_wave_stokes_drift_eastward_velocity",
+    "units": "m s-1"
+}

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sisnmass",
     "type": "variable",
-    "description": "Snow Mass per Area",
     "drs_name": "sisnmass",
-    "long_name": null,
-    "standard_name": "liquid_water_content_of_surface_snow",
-    "units": "kg m-2"
+    "description": "Surface snow refers to the amount on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants. The horizontal domain over which surface snow mass is calculated is described by the associated coordinate variables and coordinate bounds or by a coordinate variable or scalar coordinate variable with the standard name of \"region\" supplied according to section 6.1.1 of the CF conventions.",
+    "long_name": "Snow Mass on Sea Ice North",
+    "standard_name": "surface_snow_mass",
+    "units": "kg"
 }

@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "tob_tavg-u-hxy-sea",
   "type": "known_branded_variable",
   "drs_name": "tob_tavg-u-hxy-sea",
@@ -12,18 +13,16 @@
   "dimensions": [
     "longitude",
     "latitude",
-    "time",
-    "seafloor"
+    "time"
   ],
   "cell_methods": "area: mean where sea time: mean",
   "cell_measures": "area: areacello",
-  "history": "",
+  "history": ": registered",
   "realm": "ocean",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "Provisional - likely accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

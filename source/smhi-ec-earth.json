@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "smhi-ec-earth",
+    "type": "source",
+    "drs_name": "SMHI-EC-EARTH",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "smhi"
+    ],
+    "label": "SMHI-EC-EARTH",
+    "label_extended": "SMHI-EC-EARTH",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

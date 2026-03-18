@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "umo",
     "type": "variable",
-    "description": "Ocean Mass X Transport",
     "drs_name": "umo",
-    "long_name": null,
+    "description": "\"x\" indicates a vector component along the grid x-axis, positive with increasing x.",
+    "long_name": "Ocean Mass X Transport",
     "standard_name": "ocean_mass_x_transport",
     "units": "kg s-1"
 }

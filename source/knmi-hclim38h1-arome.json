@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "knmi-hclim38h1-arome",
+    "type": "source",
+    "drs_name": "KNMI-HCLIM38H1-AROME",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "knmi"
+    ],
+    "label": "KNMI-HCLIM38H1-AROME",
+    "label_extended": "HCLIM38h1-AROME",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

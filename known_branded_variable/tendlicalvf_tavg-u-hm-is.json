@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "tendlicalvf_tavg-u-hm-is",
   "type": "known_branded_variable",
   "drs_name": "tendlicalvf_tavg-u-hm-is",
@@ -8,19 +9,18 @@
   "variable_root_name": "tendlicalvf",
   "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hm-is",
-  "description": "Greenland\n",
+  "description": "Antarctica\n",
   "dimensions": [
     "time"
   ],
   "cell_methods": "area: sum where ice_sheet time: mean",
   "cell_measures": "",
-  "history": "",
+  "history": ": registered",
   "realm": "landIce",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
   "area_label": "is",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

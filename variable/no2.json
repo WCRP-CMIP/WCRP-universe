@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "no2",
     "type": "variable",
-    "description": "NO2 Volume Mixing Ratio",
     "drs_name": "no2",
-    "long_name": null,
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "NO2 Volume Mixing Ratio",
     "standard_name": "mole_fraction_of_nitrogen_dioxide_in_air",
-    "units": "mol mol-1"
+    "units": "1"
 }

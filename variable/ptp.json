@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "ptp",
     "type": "variable",
-    "description": "Tropopause Air Pressure",
     "drs_name": "ptp",
-    "long_name": null,
+    "description": "Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.",
+    "long_name": "Tropopause Air Pressure",
     "standard_name": "tropopause_air_pressure",
     "units": "Pa"
 }

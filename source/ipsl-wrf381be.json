@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ipsl-wrf381be",
+    "type": "source",
+    "drs_name": "IPSL-WRF381BE",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "ipsl"
+    ],
+    "label": "IPSL-WRF381BE",
+    "label_extended": "WRF381BE",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

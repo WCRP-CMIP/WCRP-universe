@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "dummy_land_surface",
+  "type": "model_componentEMD",
+  "component": "land_surface",
+  "name": "Dummy Land Surface",
+  "family": "Dummy",
+  "description": "Dummy land surface component for testing purposes. Do not use in production.",
+  "code_base": "private",
+  "references": [
+    "dummy_model_ref_001"
+  ],
+  "drs_name": "Dummy Land Surface",
+  "horizontal_computational_grid": "h999",
+  "vertical_computational_grid": "v999"
+}

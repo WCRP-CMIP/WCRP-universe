@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "yvelbase",
     "type": "variable",
-    "description": "Y-Component of Land Ice Basal Velocity",
     "drs_name": "yvelbase",
-    "long_name": null,
+    "description": "A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y. \"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves.",
+    "long_name": "Y-Component of Land Ice Basal Velocity",
     "standard_name": "land_ice_basal_y_velocity",
     "units": "m s-1"
 }

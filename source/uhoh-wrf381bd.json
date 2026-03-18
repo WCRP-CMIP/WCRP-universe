@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uhoh-wrf381bd",
+    "type": "source",
+    "drs_name": "UHOH-WRF381BD",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "uhoh"
+    ],
+    "label": "UHOH-WRF381BD",
+    "label_extended": "WRF381BD",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

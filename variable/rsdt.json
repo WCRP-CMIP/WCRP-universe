@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "rsdt",
     "type": "variable",
-    "description": "TOA Incident Shortwave Radiation",
     "drs_name": "rsdt",
-    "long_name": null,
+    "description": "\"shortwave\" means shortwave radiation. \"toa\" means top of atmosphere. The TOA incoming shortwave flux is the radiative flux from the sun i.e. the \"downwelling\" TOA shortwave flux. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "TOA Incident Shortwave Radiation",
     "standard_name": "toa_incoming_shortwave_flux",
     "units": "W m-2"
 }

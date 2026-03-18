@@ -3,8 +3,8 @@
     "id": "vos",
     "type": "variable",
     "drs_name": "vos",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "description": "A velocity is a vector quantity. \"y\" indicates a vector component along the grid y-axis, positive with increasing y. Ocean currents are related to phenomena of different nature and processes, such as density currents, currents raised by the wind, tide, wave propagation, mass flow in estuaries, etc. This Standard Name refers to the sum of currents of all origins.",
+    "long_name": "Sea Water Surface Y Velocity",
+    "standard_name": "surface_sea_water_y_velocity",
+    "units": "m s-1"
 }

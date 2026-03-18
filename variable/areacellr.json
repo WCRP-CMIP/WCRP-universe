@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "areacellr",
     "type": "variable",
-    "description": "Grid-Cell Area for River Model Variables",
     "drs_name": "areacellr",
-    "long_name": null,
+    "description": "\"Cell_area\" is the horizontal area of a gridcell.",
+    "long_name": "Grid-Cell Area for River Model Variables",
     "standard_name": "cell_area",
     "units": "m2"
 }

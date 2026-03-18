@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "o3ref",
+    "type": "variable",
+    "drs_name": "o3ref",
+    "description": "This ozone field acts as a reference ozone field in a diagnostic call to the model's radiation scheme. \"Mole fraction\" is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y. The chemical formula for ozone is O3. The IUPAC name for ozone is trioxygen.",
+    "long_name": "Reference ozone mole fraction used in diagnostic call to radiation scheme",
+    "standard_name": "reference_mole_fraction_of_ozone_in_air",
+    "units": "mol mol-1"
+}

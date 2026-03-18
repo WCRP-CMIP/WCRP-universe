@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "limnpico",
     "type": "variable",
-    "description": "Nitrogen Limitation of Picophytoplankton",
     "drs_name": "limnpico",
-    "long_name": null,
+    "description": "Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Nitrogen growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of nitrogen) to the theoretical growth rate if there were no such limit on nitrogen availability.",
+    "long_name": "Nitrogen Limitation of Picophytoplankton",
     "standard_name": "nitrogen_growth_limitation_of_picophytoplankton",
     "units": "1"
 }

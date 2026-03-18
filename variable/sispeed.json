@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sispeed",
     "type": "variable",
-    "description": "Sea-Ice Speed",
     "drs_name": "sispeed",
-    "long_name": null,
+    "description": "Speed is the magnitude of velocity. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Speed",
     "standard_name": "sea_ice_speed",
     "units": "m s-1"
 }

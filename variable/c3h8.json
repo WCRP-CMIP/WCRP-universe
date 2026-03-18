@@ -3,8 +3,8 @@
     "id": "c3h8",
     "type": "variable",
     "drs_name": "c3h8",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "C3H8 Volume Mixing Ratio",
+    "standard_name": "mole_fraction_of_propane_in_air",
+    "units": "1"
 }

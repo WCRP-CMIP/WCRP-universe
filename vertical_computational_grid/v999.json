@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "v999",
+  "type": "vertical_computational_grid",
+  "name": "v999",
+  "vertical_coordinate": "atmosphere_hybrid_height_coordinate",
+  "drs_name": "v999",
+  "description": "Dummy vertical grid for testing purposes - do not use in production",
+  "n_z": 50,
+  "bottom_layer_thickness": 10.0,
+  "top_layer_thickness": 5000.0,
+  "top_of_model": 80000.0
+}

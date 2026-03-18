@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "lithk",
     "type": "variable",
-    "description": "Ice Sheet Thickness",
     "drs_name": "lithk",
-    "long_name": null,
+    "description": "\"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. \"Thickness\" means the vertical extent of a layer.",
+    "long_name": "Ice Sheet Thickness",
     "standard_name": "land_ice_thickness",
     "units": "m"
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "pbo",
     "type": "variable",
-    "description": "Sea Water Pressure at Sea Floor",
     "drs_name": "pbo",
-    "long_name": null,
+    "description": "\"Sea water pressure\" is the pressure that exists in the medium of sea water.  It includes the pressure due to overlying sea water, sea ice, air and any other medium that may be present.",
+    "long_name": "Sea Water Pressure at Sea Floor",
     "standard_name": "sea_water_pressure_at_sea_floor",
-    "units": "Pa"
+    "units": "dbar"
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "hfds",
     "type": "variable",
-    "description": "Downward Heat Flux at Sea Water Surface",
     "drs_name": "hfds",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Water\" means water in all phases, including frozen i.e. ice and snow. \"Downward\" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Downward Heat Flux at Sea Water Surface",
     "standard_name": "surface_downward_heat_flux_in_sea_water",
     "units": "W m-2"
 }

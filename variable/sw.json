@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sw",
     "type": "variable",
-    "description": "Surface Water Storage",
     "drs_name": "sw",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. \"Amount\" means mass per unit area. The quantity with standard name land_surface_liquid_water_amount includes water in rivers, wetlands, lakes, reservoirs and liquid precipitation intercepted by the vegetation canopy.",
+    "long_name": "Surface Water Storage",
     "standard_name": "land_surface_liquid_water_amount",
     "units": "kg m-2"
 }
