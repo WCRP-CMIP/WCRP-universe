@@ -1,8 +1,8 @@
 {
     "@context": "000_context.jsonld",
-    "id": "fz-juelich",
+    "id": "fzj",
     "type": "institution",
-    "drs_name": "FZ-Juelich",
+    "drs_name": "FZJ",
     "acronyms": [
         "FZJ"
     ],
