@@ -1,16 +1,16 @@
 {
     "@context": "000_context.jsonld",
-    "id": "clmcom-hzg",
+    "id": "hzg",
     "type": "institution",
-    "drs_name": "CLMcom-HZG",
+    "drs_name": "HZG",
     "acronyms": [
-        "CLMcom-HZG"
+        "HZG"
     ],
     "labels": [
-        "Climate Limited-area Modelling Community (CLMcom) partner: Helmholtz-Zentrum Hereon",
+        "Helmholtz-Zentrum Hereon",
         "Helmholtz-Zentrum Geesthacht Centre for Materials and Coastal Research"
     ],
-    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Helmholtz-Zentrum Hereon",
+    "description": "Helmholtz-Zentrum Hereon",
     "location": [
         {
             "city": "Geesthacht",

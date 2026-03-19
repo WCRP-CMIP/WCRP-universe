@@ -4,7 +4,7 @@
     "type": "organisation",
     "drs_name": "HCLIMcom-SMHI",
     "members": [
-        "hclimcom-smhi"
+        "smhi"
     ],
     "description": "HARMONIE Climate Modelling Community (HCLIMcom) partner: Swedish Meteorological and Hydrological Institute (SMHI)"
 }

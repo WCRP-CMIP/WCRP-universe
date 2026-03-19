@@ -1,15 +1,15 @@
 {
     "@context": "000_context.jsonld",
-    "id": "clmcom-list",
+    "id": "list",
     "type": "institution",
-    "drs_name": "CLMcom-LIST",
+    "drs_name": "LIST",
     "acronyms": [
-        "CLMcom-LIST"
+        "LIST"
     ],
     "labels": [
-        "Climate Limited-area Modelling Community (CLMcom) partner: Luxembourg Institute of Science and Technology"
+        "Luxembourg Institute of Science and Technology"
     ],
-    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Luxembourg Institute of Science and Technology",
+    "description": "Luxembourg Institute of Science and Technology",
     "location": [
         {
             "city": "Esch-sur-Alzette",

@@ -1,15 +1,15 @@
 {
     "@context": "000_context.jsonld",
-    "id": "clmcom-hereon",
+    "id": "hereon",
     "type": "institution",
-    "drs_name": "CLMcom-Hereon",
+    "drs_name": "Hereon",
     "acronyms": [
-        "CLMcom-Hereon"
+        "Hereon"
     ],
     "labels": [
-        "Climate Limited-area Modelling Community (CLMcom) partner: Helmholtz-Zentrum Hereon"
+        "Helmholtz-Zentrum Hereon"
     ],
-    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Helmholtz-Zentrum Hereon",
+    "description": "Helmholtz-Zentrum Hereon",
     "location": [
         {
             "city": "Geesthacht",

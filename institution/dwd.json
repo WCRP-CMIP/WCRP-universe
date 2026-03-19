@@ -3,12 +3,24 @@
     "id": "dwd",
     "type": "institution",
     "drs_name": "DWD",
-    "acronyms": [],
-    "labels": [
-        "Deutscher Wetterdienst, Offenbach 63067, Germany"
+    "acronyms": [
+        "DWD"
     ],
-    "description": "DWD",
-    "location": [],
-    "ror": null,
-    "urls": []
+    "labels": [
+        "German Meteorological Service",
+        "Deutscher Wetterdienst"
+    ],
+    "description": "German Meteorological Service",
+    "location": [
+        {
+            "city": "Offenbach am Main",
+            "country": "Germany",
+            "lat": 50.101799,
+            "lon": 8.746422
+        }
+    ],
+    "ror": "02nrqs528",
+    "urls": [
+        "https://www.dwd.de/"
+    ]
 }
