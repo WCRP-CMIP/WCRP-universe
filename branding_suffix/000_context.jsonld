@@ -1,13 +1,13 @@
 {
     "@context": {
-        "@base":"https://esgvoc.ipsl.fr/resource/universe/branded_suffix/",
-        "@vocab":"https://esgvoc.ipsl.fr/resource/universe/branded_suffix/",
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/branding_suffix/",
+        "@vocab":"https://esgvoc.ipsl.fr/resource/universe/branding_suffix/",
         "id":"@id",
         "type":"@type",
-        "branded_suffix":"https://esgvoc.ipsl.fr/resource/universe/branded_suffix",
+        "branding_suffix":"https://esgvoc.ipsl.fr/resource/universe/branding_suffix",
         "required":"https://esgvoc.ipsl.fr/resource/universe/required/",
         "parts": {
-            "@id": "https://esgvoc.ipsl.fr/resource/universe/branded_suffix_parts",
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/branding_suffix_parts",
             "@type":"@id",
             "@container": "@list",
             "@context":{
