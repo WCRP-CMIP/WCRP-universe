@@ -1,0 +1,25 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "auth-mc",
+  "type": "institution",
+  "drs_name": "AUTH-MC",
+  "acronyms": [
+    "AUTH-MC"
+  ],
+  "labels": [
+    "Aristotle University of Thessaloniki, Department of Meteorology & Climatology"
+  ],
+  "description": "Aristotle University of Thessaloniki, Department of Meteorology & Climatology",
+  "location": [
+    {
+      "city": "Thessaloniki",
+      "country": "Greece",
+      "lat": 40.630828,
+      "lon": 22.959222
+    }
+  ],
+  "ror": "02j61yw88",
+  "urls": [
+    "https://www.auth.gr/"
+  ]
+}
