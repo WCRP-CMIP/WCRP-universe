@@ -1,15 +1,15 @@
 {
     "@context": "000_context.jsonld",
-    "id": "clmcom-btu",
+    "id": "btu",
     "type": "institution",
-    "drs_name": "CLMcom-BTU",
+    "drs_name": "BTU",
     "acronyms": [
-        "CLMcom-BTU"
+        "BTU"
     ],
     "labels": [
-        "Climate Limited-area Modelling Community (CLMcom) partner: Brandenburg University of Technology Cottbus-Senftenberg"
+        "Brandenburg University of Technology Cottbus-Senftenberg"
     ],
-    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Brandenburg University of Technology Cottbus-Senftenberg",
+    "description": "Brandenburg University of Technology Cottbus-Senftenberg",
     "location": [
         {
             "city": "Cottbus",

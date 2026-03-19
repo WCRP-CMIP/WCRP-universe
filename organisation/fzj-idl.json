@@ -4,7 +4,8 @@
     "type": "organisation",
     "drs_name": "FZJ-IDL",
     "members": [
-        "fzj-idl"
+        "fzj",
+        "idl"
     ],
     "description": "fzj-idl institute"
 }

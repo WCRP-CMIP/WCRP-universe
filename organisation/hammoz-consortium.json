@@ -4,9 +4,9 @@
     "type": "organisation",
     "drs_name": "HAMMOZ-Consortium",
     "members": [
-        "eth-zurich",
+        "eth",
         "mpi-m",
-        "fz-juelich",
+        "fzj",
         "oxford",
         "fmi",
         "tropos",

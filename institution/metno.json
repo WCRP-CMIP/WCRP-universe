@@ -1,15 +1,15 @@
 {
     "@context": "000_context.jsonld",
-    "id": "hclimcom-metno",
+    "id": "metno",
     "type": "institution",
-    "drs_name": "HCLIMcom-METNo",
+    "drs_name": "METNo",
     "acronyms": [
-        "HCLIMcom-METNo"
+        "METNo"
     ],
     "labels": [
-        "HARMONIE Climate Modelling Community (HCLIMcom) partner: Norwegian Meteorological Institute (METNo)"
+        "Norwegian Meteorological Institute (METNo)"
     ],
-    "description": "HARMONIE Climate Modelling Community (HCLIMcom) partner: Norwegian Meteorological Institute (METNo)",
+    "description": "Norwegian Meteorological Institute (METNo)",
     "location": [
         {
             "city": "Oslo",

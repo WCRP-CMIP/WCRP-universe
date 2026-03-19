@@ -4,7 +4,9 @@
     "type": "organisation",
     "drs_name": "HCLIMCOM",
     "members": [
-        "hclimcom"
+        "dmi",
+        "metno",
+        "smhi"
     ],
-    "description": "hclimcom institute"
+    "description": "HARMONIE Climate Modelling Community (HCLIMcom)"
 }

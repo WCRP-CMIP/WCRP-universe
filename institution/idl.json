@@ -1,10 +1,10 @@
 {
     "@context": "000_context.jsonld",
-    "id": "idl-fcul",
+    "id": "idl",
     "type": "institution",
-    "drs_name": "IDL-FCUL",
+    "drs_name": "IDL",
     "acronyms": [
-        "IDL-FCUL"
+        "IDL"
     ],
     "labels": [
         "Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa"
