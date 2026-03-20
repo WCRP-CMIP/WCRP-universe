@@ -838,12 +838,9 @@ class Holder(BaseModel):
             drs_name,
             description,
             activity,
-            # No parent for these?
-            # parent_experiment,
+            branch_information,
             required_model_components,
             additional_allowed_model_components,
-            # No parent for these?
-            # branch_information,
             tier,
         ) in (
             (
@@ -851,9 +848,17 @@ class Holder(BaseModel):
                 (
                     "Baseline for effective radiative forcing (ERF) calculations. "
                     "`piControl` with prescribed sea-surface temperatures "
-                    "and sea-ice concentrations."
+                    "and sea-ice concentrations from a climatology of "
+                    "the model's `piControl` simulation."
                 ),
                 "cmip",
+                (
+                    "Branch from `piControl` at a time of your choosing. "
+                    "Given that you are using a climatology from your own model as boundary conditions, "
+                    "we recommended branching from the mid-point of the period over which you calculated the climatology "
+                    "(but this recommendation may not be appropriate for all models, "
+                    "so ultimately it is up to you to decide what introduces the smallest 'shock'/'jump' at the branch time)."
+                ),
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
@@ -865,6 +870,7 @@ class Holder(BaseModel):
                     "all anthropogenic forcings",
                 ),
                 "cmip",
+                "Same as `piClim-control`",
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
@@ -880,6 +886,7 @@ class Holder(BaseModel):
                     "are set to four times `piControl` levels."
                 ),
                 "cmip",
+                "Same as `piClim-control`",
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
@@ -891,6 +898,7 @@ class Holder(BaseModel):
                     "methane concentrations or emissions (as appropriate for the model)",
                 ),
                 "aerchemmip",
+                "Same as `piClim-control`",
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
@@ -902,6 +910,7 @@ class Holder(BaseModel):
                     "nitrous oxide concentrations or emissions (as appropriate for the model)",
                 ),
                 "aerchemmip",
+                "Same as `piClim-control`",
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
@@ -913,6 +922,7 @@ class Holder(BaseModel):
                     "nitrous oxide (NOx) emissions",
                 ),
                 "aerchemmip",
+                "Same as `piClim-control`",
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
@@ -924,6 +934,7 @@ class Holder(BaseModel):
                     "ozone-depleting substances concentrations",
                 ),
                 "aerchemmip",
+                "Same as `piClim-control`",
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
@@ -935,6 +946,7 @@ class Holder(BaseModel):
                     "sulfur emissions",
                 ),
                 "aerchemmip",
+                "Same as `piClim-control`",
                 ["agcm", "aer"],
                 ["chem", "bgc"],
                 1,
@@ -946,6 +958,7 @@ class Holder(BaseModel):
                     "anthropogenic aerosol emissions",
                 ),
                 "rfmip",
+                "Same as `piClim-control`",
                 ["agcm", "aer"],
                 ["chem", "bgc"],
                 1,
@@ -956,13 +969,13 @@ class Holder(BaseModel):
                 description=description,
                 activity=activity,
                 additional_allowed_model_components=additional_allowed_model_components,
-                branch_information=None,
+                branch_information="dont_write",
                 end_timestamp=None,
                 min_ensemble_size=1,
                 min_number_yrs_per_sim=30,
-                parent_activity=None,
-                parent_experiment=None,
-                parent_mip_era=None,
+                parent_activity="dont_write",
+                parent_experiment="dont_write",
+                parent_mip_era="dont_write",
                 required_model_components=required_model_components,
                 start_timestamp=None,
                 tier=1,
@@ -973,7 +986,10 @@ class Holder(BaseModel):
             proj = ExperimentProject(
                 id=univ.drs_name.lower(),
                 activity=univ.activity,
-                parent_mip_era="dont_write",
+                branch_information=branch_information,
+                parent_activity="cmip",
+                parent_experiment="picontrol",
+                parent_mip_era="cmip7",
                 tier=tier,
             )
             self.experiments_project.append(proj)
