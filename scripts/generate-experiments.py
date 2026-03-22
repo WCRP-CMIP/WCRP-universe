@@ -409,7 +409,7 @@ class Holder(BaseModel):
                 43,
             ),
             (
-                "amip-p4k",
+                "amip-p4K",
                 "Same as `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions.",
                 "cfmip",
                 "1979-01-01",
