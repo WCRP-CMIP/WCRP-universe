@@ -1,0 +1,31 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "amip-noaer",
+    "type": "experiment",
+    "experiment_id": "amip-noaer",
+    "activity_id": [
+        "ceresmip"
+    ],
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "description": "AMIP but no aerosol changes: As with amip, but no changes in aerosols",
+    "end_year": 2024,
+    "experiment": "AMIP but no aerosol changes",
+    "min_number_yrs_per_sim": 35,
+    "parent_activity_id": [
+        "no parent"
+    ],
+    "parent_experiment_id": [
+        "no parent"
+    ],
+    "required_model_components": [
+        "agcm"
+    ],
+    "start_year": 1990,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": 2
+}
