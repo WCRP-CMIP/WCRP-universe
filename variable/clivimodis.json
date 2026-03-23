@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clivimodis",
+    "type": "variable",
+    "drs_name": "clivimodis",
+    "description": "\"Content\" indicates a quantity per unit area. The \"atmosphere content\" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.",
+    "long_name": "MODIS Ice Water Path",
+    "standard_name": "atmosphere_mass_content_of_cloud_ice",
+    "units": "kg m-2"
+}

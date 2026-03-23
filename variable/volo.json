@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "volo",
     "type": "variable",
-    "description": "Sea Water Volume",
     "drs_name": "volo",
-    "long_name": null,
+    "description": "The quantity with standard name \"sea_water_volume\" is the total volume of liquid seawater in the global oceans, including enclosed seas.",
+    "long_name": "Sea Water Volume",
     "standard_name": "sea_water_volume",
     "units": "m3"
 }

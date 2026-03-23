@@ -3,8 +3,8 @@
     "id": "friver",
     "type": "variable",
     "drs_name": "friver",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "description": "\"Water\" means water in all phases. The water flux or volume transport into sea water from rivers is the inflow to the ocean, often applied to the surface in ocean models. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"River\" refers to water in the fluvial system (stream and floodplain).",
+    "long_name": "Water Flux into Sea Water from Rivers",
+    "standard_name": "water_flux_into_sea_water_from_rivers",
+    "units": "kg m-2 s-1"
 }

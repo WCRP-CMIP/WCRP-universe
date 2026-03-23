@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "dummy_aerosol",
+  "type": "model_componentEMD",
+  "component": "aerosol",
+  "name": "Dummy Aerosol",
+  "family": "Dummy",
+  "description": "Dummy aerosol component for testing purposes. Do not use in production.",
+  "code_base": "private",
+  "references": [
+    "dummy_model_ref_001"
+  ],
+  "drs_name": "Dummy Aerosol",
+  "horizontal_computational_grid": "h999",
+  "vertical_computational_grid": "v999"
+}

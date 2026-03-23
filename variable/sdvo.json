@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sdvo",
+    "type": "variable",
+    "drs_name": "sdvo",
+    "description": "A velocity is a vector quantity. \"Northward\" indicates a vector component which is positive when directed northward (negative southward). The Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation.",
+    "long_name": "Northward Surface Stokes Drift",
+    "standard_name": "sea_surface_wave_stokes_drift_northward_velocity",
+    "units": "m s-1"
+}

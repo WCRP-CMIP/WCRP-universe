@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "piclim-control",
     "type": "experiment",
-    "description": "Baseline for effective radiative forcing (ERF) calculations. `piControl` with prescribed sea-surface temperatures and sea-ice concentrations.",
+    "description": "Baseline for effective radiative forcing (ERF) calculations. `piControl` with prescribed sea-surface temperatures and sea-ice concentrations from a climatology of the model's `piControl` simulation.",
     "drs_name": "piClim-control",
     "start_timestamp": null,
     "end_timestamp": null,
@@ -13,11 +13,7 @@
         "chem",
         "bgc"
     ],
-    "branch_information": null,
     "min_ensemble_size": 1,
-    "parent_activity": null,
-    "parent_experiment": null,
-    "parent_mip_era": null,
     "required_model_components": [
         "agcm"
     ],

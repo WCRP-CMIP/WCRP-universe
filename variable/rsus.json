@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "rsus",
     "type": "variable",
-    "description": "Surface Upwelling Shortwave Radiation",
     "drs_name": "rsus",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. The term \"shortwave\" means shortwave radiation. Upwelling radiation is radiation from below. It does not mean \"net upward\". The sign convention is that \"upwelling\" is positive upwards and \"downwelling\" is positive downwards. When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Surface Upwelling Shortwave Radiation over Ocean Not Covered by Sea Ice",
     "standard_name": "surface_upwelling_shortwave_flux_in_air",
     "units": "W m-2"
 }

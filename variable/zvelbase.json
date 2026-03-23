@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "zvelbase",
     "type": "variable",
-    "description": "Upward Component of Land-Ice Basal Velocity",
     "drs_name": "zvelbase",
-    "long_name": null,
+    "description": "\"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. A velocity is a vector quantity. \"Upward\" indicates a vector component which is positive when directed upward (negative downward).",
+    "long_name": "Upward Component of Land-Ice Basal Velocity",
     "standard_name": "land_ice_basal_upward_velocity",
     "units": "m s-1"
 }

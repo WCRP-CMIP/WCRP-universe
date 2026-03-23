@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sivol",
     "type": "variable",
-    "description": "Sea-Ice Volume per Area",
     "drs_name": "sivol",
-    "long_name": null,
-    "standard_name": "sea_ice_thickness",
-    "units": "m"
+    "description": "\"X_volume\" means the volume occupied by X within the grid cell. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Volume North",
+    "standard_name": "sea_ice_volume",
+    "units": "m3"
 }

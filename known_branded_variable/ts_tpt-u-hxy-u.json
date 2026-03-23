@@ -1,4 +1,5 @@
 {
+  "@context": "000_context.jsonld",
   "id": "ts_tpt-u-hxy-u",
   "type": "known_branded_variable",
   "drs_name": "ts_tpt-u-hxy-u",
@@ -8,7 +9,7 @@
   "variable_root_name": "ts",
   "var_def_qualifier": "",
   "branding_suffix_name": "tpt-u-hxy-u",
-  "description": "Surface temperature (skin for open ocean)\n",
+  "description": "Temperature of the lower boundary of the atmosphere\n",
   "dimensions": [
     "longitude",
     "latitude",
@@ -16,13 +17,12 @@
   ],
   "cell_methods": "area: mean time: point",
   "cell_measures": "area: areacella",
-  "history": "",
+  "history": ": registered",
   "realm": "atmos",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "Accepted",
-  "positive_direction": "",
-  "@context": "000_context.jsonld"
+  "bn_status": "accepted",
+  "positive_direction": ""
 }

@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "idl",
+    "type": "institution",
+    "drs_name": "IDL",
+    "acronyms": [
+        "IDL"
+    ],
+    "labels": [
+        "Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa"
+    ],
+    "description": "Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa",
+    "location": [
+        {
+            "city": "Lisbon",
+            "country": "Portugal",
+            "lat": 38.751157,
+            "lon": -9.153918
+        }
+    ],
+    "ror": "046ggxs83",
+    "urls": [
+        "https://idl.ciencias.ulisboa.pt/"
+    ]
+}

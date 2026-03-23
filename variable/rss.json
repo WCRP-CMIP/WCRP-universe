@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "rss",
     "type": "variable",
-    "description": "Net Shortwave Surface Radiation",
     "drs_name": "rss",
-    "long_name": null,
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. \"shortwave\" means shortwave radiation. \"Downward\" indicates a vector component which is positive when directed downward (negative upward). Net downward radiation is the difference between radiation from above (downwelling) and radiation from below (upwelling). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Net Shortwave Surface Radiation",
     "standard_name": "surface_net_downward_shortwave_flux",
     "units": "W m-2"
 }

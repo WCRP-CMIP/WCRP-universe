@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "mrsofc",
     "type": "variable",
-    "description": "Capacity of Soil to Store Water (Field Capacity)",
     "drs_name": "mrsofc",
-    "long_name": null,
+    "description": "\"moisture\" means water in all phases contained in soil. \"Content\" indicates a quantity per unit area. The \"soil content\" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including content_of_soil_layer are used. The field capacity of soil is the maximum content of water it can retain against gravitational drainage.",
+    "long_name": "Capacity of Soil to Store Water (Field Capacity)",
     "standard_name": "soil_moisture_content_at_field_capacity",
     "units": "kg m-2"
 }

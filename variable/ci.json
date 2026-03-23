@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "ci",
     "type": "variable",
-    "description": "Fraction of Time Convection Occurs in Cell",
     "drs_name": "ci",
-    "long_name": null,
+    "description": "\"Time fraction\" means a fraction of a time interval. The interval in question must be specified by the values or bounds of the time coordinate variable associated with the data. \"X_time_fraction\" means the fraction of the time interval during which X occurs.",
+    "long_name": "Fraction of Time Convection Occurs in Cell",
     "standard_name": "convection_time_fraction",
     "units": "1"
 }

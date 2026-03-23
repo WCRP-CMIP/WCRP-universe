@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "mrrob",
     "type": "variable",
-    "description": "Subsurface Runoff",
     "drs_name": "mrrob",
-    "long_name": null,
+    "description": "Runoff is the liquid water which drains from land. If not specified, \"runoff\" refers to the sum of surface runoff and subsurface drainage. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Subsurface Runoff",
     "standard_name": "subsurface_runoff_flux",
     "units": "kg m-2 s-1"
 }

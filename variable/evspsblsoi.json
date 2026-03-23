@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "evspsblsoi",
     "type": "variable",
-    "description": "Water Evaporation from Soil",
     "drs_name": "evspsblsoi",
-    "long_name": null,
+    "description": "\"Water\" means water in all phases. Evaporation is the conversion of liquid or solid into vapor. (The conversion of solid alone into vapor is called \"sublimation\".) In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Water Evaporation from Soil",
     "standard_name": "water_evaporation_flux_from_soil",
     "units": "kg m-2 s-1"
 }

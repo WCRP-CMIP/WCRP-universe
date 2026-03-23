@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "basin",
     "type": "variable",
-    "description": "Region Selection Index",
     "drs_name": "basin",
-    "long_name": null,
+    "description": "A variable with the standard name of region contains either strings which indicate a geographical region or flags which can be translated to strings using flag_values and flag_meanings attributes. These strings are standardised. Values must be taken from the CF standard region list.",
+    "long_name": "Region Selection Index",
     "standard_name": "region",
-    "units": "1"
+    "units": ""
 }

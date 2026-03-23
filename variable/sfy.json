@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sfy",
+    "type": "variable",
+    "drs_name": "sfy",
+    "description": "\"y\" indicates a vector component along the grid y-axis, positive with increasing y. Salt transport refers to the mass of salt being transported.",
+    "long_name": "Ocean Salt Mass Y Transport",
+    "standard_name": "ocean_salt_y_transport",
+    "units": "1e-3 kg s-1"
+}

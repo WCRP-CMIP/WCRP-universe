@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "limndiat",
     "type": "variable",
-    "description": "Nitrogen Limitation of Diatoms",
     "drs_name": "limndiat",
-    "long_name": null,
+    "description": "Diatoms are phytoplankton with an external skeleton made of silica. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Nitrogen growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of nitrogen) to the theoretical growth rate if there were no such limit on nitrogen availability.",
+    "long_name": "Nitrogen Limitation of Diatoms",
     "standard_name": "nitrogen_growth_limitation_of_diatoms",
     "units": "1"
 }

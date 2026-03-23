@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "cldnvi",
     "type": "variable",
-    "description": "Column Integrated Cloud Droplet Number",
     "drs_name": "cldnvi",
-    "long_name": null,
+    "description": "\"Content\" indicates a quantity per unit area.  The \"atmosphere content\" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.",
+    "long_name": "Column Integrated Cloud Droplet Number",
     "standard_name": "atmosphere_number_content_of_cloud_droplets",
     "units": "m-2"
 }

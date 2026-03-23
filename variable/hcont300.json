@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hcont300",
+    "type": "variable",
+    "drs_name": "hcont300",
+    "long_name": "Heat content of upper 300 meters",
+    "units": "m K",
+    "standard_name": "heat_content_of_upper_300_meters",
+    "description": ""
+}

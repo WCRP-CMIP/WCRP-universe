@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "slthick",
     "type": "variable",
-    "description": "Thickness of Soil Layers",
     "drs_name": "slthick",
-    "long_name": null,
+    "description": "\"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
+    "long_name": "Thickness of Soil Layers",
     "standard_name": "cell_thickness",
     "units": "m"
 }

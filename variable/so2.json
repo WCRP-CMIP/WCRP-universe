@@ -3,8 +3,8 @@
     "id": "so2",
     "type": "variable",
     "drs_name": "so2",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "SO2 Volume Mixing Ratio",
+    "standard_name": "mole_fraction_of_sulfur_dioxide_in_air",
+    "units": "1"
 }

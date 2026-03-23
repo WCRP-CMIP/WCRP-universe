@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "emiaco",
     "type": "variable",
-    "description": "Total Emission Rate of Anthropogenic CO",
     "drs_name": "emiaco",
-    "long_name": null,
+    "description": "The phrase \"tendency_of_X\" means derivative of X with respect to time.  \"Content\" indicates a quantity per unit area.  \"Emission\" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface).  \"Emission\" is a process entirely distinct from \"re-emission\" which is used in some standard names.",
+    "long_name": "Total Emission Rate of Anthropogenic CO",
     "standard_name": "tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission",
     "units": "kg m-2 s-1"
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sw18o",
     "type": "variable",
-    "description": "Isotopic Ratio of Oxygen-18 in Sea Water",
     "drs_name": "sw18O",
-    "long_name": null,
+    "description": "The phrase \"ratio_of_X_to_Y\" means X/Y. The phrase \"isotope_ratio\" is used in the construction isotope_ratio_of_A_to_B where A and B are both named isotopes. It means the ratio of the number of atoms of A to the number of atoms of B present within a medium. \"O\" means the element \"oxygen\" and \"18O\" is the stable isotope \"oxygen-18\". \"16O\" is the stable isotope \"oxygen-16\". The phrase \"in_sea_water_excluding_solutes_and_solids\" means that the standard name refers only to the chemical compound water and does not include material that may be dissolved or suspended in the aqueous medium.",
+    "long_name": "Isotopic Ratio of Oxygen-18 in Sea Water",
     "standard_name": "isotope_ratio_of_18O_to_16O_in_sea_water_excluding_solutes_and_solids",
     "units": "1"
 }

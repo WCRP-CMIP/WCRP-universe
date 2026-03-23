@@ -22,13 +22,13 @@
                         }
                     }
                 },
-                "branded_suffix": {
+                "branding_suffix": {
                     "@context": {
                         "id": {
-                            "@id":  "https://esgvoc.ipsl.fr/resource/universe/branded_suffix",
+                            "@id":  "https://esgvoc.ipsl.fr/resource/universe/branding_suffix",
                             "@type": "@id",
                             "@container": "@set",
-                            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/branded_suffix/"}
+                            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/branding_suffix/"}
                         }
                     }
                 }

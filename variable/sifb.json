@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "sifb",
     "type": "variable",
-    "description": "Sea-Ice Freeboard",
     "drs_name": "sifb",
-    "long_name": null,
+    "description": "Sea ice freeboard is the height of the sea-ice upper surface above the water surface. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Freeboard",
     "standard_name": "sea_ice_freeboard",
     "units": "m"
 }

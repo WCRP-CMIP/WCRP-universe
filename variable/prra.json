@@ -3,8 +3,8 @@
     "id": "prra",
     "type": "variable",
     "drs_name": "prra",
-    "long_name": null,
-    "units": "",
-    "standard_name": null,
-    "description": ""
+    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Rainfall Flux",
+    "standard_name": "rainfall_flux",
+    "units": "kg m-2 s-1"
 }

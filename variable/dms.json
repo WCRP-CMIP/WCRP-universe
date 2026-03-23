@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "dms",
     "type": "variable",
-    "description": "Dimethyl Sulphide (DMS) Mole Fraction",
     "drs_name": "dms",
-    "long_name": null,
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "Dimethyl Sulphide (DMS) Mole Fraction",
     "standard_name": "mole_fraction_of_dimethyl_sulfide_in_air",
-    "units": "mol mol-1"
+    "units": "1"
 }

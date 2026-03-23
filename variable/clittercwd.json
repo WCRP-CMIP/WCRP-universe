@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "clittercwd",
     "type": "variable",
-    "description": "Carbon Mass in Coarse Woody Debris",
     "drs_name": "cLitterCwd",
-    "long_name": null,
+    "description": "\"Content\" indicates a quantity per unit area. \"Wood debris\" means dead organic matter composed of coarse wood. It is distinct from fine litter. The precise distinction between \"fine\" and \"coarse\" is model dependent.",
+    "long_name": "Carbon Mass in Coarse Woody Debris",
     "standard_name": "wood_debris_mass_content_of_carbon",
     "units": "kg m-2"
 }

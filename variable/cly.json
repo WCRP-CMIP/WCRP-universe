@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "cly",
     "type": "variable",
-    "description": "Total Inorganic Chlorine Volume Mixing Ratio",
     "drs_name": "cly",
-    "long_name": null,
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  \"Inorganic chlorine\",sometimes referred to as Cly, describes a family of chemical species which result from the degradation of chlorine-containing source gases (CFCs, HCFCs, VSLS) and natural inorganic chlorine sources such as sea-salt and other aerosols.  mole_fraction_of_inorganic_chlorine is the sum of all species belonging to the family that are represented within a given model.",
+    "long_name": "Total Inorganic Chlorine Volume Mixing Ratio",
     "standard_name": "mole_fraction_of_inorganic_chlorine_in_air",
-    "units": "mol mol-1"
+    "units": "1"
 }

@@ -14,12 +14,12 @@
         {
             "city": "Karlsruhe",
             "country": "Germany",
-            "lat": 49.00937,
-            "lon": 49.00937
+            "lat": 49.012204,
+            "lon": 8.415549
         }
     ],
     "ror": "04t3en479",
     "urls": [
-        "http://www.kit.edu/english/"
+        "https://www.kit.edu"
     ]
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "wfcorr",
     "type": "variable",
-    "description": "Water Flux Correction",
     "drs_name": "wfcorr",
-    "long_name": null,
+    "description": "",
+    "long_name": "Water Flux Correction",
     "standard_name": "water_flux_correction",
-    "units": "kg m-2 s-1"
+    "units": ""
 }

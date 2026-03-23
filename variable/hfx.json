@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "hfx",
     "type": "variable",
-    "description": "Ocean Heat X Transport",
     "drs_name": "hfx",
-    "long_name": null,
+    "description": "\"x\" indicates a vector component along the grid x-axis, positive with increasing x.",
+    "long_name": "Ocean Heat X Transport",
     "standard_name": "ocean_heat_x_transport",
     "units": "W"
 }

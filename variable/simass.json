@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "simass",
     "type": "variable",
-    "description": "Sea-Ice Mass per Area",
     "drs_name": "simass",
-    "long_name": null,
+    "description": "\"Amount\" means mass per unit area. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Mass",
     "standard_name": "sea_ice_amount",
     "units": "kg m-2"
 }
