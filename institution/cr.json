@@ -1,0 +1,29 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cr",
+    "type": "institution",
+    "drs_name": "CR",
+    "acronyms": [
+        "CR"
+    ],
+    "labels": [
+        "Climate Resource (Australia)",
+        "Climate Resource",
+        "Climate Resource Ltd",
+        "Climate Resource Pty Ltd"
+
+    ],
+    "description": "Climate Resource (Australia)",
+    "location": [
+        {
+            "city": "Melbourne",
+            "country": "Australia",
+            "lat": -37.814,
+            "lon": 144.96332 
+        }
+    ],
+    "ror": "01kk86953",
+    "urls": [
+        "https://www.climate-resource.com"
+    ]
+}
