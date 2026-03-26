@@ -1,4 +1,7 @@
 {
+    "esgvoc_resolve_modes": {
+        "publishable_models": "full"
+    },
     "@context": {
         "@base":"https://esgvoc.ipsl.fr/resource/universe/organisation/",
         "@vocab": "http://schema.org/",
@@ -6,6 +9,11 @@
         "type":"@type",
         "description":{"@id":"https://schema.org/description"},
         "drs_name": {"@id": "acronym"},
+        "publishable_models": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/model/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/model/"}
+        },
         "members": {
             "@id": "https://esgvoc.ipsl.fr/resource/universe/institution/",
             "@type":"@id",
