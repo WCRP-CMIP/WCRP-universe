@@ -1,5 +1,5 @@
 """
-Check that all entries' filename matches their ID
+Check that all entries' IDs are lowercase and the filename matches their ID
 """
 
 import json
@@ -21,8 +21,12 @@ def main():
 
             if "id" not in content:
                 failing.append(f"{cv_file}")
-            elif cv_file.stem != content["id"]:
-                failing.append(f"{content['id']}: {cv_file}")
+            else:
+                if cv_file.stem != content["id"]:
+                    failing.append(f"{content['id']}: {cv_file}")
+
+                if content["id"].lower() != content["id"]:
+                    failing.append(f"{content['id']} is not all lowercase: {cv_file}")
 
     if failing:
         raise AssertionError(failing)
