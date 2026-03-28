@@ -1,0 +1,1 @@
+{"@context": "000_context.jsonld", "id": "lpyr", "type": "table", "product": "model-output", "table_date": "2023-11-16", "variable_entry": ["baresoilfrac", "cropfrac", "fracinlut", "fracoutlut", "grassfrac", "residualfrac", "shrubfrac", "treefrac", "vegfrac"], "drs_name": "LPyr"}
