@@ -1,1 +1,9 @@
-{"@context": "000_context.jsonld", "id": "aerhr", "type": "table", "product": "model-output", "table_date": "2023-11-16", "variable_entry": [], "drs_name": "AERhr"}
+{
+    "@context": "000_context.jsonld",
+    "id": "aerhr",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2023-11-16",
+    "variable_entry": [],
+    "drs_name": "AERhr"
+}

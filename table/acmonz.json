@@ -1,1 +1,13 @@
-{"@context": "000_context.jsonld", "id": "acmonz", "type": "table", "product": "model-output", "table_date": "2023-11-16", "variable_entry": ["oxloss", "oxprod", "vmrox"], "drs_name": "ACmonZ"}
+{
+    "@context": "000_context.jsonld",
+    "id": "acmonz",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2023-11-16",
+    "variable_entry": [
+        "oxloss",
+        "oxprod",
+        "vmrox"
+    ],
+    "drs_name": "ACmonZ"
+}

@@ -1,1 +1,13 @@
-{"@context": "000_context.jsonld", "id": "opdecz", "type": "table", "product": "model-output", "table_date": "2023-11-16", "variable_entry": ["hfbasin", "msftmrho", "msftmz"], "drs_name": "OPdecZ"}
+{
+    "@context": "000_context.jsonld",
+    "id": "opdecz",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2023-11-16",
+    "variable_entry": [
+        "hfbasin",
+        "msftmrho",
+        "msftmz"
+    ],
+    "drs_name": "OPdecZ"
+}

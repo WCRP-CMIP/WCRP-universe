@@ -1,1 +1,12 @@
-{"@context": "000_context.jsonld", "id": "aesubhrptsite", "type": "table", "product": "model-output", "table_date": "2023-11-16", "variable_entry": ["tntrl", "tntrs"], "drs_name": "AEsubhrPtSite"}
+{
+    "@context": "000_context.jsonld",
+    "id": "aesubhrptsite",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2023-11-16",
+    "variable_entry": [
+        "tntrl",
+        "tntrs"
+    ],
+    "drs_name": "AEsubhrPtSite"
+}

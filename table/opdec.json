@@ -1,1 +1,26 @@
-{"@context": "000_context.jsonld", "id": "opdec", "type": "table", "product": "model-output", "table_date": "2024-02-28", "variable_entry": ["bigthetaoga", "hfds", "masso", "msftyrho", "sfdsi", "sfriver", "soga", "sos", "sosga", "tauuo", "tauvo", "thetaoga", "tos", "tosga", "volo", "wfo"], "drs_name": "OPdec"}
+{
+    "@context": "000_context.jsonld",
+    "id": "opdec",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2024-02-28",
+    "variable_entry": [
+        "bigthetaoga",
+        "hfds",
+        "masso",
+        "msftyrho",
+        "sfdsi",
+        "sfriver",
+        "soga",
+        "sos",
+        "sosga",
+        "tauuo",
+        "tauvo",
+        "thetaoga",
+        "tos",
+        "tosga",
+        "volo",
+        "wfo"
+    ],
+    "drs_name": "OPdec"
+}

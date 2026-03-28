@@ -1,1 +1,12 @@
-{"@context": "000_context.jsonld", "id": "ap6hrptz", "type": "table", "product": "model-output", "table_date": "2023-11-16", "variable_entry": ["zmlwaero", "zmswaero"], "drs_name": "AP6hrPtZ"}
+{
+    "@context": "000_context.jsonld",
+    "id": "ap6hrptz",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2023-11-16",
+    "variable_entry": [
+        "zmlwaero",
+        "zmswaero"
+    ],
+    "drs_name": "AP6hrPtZ"
+}

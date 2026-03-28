@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "ae6hrpt", "type": "table", "product": "model-output", "table_date": "2023-11-16", "variable_entry": ["zg500"], "drs_name": "AE6hrPt"}
+{
+    "@context": "000_context.jsonld",
+    "id": "ae6hrpt",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2023-11-16",
+    "variable_entry": [
+        "zg500"
+    ],
+    "drs_name": "AE6hrPt"
+}

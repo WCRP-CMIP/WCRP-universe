@@ -1,1 +1,26 @@
-{"@context": "000_context.jsonld", "id": "ap6hr", "type": "table", "product": "model-output", "table_date": "2024-02-28", "variable_entry": ["hurs", "hus4", "pr", "prhmax", "psl", "rv850", "sfcwind", "tas", "ua100m", "uas", "va100m", "vas", "wap4", "wsgmax100m", "wsgmax10m", "zg1000"], "drs_name": "AP6hr"}
+{
+    "@context": "000_context.jsonld",
+    "id": "ap6hr",
+    "type": "table",
+    "product": "model-output",
+    "table_date": "2024-02-28",
+    "variable_entry": [
+        "hurs",
+        "hus4",
+        "pr",
+        "prhmax",
+        "psl",
+        "rv850",
+        "sfcwind",
+        "tas",
+        "ua100m",
+        "uas",
+        "va100m",
+        "vas",
+        "wap4",
+        "wsgmax100m",
+        "wsgmax10m",
+        "zg1000"
+    ],
+    "drs_name": "AP6hr"
+}
