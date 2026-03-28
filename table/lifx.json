@@ -1,9 +1,12 @@
 {
     "@context": "000_context.jsonld",
-    "id": "day",
+    "id": "lifx",
     "type": "table",
     "product": "model-output",
     "table_date": "2023-11-16",
-    "variable_entry": [],
-    "drs_name": "day"
+    "variable_entry": [
+        "sftflf",
+        "sftgrf"
+    ],
+    "drs_name": "LIfx"
 }

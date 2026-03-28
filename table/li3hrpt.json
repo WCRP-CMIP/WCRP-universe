@@ -1,9 +1,11 @@
 {
     "@context": "000_context.jsonld",
-    "id": "day",
+    "id": "li3hrpt",
     "type": "table",
     "product": "model-output",
     "table_date": "2023-11-16",
-    "variable_entry": [],
-    "drs_name": "day"
+    "variable_entry": [
+        "sbl"
+    ],
+    "drs_name": "LI3hrPt"
 }
