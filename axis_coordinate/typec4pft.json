@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typec4pft",
+    "type": "axis_coordinate",
+    "drs_name": "typec4pft",
+    "long_name": "surface type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "c4_plant_functional_types",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: surface type"
+}

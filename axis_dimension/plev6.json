@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "plev6",
+    "type": "axis_dimension",
+    "drs_name": "plev6",
+    "long_name": "Pressure Levels (6 boundary layer)",
+    "out_name": "plev",
+    "units": "Pa",
+    "standard_name": "air_pressure",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "tolerance": "1",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "requested": [
+        "95000.0",
+        "90000.0",
+        "85000.0",
+        "80000.0",
+        "75000.0",
+        "70000.0"
+    ],
+    "description": "Dimension axis: Pressure Levels (6 boundary layer)"
+}

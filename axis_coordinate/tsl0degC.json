@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tsl0degC",
+    "type": "axis_coordinate",
+    "drs_name": "tsl0degC",
+    "long_name": "Soil Temperature Zero",
+    "out_name": "tsl0degC",
+    "units": "degC",
+    "standard_name": "soil_temperature",
+    "axis": "Z",
+    "value": "0.0",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Soil Temperature Zero"
+}

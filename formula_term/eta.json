@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "eta",
+    "type": "formula_term",
+    "drs_name": "eta",
+    "description": "Formula term: Sea Surface Height",
+    "long_name": "Sea Surface Height",
+    "out_name": "eta",
+    "dimensions": "longitude latitude time",
+    "units": "m",
+    "data_type": "real"
+}

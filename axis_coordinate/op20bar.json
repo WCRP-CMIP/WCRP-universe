@@ -1,0 +1,19 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "op20bar",
+    "type": "axis_coordinate",
+    "drs_name": "op20bar",
+    "long_name": "Hydrostatic Pressure 20.2 bar",
+    "out_name": "pdepth",
+    "units": "bar",
+    "standard_name": "sea_water_pressure_due_to_sea_water",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "valid_min": "18",
+    "valid_max": "22",
+    "value": "20.2",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Hydrostatic Pressure 20.2 bar"
+}

@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "a_half",
+    "type": "formula_term",
+    "drs_name": "a_half",
+    "description": "Formula term: vertical coordinate formula term: a(k)",
+    "long_name": "vertical coordinate formula term: a(k)",
+    "out_name": "a",
+    "dimensions": "alevhalf",
+    "units": "1",
+    "data_type": "double"
+}

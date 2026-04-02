@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lowerModelLayer",
+    "type": "axis_coordinate",
+    "drs_name": "lowerModelLayer",
+    "long_name": "Lowest Model Layer",
+    "out_name": "lev",
+    "units": "1",
+    "standard_name": "model_level_number",
+    "axis": "Z",
+    "positive": "up",
+    "stored_direction": "increasing",
+    "value": "1",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Lowest Model Layer"
+}

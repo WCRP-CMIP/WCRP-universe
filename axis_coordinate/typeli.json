@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typeli",
+    "type": "axis_coordinate",
+    "drs_name": "typeli",
+    "long_name": "Land Ice area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "land_ice",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Land Ice area type"
+}

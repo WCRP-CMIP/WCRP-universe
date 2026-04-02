@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typeresidual",
+    "type": "axis_coordinate",
+    "drs_name": "typeresidual",
+    "long_name": "Residual area",
+    "out_name": "type",
+    "units": "1",
+    "value": "residual",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Residual area"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth_coord",
+    "type": "axis_dimension",
+    "drs_name": "depth_coord",
+    "long_name": "ocean depth coordinate",
+    "out_name": "lev",
+    "units": "m",
+    "standard_name": "depth",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "valid_min": "0.0",
+    "valid_max": "12000.0",
+    "generic_level_name": "olevel",
+    "must_have_bounds": true,
+    "description": "Dimension axis: ocean depth coordinate"
+}

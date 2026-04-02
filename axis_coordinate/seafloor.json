@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "seafloor",
+    "type": "axis_coordinate",
+    "drs_name": "seafloor",
+    "long_name": "Sea Floor",
+    "out_name": "seafloor",
+    "units": "1",
+    "value": "sea floor",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Sea Floor"
+}

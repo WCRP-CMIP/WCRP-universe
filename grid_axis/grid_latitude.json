@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "grid_latitude",
+    "type": "grid_axis",
+    "drs_name": "grid_latitude",
+    "description": "Grid axis: latitude in rotated pole grid",
+    "long_name": "latitude in rotated pole grid",
+    "units": "degrees",
+    "out_name": "rlat",
+    "standard_name": "grid_latitude",
+    "axis": "Y",
+    "data_type": "double"
+}

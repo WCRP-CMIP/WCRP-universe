@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pl700",
+    "type": "axis_coordinate",
+    "drs_name": "pl700",
+    "long_name": "pressure",
+    "out_name": "plev",
+    "units": "Pa",
+    "standard_name": "air_pressure",
+    "axis": "Z",
+    "positive": "down",
+    "value": "70000.",
+    "bounds_values": "85000 60000",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Scalar coordinate: pressure"
+}

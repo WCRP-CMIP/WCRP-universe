@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typelkins",
+    "type": "axis_coordinate",
+    "drs_name": "typelkins",
+    "long_name": "Lake and inland sea area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "lake_and_inland_sea",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Lake and inland sea area type"
+}

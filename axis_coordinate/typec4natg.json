@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typec4natg",
+    "type": "axis_coordinate",
+    "drs_name": "typec4natg",
+    "long_name": "C4 Natural grass area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "natural_grasses_of_c4_plant_functional_types",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: C4 Natural grass area type"
+}

@@ -1,0 +1,34 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "effectRadIc",
+    "type": "axis_dimension",
+    "drs_name": "effectRadIc",
+    "long_name": "Effective Radius for Ice Aerosol",
+    "out_name": "effectRadIc",
+    "units": "micron",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "requested": [
+        "5.0",
+        "15.0",
+        "25.0",
+        "35.0",
+        "50.0",
+        "75.0"
+    ],
+    "requested_bounds": [
+        "0.0",
+        "10.0",
+        "10.0",
+        "20.0",
+        "20.0",
+        "30.0",
+        "30.0",
+        "40.0",
+        "40.0",
+        "60.0",
+        "60.0",
+        "90.0"
+    ],
+    "description": "Dimension axis: Effective Radius for Ice Aerosol"
+}

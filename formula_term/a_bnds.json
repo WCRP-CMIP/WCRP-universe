@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "a_bnds",
+    "type": "formula_term",
+    "drs_name": "a_bnds",
+    "description": "Formula term: vertical coordinate formula term: a(k+1/2)",
+    "long_name": "vertical coordinate formula term: a(k+1/2)",
+    "out_name": "a_bnds",
+    "dimensions": "alevel",
+    "units": "1",
+    "data_type": "double"
+}

@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lambda443nm",
+    "type": "axis_coordinate",
+    "drs_name": "lambda443nm",
+    "long_name": "Radiation Wavelength 443 nanometers",
+    "out_name": "wavelength",
+    "units": "nm",
+    "standard_name": "radiation_wavelength",
+    "value": "443.0",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Radiation Wavelength 443 nanometers"
+}

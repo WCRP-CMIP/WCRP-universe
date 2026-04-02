@@ -1,0 +1,42 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "plev7c",
+    "type": "axis_dimension",
+    "drs_name": "plev7c",
+    "long_name": "Pressure Levels (7 for ISCCP)",
+    "out_name": "plev",
+    "units": "Pa",
+    "standard_name": "air_pressure",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "tolerance": "1",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "requested": [
+        "90000.0",
+        "74000.0",
+        "62000.0",
+        "50000.0",
+        "37500.0",
+        "24500.0",
+        "9000.0"
+    ],
+    "requested_bounds": [
+        "100000.0",
+        "80000.0",
+        "80000.0",
+        "68000.0",
+        "68000.0",
+        "56000.0",
+        "56000.0",
+        "44000.0",
+        "44000.0",
+        "31000.0",
+        "31000.0",
+        "18000.0",
+        "18000.0",
+        "0.0"
+    ],
+    "description": "Dimension axis: Pressure Levels (7 for ISCCP)"
+}

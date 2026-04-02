@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "latitude",
+    "type": "axis_dimension",
+    "drs_name": "latitude",
+    "long_name": "Latitude",
+    "out_name": "lat",
+    "units": "degrees_north",
+    "standard_name": "latitude",
+    "axis": "Y",
+    "stored_direction": "increasing",
+    "valid_min": "-90",
+    "valid_max": "90",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Dimension axis: Latitude"
+}

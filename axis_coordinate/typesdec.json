@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typesdec",
+    "type": "axis_coordinate",
+    "drs_name": "typesdec",
+    "long_name": "surface type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "secondary_decidous_trees",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: surface type"
+}

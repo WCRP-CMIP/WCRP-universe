@@ -1,0 +1,16 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "osurf",
+    "type": "axis_coordinate",
+    "drs_name": "osurf",
+    "long_name": "Ocean surface coordinate",
+    "out_name": "seasurface",
+    "units": "1",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "value": "ocean_surface_layer",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Ocean surface coordinate"
+}

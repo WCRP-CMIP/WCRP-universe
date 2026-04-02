@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "standard_sigma_half",
+    "type": "axis_dimension",
+    "drs_name": "standard_sigma_half",
+    "long_name": "sigma coordinate",
+    "out_name": "lev",
+    "units": "1",
+    "standard_name": "atmosphere_sigma_coordinate",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "valid_min": "0.0",
+    "valid_max": "1.0",
+    "formula": "p = ptop + sigma*(ps - ptop)",
+    "z_factors": "ptop: ptop sigma: lev ps: ps",
+    "generic_level_name": "alevhalf",
+    "must_have_bounds": false,
+    "description": "Dimension axis: sigma coordinate"
+}

@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hur100p2pct",
+    "type": "axis_coordinate",
+    "drs_name": "hur100p2pct",
+    "long_name": "Relative Humidity 100.2 percent",
+    "out_name": "hur",
+    "units": "%",
+    "standard_name": "relative_humidity",
+    "value": "100.2",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Relative Humidity 100.2 percent"
+}

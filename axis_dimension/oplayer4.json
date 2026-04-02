@@ -1,0 +1,33 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "oplayer4",
+    "type": "axis_dimension",
+    "drs_name": "oplayer4",
+    "long_name": "Hydrostatic Pressure Layers",
+    "out_name": "pdepth",
+    "units": "bar",
+    "standard_name": "sea_water_pressure_due_to_sea_water",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "tolerance": "1",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "requested": [
+        "15.0",
+        "50.0",
+        "136.0",
+        "1000.0"
+    ],
+    "requested_bounds": [
+        "0.0",
+        "30.3",
+        "30.3",
+        "70.7",
+        "70.7",
+        "202.5",
+        "202.5",
+        "10000.0"
+    ],
+    "description": "Dimension axis: Hydrostatic Pressure Layers"
+}

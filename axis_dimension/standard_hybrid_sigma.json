@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "standard_hybrid_sigma",
+    "type": "axis_dimension",
+    "drs_name": "standard_hybrid_sigma",
+    "long_name": "hybrid sigma pressure coordinate",
+    "out_name": "lev",
+    "units": "1",
+    "standard_name": "atmosphere_hybrid_sigma_pressure_coordinate",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "valid_min": "0.0",
+    "valid_max": "1.0",
+    "formula": "p = a*p0 + b*ps",
+    "z_factors": "p0: p0 a: a b: b ps: ps",
+    "z_bounds_factors": "p0: p0 a: a_bnds b: b_bnds ps: ps",
+    "generic_level_name": "alevel",
+    "must_have_bounds": true,
+    "description": "Dimension axis: hybrid sigma pressure coordinate"
+}

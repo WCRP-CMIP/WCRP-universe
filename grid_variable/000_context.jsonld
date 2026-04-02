@@ -1,0 +1,21 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/grid_variable/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "grid_variable": "https://espri-mod.github.io/mip-cmor-tables/grid_variable/",
+        "long_name": {
+            "@id": "https://schema.org/alternateName"
+        },
+        "description": {
+            "@id": "https://schema.org/description"
+        },
+        "units": {
+            "@id": "https://schema.org/unitText"
+        },
+        "standard_name": {
+            "@id": "https://schema.org/identifier"
+        }
+    }
+}

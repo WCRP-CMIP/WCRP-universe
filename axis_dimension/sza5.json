@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sza5",
+    "type": "axis_dimension",
+    "drs_name": "sza5",
+    "long_name": "solar zenith angle",
+    "out_name": "sza",
+    "units": "degree",
+    "standard_name": "solar_zenith_angle",
+    "stored_direction": "increasing",
+    "tolerance": "1",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "requested": [
+        "0.0",
+        "20.0",
+        "40.0",
+        "60.0",
+        "80.0"
+    ],
+    "description": "Dimension axis: solar zenith angle"
+}

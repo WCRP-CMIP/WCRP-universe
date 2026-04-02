@@ -1,0 +1,24 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "plev5u",
+    "type": "axis_dimension",
+    "drs_name": "plev5u",
+    "long_name": "Pressure Levels (5 UTLS)",
+    "out_name": "plev",
+    "units": "Pa",
+    "standard_name": "air_pressure",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "tolerance": "1",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "requested": [
+        "25000.0",
+        "22500.0",
+        "20000.0",
+        "17500.0",
+        "15000.0"
+    ],
+    "description": "Dimension axis: Pressure Levels (5 UTLS)"
+}

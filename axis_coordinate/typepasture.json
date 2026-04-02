@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typepasture",
+    "type": "axis_coordinate",
+    "drs_name": "typepasture",
+    "long_name": "Pasture area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "pastures",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Pasture area type"
+}

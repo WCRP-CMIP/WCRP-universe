@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "k_index",
+    "type": "grid_axis",
+    "drs_name": "k_index",
+    "description": "Grid axis: third spatial index for variables stored on an unstructured grid",
+    "long_name": "third spatial index for variables stored on an unstructured grid",
+    "units": "1",
+    "out_name": "k",
+    "data_type": "integer"
+}

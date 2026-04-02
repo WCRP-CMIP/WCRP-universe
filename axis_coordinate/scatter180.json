@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "scatter180",
+    "type": "axis_coordinate",
+    "drs_name": "scatter180",
+    "long_name": "Scattering Angle",
+    "out_name": "scatangle",
+    "units": "degree",
+    "standard_name": "scattering_angle",
+    "value": "180.0",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Scattering Angle"
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "height10m",
+    "type": "axis_coordinate",
+    "drs_name": "height10m",
+    "long_name": "height",
+    "out_name": "height",
+    "units": "m",
+    "standard_name": "height",
+    "axis": "Z",
+    "positive": "up",
+    "stored_direction": "increasing",
+    "valid_min": "1",
+    "valid_max": "30",
+    "value": "10.",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: height"
+}

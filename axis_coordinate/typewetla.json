@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typewetla",
+    "type": "axis_coordinate",
+    "drs_name": "typewetla",
+    "long_name": "Wetland",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "wetland",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Wetland"
+}

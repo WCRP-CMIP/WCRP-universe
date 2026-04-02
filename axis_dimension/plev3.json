@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "plev3",
+    "type": "axis_dimension",
+    "drs_name": "plev3",
+    "long_name": "Pressure Levels (3)",
+    "out_name": "plev",
+    "units": "Pa",
+    "standard_name": "air_pressure",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "tolerance": "1",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "requested": [
+        "85000.0",
+        "50000.0",
+        "25000.0"
+    ],
+    "description": "Dimension axis: Pressure Levels (3)"
+}

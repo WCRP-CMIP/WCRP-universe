@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typecrop",
+    "type": "axis_coordinate",
+    "drs_name": "typecrop",
+    "long_name": "Crop area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "crops",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Crop area type"
+}

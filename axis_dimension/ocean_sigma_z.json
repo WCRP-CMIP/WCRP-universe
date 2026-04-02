@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ocean_sigma_z",
+    "type": "axis_dimension",
+    "drs_name": "ocean_sigma_z",
+    "long_name": "ocean sigma over z coordinate",
+    "out_name": "lev",
+    "units": "1",
+    "standard_name": "ocean_sigma_z_coordinate",
+    "axis": "Z",
+    "formula": "for k <= nsigma: z(n,k,j,i) = eta(n,j,i) + sigma(k)*(min(depth_c,depth(j,i))+eta(n,j,i)) ; for k > nsigma: z(n,k,j,i) = zlev(k)",
+    "z_factors": "sigma: lev eta: eta depth: depth depth_c: depth_c nsigma: nsigma zlev: zlev",
+    "z_bounds_factors": "sigma: lev_bnds eta: eta depth: depth depth_c: depth_c nsigma: nsigma zlev: zlev_bnds",
+    "generic_level_name": "olevel",
+    "must_have_bounds": true,
+    "description": "Dimension axis: ocean sigma over z coordinate"
+}

@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "timefxc",
+    "type": "axis_dimension",
+    "drs_name": "timefxc",
+    "long_name": "Time Intervals for Fixed Climatology",
+    "out_name": "time",
+    "units": "days since ?",
+    "standard_name": "time",
+    "axis": "T",
+    "stored_direction": "increasing",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Dimension axis: Time Intervals for Fixed Climatology"
+}

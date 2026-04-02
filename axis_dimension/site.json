@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "site",
+    "type": "axis_dimension",
+    "drs_name": "site",
+    "long_name": "site index",
+    "out_name": "site",
+    "units": "1",
+    "data_type": "integer",
+    "must_have_bounds": false,
+    "description": "Dimension axis: site index"
+}

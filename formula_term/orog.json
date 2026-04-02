@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "orog",
+    "type": "formula_term",
+    "drs_name": "orog",
+    "description": "Formula term: Surface Altitude",
+    "long_name": "Surface Altitude",
+    "out_name": "orog",
+    "dimensions": "longitude latitude",
+    "units": "m",
+    "data_type": "real"
+}

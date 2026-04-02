@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "p560",
+    "type": "axis_coordinate",
+    "drs_name": "p560",
+    "long_name": "pressure",
+    "out_name": "plev",
+    "units": "Pa",
+    "standard_name": "air_pressure",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "value": "56000.",
+    "bounds_values": "68000 44000",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Scalar coordinate: pressure"
+}

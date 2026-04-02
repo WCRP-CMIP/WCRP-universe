@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typeburnt",
+    "type": "axis_coordinate",
+    "drs_name": "typeburnt",
+    "long_name": "Burnt vegetation area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "burnt_vegetation",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Burnt vegetation area type"
+}

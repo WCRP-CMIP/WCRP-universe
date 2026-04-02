@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lambda550nm",
+    "type": "axis_coordinate",
+    "drs_name": "lambda550nm",
+    "long_name": "Radiation Wavelength 550 nanometers",
+    "out_name": "wavelength",
+    "units": "nm",
+    "standard_name": "radiation_wavelength",
+    "value": "550.0",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Radiation Wavelength 550 nanometers"
+}

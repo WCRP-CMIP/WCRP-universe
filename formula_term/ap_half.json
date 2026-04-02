@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ap_half",
+    "type": "formula_term",
+    "drs_name": "ap_half",
+    "description": "Formula term: vertical coordinate formula term: ap(k)",
+    "long_name": "vertical coordinate formula term: ap(k)",
+    "out_name": "ap",
+    "dimensions": "alevhalf",
+    "units": "Pa",
+    "data_type": "double"
+}

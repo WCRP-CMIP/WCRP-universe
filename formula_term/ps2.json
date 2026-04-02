@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ps2",
+    "type": "formula_term",
+    "drs_name": "ps2",
+    "description": "Formula term: Surface Air Pressure",
+    "long_name": "Surface Air Pressure",
+    "out_name": "ps",
+    "dimensions": "longitude latitude time2",
+    "units": "Pa",
+    "data_type": "real",
+    "standard_name": "air_pressure"
+}

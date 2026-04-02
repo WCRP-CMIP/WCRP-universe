@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "j_index",
+    "type": "grid_axis",
+    "drs_name": "j_index",
+    "description": "Grid axis: second spatial index for variables stored on an unstructured grid",
+    "long_name": "second spatial index for variables stored on an unstructured grid",
+    "units": "1",
+    "out_name": "j",
+    "data_type": "integer"
+}

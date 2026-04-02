@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "grid_longitude",
+    "type": "grid_axis",
+    "drs_name": "grid_longitude",
+    "description": "Grid axis: longitude in rotated pole grid",
+    "long_name": "longitude in rotated pole grid",
+    "units": "degrees",
+    "out_name": "rlon",
+    "standard_name": "grid_longitude",
+    "axis": "X",
+    "data_type": "double"
+}

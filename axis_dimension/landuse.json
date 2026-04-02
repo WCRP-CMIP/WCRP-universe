@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "landuse",
+    "type": "axis_dimension",
+    "drs_name": "landuse",
+    "long_name": "Land use type",
+    "out_name": "landuse",
+    "units": "1",
+    "standard_name": "area_type",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Dimension axis: Land use type"
+}

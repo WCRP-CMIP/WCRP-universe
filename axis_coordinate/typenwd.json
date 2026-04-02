@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typenwd",
+    "type": "axis_coordinate",
+    "drs_name": "typenwd",
+    "long_name": "Non-Woody Vegetation area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "herbaceous_vegetation",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Non-Woody Vegetation area type"
+}

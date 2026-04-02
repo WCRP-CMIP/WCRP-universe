@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth",
+    "type": "formula_term",
+    "drs_name": "depth",
+    "description": "Formula term: Sea Floor Depth",
+    "long_name": "Sea Floor Depth",
+    "out_name": "depth",
+    "dimensions": "longitude latitude",
+    "units": "m",
+    "data_type": "real"
+}

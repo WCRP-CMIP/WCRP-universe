@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "oline",
+    "type": "axis_dimension",
+    "drs_name": "oline",
+    "long_name": "Ocean Straits",
+    "out_name": "line",
+    "units": "1",
+    "standard_name": "region",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Dimension axis: Ocean Straits"
+}

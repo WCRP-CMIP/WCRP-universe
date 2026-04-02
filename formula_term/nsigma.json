@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nsigma",
+    "type": "formula_term",
+    "drs_name": "nsigma",
+    "description": "Formula term: vertical coordinate formula term: nsigma",
+    "long_name": "vertical coordinate formula term: nsigma",
+    "out_name": "nsigma",
+    "dimensions": "",
+    "units": "1",
+    "data_type": "integer"
+}

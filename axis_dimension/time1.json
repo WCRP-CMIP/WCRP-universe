@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "time1",
+    "type": "axis_dimension",
+    "drs_name": "time1",
+    "long_name": "Time Points",
+    "out_name": "time",
+    "units": "days since ?",
+    "standard_name": "time",
+    "axis": "T",
+    "stored_direction": "increasing",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Dimension axis: Time Points"
+}

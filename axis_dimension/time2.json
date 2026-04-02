@@ -1,0 +1,16 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "time2",
+    "type": "axis_dimension",
+    "drs_name": "time2",
+    "long_name": "Monthly Climatology",
+    "out_name": "time",
+    "units": "days since ?",
+    "standard_name": "time",
+    "axis": "T",
+    "stored_direction": "increasing",
+    "climatology": true,
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Dimension axis: Monthly Climatology"
+}

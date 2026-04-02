@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "zlev",
+    "type": "formula_term",
+    "drs_name": "zlev",
+    "description": "Formula term: vertical coordinate formula term: zlev(k)",
+    "long_name": "vertical coordinate formula term: zlev(k)",
+    "out_name": "zlev",
+    "dimensions": "olevel",
+    "units": "m",
+    "data_type": "double"
+}

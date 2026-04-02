@@ -1,0 +1,16 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "time4",
+    "type": "axis_dimension",
+    "drs_name": "time4",
+    "long_name": "Monthly Mean Daily Satistics",
+    "out_name": "time",
+    "units": "days since ?",
+    "standard_name": "time",
+    "axis": "T",
+    "stored_direction": "increasing",
+    "climatology": true,
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Dimension axis: Monthly Mean Daily Satistics"
+}

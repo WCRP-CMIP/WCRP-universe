@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vegtype",
+    "type": "axis_dimension",
+    "drs_name": "vegtype",
+    "long_name": "Vegetation or Land Cover Type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Dimension axis: Vegetation or Land Cover Type"
+}

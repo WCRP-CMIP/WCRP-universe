@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typeveg",
+    "type": "axis_coordinate",
+    "drs_name": "typeveg",
+    "long_name": "Vegetation area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "vegetation",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Vegetation area type"
+}

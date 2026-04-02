@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sdepth",
+    "type": "axis_dimension",
+    "drs_name": "sdepth",
+    "long_name": "depth",
+    "out_name": "depth",
+    "units": "m",
+    "standard_name": "depth",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "valid_min": "0",
+    "valid_max": "200",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Dimension axis: depth"
+}

@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ptop",
+    "type": "formula_term",
+    "drs_name": "ptop",
+    "description": "Formula term: pressure at top of model",
+    "long_name": "pressure at top of model",
+    "out_name": "ptop",
+    "dimensions": "",
+    "units": "Pa",
+    "data_type": "double",
+    "standard_name": "air_pressure_at_top_of_atmosphere"
+}

@@ -1,0 +1,19 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth1000m",
+    "type": "axis_coordinate",
+    "drs_name": "depth1000m",
+    "long_name": "depth",
+    "out_name": "depth",
+    "units": "m",
+    "standard_name": "depth",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "valid_min": "800",
+    "valid_max": "1200",
+    "value": "1000.",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: depth"
+}

@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typeshrub",
+    "type": "axis_coordinate",
+    "drs_name": "typeshrub",
+    "long_name": "Shrub area type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "shrubs",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Shrub area type"
+}

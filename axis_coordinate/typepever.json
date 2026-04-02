@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typepever",
+    "type": "axis_coordinate",
+    "drs_name": "typepever",
+    "long_name": "surface type",
+    "out_name": "type",
+    "units": "1",
+    "standard_name": "area_type",
+    "value": "primary_evergreen_trees",
+    "data_type": "character",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: surface type"
+}

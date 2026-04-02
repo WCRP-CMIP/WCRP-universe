@@ -1,0 +1,16 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth0m",
+    "type": "axis_coordinate",
+    "drs_name": "depth0m",
+    "long_name": "Ocean Surface Coordinate",
+    "out_name": "seasurface",
+    "units": "m",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "value": "0.",
+    "data_type": "double",
+    "must_have_bounds": false,
+    "description": "Scalar coordinate: Ocean Surface Coordinate"
+}

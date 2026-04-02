@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth_c",
+    "type": "formula_term",
+    "drs_name": "depth_c",
+    "description": "Formula term: vertical coordinate formula term: depth_c",
+    "long_name": "vertical coordinate formula term: depth_c",
+    "out_name": "depth_c",
+    "dimensions": "",
+    "units": "m",
+    "data_type": "double"
+}

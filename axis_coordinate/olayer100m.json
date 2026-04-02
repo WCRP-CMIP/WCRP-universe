@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "olayer100m",
+    "type": "axis_coordinate",
+    "drs_name": "olayer100m",
+    "long_name": "depth",
+    "out_name": "depth",
+    "units": "m",
+    "standard_name": "depth",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "valid_min": "0",
+    "valid_max": "100",
+    "value": "50.",
+    "bounds_values": "0 100",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Scalar coordinate: depth"
+}

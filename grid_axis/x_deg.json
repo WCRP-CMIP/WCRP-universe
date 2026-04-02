@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "x_deg",
+    "type": "grid_axis",
+    "drs_name": "x_deg",
+    "description": "Grid axis: x coordinate of projection",
+    "long_name": "x coordinate of projection",
+    "units": "degrees",
+    "out_name": "x",
+    "standard_name": "projection_x_coordinate",
+    "axis": "X",
+    "data_type": "double"
+}

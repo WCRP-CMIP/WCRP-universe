@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "iceband",
+    "type": "axis_dimension",
+    "drs_name": "iceband",
+    "long_name": "Ice Depth Band",
+    "out_name": "iceband",
+    "units": "m",
+    "standard_name": "sea_ice_thickness",
+    "data_type": "double",
+    "must_have_bounds": true,
+    "description": "Dimension axis: Ice Depth Band"
+}
