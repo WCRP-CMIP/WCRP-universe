@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "dres",
+    "type": "institution",
+    "drs_name": "DRES",
+    "acronyms": [
+        "DRES"
+    ],
+    "labels": [
+        "Deltares"
+    ],
+    "description": "Deltares",
+    "location": [
+        {
+            "city": "Delft",
+            "country": "The Netherlands",
+            "lat": 52.00667,
+            "lon": 4.35556
+        }
+    ],
+    "ror": "01deh9c76",
+    "urls": [
+        "https://www.deltares.nl"
+    ]
+}
