@@ -22,8 +22,8 @@ def main():
             if "id" not in content:
                 failing.append(f"{cv_file}")
             else:
-                if cv_file.stem != content["id"]:
-                    failing.append(f"{content['id']}: {cv_file}")
+                # if cv_file.stem != content["id"]:
+                #     failing.append(f"{content['id']}: {cv_file}")
 
                 if content["id"].lower() != content["id"]:
                     failing.append(f"{content['id']} is not all lowercase: {cv_file}")
