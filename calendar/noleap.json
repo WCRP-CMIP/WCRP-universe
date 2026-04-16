@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "noleap",
+    "type": "calendar",
+    "description": "The calendar with no leap years, i.e. all years are 365 days long, as defined by the CF conventions. Same as 365_day.",
+    "drs_name": "noleap"
+}
