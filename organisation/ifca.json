@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ifca",
+    "type": "organisation",
+    "drs_name": "IFCA",
+    "members": [
+        "ifca"
+    ],
+    "description": "Instituto de Fisica de Cantabria (IFCA), CSIC-Universidad de Cantabria"
+}

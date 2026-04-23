@@ -5,7 +5,7 @@
     "drs_name": "BCCR-UCAN",
     "members": [
         "bccr",
-        "ucan"
+        "ifca"
     ],
     "description": "BCCR [Bjerknes Center for Climate Research (BCCR), NORCE Norwegian Research Center, Bergen, Norway]; UCAN [Instituto de Fisica de Cantabria (IFCA), CSIC-Universidad de Cantabria, Santander, Spain]"
 }
