@@ -2,6 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-vl-aq",
     "type": "experiment",
+    # TODO: get this checked by MIP chairs
     "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future. Altered to use high aerosol and tropospheric non-methane ozone precursor emissions. This is for models with interactive chemistry. Models without interactive chemistry should run `scen7-vl-Aer` instead.",
     "drs_name": "scen7-vl-AQ",
     "start_timestamp": "2022-01-01",
