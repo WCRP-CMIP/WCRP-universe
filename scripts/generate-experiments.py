@@ -1309,7 +1309,7 @@ class Holder(BaseModel):
                         (
                             "This is for models without interactive chemistry. "
                             "Models with interactive chemistry should run "
-                            f"`{base_experiment_universe.drs_name}-Aq` instead."
+                            f"`{base_experiment_universe.drs_name}-AQ` instead."
                         ),
                     ),
                 ):
@@ -1384,7 +1384,7 @@ class Holder(BaseModel):
                 (
                     "This is for models with interactive chemistry. "
                     "Models without interactive chemistry should run "
-                    f"`{base_univ_hist_pi.drs_name}-Aer` instead."
+                    f"`{base_univ_hist_pi.drs_name}-piAer` instead."
                 ),
             ),
             (
@@ -1394,7 +1394,7 @@ class Holder(BaseModel):
                 (
                     "This is for models without interactive chemistry. "
                     "Models with interactive chemistry should run "
-                    f"`{base_univ_hist_pi.drs_name}-Aq` instead."
+                    f"`{base_univ_hist_pi.drs_name}-piAQ` instead."
                 ),
             ),
         ):

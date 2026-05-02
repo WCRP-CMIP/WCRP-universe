@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "hist-piaer",
     "type": "experiment",
-    "description": "Used to diagnose the climate and air quality responses to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. Air pollutant emissions, including non-CH4 tropospheric O3 precursors, aerosols and their precursor emissions (BC, OC, NH3 and SO2) are set to PI levels. All other forcings evolve as in `historical`.  This is for models without interactive chemistry. Models with interactive chemistry should run `hist-Aq` instead.",
+    "description": "Used to diagnose the climate and air quality responses to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. Air pollutant emissions, including non-CH4 tropospheric O3 precursors, aerosols and their precursor emissions (BC, OC, NH3 and SO2) are set to PI levels. All other forcings evolve as in `historical`.  This is for models without interactive chemistry. Models with interactive chemistry should run `hist-piAQ` instead.",
     "drs_name": "hist-piAer",
     "start_timestamp": "1850-01-01",
     "activity": "aerchemmip",
