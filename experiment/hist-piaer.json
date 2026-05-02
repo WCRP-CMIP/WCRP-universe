@@ -2,32 +2,21 @@
     "@context": "000_context.jsonld",
     "id": "hist-piaer",
     "type": "experiment",
-    "experiment_id": "hist-piAer",
-    "activity_id": [
-        "lesfmip"
-    ],
+    "description": "Used to diagnose the climate and air quality responses to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. Air pollutant emissions, including non-CH4 tropospheric O3 precursors, aerosols and their precursor emissions (BC, OC, NH3 and SO2) are set to PI levels. All other forcings evolve as in `historical`.  This is for models without interactive chemistry. Models with interactive chemistry should run `hist-Aq` instead.",
+    "drs_name": "hist-piAer",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
     "additional_allowed_model_components": [
-        "aer",
-        "chem",
-        "bgc"
+        "bgc",
+        "chem"
     ],
-    "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
-    "end_year": 2020,
-    "experiment": "historical forcing, but with pre-industrial aerosol emissions",
-    "min_number_yrs_per_sim": null,
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "picontrol"
-    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
     "required_model_components": [
-        "aogcm"
+        "aogcm",
+        "aer"
     ],
-    "start_year": 1850,
-    "sub_experiment_id": [
-        "f2023"
-    ],
-    "tier": 3,
-    "drs_name": "hist-piAer"
+    "tier": 1
 }

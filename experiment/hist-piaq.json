@@ -2,34 +2,21 @@
     "@context": "000_context.jsonld",
     "id": "hist-piaq",
     "type": "experiment",
-    "experiment_id": "hist-piAQ",
-    "activity_id": [
-        "aerchemmip"
-    ],
+    "description": "Used to diagnose the climate and air quality responses to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. Air pollutant emissions, including non-CH4 tropospheric O3 precursors, aerosols and their precursor emissions (BC, OC, NH3 and SO2) are set to PI levels. All other forcings evolve as in `historical`.  This is for models with interactive chemistry. Models without interactive chemistry should run `hist-Aer` instead.",
+    "drs_name": "hist-piAQ",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
     "additional_allowed_model_components": [
-        "aer",
-        "aogcm",
-        "chem"
+        "bgc"
     ],
-    "description": "1. Detailed experiment configuration Historical simulation with emissions of aerosol and tropospheric non-methane ozone precursors held to pre-industrial (1850) levels  2. Required model settings We encourage modelling centres to include as much atmospheric composition capability as possible. But, as a minimum, models should have tropospheric chemistry and interactive aerosols. And the experimental setup should be consistent with other historical experiments.  3. Experiment conditions  4. Links to relevant references Fiedler et al. (in prep.) AerChemMIP2 - Unraveling the role of reactive gases, aerosols, and land use for air quality and climate change in CMIP7  5. Similarities to CMIP6 experiments hist-piNCTF  6. Forcing differences from parent experiment Aerosol, aerosol precursor and tropospheric non-methane ozone precursor emissions fixed at year-1850 values.",
-    "end_year": null,
-    "experiment": "Historical simulation with pre-industrial aerosol and tropospheric non-methane ozone precursors",
-    "min_number_yrs_per_sim": "172",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "historical"
-    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
     "required_model_components": [
-        "aer",
         "aogcm",
+        "aer",
         "chem"
     ],
-    "start_year": null,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "1",
-    "drs_name": "hist-piAQ"
+    "tier": 1
 }

@@ -1272,7 +1272,7 @@ class Holder(BaseModel):
 
         return self
 
-    def add_scenario_aerchemmip_entries(self) -> "Holder":
+    def add_aerchemmip_entries(self) -> "Holder":
         for base in ["vl", "h"]:
             conc_driven_drs_name = self.get_scenario_drs_name(base)
             for base_drs_name in [
@@ -1326,6 +1326,7 @@ class Holder(BaseModel):
                     )[0]
                     aerchemmip_experiment_universe.description = (
                         f"{desc_base} "
+                        # TODO: check this with MIP chairs
                         "Altered to use high aerosol and tropospheric non-methane ozone precursor emissions. "
                         f"{desc_suffix}"
                     )
@@ -1343,10 +1344,89 @@ class Holder(BaseModel):
                     self.experiments_project.append(aerchemmip_experiment_project)
                     self.add_experiment_to_activity(aerchemmip_experiment_project)
 
-        # TODO: ask someone to translate/write hist-piAQ for me.
-        # Not sure what hist-piAQ is or how it is defined.
-        # Need to get AerChemMIP people to weigh in as this comment wasn't enough:
-        # https://github.com/WCRP-CMIP/WCRP-universe/pull/85#discussion_r2609747439
+        base_univ_hist_pi = ExperimentUniverse(
+            drs_name="hist",
+            description=(
+                "Used to diagnose the climate and air quality responses "
+                "to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. "
+                "Air pollutant emissions, including non-CH4 tropospheric O3 precursors, aerosols "
+                "and their precursor emissions (BC, OC, NH3 and SO2) are set to PI levels. "
+                "All other forcings evolve as in `historical`. "
+            ),
+            activity="aerchemmip",
+            additional_allowed_model_components=["bgc"],
+            branch_information="Branch from `piControl` at a time of your choosing",
+            # Defined in project
+            end_timestamp="dont_write",
+            # Defined in project
+            min_ensemble_size=1,
+            # Defined in project
+            min_number_yrs_per_sim="dont_write",
+            parent_activity="cmip",
+            parent_experiment="picontrol",
+            # Defined in project
+            parent_mip_era="dont_write",
+            required_model_components=["aogcm", "aer", "chem"],
+            start_timestamp="1850-01-01",
+            tier=1,
+        )
+
+        for (
+            suffix,
+            required_model_components,
+            additional_allowed_model_components,
+            desc_suffix,
+        ) in (
+            (
+                "-piAQ",
+                ["aogcm", "aer", "chem"],
+                ["bgc"],
+                (
+                    "This is for models with interactive chemistry. "
+                    "Models without interactive chemistry should run "
+                    f"`{base_univ_hist_pi.drs_name}-Aer` instead."
+                ),
+            ),
+            (
+                "-piAer",
+                ["aogcm", "aer"],
+                ["bgc", "chem"],
+                (
+                    "This is for models without interactive chemistry. "
+                    "Models with interactive chemistry should run "
+                    f"`{base_univ_hist_pi.drs_name}-Aq` instead."
+                ),
+            ),
+        ):
+            experiment_universe = base_univ_hist_pi.model_copy()
+            experiment_universe.drs_name = f"{experiment_universe.drs_name}{suffix}"
+            experiment_universe.activity = "aerchemmip"
+
+            desc_base = base_univ_hist_pi.description
+            experiment_universe.description = f"{desc_base} {desc_suffix}"
+
+            # TODO: check
+            experiment_universe.min_ensemble_size = 1
+            experiment_universe.required_model_components = required_model_components
+            experiment_universe.additional_allowed_model_components = (
+                additional_allowed_model_components
+            )
+
+            self.experiments_universe.append(experiment_universe)
+
+            experiment_project = ExperimentProject(
+                id=experiment_universe.drs_name.lower(),
+                description=experiment_universe.drs_name.lower(),
+                activity=experiment_universe.activity,
+                start_timestamp="1850-01-01",
+                end_timestamp="2021-12-31",
+                min_number_yrs_per_sim=172,
+                min_ensemble_size=6,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(experiment_project)
+            self.add_experiment_to_activity(experiment_project)
 
     def add_geomip_entries(self) -> "Holder":
         for (
@@ -1491,7 +1571,7 @@ def main():
     holder.add_pmip_entries()
     holder.add_piclim_entries()
     holder.add_scenario_entries()
-    holder.add_scenario_aerchemmip_entries()
+    holder.add_aerchemmip_entries()
     holder.add_geomip_entries()
 
     holder.write_files(project_root=project_root, universe_root=universe_root)
