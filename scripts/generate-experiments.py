@@ -730,8 +730,8 @@ class Holder(BaseModel):
     def add_damip_entries(self) -> "Holder":
         for drs_name, forcing in (
             ("hist-aer", "aerosol"),
-            ("hist-GHG", "aerosol"),
-            ("hist-nat", "aerosol"),
+            ("hist-GHG", "greenhouse gas"),
+            ("hist-nat", "natural"),
         ):
             univ = ExperimentUniverse(
                 drs_name=drs_name,
