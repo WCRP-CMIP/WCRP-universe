@@ -1273,12 +1273,24 @@ class Holder(BaseModel):
         return self
 
     def add_aerchemmip_entries(self) -> "Holder":
-        for base in ["vl", "h"]:
+        for base, alteration in [
+            (
+                "vl",
+                "Altered to use aerosols, ozone and their precursor emissions from the `scen7-h` experiment.",
+            ),
+            (
+                "h",
+                "Altered to use present-day aerosols, ozone and their precursor emissions.",
+            ),
+        ]:
             conc_driven_drs_name = self.get_scenario_drs_name(base)
-            for base_drs_name in [
-                conc_driven_drs_name,
-                self.get_scenario_esm_drs_name(conc_driven_drs_name),
+            for base_drs_name, conc_driven in [
+                (conc_driven_drs_name, True),
+                (self.get_scenario_esm_drs_name(conc_driven_drs_name), False),
             ]:
+                if not conc_driven:
+                    alteration = alteration.replace("`scen7", "`esm-scen7")
+
                 base_experiment_universe_l = [
                     v for v in self.experiments_universe if v.drs_name == base_drs_name
                 ]
@@ -1325,10 +1337,7 @@ class Holder(BaseModel):
                         " Run with prescribed"
                     )[0]
                     aerchemmip_experiment_universe.description = (
-                        f"{desc_base} "
-                        # TODO: check this with MIP chairs
-                        "Altered to use high aerosol and tropospheric non-methane ozone precursor emissions. "
-                        f"{desc_suffix}"
+                        f"{desc_base} {alteration} {desc_suffix}"
                     )
 
                     aerchemmip_experiment_universe.min_ensemble_size = 3
