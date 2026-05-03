@@ -1405,7 +1405,6 @@ class Holder(BaseModel):
             desc_base = base_univ_hist_pi.description
             experiment_universe.description = f"{desc_base} {desc_suffix}"
 
-            # TODO: check
             experiment_universe.min_ensemble_size = 1
             experiment_universe.required_model_components = required_model_components
             experiment_universe.additional_allowed_model_components = (
@@ -1421,7 +1420,7 @@ class Holder(BaseModel):
                 start_timestamp="1850-01-01",
                 end_timestamp="2021-12-31",
                 min_number_yrs_per_sim=172,
-                min_ensemble_size=6,
+                min_ensemble_size=3,
                 parent_mip_era="cmip7",
                 tier=1,
             )
