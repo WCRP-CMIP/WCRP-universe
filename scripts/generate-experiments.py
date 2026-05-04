@@ -842,6 +842,7 @@ class Holder(BaseModel):
             required_model_components,
             additional_allowed_model_components,
             tier,
+            min_ensemble_size,
         ) in (
             (
                 "piClim-control",
@@ -862,6 +863,7 @@ class Holder(BaseModel):
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
+                1,
             ),
             (
                 "piClim-anthro",
@@ -873,6 +875,7 @@ class Holder(BaseModel):
                 "Same as `piClim-control`",
                 ["agcm"],
                 ["aer", "chem", "bgc"],
+                1,
                 1,
             ),
             (
@@ -890,6 +893,7 @@ class Holder(BaseModel):
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
+                1,
             ),
             (
                 "piClim-CH4",
@@ -902,6 +906,7 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
+                3,
             ),
             (
                 "piClim-N2O",
@@ -914,6 +919,7 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
+                3,
             ),
             (
                 "piClim-NOx",
@@ -926,6 +932,7 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
+                3,
             ),
             (
                 "piClim-ODS",
@@ -938,6 +945,7 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
+                3,
             ),
             (
                 "piClim-SO2",
@@ -950,6 +958,7 @@ class Holder(BaseModel):
                 ["agcm", "aer"],
                 ["chem", "bgc"],
                 1,
+                3,
             ),
             (
                 "piClim-aer",
@@ -961,6 +970,7 @@ class Holder(BaseModel):
                 "Same as `piClim-control`",
                 ["agcm", "aer"],
                 ["chem", "bgc"],
+                1,
                 1,
             ),
         ):
@@ -987,6 +997,7 @@ class Holder(BaseModel):
                 id=univ.drs_name.lower(),
                 activity=univ.activity,
                 branch_information=branch_information,
+                min_ensemble_size=min_ensemble_size,
                 parent_activity="cmip",
                 parent_experiment="picontrol",
                 parent_mip_era="cmip7",
