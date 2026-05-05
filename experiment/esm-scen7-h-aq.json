@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "esm-scen7-h-aq",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future. Altered to use present-day aerosols, ozone and their precursor emissions. This is for models with interactive chemistry. Models without interactive chemistry should run `esm-scen7-h-Aer` instead.",
+    "description": "Used to diagnose climate and air quality responses to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) are held constant at present-day (2021) levels. All other forcings evolve as in `esm-scen7-h`. Requires interactive chemistry. Models without interactive chemistry should run `esm-scen7-h-Aer` instead.",
     "drs_name": "esm-scen7-h-AQ",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",

@@ -1310,7 +1310,29 @@ class Holder(BaseModel):
         )
 
         hist_piaq_drs_name = "hist-piAQ"
+        aq_desc_base = (
+            "Used to diagnose climate and air quality responses "
+            "to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. "
+            "Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), "
+            "aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) {focus_forcings_evolution}. "
+            "All other forcings evolve as in `{other_forcings_experiment}`. "
+            "Requires interactive chemistry. "
+            "Models without interactive chemistry should run `{pair_experiment}` instead."
+        )
+        aq_required_model_components = ["aogcm", "aer", "chem"]
+        aq_additional_allowed_model_components = ["bgc"]
+
         hist_piaer_drs_name = "hist-piAer"
+        aer_required_model_components = ["aogcm", "aer"]
+        aer_additional_allowed_model_components = ["bgc", "chem"]
+        aer_desc_base = (
+            "Used to diagnose climate responses "
+            "to the regionally heterogeneous evolution of anthropogenic aerosol emissions. "
+            "Anthropogenic aerosols and aerosol precursor emissions (BC, OC, NH3, SO2) {focus_forcings_evolution}. "
+            "All other forcings evolve as in `{other_forcings_experiment}`. "
+            "Intended for models without interactive chemistry. "
+            "Models with interactive chemistry should run `{pair_experiment}` instead."
+        )
 
         for (
             drs_name,
@@ -1320,30 +1342,19 @@ class Holder(BaseModel):
         ) in (
             (
                 hist_piaq_drs_name,
-                ["aogcm", "aer", "chem"],
-                ["bgc"],
+                aq_required_model_components,
+                aq_additional_allowed_model_components,
                 (
-                    "Used to diagnose climate and air quality responses "
-                    "to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. "
-                    "Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), "
-                    "aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) evolve as in `piControl`. "
-                    "All other forcings evolve as in `historical`. "
-                    "Requires interactive chemistry. "
-                    f"Models without interactive chemistry should run `{hist_piaer_drs_name}` instead. "
+                    f"{aq_desc_base.format(focus_forcings_evolution='evolve as in `piControl`', other_forcings_experiment='historical', pair_experiment=hist_piaer_drs_name)} "
                     "(Renamed from `hist-piNTCF` in AerChemMIP phase 1.)"
                 ),
             ),
             (
                 hist_piaer_drs_name,
-                ["aogcm", "aer"],
-                ["bgc", "chem"],
+                aer_required_model_components,
+                aer_additional_allowed_model_components,
                 (
-                    "Used to diagnose climate responses "
-                    "to the regionally heterogeneous evolution of anthropogenic aerosol emissions. "
-                    "Anthropogenic aerosols and aerosol precursor emissions (BC, OC, NH3, SO2) evolve as in `piControl`. "
-                    "All other forcings evolve as in `historical`. "
-                    "Intended for models without interactive chemistry. "
-                    f"Models with interactive chemistry should run `{hist_piaq_drs_name}` instead. "
+                    f"{aer_desc_base.format(focus_forcings_evolution='evolve as in `piControl`', other_forcings_experiment='historical', pair_experiment=hist_piaq_drs_name)} "
                     "(Identical to `hist-piAer` in AerChemMIP phase 1.)"
                 ),
             ),
@@ -1360,7 +1371,6 @@ class Holder(BaseModel):
 
             experiment_project = ExperimentProject(
                 id=experiment_universe.drs_name.lower(),
-                description=experiment_universe.drs_name.lower(),
                 activity=experiment_universe.activity,
                 start_timestamp=experiment_universe.start_timestamp,
                 end_timestamp=hist_experiment_project.end_timestamp,
@@ -1372,168 +1382,176 @@ class Holder(BaseModel):
             self.experiments_project.append(experiment_project)
             self.add_experiment_to_activity(experiment_project)
 
-        # for base, alteration in [
-        #     (
-        #         "vl",
-        #         "Altered to use aerosols, ozone and their precursor emissions from the `scen7-h` experiment.",
-        #     ),
-        #     (
-        #         "h",
-        #         "Altered to use present-day aerosols, ozone and their precursor emissions.",
-        #     ),
-        # ]:
-        #     conc_driven_drs_name = self.get_scenario_drs_name(base)
-        #     for base_drs_name, conc_driven in [
-        #         (conc_driven_drs_name, True),
-        #         (self.get_scenario_esm_drs_name(conc_driven_drs_name), False),
-        #     ]:
-        #         if not conc_driven:
-        #             alteration = alteration.replace("`scen7", "`esm-scen7")
-        #
-        #         base_experiment_universe_l = [
-        #             v for v in self.experiments_universe if v.drs_name == base_drs_name
-        #         ]
-        #         if len(base_experiment_universe_l) != 1:
-        #             raise AssertionError(base_drs_name)
-        #         base_experiment_universe = base_experiment_universe_l[0]
-        #
-        #         for (
-        #             suffix,
-        #             required_model_components,
-        #             additional_allowed_model_components,
-        #             desc_suffix,
-        #         ) in (
-        #             (
-        #                 "-AQ",
-        #                 ["aogcm", "aer", "chem"],
-        #                 ["bgc"],
-        #                 (
-        #                     "This is for models with interactive chemistry. "
-        #                     "Models without interactive chemistry should run "
-        #                     f"`{base_experiment_universe.drs_name}-Aer` instead."
-        #                 ),
-        #             ),
-        #             (
-        #                 "-Aer",
-        #                 ["aogcm", "aer"],
-        #                 ["bgc", "chem"],
-        #                 (
-        #                     "This is for models without interactive chemistry. "
-        #                     "Models with interactive chemistry should run "
-        #                     f"`{base_experiment_universe.drs_name}-AQ` instead."
-        #                 ),
-        #             ),
-        #         ):
-        #             aerchemmip_experiment_universe = (
-        #                 base_experiment_universe.model_copy()
-        #             )
-        #             aerchemmip_experiment_universe.drs_name = (
-        #                 f"{aerchemmip_experiment_universe.drs_name}{suffix}"
-        #             )
-        #             aerchemmip_experiment_universe.activity = "aerchemmip"
-        #
-        #             desc_base = aerchemmip_experiment_universe.description.split(
-        #                 " Run with prescribed"
-        #             )[0]
-        #             aerchemmip_experiment_universe.description = (
-        #                 f"{desc_base} {alteration} {desc_suffix}"
-        #             )
-        #
-        #             aerchemmip_experiment_universe.min_ensemble_size = 3
-        #             aerchemmip_experiment_universe.required_model_components = (
-        #                 required_model_components
-        #             )
-        #             aerchemmip_experiment_universe.additional_allowed_model_components = additional_allowed_model_components
-        #
-        #             aerchemmip_experiment_project = self.get_scenario_project(
-        #                 aerchemmip_experiment_universe
-        #             )
-        #             self.experiments_universe.append(aerchemmip_experiment_universe)
-        #             self.experiments_project.append(aerchemmip_experiment_project)
-        #             self.add_experiment_to_activity(aerchemmip_experiment_project)
-        #
-        # base_univ_hist_pi = ExperimentUniverse(
-        #     drs_name="hist",
-        #     description=(
-        #         "Used to diagnose the climate and air quality responses "
-        #         "to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. "
-        #         "Air pollutant emissions, including non-CH4 tropospheric O3 precursors, aerosols "
-        #         "and their precursor emissions (BC, OC, NH3 and SO2) are set to PI levels. "
-        #         "All other forcings evolve as in `historical`. "
-        #     ),
-        #     activity="aerchemmip",
-        #     additional_allowed_model_components=["bgc"],
-        #     branch_information="Branch from `piControl` at a time of your choosing",
-        #     # Defined in project
-        #     end_timestamp="dont_write",
-        #     # Defined in project
-        #     min_ensemble_size=1,
-        #     # Defined in project
-        #     min_number_yrs_per_sim="dont_write",
-        #     parent_activity="cmip",
-        #     parent_experiment="picontrol",
-        #     # Defined in project
-        #     parent_mip_era="dont_write",
-        #     required_model_components=["aogcm", "aer", "chem"],
-        #     start_timestamp="1850-01-01",
-        #     tier=1,
-        # )
-        #
-        # for (
-        #     suffix,
-        #     required_model_components,
-        #     additional_allowed_model_components,
-        #     desc_suffix,
-        # ) in (
-        #     (
-        #         "-piAQ",
-        #         ["aogcm", "aer", "chem"],
-        #         ["bgc"],
-        #         (
-        #             "This is for models with interactive chemistry. "
-        #             "Models without interactive chemistry should run "
-        #             f"`{base_univ_hist_pi.drs_name}-piAer` instead."
-        #         ),
-        #     ),
-        #     (
-        #         "-piAer",
-        #         ["aogcm", "aer"],
-        #         ["bgc", "chem"],
-        #         (
-        #             "This is for models without interactive chemistry. "
-        #             "Models with interactive chemistry should run "
-        #             f"`{base_univ_hist_pi.drs_name}-piAQ` instead."
-        #         ),
-        #     ),
-        # ):
-        #     experiment_universe = base_univ_hist_pi.model_copy()
-        #     experiment_universe.drs_name = f"{experiment_universe.drs_name}{suffix}"
-        #     experiment_universe.activity = "aerchemmip"
-        #
-        #     desc_base = base_univ_hist_pi.description
-        #     experiment_universe.description = f"{desc_base} {desc_suffix}"
-        #
-        #     experiment_universe.min_ensemble_size = 1
-        #     experiment_universe.required_model_components = required_model_components
-        #     experiment_universe.additional_allowed_model_components = (
-        #         additional_allowed_model_components
-        #     )
-        #
-        #     self.experiments_universe.append(experiment_universe)
-        #
-        #     experiment_project = ExperimentProject(
-        #         id=experiment_universe.drs_name.lower(),
-        #         description=experiment_universe.drs_name.lower(),
-        #         activity=experiment_universe.activity,
-        #         start_timestamp="1850-01-01",
-        #         end_timestamp="2021-12-31",
-        #         min_number_yrs_per_sim=172,
-        #         min_ensemble_size=3,
-        #         parent_mip_era="cmip7",
-        #         tier=1,
-        #     )
-        #     self.experiments_project.append(experiment_project)
-        #     self.add_experiment_to_activity(experiment_project)
+        # vl gets replaced with h stuff
+        base_scenario = "vl"
+        scenario_aq_suffix = "-AQ"
+        scenario_aer_suffix = "-Aer"
+        for base_experiment, perturbation_experiment in [
+            (
+                self.get_scenario_drs_name(base_scenario),
+                self.get_scenario_drs_name("h"),
+            ),
+            (
+                self.get_scenario_esm_drs_name(
+                    self.get_scenario_drs_name(base_scenario)
+                ),
+                self.get_scenario_esm_drs_name(self.get_scenario_drs_name("h")),
+            ),
+        ]:
+            base_experiment_universe_l = [
+                v for v in self.experiments_universe if v.drs_name == base_experiment
+            ]
+            if len(base_experiment_universe_l) != 1:
+                raise AssertionError(base_experiment_universe_l)
+
+            base_experiment_universe = base_experiment_universe_l[0]
+
+            common_info_scen_universe = dict(
+                activity=common_info_hist_universe["activity"],
+                branch_information=base_experiment_universe.branch_information,
+                end_timestamp=base_experiment_universe.end_timestamp,
+                min_ensemble_size=3,
+                min_number_yrs_per_sim=base_experiment_universe.min_number_yrs_per_sim,
+                parent_activity=base_experiment_universe.parent_activity,
+                parent_experiment=base_experiment_universe.parent_experiment,
+                parent_mip_era=base_experiment_universe.parent_mip_era,
+                start_timestamp=base_experiment_universe.start_timestamp,
+                tier=1,
+            )
+
+            for (
+                suffix,
+                suffix_pair,
+                required_model_components,
+                additional_allowed_model_components,
+                description_base,
+            ) in (
+                (
+                    scenario_aq_suffix,
+                    scenario_aer_suffix,
+                    aq_required_model_components,
+                    aq_additional_allowed_model_components,
+                    aq_desc_base,
+                ),
+                (
+                    scenario_aer_suffix,
+                    scenario_aq_suffix,
+                    aer_required_model_components,
+                    aer_additional_allowed_model_components,
+                    aer_desc_base,
+                ),
+            ):
+                drs_name = f"{base_experiment}{suffix}"
+                drs_name_pair = f"{base_experiment}{suffix_pair}"
+                description = description_base.format(
+                    focus_forcings_evolution=f"evolve as in `{perturbation_experiment}`",
+                    other_forcings_experiment=base_experiment,
+                    pair_experiment=drs_name_pair,
+                )
+
+                experiment_universe = ExperimentUniverse(
+                    drs_name=drs_name,
+                    description=description,
+                    required_model_components=required_model_components,
+                    additional_allowed_model_components=additional_allowed_model_components,
+                    **common_info_scen_universe,
+                )
+
+                self.experiments_universe.append(experiment_universe)
+
+                experiment_project = ExperimentProject(
+                    id=experiment_universe.drs_name.lower(),
+                    activity=experiment_universe.activity,
+                    start_timestamp=experiment_universe.start_timestamp,
+                    end_timestamp=experiment_universe.end_timestamp,
+                    min_number_yrs_per_sim=experiment_universe.min_number_yrs_per_sim,
+                    parent_mip_era="cmip7",
+                    tier=1,
+                )
+                self.experiments_project.append(experiment_project)
+                self.add_experiment_to_activity(experiment_project)
+
+        # h gets replaced with present-day stuff
+        base_scenario = "h"
+        hist_end_year = hist_experiment_project.end_timestamp.split("-")[0]
+        for base_experiment in [
+            self.get_scenario_drs_name(base_scenario),
+            self.get_scenario_esm_drs_name(self.get_scenario_drs_name(base_scenario)),
+        ]:
+            base_experiment_universe_l = [
+                v for v in self.experiments_universe if v.drs_name == base_experiment
+            ]
+            if len(base_experiment_universe_l) != 1:
+                raise AssertionError(base_experiment_universe_l)
+
+            base_experiment_universe = base_experiment_universe_l[0]
+
+            common_info_scen_universe = dict(
+                activity=common_info_hist_universe["activity"],
+                branch_information=base_experiment_universe.branch_information,
+                end_timestamp=base_experiment_universe.end_timestamp,
+                min_ensemble_size=3,
+                min_number_yrs_per_sim=base_experiment_universe.min_number_yrs_per_sim,
+                parent_activity=base_experiment_universe.parent_activity,
+                parent_experiment=base_experiment_universe.parent_experiment,
+                parent_mip_era=base_experiment_universe.parent_mip_era,
+                start_timestamp=base_experiment_universe.start_timestamp,
+                tier=1,
+            )
+
+            for (
+                suffix,
+                suffix_pair,
+                required_model_components,
+                additional_allowed_model_components,
+                description_base,
+            ) in (
+                (
+                    scenario_aq_suffix,
+                    scenario_aer_suffix,
+                    aq_required_model_components,
+                    aq_additional_allowed_model_components,
+                    aq_desc_base,
+                ),
+                (
+                    scenario_aer_suffix,
+                    scenario_aq_suffix,
+                    aer_required_model_components,
+                    aer_additional_allowed_model_components,
+                    aer_desc_base,
+                ),
+            ):
+                drs_name = f"{base_experiment}{suffix}"
+                drs_name_pair = f"{base_experiment}{suffix_pair}"
+                description = description_base.format(
+                    focus_forcings_evolution=f"are held constant at present-day ({hist_end_year}) levels",
+                    other_forcings_experiment=base_experiment,
+                    pair_experiment=drs_name_pair,
+                )
+
+                experiment_universe = ExperimentUniverse(
+                    drs_name=drs_name,
+                    description=description,
+                    required_model_components=required_model_components,
+                    additional_allowed_model_components=additional_allowed_model_components,
+                    **common_info_scen_universe,
+                )
+
+                self.experiments_universe.append(experiment_universe)
+
+                experiment_project = ExperimentProject(
+                    id=experiment_universe.drs_name.lower(),
+                    activity=experiment_universe.activity,
+                    start_timestamp=experiment_universe.start_timestamp,
+                    end_timestamp=experiment_universe.end_timestamp,
+                    min_number_yrs_per_sim=experiment_universe.min_number_yrs_per_sim,
+                    parent_mip_era="cmip7",
+                    tier=1,
+                )
+                self.experiments_project.append(experiment_project)
+                self.add_experiment_to_activity(experiment_project)
+
+        return self
 
     def add_geomip_entries(self) -> "Holder":
         for (

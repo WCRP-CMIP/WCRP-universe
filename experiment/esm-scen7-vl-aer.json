@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "esm-scen7-vl-aer",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future. Altered to use aerosols, ozone and their precursor emissions from the `esm-scen7-h` experiment. This is for models without interactive chemistry. Models with interactive chemistry should run `esm-scen7-vl-AQ` instead.",
+    "description": "Used to diagnose climate responses to the regionally heterogeneous evolution of anthropogenic aerosol emissions. Anthropogenic aerosols and aerosol precursor emissions (BC, OC, NH3, SO2) evolve as in `esm-scen7-h`. All other forcings evolve as in `esm-scen7-vl`. Intended for models without interactive chemistry. Models with interactive chemistry should run `esm-scen7-vl-AQ` instead.",
     "drs_name": "esm-scen7-vl-Aer",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",
