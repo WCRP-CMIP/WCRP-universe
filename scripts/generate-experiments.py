@@ -906,7 +906,8 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
-                3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-N2O",
@@ -919,7 +920,8 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
-                3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-NOx",
@@ -932,7 +934,8 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
-                3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-ODS",
@@ -945,7 +948,8 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
-                3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-SO2",
@@ -958,7 +962,8 @@ class Holder(BaseModel):
                 ["agcm", "aer"],
                 ["chem", "bgc"],
                 1,
-                3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-aer",
@@ -1375,7 +1380,8 @@ class Holder(BaseModel):
                 start_timestamp=experiment_universe.start_timestamp,
                 end_timestamp=hist_experiment_project.end_timestamp,
                 min_number_yrs_per_sim=hist_experiment_project.min_number_yrs_per_sim,
-                min_ensemble_size=3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                min_ensemble_size=1,
                 parent_mip_era="cmip7",
                 tier=1,
             )
@@ -1410,7 +1416,8 @@ class Holder(BaseModel):
                 activity=common_info_hist_universe["activity"],
                 branch_information=base_experiment_universe.branch_information,
                 end_timestamp=base_experiment_universe.end_timestamp,
-                min_ensemble_size=3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                min_ensemble_size=1,
                 min_number_yrs_per_sim=base_experiment_universe.min_number_yrs_per_sim,
                 parent_activity=base_experiment_universe.parent_activity,
                 parent_experiment=base_experiment_universe.parent_experiment,
@@ -1490,7 +1497,8 @@ class Holder(BaseModel):
                 activity=common_info_hist_universe["activity"],
                 branch_information=base_experiment_universe.branch_information,
                 end_timestamp=base_experiment_universe.end_timestamp,
-                min_ensemble_size=3,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                min_ensemble_size=1,
                 min_number_yrs_per_sim=base_experiment_universe.min_number_yrs_per_sim,
                 parent_activity=base_experiment_universe.parent_activity,
                 parent_experiment=base_experiment_universe.parent_experiment,

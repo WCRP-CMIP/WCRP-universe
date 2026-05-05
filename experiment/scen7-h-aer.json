@@ -13,7 +13,7 @@
         "chem"
     ],
     "branch_information": "Branch from `historical` at 2022-01-01.",
-    "min_ensemble_size": 3,
+    "min_ensemble_size": 1,
     "parent_activity": "cmip",
     "parent_experiment": "historical",
     "parent_mip_era": "cmip7",
