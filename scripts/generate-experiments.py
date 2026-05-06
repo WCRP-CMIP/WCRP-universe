@@ -1297,20 +1297,28 @@ class Holder(BaseModel):
 
         hist_experiment_project = hist_experiment_project_l[0]
 
+        hist_experiment_universe_l = [
+            v for v in self.experiments_universe if v.drs_name == "historical"
+        ]
+        if len(hist_experiment_universe_l) != 1:
+            raise AssertionError(hist_experiment_universe_l)
+
+        hist_experiment_universe = hist_experiment_universe_l[0]
+
         common_info_hist_universe = dict(
             activity="aerchemmip",
-            branch_information=hist_experiment_project.branch_information,
+            branch_information=hist_experiment_universe.branch_information,
             # Defined in project
             end_timestamp="dont_write",
             # Re-defined in project
             min_ensemble_size=1,
             # Defined in project
             min_number_yrs_per_sim="dont_write",
-            parent_activity=hist_experiment_project.parent_activity,
-            parent_experiment=hist_experiment_project.parent_experiment,
+            parent_activity=hist_experiment_universe.parent_activity,
+            parent_experiment=hist_experiment_universe.parent_experiment,
             # Defined in project
             parent_mip_era="dont_write",
-            start_timestamp=hist_experiment_project.start_timestamp,
+            start_timestamp=hist_experiment_universe.start_timestamp,
             tier=1,
         )
 

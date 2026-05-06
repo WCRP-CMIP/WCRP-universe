@@ -9,7 +9,10 @@
     "additional_allowed_model_components": [
         "bgc"
     ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
     "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
     "required_model_components": [
         "aogcm",
         "aer",
