@@ -213,6 +213,11 @@ class Holder(BaseModel):
                 ],
             ),
             ActivityProject(
+                id="lmip",
+                experiments=[],
+                urls=["https://doi.org/10.5194/gmd-9-2809-2016"],
+            ),
+            ActivityProject(
                 id="pmip",
                 experiments=[],
                 urls=[
@@ -778,6 +783,61 @@ class Holder(BaseModel):
             self.experiments_project.append(proj)
 
             self.add_experiment_to_activity(proj)
+
+        return self
+
+    def add_lmip_entries(self) -> "Holder":
+        drs_name = "land-hist"
+        # TODO: confirm this
+        # Specifics:
+        # - should temperatures be prescribed from some source
+        #   or taken from e.g. the model's coupled historical run?
+        # - other inputs? Are they all from input4MIPs or other distribution channels?
+        # - there is no spin up or parent experiment for this right?
+        description = "Land-only version of `historical`."
+
+        hist_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "historical"
+        ]
+        if len(hist_experiment_project_l) != 1:
+            raise AssertionError(hist_experiment_project_l)
+
+        hist_experiment_project = hist_experiment_project_l[0]
+
+        univ = ExperimentUniverse(
+            drs_name=drs_name,
+            description=description,
+            activity="lmip",
+            additional_allowed_model_components=[],
+            branch_information=None,
+            # Defined in project
+            end_timestamp="dont_write",
+            min_ensemble_size=1,
+            # Defined in project
+            min_number_yrs_per_sim="dont_write",
+            parent_activity=None,
+            parent_experiment=None,
+            parent_mip_era=None,
+            required_model_components=["land"],
+            # Defined in project
+            start_timestamp="dont_write",
+            tier=1,
+        )
+
+        self.experiments_universe.append(univ)
+
+        proj = ExperimentProject(
+            id=univ.drs_name.lower(),
+            activity=univ.activity,
+            start_timestamp=hist_experiment_project.start_timestamp,
+            end_timestamp=hist_experiment_project.end_timestamp,
+            min_number_yrs_per_sim=hist_experiment_project.min_number_yrs_per_sim,
+            parent_mip_era="cmip7",
+            tier=1,
+        )
+        self.experiments_project.append(proj)
+
+        self.add_experiment_to_activity(proj)
 
         return self
 
@@ -1488,6 +1548,7 @@ def main():
     holder.add_historical_entries()
     holder.add_flat10_entries()
     holder.add_damip_entries()
+    holder.add_lmip_entries()
     holder.add_pmip_entries()
     holder.add_piclim_entries()
     holder.add_scenario_entries()
