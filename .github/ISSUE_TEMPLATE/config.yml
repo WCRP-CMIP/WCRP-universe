@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-- name: View Documentation
-  url: https://wcrp-cmip.github.io/WCRP-universe/
-  description: Documentation for WCRP Universe Controlled Vocabularies.
-- name: All Options
-  url: https://github.com/WCRP-CMIP/WCRP-universe/blob/main/.github/CONTRIBUTING.md
-  description: All possible new submissions
