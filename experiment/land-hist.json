@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "land-hist",
     "type": "experiment",
-    "description": "Land-only version of `historical`.",
+    "description": "Land-only version of `historical` with prescribed climate and weather inputs required to drive land models.",
     "drs_name": "land-hist",
     "activity": "lmip",
     "additional_allowed_model_components": [],

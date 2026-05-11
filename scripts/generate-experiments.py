@@ -790,11 +790,8 @@ class Holder(BaseModel):
         drs_name = "land-hist"
         # TODO: confirm this
         # Specifics:
-        # - should temperatures be prescribed from some source
-        #   or taken from e.g. the model's coupled historical run?
-        # - other inputs? Are they all from input4MIPs or other distribution channels?
         # - there is no spin up or parent experiment for this right?
-        description = "Land-only version of `historical`."
+        description = "Land-only version of `historical` with prescribed climate and weather inputs required to drive land models."
 
         hist_experiment_project_l = [
             v for v in self.experiments_project if v.id == "historical"
