@@ -730,8 +730,8 @@ class Holder(BaseModel):
     def add_damip_entries(self) -> "Holder":
         for drs_name, forcing in (
             ("hist-aer", "aerosol"),
-            ("hist-GHG", "aerosol"),
-            ("hist-nat", "aerosol"),
+            ("hist-GHG", "greenhouse gas"),
+            ("hist-nat", "natural"),
         ):
             univ = ExperimentUniverse(
                 drs_name=drs_name,
@@ -842,6 +842,7 @@ class Holder(BaseModel):
             required_model_components,
             additional_allowed_model_components,
             tier,
+            min_ensemble_size,
         ) in (
             (
                 "piClim-control",
@@ -862,6 +863,7 @@ class Holder(BaseModel):
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
+                1,
             ),
             (
                 "piClim-anthro",
@@ -873,6 +875,7 @@ class Holder(BaseModel):
                 "Same as `piClim-control`",
                 ["agcm"],
                 ["aer", "chem", "bgc"],
+                1,
                 1,
             ),
             (
@@ -890,6 +893,7 @@ class Holder(BaseModel):
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
+                1,
             ),
             (
                 "piClim-CH4",
@@ -901,6 +905,8 @@ class Holder(BaseModel):
                 "Same as `piClim-control`",
                 ["agcm", "chem"],
                 ["aer", "bgc"],
+                1,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
                 1,
             ),
             (
@@ -914,6 +920,8 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-NOx",
@@ -925,6 +933,8 @@ class Holder(BaseModel):
                 "Same as `piClim-control`",
                 ["agcm", "chem"],
                 ["aer", "bgc"],
+                1,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
                 1,
             ),
             (
@@ -938,6 +948,8 @@ class Holder(BaseModel):
                 ["agcm", "chem"],
                 ["aer", "bgc"],
                 1,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-SO2",
@@ -950,6 +962,8 @@ class Holder(BaseModel):
                 ["agcm", "aer"],
                 ["chem", "bgc"],
                 1,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                1,
             ),
             (
                 "piClim-aer",
@@ -961,6 +975,7 @@ class Holder(BaseModel):
                 "Same as `piClim-control`",
                 ["agcm", "aer"],
                 ["chem", "bgc"],
+                1,
                 1,
             ),
         ):
@@ -987,6 +1002,7 @@ class Holder(BaseModel):
                 id=univ.drs_name.lower(),
                 activity=univ.activity,
                 branch_information=branch_information,
+                min_ensemble_size=min_ensemble_size,
                 parent_activity="cmip",
                 parent_experiment="picontrol",
                 parent_mip_era="cmip7",
@@ -1272,81 +1288,286 @@ class Holder(BaseModel):
 
         return self
 
-    def add_scenario_aerchemmip_entries(self) -> "Holder":
-        for base in ["vl", "h"]:
-            conc_driven_drs_name = self.get_scenario_drs_name(base)
-            for base_drs_name in [
-                conc_driven_drs_name,
-                self.get_scenario_esm_drs_name(conc_driven_drs_name),
-            ]:
-                base_experiment_universe_l = [
-                    v for v in self.experiments_universe if v.drs_name == base_drs_name
-                ]
-                if len(base_experiment_universe_l) != 1:
-                    raise AssertionError(base_drs_name)
-                base_experiment_universe = base_experiment_universe_l[0]
+    def add_aerchemmip_entries(self) -> "Holder":
+        hist_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "historical"
+        ]
+        if len(hist_experiment_project_l) != 1:
+            raise AssertionError(hist_experiment_project_l)
 
-                for (
-                    suffix,
-                    required_model_components,
-                    additional_allowed_model_components,
-                    desc_suffix,
-                ) in (
-                    (
-                        "-AQ",
-                        ["aogcm", "aer", "chem"],
-                        ["bgc"],
-                        (
-                            "This is for models with interactive chemistry. "
-                            "Models without interactive chemistry should run "
-                            f"`{base_experiment_universe.drs_name}-Aer` instead."
-                        ),
-                    ),
-                    (
-                        "-Aer",
-                        ["aogcm", "aer"],
-                        ["bgc", "chem"],
-                        (
-                            "This is for models without interactive chemistry. "
-                            "Models with interactive chemistry should run "
-                            f"`{base_experiment_universe.drs_name}-Aq` instead."
-                        ),
-                    ),
-                ):
-                    aerchemmip_experiment_universe = (
-                        base_experiment_universe.model_copy()
-                    )
-                    aerchemmip_experiment_universe.drs_name = (
-                        f"{aerchemmip_experiment_universe.drs_name}{suffix}"
-                    )
-                    aerchemmip_experiment_universe.activity = "aerchemmip"
+        hist_experiment_project = hist_experiment_project_l[0]
 
-                    desc_base = aerchemmip_experiment_universe.description.split(
-                        " Run with prescribed"
-                    )[0]
-                    aerchemmip_experiment_universe.description = (
-                        f"{desc_base} "
-                        "Altered to use high aerosol and tropospheric non-methane ozone precursor emissions. "
-                        f"{desc_suffix}"
-                    )
+        hist_experiment_universe_l = [
+            v for v in self.experiments_universe if v.drs_name == "historical"
+        ]
+        if len(hist_experiment_universe_l) != 1:
+            raise AssertionError(hist_experiment_universe_l)
 
-                    aerchemmip_experiment_universe.min_ensemble_size = 3
-                    aerchemmip_experiment_universe.required_model_components = (
-                        required_model_components
-                    )
-                    aerchemmip_experiment_universe.additional_allowed_model_components = additional_allowed_model_components
+        hist_experiment_universe = hist_experiment_universe_l[0]
 
-                    aerchemmip_experiment_project = self.get_scenario_project(
-                        aerchemmip_experiment_universe
-                    )
-                    self.experiments_universe.append(aerchemmip_experiment_universe)
-                    self.experiments_project.append(aerchemmip_experiment_project)
-                    self.add_experiment_to_activity(aerchemmip_experiment_project)
+        common_info_hist_universe = dict(
+            activity="aerchemmip",
+            branch_information=hist_experiment_universe.branch_information,
+            # Defined in project
+            end_timestamp="dont_write",
+            # Re-defined in project
+            min_ensemble_size=1,
+            # Defined in project
+            min_number_yrs_per_sim="dont_write",
+            parent_activity=hist_experiment_universe.parent_activity,
+            parent_experiment=hist_experiment_universe.parent_experiment,
+            # Defined in project
+            parent_mip_era="dont_write",
+            start_timestamp=hist_experiment_universe.start_timestamp,
+            tier=1,
+        )
 
-        # TODO: ask someone to translate/write hist-piAQ for me.
-        # Not sure what hist-piAQ is or how it is defined.
-        # Need to get AerChemMIP people to weigh in as this comment wasn't enough:
-        # https://github.com/WCRP-CMIP/WCRP-universe/pull/85#discussion_r2609747439
+        hist_piaq_drs_name = "hist-piAQ"
+        aq_desc_base = (
+            "Used to diagnose climate and air quality responses "
+            "to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. "
+            "Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), "
+            "aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) {focus_forcings_evolution}. "
+            "All other forcings evolve as in `{other_forcings_experiment}`. "
+            "Requires interactive chemistry. "
+            "Models without interactive chemistry should run `{pair_experiment}` instead."
+        )
+        aq_required_model_components = ["aogcm", "aer", "chem"]
+        aq_additional_allowed_model_components = ["bgc"]
+
+        hist_piaer_drs_name = "hist-piAer"
+        aer_required_model_components = ["aogcm", "aer"]
+        aer_additional_allowed_model_components = ["bgc", "chem"]
+        aer_desc_base = (
+            "Used to diagnose climate responses "
+            "to the regionally heterogeneous evolution of anthropogenic aerosol emissions. "
+            "Anthropogenic aerosols and aerosol precursor emissions (BC, OC, NH3, SO2) {focus_forcings_evolution}. "
+            "All other forcings evolve as in `{other_forcings_experiment}`. "
+            "Intended for models without interactive chemistry. "
+            "Models with interactive chemistry should run `{pair_experiment}` instead."
+        )
+
+        for (
+            drs_name,
+            required_model_components,
+            additional_allowed_model_components,
+            description,
+        ) in (
+            (
+                hist_piaq_drs_name,
+                aq_required_model_components,
+                aq_additional_allowed_model_components,
+                (
+                    f"{aq_desc_base.format(focus_forcings_evolution='evolve as in `piControl`', other_forcings_experiment='historical', pair_experiment=hist_piaer_drs_name)} "
+                    "(Renamed from `hist-piNTCF` in AerChemMIP phase 1.)"
+                ),
+            ),
+            (
+                hist_piaer_drs_name,
+                aer_required_model_components,
+                aer_additional_allowed_model_components,
+                (
+                    f"{aer_desc_base.format(focus_forcings_evolution='evolve as in `piControl`', other_forcings_experiment='historical', pair_experiment=hist_piaq_drs_name)} "
+                    "(Identical to `hist-piAer` in AerChemMIP phase 1.)"
+                ),
+            ),
+        ):
+            experiment_universe = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                required_model_components=required_model_components,
+                additional_allowed_model_components=additional_allowed_model_components,
+                **common_info_hist_universe,
+            )
+
+            self.experiments_universe.append(experiment_universe)
+
+            experiment_project = ExperimentProject(
+                id=experiment_universe.drs_name.lower(),
+                activity=experiment_universe.activity,
+                start_timestamp=experiment_universe.start_timestamp,
+                end_timestamp=hist_experiment_project.end_timestamp,
+                min_number_yrs_per_sim=hist_experiment_project.min_number_yrs_per_sim,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                min_ensemble_size=1,
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            self.experiments_project.append(experiment_project)
+            self.add_experiment_to_activity(experiment_project)
+
+        # vl gets replaced with h stuff
+        base_scenario = "vl"
+        scenario_aq_suffix = "-AQ"
+        scenario_aer_suffix = "-Aer"
+        for base_experiment, perturbation_experiment in [
+            (
+                self.get_scenario_drs_name(base_scenario),
+                self.get_scenario_drs_name("h"),
+            ),
+            (
+                self.get_scenario_esm_drs_name(
+                    self.get_scenario_drs_name(base_scenario)
+                ),
+                self.get_scenario_esm_drs_name(self.get_scenario_drs_name("h")),
+            ),
+        ]:
+            base_experiment_universe_l = [
+                v for v in self.experiments_universe if v.drs_name == base_experiment
+            ]
+            if len(base_experiment_universe_l) != 1:
+                raise AssertionError(base_experiment_universe_l)
+
+            base_experiment_universe = base_experiment_universe_l[0]
+
+            common_info_scen_universe = dict(
+                activity=common_info_hist_universe["activity"],
+                branch_information=base_experiment_universe.branch_information,
+                end_timestamp=base_experiment_universe.end_timestamp,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=base_experiment_universe.min_number_yrs_per_sim,
+                parent_activity=base_experiment_universe.parent_activity,
+                parent_experiment=base_experiment_universe.parent_experiment,
+                parent_mip_era=base_experiment_universe.parent_mip_era,
+                start_timestamp=base_experiment_universe.start_timestamp,
+                tier=1,
+            )
+
+            for (
+                suffix,
+                suffix_pair,
+                required_model_components,
+                additional_allowed_model_components,
+                description_base,
+            ) in (
+                (
+                    scenario_aq_suffix,
+                    scenario_aer_suffix,
+                    aq_required_model_components,
+                    aq_additional_allowed_model_components,
+                    aq_desc_base,
+                ),
+                (
+                    scenario_aer_suffix,
+                    scenario_aq_suffix,
+                    aer_required_model_components,
+                    aer_additional_allowed_model_components,
+                    aer_desc_base,
+                ),
+            ):
+                drs_name = f"{base_experiment}{suffix}"
+                drs_name_pair = f"{base_experiment}{suffix_pair}"
+                description = description_base.format(
+                    focus_forcings_evolution=f"evolve as in `{perturbation_experiment}`",
+                    other_forcings_experiment=base_experiment,
+                    pair_experiment=drs_name_pair,
+                )
+
+                experiment_universe = ExperimentUniverse(
+                    drs_name=drs_name,
+                    description=description,
+                    required_model_components=required_model_components,
+                    additional_allowed_model_components=additional_allowed_model_components,
+                    **common_info_scen_universe,
+                )
+
+                self.experiments_universe.append(experiment_universe)
+
+                experiment_project = ExperimentProject(
+                    id=experiment_universe.drs_name.lower(),
+                    activity=experiment_universe.activity,
+                    start_timestamp=experiment_universe.start_timestamp,
+                    end_timestamp=experiment_universe.end_timestamp,
+                    min_number_yrs_per_sim=experiment_universe.min_number_yrs_per_sim,
+                    parent_mip_era="cmip7",
+                    tier=1,
+                )
+                self.experiments_project.append(experiment_project)
+                self.add_experiment_to_activity(experiment_project)
+
+        # h gets replaced with present-day stuff
+        base_scenario = "h"
+        hist_end_year = hist_experiment_project.end_timestamp.split("-")[0]
+        for base_experiment in [
+            self.get_scenario_drs_name(base_scenario),
+            self.get_scenario_esm_drs_name(self.get_scenario_drs_name(base_scenario)),
+        ]:
+            base_experiment_universe_l = [
+                v for v in self.experiments_universe if v.drs_name == base_experiment
+            ]
+            if len(base_experiment_universe_l) != 1:
+                raise AssertionError(base_experiment_universe_l)
+
+            base_experiment_universe = base_experiment_universe_l[0]
+
+            common_info_scen_universe = dict(
+                activity=common_info_hist_universe["activity"],
+                branch_information=base_experiment_universe.branch_information,
+                end_timestamp=base_experiment_universe.end_timestamp,
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=base_experiment_universe.min_number_yrs_per_sim,
+                parent_activity=base_experiment_universe.parent_activity,
+                parent_experiment=base_experiment_universe.parent_experiment,
+                parent_mip_era=base_experiment_universe.parent_mip_era,
+                start_timestamp=base_experiment_universe.start_timestamp,
+                tier=1,
+            )
+
+            for (
+                suffix,
+                suffix_pair,
+                required_model_components,
+                additional_allowed_model_components,
+                description_base,
+            ) in (
+                (
+                    scenario_aq_suffix,
+                    scenario_aer_suffix,
+                    aq_required_model_components,
+                    aq_additional_allowed_model_components,
+                    aq_desc_base,
+                ),
+                (
+                    scenario_aer_suffix,
+                    scenario_aq_suffix,
+                    aer_required_model_components,
+                    aer_additional_allowed_model_components,
+                    aer_desc_base,
+                ),
+            ):
+                drs_name = f"{base_experiment}{suffix}"
+                drs_name_pair = f"{base_experiment}{suffix_pair}"
+                description = description_base.format(
+                    focus_forcings_evolution=f"are held constant at present-day ({hist_end_year}) levels",
+                    other_forcings_experiment=base_experiment,
+                    pair_experiment=drs_name_pair,
+                )
+
+                experiment_universe = ExperimentUniverse(
+                    drs_name=drs_name,
+                    description=description,
+                    required_model_components=required_model_components,
+                    additional_allowed_model_components=additional_allowed_model_components,
+                    **common_info_scen_universe,
+                )
+
+                self.experiments_universe.append(experiment_universe)
+
+                experiment_project = ExperimentProject(
+                    id=experiment_universe.drs_name.lower(),
+                    activity=experiment_universe.activity,
+                    start_timestamp=experiment_universe.start_timestamp,
+                    end_timestamp=experiment_universe.end_timestamp,
+                    min_number_yrs_per_sim=experiment_universe.min_number_yrs_per_sim,
+                    parent_mip_era="cmip7",
+                    tier=1,
+                )
+                self.experiments_project.append(experiment_project)
+                self.add_experiment_to_activity(experiment_project)
+
+        return self
 
     def add_geomip_entries(self) -> "Holder":
         for (
@@ -1491,7 +1712,7 @@ def main():
     holder.add_pmip_entries()
     holder.add_piclim_entries()
     holder.add_scenario_entries()
-    holder.add_scenario_aerchemmip_entries()
+    holder.add_aerchemmip_entries()
     holder.add_geomip_entries()
 
     holder.write_files(project_root=project_root, universe_root=universe_root)
