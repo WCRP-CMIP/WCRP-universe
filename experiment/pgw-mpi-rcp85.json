@@ -1,0 +1,24 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pgw-mpi-rcp85",
+    "type": "experiment",
+    "experiment_id": "pgw-mpi-rcp85",
+    "activity_id": [
+        "cordex-fpsconv"
+    ],
+    "description": "future projection based on MPI-ESM-LR CMIP5 Earth System Model r1i1p1 climate signal under the RCP8.5 scenario (CMIP5-era [2006-2100] forcing) added to the ECMWF ERA-Interim reanalysis to create a pseudo global warming (PGW) scenario",
+    "end_year": null,
+    "experiment": "future projection based on MPI-ESM-LR CMIP5 Earth System Model r1i1p1 climate signal under the RCP8.5 scenario (CMIP5-era [2006-2100] forcing) added to the ECMWF ERA-Interim reanalysis to create a pseudo global warming (PGW) scenario",
+    "min_number_yrs_per_sim": "10",
+    "parent_activity_id": [
+        "cordex"
+    ],
+    "parent_experiment_id": [
+        "evaluation"
+    ],
+    "start_year": 2006,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "drs_name": "PGW-MPI-rcp85"
+}

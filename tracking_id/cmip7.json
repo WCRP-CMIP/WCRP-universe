@@ -1,7 +1,0 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "cmip7",
-  "type": "tracking_id",
-  "description": "Is regexp missing from context? Tracking IDs used with CMIP7 data. The prefix ensures that the handle.net service looks in the right collection.",
-  "regex": "^hdl:21.14107/[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
-}

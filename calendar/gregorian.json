@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "gregorian",
+    "type": "calendar",
+    "description": "The calendar with the Gregorian rule, as defined by the CF conventions.",
+    "drs_name": "gregorian"
+}

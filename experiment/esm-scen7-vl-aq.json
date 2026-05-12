@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "esm-scen7-vl-aq",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future. Altered to use high aerosol and tropospheric non-methane ozone precursor emissions. This is for models with interactive chemistry. Models without interactive chemistry should run `esm-scen7-vl-Aer` instead.",
+    "description": "Used to diagnose climate and air quality responses to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) evolve as in `esm-scen7-h`. All other forcings evolve as in `esm-scen7-vl`. Requires interactive chemistry. Models without interactive chemistry should run `esm-scen7-vl-Aer` instead.",
     "drs_name": "esm-scen7-vl-AQ",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",
@@ -12,7 +12,7 @@
         "bgc"
     ],
     "branch_information": "Branch from `esm-hist` at 2022-01-01.",
-    "min_ensemble_size": 3,
+    "min_ensemble_size": 1,
     "parent_activity": "cmip",
     "parent_experiment": "esm-hist",
     "parent_mip_era": "cmip7",
