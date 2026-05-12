@@ -1243,7 +1243,6 @@ class Holder(BaseModel):
                     "The Low emission scenario is designed to be consistent "
                     "with the pursuit of holding warming to a level likely below 2C, "
                     "without returning to 1.5C before the end of the century. "
-                    "The scenario is extended beyond 2100 by an emissions trajectory leading to a slow decrease of warming afterwards."
                 ),
             ),
             (
@@ -1251,8 +1250,7 @@ class Holder(BaseModel):
                 (
                     "CMIP7 ScenarioMIP Medium-to-Low emission scenario - "
                     "A scenario exploring a delayed increase in mitigation efforts, "
-                    "short of the Paris temperature goal but achieving net-zero CO2 emissions by the end of the century, "
-                    "with a period of net negative CO2 emissions thereafter to achieve 1.5 °C on a multi-century timescale."
+                    "short of the Paris temperature goal but achieving net-zero CO2 emissions by the end of the century."
                 ),
             ),
             (

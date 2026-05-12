@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-ml",
     "type": "experiment",
-    "description": "CMIP7 ScenarioMIP Medium-to-Low emission scenario - A scenario exploring a delayed increase in mitigation efforts, short of the Paris temperature goal but achieving net-zero CO2 emissions by the end of the century, with a period of net negative CO2 emissions thereafter to achieve 1.5\u2009\u00b0C on a multi-century timescale. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-ml`).",
+    "description": "CMIP7 ScenarioMIP Medium-to-Low emission scenario - A scenario exploring a delayed increase in mitigation efforts, short of the Paris temperature goal but achieving net-zero CO2 emissions by the end of the century. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-ml`).",
     "drs_name": "scen7-ml",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",
