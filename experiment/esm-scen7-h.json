@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "esm-scen7-h",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future. Run with prescribed carbon dioxide emissions (for prescribed carbon dioxide concentrations, see `scen7-h`).",
+    "description": "CMIP7 ScenarioMIP High emission scenario - A scenario with emissions as high as judged to be plausible, based on assuming developments that include a rollback of current mitigation policies. This scenario is expected to result in forcings below SSP5-8.5. Run with prescribed carbon dioxide emissions (for prescribed carbon dioxide concentrations, see `scen7-h`).",
     "drs_name": "esm-scen7-h",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",

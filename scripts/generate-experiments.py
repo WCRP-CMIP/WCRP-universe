@@ -1216,22 +1216,69 @@ class Holder(BaseModel):
 
     def add_scenario_entries(self) -> "Holder":
         acronym_descriptions = [
-            ("vl", "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future."),
+            (
+                "vl",
+                (
+                    "CMIP7 ScenarioMIP Very Low emission scenario - "
+                    "The Very Low emission scenario "
+                    "is designed to keep the temperature level as low as plausible given feasibility constraints. "
+                    "This scenario is thus relevant for the low end of the Paris range "
+                    "(staying as close as plausible to 1.5C at the time of peak warming "
+                    "and limiting warming to 1.5C by the end of the century)."
+                ),
+            ),
             (
                 "ln",
-                "PLACEHOLDER TBC. CMIP7 ScenarioMIP low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future.",
+                (
+                    "CMIP7 ScenarioMIP Low-to-Negative emission scenario - "
+                    "A scenario with a higher overshoot of the 1.5C goal, "
+                    "followed by stringent climate policies resulting in net-negative greenhouse gas emissions to return to lower warming levels, "
+                    "thus supporting research into the reversibility of climate outcomes and their impacts."
+                ),
             ),
-            ("l", "PLACEHOLDER TBC. CMIP7 ScenarioMIP low emissions future."),
+            (
+                "l",
+                (
+                    "CMIP7 ScenarioMIP Low emission scenario - "
+                    "The Low emission scenario is designed to be consistent "
+                    "with the pursuit of holding warming to a level likely below 2C, "
+                    "without returning to 1.5C before the end of the century. "
+                    "The scenario is extended beyond 2100 by an emissions trajectory leading to a slow decrease of warming afterwards."
+                ),
+            ),
             (
                 "ml",
-                "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium followed by low (from 2040) emissions future.",
+                (
+                    "CMIP7 ScenarioMIP Medium-to-Low emission scenario - "
+                    "A scenario exploring a delayed increase in mitigation efforts, "
+                    "short of the Paris temperature goal but achieving net-zero CO2 emissions by the end of the century, "
+                    "with a period of net negative CO2 emissions thereafter to achieve 1.5 °C on a multi-century timescale."
+                ),
             ),
-            ("m", "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium emissions future."),
+            (
+                "m",
+                (
+                    "CMIP7 ScenarioMIP Medium emission scenario - "
+                    "A middle scenario exploring consequences of extending current policies and trends into the future."
+                ),
+            ),
             (
                 "hl",
-                "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future.",
+                (
+                    "CMIP7 ScenarioMIP High-to-Low emission scenario - "
+                    "A scenario that follows approximately the same emissions pathway as the High, "
+                    "but changes course in the second half of the century, applying strong mitigation measures to reach net zero CO2 emissions by 2100."
+                ),
             ),
-            ("h", "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future."),
+            (
+                "h",
+                (
+                    "CMIP7 ScenarioMIP High emission scenario - "
+                    "A scenario with emissions as high as judged to be plausible, "
+                    "based on assuming developments that include a rollback of current mitigation policies. "
+                    "This scenario is expected to result in forcings below SSP5-8.5."
+                ),
+            ),
         ]
 
         for acronym, description_base in acronym_descriptions:

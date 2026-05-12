@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-l",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP low emissions future. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-l`).",
+    "description": "CMIP7 ScenarioMIP Low emission scenario - The Low emission scenario is designed to be consistent with the pursuit of holding warming to a level likely below 2C, without returning to 1.5C before the end of the century. The scenario is extended beyond 2100 by an emissions trajectory leading to a slow decrease of warming afterwards. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-l`).",
     "drs_name": "scen7-l",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",
