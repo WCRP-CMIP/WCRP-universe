@@ -826,7 +826,6 @@ class Holder(BaseModel):
             start_timestamp=hist_experiment_project.start_timestamp,
             end_timestamp=hist_experiment_project.end_timestamp,
             min_number_yrs_per_sim=hist_experiment_project.min_number_yrs_per_sim,
-            parent_mip_era="cmip7",
             tier=1,
         )
         self.experiments_project.append(proj)
