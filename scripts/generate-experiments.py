@@ -788,9 +788,6 @@ class Holder(BaseModel):
 
     def add_lmip_entries(self) -> "Holder":
         drs_name = "land-hist"
-        # TODO: confirm this
-        # Specifics:
-        # - there is no spin up or parent experiment for this right?
         description = "Land-only version of `historical` with prescribed climate and weather inputs required to drive land models."
 
         hist_experiment_project_l = [
