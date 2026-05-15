@@ -1022,15 +1022,11 @@ class Holder(BaseModel):
             (
                 "piClim-histaer",
                 (
-                    "Simulation of the historical and future period with prescribed sea-surface temperatures "
-                    "and sea-ice concentrations "
-                    "(the slightly confusing name is a legacy thing). "
-                    "Aerosol emissions follow the `historical` experiment then a future experiment "
-                    "while all other forcings follow `piControl` "
-                    "to allow for a (approximate) diagnosis of "
-                    "transient historical aerosol effective radiative forcing (ERF) "
-                    "(can be compared with `piClim-aer` which provides a more precise "
-                    "quantification of present-day aerosol ERF)."
+                    "In combination with `piClim-control`, "
+                    "quantifies transient aerosol effective radiative forcing (ERF) "
+                    "over the historical period and a future experiment. "
+                    "This can be compared with `piClim-aer` which provides a more precise "
+                    "quantification of present-day aerosol ERF."
                 ),
                 lambda x: x.replace(
                     "a future experiment",
@@ -1042,14 +1038,11 @@ class Holder(BaseModel):
             (
                 "piClim-histall",
                 (
-                    "Simulation of the historical period with prescribed sea-surface temperatures "
-                    "and sea-ice concentrations "
-                    "(the slightly confusing name is a legacy thing). "
-                    "All forcings follow the `historical` experiment then a future experiment "
-                    "to allow for a (approximate) diagnosis of "
-                    "transient historical effective radiative forcing (ERF) "
-                    "(can be compared with the `piClim-*` experiments which provide a more precise "
-                    "quantification of present-day ERF from various forcers)."
+                    "In combination with `piClim-control`, "
+                    "quantifies transient effective radiative forcing (ERF) "
+                    "over the historical period and a future experiment. "
+                    "This can be compared with `piClim-aer` which provides a more precise "
+                    "quantification of present-day ERF."
                 ),
                 lambda x: x.replace(
                     "a future experiment",
