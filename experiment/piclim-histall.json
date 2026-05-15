@@ -12,9 +12,6 @@
     ],
     "branch_information": null,
     "min_ensemble_size": 1,
-    "parent_activity": null,
-    "parent_experiment": null,
-    "parent_mip_era": null,
     "required_model_components": [
         "aogcm",
         "aer"
