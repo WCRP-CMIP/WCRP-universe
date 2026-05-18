@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ictp",
+    "type": "institution",
+    "drs_name": "ICTP",
+    "acronyms": [
+        "ICTP"
+    ],
+    "labels": [
+        "The Abdus Salam International Centre for Theoretical Physics"
+    ],
+    "description": "The Abdus Salam International Centre for Theoretical Physics",
+    "location": [
+        {
+            "city": "Trieste",
+            "country": "Italy",
+            "lat": 45.70375,
+            "lon": 13.718338
+        }
+    ],
+    "ror": "009gyvm78",
+    "urls": [
+        "https://www.ictp.it/"
+    ]
+}

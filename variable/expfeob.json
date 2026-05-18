@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "expfeob",
+    "type": "variable",
+    "drs_name": "expfeob",
+    "description": "The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. 'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid. Iron means iron in all chemical forms, commonly referred to as \"total iron\". Particulate iron means iron which is solid or which is bound to solid particles, including insoluble Fe(III).",
+    "long_name": "Sinking Flux of Particulate Iron Reaching the Ocean Bottom",
+    "standard_name": "sinking_mole_flux_at_sea_floor_of_particulate_iron_in_sea_water ",
+    "units": "mol m-2 s-1"
+}

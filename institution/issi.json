@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "issi",
+    "type": "institution",
+    "drs_name": "ISSI",
+    "acronyms": [
+        "ISSI"
+    ],
+    "labels": [
+        "International Space Science Institute"
+    ],
+    "description": "International Space Science Institute",
+    "location": [
+        {
+            "city": "Bern",
+            "country": "Switzerland",
+            "lat": 46.952897,
+            "lon": 46.952897
+        }
+    ],
+    "ror": "01xm30661",
+    "urls": [
+        "http://www.issibern.ch/"
+    ]
+}

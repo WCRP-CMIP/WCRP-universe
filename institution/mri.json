@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mri",
+    "type": "institution",
+    "drs_name": "MRI",
+    "acronyms": [],
+    "labels": [
+        "Meteorological Research Institute, Tsukuba, Ibaraki 305-0052, Japan"
+    ],
+    "description": "MRI",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

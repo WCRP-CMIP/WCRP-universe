@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "kiost",
+    "type": "institution",
+    "drs_name": "KIOST",
+    "acronyms": [
+        "KIOST"
+    ],
+    "labels": [
+        "Korea Institute of Ocean Science and Technology"
+    ],
+    "description": "Korea Institute of Ocean Science and Technology",
+    "location": [
+        {
+            "city": "Busan",
+            "country": "South Korea",
+            "lat": 35.10168,
+            "lon": 129.03004
+        }
+    ],
+    "ror": "032m55064",
+    "urls": [
+        "http://eng.kiost.ac/"
+    ]
+}

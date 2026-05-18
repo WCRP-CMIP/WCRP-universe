@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fmi",
+    "type": "institution",
+    "drs_name": "FMI",
+    "acronyms": [
+        "FMI"
+    ],
+    "labels": [
+        "Finnish Meteorological Institute"
+    ],
+    "description": "Finnish Meteorological Institute",
+    "location": [
+        {
+            "city": "Helsinki",
+            "country": "Finland",
+            "lat": 60.16952,
+            "lon": 60.16952
+        }
+    ],
+    "ror": "05hppb561",
+    "urls": [
+        "http://en.ilmatieteenlaitos.fi/"
+    ]
+}

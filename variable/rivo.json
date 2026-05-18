@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rivo",
+    "type": "variable",
+    "drs_name": "rivo",
+    "description": "\"Water\" means water in all phases. \"River\" refers to water in the fluvial system (stream and floodplain).",
+    "long_name": "River Discharge",
+    "standard_name": "outgoing_water_volume_transport_along_river_channel",
+    "units": "m3 s-1"
+}

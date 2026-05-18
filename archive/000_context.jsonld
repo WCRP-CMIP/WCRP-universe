@@ -1,0 +1,11 @@
+{
+     
+      "@context": {
+      "@base":"https://esgvoc.ipsl.fr/resource/universe/archive/",
+      "id": "@id",
+      "type":"@type",
+      "archive": "https://esgvoc.ipsl.fr/resource/universe/archive/"
+     
+     
+    }
+}

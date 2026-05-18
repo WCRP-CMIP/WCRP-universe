@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "dlr-bira",
+    "type": "organisation",
+    "drs_name": "DLR-BIRA",
+    "members": [
+        "dlr",
+        "bira"
+    ],
+    "description": "DLR-BIRA"
+}

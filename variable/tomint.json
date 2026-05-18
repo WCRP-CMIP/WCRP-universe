@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tomint",
+    "type": "variable",
+    "drs_name": "tomint",
+    "description": "",
+    "long_name": "integral wrt depth of product of sea water density and prognostic temperature",
+    "standard_name": "integral_wrt_depth_of_product_of_sea_water_density_and_prognostic_temperature",
+    "units": "1e-3 kg m-2"
+}

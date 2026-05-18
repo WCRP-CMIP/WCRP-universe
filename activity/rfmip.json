@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rfmip",
+    "type": "activity",
+    "description": "Radiative Forcing Model Intercomparison Project: characterisation of radiative forcing within models.",
+    "drs_name": "RFMIP"
+}

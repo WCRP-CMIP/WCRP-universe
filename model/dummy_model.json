@@ -1,0 +1,70 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "dummy_model",
+  "type": "model",
+  "name": "DUMMY-MODEL",
+  "family": "Dummy",
+  "dynamic_components": [
+    "aerosol",
+    "atmosphere",
+    "atmospheric_chemistry",
+    "land_surface",
+    "ocean",
+    "ocean_biogeochemistry",
+    "sea_ice"
+  ],
+  "prescribed_components": [],
+  "omitted_components": [
+    "land_ice"
+  ],
+  "description": "Dummy model for testing esgvoc queries. This model is not real and should not be used in production. All components use the g999 grid.",
+  "calendar": [
+    "standard"
+  ],
+  "release_year": 2025,
+  "references": [
+    "dummy_model_ref_001"
+  ],
+  "model_components": [
+    "dummy_aerosol",
+    "dummy_atmosphere",
+    "dummy_atmospheric_chemistry",
+    "dummy_land_surface",
+    "dummy_ocean",
+    "dummy_ocean_biogeochemistry",
+    "dummy_sea_ice"
+  ],
+  "embedded_components": [
+    [
+      "aerosol",
+      "atmosphere"
+    ],
+    [
+      "sea_ice",
+      "ocean"
+    ],
+    [
+      "ocean_biogeochemistry",
+      "ocean"
+    ],
+    [
+      "atmospheric_chemistry",
+      "atmosphere"
+    ]
+  ],
+  "coupled_components": [
+    [
+      "atmosphere",
+      "ocean"
+    ],
+    [
+      "atmosphere",
+      "land_surface"
+    ],
+    [
+      "ocean",
+      "land_surface"
+    ]
+  ],
+  "drs_name": "DUMMY-MODEL"
+}

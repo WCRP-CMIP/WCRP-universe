@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cams",
+    "type": "institution",
+    "drs_name": "CAMS",
+    "acronyms": [
+        "CAMS"
+    ],
+    "labels": [
+        "Chinese Academy of Meteorological Sciences"
+    ],
+    "description": "Chinese Academy of Meteorological Sciences",
+    "location": [
+        {
+            "city": "Beijing",
+            "country": "China",
+            "lat": 39.9075,
+            "lon": 116.39723
+        }
+    ],
+    "ror": "034b53w38",
+    "urls": [
+        "http://www.camscma.cn/en.html"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "bom",
+    "type": "institution",
+    "drs_name": "BOM",
+    "acronyms": [
+        "BOM"
+    ],
+    "labels": [
+        "Bureau of Meteorology"
+    ],
+    "description": "Bureau of Meteorology",
+    "location": [
+        {
+            "city": "Melbourne",
+            "country": "Australia",
+            "lat": -37.819624,
+            "lon": 144.950945
+        }
+    ],
+    "ror": "04dkp1p98",
+    "urls": [
+        "http://www.bom.gov.au/"
+    ]
+}

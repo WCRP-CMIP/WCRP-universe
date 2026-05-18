@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "copercentagetemf",
+    "type": "variable",
+    "drs_name": "COpercentageTEMF",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

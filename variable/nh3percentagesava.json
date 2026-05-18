@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nh3percentagesava",
+    "type": "variable",
+    "drs_name": "NH3percentageSAVA",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

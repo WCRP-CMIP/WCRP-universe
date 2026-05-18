@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hfacrossline",
+    "type": "variable",
+    "drs_name": "hfacrossline",
+    "description": "\"Ocean heat transport\" means transport by all processes, both sea water and sea ice. Transport across_line means that which crosses a particular line on the Earth's surface; formally this means the integral along the line of the normal component of the transport. Positive and negative numbers refer to total northward/eastward and southward/westward transports, respectively.",
+    "long_name": "Ocean Heat Transport across Lines",
+    "standard_name": "ocean_heat_transport_across_line",
+    "units": "W"
+}

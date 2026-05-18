@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ureading",
+    "type": "institution",
+    "drs_name": "UReading",
+    "acronyms": [],
+    "labels": [
+        "University of Reading, Reading, UK"
+    ],
+    "description": "UReading",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

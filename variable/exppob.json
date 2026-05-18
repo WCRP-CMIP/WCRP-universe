@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "exppob",
+    "type": "variable",
+    "drs_name": "exppob",
+    "description": "The phrase 'expressed_as' is used in the construction A_expressed_as_B, where B is a chemical constituent of A. It means that the quantity indicated by the standard name is calculated solely with respect to the B contained in A, neglecting all other chemical constituents of A. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. 'Sinking' is the gravitational settling of particulate matter suspended in a liquid. A sinking flux is positive downwards and is calculated relative to the movement of the surrounding fluid. \"Organic phosphorus\" means phosphorus in carbon compounds. \"Particulate organic phosphorus\" means organic phosphorus which exists in a particulate phase. \"Organic phosphorus\" means phosphorus in carbon compounds.",
+    "long_name": "Downward sinking flux of particulate organic phosphorus at sea floor",
+    "standard_name": "sinking_mole_flux_at_sea_floor_of_particulate_organic_phosphorus_in_sea_water ",
+    "units": "mol m-2 s-1"
+}

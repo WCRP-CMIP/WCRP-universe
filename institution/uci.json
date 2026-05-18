@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uci",
+    "type": "institution",
+    "drs_name": "UCI",
+    "acronyms": [
+        "UCI"
+    ],
+    "labels": [
+        "University of California, Irvine"
+    ],
+    "description": "University of California, Irvine",
+    "location": [
+        {
+            "city": "Irvine",
+            "country": "United States",
+            "lat": 33.64535,
+            "lon": -117.842642
+        }
+    ],
+    "ror": "04gyf1771",
+    "urls": [
+        "http://uci.edu/"
+    ]
+}

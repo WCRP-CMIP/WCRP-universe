@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hm",
+    "type": "horizontal_label",
+    "description": "Data reported as a mean over some horizontal area.",
+    "drs_name": "hm"
+}

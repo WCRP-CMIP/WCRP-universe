@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cccma",
+    "type": "organisation",
+    "drs_name": "CCCma",
+    "members": [
+        "cccma"
+    ],
+    "description": "Environment and Climate Change Canada"
+}

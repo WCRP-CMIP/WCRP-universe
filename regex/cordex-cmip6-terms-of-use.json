@@ -1,0 +1,6 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cordex-cmip6-terms-of-use",
+  "type": "license",
+  "regex": "https:\\/\\/cordex.org\\/data-access\\/cordex-cmip6-data\\/cordex-cmip6-terms-of-use\\/$"
+}

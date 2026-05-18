@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "niwa",
+    "type": "institution",
+    "drs_name": "NIWA",
+    "acronyms": [
+        "NIWA"
+    ],
+    "labels": [
+        "National Institute of Water and Atmospheric Research"
+    ],
+    "description": "National Institute of Water and Atmospheric Research",
+    "location": [
+        {
+            "city": "Auckland",
+            "country": "New Zealand",
+            "lat": -36.84403,
+            "lon": 174.76172
+        }
+    ],
+    "ror": "04hxcaz34",
+    "urls": [
+        "https://www.niwa.co.nz/"
+    ]
+}

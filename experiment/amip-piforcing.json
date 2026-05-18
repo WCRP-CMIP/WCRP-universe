@@ -1,0 +1,24 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "amip-piforcing",
+    "type": "experiment",
+    "description": "Same as `amip` simulation, except it starts in 1870 and all forcings are set to pre-industrial levels rather than time-varying forcings.",
+    "drs_name": "amip-piForcing",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "activity": "cfmip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem",
+        "bgc"
+    ],
+    "branch_information": null,
+    "min_ensemble_size": 1,
+    "parent_activity": null,
+    "parent_experiment": null,
+    "parent_mip_era": null,
+    "required_model_components": [
+        "agcm"
+    ],
+    "tier": 1
+}

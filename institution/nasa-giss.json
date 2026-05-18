@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nasa-giss",
+    "type": "institution",
+    "drs_name": "NASA-GISS",
+    "acronyms": [
+        "GISS"
+    ],
+    "labels": [
+        "Goddard Institute for Space Studies"
+    ],
+    "description": "Goddard Institute for Space Studies",
+    "location": [
+        {
+            "city": "New York",
+            "country": "United States",
+            "lat": 40.71427,
+            "lon": -74.00597
+        }
+    ],
+    "ror": "01cyfxe35",
+    "urls": [
+        "http://www.giss.nasa.gov/"
+    ]
+}

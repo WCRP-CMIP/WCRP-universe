@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nims-kma",
+    "type": "organisation",
+    "drs_name": "NIMS-KMA",
+    "members": [
+        "nims",
+        "kma"
+    ],
+    "description": "NIMS-KMA"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ipsl-cm5a-mr",
+    "type": "source",
+    "drs_name": "IPSL-CM5A-MR",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "ipsl"
+    ],
+    "label": "IPSL-CM5A-MR",
+    "label_extended": "IPSL-CM5A-MR",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

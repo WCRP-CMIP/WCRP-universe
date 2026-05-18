@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ucsd-sio",
+    "type": "institution",
+    "drs_name": "UCSD-SIO",
+    "acronyms": [],
+    "labels": [
+        "University of California, San Diego, Scripps Institution of Oceanography"
+    ],
+    "description": "UCSD-SIO",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ncc",
+    "type": "organisation",
+    "drs_name": "NCC",
+    "members": [
+        "cicero",
+        "metno",
+        "nersc",
+        "nilu",
+        "uib",
+        "uio",
+        "uni"
+    ]
+}

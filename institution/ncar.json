@@ -1,0 +1,23 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ncar",
+    "type": "institution",
+    "drs_name": "NCAR",
+    "acronyms": [],
+    "labels": [
+        "National Center for Atmospheric Research, Boulder, CO, USA"
+    ],
+    "description": "NCAR",
+    "location": [
+        {
+            "city": "Boulder",
+            "country": "United States",
+            "lat": 39.978318,
+            "lon": -105.275031
+        }
+    ],
+    "ror": "05cvfcr44",
+    "urls": [
+        "https://ncar.ucar.edu/"
+    ]
+}

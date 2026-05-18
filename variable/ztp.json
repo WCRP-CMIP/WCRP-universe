@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ztp",
+    "type": "variable",
+    "drs_name": "ztp",
+    "description": "Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.",
+    "long_name": "Tropopause Altitude Above Geoid",
+    "standard_name": "tropopause_altitude",
+    "units": "m"
+}

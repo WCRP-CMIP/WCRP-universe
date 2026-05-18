@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rss",
+    "type": "organisation",
+    "drs_name": "RSS",
+    "members": [
+        "rss"
+    ],
+    "description": "RSS"
+}

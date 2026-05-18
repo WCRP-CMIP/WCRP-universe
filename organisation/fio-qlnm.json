@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fio-qlnm",
+    "type": "organisation",
+    "drs_name": "FIO-QLNM",
+    "members": [
+        "fio",
+        "qnlm"
+    ],
+    "description": "FIO-QLNM"
+}

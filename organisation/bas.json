@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "bas",
+    "type": "organisation",
+    "drs_name": "BAS",
+    "members": [
+        "bas"
+    ],
+    "description": "British Antarctic Survey"
+}

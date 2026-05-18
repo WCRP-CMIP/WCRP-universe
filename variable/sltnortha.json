@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sltnortha",
+    "type": "variable",
+    "drs_name": "sltnortha",
+    "description": "",
+    "long_name": "Atlantic Northward Ocean Salt Transport",
+    "standard_name": "atlantic_northward_ocean_salt_transport",
+    "units": "kg s-1"
+}

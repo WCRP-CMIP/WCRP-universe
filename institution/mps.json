@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mps",
+    "type": "institution",
+    "drs_name": "MPS",
+    "acronyms": [
+        "MPS"
+    ],
+    "labels": [
+        "Max Planck Institute for Solar System Research"
+    ],
+    "description": "Max Planck Institute for Solar System Research",
+    "location": [
+        {
+            "city": "Göttingen",
+            "country": "Germany",
+            "lat": 51.561218,
+            "lon": 51.561218
+        }
+    ],
+    "ror": "02j6gm739",
+    "urls": [
+        "http://www.mps.mpg.de/en"
+    ]
+}

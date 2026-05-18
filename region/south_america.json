@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "south_america",
+    "type": "region",
+    "drs_name": "south_america",
+    "description": "",
+    "cf_standard_region": null,
+    "iso_region": null
+}

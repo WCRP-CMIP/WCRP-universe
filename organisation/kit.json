@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "kit",
+    "type": "organisation",
+    "drs_name": "KIT",
+    "members": [
+        "kit"
+    ],
+    "description": "Karlsruhe Institute of Technology"
+}

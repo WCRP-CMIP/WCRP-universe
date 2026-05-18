@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lpc2e",
+    "type": "institution",
+    "drs_name": "LPC2E",
+    "acronyms": [
+        "LPC2E"
+    ],
+    "labels": [
+        "Laboratoire de Physique et Chimie de l’Environnement et de l’Espace"
+    ],
+    "description": "Laboratoire de Physique et Chimie de l’Environnement et de l’Espace",
+    "location": [
+        {
+            "city": "Orléans",
+            "country": "France",
+            "lat": 47.90289,
+            "lon": 47.90289
+        }
+    ],
+    "ror": "049k66y27",
+    "urls": [
+        "https://www.lpc2e.cnrs.fr"
+    ]
+}

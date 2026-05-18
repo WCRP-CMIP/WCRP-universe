@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "kit",
+    "type": "institution",
+    "drs_name": "KIT",
+    "acronyms": [
+        "KIT"
+    ],
+    "labels": [
+        "Karlsruhe Institute of Technology"
+    ],
+    "description": "Karlsruhe Institute of Technology",
+    "location": [
+        {
+            "city": "Karlsruhe",
+            "country": "Germany",
+            "lat": 49.012204,
+            "lon": 8.415549
+        }
+    ],
+    "ror": "04t3en479",
+    "urls": [
+        "https://www.kit.edu"
+    ]
+}

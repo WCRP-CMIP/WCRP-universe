@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cmcc",
+    "type": "institution",
+    "drs_name": "CMCC",
+    "acronyms": [
+        "CMCC"
+    ],
+    "labels": [
+        "Euro-Mediterranean Center on Climate Change (CMCC Foundation)"
+    ],
+    "description": "Euro-Mediterranean Center on Climate Change (CMCC Foundation)",
+    "location": [
+        {
+            "city": "Lecce",
+            "country": "Italy",
+            "lat": 40.35643,
+            "lon": 18.194769
+        }
+    ],
+    "ror": "01tf11a61",
+    "urls": [
+        "https://www.cmcc.it/"
+    ]
+}

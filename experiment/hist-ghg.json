@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hist-ghg",
+    "type": "experiment",
+    "description": "Response to historical greenhouse gas forcing (often with extension using forcings from a scenario simulation specific to the CMIP phase). All other conditions are kept the same as piControl.",
+    "drs_name": "hist-GHG",
+    "start_timestamp": "1850-01-01",
+    "activity": "damip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem",
+        "bgc"
+    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
+    "required_model_components": [
+        "aogcm"
+    ],
+    "tier": 1
+}

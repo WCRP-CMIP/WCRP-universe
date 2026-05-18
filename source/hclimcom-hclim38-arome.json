@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hclimcom-hclim38-arome",
+    "type": "source",
+    "drs_name": "HCLIMCOM-HCLIM38-AROME",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "hclimcom"
+    ],
+    "label": "HCLIMCOM-HCLIM38-AROME",
+    "label_extended": "HCLIM38-AROME",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

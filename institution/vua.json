@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vua",
+    "type": "institution",
+    "drs_name": "VUA",
+    "acronyms": [
+        "VU"
+    ],
+    "labels": [
+        "Vrije Universiteit Amsterdam"
+    ],
+    "description": "Vrije Universiteit Amsterdam",
+    "location": [
+        {
+            "city": "Amsterdam",
+            "country": "Netherlands",
+            "lat": 52.37403,
+            "lon": 4.88969
+        }
+    ],
+    "ror": "008xxew50",
+    "urls": [
+        "https://vu.nl/"
+    ]
+}

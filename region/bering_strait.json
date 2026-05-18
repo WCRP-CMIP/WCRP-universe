@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "bering_strait",
+    "type": "region",
+    "drs_name": "bering_strait",
+    "description": "",
+    "cf_standard_region": null,
+    "iso_region": null
+}

@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "persian_gulf",
+    "type": "region",
+    "drs_name": "persian_gulf",
+    "description": "",
+    "cf_standard_region": null,
+    "iso_region": null
+}

@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "espri-ipsl",
+    "type": "organisation",
+    "drs_name": "ESPRI-IPSL",
+    "members": [
+        "espri",
+        "ipsl"
+    ],
+    "description": "ESPRI-IPSL"
+}

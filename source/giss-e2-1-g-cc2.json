@@ -1,0 +1,34 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "giss-e2-1-g-cc2",
+    "type": "source",
+    "drs_name": "GISS-E2-1-G-CC2",
+    "license": {
+        "id": "CC0 1.0",
+        "exceptions-contact": null,
+        "source-specific-info": "https://data.giss.nasa.gov/modelE/cmip6/#datalicense"
+    },
+    "activity_participation": [
+        "cmip",
+        "tipmip"
+    ],
+    "cohort": [
+        "Published"
+    ],
+    "label": "GISS-E2-1-G-CC2",
+    "label_extended": "GISS-E2-1-G-CC2",
+    "model_component": {
+        "aerosol": "varies with physics-version (p==1 none, p==3 OMA, p==4 TOMAS, p==5 MATRIX)",
+        "atmos": "GISS-E2.1 (2 x 2.5 degrees; 144 x 90 longitude/latitude; 40 levels; top level 0.1 hPa)",
+        "atmosChem": "varies with physics-version (p==1 Non-interactive, p>1 GPUCCINI)",
+        "land": "GISS LSM",
+        "landIce": "Fixed",
+        "ocean": "GISS Ocean (1 deg; 360 x 180 longitude/latitude; 40 levels; top grid cell 0-10m)",
+        "ocnBgchem": "NOBM v2 (NASA Ocean Biogeochemistry Model; same grid as ocean)",
+        "seaIce": "GISS SI (same grid as ocean)"
+    },
+    "release_year": "2025",
+    "organisation_id": [
+        "nasa-giss"
+    ]
+}

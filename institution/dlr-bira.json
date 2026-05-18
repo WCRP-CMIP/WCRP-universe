@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "dlr-bira",
+    "type": "institution",
+    "drs_name": "DLR-BIRA",
+    "acronyms": [],
+    "labels": [
+        "Deutsches Zentrum fur Luft- und Raumfahrt, Royal Belgian Institute for Space Aeronomy"
+    ],
+    "description": "DLR-BIRA",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

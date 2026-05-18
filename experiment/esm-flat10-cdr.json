@@ -1,0 +1,24 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-flat10-cdr",
+    "type": "experiment",
+    "description": "Extension of `esm-flat10` where emissions decline linearly to -10 PgC / yr then stay constant until cumulative emissions (including the emissions in `esm-flat10`) reach zero. An extra 20 years is included at the end to allow for calculating averages over different time windows.",
+    "drs_name": "esm-flat10-cdr",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 220.0,
+    "activity": "c4mip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from `esm-flat10` at the end of year 100.",
+    "min_ensemble_size": 1,
+    "parent_activity": "c4mip",
+    "parent_experiment": "esm-flat10",
+    "required_model_components": [
+        "aogcm",
+        "bgc"
+    ],
+    "tier": 1
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "dummy_sea_ice",
+  "type": "model_componentEMD",
+  "component": "sea_ice",
+  "name": "Dummy Sea Ice",
+  "family": "Dummy",
+  "description": "Dummy sea ice component for testing purposes. Do not use in production.",
+  "code_base": "private",
+  "references": [
+    "dummy_model_ref_001"
+  ],
+  "drs_name": "Dummy Sea Ice",
+  "horizontal_computational_grid": "h999",
+  "vertical_computational_grid": "v999"
+}

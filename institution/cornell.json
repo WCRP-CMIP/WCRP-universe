@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cornell",
+    "type": "institution",
+    "drs_name": "CORNELL",
+    "acronyms": [
+        "CORNELL"
+    ],
+    "labels": [
+        "Cornell University"
+    ],
+    "description": "Cornell University",
+    "location": [
+        {
+            "city": "Ithaca",
+            "country": "USA",
+            "lat": 42.453449,
+            "lon": -76.473503
+        }
+    ],
+    "ror": "05bnh6r87",
+    "urls": [
+        "https://www.cornell.edu/"
+    ]
+}

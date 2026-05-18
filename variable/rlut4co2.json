@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rlut4co2",
+    "type": "variable",
+    "drs_name": "rlut4co2",
+    "description": "\"longwave\" means longwave radiation. \"toa\" means top of atmosphere. The TOA outgoing longwave flux is the upwelling thermal radiative flux, often called the \"outgoing longwave radiation\" or \"OLR\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "TOA Outgoing Longwave Radiation 4XCO2 Atmosphere",
+    "standard_name": "toa_outgoing_longwave_flux",
+    "units": "W m-2"
+}

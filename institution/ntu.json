@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ntu",
+    "type": "institution",
+    "drs_name": "NTU",
+    "acronyms": [
+        "NTU"
+    ],
+    "labels": [
+        "National Taiwan University"
+    ],
+    "description": "National Taiwan University",
+    "location": [
+        {
+            "city": "Taipei",
+            "country": "Taiwan",
+            "lat": 25.016,
+            "lon": 121.536
+        }
+    ],
+    "ror": "05bqach95",
+    "urls": [
+        "http://www.ntu.edu.tw/english/"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "noaa-gfdl",
+    "type": "organisation",
+    "drs_name": "NOAA-GFDL",
+    "members": [
+        "noaa",
+        "gfdl"
+    ],
+    "description": "NOAA-GFDL"
+}

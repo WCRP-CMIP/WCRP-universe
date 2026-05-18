@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "albisccp",
+    "type": "variable",
+    "drs_name": "albisccp",
+    "description": "The albedo of cloud. Albedo is the ratio of outgoing to incoming shortwave irradiance, where 'shortwave irradiance' means that both the incoming and outgoing radiation are integrated across the solar spectrum.",
+    "long_name": "ISCCP Mean Cloud Albedo",
+    "standard_name": "cloud_albedo",
+    "units": "1"
+}

@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hist-piaer",
+    "type": "experiment",
+    "description": "Used to diagnose climate responses to the regionally heterogeneous evolution of anthropogenic aerosol emissions. Anthropogenic aerosols and aerosol precursor emissions (BC, OC, NH3, SO2) evolve as in `piControl`. All other forcings evolve as in `historical`. Intended for models without interactive chemistry. Models with interactive chemistry should run `hist-piAQ` instead. (Identical to `hist-piAer` in AerChemMIP phase 1.)",
+    "drs_name": "hist-piAer",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "bgc",
+        "chem"
+    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
+    "required_model_components": [
+        "aogcm",
+        "aer"
+    ],
+    "tier": 1
+}

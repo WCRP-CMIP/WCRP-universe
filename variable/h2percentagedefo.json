@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "h2percentagedefo",
+    "type": "variable",
+    "drs_name": "H2percentageDEFO",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

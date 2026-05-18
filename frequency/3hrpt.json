@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "3hrpt",
+    "type": "frequency",
+    "description": "Three hourly samples. This is a legacy label that indicated that the sample was a point sample i.e. represented the value at a specific point in time. This information is now conveyed via the temporal label instead.",
+    "drs_name": "3hrPt",
+    "interval": 3.0,
+    "units": "hour"
+}

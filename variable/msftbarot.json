@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "msftbarot",
+    "type": "variable",
+    "drs_name": "msftbarot",
+    "description": "The barotropic stream function with the dimensions of volume transport has the standard name ocean_barotropic_streamfunction.",
+    "long_name": "Ocean Barotropic Mass Streamfunction",
+    "standard_name": "ocean_barotropic_mass_streamfunction",
+    "units": "kg s-1"
+}

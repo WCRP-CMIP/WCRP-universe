@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "veg",
+    "type": "area_label",
+    "description": "Data come solely from land areas covered by vegetation.",
+    "drs_name": "veg",
+    "cf_area_type": "vegetation"
+}

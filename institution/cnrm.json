@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cnrm",
+    "type": "institution",
+    "drs_name": "CNRM",
+    "acronyms": [
+        "CNRM"
+    ],
+    "labels": [
+        "Centre National de Recherches Meteorologiques"
+    ],
+    "description": "Centre National de Recherches Meteorologiques",
+    "location": [
+        {
+            "city": "Toulouse",
+            "country": "France",
+            "lat": 43.577577,
+            "lon": 1.375327
+        }
+    ],
+    "ror": "004rej139",
+    "urls": [
+        "https://www.umr-cnrm.fr/"
+    ]
+}

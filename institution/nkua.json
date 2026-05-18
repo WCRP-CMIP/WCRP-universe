@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nkua",
+    "type": "institution",
+    "drs_name": "NKUA",
+    "acronyms": [
+        "NKUA"
+    ],
+    "labels": [
+        "National and Kapodistrian University of Athens"
+    ],
+    "description": "National and Kapodistrian University of Athens",
+    "location": [
+        {
+            "city": "Athens",
+            "country": "Greece",
+            "lat": 37.978899,
+            "lon": 23.754866
+        }
+    ],
+    "ror": "04gnjpq42",
+    "urls": [
+        "https://www.uoa.gr/"
+    ]
+}

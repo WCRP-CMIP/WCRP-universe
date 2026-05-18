@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sidragtop",
+    "type": "variable",
+    "drs_name": "sidragtop",
+    "description": "The surface called \"surface\" means the lower boundary of the atmosphere.",
+    "long_name": "Atmospheric Drag Coefficient",
+    "standard_name": "surface_drag_coefficient_for_momentum_in_air",
+    "units": "1"
+}

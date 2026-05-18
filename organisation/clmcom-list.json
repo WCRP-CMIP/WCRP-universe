@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-list",
+    "type": "organisation",
+    "drs_name": "CLMcom-LIST",
+    "members": [
+        "list"
+    ],
+    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Luxembourg Institute of Science and Technology"
+}

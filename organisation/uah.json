@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uah",
+    "type": "organisation",
+    "drs_name": "UAH",
+    "members": [
+        "uah"
+    ],
+    "description": "University of Alcala"
+}

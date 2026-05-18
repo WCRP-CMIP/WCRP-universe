@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-btu",
+    "type": "organisation",
+    "drs_name": "CLMcom-BTU",
+    "members": [
+        "btu"
+    ],
+    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Brandenburg University of Technology Cottbus-Senftenberg"
+}

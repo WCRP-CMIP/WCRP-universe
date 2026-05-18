@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "iamc",
+    "type": "organisation",
+    "drs_name": "IAMC",
+    "members": [
+        "iamc"
+    ],
+    "description": "Integrated Assessment Modeling Consortium"
+}

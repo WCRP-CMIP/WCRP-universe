@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cmip-7.0",
+  "label": "CMIP-7.0",
+  "type": "conventions",
+  "drs_name": "CMIP-7.0",
+  "description": ""
+}

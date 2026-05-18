@@ -1,0 +1,17 @@
+
+{
+     
+      "@context": {
+      "@base":"https://esgvoc.ipsl.fr/resource/universe/mip_era/",
+      "@vocab": "http://schema.org/",
+      "id": "@id",
+      "type":"@type",
+      "mip-era": "https://esgvoc.ipsl.fr/resource/universe/mip_era/",
+      "name": {"@id": "https://schema.org/name"},
+      "start": {"@id": "https://schema.org/startDate"},
+      "end": {"@id": "https://schema.org/endDate"},
+      
+      "description":{"@id":"https://schema.org/description"}
+      
+    }
+}

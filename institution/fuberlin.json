@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fuberlin",
+    "type": "institution",
+    "drs_name": "FUBerlin",
+    "acronyms": [
+        "FU"
+    ],
+    "labels": [
+        "Freie Universität Berlin"
+    ],
+    "description": "Freie Universität Berlin",
+    "location": [
+        {
+            "city": "Berlin",
+            "country": "Germany",
+            "lat": 52.52437,
+            "lon": 52.52437
+        }
+    ],
+    "ror": "046ak2485",
+    "urls": [
+        "https://www.fu-berlin.de"
+    ]
+}

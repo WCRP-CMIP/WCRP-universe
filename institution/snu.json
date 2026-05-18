@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "snu",
+    "type": "institution",
+    "drs_name": "SNU",
+    "acronyms": [
+        "SNU"
+    ],
+    "labels": [
+        "Seoul National University"
+    ],
+    "description": "Seoul National University",
+    "location": [
+        {
+            "city": "Seoul",
+            "country": "South Korea",
+            "lat": 37.460155,
+            "lon": 126.951894
+        }
+    ],
+    "ror": "04h9pn542",
+    "urls": [
+        "http://www.snu.ac.kr/index.html"
+    ]
+}

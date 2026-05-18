@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "knmi",
+    "type": "institution",
+    "drs_name": "KNMI",
+    "acronyms": [
+        "KNMI"
+    ],
+    "labels": [
+        "Royal Netherlands Meteorological Institute"
+    ],
+    "description": "Royal Netherlands Meteorological Institute",
+    "location": [
+        {
+            "city": "De Bilt",
+            "country": "Netherlands",
+            "lat": 52.101591,
+            "lon": 5.177963
+        }
+    ],
+    "ror": "05dfgh554",
+    "urls": [
+        "https://www.knmi.nl/"
+    ]
+}

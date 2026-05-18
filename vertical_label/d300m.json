@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "d300m",
+    "type": "vertical_label",
+    "description": "Data is reported over the upper 300m of the ocean.",
+    "drs_name": "d300m"
+}

@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esso",
+    "type": "institution",
+    "drs_name": "ESSO",
+    "acronyms": [],
+    "labels": [
+        "Indian National Centre for Ocean Information Services"
+    ],
+    "description": "ESSO",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

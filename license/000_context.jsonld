@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/license/",
+        "@vocab":"https://esgvoc.ipsl.fr/resource/universe/license/",
+        "id":"@id",
+        "type":"@type",
+        "description":{"@id":"https://schema.org/description"},
+        "drs_name": {"@id": "acronym"},
+        "spdx_id":{"@id":"https://schema.org/identifier"},
+        "url":{"@id":"https://schema.org/url"}
+    }
+}

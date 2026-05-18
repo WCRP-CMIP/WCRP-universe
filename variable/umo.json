@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "umo",
+    "type": "variable",
+    "drs_name": "umo",
+    "description": "\"x\" indicates a vector component along the grid x-axis, positive with increasing x.",
+    "long_name": "Ocean Mass X Transport",
+    "standard_name": "ocean_mass_x_transport",
+    "units": "kg s-1"
+}

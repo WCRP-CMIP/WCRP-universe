@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nerc",
+    "type": "institution",
+    "drs_name": "NERC",
+    "acronyms": [
+        "NERC"
+    ],
+    "labels": [
+        "Natural Environment Research Council"
+    ],
+    "description": "Natural Environment Research Council",
+    "location": [
+        {
+            "city": "Swindon",
+            "country": "United Kingdom",
+            "lat": 51.55797,
+            "lon": -1.78116
+        }
+    ],
+    "ror": "02b5d8509",
+    "urls": [
+        "https://www.ukri.org/councils/nerc/"
+    ]
+}

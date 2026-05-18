@@ -1,0 +1,18 @@
+schema_version: "1"
+project:
+  id: "universe"
+  name: "WCRP Universe Controlled Vocabulary"
+cv_version: "1.0.2"
+universe_version: "1.0.2"
+esgvoc:
+  min_version: "4.0.0"
+release_notes: |
+  - Fix DAMIP definitions
+  - Write hist-pi* AerChemMIP
+  - Clarify AerChemMIP ensemble size
+  - Clarify scenario definitions
+  - Set min ensemble size for other AerChemMIP experiments
+  - Fix up hist-pi* descriptions
+  - Adjust min ensemble size (CMIP7-CVs#382)
+  - Fix up information
+  - Fixes for CORDEX

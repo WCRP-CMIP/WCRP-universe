@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vd",
+    "type": "variable",
+    "drs_name": "vd",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

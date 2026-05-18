@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/time_range/",
+        "@vocab":"https://esgvoc.ipsl.fr/resource/universe/time_range/",
+        "id":"@id",
+        "type":"@type",
+        "description":{"@id":"https://schema.org/description"}
+    } 
+}

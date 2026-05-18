@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "meanage",
+    "type": "variable",
+    "drs_name": "meanage",
+    "description": "\"Age of stratospheric air\" means an estimate of the time since a parcel of stratospheric air was last in contact with the troposphere.",
+    "long_name": "Mean Age of Stratospheric Air",
+    "standard_name": "age_of_stratospheric_air",
+    "units": "s"
+}

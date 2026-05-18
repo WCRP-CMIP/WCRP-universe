@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "huss",
+    "type": "variable",
+    "drs_name": "huss",
+    "description": "\"specific\" means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.",
+    "long_name": "Near-Surface Specific Humidity",
+    "standard_name": "specific_humidity",
+    "units": "1"
+}

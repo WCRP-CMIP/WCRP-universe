@@ -1,0 +1,16 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hammoz-consortium",
+    "type": "organisation",
+    "drs_name": "HAMMOZ-Consortium",
+    "members": [
+        "eth",
+        "mpi-m",
+        "fzj",
+        "oxford",
+        "fmi",
+        "tropos",
+        "c2sm"
+    ],
+    "description": "HAMMOZ-Consortium"
+}

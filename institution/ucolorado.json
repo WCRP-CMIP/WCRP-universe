@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ucolorado",
+    "type": "institution",
+    "drs_name": "UColorado",
+    "acronyms": [
+        "CU"
+    ],
+    "labels": [
+        "University of Colorado System"
+    ],
+    "description": "University of Colorado System",
+    "location": [
+        {
+            "city": "Boulder",
+            "country": "United States",
+            "lat": 40.01499,
+            "lon": -105.27055
+        }
+    ],
+    "ror": "00jc20583",
+    "urls": [
+        "http://www.cu.edu/"
+    ]
+}

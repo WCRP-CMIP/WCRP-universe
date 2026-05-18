@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "masso",
+    "type": "variable",
+    "drs_name": "masso",
+    "description": "The quantity with standard name \"sea_water_mass\" is the total mass of liquid seawater in the global oceans, including enclosed seas.",
+    "long_name": "Sea Water Mass",
+    "standard_name": "sea_water_mass",
+    "units": "kg"
+}

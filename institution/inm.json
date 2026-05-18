@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "inm",
+    "type": "institution",
+    "drs_name": "INM",
+    "acronyms": [
+        "INM RAS"
+    ],
+    "labels": [
+        "Institute of Numerical Mathematics"
+    ],
+    "description": "Institute of Numerical Mathematics",
+    "location": [
+        {
+            "city": "Moscow",
+            "country": "Russia",
+            "lat": 55.762997,
+            "lon": 37.625605
+        }
+    ],
+    "ror": "00520ey40",
+    "urls": [
+        "http://www.inm.ras.ru/inm_en_ver/index.htm"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "bom",
+    "type": "organisation",
+    "drs_name": "BOM",
+    "members": [
+        "bom"
+    ],
+    "description": "Bureau of Meteorology"
+}

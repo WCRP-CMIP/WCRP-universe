@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "multiple",
+    "type": "variable",
+    "drs_name": "multiple",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

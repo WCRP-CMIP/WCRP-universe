@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sfacrossline",
+    "type": "variable",
+    "drs_name": "sfacrossline",
+    "description": "\"Ocean salt transport\" refers to the mass of salt being transported by the ocean by all processes. Transport \"across_line\" means that which crosses a particular line on the Earth's surface; formally this means the integral along the line of the normal component of the transport. Positive and negative numbers refer to total northward/eastward and southward/westward transports, respectively.",
+    "long_name": "Ocean Salt Mass Transport across Lines",
+    "standard_name": "ocean_salt_transport_across_line",
+    "units": "kg s-1"
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "bcc",
+    "type": "organisation",
+    "drs_name": "BCC",
+    "members": [
+        "bcc"
+    ],
+    "description": "Beijing Biocytogen (China)"
+}

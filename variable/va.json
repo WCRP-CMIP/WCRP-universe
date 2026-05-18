@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "va",
+    "type": "variable",
+    "drs_name": "va",
+    "description": "\"Northward\" indicates a vector component which is positive when directed northward (negative southward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)",
+    "long_name": "Northward Wind",
+    "standard_name": "northward_wind",
+    "units": "m s-1"
+}

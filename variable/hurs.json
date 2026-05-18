@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hurs",
+    "type": "variable",
+    "drs_name": "hurs",
+    "description": "",
+    "long_name": "Daily Minimum Near-Surface Relative Humidity over Crop Tile",
+    "standard_name": "relative_humidity",
+    "units": "1"
+}

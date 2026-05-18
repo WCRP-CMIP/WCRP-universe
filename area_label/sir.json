@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sir",
+    "type": "area_label",
+    "description": "Data come solely from areas where sea ice is 'ridged'.",
+    "drs_name": "sir",
+    "cf_area_type": "sea_ice_ridges"
+}

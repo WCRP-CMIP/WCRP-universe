@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "jaxa",
+    "type": "institution",
+    "drs_name": "JAXA",
+    "acronyms": [],
+    "labels": [
+        "The Japan Aerospace Exploration Agency"
+    ],
+    "description": "JAXA",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

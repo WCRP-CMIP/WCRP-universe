@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cas",
+    "type": "institution",
+    "drs_name": "CAS",
+    "acronyms": [
+        "CAS"
+    ],
+    "labels": [
+        "Chinese Academy of Sciences"
+    ],
+    "description": "Chinese Academy of Sciences",
+    "location": [
+        {
+            "city": "Beijing",
+            "country": "China",
+            "lat": 39.9075,
+            "lon": 116.39723
+        }
+    ],
+    "ror": "034t30j35",
+    "urls": [
+        "http://english.cas.cn/"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "llnl",
+    "type": "organisation",
+    "drs_name": "LLNL",
+    "members": [
+        "llnl"
+    ],
+    "description": "Lawrence Livermore National Laboratory"
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cnr-isac",
+    "type": "organisation",
+    "drs_name": "CNR-ISAC",
+    "members": [
+        "cnr-isac"
+    ],
+    "description": "Italian National Research Council, Institute of Atmospheric Sciences and Climate, Lecce, Italy"
+}

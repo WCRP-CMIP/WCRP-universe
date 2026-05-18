@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "u",
+    "type": "area_label",
+    "description": "Unmasked; all areas of the Earth are included.",
+    "drs_name": "u",
+    "cf_area_type": null
+}

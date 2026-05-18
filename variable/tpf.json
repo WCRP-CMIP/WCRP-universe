@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tpf",
+    "type": "variable",
+    "drs_name": "tpf",
+    "description": "Permafrost is soil or rock that has remained at a temperature at or below zero degrees Celsius throughout the seasonal cycle for two or more years. \"Thickness\" means the vertical extent of a layer.",
+    "long_name": "Permafrost Layer Thickness",
+    "standard_name": "permafrost_layer_thickness",
+    "units": "m"
+}

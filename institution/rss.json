@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rss",
+    "type": "institution",
+    "drs_name": "RSS",
+    "acronyms": [],
+    "labels": [
+        "Remote Sensing Systems, Santa Rosa, CA USA"
+    ],
+    "description": "RSS",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

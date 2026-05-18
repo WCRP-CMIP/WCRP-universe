@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "columbiau",
+    "type": "organisation",
+    "drs_name": "ColumbiaU",
+    "members": [
+        "columbiau"
+    ],
+    "description": "Columbia University"
+}

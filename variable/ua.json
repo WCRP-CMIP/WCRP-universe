@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ua",
+    "type": "variable",
+    "drs_name": "ua",
+    "description": "\"Eastward\" indicates a vector component which is positive when directed eastward (negative westward). Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)",
+    "long_name": "Eastward Wind",
+    "standard_name": "eastward_wind",
+    "units": "m s-1"
+}

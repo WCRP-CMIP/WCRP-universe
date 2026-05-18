@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "phcint",
+    "type": "variable",
+    "drs_name": "phcint",
+    "description": "",
+    "long_name": "Integral wrt depth of seawater potential temperature expressed as heat content",
+    "standard_name": "integral_wrt_depth_of_sea_water_potential_temperature_expressed_as_heat_content",
+    "units": ""
+}

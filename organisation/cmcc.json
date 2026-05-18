@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cmcc",
+    "type": "organisation",
+    "drs_name": "CMCC",
+    "members": [
+        "cmcc"
+    ],
+    "description": "Euro-Mediterranean Center for Climate Change"
+}

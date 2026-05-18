@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "emico",
+    "type": "variable",
+    "drs_name": "emico",
+    "description": "The phrase \"tendency_of_X\" means derivative of X with respect to time.  \"Content\" indicates a quantity per unit area.  \"Emission\" means emission from a primary source located anywhere within the atmosphere, including at the lower boundary (i.e. earth's surface).  \"Emission\" is a process entirely distinct from \"re-emission\" which is used in some standard names.",
+    "long_name": "Total Emission Rate of CO",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission",
+    "units": "kg m-2 s-1"
+}

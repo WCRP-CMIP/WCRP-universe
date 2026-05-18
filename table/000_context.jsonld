@@ -1,0 +1,22 @@
+
+
+{
+     
+"@context": {
+      "@base":"https://esgvoc.ipsl.fr/resource/universe/table/",
+      "@vocab": "http://schema.org/",
+      "id": "@id",
+      "type":"@type",
+      "table": "https://esgvoc.ipsl.fr/resource/universe/table/",
+      "product": {"@id": "https://esgvoc.ipsl.fr/resource/universe/product/"},
+      "table_date": {"@id": "https://schema.org/Date"},
+      "variable_entry": {"@id": "https://es-vocab.ipsl.fr/variable_entry",
+                         "@type":"@id",
+                         "@context":{
+                           "@base":"https://esgvoc.ipsl.fr/resource/universe/variable/"
+                              }
+                         
+                        
+                        }
+      }
+}

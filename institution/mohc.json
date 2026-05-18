@@ -1,0 +1,23 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mohc",
+    "type": "institution",
+    "drs_name": "MOHC",
+    "acronyms": [],
+    "labels": [
+        "Met Office Hadley Centre"
+    ],
+    "description": "Met Office Hadley Centre",
+    "location": [
+        {
+            "city": "Exeter",
+            "country": "United Kingdom",
+            "lat": 50.727188,
+            "lon": -3.475415
+        }
+    ],
+    "ror": "01ch2yn61",
+    "urls": [
+        "http://www.metoffice.gov.uk/"
+    ]
+}

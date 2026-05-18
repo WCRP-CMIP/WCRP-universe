@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wegc-wrf381bl",
+    "type": "source",
+    "drs_name": "WEGC-WRF381BL",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "wegc"
+    ],
+    "label": "WEGC-WRF381BL",
+    "label_extended": "WRF381BL",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

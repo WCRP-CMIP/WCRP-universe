@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uofmd",
+    "type": "organisation",
+    "drs_name": "UofMD",
+    "members": [
+        "uofmd"
+    ],
+    "description": "University of Maryland, College Park"
+}

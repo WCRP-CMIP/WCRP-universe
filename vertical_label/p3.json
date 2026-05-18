@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "p3",
+    "type": "vertical_label",
+    "description": "Data is reported at 3 pressure levels",
+    "drs_name": "p3"
+}

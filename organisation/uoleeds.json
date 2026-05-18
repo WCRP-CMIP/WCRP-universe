@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uoleeds",
+    "type": "organisation",
+    "drs_name": "UoLeeds",
+    "members": [
+        "uoleeds"
+    ],
+    "description": "University of Leeds"
+}

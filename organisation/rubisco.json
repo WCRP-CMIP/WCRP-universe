@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rubisco",
+    "type": "organisation",
+    "drs_name": "RUBISCO",
+    "members": [
+        "ornl",
+        "anl",
+        "bnl",
+        "lanl",
+        "lbnl",
+        "nau",
+        "ncar",
+        "uci",
+        "um"
+    ],
+    "description": "RUBISCO"
+}

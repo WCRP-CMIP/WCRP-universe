@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "florida_bahamas_strait",
+    "type": "region",
+    "drs_name": "florida_bahamas_strait",
+    "description": "",
+    "cf_standard_region": null,
+    "iso_region": null
+}

@@ -1,0 +1,39 @@
+{
+    "@context": {
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/branded_variable/",
+        "@vocab":"https://esgvoc.ipsl.fr/resource/universe/branded_variable/",
+        "id":"@id",
+        "type":"@type",
+        "branded_variable":"https://esgvoc.ipsl.fr/resource/universe/branded_variable",
+        "required":"https://esgvoc.ipsl.fr/resource/universe/required/",
+        "parts": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/branded_variable_parts",
+            "@type":"@id",
+            "@container": "@list",
+            "@context":{
+                "id":"@id",
+                "variable": {
+                    "@context": {
+                        "id": {
+                            "@id":  "https://esgvoc.ipsl.fr/resource/universe/variable",
+                            "@type": "@id",
+                            "@container": "@set",
+                            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/variable/"}
+                        }
+                    }
+                },
+                "branding_suffix": {
+                    "@context": {
+                        "id": {
+                            "@id":  "https://esgvoc.ipsl.fr/resource/universe/branding_suffix",
+                            "@type": "@id",
+                            "@container": "@set",
+                            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/branding_suffix/"}
+                        }
+                    }
+                }
+            }
+        }
+
+    } 
+}

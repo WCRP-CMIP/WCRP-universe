@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-eth",
+    "type": "organisation",
+    "drs_name": "CLMcom-ETH",
+    "members": [
+        "eth"
+    ],
+    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Federal Institute of Technology Zurich"
+}

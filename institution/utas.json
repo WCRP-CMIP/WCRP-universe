@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "utas",
+    "type": "institution",
+    "drs_name": "UTAS",
+    "acronyms": [
+        "UTAS"
+    ],
+    "labels": [
+        "University of Tasmania"
+    ],
+    "description": "University of Tasmania",
+    "location": [
+        {
+            "city": "Hobart",
+            "country": "Australia",
+            "lat": -42.8806,
+            "lon": 147.325
+        }
+    ],
+    "ror": "01nfmeh72",
+    "urls": [
+        "https://www.utas.edu.au/"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mpi-m",
+    "type": "organisation",
+    "drs_name": "MPI-M",
+    "members": [
+        "mpi-m"
+    ],
+    "description": "Max Planck Institute for Meteorology"
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-btu-cclm5-0-14",
+    "type": "source",
+    "drs_name": "CLMCOM-BTU-CCLM5-0-14",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "clmcom-btu"
+    ],
+    "label": "CLMCOM-BTU-CCLM5-0-14",
+    "label_extended": "CCLM5-0-14",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hfc236fa",
+    "type": "variable",
+    "drs_name": "hfc236fa",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

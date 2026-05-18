@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pctisccp",
+    "type": "variable",
+    "drs_name": "pctisccp",
+    "description": "The phrase \"cloud_top\" refers to the top of the highest cloud. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.",
+    "long_name": "ISCCP Mean Cloud Top Pressure",
+    "standard_name": "air_pressure_at_cloud_top",
+    "units": "Pa"
+}

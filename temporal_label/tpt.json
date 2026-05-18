@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tpt",
+    "type": "temporal_label",
+    "description": "Data represents the value at the specific point in time at which the data is reported (all other time points within each time interval are not considered).",
+    "drs_name": "tpt"
+}

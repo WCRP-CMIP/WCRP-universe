@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sootsn",
+    "type": "variable",
+    "drs_name": "sootsn",
+    "description": "\"Content\" indicates a quantity per unit area. Surface snow refers to the snow on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants.",
+    "long_name": "Snow Soot Content",
+    "standard_name": "soot_content_of_surface_snow",
+    "units": "kg m-2"
+}

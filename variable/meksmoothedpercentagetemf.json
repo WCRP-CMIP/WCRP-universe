@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "meksmoothedpercentagetemf",
+    "type": "variable",
+    "drs_name": "MEKsmoothedpercentageTEMF",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

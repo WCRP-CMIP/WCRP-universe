@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pan",
+    "type": "variable",
+    "drs_name": "pan",
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "PAN Volume Mixing Ratio",
+    "standard_name": "mole_fraction_of_peroxyacetyl_nitrate_in_air",
+    "units": "1"
+}

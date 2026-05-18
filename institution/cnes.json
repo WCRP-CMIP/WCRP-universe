@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cnes",
+    "type": "institution",
+    "drs_name": "CNES",
+    "acronyms": [],
+    "labels": [
+        "Centre national d'etudes spatiales"
+    ],
+    "description": "CNES",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

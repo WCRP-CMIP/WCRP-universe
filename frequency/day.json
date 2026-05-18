@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "day",
+    "type": "frequency",
+    "description": "Daily samples.",
+    "drs_name": "day",
+    "interval": 1.0,
+    "units": "day"
+}

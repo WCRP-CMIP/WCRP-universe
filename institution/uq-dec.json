@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uq-dec",
+    "type": "institution",
+    "drs_name": "UQ-DEC",
+    "acronyms": [
+        "UQ-DEC"
+    ],
+    "labels": [
+        "UQ [University of Queensland, Brisbane, Australia]; DEC [Department of Energy and Climate, Brisbane, Australia]"
+    ],
+    "description": "UQ [University of Queensland, Brisbane, Australia]; DEC [Department of Energy and Climate, Brisbane, Australia]",
+    "location": [
+        {
+            "city": "Brisbane",
+            "country": "Australia",
+            "lat": -27.49767,
+            "lon": 153.012866
+        }
+    ],
+    "ror": "00rqy9422",
+    "urls": [
+        "https://www.uq.edu.au/"
+    ]
+}

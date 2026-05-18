@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nerc",
+    "type": "organisation",
+    "drs_name": "NERC",
+    "members": [
+        "nerc"
+    ],
+    "description": "Natural Environment Research Council"
+}

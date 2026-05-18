@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "clmcom-dwd",
+    "type": "organisation",
+    "drs_name": "CLMcom-DWD",
+    "members": [
+        "dwd"
+    ],
+    "description": "Climate Limited-area Modelling Community (CLMcom) partner: German Meteorological Service"
+}

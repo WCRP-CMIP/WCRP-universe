@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lwsnl",
+    "type": "variable",
+    "drs_name": "lwsnl",
+    "description": "\"Content\" indicates a quantity per unit area. Surface snow refers to the snow on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants.",
+    "long_name": "Liquid Water Content of Snow Layer",
+    "standard_name": "liquid_water_content_of_surface_snow",
+    "units": "kg m-2"
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hcho",
+    "type": "variable",
+    "drs_name": "hcho",
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
+    "long_name": "Formaldehyde Volume Mixing Ratio",
+    "standard_name": "mole_fraction_of_formaldehyde_in_air",
+    "units": "1"
+}

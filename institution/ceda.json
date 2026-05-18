@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ceda",
+    "type": "institution",
+    "drs_name": "CEDA",
+    "acronyms": [],
+    "labels": [
+        "Centre for Environmental Data Analysis, RAL Space, STFC Rutherford Appleton Laboratory, Chilton, Didcot; National Centre for Earth Observation, UK"
+    ],
+    "description": "CEDA",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wcrp",
+    "type": "archive",
+    "description": "World Climate Research Programme (WCRP) hosted input and output",
+    "drs_name": "WCRP"
+}

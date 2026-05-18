@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/tracking_id/",
+        "@vocab":"https://esgvoc.ipsl.fr/resource/universe/tracking_id/",
+        "id":"@id",
+        "type":"@type",
+        "description":{"@id":"https://schema.org/description"}
+    }
+}

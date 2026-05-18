@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "thu",
+    "type": "institution",
+    "drs_name": "THU",
+    "acronyms": [
+        "THU"
+    ],
+    "labels": [
+        "Tsinghua University"
+    ],
+    "description": "Tsinghua University",
+    "location": [
+        {
+            "city": "Beijing",
+            "country": "China",
+            "lat": 39.999585,
+            "lon": 116.325414
+        }
+    ],
+    "ror": "03cve4549",
+    "urls": [
+        "http://www.tsinghua.edu.cn/publish/newthuen/"
+    ]
+}

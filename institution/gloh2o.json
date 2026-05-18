@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "gloh2o",
+    "type": "institution",
+    "drs_name": "GloH2O",
+    "acronyms": [],
+    "labels": [
+        "gloh2o.org"
+    ],
+    "description": "GloH2O",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

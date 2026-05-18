@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pmip",
+    "type": "activity",
+    "description": "Palaeoclimate modelling intercomparison project: assessment of paleoclimate i.e. climate thousands of years or more in the past.",
+    "drs_name": "PMIP"
+}

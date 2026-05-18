@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "fzj-wrf381bb",
+    "type": "source",
+    "drs_name": "FZJ-WRF381BB",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "fzj"
+    ],
+    "label": "FZJ-WRF381BB",
+    "label_extended": "WRF381BB",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

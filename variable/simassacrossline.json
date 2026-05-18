@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "simassacrossline",
+    "type": "variable",
+    "drs_name": "simassacrossline",
+    "description": "Transport across_line means that which crosses a particular line on the Earth's surface; formally this means the integral along the line of the normal component of the transport. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
+    "long_name": "Sea-Ice Mass Flux Through Straits",
+    "standard_name": "sea_ice_transport_across_line",
+    "units": "kg s-1"
+}

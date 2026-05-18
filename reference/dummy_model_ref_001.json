@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "dummy_model_ref_001",
+  "type": "reference",
+  "citation": "Dummy Model Reference, 2025. A dummy model for testing esgvoc queries. Journal of Test Models.",
+  "doi": "https://doi.org/10.0000/dummy.model.001",
+  "drs_name": "dummy_model_ref_001"
+}

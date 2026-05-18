@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ho2",
+    "type": "variable",
+    "drs_name": "ho2",
+    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of hydroperoxyl radical is HO2.",
+    "long_name": "HO2 Volume Mixing Ratio",
+    "standard_name": "mole_fraction_of_hydroperoxyl_radical_in_air",
+    "units": "1"
+}

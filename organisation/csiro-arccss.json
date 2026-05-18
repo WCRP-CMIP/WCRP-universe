@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "csiro-arccss",
+    "type": "organisation",
+    "drs_name": "CSIRO-ARCCSS",
+    "members": [
+        "csiro",
+        "arccss"
+    ],
+    "description": "CSIRO-ARCCSS"
+}

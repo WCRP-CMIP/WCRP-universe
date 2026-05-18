@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "multi",
+    "type": "area_label",
+    "description": "Data come from several different area types with data from each area type stored separately in the variable's array as identified by its 'sector' dimension. This area type is typically used for including multiple land-use or vegetation area types in a single file.",
+    "drs_name": "multi",
+    "cf_area_type": null
+}

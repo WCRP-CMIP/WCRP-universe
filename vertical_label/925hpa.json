@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "925hpa",
+    "type": "vertical_label",
+    "description": "Data is reported at an atmospheric pressure of 925hPa.",
+    "drs_name": "925hPa"
+}

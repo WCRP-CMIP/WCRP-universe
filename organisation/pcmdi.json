@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pcmdi",
+    "type": "organisation",
+    "drs_name": "PCMDI",
+    "members": [
+        "pcmdi",
+        "llnl"
+    ],
+    "description": "PCMDI"
+}

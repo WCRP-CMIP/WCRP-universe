@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ceda",
+    "type": "organisation",
+    "drs_name": "CEDA",
+    "members": [
+        "ceda"
+    ],
+    "description": "CEDA"
+}

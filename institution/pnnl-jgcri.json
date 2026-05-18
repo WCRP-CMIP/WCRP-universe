@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pnnl-jgcri",
+    "type": "institution",
+    "drs_name": "PNNL-JGCRI",
+    "acronyms": [
+        "JGCRI"
+    ],
+    "labels": [
+        "Joint Global Change Research Institute"
+    ],
+    "description": "Joint Global Change Research Institute",
+    "location": [
+        {
+            "city": "Riverdale Park",
+            "country": "United States",
+            "lat": 38.971106,
+            "lon": -76.9217851
+        }
+    ],
+    "ror": "058cmd703",
+    "urls": [
+        "http://www.globalchange.umd.edu/"
+    ]
+}

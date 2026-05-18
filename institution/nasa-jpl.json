@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nasa-jpl",
+    "type": "institution",
+    "drs_name": "NASA-JPL",
+    "acronyms": [],
+    "labels": [
+        "NASA Jet Propulsion Laboratory, Pasadena, CA 91109, USA"
+    ],
+    "description": "NASA-JPL",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

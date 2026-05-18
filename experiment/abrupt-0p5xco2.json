@@ -1,0 +1,23 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "abrupt-0p5xco2",
+    "type": "experiment",
+    "description": "Abrupt halving of atmospheric carbon dioxide levels. All other conditions are kept the same as piControl.",
+    "drs_name": "abrupt-0p5xCO2",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "activity": "cfmip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem",
+        "bgc"
+    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
+    "required_model_components": [
+        "aogcm"
+    ],
+    "tier": 1
+}

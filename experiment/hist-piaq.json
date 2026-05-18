@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hist-piaq",
+    "type": "experiment",
+    "description": "Used to diagnose climate and air quality responses to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) evolve as in `piControl`. All other forcings evolve as in `historical`. Requires interactive chemistry. Models without interactive chemistry should run `hist-piAer` instead. (Renamed from `hist-piNTCF` in AerChemMIP phase 1.)",
+    "drs_name": "hist-piAQ",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "bgc"
+    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
+    "required_model_components": [
+        "aogcm",
+        "aer",
+        "chem"
+    ],
+    "tier": 1
+}

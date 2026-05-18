@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "snw",
+    "type": "variable",
+    "drs_name": "snw",
+    "description": "\"Amount\" means mass per unit area. Surface snow amount refers to the amount on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants.",
+    "long_name": "Surface Snow Amount",
+    "standard_name": "surface_snow_amount",
+    "units": "kg m-2"
+}

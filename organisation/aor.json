@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "aor",
+    "type": "organisation",
+    "drs_name": "AoR",
+    "members": [
+        "aor"
+    ],
+    "description": "Astronomical Observatory of Rome"
+}

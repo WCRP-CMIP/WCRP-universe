@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ocsmoothedpercentagedefo",
+    "type": "variable",
+    "drs_name": "OCsmoothedpercentageDEFO",
+    "long_name": null,
+    "units": "",
+    "standard_name": null,
+    "description": ""
+}

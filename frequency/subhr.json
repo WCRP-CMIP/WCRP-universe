@@ -1,0 +1,9 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "subhr",
+    "type": "frequency",
+    "description": "Sub-hourly (i.e. more frequently than once per hour) samples.",
+    "drs_name": "subhr",
+    "interval": 25.0,
+    "units": "minute"
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tmax",
+    "type": "temporal_label",
+    "description": "Data is the maximum within each time period (i.e. each reported interval defined by its time bounds).",
+    "drs_name": "tmax"
+}

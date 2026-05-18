@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "csiro",
+    "type": "institution",
+    "drs_name": "CSIRO",
+    "acronyms": [
+        "CSIRO"
+    ],
+    "labels": [
+        "Commonwealth Scientific and Industrial Research Organisation"
+    ],
+    "description": "Commonwealth Scientific and Industrial Research Organisation",
+    "location": [
+        {
+            "city": "Canberra",
+            "country": "Australia",
+            "lat": -35.28346,
+            "lon": 149.12807
+        }
+    ],
+    "ror": "03qn8fb07",
+    "urls": [
+        "http://www.csiro.au/"
+    ]
+}

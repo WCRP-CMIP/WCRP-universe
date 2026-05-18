@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ucsd-sio",
+    "type": "organisation",
+    "drs_name": "UCSD-SIO",
+    "members": [
+        "ucsd",
+        "sio"
+    ],
+    "description": "UCSD-SIO"
+}

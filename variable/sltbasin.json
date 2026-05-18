@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sltbasin",
+    "type": "variable",
+    "drs_name": "sltbasin",
+    "description": "\"Northward\" indicates a vector component which is positive when directed northward (negative southward). Ocean transport means transport by all processes, both sea water and sea ice.",
+    "long_name": "Northward Ocean Salt Transport",
+    "standard_name": "northward_ocean_salt_transport",
+    "units": "kg s-1"
+}

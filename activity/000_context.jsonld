@@ -1,0 +1,19 @@
+{
+    "esgvoc_resolve_modes": {
+        "experiments": "reference"
+    },
+    "@context": {
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/activity/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type":"@type",
+        "description":{"@id":"https://schema.org/description"},
+        "drs_name": {"@id": "acronym"},
+        "experiments":{ 
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/experiment/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/experiment/"}
+        },
+        "url":{"@id":"https://schema.org/url"}
+    }
+}

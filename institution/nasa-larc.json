@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nasa-larc",
+    "type": "institution",
+    "drs_name": "NASA-LaRC",
+    "acronyms": [],
+    "labels": [
+        "NASA-LaRC (Langley Research Center) Hampton, Va"
+    ],
+    "description": "NASA-LaRC",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

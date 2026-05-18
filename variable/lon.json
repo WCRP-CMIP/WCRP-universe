@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lon",
+    "type": "variable",
+    "drs_name": "lon",
+    "description": "Longitude is positive eastward; its units of degree_east (or equivalent) indicate this explicitly. In a latitude-longitude system defined with respect to a rotated North Pole, the standard name of grid_longitude should be used instead of longitude. Grid longitude is positive in the grid-eastward direction, but its units should be plain degree.",
+    "long_name": "Longitude",
+    "standard_name": "longitude",
+    "units": "degree_east"
+}

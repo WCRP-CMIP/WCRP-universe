@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "prsn",
+    "type": "variable",
+    "drs_name": "prsn",
+    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
+    "long_name": "Snowfall Flux",
+    "standard_name": "snowfall_flux",
+    "units": "kg m-2 s-1"
+}

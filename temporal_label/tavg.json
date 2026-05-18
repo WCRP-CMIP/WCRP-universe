@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tavg",
+    "type": "temporal_label",
+    "description": "Data is averaged over each time period (i.e. each reported interval defined by its time bounds).",
+    "drs_name": "tavg"
+}

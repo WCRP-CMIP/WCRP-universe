@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uomontreal",
+    "type": "organisation",
+    "drs_name": "UoMontreal",
+    "members": [
+        "uomontreal"
+    ],
+    "description": "Université de Montréal"
+}

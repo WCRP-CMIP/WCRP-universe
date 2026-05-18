@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "bas",
+    "type": "institution",
+    "drs_name": "BAS",
+    "acronyms": [
+        "BAS"
+    ],
+    "labels": [
+        "British Antarctic Survey"
+    ],
+    "description": "British Antarctic Survey",
+    "location": [
+        {
+            "city": "Cambridge",
+            "country": "United Kingdom",
+            "lat": 52.212955,
+            "lon": 0.0804
+        }
+    ],
+    "ror": "01rhff309",
+    "urls": [
+        "https://www.bas.ac.uk/"
+    ]
+}

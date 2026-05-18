@@ -1,0 +1,10 @@
+{
+	"@context": {
+      	"@base":"https://esgvoc.ipsl.fr/resource/universe/contact/",
+	"@vocab":"https://esgvoc.ipsl.fr/resource/universe/",
+	"id":"@id",
+	"type":"@type",
+	"regex":"https://esgvoc.ipsl.fr/resource/universe/regex"
+  		
+    }
+}

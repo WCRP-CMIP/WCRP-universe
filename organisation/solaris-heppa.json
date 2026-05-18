@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "solaris-heppa",
+    "type": "organisation",
+    "drs_name": "SOLARIS-HEPPA",
+    "members": [
+        "geomar",
+        "gsfc",
+        "iaa-csic",
+        "lasp"
+    ]
+}

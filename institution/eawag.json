@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "eawag",
+    "type": "institution",
+    "drs_name": "EAWAG",
+    "acronyms": [
+        "EAWAG"
+    ],
+    "labels": [
+        "Swiss Federal Institute of Aquatic Science and Technology"
+    ],
+    "description": "Swiss Federal Institute of Aquatic Science and Technology",
+    "location": [
+        {
+            "city": "Dübendorf",
+            "country": "Switzerland",
+            "lat": 47.39724,
+            "lon": 47.39724
+        }
+    ],
+    "ror": "00pc48d59",
+    "urls": [
+        "http://www.eawag.ch/en/"
+    ]
+}

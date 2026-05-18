@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depthl",
+    "type": "variable",
+    "drs_name": "depthl",
+    "description": "Depth is the vertical distance below the surface.",
+    "long_name": "Depth of Lake Below the Surface",
+    "standard_name": "depth",
+    "units": "m"
+}

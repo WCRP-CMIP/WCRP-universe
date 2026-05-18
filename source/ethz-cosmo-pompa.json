@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ethz-cosmo-pompa",
+    "type": "source",
+    "drs_name": "ETHZ-COSMO-POMPA",
+    "activity_participation": [
+        "cordex-fpsconv"
+    ],
+    "cohort": [],
+    "organisation_id": [
+        "ethz"
+    ],
+    "label": "ETHZ-COSMO-POMPA",
+    "label_extended": "COSMO-pompa",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

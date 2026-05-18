@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ceresmip",
+    "type": "activity",
+    "description": "CERES Model Intercomparison Project",
+    "drs_name": "CERESMIP"
+}
