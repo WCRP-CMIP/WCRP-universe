@@ -41,7 +41,7 @@ jobs:
         run: |
           esgvoc admin build-universe \
             --universe-repo ${{ github.repository }} \
-            --universe-ref ${{ github.sha }} \
+            --universe-ref ${{ github.head_ref }} \
             --universe-version test \
             --output universe-test.db
 
