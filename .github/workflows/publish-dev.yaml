@@ -3,6 +3,8 @@ name: Test dev-latest snapshot
 on:
   push:
     branches: [esgvoc_dev]
+  pull_request:
+    branches: [esgvoc_dev]
 
 jobs:
   test:
