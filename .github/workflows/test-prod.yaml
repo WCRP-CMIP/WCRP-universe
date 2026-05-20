@@ -1,0 +1,262 @@
+name: Test release (PR)
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  test-and-preview:
+    runs-on: ubuntu-latest
+    steps:
+      # -----------------------------------------------------------------
+      # 1. Checkout with full history (needed for diff)
+      # -----------------------------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
+      # -----------------------------------------------------------------
+      # 2. Setup
+      # -----------------------------------------------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v5.4.0
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install esgvoc
+        run: uv pip install --system "esgvoc>=4.0.0"
+
+      # -----------------------------------------------------------------
+      # 3. Build & validate
+      # -----------------------------------------------------------------
+      - name: Build universe DB
+        run: |
+          esgvoc admin build-universe \
+            --universe-repo ${{ github.repository }} \
+            --universe-ref ${{ github.sha }} \
+            --universe-version test \
+            --output universe-test.db
+
+      - name: Validate universe DB
+        run: esgvoc admin validate universe-test.db
+
+      # -----------------------------------------------------------------
+      # 4. Detect bump type from diff
+      # -----------------------------------------------------------------
+      - name: Detect bump type
+        id: bump
+        run: |
+          set -e
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+
+          echo "Comparing ${BASE_SHA}..HEAD"
+
+          # Get changed CV files only (exclude non-CV directories/files)
+          CHANGED=$(git diff --name-only --diff-filter=ACDMR "${BASE_SHA}..HEAD" -- \
+            ':!_src' ':!_tests' ':!_archive' ':!scripts' ':!*.md' ':!*.toml' \
+            ':!*.lock' ':!*.py' ':!.github' ':!LICENSE*' ':!.gitignore' \
+            ':!esgvoc_manifest.yaml' || true)
+
+          if [ -z "${CHANGED}" ]; then
+            echo "No CV files changed"
+            echo "bump_type=none" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Changed files:"
+          echo "${CHANGED}"
+
+          BUMP="patch"
+
+          # Check for new data descriptors (major): new 000_context.jsonld added
+          NEW_CONTEXTS=$(git diff --name-only --diff-filter=A "${BASE_SHA}..HEAD" -- '*/000_context.jsonld' || true)
+          if [ -n "${NEW_CONTEXTS}" ]; then
+            BUMP="major"
+          fi
+
+          # Check for modified models (minor): existing 000_context.jsonld modified
+          if [ "${BUMP}" = "patch" ]; then
+            MOD_CONTEXTS=$(git diff --name-only --diff-filter=M "${BASE_SHA}..HEAD" -- '*/000_context.jsonld' || true)
+            if [ -n "${MOD_CONTEXTS}" ]; then
+              BUMP="minor"
+            fi
+          fi
+
+          echo "bump_type=${BUMP}" >> "$GITHUB_OUTPUT"
+          echo "Detected bump type: ${BUMP}"
+
+      # -----------------------------------------------------------------
+      # 5. Fetch current version from registry
+      # -----------------------------------------------------------------
+      - name: Fetch registry version
+        if: steps.bump.outputs.bump_type != 'none'
+        id: registry
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+
+          # Fetch universe.json from the registry repo
+          REGISTRY_JSON=$(gh api repos/WCRP-CMIP/esgvoc_registry/contents/universe.json \
+            --jq '.content' | base64 -d)
+
+          # Extract latest stable version
+          CURRENT=$(echo "${REGISTRY_JSON}" | python3 -c "
+          import json, sys
+          idx = json.load(sys.stdin)
+          for r in idx['releases']:
+              v = r.get('version', '')
+              if v != 'dev-latest' and not r.get('is_prerelease'):
+                  print(v.lstrip('v'))
+                  break
+          else:
+              print('0.0.0')
+          ")
+
+          echo "current_version=${CURRENT}" >> "$GITHUB_OUTPUT"
+          echo "Current registry version: ${CURRENT}"
+
+      # -----------------------------------------------------------------
+      # 6. Compute next version
+      # -----------------------------------------------------------------
+      - name: Compute next version
+        if: steps.bump.outputs.bump_type != 'none'
+        id: next
+        run: |
+          CURRENT="${{ steps.registry.outputs.current_version }}"
+          BUMP="${{ steps.bump.outputs.bump_type }}"
+
+          NEXT=$(python3 -c "
+          parts = [int(x) for x in '${CURRENT}'.split('.')]
+          bump = '${BUMP}'
+          if bump == 'major':
+              parts[0] += 1; parts[1] = 0; parts[2] = 0
+          elif bump == 'minor':
+              parts[1] += 1; parts[2] = 0
+          else:
+              parts[2] += 1
+          print('.'.join(str(p) for p in parts))
+          ")
+
+          echo "next_version=${NEXT}" >> "$GITHUB_OUTPUT"
+          echo "Next version: ${NEXT}"
+
+      # -----------------------------------------------------------------
+      # 7. Generate changelog from diff
+      # -----------------------------------------------------------------
+      - name: Generate changelog
+        if: steps.bump.outputs.bump_type != 'none'
+        id: changelog
+        run: |
+          set -e
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+
+          CHANGELOG=$(python3 - <<'PYEOF'
+          import subprocess, collections
+
+          base = "${{ github.event.pull_request.base.sha }}"
+
+          diff = subprocess.check_output(
+              ["git", "diff", "--name-status", "--diff-filter=ACDMR", f"{base}..HEAD",
+               "--", ":!_src", ":!_tests", ":!_archive", ":!scripts", ":!*.md",
+               ":!*.toml", ":!*.lock", ":!*.py", ":!.github", ":!LICENSE*",
+               ":!.gitignore", ":!esgvoc_manifest.yaml"],
+              text=True
+          ).strip()
+
+          if not diff:
+              print("No CV changes.")
+              raise SystemExit(0)
+
+          changes = collections.defaultdict(lambda: {"A": [], "M": [], "D": []})
+          model_changes = []
+
+          for line in diff.split("\n"):
+              if not line.strip():
+                  continue
+              parts = line.split("\t", 1)
+              status, path = parts[0], parts[1]
+              segments = path.split("/")
+              if len(segments) < 2:
+                  continue
+              collection = segments[0]
+              filename = segments[-1]
+
+              if filename == "000_context.jsonld":
+                  action = "new" if status == "A" else "updated"
+                  model_changes.append(f"- **{collection}**: {action} data descriptor model")
+              else:
+                  term_id = filename.replace(".json", "")
+                  changes[collection][status[0]].append(term_id)
+
+          lines = []
+          if model_changes:
+              lines.extend(model_changes)
+
+          for coll in sorted(changes):
+              parts = []
+              c = changes[coll]
+              if c["A"]:
+                  parts.append(f'{len(c["A"])} added')
+              if c["M"]:
+                  parts.append(f'{len(c["M"])} modified')
+              if c["D"]:
+                  parts.append(f'{len(c["D"])} removed')
+              if parts:
+                  lines.append(f"- **{coll}**: {', '.join(parts)}")
+
+          print("\n".join(lines))
+          PYEOF
+          )
+
+          {
+            echo "changelog<<CHANGELOG_EOF"
+            echo "${CHANGELOG}"
+            echo "CHANGELOG_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      # -----------------------------------------------------------------
+      # 8. Post PR comment
+      # -----------------------------------------------------------------
+      - name: Post PR comment
+        if: steps.bump.outputs.bump_type != 'none'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BODY=$(cat <<'EOF'
+          ## 📋 Release preview
+
+          **Bump type:** `${{ steps.bump.outputs.bump_type }}` (${{ steps.registry.outputs.current_version }} → ${{ steps.next.outputs.next_version }})
+
+          ### Changelog
+          ${{ steps.changelog.outputs.changelog }}
+
+          ---
+          *This will be applied to the manifest on merge.*
+          EOF
+          )
+
+          # Delete previous bot comments on this PR to avoid spam
+          gh api repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments \
+            --jq '.[] | select(.user.login == "github-actions[bot]") | select(.body | contains("Release preview")) | .id' \
+            | xargs -I {} gh api -X DELETE repos/${{ github.repository }}/issues/comments/{}
+
+          gh pr comment ${{ github.event.pull_request.number }} --body "${BODY}"
+
+      - name: No CV changes
+        if: steps.bump.outputs.bump_type == 'none'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --body "## 📋 Release preview
+
+          No CV files changed — no release needed."
