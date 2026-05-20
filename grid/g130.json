@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g130",
+  "type": "grid",
+  "description": "The horizontal grid spacing varies locally between 5 and 25 km.",
+  "drs_name": "g130",
+  "region": "global"
+}
