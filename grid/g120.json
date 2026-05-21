@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g120",
+  "type": "grid",
+  "description": "Triangular truncation at total wavenumber 63 (T63) corresponding to an approximate isotropic resolution of 2.8 degrees in both latitude and longitude",
+  "drs_name": "g120",
+  "region": "global"
+}

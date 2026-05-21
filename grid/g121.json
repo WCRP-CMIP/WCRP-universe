@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g121",
+  "type": "grid",
+  "description": "",
+  "drs_name": "g121",
+  "region": "global"
+}
