@@ -1041,8 +1041,8 @@ class Holder(BaseModel):
                     "In combination with `piClim-control`, "
                     "quantifies transient effective radiative forcing (ERF) "
                     "over the historical period and a future experiment. "
-                    "This can be compared with `piClim-aer` which provides a more precise "
-                    "quantification of present-day ERF."
+                    "This complements the `piClim-*` experiments which provide a more precise "
+                    "quantification of present-day ERF for various forcing components."
                 ),
                 lambda x: x.replace(
                     "a future experiment",
