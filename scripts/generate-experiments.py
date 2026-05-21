@@ -825,7 +825,8 @@ class Holder(BaseModel):
             activity=univ.activity,
             start_timestamp="1901-01-01",
             end_timestamp=hist_experiment_project.end_timestamp,
-            min_number_yrs_per_sim=hist_experiment_project.min_number_yrs_per_sim,
+            # Can easily go wrong
+            min_number_yrs_per_sim=2021 - 1901 + 1,
             tier=1,
         )
         self.experiments_project.append(proj)
