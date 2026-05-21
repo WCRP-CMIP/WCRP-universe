@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-hl",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-hl`).",
+    "description": "CMIP7 ScenarioMIP High-to-Low emission scenario - A scenario that follows approximately the same emissions pathway as the High, but changes course in the second half of the century, applying strong mitigation measures to reach net zero CO2 emissions by 2100. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-hl`).",
     "drs_name": "scen7-hl",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",
