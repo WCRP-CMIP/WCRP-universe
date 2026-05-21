@@ -823,7 +823,7 @@ class Holder(BaseModel):
         proj = ExperimentProject(
             id=univ.drs_name.lower(),
             activity=univ.activity,
-            start_timestamp=hist_experiment_project.start_timestamp,
+            start_timestamp="1901-01-01",
             end_timestamp=hist_experiment_project.end_timestamp,
             min_number_yrs_per_sim=hist_experiment_project.min_number_yrs_per_sim,
             tier=1,
