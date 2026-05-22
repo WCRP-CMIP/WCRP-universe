@@ -178,7 +178,7 @@ class Holder(BaseModel):
                 experiments=[],
                 urls=[
                     "https://doi.org/10.5194/gmd-17-8141-2024",
-                    "https://doi.org/10.5194/egusphere-2024-3356",
+                    "https://doi.org/10.5194/gmd-18-5699-2025",
                     "https://doi.org/10.5194/gmd-9-2853-2016",
                 ],
             ),
@@ -211,6 +211,11 @@ class Holder(BaseModel):
                     "https://doi.org/10.5194/gmd-17-2583-2024",
                     "https://doi.org/10.1175/BAMS-D-25-0191.1",
                 ],
+            ),
+            ActivityProject(
+                id="lmip",
+                experiments=[],
+                urls=["https://doi.org/10.5194/gmd-9-2809-2016"],
             ),
             ActivityProject(
                 id="pmip",
@@ -781,6 +786,55 @@ class Holder(BaseModel):
 
         return self
 
+    def add_lmip_entries(self) -> "Holder":
+        drs_name = "land-hist"
+        description = "Land-only version of `historical` with prescribed climate and weather inputs required to drive land models."
+
+        hist_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "historical"
+        ]
+        if len(hist_experiment_project_l) != 1:
+            raise AssertionError(hist_experiment_project_l)
+
+        hist_experiment_project = hist_experiment_project_l[0]
+
+        univ = ExperimentUniverse(
+            drs_name=drs_name,
+            description=description,
+            activity="lmip",
+            additional_allowed_model_components=[],
+            branch_information=None,
+            # Defined in project
+            end_timestamp="dont_write",
+            min_ensemble_size=1,
+            # Defined in project
+            min_number_yrs_per_sim="dont_write",
+            parent_activity=None,
+            parent_experiment=None,
+            parent_mip_era=None,
+            required_model_components=["land"],
+            # Defined in project
+            start_timestamp="dont_write",
+            tier=1,
+        )
+
+        self.experiments_universe.append(univ)
+
+        proj = ExperimentProject(
+            id=univ.drs_name.lower(),
+            activity=univ.activity,
+            start_timestamp="1901-01-01",
+            end_timestamp=hist_experiment_project.end_timestamp,
+            # Can easily go wrong
+            min_number_yrs_per_sim=2021 - 1901 + 1,
+            tier=1,
+        )
+        self.experiments_project.append(proj)
+
+        self.add_experiment_to_activity(proj)
+
+        return self
+
     def add_pmip_entries(self) -> "Holder":
         drs_name = "abrupt-127k"
         description = (
@@ -1022,15 +1076,11 @@ class Holder(BaseModel):
             (
                 "piClim-histaer",
                 (
-                    "Simulation of the historical and future period with prescribed sea-surface temperatures "
-                    "and sea-ice concentrations "
-                    "(the slightly confusing name is a legacy thing). "
-                    "Aerosol emissions follow the `historical` experiment then a future experiment "
-                    "while all other forcings follow `piControl` "
-                    "to allow for a (approximate) diagnosis of "
-                    "transient historical aerosol effective radiative forcing (ERF) "
-                    "(can be compared with `piClim-aer` which provides a more precise "
-                    "quantification of present-day aerosol ERF)."
+                    "In combination with `piClim-control`, "
+                    "quantifies transient aerosol effective radiative forcing (ERF) "
+                    "over the historical period and a future experiment. "
+                    "This can be compared with `piClim-aer` which provides a more precise "
+                    "quantification of present-day aerosol ERF."
                 ),
                 lambda x: x.replace(
                     "a future experiment",
@@ -1042,14 +1092,11 @@ class Holder(BaseModel):
             (
                 "piClim-histall",
                 (
-                    "Simulation of the historical period with prescribed sea-surface temperatures "
-                    "and sea-ice concentrations "
-                    "(the slightly confusing name is a legacy thing). "
-                    "All forcings follow the `historical` experiment then a future experiment "
-                    "to allow for a (approximate) diagnosis of "
-                    "transient historical effective radiative forcing (ERF) "
-                    "(can be compared with the `piClim-*` experiments which provide a more precise "
-                    "quantification of present-day ERF from various forcers)."
+                    "In combination with `piClim-control`, "
+                    "quantifies transient effective radiative forcing (ERF) "
+                    "over the historical period and a future experiment. "
+                    "This complements the `piClim-*` experiments which provide a more precise "
+                    "quantification of present-day ERF for various forcing components."
                 ),
                 lambda x: x.replace(
                     "a future experiment",
@@ -1070,9 +1117,9 @@ class Holder(BaseModel):
                 min_ensemble_size=1,
                 # Defined in project
                 min_number_yrs_per_sim="dont_write",
-                parent_activity=None,
-                parent_experiment=None,
-                parent_mip_era=None,
+                parent_activity="dont_write",
+                parent_experiment="dont_write",
+                parent_mip_era="dont_write",
                 required_model_components=required_model_components,
                 start_timestamp="1850-01-01",
                 tier=1,
@@ -1089,6 +1136,9 @@ class Holder(BaseModel):
                 start_timestamp="1850-01-01",
                 end_timestamp="2100-12-31",
                 min_number_yrs_per_sim=251,
+                parent_activity="cmip",
+                parent_experiment="picontrol",
+                parent_mip_era="cmip7",
                 tier=1,
             )
             self.experiments_project.append(proj)
@@ -1216,22 +1266,67 @@ class Holder(BaseModel):
 
     def add_scenario_entries(self) -> "Holder":
         acronym_descriptions = [
-            ("vl", "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future."),
+            (
+                "vl",
+                (
+                    "CMIP7 ScenarioMIP Very Low emission scenario - "
+                    "The Very Low emission scenario "
+                    "is designed to keep the temperature level as low as plausible given feasibility constraints. "
+                    "This scenario is thus relevant for the low end of the Paris range "
+                    "(staying as close as plausible to 1.5C at the time of peak warming "
+                    "and limiting warming to 1.5C by the end of the century)."
+                ),
+            ),
             (
                 "ln",
-                "PLACEHOLDER TBC. CMIP7 ScenarioMIP low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future.",
+                (
+                    "CMIP7 ScenarioMIP Low-to-Negative emission scenario - "
+                    "A scenario with a higher overshoot of the 1.5C goal, "
+                    "followed by stringent climate policies resulting in net-negative greenhouse gas emissions to return to lower warming levels, "
+                    "thus supporting research into the reversibility of climate outcomes and their impacts."
+                ),
             ),
-            ("l", "PLACEHOLDER TBC. CMIP7 ScenarioMIP low emissions future."),
+            (
+                "l",
+                (
+                    "CMIP7 ScenarioMIP Low emission scenario - "
+                    "The Low emission scenario is designed to be consistent "
+                    "with the pursuit of holding warming to a level likely below 2C, "
+                    "without returning to 1.5C before the end of the century. "
+                ),
+            ),
             (
                 "ml",
-                "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium followed by low (from 2040) emissions future.",
+                (
+                    "CMIP7 ScenarioMIP Medium-to-Low emission scenario - "
+                    "A scenario exploring a delayed increase in mitigation efforts, "
+                    "short of the Paris temperature goal but achieving net-zero CO2 emissions by the end of the century."
+                ),
             ),
-            ("m", "PLACEHOLDER TBC. CMIP7 ScenarioMIP medium emissions future."),
+            (
+                "m",
+                (
+                    "CMIP7 ScenarioMIP Medium emission scenario - "
+                    "A middle scenario exploring consequences of extending current policies and trends into the future."
+                ),
+            ),
             (
                 "hl",
-                "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future.",
+                (
+                    "CMIP7 ScenarioMIP High-to-Low emission scenario - "
+                    "A scenario that follows approximately the same emissions pathway as the High, "
+                    "but changes course in the second half of the century, applying strong mitigation measures to reach net zero CO2 emissions by 2100."
+                ),
             ),
-            ("h", "PLACEHOLDER TBC. CMIP7 ScenarioMIP high emissions future."),
+            (
+                "h",
+                (
+                    "CMIP7 ScenarioMIP High emission scenario - "
+                    "A scenario with emissions as high as judged to be plausible, "
+                    "based on assuming developments that include a rollback of current mitigation policies. "
+                    "This scenario is expected to result in forcings below SSP5-8.5."
+                ),
+            ),
         ]
 
         for acronym, description_base in acronym_descriptions:
@@ -1709,6 +1804,7 @@ def main():
     holder.add_historical_entries()
     holder.add_flat10_entries()
     holder.add_damip_entries()
+    holder.add_lmip_entries()
     holder.add_pmip_entries()
     holder.add_piclim_entries()
     holder.add_scenario_entries()

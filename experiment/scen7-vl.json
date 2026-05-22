@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-vl",
     "type": "experiment",
-    "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP very low emissions future. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-vl`).",
+    "description": "CMIP7 ScenarioMIP Very Low emission scenario - The Very Low emission scenario is designed to keep the temperature level as low as plausible given feasibility constraints. This scenario is thus relevant for the low end of the Paris range (staying as close as plausible to 1.5C at the time of peak warming and limiting warming to 1.5C by the end of the century). Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-scen7-vl`).",
     "drs_name": "scen7-vl",
     "start_timestamp": "2022-01-01",
     "end_timestamp": "2100-12-31",
