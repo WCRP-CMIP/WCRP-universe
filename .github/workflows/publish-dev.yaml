@@ -1,6 +1,7 @@
 name: Test dev-latest snapshot
 
 on:
+  workflow_dispatch:
   push:
     branches: [esgvoc_dev]
   pull_request:
@@ -10,37 +11,22 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      # -----------------------------------------------------------------
-      # 1. Setup
-      # -----------------------------------------------------------------
-      - name: Set up Python
-        uses: actions/setup-python@v5.4.0
-        with:
-          python-version: "3.12"
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Install uv
-        run: pip install uv
+      - uses: ./.github/actions/setup-esgvoc
 
-      - name: Install esgvoc
-        run: uv pip install --system "esgvoc>=4.0.0"
-
-      # -----------------------------------------------------------------
-      # 2. Build & validate locally
-      # -----------------------------------------------------------------
       - name: Build universe DB
         run: |
           esgvoc admin build-universe \
-            --universe-repo WCRP-CMIP/WCRP-universe \
-            --universe-ref esgvoc_dev \
+            --universe-repo ${{ github.event.pull_request.head.repo.full_name || github.repository }} \
+            --universe-ref ${{ github.event.pull_request.head.ref || github.head_ref || github.ref_name }} \
             --universe-version dev-latest \
             --output universe-dev.db
 
       - name: Validate universe DB
         run: esgvoc admin validate universe-dev.db
 
-      # -----------------------------------------------------------------
-      # 3. Print publish command for admins
-      # -----------------------------------------------------------------
       - name: Print publish command
         run: |
           echo "============================================"
