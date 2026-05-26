@@ -22,8 +22,8 @@ jobs:
       - name: Build universe DB
         run: |
           esgvoc admin build-universe \
-            --universe-repo ${{ github.repository }} \
-            --universe-ref ${{ github.head_ref }} \
+            --universe-repo ${{ github.event.pull_request.head.repo.full_name || github.repository }} \
+            --universe-ref ${{ github.event.pull_request.head.sha || github.head_ref || github.ref_name }} \
             --universe-version test \
             --output universe-test.db
 
