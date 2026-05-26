@@ -19,7 +19,7 @@ jobs:
         run: |
           esgvoc admin build-universe \
             --universe-repo ${{ github.event.pull_request.head.repo.full_name || github.repository }} \
-            --universe-ref ${{ github.event.pull_request.head.sha || github.head_ref || github.ref_name }} \
+            --universe-ref ${{ github.event.pull_request.head.ref || github.head_ref || github.ref_name }} \
             --universe-version dev-latest \
             --output universe-dev.db
 
