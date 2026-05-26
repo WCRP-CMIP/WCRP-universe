@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ium-fdu",
+  "type": "organisation",
+  "drs_name": "IUM-FDU",
+  "members": [
+    "ium",
+    "fdu"
+  ],
+  "description": "IUM [Institute of Urban Meteorology, China Meteorological Administration,  Beijing, China]; FDU [Fudan University, Shanghai, China]"
+}

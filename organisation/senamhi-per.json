@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "senamhi-per",
+  "type": "organisation",
+  "drs_name": "SENAMHI-PER",
+  "members": [
+    "senamhi",
+    "per"
+  ],
+  "description": "National Meteorology and Hydrology Service of Peru, Lima, Peru"
+}

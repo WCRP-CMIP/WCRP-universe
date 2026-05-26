@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fps-urb-rcc",
+  "type": "activity",
+  "description": "Flagship Pilot Study (FPS) URBan environments and Regional Climate Change",
+  "drs_name": "FPS-URB-RCC"
+}

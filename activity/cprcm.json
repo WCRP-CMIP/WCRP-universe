@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cprcm",
+  "type": "activity",
+  "description": "Convection-Permitting Regional Climate Modelling",
+  "drs_name": "CPRCM"
+}

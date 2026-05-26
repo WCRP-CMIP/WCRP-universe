@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ccam-v2307conv21-sn",
+  "type": "source",
+  "drs_name": "CCAM-v2307conv21-SN",
+  "activity_participation": [
+    "DD"
+  ],
+  "cohort": [
+    "Registered"
+  ],
+  "organisation_id": [],
+  "label": "CCAM-v2307conv21-SN",
+  "label_extended": "Conformal Cubic Atmospheric Model version 2307 configuration 2021, with spectral nudging",
+  "license": null,
+  "model_component": null,
+  "release_year": "2023"
+}

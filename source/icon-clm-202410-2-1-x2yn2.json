@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "icon-clm-202410-2-1-x2yn2",
+  "type": "source",
+  "drs_name": "ICON-CLM-202410-2-1-x2yn2",
+  "activity_participation": [
+    "DD"
+  ],
+  "cohort": [
+    "Registered"
+  ],
+  "organisation_id": [],
+  "label": "ICON-CLM-202410-2-1-x2yn2",
+  "label_extended": "ICON model in Climate Limited-area Mode (ICON-CLM), Version 202410-2-1, convection-permitting setup with two-step nesting (x2yn2), intermediate ICON-CLM-202407-1-1 simulation at 12 km spatial grid spacing using convection parameterization",
+  "license": null,
+  "model_component": null,
+  "release_year": "2025"
+}

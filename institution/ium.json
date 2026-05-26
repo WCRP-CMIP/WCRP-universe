@@ -1,0 +1,27 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ium",
+  "type": "institution",
+  "drs_name": "ium",
+  "acronyms": [
+    "CMA"
+  ],
+  "labels": [
+    "Central Military Commission Meteorological Bureau",
+    "China Meteorological Administration",
+    "中国气象局"
+  ],
+  "description": "China Meteorological Administration",
+  "location": [
+    {
+      "city": "Beijing",
+      "country": "China",
+      "lat": 39.9075,
+      "lon": 116.39723
+    }
+  ],
+  "ror": "00bx3rb98",
+  "urls": [
+    "http://www.cma.gov.cn/en2014/"
+  ]
+}
