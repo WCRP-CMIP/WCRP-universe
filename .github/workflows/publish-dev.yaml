@@ -1,6 +1,7 @@
 name: Test dev-latest snapshot
 
 on:
+  workflow_dispatch:
   push:
     branches: [esgvoc_dev]
   pull_request:
@@ -18,8 +19,8 @@ jobs:
       - name: Build universe DB
         run: |
           esgvoc admin build-universe \
-            --universe-repo ${{ github.repository }} \
-            --universe-ref ${{ github.head_ref || github.ref_name }} \
+            --universe-repo ${{ github.event.pull_request.head.repo.full_name || github.repository }} \
+            --universe-ref ${{ github.event.pull_request.head.ref || github.head_ref || github.ref_name }} \
             --universe-version dev-latest \
             --output universe-dev.db
 
