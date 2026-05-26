@@ -1,6 +1,7 @@
 name: Test dev-latest snapshot
 
 on:
+  workflow_dispatch:
   push:
     branches: [esgvoc_dev]
   pull_request:
