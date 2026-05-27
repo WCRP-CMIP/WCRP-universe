@@ -8,6 +8,7 @@ for the CMIP7 fast-track.
 """
 
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -888,6 +889,13 @@ class Holder(BaseModel):
 
             return description_full
 
+        hist_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "historical"
+        ]
+        if len(hist_experiment_project_l) != 1:
+            raise AssertionError(hist_experiment_project_l)
+
+        hist_experiment_project = hist_experiment_project_l[0]
         for (
             drs_name,
             description,
@@ -1052,8 +1060,17 @@ class Holder(BaseModel):
 
             self.experiments_universe.append(univ)
 
+            hist_end_timestamp_dt = datetime.strptime(
+                hist_experiment_project.end_timestamp, "%Y-%m-%d"
+            )
+            description_project = re.sub(
+                "\(typically.*\)",
+                f"({hist_end_timestamp_dt.year} values for CMIP7)",
+                description,
+            )
             proj = ExperimentProject(
                 id=univ.drs_name.lower(),
+                description=description_project,
                 activity=univ.activity,
                 branch_information=branch_information,
                 min_ensemble_size=min_ensemble_size,

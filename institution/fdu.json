@@ -1,0 +1,27 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fdu",
+  "type": "institution",
+  "drs_name": "fdu",
+  "acronyms": [
+    "FDU"
+  ],
+  "labels": [
+    "Fudan University",
+    "复旦大学",
+    "復旦大學"
+  ],
+  "description": "Fudan University",
+  "location": [
+    {
+      "city": "Shanghai",
+      "country": "China",
+      "lat": 31.22222,
+      "lon": 121.45806
+    }
+  ],
+  "ror": "013q1eq08",
+  "urls": [
+    "https://fudan.edu.cn"
+  ]
+}

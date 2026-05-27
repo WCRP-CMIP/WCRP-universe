@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "per",
+  "type": "institution",
+  "drs_name": "per",
+  "acronyms": [],
+  "labels": [],
+  "description": "",
+  "location": [],
+  "ror": null,
+  "urls": []
+}
