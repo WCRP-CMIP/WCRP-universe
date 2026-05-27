@@ -17,7 +17,8 @@
         "clmcom-gerics",
         "clmcom-hereon",
         "clmcom-imwm",
-        "clmcom-kit"
+        "clmcom-kit",
+        "clmcom-wegc"
     ],
     "label": "ICON-CLM-202407-1-1",
     "label_extended": "ICON model in Climate Limited-area Mode (ICON-CLM), Version 202407-1-1",
