@@ -7,7 +7,7 @@
         "cordex"
     ],
     "cohort": [],
-    "organisation_id": [],
+    "organisation_id": ["ecmwf"],
     "label": "ERA5",
     "label_extended": "ECMWF Reanalysis v5",
     "license": {},

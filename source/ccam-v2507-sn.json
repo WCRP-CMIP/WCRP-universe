@@ -9,7 +9,7 @@
   "cohort": [
     "Registered"
   ],
-  "organisation_id": [],
+  "organisation_id": ["unsw-ccrc"],
   "label": "CCAM-v2507-SN",
   "label_extended": "Conformal Cubic Atmospheric Model version 2507 with spectral nudging",
   "license": {},
