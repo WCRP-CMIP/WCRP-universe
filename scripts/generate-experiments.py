@@ -205,6 +205,13 @@ class Holder(BaseModel):
                 urls=["https://doi.org/10.5194/gmd-18-4399-2025"],
             ),
             ActivityProject(
+                id="dcpp",
+                experiments=[],
+                urls=[
+                    "https://doi.org/10.5194/gmd-9-3751-2016",
+                ],
+            ),
+            ActivityProject(
                 id="geomip",
                 experiments=[],
                 urls=[
@@ -461,6 +468,45 @@ class Holder(BaseModel):
             self.experiments_project.append(proj)
 
             self.add_experiment_to_activity(proj)
+
+        return self
+
+    def add_dcpp_entries(self) -> "Holder":
+        drs_name = "dcppB-forecast-cmip6"
+        description = (
+            "Simulation to examine forced climate change and variability up to 10 years into the future. "
+            "This forecast is initialised from observations with forcing from ssp245 applied over its extent."
+        )
+
+        univ = ExperimentUniverse(
+            drs_name=drs_name,
+            description=description,
+            activity="dcpp",
+            additional_allowed_model_components=["aer", "chem", "bgc", "ism"],
+            # branch_information="Branch from `piControl` at a time of your choosing",
+            end_timestamp="2036-12-31",
+            min_ensemble_size=10,
+            min_number_yrs_per_sim=10.0,
+            # parent_activity="cmip",
+            # parent_experiment="picontrol",
+            # parent_mip_era="dont_write",
+            required_model_components=["aogcm"],
+            start_timestamp="2025-01-01",
+            tier=1,
+        )
+
+        self.experiments_universe.append(univ)
+
+        proj = ExperimentProject(
+            id=univ.drs_name.lower(),
+            activity=univ.activity,
+            # min_number_yrs_per_sim=100.0,
+            # parent_mip_era="cmip7",
+            tier=1,
+        )
+        self.experiments_project.append(proj)
+
+        self.add_experiment_to_activity(proj)
 
         return self
 
@@ -1484,7 +1530,7 @@ def main():
     holder.add_1pctco2_entries()
     holder.add_abruptco2_entries()
     holder.add_amip_entries()
-    # holder.add_dcpp_entries()
+    holder.add_dcpp_entries()
     holder.add_picontrol_entries()
     holder.add_historical_entries()
     holder.add_flat10_entries()
