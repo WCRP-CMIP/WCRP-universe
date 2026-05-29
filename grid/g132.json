@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "g132",
   "type": "grid",
-  "description": "The horizontal grid spacing varies locally between 5 and 25 km.",
+  "description": "Horizontal grid cell with a unstructured triangular grid type.",
   "drs_name": "g132",
   "region": "global"
 }

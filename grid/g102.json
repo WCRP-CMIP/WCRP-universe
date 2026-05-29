@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "g102",
   "type": "grid",
-  "description": "Wrap-around",
+  "description": "Ocean tripolar grid with 105704 cells.",
   "drs_name": "g102",
   "region": "global"
 }
