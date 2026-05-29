@@ -494,7 +494,8 @@ class Holder(BaseModel):
                 "bgc",
                 # "ism",
             ],
-            end_timestamp="2036-12-31",
+            # TODO: double check
+            end_timestamp="2034-12-31",
             min_ensemble_size=10,
             min_number_yrs_per_sim=10.0,
             branch_information=None,
