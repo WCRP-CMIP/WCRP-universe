@@ -5,16 +5,19 @@
     "description": "Simulation to examine forced climate change and variability up to 10 years into the future. This forecast is initialised from observations with forcing from ssp245 applied over its extent.",
     "drs_name": "dcppB-forecast-cmip6",
     "start_timestamp": "2025-01-01",
-    "end_timestamp": "2036-12-31",
+    "end_timestamp": "2034-12-31",
     "min_number_yrs_per_sim": 10.0,
     "activity": "dcpp",
     "additional_allowed_model_components": [
         "aer",
         "chem",
-        "bgc",
-        "ism"
+        "bgc"
     ],
+    "branch_information": null,
     "min_ensemble_size": 10,
+    "parent_activity": null,
+    "parent_experiment": null,
+    "parent_mip_era": null,
     "required_model_components": [
         "aogcm"
     ],
