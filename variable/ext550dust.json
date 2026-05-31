@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ext550dust",
+    "type": "variable",
+    "drs_name": "ext550dust",
+    "description": "Dust Aerosol Extinction Coefficient at 550 nm",
+    "long_name": "Dust Aerosol Extinction Coefficient at 550 nm",
+    "standard_name": "volume_extinction_coefficient_in_air_due_to_dust_ambient_aerosol_particles",
+    "units": "m-1"
+}
