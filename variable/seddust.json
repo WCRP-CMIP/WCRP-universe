@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "seddust",
+    "type": "variable",
+    "drs_name": "seddust",
+    "description": "Sedimentation Flux of Dust Aerosol",
+    "long_name": "Sedimentation Flux of Dust Aerosol",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_sedimentation",
+    "units": "kg m-2 s-1"
+}
