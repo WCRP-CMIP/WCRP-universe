@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rsusaf",
+    "type": "variable",
+    "drs_name": "rsusaf",
+    "description": "Surface Upwelling Shortwave Radiation in Aerosol-Free Sky",
+    "long_name": "Surface Upwelling Shortwave Radiation in Aerosol-Free Sky",
+    "standard_name": "surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol",
+    "units": "W m-2"
+}
