@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sconcsoa",
+    "type": "variable",
+    "drs_name": "sconcsoa",
+    "description": "Near-Surface Concentration of Secondary Organic Aerosol",
+    "long_name": "Near-Surface Concentration of Secondary Organic Aerosol",
+    "standard_name": "mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

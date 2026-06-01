@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sedno3",
+    "type": "variable",
+    "drs_name": "sedno3",
+    "description": "Sedimentation Rate of Nitrate",
+    "long_name": "Sedimentation Rate of Nitrate",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition",
+    "units": "kg m-2 s-1"
+}

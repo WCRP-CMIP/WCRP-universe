@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sedbc",
+    "type": "variable",
+    "drs_name": "sedbc",
+    "description": "Sedimentation Flux of Black Carbon Aerosol",
+    "long_name": "Sedimentation Flux of Black Carbon Aerosol",
+    "standard_name": "tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_particles_due_to_sedimentation",
+    "units": "kg m-2 s-1"
+}

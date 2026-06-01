@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sconcbc",
+    "type": "variable",
+    "drs_name": "sconcbc",
+    "description": "Near-Surface Concentration of Black Carbon Aerosol",
+    "long_name": "Near-Surface Concentration of Black Carbon Aerosol",
+    "standard_name": "mass_concentration_of_black_carbon_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

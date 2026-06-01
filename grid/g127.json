@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "g127",
   "type": "grid",
-  "description": "",
+  "description": "Horizontal grid cell with a tripolar grid type and 1 x 1 degree resolution.",
   "drs_name": "g127",
   "region": "global"
 }
