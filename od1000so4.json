@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "od1000so4",
+    "type": "variable",
+    "drs_name": "od1000so4",
+    "description": "Sulfate Aerosol Optical Thickness at 1000nm",
+    "long_name": "Sulfate Aerosol Optical Thickness at 1000nm",
+    "standard_name": "atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles",
+    "units": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "concss",
+    "type": "variable",
+    "drs_name": "concss",
+    "description": "Concentration of Sea-Salt Aerosol",
+    "long_name": "Concentration of Sea-Salt Aerosol",
+    "standard_name": "mass_concentration_of_sea_salt_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

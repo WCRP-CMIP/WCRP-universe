@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "od870dust",
+    "type": "variable",
+    "drs_name": "od870dust",
+    "description": "Dust Aerosol Optical Thickness at 870nm",
+    "long_name": "Dust Aerosol Optical Thickness at 870nm",
+    "standard_name": "atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles",
+    "units": "1"
+}
