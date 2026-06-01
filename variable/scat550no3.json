@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "scat550no3",
+    "type": "variable",
+    "drs_name": "scat550no3",
+    "description": "Nitrate Aerosol Scattering Coefficient at 550 nm",
+    "long_name": "Nitrate Aerosol Scattering Coefficient at 550 nm",
+    "standard_name": "volume_scattering_coefficient_in_air_due_to_nitrate_ambient_aerosol_particles",
+    "units": "m-1"
+}

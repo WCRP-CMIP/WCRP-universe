@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sconcno3",
+    "type": "variable",
+    "drs_name": "sconcno3",
+    "description": "Near-Surface Concentration of Nitrate Aerosol",
+    "long_name": "Near-Surface Concentration of Nitrate Aerosol",
+    "standard_name": "mass_concentration_of_nitrate_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

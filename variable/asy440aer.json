@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "asy440aer",
+    "type": "variable",
+    "drs_name": "asy440aer",
+    "description": "Aerosol Asymmetry Parameter at 440 nm",
+    "long_name": "Aerosol Asymmetry Parameter at 440 nm",
+    "standard_name": "asymmetry_factor_of_ambient_aerosol_particles",
+    "units": "1"
+}

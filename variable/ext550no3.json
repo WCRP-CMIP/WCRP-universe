@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ext550no3",
+    "type": "variable",
+    "drs_name": "ext550no3",
+    "description": "Nitrate Aerosol Extinction Coefficient at 550 nm",
+    "long_name": "Nitrate Aerosol Extinction Coefficient at 550 nm",
+    "standard_name": "volume_extinction_coefficient_in_air_due_to_nitrate_ambient_aerosol_particles",
+    "units": "m-1"
+}

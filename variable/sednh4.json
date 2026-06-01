@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sednh4",
+    "type": "variable",
+    "drs_name": "sednh4",
+    "description": "Sedimentation Rate of Ammonium",
+    "long_name": "Sedimentation Rate of Ammonium",
+    "standard_name": "minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition",
+    "units": "kg m-2 s-1"
+}

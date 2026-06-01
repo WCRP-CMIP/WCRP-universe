@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sedso4",
+    "type": "variable",
+    "drs_name": "sedso4",
+    "description": "Sedimentation Rate of Sulfate",
+    "long_name": "Sedimentation Rate of Sulfate",
+    "standard_name": "minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition",
+    "units": "kg m-2 s-1"
+}
