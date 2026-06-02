@@ -8,7 +8,9 @@
         "BSC-CNS"
     ],
     "labels": [
-        "Barcelona Supercomputing Center"
+        "Barcelona Supercomputing Center",
+        "Centre Nacional de Supercomputació",
+        "Centro Nacional de Supercomputación"
     ],
     "description": "Barcelona Supercomputing Center",
     "location": [
@@ -21,6 +23,7 @@
     ],
     "ror": "05sd8tv96",
     "urls": [
-        "https://www.bsc.es/"
+        "https://www.bsc.es/",
+        "https://en.wikipedia.org/wiki/Barcelona_Supercomputing_Center"
     ]
 }

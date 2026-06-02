@@ -7,7 +7,10 @@
         "DMI"
     ],
     "labels": [
-        "Danish Meteorological Institute"
+        "Danish Meteorological Institute",
+        "Danmarks Meteorologiske Institut",
+        "National Danish Meteorological Institute",
+        "The National Danish Meteorological Institute"
     ],
     "description": "Danish Meteorological Institute",
     "location": [
@@ -20,6 +23,7 @@
     ],
     "ror": "020m6x732",
     "urls": [
-        "https://www.dmi.dk"
+        "https://www.dmi.dk",
+        "https://en.wikipedia.org/wiki/Danish_Meteorological_Institute"
     ]
 }

@@ -7,19 +7,20 @@
         "IDL"
     ],
     "labels": [
-        "Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa"
+        "Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa",
+        "Instituto Dom Luiz"
     ],
     "description": "Instituto Dom Luiz, Faculdade de Ciencias, Universidade de Lisboa",
     "location": [
         {
             "city": "Lisbon",
             "country": "Portugal",
-            "lat": 38.751157,
-            "lon": -9.153918
+            "lat": 38.71667,
+            "lon": -9.13333
         }
     ],
     "ror": "046ggxs83",
     "urls": [
-        "https://idl.ciencias.ulisboa.pt/"
+        "http://idl.campus.ciencias.ulisboa.pt"
     ]
 }

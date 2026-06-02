@@ -4,22 +4,25 @@
     "type": "institution",
     "drs_name": "NBI",
     "acronyms": [
-        "NBI"
+        "UCPH"
     ],
     "labels": [
-        "Niels Bohr Institute"
+        "Københavns Universitet",
+        "University of Copenhagen",
+        "Universität Kopenhagen"
     ],
     "description": "Niels Bohr Institute, University of Copenhagen",
     "location": [
         {
             "city": "Copenhagen",
             "country": "Denmark",
-            "lat": 55.6961,
-            "lon": 12.5716
+            "lat": 55.67594,
+            "lon": 12.56553
         }
     ],
     "ror": "035b05819",
     "urls": [
-        "https://nbi.ku.dk/"
+        "https://www.ku.dk",
+        "http://en.wikipedia.org/wiki/University_of_Copenhagen"
     ]
 }

@@ -7,7 +7,8 @@
         "CAS"
     ],
     "labels": [
-        "Chinese Academy of Sciences"
+        "Chinese Academy of Sciences",
+        "中国科学院"
     ],
     "description": "Chinese Academy of Sciences",
     "location": [
@@ -20,6 +21,8 @@
     ],
     "ror": "034t30j35",
     "urls": [
-        "http://english.cas.cn/"
+        "http://english.cas.cn/",
+        "https://www.cas.cn",
+        "http://en.wikipedia.org/wiki/Chinese_Academy_of_Sciences"
     ]
 }

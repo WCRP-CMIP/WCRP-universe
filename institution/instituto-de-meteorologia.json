@@ -7,6 +7,7 @@
         "IPMA"
     ],
     "labels": [
+        "Instituto Português do Mar e da Atmosfera",
         "Portuguese Sea and Atmosphere Institute"
     ],
     "description": "Portuguese Sea and Atmosphere Institute",
@@ -20,6 +21,7 @@
     ],
     "ror": "01sp7nd78",
     "urls": [
-        "https://www.ipma.pt"
+        "https://www.ipma.pt",
+        "https://en.wikipedia.org/wiki/Instituto_Portugu%C3%AAs_do_Mar_e_da_Atmosfera"
     ]
 }

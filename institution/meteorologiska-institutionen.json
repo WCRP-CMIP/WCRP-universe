@@ -7,7 +7,9 @@
         "MISU"
     ],
     "labels": [
-        "Stockholm University"
+        "Stockholm University",
+        "Stockholms universitet",
+        "Tukholman yliopisto"
     ],
     "description": "Stockholm University",
     "location": [
@@ -20,6 +22,7 @@
     ],
     "ror": "05f0yaq80",
     "urls": [
-        "https://www.su.se"
+        "https://www.su.se",
+        "http://en.wikipedia.org/wiki/Stockholm_University"
     ]
 }
