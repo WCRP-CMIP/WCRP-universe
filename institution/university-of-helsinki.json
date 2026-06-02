@@ -7,6 +7,8 @@
         "UH"
     ],
     "labels": [
+        "Helsingfors Universitet",
+        "Helsingin Yliopisto",
         "University of Helsinki"
     ],
     "description": "University of Helsinki",
@@ -20,6 +22,7 @@
     ],
     "ror": "040af2s02",
     "urls": [
-        "https://www.helsinki.fi/"
+        "https://www.helsinki.fi/",
+        "http://en.wikipedia.org/wiki/University_of_Helsinki"
     ]
 }

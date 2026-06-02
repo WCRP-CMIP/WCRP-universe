@@ -7,7 +7,10 @@
         "WUR"
     ],
     "labels": [
-        "Wageningen University & Research"
+        "Wageningen Universiteit en Researchcentrum",
+        "Wageningen University & Research",
+        "Wageningen University & Research centre",
+        "Wageningen University and Research Centre"
     ],
     "description": "Wageningen University & Research",
     "location": [
@@ -20,6 +23,7 @@
     ],
     "ror": "04qw24q55",
     "urls": [
-        "https://www.wur.nl/"
+        "https://www.wur.nl/",
+        "http://en.wikipedia.org/wiki/Wageningen_University_and_Research_Centre"
     ]
 }

@@ -7,6 +7,8 @@
         "NTNU"
     ],
     "labels": [
+        "Norges Teknisk-Naturvitenskapelige Universitet",
+        "Norjan teknis-luonnontieteellinen yliopisto",
         "Norwegian University of Science and Technology"
     ],
     "description": "Norwegian University of Science and Technology",
@@ -20,6 +22,7 @@
     ],
     "ror": "05xg72x27",
     "urls": [
-        "https://www.ntnu.edu"
+        "https://www.ntnu.edu",
+        "http://en.wikipedia.org/wiki/Norwegian_University_of_Science_and_Technology"
     ]
 }

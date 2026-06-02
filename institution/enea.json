@@ -7,19 +7,22 @@
         "ENEA"
     ],
     "labels": [
-        "Italian National Agency for New Technologies, Energy and the Environment"
+        "Agenzia Nazionale per le Nuove Tecnologie, l'Energia e lo Sviluppo Economico Sostenibile",
+        "Italian National Agency for New Technologies, Energy and Sustainable Economic Development",
+        "National Agency for New Technologies, Energy and Sustainable Economic Development"
     ],
     "description": "Italian National Agency for New Technologies, Energy and the Environment",
     "location": [
         {
-            "city": "Frascati",
+            "city": "Rome",
             "country": "Italy",
-            "lat": 41.820316,
-            "lon": 12.67213
+            "lat": 41.89193,
+            "lon": 12.51133
         }
     ],
     "ror": "02an8es95",
     "urls": [
-        "https://www.enea.it/"
+        "http://www.enea.it",
+        "https://en.wikipedia.org/wiki/ENEA_(Italy)"
     ]
 }

@@ -7,7 +7,9 @@
         "FMI"
     ],
     "labels": [
-        "Finnish Meteorological Institute"
+        "Finnish Meteorological Institute",
+        "Ilmatieteen Laitos",
+        "Meteorologiska Institutet"
     ],
     "description": "Finnish Meteorological Institute",
     "location": [
@@ -15,11 +17,12 @@
             "city": "Helsinki",
             "country": "Finland",
             "lat": 60.16952,
-            "lon": 60.16952
+            "lon": 24.93545
         }
     ],
     "ror": "05hppb561",
     "urls": [
-        "http://en.ilmatieteenlaitos.fi/"
+        "http://en.ilmatieteenlaitos.fi/",
+        "https://en.wikipedia.org/wiki/Finnish_Meteorological_Institute"
     ]
 }

@@ -7,6 +7,9 @@
         "Unite-ASTR"
     ],
     "labels": [
+        "Koninklijke Sterrenwacht van België",
+        "Königliche Sternwarte von Belgien",
+        "Observatoire royal de belgique",
         "Royal Observatory of Belgium"
     ],
     "description": "Royal Observatory of Belgium",
@@ -20,6 +23,7 @@
     ],
     "ror": "00hjks330",
     "urls": [
-        "http://www.astro.oma.be/en/"
+        "http://www.astro.oma.be/en/",
+        "https://en.wikipedia.org/wiki/Royal_Observatory_of_Belgium"
     ]
 }

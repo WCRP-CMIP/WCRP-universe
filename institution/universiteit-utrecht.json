@@ -7,6 +7,8 @@
         "UU"
     ],
     "labels": [
+        "Rijksuniversiteit Utrecht",
+        "Universiteit Utrecht",
         "Utrecht University"
     ],
     "description": "Utrecht University",
@@ -20,6 +22,7 @@
     ],
     "ror": "04pp8hn57",
     "urls": [
-        "https://www.uu.nl"
+        "https://www.uu.nl",
+        "http://en.wikipedia.org/wiki/Utrecht_University"
     ]
 }
