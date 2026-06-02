@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "abs1000bc",
+    "type": "variable",
+    "drs_name": "abs1000bc",
+    "description": "Black Carbon Aerosol Absorption Optical Thickness at 1000 nm",
+    "long_name": "Black Carbon Aerosol Absorption Optical Thickness at 1000 nm",
+    "standard_name": "atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol",
+    "units": "1"
+}

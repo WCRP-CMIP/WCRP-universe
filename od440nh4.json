@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "od440nh4",
+    "type": "variable",
+    "drs_name": "od440nh4",
+    "description": "Ammonium Aerosol Optical Thickness at 440nm",
+    "long_name": "Ammonium Aerosol Optical Thickness at 440nm",
+    "standard_name": "atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles",
+    "units": "1"
+}

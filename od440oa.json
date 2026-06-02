@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "od440oa",
+    "type": "variable",
+    "drs_name": "od440oa",
+    "description": "Organic Matter Aerosol Optical Thickness at 440nm",
+    "long_name": "Organic Matter Aerosol Optical Thickness at 440nm",
+    "standard_name": "atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles",
+    "units": "1"
+}

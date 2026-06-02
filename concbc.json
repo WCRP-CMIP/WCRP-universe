@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "concbc",
+    "type": "variable",
+    "drs_name": "concbc",
+    "description": "Concentration of Black Carbon",
+    "long_name": "Concentration of Black Carbon",
+    "standard_name": "mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

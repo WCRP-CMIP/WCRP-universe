@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "od1000ss",
+    "type": "variable",
+    "drs_name": "od1000ss",
+    "description": "Sea-Salt Aerosol Optical Thickness at 1000nm",
+    "long_name": "Sea-Salt Aerosol Optical Thickness at 1000nm",
+    "standard_name": "atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles",
+    "units": "1"
+}

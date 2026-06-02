@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ssa870aer",
+    "type": "variable",
+    "drs_name": "ssa870aer",
+    "description": "Aerosol Single Scattering Albedo at 870 nm",
+    "long_name": "Aerosol Single Scattering Albedo at 870 nm",
+    "standard_name": "single_scattering_albedo_in_air_due_to_ambient_aerosol_particles",
+    "units": "1"
+}

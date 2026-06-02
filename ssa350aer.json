@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ssa350aer",
+    "type": "variable",
+    "drs_name": "ssa350aer",
+    "description": "Aerosol Single Scattering Albedo at 350 nm",
+    "long_name": "Aerosol Single Scattering Albedo at 350 nm",
+    "standard_name": "single_scattering_albedo_in_air_due_to_ambient_aerosol_particles",
+    "units": "1"
+}
