@@ -7,19 +7,22 @@
         "METNo"
     ],
     "labels": [
-        "Norwegian Meteorological Institute (METNo)"
+        "Meteorologisk institutt",
+        "Norwegian Meteorological Institute",
+        "MET Norway"
     ],
-    "description": "Norwegian Meteorological Institute (METNo)",
+    "description": "Norwegian Meteorological Institute",
     "location": [
         {
             "city": "Oslo",
             "country": "Norway",
-            "lat": 59.942691,
-            "lon": 10.720641
+            "lat": 59.91273,
+            "lon": 10.74609
         }
     ],
     "ror": "001n36p86",
     "urls": [
-        "https://www.met.no/"
+        "http://met.no",
+        "https://en.wikipedia.org/wiki/Norwegian_Meteorological_Institute"
     ]
 }
