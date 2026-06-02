@@ -23,6 +23,7 @@
     "ror": "02h2x0161",
     "urls": [
         "https://www.geomar.de",
+        "http://www.geomar.de/en/",
         "https://en.wikipedia.org/wiki/GEOMAR_Helmholtz_Centre_for_Ocean_Research_Kiel"
     ]
 }

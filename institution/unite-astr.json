@@ -3,7 +3,9 @@
     "id": "unite-astr",
     "type": "institution",
     "drs_name": "Unite-ASTR",
-    "acronyms": [],
+    "acronyms": [
+        "Unite-ASTR"
+    ],
     "labels": [
         "Koninklijke Sterrenwacht van België",
         "Königliche Sternwarte von Belgien",
