@@ -7,19 +7,22 @@
         "IFM-GEOMAR"
     ],
     "labels": [
-        "GEOMAR Helmholtz Centre for Ocean Research Kiel"
+        "GEOMAR Helmholtz Centre for Ocean Research Kiel",
+        "GEOMAR Helmholtz-Zentrum für Ozeanforschung Kiel",
+        "Leibniz Institute of Marine Sciences"
     ],
     "description": "GEOMAR Helmholtz Centre for Ocean Research Kiel",
     "location": [
         {
             "city": "Kiel",
             "country": "Germany",
-            "lat": 54.327138,
-            "lon": 10.180141
+            "lat": 54.32133,
+            "lon": 10.13489
         }
     ],
     "ror": "02h2x0161",
     "urls": [
-        "http://www.geomar.de/en/"
+        "https://www.geomar.de",
+        "https://en.wikipedia.org/wiki/GEOMAR_Helmholtz_Centre_for_Ocean_Research_Kiel"
     ]
 }

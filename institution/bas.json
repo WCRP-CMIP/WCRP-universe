@@ -14,12 +14,13 @@
         {
             "city": "Cambridge",
             "country": "United Kingdom",
-            "lat": 52.212955,
-            "lon": 0.0804
+            "lat": 52.2,
+            "lon": 0.11667
         }
     ],
     "ror": "01rhff309",
     "urls": [
-        "https://www.bas.ac.uk/"
+        "https://www.bas.ac.uk/",
+        "https://en.wikipedia.org/wiki/British_Antarctic_Survey"
     ]
 }

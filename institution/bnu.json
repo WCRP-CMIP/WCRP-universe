@@ -7,19 +7,21 @@
         "BNU"
     ],
     "labels": [
-        "Beaconhouse National University"
+        "Beaconhouse National University",
+        "بیکن ہاؤس نیشنل یونیورسٹی"
     ],
     "description": "Beaconhouse National University",
     "location": [
         {
             "city": "Lahore",
             "country": "Pakistan",
-            "lat": 31.3648,
-            "lon": 74.2161
+            "lat": 31.558,
+            "lon": 74.35071
         }
     ],
     "ror": "03e6rv013",
     "urls": [
-        "https://www.bnu.edu.pk/"
+        "http://www.bnu.edu.pk/",
+        "https://en.wikipedia.org/wiki/Beaconhouse_National_University"
     ]
 }

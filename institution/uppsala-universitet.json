@@ -7,7 +7,9 @@
         "UU-SE"
     ],
     "labels": [
-        "Uppsala University"
+        "Uppsala University",
+        "Uppsala universitet",
+        "Uppsalan yliopisto"
     ],
     "description": "Uppsala University",
     "location": [
@@ -20,6 +22,7 @@
     ],
     "ror": "048a87296",
     "urls": [
-        "https://www.uu.se/en/"
+        "https://www.uu.se/en/",
+        "http://en.wikipedia.org/wiki/Uppsala_University"
     ]
 }

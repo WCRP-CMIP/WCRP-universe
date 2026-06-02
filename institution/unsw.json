@@ -9,19 +9,19 @@
     "labels": [
         "UNSW Sydney",
         "University of New South Wales"
-
     ],
     "description": "UNSW Sydney",
     "location": [
         {
             "city": "Sydney",
             "country": "Australia",
-            "lat": -33.9167,
-            "lon": 151.2167
+            "lat": -33.86785,
+            "lon": 151.20732
         }
     ],
     "ror": "03r8z3t63",
     "urls": [
-        "https://www.unsw.edu.au/"
+        "https://www.unsw.edu.au/",
+        "http://en.wikipedia.org/wiki/University_of_New_South_Wales"
     ]
 }

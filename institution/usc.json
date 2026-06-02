@@ -7,7 +7,11 @@
         "USC"
     ],
     "labels": [
-        "Universidade de Santiago de Compostela"
+        "Santiago de Compostelako Unibertsitatea",
+        "Universidad de Santiago de Compostela",
+        "Universidade de Santiago de Compostela",
+        "Universitat de Santiago de Compostela",
+        "University of Santiago de Compostela"
     ],
     "description": "Universidade de Santiago de Compostela",
     "location": [
@@ -20,6 +24,7 @@
     ],
     "ror": "030eybx10",
     "urls": [
-        "https://www.usc.gal"
+        "https://www.usc.gal",
+        "https://en.wikipedia.org/wiki/University_of_Santiago_de_Compostela"
     ]
 }

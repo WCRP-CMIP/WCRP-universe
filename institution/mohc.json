@@ -5,19 +5,21 @@
     "drs_name": "MOHC",
     "acronyms": [],
     "labels": [
-        "Met Office Hadley Centre"
+        "Met Office",
+        "Meteorological Office"
     ],
     "description": "Met Office Hadley Centre",
     "location": [
         {
             "city": "Exeter",
             "country": "United Kingdom",
-            "lat": 50.727188,
-            "lon": -3.475415
+            "lat": 50.7236,
+            "lon": -3.52751
         }
     ],
     "ror": "01ch2yn61",
     "urls": [
-        "http://www.metoffice.gov.uk/"
+        "http://www.metoffice.gov.uk/",
+        "http://en.wikipedia.org/wiki/Met_Office"
     ]
 }
