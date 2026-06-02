@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "concnh4",
+    "type": "variable",
+    "drs_name": "concnh4",
+    "description": "Concentration of Ammonium",
+    "long_name": "Concentration of Ammonium",
+    "standard_name": "mass_concentration_of_ammonium_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

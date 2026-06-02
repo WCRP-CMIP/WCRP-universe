@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "concso4",
+    "type": "variable",
+    "drs_name": "concso4",
+    "description": "Concentration of SO4",
+    "long_name": "Concentration of SO4",
+    "standard_name": "mass_concentration_of_sulfate_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

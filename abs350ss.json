@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "abs350ss",
+    "type": "variable",
+    "drs_name": "abs350ss",
+    "description": "Sea-salt Aerosol Absorption Optical Thickness at 350 nm",
+    "long_name": "Sea-salt Aerosol Absorption Optical Thickness at 350 nm",
+    "standard_name": "atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles",
+    "units": "1"
+}

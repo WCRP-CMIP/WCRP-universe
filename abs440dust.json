@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "abs440dust",
+    "type": "variable",
+    "drs_name": "abs440dust",
+    "description": "Dust Aerosol Absorption Optical Thickness at 440 nm",
+    "long_name": "Dust Aerosol Absorption Optical Thickness at 440 nm",
+    "standard_name": "atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles",
+    "units": "1"
+}

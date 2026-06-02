@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "concno3",
+    "type": "variable",
+    "drs_name": "concno3",
+    "description": "Concentration of Nitrate",
+    "long_name": "Concentration of Nitrate",
+    "standard_name": "mass_concentration_of_nitrate_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

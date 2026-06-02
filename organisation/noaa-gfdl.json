@@ -4,8 +4,7 @@
     "type": "organisation",
     "drs_name": "NOAA-GFDL",
     "members": [
-        "noaa",
-        "gfdl"
+        "noaa-gfdl"
     ],
-    "description": "NOAA-GFDL"
+    "description": "US National Oceanic and Atmospheric Administration's Geophysical Fluid Dynamics Laboratory."
 }

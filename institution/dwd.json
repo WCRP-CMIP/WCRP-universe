@@ -7,20 +7,21 @@
         "DWD"
     ],
     "labels": [
-        "German Meteorological Service",
-        "Deutscher Wetterdienst"
+        "Deutscher Wetterdienst",
+        "German Meteorological Service"
     ],
-    "description": "German Meteorological Service",
+    "description": "German Meteorological Service (Deutscher Wetterdienst)",
     "location": [
         {
-            "city": "Offenbach am Main",
+            "city": "Offenbach",
             "country": "Germany",
-            "lat": 50.101799,
-            "lon": 8.746422
+            "lat": 50.10061,
+            "lon": 8.76647
         }
     ],
     "ror": "02nrqs528",
     "urls": [
-        "https://www.dwd.de/"
+        "https://www.dwd.de",
+        "http://en.wikipedia.org/wiki/Deutscher_Wetterdienst"
     ]
 }
