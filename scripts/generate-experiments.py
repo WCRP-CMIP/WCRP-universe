@@ -494,9 +494,7 @@ class Holder(BaseModel):
                 "bgc",
                 # "ism",
             ],
-            # TODO: double check
             end_timestamp="2035-12-31",
-            # TODO: double check
             min_ensemble_size=10,
             min_number_yrs_per_sim=10.0,
             branch_information=None,
@@ -504,8 +502,9 @@ class Holder(BaseModel):
             parent_experiment=None,
             parent_mip_era=None,
             required_model_components=["aogcm"],
-            # TODO: double check
-            start_timestamp="2025-01-01",
+            # Not perfect, but the best we can do right now.
+            # See https://github.com/ESGF/esgf-vocab/issues/241
+            start_timestamp=None,
             tier=1,
         )
 
