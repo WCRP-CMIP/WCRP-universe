@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "concoa",
+    "type": "variable",
+    "drs_name": "concoa",
+    "description": "Concentration of Organic Matter",
+    "long_name": "Concentration of Organic Matter",
+    "standard_name": "mass_concentration_of_particulate_organic_matter_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "scat550nh4",
+    "type": "variable",
+    "drs_name": "scat550nh4",
+    "description": "Ammonium Aerosol Scattering Coefficient at 550 nm",
+    "long_name": "Ammonium Aerosol Scattering Coefficient at 550 nm",
+    "standard_name": "volume_scattering_coefficient_in_air_due_to_ammonium_ambient_aerosol_particles",
+    "units": "m-1"
+}

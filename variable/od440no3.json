@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "od440no3",
+    "type": "variable",
+    "drs_name": "od440no3",
+    "description": "Nitrate Aerosol Optical Thickness at 440nm",
+    "long_name": "Nitrate Aerosol Optical Thickness at 440nm",
+    "standard_name": "atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles",
+    "units": "1"
+}

@@ -7,7 +7,11 @@
         "AEMET"
     ],
     "labels": [
-        "Agencia Estatal de Meteorología"
+        "Agencia Estatal de Meteorología",
+        "Agència Estatal de Meteorologia",
+        "Instituto Central Meteorológico",
+        "Meteorologiako Estatu Agentzia",
+        "State Meteorological Agency"
     ],
     "description": "Agencia Estatal de Meteorología",
     "location": [
@@ -20,6 +24,7 @@
     ],
     "ror": "04kxf1r09",
     "urls": [
-        "http://www.aemet.es/en/portada"
+        "http://www.aemet.es/en/portada",
+        "https://en.wikipedia.org/wiki/Agencia_Estatal_de_Meteorolog%C3%ADa"
     ]
 }

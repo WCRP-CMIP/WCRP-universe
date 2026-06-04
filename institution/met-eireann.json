@@ -7,6 +7,7 @@
         "Met-Eireann"
     ],
     "labels": [
+        "Irish Meteorological Service",
         "Met Éireann"
     ],
     "description": "Met Éireann",
@@ -20,6 +21,7 @@
     ],
     "ror": "00vhgwv19",
     "urls": [
-        "http://www.met.ie/"
+        "https://www.met.ie",
+        "https://en.wikipedia.org/wiki/Met_%C3%89ireann"
     ]
 }

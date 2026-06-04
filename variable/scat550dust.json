@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "scat550dust",
+    "type": "variable",
+    "drs_name": "scat550dust",
+    "description": "Dust Aerosol Scattering Coefficient at 550 nm",
+    "long_name": "Dust Aerosol Scattering Coefficient at 550 nm",
+    "standard_name": "volume_scattering_coefficient_in_air_due_to_dust_ambient_aerosol_particles",
+    "units": "m-1"
+}

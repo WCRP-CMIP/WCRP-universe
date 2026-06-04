@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sconcnh4",
+    "type": "variable",
+    "drs_name": "sconcnh4",
+    "description": "Near-Surface Concentration of Ammonium Aerosol",
+    "long_name": "Near-Surface Concentration of Ammonium Aerosol",
+    "standard_name": "mass_concentration_of_ammonium_dry_aerosol_particles_in_air",
+    "units": "kg m-3"
+}

@@ -7,7 +7,9 @@
         "UCD"
     ],
     "labels": [
-        "University College Dublin"
+        "An Coláiste Ollscoile Baile Átha Cliath",
+        "University College Dublin",
+        "University College Dublin – National University of Ireland, Dublin"
     ],
     "description": "University College Dublin",
     "location": [
@@ -20,6 +22,7 @@
     ],
     "ror": "05m7pjf47",
     "urls": [
-        "https://www.ucd.ie"
+        "https://www.ucd.ie",
+        "http://en.wikipedia.org/wiki/University_College_Dublin"
     ]
 }

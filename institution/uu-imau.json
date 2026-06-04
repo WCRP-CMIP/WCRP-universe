@@ -7,19 +7,23 @@
         "UU-IMAU"
     ],
     "labels": [
-        "Institute for Marine and Atmospheric research Utrecht (IMAU), Utrecht University"
+        "Institute for Marine and Atmospheric research Utrecht (IMAU), Utrecht University",
+        "Rijksuniversiteit Utrecht",
+        "Universiteit Utrecht",
+        "Utrecht University"
     ],
     "description": "Institute for Marine and Atmospheric research Utrecht (IMAU), Utrecht University",
     "location": [
         {
             "city": "Utrecht",
-            "country": "Netherlands",
-            "lat": 52.085967,
-            "lon": 5.171537
+            "country": "The Netherlands",
+            "lat": 52.09083,
+            "lon": 5.12222
         }
     ],
     "ror": "04pp8hn57",
     "urls": [
-        "https://www.uu.nl"
+        "https://www.uu.nl",
+        "http://en.wikipedia.org/wiki/Utrecht_University"
     ]
 }

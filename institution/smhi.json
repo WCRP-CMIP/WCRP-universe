@@ -7,6 +7,9 @@
         "SMHI"
     ],
     "labels": [
+        "Ruotsin meteorologinen ja hydrologinen laitos",
+        "Sveriges Meteorologiska och Hydrologiska Institut",
+        "Sveriges meteorologiska och hydrologiska institut",
         "Swedish Meteorological and Hydrological Institute"
     ],
     "description": "Swedish Meteorological and Hydrological Institute",
@@ -20,6 +23,7 @@
     ],
     "ror": "00hgzve81",
     "urls": [
-        "https://www.smhi.se"
+        "https://www.smhi.se",
+        "https://en.wikipedia.org/wiki/Swedish_Meteorological_and_Hydrological_Institute"
     ]
 }

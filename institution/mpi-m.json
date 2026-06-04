@@ -7,19 +7,21 @@
         "MPI-M"
     ],
     "labels": [
-        "Max Planck Institute for Meteorology"
+        "Max Planck Institute for Meteorology",
+        "Max-Planck-Institut für Meteorologie"
     ],
     "description": "Max Planck Institute for Meteorology",
     "location": [
         {
             "city": "Hamburg",
             "country": "Germany",
-            "lat": 53.567794,
-            "lon": 9.975468
+            "lat": 53.55073,
+            "lon": 9.99302
         }
     ],
     "ror": "05esem239",
     "urls": [
-        "http://www.mpimet.mpg.de/en/home.html"
+        "http://www.mpimet.mpg.de/en/home.html",
+        "https://en.wikipedia.org/wiki/Max_Planck_Institute_for_Meteorology"
     ]
 }

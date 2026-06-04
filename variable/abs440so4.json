@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "abs440so4",
+    "type": "variable",
+    "drs_name": "abs440so4",
+    "description": "Sulfate Aerosol Absorption Optical Thickness at 440 nm",
+    "long_name": "Sulfate Aerosol Absorption Optical Thickness at 440 nm",
+    "standard_name": "atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles",
+    "units": "1"
+}
