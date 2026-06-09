@@ -15,7 +15,7 @@
     "latitude",
     "time"
   ],
-  "cell_methods": "",
+  "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
   "history": ": registered",
   "realm": "atmos",
