@@ -4,7 +4,7 @@
     "type": "variable",
     "drs_name": "fco2all",
     "description": "This field should be equivalent to the combined fluxes of carbon that account for all exchanges between the atmosphere and land or ocean.",
-    "long_name": "Carbon Mass Flux into Atmosphere Due to All Emissions of CO2 from All Sources",
+    "long_name": "Carbon Mass Flux into Atmosphere Due to All Emissions of CO2 from All Sources [kgC m-2 s-1]",
     "standard_name": "tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emissions_and_surface_fluxes",
     "units": "kg m-2 s-1"
 }
