@@ -488,16 +488,23 @@ class Holder(BaseModel):
             drs_name=drs_name,
             description=description,
             activity="dcpp",
-            additional_allowed_model_components=["aer", "chem", "bgc", "ism"],
-            # branch_information="Branch from `piControl` at a time of your choosing",
-            end_timestamp="2036-12-31",
+            additional_allowed_model_components=[
+                "aer",
+                "chem",
+                "bgc",
+                # "ism",
+            ],
+            end_timestamp="2035-12-31",
             min_ensemble_size=10,
             min_number_yrs_per_sim=10.0,
-            # parent_activity="cmip",
-            # parent_experiment="picontrol",
-            # parent_mip_era="dont_write",
+            branch_information=None,
+            parent_activity=None,
+            parent_experiment=None,
+            parent_mip_era=None,
             required_model_components=["aogcm"],
-            start_timestamp="2025-01-01",
+            # Not perfect, but the best we can do right now.
+            # See https://github.com/ESGF/esgf-vocab/issues/241
+            start_timestamp=None,
             tier=1,
         )
 
