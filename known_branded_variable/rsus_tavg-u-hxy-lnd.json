@@ -15,7 +15,7 @@
     "latitude",
     "time"
   ],
-  "cell_methods": "area: mean where land",
+  "cell_methods": "area: time: mean where land",
   "cell_measures": "area: areacella",
   "history": ": registered",
   "realm": "land",
