@@ -1,6 +1,6 @@
 {
   "@context": "000_context.jsonld",
-  "id": "netAtmosLandCO2Flux_tavg-u-hxy-lnd",
+  "id": "netatmoslandco2flux_tavg-u-hxy-lnd",
   "type": "known_branded_variable",
   "drs_name": "netAtmosLandCO2Flux_tavg-u-hxy-lnd",
   "cf_standard_name": "surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon",
