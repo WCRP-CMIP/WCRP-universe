@@ -3,7 +3,7 @@
   "id": "sfacrossline_tavg-u-ht-sea",
   "type": "known_branded_variable",
   "drs_name": "sfacrossline_tavg-u-ht-sea",
-  "cf_standard_name": "ocean_salt_transport_across_line",
+  "cf_standard_name": "ocean_salt_mass_transport_across_line",
   "cf_units": "W",
   "cf_sn_status": "approved",
   "variable_root_name": "sfacrossline",
