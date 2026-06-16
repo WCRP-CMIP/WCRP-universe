@@ -7,9 +7,10 @@
         "KIOST"
     ],
     "labels": [
-        "Korea Institute of Ocean Science and Technology"
+        "Korea Institute of Ocean Science and Technology",
+        "Korean Ocean Research and Development Institute"
     ],
-    "description": "Korea Institute of Ocean Science and Technology",
+    "description": "Korea Institute of Ocean Science and Technology (KIOST) is a government-funded research institute dedicated to ocean science and technology research, including Earth system modeling and climate prediction.",
     "location": [
         {
             "city": "Busan",
@@ -20,6 +21,8 @@
     ],
     "ror": "032m55064",
     "urls": [
-        "http://eng.kiost.ac/"
+        "https://www.kiost.ac.kr/",
+        "http://eng.kiost.ac/",
+        "https://en.wikipedia.org/wiki/Korean_Institute_of_Ocean_Science_and_Technology"
     ]
 }
