@@ -4,7 +4,8 @@
     "type": "organisation",
     "drs_name": "KIOST",
     "members": [
-        "kiost"
+        "kiost",
+        "hyu"
     ],
-    "description": "Korea Institute of Ocean Science and Technology"
+    "description": "A consortium of Korean research institutions contributing to CMIP7 through Earth system modeling. Led by the Korea Institute of Ocean Science and Technology (KIOST) in collaboration with Hanyang University (HYU)."
 }
