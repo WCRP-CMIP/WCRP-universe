@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uib",
+    "type": "organisation",
+    "drs_name": "UiB",
+    "members": [
+        "uib"
+    ],
+    "description": "University of Bergen"
+}
