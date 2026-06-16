@@ -1,0 +1,29 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ubern",
+    "type": "institution",
+    "drs_name": "UBERN",
+    "acronyms": [
+        "UBERN",
+        "UB"
+    ],
+    "labels": [
+        "University of Bern",
+        "Universität Bern",
+        "Université de Berne",
+        "Università di Berna"
+    ],
+    "description": "University of Bern",
+    "location": [
+        {
+            "city": "Bern",
+            "country": "Switzerland",
+            "lat": 46.94809,
+            "lon": 7.44744
+        }
+    ],
+    "ror": "02k7v4d05",
+    "urls": [
+        "https://www.unibe.ch"
+    ]
+}
