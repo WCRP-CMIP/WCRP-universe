@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "canesm5_1",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "CanESM5-1 is a fully coupled atmosphere-ocean-land ESM, which is scientifically very similar to CanESM5, and includes major technical upgrades within the model components, as well as addressing some key scientific issues, like stratospheric dust spikes.",
+  "calendar": [],
+  "release_year": null,
+  "references": [],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "CanESM5-1"
+}

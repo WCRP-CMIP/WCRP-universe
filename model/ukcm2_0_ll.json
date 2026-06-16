@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ukcm2_0_ll",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "UKCM2-0-LL includes dynamically evolving MetUM GA9 dynamical atmosphere with the embedded GLOMAP-mode aerosol scheme coupled to the JULES  GL9 land surface and the GOSI9 configuration of the NEMO ocean and the embedded SI3 sea-ice model.  Land ice is represented through JULES. The ice surface is taken to be one of the surface tile types, and all surface tiles share the same soil information for temperature and moisture in JULES. The specification of land ice gridboxes is done through the tile fractions information. Atmospheric chemistry. UKCM2-0-LL has a very simplified treatment of aerosol chemistry using prescribed trace gas oxidants. GHGs/CFCs are prescribed from CMIP7 forcings as annual mean global constant values.  UKCM2-0-LL does not include an ocean biogeochemistry model.",
+  "calendar": [],
+  "release_year": null,
+  "references": [],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "UKCM2-0-LL"
+}
