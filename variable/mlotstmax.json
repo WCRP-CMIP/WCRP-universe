@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Maximum Ocean Mixed Layer Thickness Defined by Sigma T",
     "drs_name": "mlotstmax",
-    "long_name": null,
+    "long_name": "Maximum Ocean Mixed Layer Thickness Defined by Sigma T",
     "standard_name": "ocean_mixed_layer_thickness_defined_by_sigma_t",
     "units": "m"
 }

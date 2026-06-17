@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Snow Mass Rate of Change Through Melt",
     "drs_name": "sndmassmelt",
-    "long_name": null,
+    "long_name": "Snow Mass Rate of Change Through Melt",
     "standard_name": "surface_snow_melt_flux",
     "units": "kg m-2 s-1"
 }

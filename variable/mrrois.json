@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Ice Sheet Total Runoff",
     "drs_name": "mrroIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Total Runoff",
     "standard_name": "runoff_flux",
     "units": "kg m-2 s-1"
 }

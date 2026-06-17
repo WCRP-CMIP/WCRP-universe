@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Daily Maximum Near-Surface Air Temperature",
     "drs_name": "tasmax",
-    "long_name": null,
+    "long_name": "Daily Maximum Near-Surface Air Temperature",
     "standard_name": "air_temperature",
     "units": "K"
 }
