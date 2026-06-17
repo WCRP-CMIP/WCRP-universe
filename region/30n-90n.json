@@ -1,0 +1,9 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "30n-90n",
+  "type": "region",
+  "description": "The geographical region of the Earth’s surface between 30 and 90 degrees north.",
+  "drs_name": "30N-90N",
+  "cf_standard_region": null,
+  "iso_region": null
+}
