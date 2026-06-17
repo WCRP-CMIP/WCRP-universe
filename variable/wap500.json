@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "wap500",
     "type": "variable",
-    "description": "Pressure Tendency",
+    "description": "Omega (=dp/dt)",
     "drs_name": "wap500",
     "long_name": null,
     "standard_name": "lagrangian_tendency_of_air_pressure",
