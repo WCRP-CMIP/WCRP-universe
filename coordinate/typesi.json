@@ -1,0 +1,9 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Sea Ice area type",
+  "value": "sea_ice",
+  "size": 1
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "height",
+  "data_type": "double",
+  "cf_standard_name": "height",
+  "long_name": "height",
+  "description": "~2 m standard surface air temperature and surface humidity  height",
+  "axis": "Z",
+  "positive": "up",
+  "direction": "increasing",
+  "units": "m",
+  "value": 2.0,
+  "valid_min": 1,
+  "valid_max": 10,
+  "size": 1
+}

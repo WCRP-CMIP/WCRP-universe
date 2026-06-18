@@ -1,0 +1,14 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "lev",
+  "data_type": "double",
+  "cf_standard_name": "model_level_number",
+  "long_name": "Lowest Model Layer",
+  "description": "Lowest layer in model atmosphere",
+  "axis": "Z",
+  "positive": "up",
+  "direction": "increasing",
+  "units": "1",
+  "value": 1,
+  "size": 1
+}

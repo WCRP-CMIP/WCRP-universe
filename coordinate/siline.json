@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "line",
+  "data_type": "character",
+  "cf_standard_name": "region",
+  "long_name": "ocean passage",
+  "description": "1. Fram Strait = (11.5W, 81.3N) to (10.5E, 79.6N); 2. Canadian Archipelego = (128.2W, 70.6N) to (59.3W, 82.1N); 3. Barents opening = (16.8E, 76.5N) to (19.2E, 70.2N); 4. Bering Strait = (171W, 66.2N) to (166W, 65N);",
+  "values": [
+    "fram_strait",
+    "canadian_archipelego",
+    "barents_opening",
+    "bering_strait"
+  ],
+  "size": 4
+}

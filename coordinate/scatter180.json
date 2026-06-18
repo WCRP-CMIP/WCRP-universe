@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "scatangle",
+  "data_type": "double",
+  "cf_standard_name": "scattering_angle",
+  "long_name": "Scattering Angle",
+  "description": "Angle of scattering relative to direction of incident radiation",
+  "units": "degree",
+  "value": 180.0,
+  "size": 1
+}

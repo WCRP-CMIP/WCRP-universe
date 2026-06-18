@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "plev",
+  "data_type": "double",
+  "cf_standard_name": "air_pressure",
+  "long_name": "pressure",
+  "description": "Layer from 850 to 600hPa",
+  "axis": "Z",
+  "positive": "down",
+  "units": "Pa",
+  "has_bounds": true,
+  "value": 70000.0,
+  "lower_bound": 85000,
+  "upper_bound": 60000,
+  "size": 1
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "tsl0degC",
+  "data_type": "double",
+  "cf_standard_name": "soil_temperature",
+  "long_name": "Soil Temperature Zero",
+  "description": "Specifying temperature ..",
+  "axis": "Z",
+  "units": "degC",
+  "value": 0.0,
+  "size": 1
+}

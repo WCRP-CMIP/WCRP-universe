@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "height",
+  "data_type": "double",
+  "cf_standard_name": "height",
+  "long_name": "height",
+  "description": "~100 m height for wind turbine diagnostics",
+  "axis": "Z",
+  "positive": "up",
+  "direction": "increasing",
+  "units": "m",
+  "value": 100.0,
+  "valid_min": 80,
+  "valid_max": 120,
+  "size": 1
+}

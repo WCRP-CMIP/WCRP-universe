@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "lev",
+  "data_type": "double",
+  "long_name": "Ocean Model Levels",
+  "description": "generic ocean model vertical coordinate (nondimensional or dimensional)",
+  "axis": "Z",
+  "positive": "down",
+  "has_bounds": true,
+  "size": 50
+}

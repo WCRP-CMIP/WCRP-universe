@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "time",
+  "data_type": "double",
+  "cf_standard_name": "time",
+  "long_name": "Diurnal Mean",
+  "description": "Diurnal cycle: monthly mean of the diurnal cycle (1 hour steps).",
+  "axis": "T",
+  "direction": "increasing",
+  "units": "days since ?",
+  "has_bounds": true,
+  "is_climatology": true
+}

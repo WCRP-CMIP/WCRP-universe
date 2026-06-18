@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "wavelength",
+  "data_type": "double",
+  "cf_standard_name": "radiation_wavelength",
+  "long_name": "Radiation Wavelength 443 nanometers",
+  "description": "Radiation wavelength used for monitoring aerosol properties",
+  "units": "nm",
+  "value": 443.0,
+  "size": 1
+}

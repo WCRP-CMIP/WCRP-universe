@@ -1,0 +1,17 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "plev",
+  "data_type": "double",
+  "cf_standard_name": "air_pressure",
+  "long_name": "pressure",
+  "description": "pressure layer of high-level cloud in ISCCP simulator",
+  "axis": "Z",
+  "positive": "down",
+  "direction": "decreasing",
+  "units": "Pa",
+  "has_bounds": true,
+  "value": 22000.0,
+  "lower_bound": 44000,
+  "upper_bound": 0,
+  "size": 1
+}

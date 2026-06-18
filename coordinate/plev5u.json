@@ -1,0 +1,20 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "plev",
+  "data_type": "double",
+  "cf_standard_name": "air_pressure",
+  "long_name": "Pressure Levels (5, UTLS)",
+  "description": "The UTLS region (150, 175, 200, 225, and 250 hPa) impacts of climate change on aviation.",
+  "axis": "Z",
+  "positive": "down",
+  "direction": "decreasing",
+  "units": "Pa",
+  "values": [
+    25000.0,
+    22500.0,
+    20000.0,
+    17500.0,
+    15000.0
+  ],
+  "size": 5
+}

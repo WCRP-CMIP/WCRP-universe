@@ -1,0 +1,19 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "depth",
+  "data_type": "double",
+  "cf_standard_name": "depth",
+  "long_name": "depth",
+  "description": "Coordinate for a layer from the surface to 2000m.",
+  "axis": "Z",
+  "positive": "down",
+  "direction": "increasing",
+  "units": "m",
+  "has_bounds": true,
+  "value": 1000.0,
+  "lower_bound": 0,
+  "upper_bound": 2000,
+  "valid_min": 0,
+  "valid_max": 2000,
+  "size": 1
+}

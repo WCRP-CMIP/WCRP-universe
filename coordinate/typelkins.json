@@ -1,0 +1,9 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Lake and inland sea area type",
+  "value": "lake_and_inland_sea",
+  "size": 1
+}

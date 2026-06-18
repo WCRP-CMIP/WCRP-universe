@@ -1,0 +1,30 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "pdepth",
+  "data_type": "double",
+  "cf_standard_name": "sea_water_pressure_due_to_sea_water",
+  "long_name": "Hydrostatic Pressure Layers",
+  "description": "Coordinate levels as hydrostatic pressure layers spanning 0-30.3, 30.3-70.7. 70.7 to 202.5 and 202.5 bar to ocean floor.",
+  "axis": "Z",
+  "positive": "down",
+  "direction": "increasing",
+  "units": "bar",
+  "has_bounds": true,
+  "values": [
+    15.0,
+    50.0,
+    136.0,
+    1000.0
+  ],
+  "bounds": [
+    0.0,
+    30.3,
+    30.3,
+    70.7,
+    70.7,
+    202.5,
+    202.5,
+    10000.0
+  ],
+  "size": 4
+}

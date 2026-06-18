@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "landuse",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Land use type",
+  "description": "In CMIP6, this is encoded as an index dimension called landuse and an auxiliary dimension called sector",
+  "values": [
+    "primary_and_secondary_land",
+    "pastures",
+    "crops",
+    "urban"
+  ],
+  "size": 4
+}

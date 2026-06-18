@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "lat",
+  "data_type": "double",
+  "cf_standard_name": "latitude",
+  "long_name": "Latitude",
+  "axis": "Y",
+  "direction": "increasing",
+  "units": "degrees_north",
+  "has_bounds": true,
+  "valid_min": -90,
+  "valid_max": 90
+}

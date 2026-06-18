@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "drs_name": "hur",
+  "data_type": "double",
+  "cf_standard_name": "relative_humidity",
+  "long_name": "Relative Humidity 100.2 percent",
+  "description": "Reference relative humidity for cloud diagnostics with value 100.2 percent (equivalent to 0.2 percent supersaturation)",
+  "units": "%",
+  "value": 100.2,
+  "size": 1
+}
