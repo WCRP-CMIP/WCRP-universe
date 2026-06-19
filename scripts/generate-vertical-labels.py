@@ -73,7 +73,10 @@ def main():
         ("p27", "Data is reported at 27 pressure levels."),
         ("p39", "Data is reported at 39 pressure levels."),
         ("op4", "Data is reported at 4 ocean pressure layers."),
-        ("op20bar", "No idea"),
+        (
+            "op20bar",
+            "Data is reported at a hydrostatic pressure depth of 20.2bar (a pressure level which is close to 200m in a standard ocean profile)",
+        ),
         (
             "u",
             (
