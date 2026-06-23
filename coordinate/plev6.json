@@ -1,13 +1,15 @@
 {
   "@context": "000_context.jsonld",
+  "id": "plev6",
+  "type": "coordinate",
   "drs_name": "plev",
   "data_type": "double",
   "cf_standard_name": "air_pressure",
   "long_name": "Pressure Levels (6, boundary layer)",
   "description": "6 pressure levels used for accurate assessment of land–atmosphere coupling",
   "axis": "Z",
-  "positive": "down",
-  "direction": "decreasing",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
   "units": "Pa",
   "values": [
     95000.0,

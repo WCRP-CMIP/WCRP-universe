@@ -5,24 +5,38 @@
   "drs_name": "prw_tpt-u-hxy-u",
   "cf_standard_name": "atmosphere_mass_content_of_water_vapor",
   "cf_units": "kg m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "prw",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tpt-u-hxy-u",
-  "description": "Vertically integrated mass of water vapour through the atmospheric column\n",
+  "long_name": "Water Vapor Path",
+  "description": [
+    "Vertically integrated mass of water vapour through the atmospheric column"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": "area: mean time: point",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: mean time: point"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

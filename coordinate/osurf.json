@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "osurf",
+  "type": "coordinate",
   "drs_name": "seasurface",
   "data_type": "character",
   "long_name": "Ocean surface coordinate",

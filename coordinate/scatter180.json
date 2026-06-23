@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "scatter180",
+  "type": "coordinate",
   "drs_name": "scatangle",
   "data_type": "double",
   "cf_standard_name": "scattering_angle",

@@ -5,24 +5,38 @@
   "drs_name": "fFireAll_tavg-u-hxy-lnd",
   "cf_standard_name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires",
   "cf_units": "kg m-2 s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "fFireAll",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-lnd",
-  "description": "From all sources,  Including natural, anthropogenic and Land-use change. Only total fire emissions can be compared to observations.\n",
+  "long_name": "Carbon Mass Flux into Atmosphere Due to CO2 Emission from Fire Including All Sources [kgC m-2 s-1]",
+  "description": [
+    "From all sources,  Including natural, anthropogenic and Land-use change. Only total fire emissions can be compared to observations."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: mean where land time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "land"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

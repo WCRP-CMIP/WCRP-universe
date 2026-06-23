@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "typec3crop",
+  "type": "coordinate",
   "drs_name": "type",
   "data_type": "character",
   "cf_standard_name": "area_type",

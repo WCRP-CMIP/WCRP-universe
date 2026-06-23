@@ -5,24 +5,38 @@
   "drs_name": "hfdsnb_tavg-u-hxy-lnd",
   "cf_standard_name": "downward_heat_flux_at_ground_level_in_snow",
   "cf_units": "W m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "hfdsnb",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-lnd",
-  "description": "Downward heat flux at snow botton\n",
+  "long_name": "Downward Heat Flux at Snow Base",
+  "description": [
+    "Downward heat flux at snow botton"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: mean where land time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": "down"
 }

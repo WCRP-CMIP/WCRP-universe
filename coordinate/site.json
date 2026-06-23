@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "site",
+  "type": "coordinate",
   "drs_name": "site",
   "data_type": "integer",
   "long_name": "site index",

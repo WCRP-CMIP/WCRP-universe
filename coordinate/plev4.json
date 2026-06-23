@@ -1,13 +1,15 @@
 {
   "@context": "000_context.jsonld",
+  "id": "plev4",
+  "type": "coordinate",
   "drs_name": "plev",
   "data_type": "double",
   "cf_standard_name": "air_pressure",
   "long_name": "Pressure Levels (4)",
   "description": "Used for two HighResMIP variables, neither of which was published by anybody in CMIP6.",
   "axis": "Z",
-  "positive": "down",
-  "direction": "decreasing",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
   "units": "Pa",
   "values": [
     92500.0,

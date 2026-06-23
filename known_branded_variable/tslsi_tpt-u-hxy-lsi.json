@@ -5,24 +5,39 @@
   "drs_name": "tslsi_tpt-u-hxy-lsi",
   "cf_standard_name": "surface_temperature",
   "cf_units": "K",
-  "cf_sn_status": "approved",
   "variable_root_name": "tslsi",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tpt-u-hxy-lsi",
-  "description": "Surface temperature of all surfaces except open ocean, sampled synoptically.\n",
+  "long_name": "Surface Temperature Where Land or Sea Ice",
+  "description": [
+    "Surface temperature of all surfaces except open ocean, sampled synoptically."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": "area: mean (over land and sea ice) time: point",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: mean (over land and sea ice) time: point"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "land",
+    "seaice"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lsi",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "xant",
+  "type": "coordinate",
   "drs_name": "xant",
   "data_type": "double",
   "cf_standard_name": "projection_x_coordinate",

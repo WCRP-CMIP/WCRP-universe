@@ -1,11 +1,13 @@
 {
   "@context": "000_context.jsonld",
+  "id": "tau",
+  "type": "coordinate",
   "drs_name": "tau",
   "data_type": "double",
   "cf_standard_name": "atmosphere_optical_thickness_due_to_cloud",
   "long_name": "cloud optical thickness",
   "description": "isccp optical depth categories",
-  "direction": "increasing",
+  "stored_direction": "increasing",
   "units": "1",
   "has_bounds": true,
   "values": [

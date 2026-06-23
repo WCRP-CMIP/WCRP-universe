@@ -1,11 +1,13 @@
 {
   "@context": "000_context.jsonld",
+  "id": "dbze",
+  "type": "coordinate",
   "drs_name": "dbze",
   "data_type": "double",
   "cf_standard_name": "equivalent_reflectivity_factor",
   "long_name": "CloudSat Simulator Equivalent Radar Reflectivity Factor",
   "description": "15 bins of radar reflectivity for CloudSat simulator CFAD",
-  "direction": "increasing",
+  "stored_direction": "increasing",
   "units": "dBZ",
   "has_bounds": true,
   "values": [

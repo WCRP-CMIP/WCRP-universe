@@ -5,25 +5,39 @@
   "drs_name": "huss_tpt-h2m-hxy-u",
   "cf_standard_name": "specific_humidity",
   "cf_units": "1",
-  "cf_sn_status": "approved",
   "variable_root_name": "huss",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tpt-h2m-hxy-u",
-  "description": "Specific humidity at 2m. \n",
+  "long_name": "Near-Surface Specific Humidity",
+  "description": [
+    "Specific humidity at 2m.",
+    "This is sampled synoptically."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
-    "time1",
-    "height2m"
+    "time1"
   ],
-  "cell_methods": "area: mean time: point",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: mean time: point"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tpt",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

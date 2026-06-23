@@ -1,11 +1,13 @@
 {
   "@context": "000_context.jsonld",
+  "id": "scatratio",
+  "type": "coordinate",
   "drs_name": "scatratio",
   "data_type": "double",
   "cf_standard_name": "backscattering_ratio",
   "long_name": "lidar backscattering ratio",
   "description": "15 bins of scattering ratio for the CALIPSO simulator CFAD",
-  "direction": "increasing",
+  "stored_direction": "increasing",
   "units": "1",
   "has_bounds": true,
   "values": [

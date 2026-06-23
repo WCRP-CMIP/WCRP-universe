@@ -5,24 +5,38 @@
   "drs_name": "qgwr_tavg-u-hxy-lnd",
   "cf_standard_name": "downward_liquid_water_mass_flux_into_groundwater",
   "cf_units": "kg m-2 s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "qgwr",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-lnd",
-  "description": "water\\_flux\\_from\\_soil\\_layer\\_to\\_groundwater\n",
+  "long_name": "Groundwater Recharge from Soil Layer",
+  "description": [
+    "water_flux_from_soil_layer_to_groundwater"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean",
-  "cell_measures": "area: areacellr",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: mean where land time: mean"
+  ],
+  "cell_measures": [
+    "area: areacellr"
+  ],
+  "realm": [
+    "land"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

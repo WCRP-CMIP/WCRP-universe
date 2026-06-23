@@ -5,25 +5,40 @@
   "drs_name": "difmxybo_tavg-ol-hxy-sea",
   "cf_standard_name": "ocean_momentum_xy_biharmonic_diffusivity",
   "cf_units": "m4 s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "difmxybo",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-ol-hxy-sea",
-  "description": "Lateral biharmonic viscosity applied to the momentum equations.\n",
+  "long_name": "Ocean Momentum XY Biharmonic Diffusivity",
+  "description": [
+    "Lateral biharmonic viscosity applied to the momentum equations."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "lev",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": "area: mean where sea time: mean",
-  "cell_measures": "area: areacello volume: volcello",
-  "history": ": registered",
-  "realm": "ocean",
+  "cell_methods": [
+    "area: mean where sea time: mean"
+  ],
+  "cell_measures": [
+    "area: areacello volume: volcello"
+  ],
+  "realm": [
+    "ocean"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

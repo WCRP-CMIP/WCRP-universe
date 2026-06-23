@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "lambda865nm",
+  "type": "coordinate",
   "drs_name": "wavelength",
   "data_type": "double",
   "cf_standard_name": "radiation_wavelength",

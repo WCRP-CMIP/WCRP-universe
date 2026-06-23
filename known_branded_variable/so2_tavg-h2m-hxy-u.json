@@ -5,25 +5,39 @@
   "drs_name": "so2_tavg-h2m-hxy-u",
   "cf_standard_name": "mole_fraction_of_sulfur_dioxide_in_air",
   "cf_units": "mol mol-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "so2",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-h2m-hxy-u",
-  "description": "Daily mean SO2 volume mixing ratio near surface.\n",
+  "long_name": "Near-surface daily mean SO2",
+  "description": [
+    "Daily mean SO2 volume mixing ratio near surface."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
-    "time",
-    "height2m"
+    "time"
   ],
-  "cell_methods": "area: time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "aerosol",
+  "cell_methods": [
+    "area: time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "aerosol",
+    "atmoschem"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

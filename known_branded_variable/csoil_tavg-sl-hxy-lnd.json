@@ -5,25 +5,40 @@
   "drs_name": "cSoil_tavg-sl-hxy-lnd",
   "cf_standard_name": "carbon_mass_content_of_soil_layer",
   "cf_units": "kg m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "cSoil",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-sl-hxy-lnd",
-  "description": "for models with vertically discretised soil carbon, report total soil carbon for each level\n",
+  "long_name": "Carbon Mass in Each Model Soil Level (Summed over All Soil Carbon Pools in That Level)",
+  "description": [
+    "for models with vertically discretised soil carbon, report total soil carbon for each level"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "depth",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "sdepth",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: mean where land time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "land"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "sl",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

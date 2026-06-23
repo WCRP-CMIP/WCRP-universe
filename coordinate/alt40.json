@@ -1,13 +1,15 @@
 {
   "@context": "000_context.jsonld",
+  "id": "alt40",
+  "type": "coordinate",
   "drs_name": "alt",
   "data_type": "double",
   "cf_standard_name": "altitude",
   "long_name": "Altitude (40 Levels for CloudSat)",
   "description": "CloudSat vertical coordinate heights",
   "axis": "Z",
-  "positive": "up",
-  "direction": "increasing",
+  "positive_direction": "up",
+  "stored_direction": "increasing",
   "units": "m",
   "has_bounds": true,
   "values": [

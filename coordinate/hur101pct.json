@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "hur101pct",
+  "type": "coordinate",
   "drs_name": "hur",
   "data_type": "double",
   "cf_standard_name": "relative_humidity",

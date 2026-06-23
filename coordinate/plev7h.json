@@ -1,13 +1,15 @@
 {
   "@context": "000_context.jsonld",
+  "id": "plev7h",
+  "type": "coordinate",
   "drs_name": "plev",
   "data_type": "double",
   "cf_standard_name": "air_pressure",
   "long_name": "Pressure Levels (7, Tropospheric)",
   "description": "7 pressure levels used for tropospheric studies (note it was originally a subset of plev27, but inclusion of 50hPa broke this link);",
   "axis": "Z",
-  "positive": "down",
-  "direction": "decreasing",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
   "units": "Pa",
   "values": [
     92500.0,

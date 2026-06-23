@@ -1,10 +1,12 @@
 {
   "@context": "000_context.jsonld",
+  "id": "olevhalf",
+  "type": "coordinate",
   "drs_name": "lev",
   "data_type": "double",
   "long_name": "Ocean Model Half-levels",
   "description": "generic ocean model vertical coordinate (nondimensional or dimensional)",
   "axis": "Z",
-  "positive": "down",
+  "positive_direction": "down",
   "size": 50
 }

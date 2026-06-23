@@ -1,12 +1,14 @@
 {
   "@context": "000_context.jsonld",
+  "id": "p700",
+  "type": "coordinate",
   "drs_name": "plev",
   "data_type": "double",
   "cf_standard_name": "air_pressure",
   "long_name": "pressure",
   "description": "700 hPa",
   "axis": "Z",
-  "positive": "down",
+  "positive_direction": "down",
   "units": "Pa",
   "value": 70000.0,
   "size": 1

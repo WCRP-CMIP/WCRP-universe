@@ -1,13 +1,15 @@
 {
   "@context": "000_context.jsonld",
+  "id": "plev19",
+  "type": "coordinate",
   "drs_name": "plev",
   "data_type": "double",
   "cf_standard_name": "air_pressure",
   "long_name": "Pressure Levels (19)",
   "description": "There are 19  requested levels. If the upper levels are above the model top they should be omitted.",
   "axis": "Z",
-  "positive": "down",
-  "direction": "decreasing",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
   "units": "Pa",
   "values": [
     100000.0,

@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "tsl0degC",
+  "type": "coordinate",
   "drs_name": "tsl0degC",
   "data_type": "double",
   "cf_standard_name": "soil_temperature",

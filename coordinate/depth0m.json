@@ -1,12 +1,14 @@
 {
   "@context": "000_context.jsonld",
+  "id": "depth0m",
+  "type": "coordinate",
   "drs_name": "seasurface",
   "data_type": "double",
   "long_name": "Ocean Surface Coordinate",
   "description": "vertical coordinate for ocean surface",
   "axis": "Z",
-  "positive": "down",
-  "direction": "increasing",
+  "positive_direction": "down",
+  "stored_direction": "increasing",
   "units": "m",
   "value": 0.0,
   "size": 1

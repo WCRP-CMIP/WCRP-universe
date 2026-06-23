@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "basin",
+  "type": "coordinate",
   "drs_name": "basin",
   "data_type": "character",
   "cf_standard_name": "region",

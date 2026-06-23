@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "effectRadLi",
+  "type": "coordinate",
   "drs_name": "effectRadLi",
   "data_type": "double",
   "long_name": "Effective Radius for Liquid Aerosols",

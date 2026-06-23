@@ -1,10 +1,12 @@
 {
   "@context": "000_context.jsonld",
+  "id": "alevhalf",
+  "type": "coordinate",
   "drs_name": "lev",
   "data_type": "double",
   "long_name": "Atmospheric Model Half-level",
   "description": "Atmospheric model \"half\" level [use CF standard name apporpriate for model vertical coordinate, e.g. model_level_number or atmosphere_sigma_coordinate]",
   "axis": "Z",
-  "positive": "up",
+  "positive_direction": "up",
   "size": 60
 }

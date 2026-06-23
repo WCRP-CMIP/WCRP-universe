@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "iceband",
+  "type": "coordinate",
   "drs_name": "iceband",
   "data_type": "double",
   "cf_standard_name": "sea_ice_thickness",

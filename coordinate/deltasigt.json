@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "deltasigt",
+  "type": "coordinate",
   "drs_name": "deltasigt",
   "data_type": "double",
   "cf_standard_name": "sea_water_sigma_t_difference",

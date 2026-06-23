@@ -1,5 +1,7 @@
 {
   "@context": "000_context.jsonld",
+  "id": "oline",
+  "type": "coordinate",
   "drs_name": "line",
   "data_type": "character",
   "cf_standard_name": "region",
