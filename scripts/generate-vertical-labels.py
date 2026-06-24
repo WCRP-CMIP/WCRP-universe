@@ -10,7 +10,7 @@ import json
 
 def main():
     for drs_name, description in (
-        ("sl", "Data is reported on the model's soil model levels."),
+        ("sl", "Data is reported on the soil model's levels."),
         ("al", "Data is reported on the model's atmospheric model levels."),
         (
             "alh",
@@ -35,6 +35,7 @@ def main():
         ("d100cm", "Data is reported at a vertical depth of 1m (100cm)."),
         ("d0m", "Data is reported at the surface."),
         ("d100m", "Data is reported at a vertical depth of 100m."),
+        ("d1000m", "Data is reported at a vertical depth of 1000m."),
         # Should these be e.g. o300m as they're not depth, but 'upper ocean' ?
         ("d300m", "Data is reported over the upper 300m of the ocean."),
         ("d700m", "Data is reported over the upper 700m of the ocean."),
@@ -73,13 +74,16 @@ def main():
         ("p39", "Data is reported at 39 pressure levels."),
         ("op4", "Data is reported at 4 ocean pressure layers."),
         (
+            "op20bar",
+            "Data is reported at a hydrostatic pressure depth of 20.2bar (a pressure level which is close to 200m in a standard ocean profile)",
+        ),
+        (
             "u",
             (
                 "Data is reported with no vertical dimension. "
                 "This does not necessarily mean that there is no vertical information "
                 "attached to the variable, it is just not included in the dimension information. "
-                "Vertical information could alternately be found in the variable's standard name "
-                "or cell methods."
+                "Vertical information might be found in the variable's standard name or cell methods."
             ),
         ),
     ):

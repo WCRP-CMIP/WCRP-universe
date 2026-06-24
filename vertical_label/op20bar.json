@@ -1,8 +1,7 @@
 {
+    "@context": "000_context.jsonld",
     "id": "op20bar",
-    "label": "op20bar",
-    "description": "TODO",
     "type": "vertical_label",
-    "drs_name": "op20bar",
-    "@context": "000_context.jsonld"
+    "description": "Data is reported at a hydrostatic pressure depth of 20.2bar (a pressure level which is close to 200m in a standard ocean profile)",
+    "drs_name": "op20bar"
 }
