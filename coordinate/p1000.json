@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "p1000",
+  "type": "coordinate",
+  "drs_name": "plev",
+  "data_type": "double",
+  "cf_standard_name": "air_pressure",
+  "long_name": "pressure",
+  "description": "1000 hPa",
+  "axis": "Z",
+  "positive_direction": "down",
+  "units": "Pa",
+  "value": 100000.0,
+  "size": 1
+}

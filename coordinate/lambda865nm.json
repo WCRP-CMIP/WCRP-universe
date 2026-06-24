@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "lambda865nm",
+  "type": "coordinate",
+  "drs_name": "wavelength",
+  "data_type": "double",
+  "cf_standard_name": "radiation_wavelength",
+  "long_name": "Radiation Wavelength 865 nanometers",
+  "description": "Radiation wavelength used for monitoring aerosol properties",
+  "units": "nm",
+  "value": 865.0,
+  "size": 1
+}

@@ -5,25 +5,40 @@
   "drs_name": "chl_tavg-ols-hxy-sea",
   "cf_standard_name": "mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water",
   "cf_units": "kg m-3",
-  "cf_sn_status": "approved",
   "variable_root_name": "chl",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-ols-hxy-sea",
-  "description": "sum of chlorophyll from all phytoplankton group concentrations.  In most models this is equal to chldiat+chlmisc, that is the sum of \"Diatom Chlorophyll Mass Concentration\" plus \"Other Phytoplankton Chlorophyll Mass Concentration\"\n",
+  "long_name": "Surface Mass Concentration of Total Phytoplankton Expressed as Chlorophyll in Sea Water",
+  "description": [
+    "sum of chlorophyll from all phytoplankton group concentrations.  In most models this is equal to chldiat+chlmisc, that is the sum of \"Diatom Chlorophyll Mass Concentration\" plus \"Other Phytoplankton Chlorophyll Mass Concentration\"",
+    "sum of chlorophyll from all phytoplankton group concentrations at the sea surface.  In most models this is equal to chldiat+chlmisc, that is the sum of \"Diatom Chlorophyll Mass Concentration\" plus \"Other Phytoplankton Chlorophyll Mass Concentration\""
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
-    "time",
-    "osurf"
+    "time"
   ],
-  "cell_methods": "area: mean where sea time: mean",
-  "cell_measures": "area: areacello",
-  "history": ": registered",
-  "realm": "ocnBgchem",
+  "cell_methods": [
+    "area: mean where sea time: mean"
+  ],
+  "cell_measures": [
+    "area: areacello"
+  ],
+  "realm": [
+    "ocnbgchem"
+  ],
+  "region": [
+    "30s-90s",
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "ols",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

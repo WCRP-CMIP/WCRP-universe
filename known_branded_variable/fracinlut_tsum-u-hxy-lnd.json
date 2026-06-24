@@ -5,25 +5,38 @@
   "drs_name": "fracInLut_tsum-u-hxy-lnd",
   "cf_standard_name": "area_fraction",
   "cf_units": "%",
-  "cf_sn_status": "approved",
   "variable_root_name": "fracInLut",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tsum-u-hxy-lnd",
-  "description": "Cumulative percentage transitions over the year; note that percentage should be reported as a percentage of atmospheric grid cell\n",
+  "long_name": "Annual Gross Percentage That Was Transferred into This Tile from Other Land-Use Tiles",
+  "description": [
+    "Cumulative percentage transitions over the year; note that percentage should be reported as a percentage of atmospheric grid cell"
+  ],
+  "data_type": "real",
   "dimensions": [
-    "longitude",
-    "latitude",
-    "landuse",
+    "lon",
+    "lat",
     "time"
   ],
-  "cell_methods": "area: mean where land over all_area_types time: sum",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "land",
+  "coordinates": [
+    "longitude",
+    "latitude",
+    "time"
+  ],
+  "cell_methods": [
+    "area: mean where land over all_area_types time: sum"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "land"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tsum",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

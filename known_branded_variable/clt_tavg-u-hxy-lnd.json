@@ -5,24 +5,38 @@
   "drs_name": "clt_tavg-u-hxy-lnd",
   "cf_standard_name": "cloud_area_fraction",
   "cf_units": "%",
-  "cf_sn_status": "approved",
   "variable_root_name": "clt",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-lnd",
-  "description": "Total cloud fraction\n",
+  "long_name": "Total Cloud Cover Percentage",
+  "description": [
+    "Total cloud fraction"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: mean where land time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "spectband",
+  "type": "coordinate",
+  "drs_name": "spectband",
+  "data_type": "double",
+  "cf_standard_name": "sensor_band_central_radiation_wavenumber",
+  "long_name": "Spectral Frequency Band",
+  "description": "Spectral Band",
+  "units": "m-1",
+  "has_bounds": true,
+  "size": 10
+}

@@ -5,25 +5,40 @@
   "drs_name": "opottemprmadvect_tavg-ol-hxy-sea",
   "cf_standard_name": "tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_residual_mean_advection",
   "cf_units": "W m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "opottemprmadvect",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-ol-hxy-sea",
-  "description": "Tendency of heat content for a grid cell from residual mean (sum of Eulerian mean + parameterized eddy-induced) advection. Reported only for models that use potential temperature as prognostic field.\n",
+  "long_name": "Tendency of Sea Water Potential Temperature Expressed as Heat Content Due to Residual Mean Advection",
+  "description": [
+    "Tendency of heat content for a grid cell from residual mean (sum of Eulerian mean + parameterized eddy-induced) advection. Reported only for models that use potential temperature as prognostic field."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "lev",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": "area: mean where sea time: mean",
-  "cell_measures": "area: areacello volume: volcello",
-  "history": ": registered",
-  "realm": "ocean",
+  "cell_methods": [
+    "area: mean where sea time: mean"
+  ],
+  "cell_measures": [
+    "area: areacello volume: volcello"
+  ],
+  "realm": [
+    "ocean"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

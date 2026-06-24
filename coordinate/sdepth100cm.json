@@ -1,0 +1,21 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "sdepth100cm",
+  "type": "coordinate",
+  "drs_name": "depth",
+  "data_type": "double",
+  "cf_standard_name": "depth",
+  "long_name": "depth",
+  "description": "coordinate value for topmost 100 centimeter layer of soil",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "increasing",
+  "units": "cm",
+  "has_bounds": true,
+  "value": 50.0,
+  "lower_bound": 0.0,
+  "upper_bound": 100.0,
+  "valid_min": 0,
+  "valid_max": 100,
+  "size": 1
+}

@@ -5,23 +5,34 @@
   "drs_name": "rsds_tpt-u-hs-u",
   "cf_standard_name": "surface_downwelling_shortwave_flux_in_air",
   "cf_units": "W m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "rsds",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tpt-u-hs-u",
-  "description": "Surface solar irradiance for UV calculations.\n",
+  "long_name": "Surface Downwelling Shortwave Radiation",
+  "description": [
+    "Surface solar irradiance for UV calculations."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "site",
+    "time"
+  ],
+  "coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": "area: point time: point",
-  "cell_measures": "",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: point time: point"
+  ],
+  "cell_measures": [],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",
   "area_label": "u",
-  "bn_status": "accepted",
   "positive_direction": "down"
 }

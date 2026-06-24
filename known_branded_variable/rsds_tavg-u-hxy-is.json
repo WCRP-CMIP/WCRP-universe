@@ -5,24 +5,44 @@
   "drs_name": "rsds_tavg-u-hxy-is",
   "cf_standard_name": "surface_downwelling_shortwave_flux_in_air",
   "cf_units": "W m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "rsds",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-is",
-  "description": "quantity averaged over ice\\_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)\n",
+  "long_name": "Ice Sheet Surface Downwelling Shortwave Radiation",
+  "description": [
+    "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
+    "Surface solar irradiance for UV calculations."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: time: mean where ice_sheet",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "landIce",
+  "cell_methods": [
+    "area: time: mean where ice_sheet"
+  ],
+  "cell_measures": [
+    "area: areacella",
+    "area: areacellg"
+  ],
+  "realm": [
+    "landice",
+    "land",
+    "atmos"
+  ],
+  "region": [
+    "global",
+    "greenland",
+    "antarctica"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "is",
-  "bn_status": "accepted",
   "positive_direction": "down"
 }

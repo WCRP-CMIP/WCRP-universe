@@ -5,25 +5,38 @@
   "drs_name": "parasolRefl_tavg-u-hxy-sea",
   "cf_standard_name": "toa_bidirectional_reflectance",
   "cf_units": "1",
-  "cf_sn_status": "approved",
   "variable_root_name": "parasolRefl",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-sea",
-  "description": "PARASOL Reflectance\n",
+  "long_name": "PARASOL Reflectance",
+  "description": [
+    "PARASOL Reflectance"
+  ],
+  "data_type": "real",
   "dimensions": [
-    "longitude",
-    "latitude",
-    "sza5",
+    "lon",
+    "lat",
     "time"
   ],
-  "cell_methods": "area: mean where sea time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "atmos",
+  "coordinates": [
+    "longitude",
+    "latitude",
+    "time"
+  ],
+  "cell_methods": [
+    "area: mean where sea time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

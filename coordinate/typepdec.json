@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typepdec",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "surface type",
+  "value": "primary_deciduous_trees",
+  "size": 1
+}

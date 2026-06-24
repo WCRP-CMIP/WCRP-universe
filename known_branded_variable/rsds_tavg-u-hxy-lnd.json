@@ -5,24 +5,38 @@
   "drs_name": "rsds_tavg-u-hxy-lnd",
   "cf_standard_name": "surface_downwelling_shortwave_flux_in_air",
   "cf_units": "W m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "rsds",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-lnd",
-  "description": "Surface Downwelling Shortwave Radiation over land. Can be used for computation of surface albedo.\n",
+  "long_name": "Surface Downwelling Shortwave Radiation over Land",
+  "description": [
+    "Surface Downwelling Shortwave Radiation over land. Can be used for computation of surface albedo."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: time: mean where land",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: time: mean where land"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "land"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": "down"
 }

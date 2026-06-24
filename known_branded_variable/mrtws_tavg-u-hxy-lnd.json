@@ -5,24 +5,39 @@
   "drs_name": "mrtws_tavg-u-hxy-lnd",
   "cf_standard_name": "land_water_amount",
   "cf_units": "kg m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "mrtws",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-lnd",
-  "description": "canopy\\_and\\_surface\\_and\\_subsurface\\_water\\_amount\n",
+  "long_name": "Terrestrial Water Storage",
+  "description": [
+    "requested for C4MIP, OCMIP/OMIP, LUMIP, ScenarioMIP, DECK, DAMIP, GeoMIP, LS3MIP, ??",
+    "canopy_and_surface_and_subsurface_water_amount"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: mean where land time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "land"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

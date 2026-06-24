@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typetree",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Tree area type",
+  "value": "trees",
+  "size": 1
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "rho",
+  "type": "coordinate",
+  "drs_name": "rho",
+  "data_type": "double",
+  "cf_standard_name": "sea_water_potential_density",
+  "long_name": "potential density referenced to 2000 dbar",
+  "description": "potential density referenced to 2000 dbar",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "increasing",
+  "units": "kg m-3",
+  "has_bounds": true,
+  "size": 50
+}

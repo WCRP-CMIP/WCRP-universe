@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typec3pastures",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "C3 Pastures area type",
+  "value": "pastures_of_c3_plant_functional_types",
+  "size": 1
+}

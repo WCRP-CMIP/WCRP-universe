@@ -5,24 +5,40 @@
   "drs_name": "lithk_tavg-u-hxy-is",
   "cf_standard_name": "land_ice_thickness",
   "cf_units": "m",
-  "cf_sn_status": "approved",
   "variable_root_name": "lithk",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-is",
-  "description": "This is needed in case ice sheet thickness changes in time\n",
+  "long_name": "Ice Sheet Thickness",
+  "description": [
+    "This is needed in case ice sheet thickness changes in time"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: time: mean where ice_sheet",
-  "cell_measures": "area: areacellg",
-  "history": ": registered",
-  "realm": "landIce",
+  "cell_methods": [
+    "area: time: mean where ice_sheet"
+  ],
+  "cell_measures": [
+    "area: areacellg"
+  ],
+  "realm": [
+    "landice",
+    "land"
+  ],
+  "region": [
+    "greenland",
+    "antarctica"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "is",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

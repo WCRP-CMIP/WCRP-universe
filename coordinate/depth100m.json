@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "depth100m",
+  "type": "coordinate",
+  "drs_name": "depth",
+  "data_type": "double",
+  "cf_standard_name": "depth",
+  "long_name": "depth",
+  "description": "coordinate value for 100 m ocean depth",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "increasing",
+  "units": "m",
+  "value": 100.0,
+  "valid_min": 80,
+  "valid_max": 120,
+  "size": 1
+}

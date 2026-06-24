@@ -5,25 +5,40 @@
   "drs_name": "tsl_tavg-sl-hxy-lnd",
   "cf_standard_name": "soil_temperature",
   "cf_units": "K",
-  "cf_sn_status": "approved",
   "variable_root_name": "tsl",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-sl-hxy-lnd",
-  "description": "Temperature of each soil layer.  Reported as \"missing\" for grid cells occupied entirely by \"sea\".\n",
+  "long_name": "Temperature of Soil",
+  "description": [
+    "Temperature of each soil layer.  Reported as \"missing\" for grid cells occupied entirely by \"sea\"."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "depth",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "sdepth",
     "time"
   ],
-  "cell_methods": "area: mean where land time: mean",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: mean where land time: mean"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "land"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "sl",
   "horizontal_label": "hxy",
   "area_label": "lnd",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

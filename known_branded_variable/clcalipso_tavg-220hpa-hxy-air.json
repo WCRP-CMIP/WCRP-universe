@@ -5,25 +5,39 @@
   "drs_name": "clcalipso_tavg-220hPa-hxy-air",
   "cf_standard_name": "cloud_area_fraction_in_atmosphere_layer",
   "cf_units": "%",
-  "cf_sn_status": "approved",
   "variable_root_name": "clcalipso",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-220hPa-hxy-air",
-  "description": "Percentage cloud cover in layer centred on 220hPa\n",
+  "long_name": "CALIPSO High Level Cloud Area Percentage",
+  "description": [
+    "Percentage cloud cover in layer centred on 220hPa"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
-    "time",
-    "p220"
+    "time"
   ],
-  "cell_methods": "area: time: mean where air",
-  "cell_measures": "area: areacella",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: time: mean where air"
+  ],
+  "cell_measures": [
+    "area: areacella"
+  ],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global",
+    "30s-90s"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "220hPa",
   "horizontal_label": "hxy",
   "area_label": "air",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

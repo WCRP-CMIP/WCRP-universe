@@ -5,25 +5,40 @@
   "drs_name": "dissi14cabio_tavg-ol-hxy-sea",
   "cf_standard_name": "mole_concentration_of_dissolved_inorganic_14C_in_sea_water",
   "cf_units": "mol m-3",
-  "cf_sn_status": "approved",
   "variable_root_name": "dissi14cabio",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-ol-hxy-sea",
-  "description": "Abiotic Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration\n",
+  "long_name": "Abiotic Dissolved Inorganic Carbon-14 Concentration",
+  "description": [
+    "Abiotic Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "lev",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": "area: mean where sea time: mean",
-  "cell_measures": "area: areacello volume: volcello",
-  "history": ": registered",
-  "realm": "ocnBgchem",
+  "cell_methods": [
+    "area: mean where sea time: mean"
+  ],
+  "cell_measures": [
+    "area: areacello volume: volcello"
+  ],
+  "realm": [
+    "ocnbgchem"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "accepted",
   "positive_direction": ""
 }
