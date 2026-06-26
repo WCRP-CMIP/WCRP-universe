@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Daily Minimum Near-Surface Air Temperature",
     "drs_name": "tasmin",
-    "long_name": null,
+    "long_name": "Daily Minimum Near-Surface Air Temperature",
     "standard_name": "air_temperature",
     "units": "K"
 }

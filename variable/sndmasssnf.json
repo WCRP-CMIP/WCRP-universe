@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Snow Mass Change Through Snow Fall",
     "drs_name": "sndmasssnf",
-    "long_name": null,
+    "long_name": "Snow Mass Change Through Snow Fall",
     "standard_name": "snowfall_flux",
     "units": "kg m-2 s-1"
 }

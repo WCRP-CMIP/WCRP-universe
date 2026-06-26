@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Omega (=dp/dt)",
     "drs_name": "wap7h",
-    "long_name": null,
+    "long_name": "Omega (=dp/dt)",
     "standard_name": "lagrangian_tendency_of_air_pressure",
     "units": "Pa s-1"
 }

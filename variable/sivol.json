@@ -4,7 +4,7 @@
     "type": "variable",
     "drs_name": "sivol",
     "description": "\"X_volume\" means the volume occupied by X within the grid cell. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
-    "long_name": "Sea-Ice Volume North",
+    "long_name": "Sea-Ice Volume per Area",
     "standard_name": "sea_ice_volume",
     "units": "m3"
 }

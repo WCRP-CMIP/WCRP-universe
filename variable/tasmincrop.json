@@ -4,7 +4,7 @@
     "type": "variable",
     "description": "Daily Minimum Near-Surface Air Temperature over Crop Tile",
     "drs_name": "tasminCrop",
-    "long_name": null,
+    "long_name": "Daily Minimum Near-Surface Air Temperature over Crop Tile",
     "standard_name": "air_temperature",
     "units": "K"
 }
