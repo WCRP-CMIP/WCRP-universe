@@ -2,14 +2,18 @@
     "@context": "000_context.jsonld",
     "id": "dlr",
     "type": "institution",
-    "drs_name": "DLR",
+    "drs_name": "dlr",
     "acronyms": [
         "DLR"
     ],
     "labels": [
-        "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)"
+        "Deutsches Zentrum f\u00fcr Luft- und Raumfahrt (e.V.)",
+        "Deutsches Zentrum f\u00fcr Luft- und Raumfahrt",
+        "Deutsches Zentrum f\u00fcr Luft- und Raumfahrt e. V. (DLR)",
+        "Deutsches Zentrum f\u00fcr Luft- und Raumfahrt e.V",
+        "German Aerospace Center"
     ],
-    "description": "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)",
+    "description": "The German Aerospace Center DLR is the Federal Republic of Germany\u2019s research centre for aviation, space, energy, transport, and security. The DLR Institute of Atmospheric Physics conducts research into the physics and chemistry of the global atmosphere, from the ground up to the upper edge of the middle atmosphere at an altitude of approximately 120 km.",
     "location": [
         {
             "city": "Cologne",
@@ -20,6 +24,8 @@
     ],
     "ror": "04bwf3e34",
     "urls": [
-        "https://www.dlr.de"
+        "https://www.dlr.de/en/pa/",
+        "https://www.dlr.de",
+        "http://en.wikipedia.org/wiki/German_Aerospace_Center"
     ]
 }
