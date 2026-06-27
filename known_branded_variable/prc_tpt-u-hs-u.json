@@ -5,23 +5,34 @@
   "drs_name": "prc_tpt-u-hs-u",
   "cf_standard_name": "convective_precipitation_flux",
   "cf_units": "kg m-2 s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "prc",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tpt-u-hs-u",
-  "description": "at surface; includes both liquid and solid phases.\n",
+  "long_name": "Convective Precipitation",
+  "description": [
+    "at surface; includes both liquid and solid phases."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "site",
+    "time"
+  ],
+  "coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": "area: point time: point",
-  "cell_measures": "",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: point time: point"
+  ],
+  "cell_measures": [],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",
   "area_label": "u",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

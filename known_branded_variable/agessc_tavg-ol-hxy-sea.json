@@ -5,25 +5,40 @@
   "drs_name": "agessc_tavg-ol-hxy-sea",
   "cf_standard_name": "sea_water_age_since_surface_contact",
   "cf_units": "yr",
-  "cf_sn_status": "approved",
   "variable_root_name": "agessc",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-ol-hxy-sea",
-  "description": "Time elapsed since water was last in surface layer of the ocean.\n",
+  "long_name": "Sea Water Age Since Surface Contact",
+  "description": [
+    "Time elapsed since water was last in surface layer of the ocean."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "lev",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": "area: mean where sea time: mean",
-  "cell_measures": "area: areacello volume: volcello",
-  "history": ": registered",
-  "realm": "ocean",
+  "cell_methods": [
+    "area: mean where sea time: mean"
+  ],
+  "cell_measures": [
+    "area: areacello volume: volcello"
+  ],
+  "realm": [
+    "ocean"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

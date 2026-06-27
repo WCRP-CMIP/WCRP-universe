@@ -5,24 +5,36 @@
   "drs_name": "hus_tpt-al-hs-u",
   "cf_standard_name": "specific_humidity",
   "cf_units": "1",
-  "cf_sn_status": "approved",
   "variable_root_name": "hus",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tpt-al-hs-u",
-  "description": "Specific humidity is the mass fraction of water vapor in (moist) air.\n",
+  "long_name": "Specific Humidity",
+  "description": [
+    "Specific humidity is the mass fraction of water vapor in (moist) air."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lev",
+    "site",
+    "time"
+  ],
+  "coordinates": [
     "alevel",
     "site",
     "time1"
   ],
-  "cell_methods": "area: point time: point",
-  "cell_measures": "",
-  "history": ": registered",
-  "realm": "atmos",
+  "cell_methods": [
+    "area: point time: point"
+  ],
+  "cell_measures": [],
+  "realm": [
+    "atmos"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hs",
   "area_label": "u",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

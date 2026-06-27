@@ -6,7 +6,52 @@
       "type":"@type",
       "known_branded_variable": "https://esgvoc.ipsl.fr/resource/universe/known_branded_variable/",
       "cell_methods": "https://esgvoc.ipsl.fr/resource/universe/cell_methods/",
-      "dimensions": "https://esgvoc.ipsl.fr/resource/universe/dimensions/"
+      "dimensions": "https://esgvoc.ipsl.fr/resource/universe/dimensions/",
+      "coordinates": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/coordinate/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/coordinate/"}
+      },
+      "realm": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/realm/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/realm/"}
+      },
+      "region": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/region/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/region/"}
+      },
+      "temporal_label": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/temporal_label/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/temporal_label/"}
+      },
+            "vertical_label": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/vertical_label/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/vertical_label/"}
+      },
+      "horizontal_label": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/horizontal_label/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/horizontal_label/"}
+      },
+      "area_label": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/area_label/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/area_label/"}
+      },
+      "frequency": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/frequency/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/frequency/"}
+        },
+      "table_id": {
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/table/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/table/"}
+      }
       }
 }
 

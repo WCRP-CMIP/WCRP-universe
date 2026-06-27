@@ -5,24 +5,38 @@
   "drs_name": "sidmassmeltlat_tavg-u-hxy-si",
   "cf_standard_name": "tendency_of_sea_ice_amount_due_to_lateral_melting",
   "cf_units": "kg m-2 s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "sidmassmeltlat",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-si",
-  "description": "Rate of change of sea-ice mass through lateral melting/dissolution divided by grid-cell area (report zero if not explicitly calculated thermodynamically). Always negative or zero.\n",
+  "long_name": "Sea-Ice Mass Change Through Lateral Melting",
+  "description": [
+    "Rate of change of sea-ice mass through lateral melting/dissolution divided by grid-cell area (report zero if not explicitly calculated thermodynamically). Always negative or zero."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: time: mean where sea_ice over all_area_types",
-  "cell_measures": "area: areacello",
-  "history": ": registered",
-  "realm": "seaIce",
+  "cell_methods": [
+    "area: time: mean where sea_ice over all_area_types"
+  ],
+  "cell_measures": [
+    "area: areacello"
+  ],
+  "realm": [
+    "seaice"
+  ],
+  "region": [
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "si",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

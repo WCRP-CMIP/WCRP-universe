@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typeli",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Land Ice area type",
+  "value": "land_ice",
+  "size": 1
+}

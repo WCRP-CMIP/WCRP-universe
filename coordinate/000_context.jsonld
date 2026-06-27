@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/coordinate/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type":"@type",
+        "coordinate": "https://esgvoc.ipsl.fr/resource/universe/coordinate/",
+        "description":{"@id":"https://schema.org/description"},
+        "drs_name": {"@id": "acronym"}
+    }
+}

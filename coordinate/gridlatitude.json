@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "gridlatitude",
+  "type": "coordinate",
+  "drs_name": "rlat",
+  "data_type": "double",
+  "cf_standard_name": "grid_latitude",
+  "long_name": "Grid Latitude",
+  "axis": "Y",
+  "stored_direction": "increasing",
+  "units": "degrees",
+  "has_bounds": true,
+  "valid_min": -90,
+  "valid_max": 90
+}

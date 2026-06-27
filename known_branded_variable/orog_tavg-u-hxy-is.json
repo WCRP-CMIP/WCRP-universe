@@ -5,24 +5,44 @@
   "drs_name": "orog_tavg-u-hxy-is",
   "cf_standard_name": "surface_altitude",
   "cf_units": "m",
-  "cf_sn_status": "approved",
   "variable_root_name": "orog",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-is",
-  "description": "The surface called \"surface\" means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.\n",
+  "long_name": "Surface Altitude",
+  "description": [
+    "The surface called \"surface\" means the lower boundary of the atmosphere. Altitude is the (geometric) height above the geoid, which is the reference geopotential surface. The geoid is similar to mean sea level.",
+    "This is needed in case the ice sheet elevation changes in time",
+    "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)"
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": "area: time: mean where ice_sheet",
-  "cell_measures": "area: areacellg",
-  "history": ": registered",
-  "realm": "land",
+  "cell_methods": [
+    "area: time: mean where ice_sheet"
+  ],
+  "cell_measures": [
+    "area: areacellg",
+    "area: areacella"
+  ],
+  "realm": [
+    "land",
+    "landice"
+  ],
+  "region": [
+    "greenland",
+    "antarctica",
+    "global"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "is",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

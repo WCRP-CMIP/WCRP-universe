@@ -5,25 +5,41 @@
   "drs_name": "wmo_tavg-ol-hxy-sea",
   "cf_standard_name": "upward_ocean_mass_transport",
   "cf_units": "kg s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "wmo",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-ol-hxy-sea",
-  "description": "Upward mass transport from residual mean (resolved plus parameterized) advective transport.\n",
+  "long_name": "Upward Ocean Mass Transport",
+  "description": [
+    "Upward mass transport from residual mean (resolved plus parameterized) advective transport."
+  ],
+  "data_type": "real",
   "dimensions": [
+    "lon",
+    "lat",
+    "lev",
+    "time"
+  ],
+  "coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": "area: sum where sea time: mean",
-  "cell_measures": "area: areacello volume: volcello",
-  "history": ": registered",
-  "realm": "ocean",
+  "cell_methods": [
+    "area: sum where sea time: mean"
+  ],
+  "cell_measures": [
+    "area: areacello volume: volcello"
+  ],
+  "realm": [
+    "ocean"
+  ],
+  "region": [
+    "global",
+    "30s-90s"
+  ],
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
   "area_label": "sea",
-  "bn_status": "accepted",
   "positive_direction": ""
 }

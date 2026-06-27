@@ -1,0 +1,20 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "vegtype",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Vegetation or Land Cover Type",
+  "description": "Vegetation or land cover type. Where possible, please use terms from the CF Convention Area Type table: http://cfconventions.org/Data/area-type-table/6/build/area-type-table",
+  "values": [
+    "broadleaf_deciduous_trees",
+    "broadleaf_evergreen_trees",
+    "needleleaf_deciduous_trees",
+    "needleleaf_evergreen_tree",
+    "natural_grasses",
+    "crops",
+    "shrubs"
+  ],
+  "size": 7
+}
