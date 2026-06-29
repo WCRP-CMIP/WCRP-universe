@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "dlr",
     "type": "institution",
-    "drs_name": "dlr",
+    "drs_name": "DLR",
     "acronyms": [
         "DLR"
     ],
