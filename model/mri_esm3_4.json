@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "mri_esm3_4",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "MRI-ESM3.4 is a fully coupled ESM developed by MRI/JMA. It consists of four major component models coupled through the Scup coupler: an atmospheric general circulation model (MRI-AGCM4.4) with embedded land surface processes (iSiB) and terrestrial biogeochemical processes (MRI-LPJ-LCF1.0), an ocean–sea-ice general circulation model (MRI.COM version 5.4) with embedded ocean biogeochemical processes, an aerosol model (MASINGAR mk-3r2), and an atmospheric chemistry model (MRI-CCM3.2).  Land ice is specified and static.",
+  "calendar": [],
+  "release_year": null,
+  "references": [],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "mri-esm3-4"
+}
