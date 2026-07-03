@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "eta2",
+  "type": "coordinate",
+  "drs_name": "eta",
+  "data_type": "real",
+  "dimensions": [
+    "longitude latitude time2"
+  ],
+  "long_name": "Sea Surface Height",
+  "units": "m"
+}

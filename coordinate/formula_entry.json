@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "formula_entry",
+  "type": "coordinate",
+  "drs_name": "formula_entry",
+  "data_type": "double"
+}

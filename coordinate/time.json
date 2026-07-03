@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "time",
+  "type": "coordinate",
+  "drs_name": "time",
+  "data_type": "double",
+  "long_name": "Time Intervals",
+  "description": "for time-mean fields",
+  "axis": "T",
+  "stored_direction": "increasing",
+  "units": "days since ?",
+  "has_bounds": true
+}

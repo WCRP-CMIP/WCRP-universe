@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "x_deg",
+  "type": "coordinate",
+  "drs_name": "x",
+  "data_type": "double",
+  "cf_standard_name": "projection_x_coordinate",
+  "long_name": "x coordinate of projection",
+  "axis": "X",
+  "units": "degrees"
+}

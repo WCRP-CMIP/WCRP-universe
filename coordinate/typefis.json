@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typefis",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Floating Ice Shelf area type",
+  "has_bounds": false,
+  "value": "floating_ice_shelf"
+}

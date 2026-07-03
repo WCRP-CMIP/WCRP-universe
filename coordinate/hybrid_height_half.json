@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "hybrid_height_half",
+  "type": "coordinate",
+  "drs_name": "lev",
+  "data_type": "double",
+  "cf_standard_name": "atmosphere_hybrid_height_coordinate",
+  "long_name": "hybrid height coordinate",
+  "axis": "Z",
+  "positive_direction": "up",
+  "stored_direction": "increasing",
+  "units": "m",
+  "has_bounds": false,
+  "valid_min": 0.0
+}

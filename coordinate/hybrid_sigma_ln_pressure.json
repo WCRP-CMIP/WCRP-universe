@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "hybrid_sigma_ln_pressure",
+  "type": "coordinate",
+  "drs_name": "lev",
+  "data_type": "double",
+  "cf_standard_name": "atmosphere_hybrid_sigma_ln_pressure_coordinate",
+  "long_name": "hybrid sigma log-pressure coordinate",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
+  "units": "1",
+  "has_bounds": true,
+  "valid_min": 0.0,
+  "valid_max": 1.0
+}

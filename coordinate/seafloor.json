@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "seafloor",
+  "type": "coordinate",
+  "drs_name": "seafloor",
+  "data_type": "character",
+  "long_name": "Sea Floor",
+  "description": "see variable processing note for further details",
+  "value": "sea floor",
+  "size": 1
+}

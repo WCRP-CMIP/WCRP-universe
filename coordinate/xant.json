@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "xant",
+  "type": "coordinate",
+  "drs_name": "xant",
+  "data_type": "double",
+  "long_name": "X-coordinate of Antarctic grid",
+  "description": "X-coordinate of Antarctic grid (stubb)",
+  "axis": "X",
+  "units": "km"
+}

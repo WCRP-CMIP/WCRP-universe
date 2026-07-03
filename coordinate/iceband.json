@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "iceband",
+  "type": "coordinate",
+  "drs_name": "iceband",
+  "data_type": "double",
+  "long_name": "Ice Depth Band",
+  "description": "Ice depth bands",
+  "units": "m",
+  "has_bounds": true,
+  "size": 5
+}

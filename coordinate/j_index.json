@@ -1,0 +1,9 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "j_index",
+  "type": "coordinate",
+  "drs_name": "j",
+  "data_type": "integer",
+  "long_name": "second spatial index for variables stored on an unstructured grid",
+  "units": "1"
+}
