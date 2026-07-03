@@ -315,7 +315,8 @@ def find_reference_entries(document: Any) -> dict[str, dict[str, Any]]:
 
     preferred_containers = (
         "axis_entry",
-        "formula_entry"
+        "formula_entry",
+        "variable_entry"
     )
 
     for container in preferred_containers:
@@ -368,10 +369,7 @@ def bool_from_reference(value: Any) -> bool | None:
 
 def reference_entry_to_coordinate(name: str, entry: dict[str, Any]) -> Coordinate:
     """Convert one CMOR reference entry into the current Coordinate model."""
-    lower_bound, upper_bound = parse_bounds_scalar(
-        entry.get("bounds_scalar"),
-        name,
-    )
+    lower_bound, upper_bound = parse_bounds_scalar(entry.get("bounds_scalar"), name,)
 
     data = {
         "drs_name": str_or_none(
