@@ -8,9 +8,8 @@
   "variable_root_name": "msftm",
   "branding_suffix_name": "tavg-ol-hyb-sea",
   "long_name": "Ocean Meridional Overturning Mass Streamfunction",
-  "description": [
-    "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized."
-  ],
+  "physical_parameter": "msftmz",
+  "description": "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized.",
   "data_type": "real",
   "dimensions": [
     "lat",
@@ -18,25 +17,18 @@
     "basin",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "olevel",
     "basin",
     "time"
   ],
-  "cell_methods": [
-    "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin)  time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin)  time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hyb",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

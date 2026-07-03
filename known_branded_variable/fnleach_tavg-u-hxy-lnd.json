@@ -8,35 +8,26 @@
   "variable_root_name": "fNleach",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Total Nitrogen Loss to Leaching or Runoff (Sum of Ammonium, Nitrite and Nitrate)",
-  "description": [
-    "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. The specification of a physical process by the phrase \"due_to_\" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. \"Leaching\" means the loss of water soluble chemical species from soil. Runoff is the liquid water which drains from land. If not specified, \"runoff\" refers to the sum of surface runoff and subsurface drainage."
-  ],
+  "physical_parameter": "fNleach",
+  "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. The specification of a physical process by the phrase \"due_to_\" process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. \"Leaching\" means the loss of water soluble chemical species from soil. Runoff is the liquid water which drains from land. If not specified, \"runoff\" refers to the sum of surface runoff and subsurface drainage.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

@@ -8,35 +8,26 @@
   "variable_root_name": "sistressmax",
   "branding_suffix_name": "tpt-u-hxy-si",
   "long_name": "Maximum Shear Stress in Sea Ice",
-  "description": [
-    "Maximum shear stress in sea ice (second stress invariant). Requested as instantaneous value at the center of the month (i.e., first timestep of the 15th day of the month)."
-  ],
+  "physical_parameter": "sistressmax",
+  "description": "Maximum shear stress in sea ice (second stress invariant). Requested as instantaneous value at the center of the month (i.e., first timestep of the 15th day of the month).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where sea_ice (mask=siconc) time: point"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea_ice (mask=siconc) time: point",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "si",
-  "positive_direction": ""
+  "area_label": "si"
 }

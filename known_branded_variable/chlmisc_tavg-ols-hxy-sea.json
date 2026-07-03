@@ -8,35 +8,26 @@
   "variable_root_name": "chlmisc",
   "branding_suffix_name": "tavg-ols-hxy-sea",
   "long_name": "Surface Mass Concentration of Other Phytoplankton Expressed as Chlorophyll in Sea Water",
-  "description": [
-    "chlorophyll from additional phytoplankton component concentrations alone"
-  ],
+  "physical_parameter": "chlmiscos",
+  "description": "chlorophyll from additional phytoplankton component concentrations alone",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "30s-90s"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rec3LIUkpPBZ4IIqx",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "30s-90s",
   "temporal_label": "tavg",
   "vertical_label": "ols",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

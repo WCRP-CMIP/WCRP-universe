@@ -8,6 +8,7 @@
   "variable_root_name": "mmrnh4",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "NH4 Mass Mixing Ratio",
+  "physical_parameter": "mmrnh4",
   "description": [
     "Dry mass fraction of ammonium aerosol particles in air."
   ],
@@ -18,18 +19,15 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmoschem"
@@ -41,6 +39,5 @@
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

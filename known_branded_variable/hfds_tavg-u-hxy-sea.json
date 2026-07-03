@@ -8,6 +8,7 @@
   "variable_root_name": "hfds",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Downward Heat Flux at Sea Water Surface",
+  "physical_parameter": "hfds",
   "description": [
     "This is the net flux of heat entering the liquid water column through its upper surface (excluding any \"flux adjustment\") .",
     "Net flux of heat entering the liquid water column through its upper surface (excluding any 'flux adjustment')."
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
   "region": [
     "30s-90s",
     "global"

@@ -8,35 +8,26 @@
   "variable_root_name": "loadoa",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Load of Dry Aerosol Organic Matter",
-  "description": [
-    "atmosphere dry organic content: This is the vertically integrated sum of atmosphere_primary_organic_content and atmosphere_secondary_organic_content (see next two table entries)."
-  ],
+  "physical_parameter": "loadoa",
+  "description": "atmosphere dry organic content: This is the vertically integrated sum of atmosphere_primary_organic_content and atmosphere_secondary_organic_content (see next two table entries).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

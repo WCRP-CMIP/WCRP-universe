@@ -8,6 +8,7 @@
   "variable_root_name": "edt",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Eddy Diffusivity Coefficient for Temperature",
+  "physical_parameter": "edt",
   "description": [
     "Vertical diffusion coefficient for temperature due to parametrised eddies"
   ],
@@ -18,21 +19,16 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

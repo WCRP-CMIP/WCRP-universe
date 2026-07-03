@@ -8,29 +8,21 @@
   "variable_root_name": "bigthetao",
   "branding_suffix_name": "tavg-u-hm-sea",
   "long_name": "Global Average Sea Water Conservative Temperature",
-  "description": [
-    "Diagnostic should be contributed only for models using conservative temperature as prognostic field."
-  ],
+  "physical_parameter": "bigthetaoga",
+  "description": "Diagnostic should be contributed only for models using conservative temperature as prognostic field.",
   "data_type": "real",
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,33 +8,25 @@
   "variable_root_name": "noy",
   "branding_suffix_name": "tavg-p39-hy-air",
   "long_name": "Total Reactive Nitrogen Volume Mixing Ratio",
-  "description": [
-    "Total family (the sum of all appropriate species in the model); list the species in the netCDF header, e.g. NOy = N + NO + NO2 + NO3 + HNO3 + 2N2O5 + HNO4 + ClONO2 + BrONO2 Definition: Total reactive nitrogen; usually includes atomic nitrogen (N), nitric oxide (NO), NO2, nitrogen trioxide (NO3), dinitrogen radical (N2O5), nitric acid (HNO3), peroxynitric acid (HNO4), BrONO2, ClONO2 add comment attribute with detailed description about how the model calculates these fields"
-  ],
+  "physical_parameter": "noy",
+  "description": "Total family (the sum of all appropriate species in the model); list the species in the netCDF header, e.g. NOy = N + NO + NO2 + NO3 + HNO3 + 2N2O5 + HNO4 + ClONO2 + BrONO2 Definition: Total reactive nitrogen; usually includes atomic nitrogen (N), nitric oxide (NO), NO2, nitrogen trioxide (NO3), dinitrogen radical (N2O5), nitric acid (HNO3), peroxynitric acid (HNO4), BrONO2, ClONO2 add comment attribute with detailed description about how the model calculates these fields",
   "data_type": "real",
   "dimensions": [
     "lat",
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "plev39",
     "time"
   ],
-  "cell_methods": [
-    "longitude: time: mean where air"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "longitude: time: mean where air",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "p39",
   "horizontal_label": "hy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

@@ -8,31 +8,23 @@
   "variable_root_name": "vt100",
   "branding_suffix_name": "tavg-100hPa-hy-air",
   "long_name": "Northward Eddy Temperature Flux",
-  "description": [
-    "Zonally averaged eddy temperature flux at 100hPa as monthly means derived from daily (or higher frequency) fields."
-  ],
+  "physical_parameter": "vt100",
+  "description": "Zonally averaged eddy temperature flux at 100hPa as monthly means derived from daily (or higher frequency) fields.",
   "data_type": "real",
   "dimensions": [
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "longitude: time: mean where air"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recACjQ36epODuPMe",
+  "cell_methods": "longitude: time: mean where air",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "100hPa",
   "horizontal_label": "hy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

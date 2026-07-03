@@ -8,33 +8,24 @@
   "variable_root_name": "dyvo",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Cell Length in the Y Direction at v-points",
-  "description": [
-    "The linear extent of the cell in the y direction of the horizontal grid centered at v-points (points for velocity in the y-direction). Not applicable to unstructured grids."
-  ],
+  "physical_parameter": "dyvo",
+  "description": "The linear extent of the cell in the y direction of the horizontal grid centered at v-points (points for velocity in the y-direction). Not applicable to unstructured grids.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: point"
-  ],
-  "cell_measures": [
-    "--MODEL"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point",
+  "cell_measures": "--MODEL",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,33 +8,24 @@
   "variable_root_name": "depthsl",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Total (Cumulative) Thickness of All Soil Layers",
-  "description": [
-    "Total (cumulative) thickness of all soil layers. This is the sum of individual thicknesses of all soil layers."
-  ],
+  "physical_parameter": "depthsl",
+  "description": "Total (cumulative) thickness of all soil layers. This is the sum of individual thicknesses of all soil layers.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

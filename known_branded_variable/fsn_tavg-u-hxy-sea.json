@@ -8,35 +8,26 @@
   "variable_root_name": "fsn",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Surface Downward Net Flux of Nitrogen",
-  "description": [
-    "Flux of nitrogen into the ocean due to deposition (sum of dry and wet deposition), fixation (the production of ammonia from nitrogen gas by diazotrophs) and runoff (liquid water which drains from land)."
-  ],
+  "physical_parameter": "fsn",
+  "description": "Flux of nitrogen into the ocean due to deposition (sum of dry and wet deposition), fixation (the production of ammonia from nitrogen gas by diazotrophs) and runoff (liquid water which drains from land).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

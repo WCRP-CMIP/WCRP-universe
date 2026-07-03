@@ -8,9 +8,8 @@
   "variable_root_name": "zmisc",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Mole Concentration of Other Zooplankton Expressed as Carbon in Sea Water",
-  "description": [
-    "carbon from additional zooplankton component concentrations alone (e.g. Micro, meso).  Since the models all have different numbers of components, this variable has been included to provide a check for intercomparison between models since some phytoplankton groups are supersets."
-  ],
+  "physical_parameter": "zmisc",
+  "description": "carbon from additional zooplankton component concentrations alone (e.g. Micro, meso).  Since the models all have different numbers of components, this variable has been included to provide a check for intercomparison between models since some phytoplankton groups are supersets.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "zmeso",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Mole Concentration of Mesozooplankton Expressed as Carbon in Sea Water",
+  "physical_parameter": "zmeso",
   "description": [
     "carbon  concentration from mesozooplankton (20-200 um) component alone",
     "carbon concentration from mesozooplankton (20-200 um) component alone"
@@ -19,27 +20,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

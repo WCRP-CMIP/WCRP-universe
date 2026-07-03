@@ -8,6 +8,7 @@
   "variable_root_name": "sivol",
   "branding_suffix_name": "tavg-u-hm-u",
   "long_name": "Sea-Ice Volume",
+  "physical_parameter": "sivoln | sivols | sivoln | sivols",
   "description": [
     "Total integrated volume of sea ice in the Northern Hemisphere.",
     "Total integrated volume of sea ice in the Southern Hemisphere."
@@ -16,16 +17,12 @@
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: sum time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "seaice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: sum time: mean",
+  "realm": "seaice",
   "region": [
     "northern-hemisphere",
     "southern-hemisphere"
@@ -33,6 +30,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

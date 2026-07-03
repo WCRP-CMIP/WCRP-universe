@@ -8,6 +8,7 @@
   "variable_root_name": "iareagr",
   "branding_suffix_name": "tavg-u-hm-gis",
   "long_name": "Area Covered by Grounded Ice Sheet",
+  "physical_parameter": "iareagr",
   "description": [
     "Greenland",
     "Antarctica"
@@ -16,16 +17,12 @@
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: sum where grounded_ice_sheet (mask=sfgrlf) time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "landice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: sum where grounded_ice_sheet (mask=sfgrlf) time: mean",
+  "realm": "landice",
   "region": [
     "greenland",
     "antarctica"
@@ -33,6 +30,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "gis",
-  "positive_direction": ""
+  "area_label": "gis"
 }

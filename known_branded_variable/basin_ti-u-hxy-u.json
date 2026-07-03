@@ -8,33 +8,24 @@
   "variable_root_name": "basin",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Region Selection Index",
-  "description": [
-    "A variable with the standard name of region contains strings which indicate geographical regions. These strings must be chosen from the standard region list."
-  ],
+  "physical_parameter": "basin",
+  "description": "A variable with the standard name of region contains strings which indicate geographical regions. These strings must be chosen from the standard region list.",
   "data_type": "integer",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,35 +8,26 @@
   "variable_root_name": "emioa",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Primary Emission and Chemical Production of Dry Aerosol Organic Matter",
-  "description": [
-    "This is the sum of total emission of POA and total production of SOA (emipoa+chepsoa). \"Mass\" refers to the mass of organic matter, not mass of organic carbon alone. We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available.  Integrate 3D chemical production and emission field vertically to 2d field."
-  ],
+  "physical_parameter": "emioa",
+  "description": "This is the sum of total emission of POA and total production of SOA (emipoa+chepsoa). \"Mass\" refers to the mass of organic matter, not mass of organic carbon alone. We recommend a scale factor of POM=1.4*OC, unless your model has more detailed info available.  Integrate 3D chemical production and emission field vertically to 2d field.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,31 +8,23 @@
   "variable_root_name": "pr",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Precipitation",
-  "description": [
-    "at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)"
-  ],
+  "physical_parameter": "pr",
+  "description": "at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective)",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

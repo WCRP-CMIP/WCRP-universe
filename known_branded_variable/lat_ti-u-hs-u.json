@@ -8,29 +8,21 @@
   "variable_root_name": "lat",
   "branding_suffix_name": "ti-u-hs-u",
   "long_name": "Latitude",
-  "description": [
-    "Latitude is positive northward; its units of degree_north (or equivalent) indicate this explicitly. In a latitude-longitude system defined with respect to a rotated North Pole, the standard name of grid_latitude should be used instead of latitude. Grid latitude is positive in the grid-northward direction, but its units should be plain degree."
-  ],
+  "physical_parameter": "lat",
+  "description": "Latitude is positive northward; its units of degree_north (or equivalent) indicate this explicitly. In a latitude-longitude system defined with respect to a rotated North Pole, the standard name of grid_latitude should be used instead of latitude. Grid latitude is positive in the grid-northward direction, but its units should be plain degree.",
   "data_type": "real",
   "dimensions": [
     "site"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site"
   ],
-  "cell_methods": [
-    "area: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

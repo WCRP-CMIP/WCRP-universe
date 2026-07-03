@@ -8,6 +8,7 @@
   "variable_root_name": "sitimefrac",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Fraction of Time Steps with Sea Ice",
+  "physical_parameter": "sitimefrac",
   "description": [
     "Fraction of time steps of the averaging period during which sea ice is present (siconc > 0) in a grid cell."
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
   "region": [
     "global",
     "30s-90s"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

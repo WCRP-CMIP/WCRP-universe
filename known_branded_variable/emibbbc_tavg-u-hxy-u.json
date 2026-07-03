@@ -8,36 +8,29 @@
   "variable_root_name": "emibbbc",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "total emission rate of black carbon aerosol mass from all biomass burning",
-  "description": [
-    "Total emission rate of black carbon aerosol into the atmosphere from all biomass burning (natural and anthropogenic)"
-  ],
+  "physical_parameter": "emibbbc",
+  "description": "Total emission rate of black carbon aerosol into the atmosphere from all biomass burning (natural and anthropogenic)",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,30 +8,22 @@
   "variable_root_name": "hfgeou",
   "branding_suffix_name": "ti-u-hxy-sea",
   "long_name": "Upward Geothermal Heat Flux at Sea Floor",
-  "description": [
-    "Upward geothermal heat flux per unit area on the sea floor"
-  ],
+  "physical_parameter": "hfgeou",
+  "description": "Upward geothermal heat flux per unit area on the sea floor",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean where sea"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",

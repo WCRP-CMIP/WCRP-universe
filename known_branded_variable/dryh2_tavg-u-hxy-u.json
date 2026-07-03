@@ -8,36 +8,29 @@
   "variable_root_name": "dryh2",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Total loss rate of molecular hydrogen (H2) from the atmosphere via soil sink",
-  "description": [
-    "This is the total loss rate of molecular hydrogen (H2) from the atmosphere via its soil sink due to bacterial consumption."
-  ],
+  "physical_parameter": "dryh2",
+  "description": "This is the total loss rate of molecular hydrogen (H2) from the atmosphere via its soil sink due to bacterial consumption.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

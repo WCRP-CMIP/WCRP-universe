@@ -8,35 +8,26 @@
   "variable_root_name": "tauupbl",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Eastward Surface Stress from Planetary Boundary Layer Scheme",
-  "description": [
-    "surface"
-  ],
+  "physical_parameter": "tauupbl",
+  "description": "surface",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

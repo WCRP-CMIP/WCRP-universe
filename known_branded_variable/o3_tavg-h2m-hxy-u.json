@@ -8,35 +8,26 @@
   "variable_root_name": "o3",
   "branding_suffix_name": "tavg-h2m-hxy-u",
   "long_name": "O3 Volume Mixing Ratio near surface",
-  "description": [
-    "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y."
-  ],
+  "physical_parameter": "sfo3",
+  "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

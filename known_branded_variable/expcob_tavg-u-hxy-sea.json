@@ -8,6 +8,7 @@
   "variable_root_name": "expcob",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Sinking Flux of Particulate Organic Carbon Reaching the Ocean Bottom",
+  "physical_parameter": "expcob",
   "description": [
     "Downward sinking flux of particulate organic carbon at seafloor",
     "Downward sinking flux of particulate organic carbon at sea floor. Reported at the sea floor depth for present day relative to z=0 geoid. Reported as missing for land grid cells."
@@ -18,23 +19,16 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

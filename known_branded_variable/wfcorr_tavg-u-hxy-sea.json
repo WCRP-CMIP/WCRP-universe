@@ -8,32 +8,24 @@
   "variable_root_name": "wfcorr",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Water Flux Correction",
-  "description": [
-    "Computed as the water flux into the ocean due to flux correction divided by the area of the ocean portion of the grid cell."
-  ],
+  "physical_parameter": "wfcorr",
+  "description": "Computed as the water flux into the ocean due to flux correction divided by the area of the ocean portion of the grid cell.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

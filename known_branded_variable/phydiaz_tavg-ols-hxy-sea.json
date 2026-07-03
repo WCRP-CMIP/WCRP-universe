@@ -8,6 +8,7 @@
   "variable_root_name": "phydiaz",
   "branding_suffix_name": "tavg-ols-hxy-sea",
   "long_name": "Surface Mole Concentration of Diazotrophs Expressed as Carbon in Sea Water",
+  "physical_parameter": "phydiazos",
   "description": [
     "Mole Concentration of Diazotrophs Expressed as Carbon in Sea Water",
     "carbon concentration from the diazotrophic phytoplankton component alone"
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rec3LIUkpPBZ4IIqx",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
   "region": [
     "global",
     "30s-90s"
@@ -39,6 +35,5 @@
   "temporal_label": "tavg",
   "vertical_label": "ols",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

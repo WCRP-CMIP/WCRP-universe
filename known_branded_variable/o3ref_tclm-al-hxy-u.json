@@ -8,9 +8,8 @@
   "variable_root_name": "o3ref",
   "branding_suffix_name": "tclm-al-hxy-u",
   "long_name": "Fixed Reference Climatology of Mole Fraction of Ozone in Air",
-  "description": [
-    "This is the ozone mole fraction that is used in a diagnostic call to the model's radiation scheme. It is only applicable when an ozone double call is active in the model."
-  ],
+  "physical_parameter": "o3ref",
+  "description": "This is the ozone mole fraction that is used in a diagnostic call to the model's radiation scheme. It is only applicable when an ozone double call is active in the model.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time2"
   ],
-  "cell_methods": [
-    "area: mean time: mean within years time: mean over years"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmoschem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean time: mean within years time: mean over years",
+  "cell_measures": "area: areacella",
+  "realm": "atmoschem",
+  "region": "global",
   "temporal_label": "tclm",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

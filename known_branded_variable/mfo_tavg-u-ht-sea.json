@@ -8,31 +8,23 @@
   "variable_root_name": "mfo",
   "branding_suffix_name": "tavg-u-ht-sea",
   "long_name": "Sea Water Transport",
-  "description": [
-    "Transport across_line means that which crosses a particular line on the Earth's surface (based on appendix J and table J1 of Griffies et al, 2016 (<https://doi.org/10.5194/gmd-9-3231-2016>). Formally this means the integral along the line of the normal component of the transport. The transport should be evaluated for the full depth of the ocean, except for the Pacific Equatorial Undercurrent, which is averaged from the surface to 350m."
-  ],
+  "physical_parameter": "mfo",
+  "description": "Transport across_line means that which crosses a particular line on the Earth's surface (based on appendix J and table J1 of Griffies et al, 2016 (<https://doi.org/10.5194/gmd-9-3231-2016>). Formally this means the integral along the line of the normal component of the transport. The transport should be evaluated for the full depth of the ocean, except for the Pacific Equatorial Undercurrent, which is averaged from the surface to 350m.",
   "data_type": "real",
   "dimensions": [
     "line",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "oline",
     "time"
   ],
-  "cell_methods": [
-    "depth: sum where sea time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "depth: sum where sea time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "ht",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,32 +8,24 @@
   "variable_root_name": "expsiob",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Sinking Flux of Particulate Silicon Reaching the Ocean Bottom",
-  "description": [
-    "Downward sinking flux of particulate silicon at seafloor"
-  ],
+  "physical_parameter": "expsiob",
+  "description": "Downward sinking flux of particulate silicon at seafloor",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

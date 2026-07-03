@@ -8,6 +8,7 @@
   "variable_root_name": "tas",
   "branding_suffix_name": "tminavg-h2m-hxy-u",
   "long_name": "Daily Minimum Near-Surface Air Temperature",
+  "physical_parameter": "tasmin",
   "description": [
     "monthly mean of the daily-minimum near-surface air temperature."
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time4"
   ],
-  "cell_methods": [
-    "area: mean time: minimum within days time: mean over days"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: mean time: minimum within days time: mean over days",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -38,6 +34,5 @@
   "temporal_label": "tminavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

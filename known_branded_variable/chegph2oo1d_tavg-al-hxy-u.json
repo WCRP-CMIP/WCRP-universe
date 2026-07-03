@@ -8,9 +8,8 @@
   "variable_root_name": "chegph2oo1d",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Primary production of OH (H2O+O1D)",
-  "description": [
-    "Primary production rate of the hydroxy (OH) radical via H2O+O1D"
-  ],
+  "physical_parameter": "chegph2oo1d",
+  "description": "Primary production rate of the hydroxy (OH) radical via H2O+O1D",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

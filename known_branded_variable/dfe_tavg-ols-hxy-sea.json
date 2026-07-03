@@ -8,6 +8,7 @@
   "variable_root_name": "dfe",
   "branding_suffix_name": "tavg-ols-hxy-sea",
   "long_name": "Surface Dissolved Iron Concentration",
+  "physical_parameter": "dfeos",
   "description": [
     "dissolved iron in sea water is meant to include both Fe2+ and Fe3+ ions (but not, e.g., particulate detrital iron)"
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rec3LIUkpPBZ4IIqx",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
   "region": [
     "30s-90s",
     "global"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "ols",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

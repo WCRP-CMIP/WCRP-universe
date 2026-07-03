@@ -8,33 +8,25 @@
   "variable_root_name": "hur",
   "branding_suffix_name": "tpt-al-hs-u",
   "long_name": "Relative Humidity",
-  "description": [
-    "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C."
-  ],
+  "physical_parameter": "hur",
+  "description": "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",
   "data_type": "real",
   "dimensions": [
     "lev",
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "alevel",
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

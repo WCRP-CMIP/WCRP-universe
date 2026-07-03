@@ -8,36 +8,29 @@
   "variable_root_name": "agesno",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Mean Age of Snow",
-  "description": [
-    "When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.  Reported as \"missing in regions free of snow on land."
-  ],
+  "physical_parameter": "agesno",
+  "description": "When computing the time-mean here, the time samples, weighted by the mass of snow on the land portion of the grid cell, are accumulated and then divided by the sum of the weights.  Reported as \"missing in regions free of snow on land.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean (weighted by snow mass on land)"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean (weighted by snow mass on land)",
+  "cell_measures": "area: areacella",
   "realm": [
     "landice",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

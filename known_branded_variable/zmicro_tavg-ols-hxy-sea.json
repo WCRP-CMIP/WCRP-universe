@@ -8,35 +8,26 @@
   "variable_root_name": "zmicro",
   "branding_suffix_name": "tavg-ols-hxy-sea",
   "long_name": "Surface Mole Concentration of Microzooplankton Expressed as Carbon in Sea Water",
-  "description": [
-    "carbon  concentration from the microzooplankton (<20 um) component alone"
-  ],
+  "physical_parameter": "zmicroos",
+  "description": "carbon  concentration from the microzooplankton (<20 um) component alone",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "30s-90s"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rec3LIUkpPBZ4IIqx",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "30s-90s",
   "temporal_label": "tavg",
   "vertical_label": "ols",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

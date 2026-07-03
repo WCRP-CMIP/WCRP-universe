@@ -8,35 +8,26 @@
   "variable_root_name": "emiso4",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Total Direct Emission Rate of SO4",
-  "description": [
-    "Direct primary emission does not include secondary sulfate production. Integrate 3D emission field vertically to 2d field."
-  ],
+  "physical_parameter": "emiso4",
+  "description": "Direct primary emission does not include secondary sulfate production. Integrate 3D emission field vertically to 2d field.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

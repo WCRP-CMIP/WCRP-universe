@@ -8,35 +8,26 @@
   "variable_root_name": "sci",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Fraction of Time Shallow Convection Occurs",
-  "description": [
-    "Fraction of time that convection occurs in the grid cell. If native cell data is regridded, the area-weighted mean of the contributing cells should be reported."
-  ],
+  "physical_parameter": "sci",
+  "description": "Fraction of time that convection occurs in the grid cell. If native cell data is regridded, the area-weighted mean of the contributing cells should be reported.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

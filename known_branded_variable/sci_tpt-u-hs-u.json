@@ -8,31 +8,23 @@
   "variable_root_name": "sci",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Fraction of Time Shallow Convection Occurs",
-  "description": [
-    "Fraction of time that shallow convection occurs in the grid cell. Variable is binary, indicating whether at each time step convection occurs (1.0), or not (0.0)."
-  ],
+  "physical_parameter": "sci",
+  "description": "Fraction of time that shallow convection occurs in the grid cell. Variable is binary, indicating whether at each time step convection occurs (1.0), or not (0.0).",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

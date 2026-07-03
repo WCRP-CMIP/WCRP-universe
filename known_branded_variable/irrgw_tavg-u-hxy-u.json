@@ -8,35 +8,26 @@
   "variable_root_name": "irrGw",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "irrigation water withdrawal from groundwater",
-  "description": [
-    "the amount of water withdrawal for irrigation from ground water, including deep soil water, confined and unconfined aquifer, etc"
-  ],
+  "physical_parameter": "irrGw",
+  "description": "the amount of water withdrawal for irrigation from ground water, including deep soil water, confined and unconfined aquifer, etc",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

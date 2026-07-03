@@ -8,6 +8,7 @@
   "variable_root_name": "ccldncl",
   "branding_suffix_name": "tavg-u-hxy-ccl",
   "long_name": "Cloud Droplet Number Concentration of Convective Cloud Tops",
+  "physical_parameter": "ccldncl",
   "description": [
     "Droplets are liquid only.  Report concentration 'as seen from space' over convective liquid cloudy portion of grid cell.  This is the value from uppermost model layer with liquid cloud or, if available, it is better to sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere. Weight by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean.",
     "Cloud Droplet Number Concentration of Convective Cloud Tops"
@@ -18,28 +19,22 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where convective_cloud (mean over the portion of the cell containing liquid topped cloud, as seen from top of atmosphere)"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where convective_cloud (mean over the portion of the cell containing liquid topped cloud, as seen from top of atmosphere)",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmos",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "ccl",
-  "positive_direction": ""
+  "area_label": "ccl"
 }

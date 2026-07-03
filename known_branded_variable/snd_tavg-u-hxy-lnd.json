@@ -8,6 +8,7 @@
   "variable_root_name": "snd",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Snow Depth",
+  "physical_parameter": "snd",
   "description": [
     "where land over land, this is computed as the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction).  Reported as missing where the land fraction is 0.",
     "where land over land, this is computed as the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction).  Reported as 0.0 where the land fraction is 0."
@@ -18,27 +19,21 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "landice",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

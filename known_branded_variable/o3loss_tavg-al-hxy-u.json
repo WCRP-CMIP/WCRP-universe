@@ -8,9 +8,8 @@
   "variable_root_name": "o3loss",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "O3 Destruction Rate",
-  "description": [
-    "ONLY provide the sum of the following reactions: (i) O(1D)+H2O; (ii) O3+HO2; (iii) O3+OH; (iv) O3+alkenes (isoprene, ethene, ...)"
-  ],
+  "physical_parameter": "o3loss",
+  "description": "ONLY provide the sum of the following reactions: (i) O(1D)+H2O; (ii) O3+HO2; (iii) O3+OH; (iv) O3+alkenes (isoprene, ethene, ...)",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

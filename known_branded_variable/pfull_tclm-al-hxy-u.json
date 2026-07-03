@@ -8,6 +8,7 @@
   "variable_root_name": "pfull",
   "branding_suffix_name": "tclm-al-hxy-u",
   "long_name": "Pressure at Model Full-Levels",
+  "physical_parameter": "pfull",
   "description": [
     "Air pressure on model levels"
   ],
@@ -18,21 +19,16 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time2"
   ],
-  "cell_methods": [
-    "area: mean time: mean within years time: mean over years"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean time: mean within years time: mean over years",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -40,6 +36,5 @@
   "temporal_label": "tclm",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

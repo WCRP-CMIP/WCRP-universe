@@ -8,35 +8,26 @@
   "variable_root_name": "fNnetmin",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Net Nitrogen Release from Soil and Litter as the Outcome of Nitrogen Immobilisation and Gross Mineralisation",
-  "description": [
-    "Loss of soil nitrogen through remineralization and immobilisation. Remineralization is the degradation of organic matter into inorganic forms of carbon, nitrogen, phosphorus and other micronutrients, which consumes oxygen and releases energy. Immobilisation of nitrogen refers to retention of nitrogen by micro-organisms under certain conditions, making it unavailable for plants."
-  ],
+  "physical_parameter": "fNnetmin",
+  "description": "Loss of soil nitrogen through remineralization and immobilisation. Remineralization is the degradation of organic matter into inorganic forms of carbon, nitrogen, phosphorus and other micronutrients, which consumes oxygen and releases energy. Immobilisation of nitrogen refers to retention of nitrogen by micro-organisms under certain conditions, making it unavailable for plants.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

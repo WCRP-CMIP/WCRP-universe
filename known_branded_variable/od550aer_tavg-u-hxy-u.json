@@ -8,6 +8,7 @@
   "variable_root_name": "od550aer",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Ambient Aerosol Optical Thickness at 550nm",
+  "physical_parameter": "od550aer",
   "description": [
     "AOD from the ambient aerosls (i.e., includes aerosol water).  Does not include AOD from stratospheric aerosols if these are prescribed but includes other possible background aerosol types. Needs a comment attribute \"wavelength: 550 nm\"",
     "AOD from ambient aerosols (i.e., includes aerosol water).  Does not include AOD from stratospheric aerosols if these are prescribed but includes other possible background aerosol types. Needs a comment attribute \"wavelength: 550 nm\""
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recq3Re0LCJH8Kblb",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
   "region": [
     "global",
     "30s-90s"
@@ -39,6 +35,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

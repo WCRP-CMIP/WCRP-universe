@@ -8,6 +8,7 @@
   "variable_root_name": "dms",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Dimethyl Sulphide (DMS) Mole Fraction",
+  "physical_parameter": "dms",
   "description": [
     "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y."
   ],
@@ -18,18 +19,15 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
@@ -41,6 +39,5 @@
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

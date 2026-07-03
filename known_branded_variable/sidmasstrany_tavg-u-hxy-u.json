@@ -8,35 +8,26 @@
   "variable_root_name": "sidmasstrany",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Y-Component of Sea-Ice Mass Transport",
-  "description": [
-    "Y-component of the sea-ice drift-induced transport of snow and sea ice mass."
-  ],
+  "physical_parameter": "sidmasstrany",
+  "description": "Y-component of the sea-ice drift-induced transport of snow and sea ice mass.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "--MODEL"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "--MODEL",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

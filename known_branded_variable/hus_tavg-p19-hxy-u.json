@@ -8,6 +8,7 @@
   "variable_root_name": "hus",
   "branding_suffix_name": "tavg-p19-hxy-u",
   "long_name": "Specific Humidity",
+  "physical_parameter": "hus",
   "description": [
     "Specific humidity is the mass fraction of water vapor in (moist) air."
   ],
@@ -18,21 +19,16 @@
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "plev19",
     "time"
   ],
-  "cell_methods": [
-    "time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "p19",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

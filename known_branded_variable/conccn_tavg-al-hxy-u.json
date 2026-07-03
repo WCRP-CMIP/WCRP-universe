@@ -8,9 +8,8 @@
   "variable_root_name": "conccn",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Aerosol Number Concentration",
-  "description": [
-    "This is the number concentration of air particles in air"
-  ],
+  "physical_parameter": "conccn",
+  "description": "This is the number concentration of air particles in air",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

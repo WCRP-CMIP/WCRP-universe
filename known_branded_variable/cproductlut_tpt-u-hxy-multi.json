@@ -8,35 +8,26 @@
   "variable_root_name": "cProductLut",
   "branding_suffix_name": "tpt-u-hxy-multi",
   "long_name": "Wood and Agricultural Product Pool Carbon Associated with Land-Use Tiles",
-  "description": [
-    "Anthropogenic pools associated with land use tiles into which harvests and cleared carbon are deposited before release into atmosphere PLUS any remaining anthropogenic pools that may be associated with lands which were converted into land use tiles during reported period. Examples of products include paper, cardboard, timber for construction, and crop harvest for food or fuel. Does NOT include residue which is deposited into soil or litter; end of year values (not annual mean)."
-  ],
+  "physical_parameter": "cProductLut",
+  "description": "Anthropogenic pools associated with land use tiles into which harvests and cleared carbon are deposited before release into atmosphere PLUS any remaining anthropogenic pools that may be associated with lands which were converted into land use tiles during reported period. Examples of products include paper, cardboard, timber for construction, and crop harvest for food or fuel. Does NOT include residue which is deposited into soil or litter; end of year values (not annual mean).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where sector time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sector time: point",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "multi",
-  "positive_direction": ""
+  "area_label": "multi"
 }

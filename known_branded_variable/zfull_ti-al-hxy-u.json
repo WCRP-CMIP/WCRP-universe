@@ -8,35 +8,26 @@
   "variable_root_name": "zfull",
   "branding_suffix_name": "ti-al-hxy-u",
   "long_name": "Altitude of Model Full-Levels",
-  "description": [
-    "Provide only if altitude of full model levels is fixed"
-  ],
+  "physical_parameter": "zfull",
+  "description": "Provide only if altitude of full model levels is fixed",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "lev"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,32 +8,24 @@
   "variable_root_name": "rsus",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Surface Upwelling Shortwave Radiation over Land",
-  "description": [
-    "Surface Upwelling Shortwave Radiation over land. Can be used for computation of surface albedo."
-  ],
+  "physical_parameter": "rsus",
+  "description": "Surface Upwelling Shortwave Radiation over land. Can be used for computation of surface albedo.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where land"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where land",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

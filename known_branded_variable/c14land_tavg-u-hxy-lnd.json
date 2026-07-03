@@ -8,35 +8,26 @@
   "variable_root_name": "c14Land",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Mass of 14C in All Terrestrial Carbon Pools",
-  "description": [
-    "Carbon-14 mass content per unit area in vegetation (any living plants e.g. trees, shrubs, grass), litter (dead plant material in or above the soil), soil, and forestry and agricultural products (e.g. paper, cardboard, furniture, timber for construction, biofuels and food for both humans and livestock)."
-  ],
+  "physical_parameter": "c14Land",
+  "description": "Carbon-14 mass content per unit area in vegetation (any living plants e.g. trees, shrubs, grass), litter (dead plant material in or above the soil), soil, and forestry and agricultural products (e.g. paper, cardboard, furniture, timber for construction, biofuels and food for both humans and livestock).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

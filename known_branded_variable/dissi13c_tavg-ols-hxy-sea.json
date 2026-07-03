@@ -8,35 +8,26 @@
   "variable_root_name": "dissi13c",
   "branding_suffix_name": "tavg-ols-hxy-sea",
   "long_name": "Surface Dissolved Inorganic Carbon-13 Concentration",
-  "description": [
-    "Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration"
-  ],
+  "physical_parameter": "dissi13cos",
+  "description": "Dissolved inorganic 14carbon (CO3+HCO3+H2CO3) concentration",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rec3LIUkpPBZ4IIqx",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ols",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,31 +8,23 @@
   "variable_root_name": "clivi",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Ice Water Path",
-  "description": [
-    "mass of ice water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating frozen hydrometeors ONLY if the precipitating hydrometeor affects the calculation of radiative transfer in model."
-  ],
+  "physical_parameter": "clivi",
+  "description": "mass of ice water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating frozen hydrometeors ONLY if the precipitating hydrometeor affects the calculation of radiative transfer in model.",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

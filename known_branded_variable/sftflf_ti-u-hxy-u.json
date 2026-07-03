@@ -8,33 +8,24 @@
   "variable_root_name": "sftflf",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Floating Ice Shelf Area Percentage",
-  "description": [
-    "This is needed to distinguish between grounded glaciated ice (grounded = ice sheet and glacier) and ice shelves (floating over sea water), since land_ice is by definition ice sheet, glacier and ice shelves"
-  ],
+  "physical_parameter": "sftflf",
+  "description": "This is needed to distinguish between grounded glaciated ice (grounded = ice sheet and glacier) and ice shelves (floating over sea water), since land_ice is by definition ice sheet, glacier and ice shelves",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "landice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
+  "realm": "landice",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

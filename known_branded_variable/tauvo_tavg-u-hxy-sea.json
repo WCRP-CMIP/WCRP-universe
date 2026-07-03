@@ -8,6 +8,7 @@
   "variable_root_name": "tauvo",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Sea Water Surface Downward Y Stress",
+  "physical_parameter": "tauvo",
   "description": [
     "This is the stress on the liquid ocean from overlying atmosphere, sea ice, ice shelf, etc.",
     "The stress on the liquid ocean from interactions with overlying atmosphere, sea ice, ice shelf, etc."
@@ -18,23 +19,16 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

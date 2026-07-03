@@ -8,6 +8,7 @@
   "variable_root_name": "intpp",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Primary Organic Carbon Production by All Types of Phytoplankton",
+  "physical_parameter": "intpp",
   "description": [
     "Vertically integrated total primary (organic carbon) production by phytoplankton.  This should equal the sum of intpdiat+intpphymisc, but those individual components may be unavailable in some models.",
     "Vertically integrated total primary (organic carbon) production by phytoplankton. This should equal the sum of intpdiat+intpphymisc, but those individual components may be unavailable in some models."
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea depth: sum where sea (over entire ocean column) time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea depth: sum where sea (over entire ocean column) time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
   "region": [
     "global",
     "30s-90s"
@@ -39,6 +35,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

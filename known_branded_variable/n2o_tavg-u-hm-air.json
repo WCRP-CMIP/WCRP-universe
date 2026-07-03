@@ -8,29 +8,21 @@
   "variable_root_name": "n2o",
   "branding_suffix_name": "tavg-u-hm-air",
   "long_name": "Global Mean Mole Fraction of N2O",
-  "description": [
-    "Global mean Nitrous Oxide (N2O)"
-  ],
+  "physical_parameter": "n2oglobal",
+  "description": "Global mean Nitrous Oxide (N2O)",
   "data_type": "real",
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "height: area: time: mean (with all samples weighted by the number of moles of air in the sample)"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmoschem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "height: area: time: mean (with all samples weighted by the number of moles of air in the sample)",
+  "realm": "atmoschem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

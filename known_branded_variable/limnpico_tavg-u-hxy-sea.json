@@ -8,35 +8,26 @@
   "variable_root_name": "limnpico",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Nitrogen Limitation of Picophytoplankton",
-  "description": [
-    "Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Nitrogen growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of nitrogen) to the theoretical growth rate if there were no such limit on nitrogen availability."
-  ],
+  "physical_parameter": "limnpico",
+  "description": "Picophytoplankton are phytoplankton of less than 2 micrometers in size. Phytoplankton are algae that grow where there is sufficient light to support photosynthesis. \"Nitrogen growth limitation\" means the ratio of the growth rate of a species population in the environment (where there is a finite availability of nitrogen) to the theoretical growth rate if there were no such limit on nitrogen availability.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

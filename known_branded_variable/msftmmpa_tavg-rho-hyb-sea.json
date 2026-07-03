@@ -8,9 +8,8 @@
   "variable_root_name": "msftmmpa",
   "branding_suffix_name": "tavg-rho-hyb-sea",
   "long_name": "Ocean Meridional Overturning Mass Streamfunction Due to Parameterized Mesoscale Advection",
-  "description": [
-    "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations."
-  ],
+  "physical_parameter": "msftmrhompa",
+  "description": "CMIP5 called this \"due to Bolus Advection\".  Name change respects the more general physics of the mesoscale parameterizations.",
   "data_type": "real",
   "dimensions": [
     "lat",
@@ -18,25 +17,18 @@
     "basin",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "rho",
     "basin",
     "time"
   ],
-  "cell_methods": [
-    "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin)  time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin)  time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "rho",
   "horizontal_label": "hyb",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

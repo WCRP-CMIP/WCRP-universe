@@ -8,9 +8,8 @@
   "variable_root_name": "n2o",
   "branding_suffix_name": "tavg-p19-hxy-air",
   "long_name": "Mole Fraction of N2O",
-  "description": [
-    "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.   The chemical formula of  nitrous oxide is N2O."
-  ],
+  "physical_parameter": "n2o",
+  "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.   The chemical formula of  nitrous oxide is N2O.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "plev19",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where air"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmoschem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where air",
+  "cell_measures": "area: areacella",
+  "realm": "atmoschem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "p19",
   "horizontal_label": "hxy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

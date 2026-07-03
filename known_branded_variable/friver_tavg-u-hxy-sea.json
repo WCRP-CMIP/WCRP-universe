@@ -8,6 +8,7 @@
   "variable_root_name": "friver",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Water Flux into Sea Water from Rivers",
+  "physical_parameter": "friver",
   "description": [
     "Computed as the river flux of water into the ocean divided by the area of the ocean portion of the grid cell.",
     "computed as the river flux of water into the ocean divided by the area of the ocean portion of the grid cell."
@@ -18,26 +19,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

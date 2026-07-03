@@ -8,35 +8,26 @@
   "variable_root_name": "rh",
   "branding_suffix_name": "tavg-u-hxy-tree",
   "long_name": "Heterotrophic Respiration on Tree Tiles as Carbon Mass Flux [kgC m-2 s-1]",
-  "description": [
-    "Total RH of trees in the grid cell"
-  ],
+  "physical_parameter": "rhTree",
+  "description": "Total RH of trees in the grid cell",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where trees (mask=treeFrac)"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where trees (mask=treeFrac)",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "tree",
-  "positive_direction": ""
+  "area_label": "tree"
 }

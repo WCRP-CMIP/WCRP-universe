@@ -8,35 +8,26 @@
   "variable_root_name": "fracInLut",
   "branding_suffix_name": "tsum-u-hxy-lnd",
   "long_name": "Annual Gross Percentage That Was Transferred into This Tile from Other Land-Use Tiles",
-  "description": [
-    "Cumulative percentage transitions over the year; note that percentage should be reported as a percentage of atmospheric grid cell"
-  ],
+  "physical_parameter": "fracInLut",
+  "description": "Cumulative percentage transitions over the year; note that percentage should be reported as a percentage of atmospheric grid cell",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land over all_area_types time: sum"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land over all_area_types time: sum",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tsum",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

@@ -8,9 +8,8 @@
   "variable_root_name": "tropch4lossoh",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Tropospheric loss of methane by OH",
-  "description": [
-    "This is the loss rate of tropospheric methane due to reaction with the hydroxy (OH) radical. The distinction between stratosphere and troposphere should be consistent with the tropopause used to calculate the pressure of the tropopause (ptp).  It should have zero values in the stratosphere."
-  ],
+  "physical_parameter": "tropch4lossoh",
+  "description": "This is the loss rate of tropospheric methane due to reaction with the hydroxy (OH) radical. The distinction between stratosphere and troposphere should be consistent with the tropopause used to calculate the pressure of the tropopause (ptp).  It should have zero values in the stratosphere.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

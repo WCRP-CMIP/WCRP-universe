@@ -8,36 +8,29 @@
   "variable_root_name": "mmraerh2o",
   "branding_suffix_name": "tavg-h2m-hxy-u",
   "long_name": "Daily mean near-surface Aerosol water mass mixing ratio",
-  "description": [
-    "Daily mean Aerosol water mass mixing ratio near surface."
-  ],
+  "physical_parameter": "mmraerh2o",
+  "description": "Daily mean Aerosol water mass mixing ratio near surface.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

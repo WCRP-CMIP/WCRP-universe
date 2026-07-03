@@ -8,35 +8,26 @@
   "variable_root_name": "siitdsnthick",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Snow Thickness in Ice Thickness Categories",
-  "description": [
-    "Actual thickness of snow in each ice thickness category, NOT snow volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis). It can also be derived by dividing the volume of snow by the area of snow in each thickness category."
-  ],
+  "physical_parameter": "siitdsnthick",
+  "description": "Actual thickness of snow in each ice thickness category, NOT snow volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis). It can also be derived by dividing the volume of snow by the area of snow in each thickness category.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea_ice (mask=siitdconc)"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea_ice (mask=siitdconc)",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "si",
-  "positive_direction": ""
+  "area_label": "si"
 }

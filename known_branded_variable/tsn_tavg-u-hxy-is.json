@@ -8,6 +8,7 @@
   "variable_root_name": "tsn",
   "branding_suffix_name": "tavg-u-hxy-is",
   "long_name": "Ice Sheet Snow Internal Temperature",
+  "physical_parameter": "tsn | tsnIs",
   "description": [
     "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods",
     "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)"
@@ -18,14 +19,13 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "depth: area: time: mean where ice_sheet (weighted by snow mass on ice_sheet)"
-  ],
+  "coordinates": "",
+  "cell_methods": "depth: area: time: mean where ice_sheet (weighted by snow mass on ice_sheet)",
   "cell_measures": [
     "area: areacellg",
     "area: areacella"
@@ -42,6 +42,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

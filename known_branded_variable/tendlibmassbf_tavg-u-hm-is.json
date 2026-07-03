@@ -8,6 +8,7 @@
   "variable_root_name": "tendlibmassbf",
   "branding_suffix_name": "tavg-u-hm-is",
   "long_name": "Total Basal Mass Balance Flux",
+  "physical_parameter": "tendlibmassbf",
   "description": [
     "Greenland",
     "Antarctica"
@@ -16,16 +17,12 @@
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: sum where ice_sheet time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "landice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: sum where ice_sheet time: mean",
+  "realm": "landice",
   "region": [
     "greenland",
     "antarctica"
@@ -33,6 +30,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

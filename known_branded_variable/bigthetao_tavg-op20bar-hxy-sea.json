@@ -8,35 +8,26 @@
   "variable_root_name": "bigthetao",
   "branding_suffix_name": "tavg-op20bar-hxy-sea",
   "long_name": "Sea Water Conservative Temperature at 200 meters",
-  "description": [
-    "Diagnostic should be contributed even for models using conservative temperature as prognostic field."
-  ],
+  "physical_parameter": "bigthetao",
+  "description": "Diagnostic should be contributed even for models using conservative temperature as prognostic field.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recISkthGVNIwCRKW",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "op20bar",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

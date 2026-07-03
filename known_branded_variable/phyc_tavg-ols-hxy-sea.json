@@ -8,6 +8,7 @@
   "variable_root_name": "phyc",
   "branding_suffix_name": "tavg-ols-hxy-sea",
   "long_name": "Sea Surface Phytoplankton Carbon Concentration",
+  "physical_parameter": "phycos",
   "description": [
     "sum of phytoplankton carbon component concentrations.  In most (all?) cases this is the sum of phycdiat and phycmisc (i.e., \"Diatom Carbon Concentration\" and \"Non-Diatom Phytoplankton Carbon Concentration\"",
     "sum of phytoplankton organic carbon component concentrations at the sea surface"
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rec3LIUkpPBZ4IIqx",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
   "region": [
     "global",
     "30s-90s"
@@ -39,6 +35,5 @@
   "temporal_label": "tavg",
   "vertical_label": "ols",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "mrroLi",
   "branding_suffix_name": "tavg-u-hxy-is",
   "long_name": "Land Ice Runoff Flux",
+  "physical_parameter": "mrroLi",
   "description": [
     "Runoff flux over land ice is the difference between any available liquid water in the snowpack less any refreezing. Computed as the sum of rainfall and melt of snow or ice less any refreezing or water retained in the snowpack"
   ],
@@ -17,17 +18,14 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where ice_sheet"
-  ],
-  "cell_measures": [
-    "area: areacellg"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where ice_sheet",
+  "cell_measures": "area: areacellg",
   "realm": [
     "landice",
     "land"
@@ -39,6 +37,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

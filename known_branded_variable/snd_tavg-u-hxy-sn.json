@@ -8,6 +8,7 @@
   "variable_root_name": "snd",
   "branding_suffix_name": "tavg-u-hxy-sn",
   "long_name": "Snow Thickness",
+  "physical_parameter": "sisnthick",
   "description": [
     "Actual thickness of snow averaged over the snow-covered part of the sea ice. This thickness is usually directly available within the model formulation. It can also be derived by dividing the total volume of snow by the area of the snow."
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where snow (for snow on sea ice only)"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where snow (for snow on sea ice only)",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
   "region": [
     "30s-90s",
     "global"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sn",
-  "positive_direction": ""
+  "area_label": "sn"
 }

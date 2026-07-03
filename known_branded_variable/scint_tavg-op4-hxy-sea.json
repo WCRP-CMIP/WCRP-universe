@@ -8,9 +8,8 @@
   "variable_root_name": "scint",
   "branding_suffix_name": "tavg-op4-hxy-sea",
   "long_name": "Integral wrt depth of seawater practical salinity expressed as salt mass content",
-  "description": [
-    "This is a fundamental aspect of the changes in the hydrological cycle and their impact on the oceans, and due to new numerical schemes and vertical discretizations, it is important to calculate it consistently with the model formulation."
-  ],
+  "physical_parameter": "scint",
+  "description": "This is a fundamental aspect of the changes in the hydrological cycle and their impact on the oceans, and due to new numerical schemes and vertical discretizations, it is important to calculate it consistently with the model formulation.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "pdepth",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "oplayer4",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "op4",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

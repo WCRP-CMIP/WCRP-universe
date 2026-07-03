@@ -8,6 +8,7 @@
   "variable_root_name": "wsg",
   "branding_suffix_name": "tmax-h10m-hxy-u",
   "long_name": "Maximum Wind Speed of Gust at 10m",
+  "physical_parameter": "wsgmax10m",
   "description": [
     "Wind speed gust maximum at 10m above surface",
     "Maximum Wind Speed of Gust at 10m, monthly"
@@ -18,26 +19,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean time: maximum"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rech7dChMsflzczqz",
+  "cell_methods": "area: mean time: maximum",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tmax",
   "vertical_label": "h10m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

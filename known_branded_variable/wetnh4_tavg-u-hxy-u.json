@@ -8,6 +8,7 @@
   "variable_root_name": "wetnh4",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Wet Deposition Rate of NH4",
+  "physical_parameter": "wetnh4",
   "description": [
     "Daily Wet Deposition Rate of NH4 at surface. Vertically integrated throughout the column to the surface.",
     "Surface deposition rate of ammonium (NH4) due to wet processes"
@@ -18,27 +19,21 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

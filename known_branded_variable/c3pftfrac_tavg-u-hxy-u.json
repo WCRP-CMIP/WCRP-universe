@@ -8,35 +8,26 @@
   "variable_root_name": "c3PftFrac",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Percentage Cover by C3 Plant Functional Type",
-  "description": [
-    "Percentage of entire grid cell  that is covered by C3 PFTs (including grass, crops, and trees)."
-  ],
+  "physical_parameter": "c3PftFrac",
+  "description": "Percentage of entire grid cell  that is covered by C3 PFTs (including grass, crops, and trees).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=reccyOEGJ24lbVg2y",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

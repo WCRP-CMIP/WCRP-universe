@@ -8,9 +8,8 @@
   "variable_root_name": "c2h4",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "C2H4  volume mixing ratio",
-  "description": [
-    "Mole fraction of ethene (C2H4) in air"
-  ],
+  "physical_parameter": "c2h4",
+  "description": "Mole fraction of ethene (C2H4) in air",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

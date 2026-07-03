@@ -8,6 +8,7 @@
   "variable_root_name": "sbl",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Surface Snow and Ice Sublimation Flux",
+  "physical_parameter": "sbl",
   "description": [
     "The snow and ice sublimation flux is the loss of snow and ice mass from the surface resulting from their conversion to water vapor that enters the atmosphere.",
     "surface upward flux of water vapor due to sublimation of surface snow and ice"
@@ -18,26 +19,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "landice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "landice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

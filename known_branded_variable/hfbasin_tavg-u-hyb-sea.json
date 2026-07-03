@@ -8,33 +8,25 @@
   "variable_root_name": "hfbasin",
   "branding_suffix_name": "tavg-u-hyb-sea",
   "long_name": "Northward Ocean Heat Transport",
-  "description": [
-    "Contains contributions from all physical processes affecting the northward heat transport, including resolved advection, parameterized advection, lateral diffusion, etc. Diagnosed here as a function of latitude and basin.   Use Celsius for temperature scale."
-  ],
+  "physical_parameter": "hfbasin",
+  "description": "Contains contributions from all physical processes affecting the northward heat transport, including resolved advection, parameterized advection, lateral diffusion, etc. Diagnosed here as a function of latitude and basin.   Use Celsius for temperature scale.",
   "data_type": "real",
   "dimensions": [
     "lat",
     "basin",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "basin",
     "time"
   ],
-  "cell_methods": [
-    "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin) where sea time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin) where sea time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hyb",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

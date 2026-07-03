@@ -8,35 +8,26 @@
   "variable_root_name": "sw",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Surface Water Storage",
-  "description": [
-    "Total liquid water storage, other than soil, snow or interception storage (i.e. lakes, river channel or depression storage)."
-  ],
+  "physical_parameter": "sw",
+  "description": "Total liquid water storage, other than soil, snow or interception storage (i.e. lakes, river channel or depression storage).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

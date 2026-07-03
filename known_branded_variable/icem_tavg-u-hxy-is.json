@@ -8,6 +8,7 @@
   "variable_root_name": "icem",
   "branding_suffix_name": "tavg-u-hxy-is",
   "long_name": "Ice Sheet Surface Ice Melt Flux",
+  "physical_parameter": "icem | icemIs | icem",
   "description": [
     "Loss of ice mass resulting from surface melting. Computed as the total surface melt water on the land ice portion of the grid cell divided by land ice area in the grid cell.",
     "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)"
@@ -18,21 +19,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where ice_sheet"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where ice_sheet",
   "cell_measures": [
     "area: areacellg",
     "area: areacella"
   ],
-  "realm": [
-    "landice"
-  ],
+  "realm": "landice",
   "region": [
     "antarctica",
     "global",
@@ -41,6 +39,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

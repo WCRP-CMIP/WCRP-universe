@@ -8,36 +8,29 @@
   "variable_root_name": "wdirwindsea",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Sea Wave Direction",
-  "description": [
-    "Mean direction of wave propagation (direction from which the wave is coming) derived from the wind-sea component of the wave energy spectrum (i.e., local wind waves). This variable is usually expressed in degrees relative to true north."
-  ],
+  "physical_parameter": "wdirwindsea",
+  "description": "Mean direction of wave propagation (direction from which the wave is coming) derived from the wind-sea component of the wave energy spectrum (i.e., local wind waves). This variable is usually expressed in degrees relative to true north.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
   "realm": [
     "ocean",
     "atmos"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

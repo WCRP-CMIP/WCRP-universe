@@ -8,30 +8,23 @@
   "variable_root_name": "epfz",
   "branding_suffix_name": "tavg-p39-hy-air",
   "long_name": "Upward Component of the Eliassen-Palm Flux",
-  "description": [
-    "zonal mean; hence YZT"
-  ],
+  "physical_parameter": "epfz",
+  "description": "zonal mean; hence YZT",
   "data_type": "real",
   "dimensions": [
     "lat",
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "plev39",
     "time"
   ],
-  "cell_methods": [
-    "longitude: time: mean where air"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "longitude: time: mean where air",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "p39",
   "horizontal_label": "hy",

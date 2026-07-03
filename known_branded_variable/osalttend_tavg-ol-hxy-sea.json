@@ -8,9 +8,8 @@
   "variable_root_name": "osalttend",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Tendency of Sea Water Salinity Expressed as Salt Content",
-  "description": [
-    "Tendency of salt content for a grid cell from all processes."
-  ],
+  "physical_parameter": "osalttend",
+  "description": "Tendency of salt content for a grid cell from all processes.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "mcu",
   "branding_suffix_name": "tavg-alh-hxy-u",
   "long_name": "Convective Updraft Mass Flux",
+  "physical_parameter": "mcu",
   "description": [
     "Calculated as the convective mass flux divided by the area of the whole grid cell (not just the area of the cloud)."
   ],
@@ -18,21 +19,16 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevhalf",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"

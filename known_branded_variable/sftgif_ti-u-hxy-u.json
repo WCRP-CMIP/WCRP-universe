@@ -8,33 +8,24 @@
   "variable_root_name": "sftgif",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Land Ice Area Percentage",
-  "description": [
-    "fraction of grid cell occupied by \"permanent\" ice (i.e., glaciers)."
-  ],
+  "physical_parameter": "sftgif",
+  "description": "fraction of grid cell occupied by \"permanent\" ice (i.e., glaciers).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

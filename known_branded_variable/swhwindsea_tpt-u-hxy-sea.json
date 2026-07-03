@@ -8,36 +8,29 @@
   "variable_root_name": "swhwindsea",
   "branding_suffix_name": "tpt-u-hxy-sea",
   "long_name": "Wind Sea Significant Wave Height",
-  "description": [
-    "Average height of the highest one-third of waves present in the sea state, incorporating just wind-sea waves (i.e., local wind waves). It is derived from the wind-sea wave spectrum using spectral moments. Specifically, this parameter is four times the square root of the integral over all directions and all frequencies of the two-dimensional wind-sea wave spectrum."
-  ],
+  "physical_parameter": "swhwindsea",
+  "description": "Average height of the highest one-third of waves present in the sea state, incorporating just wind-sea waves (i.e., local wind waves). It is derived from the wind-sea wave spectrum using spectral moments. Specifically, this parameter is four times the square root of the integral over all directions and all frequencies of the two-dimensional wind-sea wave spectrum.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where sea time: point"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: point",
+  "cell_measures": "area: areacello",
   "realm": [
     "ocean",
     "atmos"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

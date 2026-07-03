@@ -8,6 +8,7 @@
   "variable_root_name": "prsn",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Snowfall Flux",
+  "physical_parameter": "prsn",
   "description": [
     "at surface; includes precipitation of all forms of water in the solid phase",
     "at surface.  Includes precipitation of all forms water in the solid phase.  This is the 3-hour mean snowfall flux.",
@@ -19,20 +20,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

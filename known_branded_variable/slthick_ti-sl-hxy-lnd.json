@@ -8,35 +8,26 @@
   "variable_root_name": "slthick",
   "branding_suffix_name": "ti-sl-hxy-lnd",
   "long_name": "Thickness of Soil Layers",
-  "description": [
-    "Thickness of Soil Layers"
-  ],
+  "physical_parameter": "slthick",
+  "description": "Thickness of Soil Layers",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "depth"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "sdepth"
   ],
-  "cell_methods": [
-    "area: mean where land"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "sl",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

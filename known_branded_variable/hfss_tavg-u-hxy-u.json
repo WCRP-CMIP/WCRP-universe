@@ -8,6 +8,7 @@
   "variable_root_name": "hfss",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Surface Upward Sensible Heat Flux",
+  "physical_parameter": "hfss",
   "description": [
     "The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air.",
     "Hourly surface upward sensible heat flux",
@@ -19,20 +20,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "global",
     "30s-90s"

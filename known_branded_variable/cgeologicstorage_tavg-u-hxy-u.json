@@ -8,35 +8,26 @@
   "variable_root_name": "cGeologicStorage",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Carbon Mass in Geologic Storage",
-  "description": [
-    "Mass of carbon that has been intentionally sequestered in geologic storage. The definition of geologic storage here is that it be stored for periods of time that are long as compared to the simulation."
-  ],
+  "physical_parameter": "cGeologicStorage",
+  "description": "Mass of carbon that has been intentionally sequestered in geologic storage. The definition of geologic storage here is that it be stored for periods of time that are long as compared to the simulation.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

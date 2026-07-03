@@ -8,6 +8,7 @@
   "variable_root_name": "huss",
   "branding_suffix_name": "tavg-h2m-hxy-u",
   "long_name": "Near-Surface Specific Humidity",
+  "physical_parameter": "huss",
   "description": [
     "Near-surface (usually, 2 meter) specific humidity."
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

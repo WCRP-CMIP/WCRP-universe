@@ -8,28 +8,21 @@
   "variable_root_name": "rsdscs",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Surface Downwelling Clear-Sky Shortwave Radiation",
-  "description": [
-    "Surface solar irradiance clear sky for UV calculations"
-  ],
+  "physical_parameter": "rsdscs",
+  "description": "Surface solar irradiance clear sky for UV calculations",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",

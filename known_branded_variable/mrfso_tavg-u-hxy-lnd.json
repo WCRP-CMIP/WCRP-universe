@@ -8,36 +8,29 @@
   "variable_root_name": "mrfso",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Soil Frozen Water Content",
-  "description": [
-    "the mass (summed over all all layers) of frozen water."
-  ],
+  "physical_parameter": "mrfso",
+  "description": "the mass (summed over all all layers) of frozen water.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "landice",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

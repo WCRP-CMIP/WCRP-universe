@@ -8,9 +8,8 @@
   "variable_root_name": "sw2H",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Isotopic Ratio of Deuterium in Sea Water",
-  "description": [
-    "Ratio of abundance of hydrogen-2 (2H) atoms to hydrogen-1 (1H) atoms in sea water"
-  ],
+  "physical_parameter": "sw2H",
+  "description": "Ratio of abundance of hydrogen-2 (2H) atoms to hydrogen-1 (1H) atoms in sea water",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

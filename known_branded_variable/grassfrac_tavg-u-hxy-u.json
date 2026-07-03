@@ -8,35 +8,26 @@
   "variable_root_name": "grassFrac",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Natural Grass Area Percentage",
-  "description": [
-    "Percentage of entire grid cell that is covered by natural grass."
-  ],
+  "physical_parameter": "grassFrac",
+  "description": "Percentage of entire grid cell that is covered by natural grass.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recUHGeGN6aaMOInO",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

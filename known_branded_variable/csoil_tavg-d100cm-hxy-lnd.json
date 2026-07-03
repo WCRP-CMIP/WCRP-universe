@@ -8,35 +8,26 @@
   "variable_root_name": "cSoil",
   "branding_suffix_name": "tavg-d100cm-hxy-lnd",
   "long_name": "Carbon Mass in Soil Pool Above 1m Depth",
-  "description": [
-    "Report missing data over ocean grid cells. For fractional land report value averaged over the land fraction."
-  ],
+  "physical_parameter": "cSoilAbove1m",
+  "description": "Report missing data over ocean grid cells. For fractional land report value averaged over the land fraction.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recyly1RGX96KgoHu",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "d100cm",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

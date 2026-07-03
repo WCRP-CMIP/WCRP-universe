@@ -8,35 +8,26 @@
   "variable_root_name": "tos",
   "branding_suffix_name": "tpt-u-hxy-sea",
   "long_name": "Sea Surface Temperature",
-  "description": [
-    "temperature of surface of open ocean, sampled synoptically."
-  ],
+  "physical_parameter": "tos",
+  "description": "temperature of surface of open ocean, sampled synoptically.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where sea time: point"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: point",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

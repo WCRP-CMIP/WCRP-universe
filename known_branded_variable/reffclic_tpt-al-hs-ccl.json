@@ -8,33 +8,25 @@
   "variable_root_name": "reffclic",
   "branding_suffix_name": "tpt-al-hs-ccl",
   "long_name": "Hydrometeor Effective Radius of Convective Cloud Ice",
-  "description": [
-    "alevel site time1"
-  ],
+  "physical_parameter": "reffclic",
+  "description": "alevel site time1",
   "data_type": "real",
   "dimensions": [
     "lev",
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "alevel",
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where convective_cloud time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where convective_cloud time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hs",
-  "area_label": "ccl",
-  "positive_direction": ""
+  "area_label": "ccl"
 }

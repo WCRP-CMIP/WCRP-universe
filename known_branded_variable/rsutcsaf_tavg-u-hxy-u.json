@@ -8,32 +8,24 @@
   "variable_root_name": "rsutcsaf",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "TOA Outgoing Clear-Sky, Aerosol-Free Shortwave Radiation",
-  "description": [
-    "Flux corresponding to rsutcs resulting fom aerosol-free call to radiation"
-  ],
+  "physical_parameter": "rsutcsaf",
+  "description": "Flux corresponding to rsutcs resulting fom aerosol-free call to radiation",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

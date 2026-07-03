@@ -8,36 +8,29 @@
   "variable_root_name": "sichl",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Amount of Total Ice Algae Expressed as Chlorophyll in Sea Ice",
-  "description": [
-    "Vertically-integrated content of Chl-a in ice algae, expressed as kg of Chl-a per square meter of sea ice."
-  ],
+  "physical_parameter": "sichl",
+  "description": "Vertically-integrated content of Chl-a in ice algae, expressed as kg of Chl-a per square meter of sea ice.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea_ice (mask=siconc) depth: sum where sea_ice time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea_ice (mask=siconc) depth: sum where sea_ice time: mean",
+  "cell_measures": "area: areacello",
   "realm": [
     "ocnbgchem",
     "seaice"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "si",
-  "positive_direction": ""
+  "area_label": "si"
 }

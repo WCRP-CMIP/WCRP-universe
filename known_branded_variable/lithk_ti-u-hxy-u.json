@@ -8,34 +8,27 @@
   "variable_root_name": "lithk",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Ice sheet thickness",
-  "description": [
-    "This variable identifies the thickness of a prescribed ice sheet. This information is relevant to better understand how different models treat ice. For models where an ice sheet is just orography + an ice sheet mask, the value should be set to zero. For models that explicitly resolve an ice sheet thickness, the thickness of the ice sheet should be provided."
-  ],
+  "physical_parameter": "lithk",
+  "description": "This variable identifies the thickness of a prescribed ice sheet. This information is relevant to better understand how different models treat ice. For models where an ice sheet is just orography + an ice sheet mask, the value should be set to zero. For models that explicitly resolve an ice sheet thickness, the thickness of the ice sheet should be provided.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "landice",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

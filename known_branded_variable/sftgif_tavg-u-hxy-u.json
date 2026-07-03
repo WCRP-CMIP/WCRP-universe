@@ -8,6 +8,7 @@
   "variable_root_name": "sftgif",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Land Ice Area Percentage",
+  "physical_parameter": "sftgif",
   "description": [
     "This is needed in case the ice sheet area changes in time",
     "Percentage of grid cell covered by land ice (ice sheet, ice shelf, ice cap, glacier)"
@@ -18,21 +19,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
   "cell_measures": [
     "area: areacellg",
     "area: areacella"
   ],
-  "realm": [
-    "land"
-  ],
+  "realm": "land",
   "region": [
     "greenland",
     "antarctica",
@@ -41,6 +39,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

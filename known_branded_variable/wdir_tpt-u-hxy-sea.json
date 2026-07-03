@@ -8,35 +8,26 @@
   "variable_root_name": "wdir",
   "branding_suffix_name": "tpt-u-hxy-sea",
   "long_name": "Total Wave Direction",
-  "description": [
-    "Mean direction of wave propagation (direction from which the wave is coming) derived from the total wave energy spectrum, incorporating both wind-sea and swell waves. This variable is usually expressed in degrees relative to true north."
-  ],
+  "physical_parameter": "wdir",
+  "description": "Mean direction of wave propagation (direction from which the wave is coming) derived from the total wave energy spectrum, incorporating both wind-sea and swell waves. This variable is usually expressed in degrees relative to true north.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where sea time: point"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: point",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

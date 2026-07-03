@@ -8,35 +8,26 @@
   "variable_root_name": "dryso4",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Dry Deposition Rate of SO4",
-  "description": [
-    "Dry Deposition Rate of SO4"
-  ],
+  "physical_parameter": "dryso4",
+  "description": "Dry Deposition Rate of SO4",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

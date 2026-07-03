@@ -8,9 +8,8 @@
   "variable_root_name": "lossco",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Monthly Loss of Atmospheric Carbon Monoxide",
-  "description": [
-    "monthly averaged atmospheric loss"
-  ],
+  "physical_parameter": "lossco",
+  "description": "monthly averaged atmospheric loss",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

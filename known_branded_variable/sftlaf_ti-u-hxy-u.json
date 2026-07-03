@@ -8,33 +8,24 @@
   "variable_root_name": "sftlaf",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Fraction of the Grid Cell Occupied by Lake",
-  "description": [
-    "Fraction of horizontal land grid cell area occupied by lake."
-  ],
+  "physical_parameter": "sftlaf",
+  "description": "Fraction of horizontal land grid cell area occupied by lake.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recgPcW51vnMnoFeg",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

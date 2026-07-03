@@ -8,9 +8,8 @@
   "variable_root_name": "do3chm",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Net Chemistry Tendency of O3",
-  "description": [
-    "Net chemical production of ozone in the atmosphere"
-  ],
+  "physical_parameter": "do3chm",
+  "description": "Net chemical production of ozone in the atmosphere",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

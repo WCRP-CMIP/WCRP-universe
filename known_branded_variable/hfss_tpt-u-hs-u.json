@@ -8,28 +8,21 @@
   "variable_root_name": "hfss",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Surface Upward Sensible Heat Flux",
-  "description": [
-    "The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air."
-  ],
+  "physical_parameter": "hfss",
+  "description": "The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air.",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",

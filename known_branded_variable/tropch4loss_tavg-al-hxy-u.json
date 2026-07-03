@@ -8,9 +8,8 @@
   "variable_root_name": "tropch4loss",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Loss of Tropospheric Methane by all chemical destruction",
-  "description": [
-    "This is the loss rate of tropospheric methane by all chemical destruction. The distinction between stratosphere and troposphere should be consistent with the tropopause used in the calculation of the tropopause pressure (ptp).  It should have zero values in the stratosphere."
-  ],
+  "physical_parameter": "tropch4loss",
+  "description": "This is the loss rate of tropospheric methane by all chemical destruction. The distinction between stratosphere and troposphere should be consistent with the tropopause used in the calculation of the tropopause pressure (ptp).  It should have zero values in the stratosphere.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "tas",
   "branding_suffix_name": "tavg-h2m-hxy-u",
   "long_name": "Near-Surface Air Temperature",
+  "physical_parameter": "tas",
   "description": [
     "near-surface (usually, 2 meter) air temperature",
     "Hourly Temperature at 2m above the surface",
@@ -19,17 +20,14 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmos",
     "land"
@@ -41,6 +39,5 @@
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

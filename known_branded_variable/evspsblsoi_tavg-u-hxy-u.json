@@ -8,6 +8,7 @@
   "variable_root_name": "evspsblsoi",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Water Evaporation from Soil",
+  "physical_parameter": "evspsblsoi",
   "description": [
     "Water evaporation flux from soil but for daily averages i.e., the evspsblsoi variable, which is only currently defined for monthly averages",
     "Water evaporation from soil"
@@ -18,23 +19,16 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

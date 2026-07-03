@@ -8,35 +8,26 @@
   "variable_root_name": "mrsol",
   "branding_suffix_name": "tpt-d10cm-hxy-lnd",
   "long_name": "Moisture in Upper Portion of Soil Column",
-  "description": [
-    "the mass of water in all phases in a thin surface soil layer."
-  ],
+  "physical_parameter": "mrsos",
+  "description": "the mass of water in all phases in a thin surface soil layer.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where land time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recZsHEmlMFZcVyHD",
+  "cell_methods": "area: mean where land time: point",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "d10cm",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

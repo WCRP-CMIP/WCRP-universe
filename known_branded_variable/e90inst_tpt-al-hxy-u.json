@@ -8,9 +8,8 @@
   "variable_root_name": "e90inst",
   "branding_suffix_name": "tpt-al-hxy-u",
   "long_name": "Artificial tracer with 90 day lifetime",
-  "description": [
-    "Mole fraction of an artificial tracer with a 90-day lifetime (e90)"
-  ],
+  "physical_parameter": "e90inst",
+  "description": "Mole fraction of an artificial tracer with a 90-day lifetime (e90)",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean time: point",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

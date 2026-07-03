@@ -8,35 +8,26 @@
   "variable_root_name": "pr17O",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Precipitation Flux of Water Containing Oxygen-17 (H2 17O)",
-  "description": [
-    "Precipitation mass flux of water molecules that contain the oxygen-17 isotope (H2 17O), including solid and liquid phases."
-  ],
+  "physical_parameter": "pr17O",
+  "description": "Precipitation mass flux of water molecules that contain the oxygen-17 isotope (H2 17O), including solid and liquid phases.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

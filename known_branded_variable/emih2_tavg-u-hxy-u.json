@@ -8,33 +8,27 @@
   "variable_root_name": "emih2",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Total emission rate of molecular hydrogen (H2)",
-  "description": [
-    "This is the total emission rate of molecular hydrogen (H2) into the atmosphere (i.e., integrate 3D emission field vertically to 2d field)"
-  ],
+  "physical_parameter": "emih2",
+  "description": "This is the total emission rate of molecular hydrogen (H2) into the atmosphere (i.e., integrate 3D emission field vertically to 2d field)",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

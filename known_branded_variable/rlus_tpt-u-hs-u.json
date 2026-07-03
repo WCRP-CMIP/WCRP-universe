@@ -8,28 +8,21 @@
   "variable_root_name": "rlus",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Surface Upwelling Longwave Radiation",
-  "description": [
-    "The surface called \"surface\" means the lower boundary of the atmosphere. \"longwave\" means longwave radiation. Upwelling radiation is radiation from below. It does not mean \"net upward\". When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics."
-  ],
+  "physical_parameter": "rlus",
+  "description": "The surface called \"surface\" means the lower boundary of the atmosphere. \"longwave\" means longwave radiation. Upwelling radiation is radiation from below. It does not mean \"net upward\". When thought of as being incident on a surface, a radiative flux is sometimes called \"irradiance\". In addition, it is identical with the quantity measured by a cosine-collector light-meter and sometimes called \"vector irradiance\". In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",

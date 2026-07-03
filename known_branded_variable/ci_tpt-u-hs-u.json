@@ -8,31 +8,23 @@
   "variable_root_name": "ci",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Fraction of Time Convection Occurs in Cell",
-  "description": [
-    "Fraction of time that convection occurs in the grid cell ."
-  ],
+  "physical_parameter": "ci",
+  "description": "Fraction of time that convection occurs in the grid cell .",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,35 +8,26 @@
   "variable_root_name": "thetaot",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Vertically Averaged Sea Water Potential Temperature",
-  "description": [
-    "Vertically averaged ocean temperature"
-  ],
+  "physical_parameter": "thetaot",
+  "description": "Vertically averaged ocean temperature",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: depth: time: mean where sea"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: depth: time: mean where sea",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

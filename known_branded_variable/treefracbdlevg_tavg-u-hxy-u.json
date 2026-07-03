@@ -8,35 +8,26 @@
   "variable_root_name": "treeFracBdlEvg",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Broadleaf Evergreen Tree Area Percentage",
-  "description": [
-    "This is the percentage of the entire grid cell that is covered by broadleaf evergreen trees."
-  ],
+  "physical_parameter": "treeFracBdlEvg",
+  "description": "This is the percentage of the entire grid cell that is covered by broadleaf evergreen trees.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recnjexGUn1qxTedD",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

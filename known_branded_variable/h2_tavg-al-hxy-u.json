@@ -8,9 +8,8 @@
   "variable_root_name": "h2",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "H2 volume mixing ratio",
-  "description": [
-    "This is the mole fraction of molecular hydrogen (H2) in air"
-  ],
+  "physical_parameter": "h2",
+  "description": "This is the mole fraction of molecular hydrogen (H2) in air",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

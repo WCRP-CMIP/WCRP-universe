@@ -8,6 +8,7 @@
   "variable_root_name": "areacellg",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Grid-Cell Area for Ice Sheet Variables",
+  "physical_parameter": "areacellg",
   "description": [
     "Cell areas any grid used to report ice sheet variables. These cell areas should be defined to enable exact calculation of area integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere)"
   ],
@@ -16,17 +17,13 @@
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: sum"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "land"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: sum",
+  "realm": "land",
   "region": [
     "greenland",
     "antarctica"
@@ -34,6 +31,5 @@
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

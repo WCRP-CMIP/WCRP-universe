@@ -8,35 +8,26 @@
   "variable_root_name": "od550bc",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Black Carbon Optical Thickness at 550nm",
-  "description": [
-    "Total aerosol AOD due to black carbon aerosol at a wavelength of 550 nanometres."
-  ],
+  "physical_parameter": "od550bc",
+  "description": "Total aerosol AOD due to black carbon aerosol at a wavelength of 550 nanometres.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recq3Re0LCJH8Kblb",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

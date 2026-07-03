@@ -8,6 +8,7 @@
   "variable_root_name": "reffclwtop",
   "branding_suffix_name": "tavg-u-hxy-cl",
   "long_name": "Cloud-Top Effective Droplet Radius",
+  "physical_parameter": "reffclwtop",
   "description": [
     "Droplets are liquid only.  This is the effective radius \"as seen from space\" over liquid cloudy portion of grid cell. This is the value from uppermost model layer with liquid cloud or, if available, or for some models it is the sum over all liquid cloud tops, no matter where they occur, as long as they are seen from the top of the atmosphere.TOA) each time sample when computing monthly mean. Reported values are weighted by total liquid cloud top fraction of  (as seen from TOA) each time sample when computing monthly mean."
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where cloud (weighted by area of upper-most cloud liquid water layer)"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where cloud (weighted by area of upper-most cloud liquid water layer)",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
   "region": [
     "global",
     "30s-90s"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "cl",
-  "positive_direction": ""
+  "area_label": "cl"
 }

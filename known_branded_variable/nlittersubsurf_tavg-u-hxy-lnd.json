@@ -8,35 +8,26 @@
   "variable_root_name": "nLitterSubSurf",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Nitrogen Mass in Below-Ground Litter (non CWD)",
-  "description": [
-    "\"Content\" indicates a quantity per unit area. \"Litter\" is dead plant material in or above the soil. It is distinct from coarse wood debris. The precise distinction between \"fine\" and \"coarse\" is model dependent. \"Subsurface litter\" means the part of the litter mixed within the soil below the surface. The sum of the quantities with standard names wood_debris_mass_content_of_nitrogen, surface_litter_mass_content_of_nitrogen and subsurface_litter_mass_content_of_nitrogen is the total nitrogen mass content of dead plant material."
-  ],
+  "physical_parameter": "nLitterSubSurf",
+  "description": "\"Content\" indicates a quantity per unit area. \"Litter\" is dead plant material in or above the soil. It is distinct from coarse wood debris. The precise distinction between \"fine\" and \"coarse\" is model dependent. \"Subsurface litter\" means the part of the litter mixed within the soil below the surface. The sum of the quantities with standard names wood_debris_mass_content_of_nitrogen, surface_litter_mass_content_of_nitrogen and subsurface_litter_mass_content_of_nitrogen is the total nitrogen mass content of dead plant material.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

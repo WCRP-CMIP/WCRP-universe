@@ -8,35 +8,26 @@
   "variable_root_name": "wetdust",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Wet Deposition Rate of Dust",
-  "description": [
-    "Surface deposition rate of dust (dry mass) due to wet processes"
-  ],
+  "physical_parameter": "wetdust",
+  "description": "Surface deposition rate of dust (dry mass) due to wet processes",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

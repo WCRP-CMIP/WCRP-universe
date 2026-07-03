@@ -8,35 +8,26 @@
   "variable_root_name": "emiaoa",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Total Emission Rate of Anthropogenic Organic Aerosol",
-  "description": [
-    "anthropogenic part of emioa"
-  ],
+  "physical_parameter": "emiaoa",
+  "description": "anthropogenic part of emioa",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

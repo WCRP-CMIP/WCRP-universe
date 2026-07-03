@@ -8,35 +8,26 @@
   "variable_root_name": "thetao",
   "branding_suffix_name": "tavg-d300m-hxy-sea",
   "long_name": "Depth Average Potential Temperature of Upper 300m",
-  "description": [
-    "Upper 300m, 2D field"
-  ],
+  "physical_parameter": "thetaot300",
+  "description": "Upper 300m, 2D field",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: depth: time: mean where sea"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recg5HEomg2Ne9JD7",
+  "cell_methods": "area: depth: time: mean where sea",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "d300m",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

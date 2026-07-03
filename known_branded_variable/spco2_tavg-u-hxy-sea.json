@@ -8,6 +8,7 @@
   "variable_root_name": "spco2",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Surface Aqueous Partial Pressure of CO2",
+  "physical_parameter": "spco2",
   "description": [
     "The surface called \"surface\" means the lower boundary of the atmosphere. The partial pressure of a dissolved gas in sea water is the partial pressure in air with which it would be in equilibrium. The partial pressure of a gaseous constituent of air is the pressure which it alone would exert with unchanged temperature and number of moles per unit volume. The chemical formula for carbon dioxide is CO2."
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
   "region": [
     "global",
     "30s-90s"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

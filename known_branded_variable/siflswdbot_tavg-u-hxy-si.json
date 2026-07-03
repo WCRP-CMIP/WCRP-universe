@@ -8,32 +8,24 @@
   "variable_root_name": "siflswdbot",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Downwelling Shortwave Flux under Sea Ice",
-  "description": [
-    "Downwelling shortwave flux underneath sea ice, i.e. the amount of shortwave radiation that penetrates the sea ice and reaches the sea ice-ocean interface (energy flow per sea ice area). Always positive or zero."
-  ],
+  "physical_parameter": "siflswdbot",
+  "description": "Downwelling shortwave flux underneath sea ice, i.e. the amount of shortwave radiation that penetrates the sea ice and reaches the sea ice-ocean interface (energy flow per sea ice area). Always positive or zero.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea_ice (mask=siconc)"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea_ice (mask=siconc)",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

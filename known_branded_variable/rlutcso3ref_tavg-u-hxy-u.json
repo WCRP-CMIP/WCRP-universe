@@ -8,36 +8,29 @@
   "variable_root_name": "rlutcso3ref",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "TOA outgoing longwave flux assuming clear sky and reference ozone field",
-  "description": [
-    "This is the outgoing longwave flux at the top-of-atmosphere for clear-sky conditions from a diagnostic call to the radiation scheme using a reference ozone field"
-  ],
+  "physical_parameter": "rlutcso3ref",
+  "description": "This is the outgoing longwave flux at the top-of-atmosphere for clear-sky conditions from a diagnostic call to the radiation scheme using a reference ozone field",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

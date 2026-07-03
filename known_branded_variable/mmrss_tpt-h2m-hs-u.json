@@ -8,34 +8,27 @@
   "variable_root_name": "mmrss",
   "branding_suffix_name": "tpt-h2m-hs-u",
   "long_name": "Sea salt Aerosol Mass Mixing Ratio at CF sites near-surface",
-  "description": [
-    "This variable represents instantaneous near surface sea salt aerosol mass mixing ratio at CF sites, sampled every 3 hours"
-  ],
+  "physical_parameter": "mmrss",
+  "description": "This variable represents instantaneous near surface sea salt aerosol mass mixing ratio at CF sites, sampled every 3 hours",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [
-    "--MODEL"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: point time: point",
+  "cell_measures": "--MODEL",
   "realm": [
     "aerosol",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "h2m",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

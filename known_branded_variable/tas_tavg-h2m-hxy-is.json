@@ -8,35 +8,26 @@
   "variable_root_name": "tas",
   "branding_suffix_name": "tavg-h2m-hxy-is",
   "long_name": "Ice Sheet Near-Surface Air Temperature",
-  "description": [
-    "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)"
-  ],
+  "physical_parameter": "tasIs",
+  "description": "quantity averaged over ice_sheet (meaning grounded ice sheet and floating ice shelf) only, to avoid contamination from other surfaces (eg: permafrost)",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where ice_sheet"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "landice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: time: mean where ice_sheet",
+  "cell_measures": "area: areacella",
+  "realm": "landice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

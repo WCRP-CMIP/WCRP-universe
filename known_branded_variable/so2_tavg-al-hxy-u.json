@@ -8,6 +8,7 @@
   "variable_root_name": "so2",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "SO2 Volume Mixing Ratio",
+  "physical_parameter": "so2",
   "description": [
     "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y."
   ],
@@ -18,21 +19,16 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
   "region": [
     "global",
     "30s-90s"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

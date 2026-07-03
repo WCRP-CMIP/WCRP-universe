@@ -8,6 +8,7 @@
   "variable_root_name": "tas",
   "branding_suffix_name": "tavg-h2m-hm-is",
   "long_name": "Near-Surface Air Temperature",
+  "physical_parameter": "tas",
   "description": [
     "quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods"
   ],
@@ -15,13 +16,11 @@
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where ice_sheet"
-  ],
-  "cell_measures": [],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: time: mean where ice_sheet",
   "realm": [
     "atmos",
     "land",
@@ -34,6 +33,5 @@
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hm",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

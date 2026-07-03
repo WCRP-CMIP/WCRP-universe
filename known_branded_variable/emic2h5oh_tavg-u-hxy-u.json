@@ -8,36 +8,29 @@
   "variable_root_name": "emic2h5oh",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "total emission rate of C2H5OH",
-  "description": [
-    "This is the total emission rate of ethanol (C2H5OH) into the atmosphere"
-  ],
+  "physical_parameter": "emic2h5oh",
+  "description": "This is the total emission rate of ethanol (C2H5OH) into the atmosphere",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

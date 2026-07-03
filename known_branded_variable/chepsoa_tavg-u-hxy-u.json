@@ -8,35 +8,26 @@
   "variable_root_name": "chepsoa",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Chemical Production of Dry Aerosol Secondary Organic Matter",
-  "description": [
-    "If model lumps SOA emissions with POA, then the sum of POA and SOA emissions is reported as OA emissions. \"mass\" refers to the mass of primary organic matter, not mass of organic carbon alone."
-  ],
+  "physical_parameter": "chepsoa",
+  "description": "If model lumps SOA emissions with POA, then the sum of POA and SOA emissions is reported as OA emissions. \"mass\" refers to the mass of primary organic matter, not mass of organic carbon alone.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,36 +8,29 @@
   "variable_root_name": "reffccwctop",
   "branding_suffix_name": "tavg-u-hxy-cl",
   "long_name": "Cloud-Top Effective Radius of Liquid or Ice Cloud at Liquid or Ice Cloud Top",
-  "description": [
-    "Cloud-Top Effective Radius of Liquid or Ice Cloud at Liquid or Ice Cloud Top"
-  ],
+  "physical_parameter": "reffccwctop",
+  "description": "Cloud-Top Effective Radius of Liquid or Ice Cloud at Liquid or Ice Cloud Top",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where cloud (weighted by area of upper-most cloud layer)"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where cloud (weighted by area of upper-most cloud layer)",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "cl",
-  "positive_direction": ""
+  "area_label": "cl"
 }

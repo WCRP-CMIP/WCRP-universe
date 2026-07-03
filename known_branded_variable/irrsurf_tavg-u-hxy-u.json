@@ -8,35 +8,26 @@
   "variable_root_name": "irrSurf",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "irrigation water withdrawal from surface water",
-  "description": [
-    "the amount of water withdrawal for irrigation from surface water, including rivers, lakes, reservoirs, etc.)"
-  ],
+  "physical_parameter": "irrSurf",
+  "description": "the amount of water withdrawal for irrigation from surface water, including rivers, lakes, reservoirs, etc.)",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

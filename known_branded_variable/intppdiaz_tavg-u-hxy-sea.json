@@ -8,6 +8,7 @@
   "variable_root_name": "intppdiaz",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Net Primary Mole Productivity of Carbon by Diazotrophs",
+  "physical_parameter": "intppdiaz",
   "description": [
     "Vertically integrated primary (organic carbon) production by the diazotrophs alone"
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea depth: sum where sea (over entire ocean column) time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea depth: sum where sea (over entire ocean column) time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
   "region": [
     "30s-90s",
     "global"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

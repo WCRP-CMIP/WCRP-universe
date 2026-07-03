@@ -8,6 +8,7 @@
   "variable_root_name": "rsds",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Surface Downwelling Shortwave Radiation",
+  "physical_parameter": "rsds",
   "description": [
     "Surface solar irradiance for UV calculations.",
     "This is the 3-hour mean flux.",
@@ -20,20 +21,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "global",
     "30s-90s"

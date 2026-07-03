@@ -8,9 +8,8 @@
   "variable_root_name": "nh50",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Artificial Tracer with 50 Day Lifetime",
-  "description": [
-    "Fixed surface layer mixing ratio over 30o-50oN (100ppbv), uniform fixed 50-day exponential decay."
-  ],
+  "physical_parameter": "nh50",
+  "description": "Fixed surface layer mixing ratio over 30o-50oN (100ppbv), uniform fixed 50-day exponential decay.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

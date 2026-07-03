@@ -8,35 +8,26 @@
   "variable_root_name": "fNVegLitter",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Total Nitrogen Mass Flux from Vegetation to Litter",
-  "description": [
-    "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"Litter\" is dead plant material in or above the soil. \"Vegetation\" means any living plants e.g. trees, shrubs, grass."
-  ],
+  "physical_parameter": "fNVegLitter",
+  "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"Litter\" is dead plant material in or above the soil. \"Vegetation\" means any living plants e.g. trees, shrubs, grass.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

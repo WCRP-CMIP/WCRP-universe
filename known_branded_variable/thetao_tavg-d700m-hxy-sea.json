@@ -8,35 +8,26 @@
   "variable_root_name": "thetao",
   "branding_suffix_name": "tavg-d700m-hxy-sea",
   "long_name": "Depth Average Potential Temperature of Upper 700m",
-  "description": [
-    "Upper 700m, 2D field"
-  ],
+  "physical_parameter": "thetaot700",
+  "description": "Upper 700m, 2D field",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: depth: time: mean where sea"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recDMTey8NgtlH8yZ",
+  "cell_methods": "area: depth: time: mean where sea",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "d700m",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "sftgrf",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Grounded Ice Sheet Area Percentage",
+  "physical_parameter": "sftgrf",
   "description": [
     "This is needed in case the grounded ice sheet area changes in time (NO floating ice shelf)",
     "Percentage of grid cell covered by grounded ice sheet"
@@ -18,21 +19,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
   "cell_measures": [
     "area: areacellg",
     "area: areacella"
   ],
-  "realm": [
-    "landice"
-  ],
+  "realm": "landice",
   "region": [
     "antarctica",
     "global",
@@ -41,6 +39,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

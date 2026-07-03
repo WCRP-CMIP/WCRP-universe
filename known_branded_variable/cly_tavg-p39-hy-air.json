@@ -8,33 +8,25 @@
   "variable_root_name": "cly",
   "branding_suffix_name": "tavg-p39-hy-air",
   "long_name": "Total Inorganic Chlorine Volume Mixing Ratio",
-  "description": [
-    "Total family (the sum of all appropriate species in the model) ; list the species in the netCDF header, e.g. Cly = HCl + ClONO2 + HOCl + ClO + Cl + 2*Cl2O2 +2Cl2 + OClO + BrCl Definition: Total inorganic stratospheric chlorine (e.g., HCl, ClO) resulting from degradation of chlorine-containing source gases (CFCs, HCFCs, VSLS), and natural inorganic chlorine sources (e.g., sea salt and other aerosols) add comment attribute with detailed description about how the model calculates these fields"
-  ],
+  "physical_parameter": "cly",
+  "description": "Total family (the sum of all appropriate species in the model) ; list the species in the netCDF header, e.g. Cly = HCl + ClONO2 + HOCl + ClO + Cl + 2*Cl2O2 +2Cl2 + OClO + BrCl Definition: Total inorganic stratospheric chlorine (e.g., HCl, ClO) resulting from degradation of chlorine-containing source gases (CFCs, HCFCs, VSLS), and natural inorganic chlorine sources (e.g., sea salt and other aerosols) add comment attribute with detailed description about how the model calculates these fields",
   "data_type": "real",
   "dimensions": [
     "lat",
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "plev39",
     "time"
   ],
-  "cell_methods": [
-    "longitude: time: mean where air"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "longitude: time: mean where air",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "p39",
   "horizontal_label": "hy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

@@ -8,35 +8,26 @@
   "variable_root_name": "od550oa",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Total Organic Aerosol Optical Depth at 550nm",
-  "description": [
-    "total organic aerosol AOD, comprises all organic aerosols, primary + secondary ; natural + anthropogenic including biomasss burning organic aerosol"
-  ],
+  "physical_parameter": "od550oa",
+  "description": "total organic aerosol AOD, comprises all organic aerosols, primary + secondary ; natural + anthropogenic including biomasss burning organic aerosol",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recq3Re0LCJH8Kblb",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,9 +8,8 @@
   "variable_root_name": "clcalipsoliq",
   "branding_suffix_name": "tavg-h40-hxy-air",
   "long_name": "CALIPSO Liquid Cloud Percentage",
-  "description": [
-    "CALIPSO Liquid Cloud Fraction"
-  ],
+  "physical_parameter": "clcalipsoliq",
+  "description": "CALIPSO Liquid Cloud Fraction",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "alt",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alt40",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where air"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where air",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "h40",
   "horizontal_label": "hxy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

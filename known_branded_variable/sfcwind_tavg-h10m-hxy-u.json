@@ -8,6 +8,7 @@
   "variable_root_name": "sfcWind",
   "branding_suffix_name": "tavg-h10m-hxy-u",
   "long_name": "Near-Surface Wind Speed",
+  "physical_parameter": "sfcWind",
   "description": [
     "Hourly near-surface wind speed at 10m above the ground",
     "This is the mean of the speed, not the speed computed from the mean u and v components of wind",
@@ -20,20 +21,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rech7dChMsflzczqz",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -41,6 +37,5 @@
   "temporal_label": "tavg",
   "vertical_label": "h10m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

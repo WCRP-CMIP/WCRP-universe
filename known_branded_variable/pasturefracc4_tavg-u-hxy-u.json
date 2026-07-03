@@ -8,35 +8,26 @@
   "variable_root_name": "pastureFracC4",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "C4 Pasture Area Percentage",
-  "description": [
-    "Percentage of entire grid cell covered by C4 pasture"
-  ],
+  "physical_parameter": "pastureFracC4",
+  "description": "Percentage of entire grid cell covered by C4 pasture",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rec5WDsUZdazqGSaR",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

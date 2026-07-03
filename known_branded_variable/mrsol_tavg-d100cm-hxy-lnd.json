@@ -8,35 +8,26 @@
   "variable_root_name": "mrsol",
   "branding_suffix_name": "tavg-d100cm-hxy-lnd",
   "long_name": "Soil moisture in the top 1 m of the soil column",
-  "description": [
-    "Soil moisture at 3hr but for 0-1m"
-  ],
+  "physical_parameter": "mrso100",
+  "description": "Soil moisture at 3hr but for 0-1m",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recyly1RGX96KgoHu",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "d100cm",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

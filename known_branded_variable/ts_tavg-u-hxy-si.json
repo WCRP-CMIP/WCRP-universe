@@ -8,6 +8,7 @@
   "variable_root_name": "ts",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Surface Temperature of Sea Ice",
+  "physical_parameter": "sitemptop",
   "description": [
     "Mean surface temperature of the sea-ice covered part of the grid cell. Wherever snow covers the ice, the surface temperature of the snow is used for the averaging, otherwise the surface temperature of the ice is used."
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea_ice (mask=siconc)"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea_ice (mask=siconc)",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
   "region": [
     "global",
     "30s-90s"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "si",
-  "positive_direction": ""
+  "area_label": "si"
 }

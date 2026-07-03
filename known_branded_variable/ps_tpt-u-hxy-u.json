@@ -8,6 +8,7 @@
   "variable_root_name": "ps",
   "branding_suffix_name": "tpt-u-hxy-u",
   "long_name": "Surface Air Pressure",
+  "physical_parameter": "ps",
   "description": [
     "sampled synoptically to diagnose atmospheric tides, this is better than mean sea level pressure.",
     "Surface pressure.",
@@ -19,20 +20,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean time: point",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "global",
     "30s-90s"
@@ -40,6 +36,5 @@
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

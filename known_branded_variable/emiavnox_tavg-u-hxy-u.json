@@ -8,36 +8,29 @@
   "variable_root_name": "emiavnox",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Emission rate of NOx from aviation",
-  "description": [
-    "Emission rate of NOx from aircraft"
-  ],
+  "physical_parameter": "emiavnox",
+  "description": "Emission rate of NOx from aircraft",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

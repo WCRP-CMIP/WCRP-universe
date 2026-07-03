@@ -8,30 +8,23 @@
   "variable_root_name": "mc",
   "branding_suffix_name": "tpt-alh-hs-u",
   "long_name": "Convective Mass Flux",
-  "description": [
-    "The net mass flux should represent the difference between the updraft and downdraft components.  This is calculated as the convective mass flux divided by the area of the whole grid cell (not just the area of the updrafts)."
-  ],
+  "physical_parameter": "mc",
+  "description": "The net mass flux should represent the difference between the updraft and downdraft components.  This is calculated as the convective mass flux divided by the area of the whole grid cell (not just the area of the updrafts).",
   "data_type": "real",
   "dimensions": [
     "lev",
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "alevhalf",
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "alh",
   "horizontal_label": "hs",

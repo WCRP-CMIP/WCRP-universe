@@ -8,36 +8,29 @@
   "variable_root_name": "mpw",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Total Wave Mean Period",
-  "description": [
-    "Average wave period (i.e., time in-between two wave crests) across the entire two-dimensional wave spectrum, incorporating both wind-sea and swell waves. In spectral wind wave models, it is calculated using spectral moments, mathematical measures that describe the shape and characteristics of the wave spectrum."
-  ],
+  "physical_parameter": "mpw",
+  "description": "Average wave period (i.e., time in-between two wave crests) across the entire two-dimensional wave spectrum, incorporating both wind-sea and swell waves. In spectral wind wave models, it is calculated using spectral moments, mathematical measures that describe the shape and characteristics of the wave spectrum.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
   "realm": [
     "ocean",
     "atmos"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

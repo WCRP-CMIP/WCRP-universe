@@ -8,32 +8,24 @@
   "variable_root_name": "rsus",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Upwelling Shortwave Flux over Sea Ice",
-  "description": [
-    "Upward shortwave flux from the sea-ice surface to the atmosphere (energy flow per sea ice area). Always positive or zero."
-  ],
+  "physical_parameter": "siflswutop",
+  "description": "Upward shortwave flux from the sea-ice surface to the atmosphere (energy flow per sea ice area). Always positive or zero.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea_ice (mask=siconca)"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea_ice (mask=siconca)",
+  "cell_measures": "area: areacella",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

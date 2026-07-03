@@ -8,32 +8,24 @@
   "variable_root_name": "fg14co2abio",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Surface Downward Mass Flux of Carbon-14 as Abiotic 14CO2 [kgC m-2 s-1]",
-  "description": [
-    "Gas exchange flux of abiotic 14CO2 (positive into ocean)"
-  ],
+  "physical_parameter": "fg14co2abio",
+  "description": "Gas exchange flux of abiotic 14CO2 (positive into ocean)",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

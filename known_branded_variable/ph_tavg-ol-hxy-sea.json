@@ -8,9 +8,8 @@
   "variable_root_name": "ph",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "pH",
-  "description": [
-    "negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1."
-  ],
+  "physical_parameter": "ph",
+  "description": "negative log10 of hydrogen ion concentration with the concentration expressed as mol H kg-1.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

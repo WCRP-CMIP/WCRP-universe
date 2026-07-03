@@ -8,33 +8,25 @@
   "variable_root_name": "clw",
   "branding_suffix_name": "tpt-al-hs-u",
   "long_name": "Mass Fraction of Cloud Liquid Water",
-  "description": [
-    "Includes both large-scale and convective cloud.  This is the mass of  cloud liquid water in the grid cell divided by the mass of air (including the water in all phases) in the grid cell.  This includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model."
-  ],
+  "physical_parameter": "clw",
+  "description": "Includes both large-scale and convective cloud.  This is the mass of  cloud liquid water in the grid cell divided by the mass of air (including the water in all phases) in the grid cell.  This includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.",
   "data_type": "real",
   "dimensions": [
     "lev",
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "alevel",
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,35 +8,26 @@
   "variable_root_name": "cropFracC3",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Percentage Cover by C3 Crops",
-  "description": [
-    "Percentage of entire grid cell covered by C3 crops"
-  ],
+  "physical_parameter": "cropFracC3",
+  "description": "Percentage of entire grid cell covered by C3 crops",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recGRl0ME985VoIwI",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

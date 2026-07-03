@@ -8,9 +8,8 @@
   "variable_root_name": "wethno3",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "wet deposition of HNO3",
-  "description": [
-    "This is the loss rate of nitric acid (HNO3) from the atmosphere due to wet deposition"
-  ],
+  "physical_parameter": "wethno3",
+  "description": "This is the loss rate of nitric acid (HNO3) from the atmosphere due to wet deposition",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

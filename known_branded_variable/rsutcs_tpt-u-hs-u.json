@@ -8,28 +8,21 @@
   "variable_root_name": "rsutcs",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "TOA Outgoing Clear-Sky Shortwave Radiation",
-  "description": [
-    "Calculated in the absence of clouds."
-  ],
+  "physical_parameter": "rsutcs",
+  "description": "Calculated in the absence of clouds.",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",

@@ -8,35 +8,26 @@
   "variable_root_name": "o2min",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Oxygen Minimum Concentration",
-  "description": [
-    "mole concentration of oxygen at the local minimum in the concentration profile that occurs closest to the sea surface."
-  ],
+  "physical_parameter": "o2min",
+  "description": "mole concentration of oxygen at the local minimum in the concentration profile that occurs closest to the sea surface.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

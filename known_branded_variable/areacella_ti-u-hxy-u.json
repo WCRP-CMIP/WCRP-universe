@@ -8,32 +8,26 @@
   "variable_root_name": "areacella",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Grid-Cell Area for Atmospheric Grid Variables",
-  "description": [
-    "Cell areas for any grid used to report atmospheric variables and any other variable using that grid (e.g., soil moisture content). These cell areas should be defined to enable exact calculation of global integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere)."
-  ],
+  "physical_parameter": "areacella",
+  "description": "Cell areas for any grid used to report atmospheric variables and any other variable using that grid (e.g., soil moisture content). These cell areas should be defined to enable exact calculation of global integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: sum"
-  ],
-  "cell_measures": [],
+  "coordinates": "",
+  "cell_methods": "area: sum",
   "realm": [
     "atmos",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

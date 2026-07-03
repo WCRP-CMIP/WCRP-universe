@@ -8,6 +8,7 @@
   "variable_root_name": "sfpm10",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "PM10 Mass Mixing Ratio",
+  "physical_parameter": "mmrpm10",
   "description": [
     "Mass fraction atmospheric particulate compounds with an aerodynamic diameter of less than or equal to 10 micrometers"
   ],
@@ -18,21 +19,16 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
   "region": [
     "global",
     "30s-90s"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

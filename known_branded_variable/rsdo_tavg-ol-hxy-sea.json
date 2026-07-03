@@ -8,9 +8,8 @@
   "variable_root_name": "rsdo",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Downwelling Shortwave Radiation in Sea Water",
-  "description": [
-    "Downwelling Shortwave Radiation in Sea Water"
-  ],
+  "physical_parameter": "rsdo",
+  "description": "Downwelling Shortwave Radiation in Sea Water",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,24 +17,17 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",

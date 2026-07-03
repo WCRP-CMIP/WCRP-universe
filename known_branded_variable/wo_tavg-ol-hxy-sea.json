@@ -8,6 +8,7 @@
   "variable_root_name": "wo",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Sea Water Vertical Velocity",
+  "physical_parameter": "wo",
   "description": [
     "Prognostic z-ward velocity component resolved by the model."
   ],
@@ -18,21 +19,16 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
   "region": [
     "global",
     "30s-90s"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

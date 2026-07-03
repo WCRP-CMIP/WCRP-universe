@@ -8,6 +8,7 @@
   "variable_root_name": "tauv",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Surface Downward Northward Wind Stress",
+  "physical_parameter": "tauv",
   "description": [
     "surface, now requesting daily output.",
     "Downward northward wind stress at the surface"
@@ -18,23 +19,16 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

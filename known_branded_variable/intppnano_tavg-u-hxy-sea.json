@@ -8,35 +8,26 @@
   "variable_root_name": "intppnano",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Net Primary Organic Carbon Production by Nanophytoplankton",
-  "description": [
-    "Vertically integrated total primary (organic carbon) production by nanophytoplankton."
-  ],
+  "physical_parameter": "intppnano",
+  "description": "Vertically integrated total primary (organic carbon) production by nanophytoplankton.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea depth: sum where sea (over entire ocean column) time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea depth: sum where sea (over entire ocean column) time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

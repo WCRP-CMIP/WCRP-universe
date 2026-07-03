@@ -8,6 +8,7 @@
   "variable_root_name": "bldep",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Boundary Layer Depth",
+  "physical_parameter": "bldep",
   "description": [
     "Boundary Layer depth",
     "Boundary layer depth"
@@ -18,28 +19,22 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmos",
     "aerosol",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

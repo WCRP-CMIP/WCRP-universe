@@ -8,31 +8,23 @@
   "variable_root_name": "uas",
   "branding_suffix_name": "tpt-h10m-hs-u",
   "long_name": "Eastward Near-Surface Wind",
-  "description": [
-    "Eastward component of the near-surface (usually, 10 meters)  wind"
-  ],
+  "physical_parameter": "uas",
+  "description": "Eastward component of the near-surface (usually, 10 meters)  wind",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rech7dChMsflzczqz",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "h10m",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,32 +8,24 @@
   "variable_root_name": "sistryubot",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Y-Component of Ocean Stress on Sea Ice",
-  "description": [
-    "Y-component of the ocean stress on the sea ice bottom divided by grid-cell area."
-  ],
+  "physical_parameter": "sistryubot",
+  "description": "Y-component of the ocean stress on the sea ice bottom divided by grid-cell area.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea_ice (mask=siconc)"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea_ice (mask=siconc)",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

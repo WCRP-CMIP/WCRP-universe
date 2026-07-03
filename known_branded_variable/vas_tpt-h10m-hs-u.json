@@ -8,31 +8,23 @@
   "variable_root_name": "vas",
   "branding_suffix_name": "tpt-h10m-hs-u",
   "long_name": "Northward Near-Surface Wind",
-  "description": [
-    "Northward component of the near surface wind"
-  ],
+  "physical_parameter": "vas",
+  "description": "Northward component of the near surface wind",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rech7dChMsflzczqz",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "h10m",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

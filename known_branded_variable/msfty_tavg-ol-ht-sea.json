@@ -8,9 +8,8 @@
   "variable_root_name": "msfty",
   "branding_suffix_name": "tavg-ol-ht-sea",
   "long_name": "Ocean Y Overturning Mass Streamfunction",
-  "description": [
-    "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized."
-  ],
+  "physical_parameter": "msftyz",
+  "description": "Overturning mass streamfunction arising from all advective mass transport processes, resolved and parameterized.",
   "data_type": "real",
   "dimensions": [
     "rlat",
@@ -18,25 +17,18 @@
     "basin",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "gridlatitude",
     "olevel",
     "basin",
     "time"
   ],
-  "cell_methods": [
-    "grid_longitude: sum where sea time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "grid_longitude: sum where sea time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "ht",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

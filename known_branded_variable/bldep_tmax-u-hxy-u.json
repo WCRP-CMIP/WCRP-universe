@@ -8,35 +8,26 @@
   "variable_root_name": "bldep",
   "branding_suffix_name": "tmax-u-hxy-u",
   "long_name": "Maximum PBL Height",
-  "description": [
-    "maximum boundary layer height during the day (add cell_methods attribute: \"time: maximum\")"
-  ],
+  "physical_parameter": "maxpblz",
+  "description": "maximum boundary layer height during the day (add cell_methods attribute: \"time: maximum\")",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean time: maximum"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean time: maximum",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tmax",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

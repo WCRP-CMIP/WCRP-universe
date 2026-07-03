@@ -8,6 +8,7 @@
   "variable_root_name": "wetnoy",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Wet Deposition Rate of NOy Including Aerosol Nitrate",
+  "physical_parameter": "wetnoy",
   "description": [
     "NOy is the sum of all simulated oxidized nitrogen species, out of NO, NO2, HNO3, HNO4, NO3aerosol, NO3(radical), N2O5, PAN, other organic nitrates.",
     "Daily Wet Deposition Rate of NOy at surface. Vertically integrated throughout the column to the surface."
@@ -18,27 +19,21 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

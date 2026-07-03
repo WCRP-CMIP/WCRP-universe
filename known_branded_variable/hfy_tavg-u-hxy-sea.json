@@ -8,35 +8,26 @@
   "variable_root_name": "hfy",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Vertically Integrated Ocean Heat Y Transport",
-  "description": [
-    "Ocean heat y transport vertically integrated over the whole ocean depth. Contains all contributions to 'y-ward' heat transport from resolved and parameterized processes. Use Celsius for temperature scale. Report on native horizontal grid."
-  ],
+  "physical_parameter": "hfy",
+  "description": "Ocean heat y transport vertically integrated over the whole ocean depth. Contains all contributions to 'y-ward' heat transport from resolved and parameterized processes. Use Celsius for temperature scale. Report on native horizontal grid.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea depth: sum where sea (over entire ocean column) time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea depth: sum where sea (over entire ocean column) time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,37 +8,30 @@
   "variable_root_name": "bldep",
   "branding_suffix_name": "tpt-u-hxy-u",
   "long_name": "Boundary Layer Depth",
-  "description": [
-    "Boundary Layer Depth every 3 hours"
-  ],
+  "physical_parameter": "bldep",
+  "description": "Boundary Layer Depth every 3 hours",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean time: point",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmos",
     "aerosol",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "lithk",
   "branding_suffix_name": "ti-u-hxy-is",
   "long_name": "Ice Sheet Thickness",
+  "physical_parameter": "lithk",
   "description": [
     "The thickness of the ice sheet"
   ],
@@ -16,16 +17,13 @@
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean where ice_sheet"
-  ],
-  "cell_measures": [
-    "area: areacellg"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where ice_sheet",
+  "cell_measures": "area: areacellg",
   "realm": [
     "landice",
     "land"
@@ -37,6 +35,5 @@
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

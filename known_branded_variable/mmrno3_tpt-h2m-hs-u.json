@@ -8,34 +8,27 @@
   "variable_root_name": "mmrno3",
   "branding_suffix_name": "tpt-h2m-hs-u",
   "long_name": "Instantaneous near-surface NO3 aerosol mass mixing ratio at CF sites",
-  "description": [
-    "This variable represents the instantaneous near surface NO3 Aerosol Mass Mixing Ratio at CF sites, sampled every 3 hours"
-  ],
+  "physical_parameter": "mmrno3",
+  "description": "This variable represents the instantaneous near surface NO3 Aerosol Mass Mixing Ratio at CF sites, sampled every 3 hours",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [
-    "--MODEL"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: point time: point",
+  "cell_measures": "--MODEL",
   "realm": [
     "aerosol",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "h2m",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

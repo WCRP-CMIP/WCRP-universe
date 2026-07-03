@@ -8,32 +8,24 @@
   "variable_root_name": "rluscsaf",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Surface Upwelling Clear-Sky, Aerosol-Free Longwave Radiation",
-  "description": [
-    "Flux corresponding to rluscs resulting from an aerosol-free call to radiation"
-  ],
+  "physical_parameter": "rluscsaf",
+  "description": "Flux corresponding to rluscs resulting from an aerosol-free call to radiation",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

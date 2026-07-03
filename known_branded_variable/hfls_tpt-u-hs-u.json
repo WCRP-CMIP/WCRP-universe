@@ -8,28 +8,21 @@
   "variable_root_name": "hfls",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Surface Upward Latent Heat Flux",
-  "description": [
-    "includes both evaporation and sublimation"
-  ],
+  "physical_parameter": "hfls",
+  "description": "includes both evaporation and sublimation",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",

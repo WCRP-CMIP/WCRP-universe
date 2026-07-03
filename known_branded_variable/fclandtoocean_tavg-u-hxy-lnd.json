@@ -8,35 +8,26 @@
   "variable_root_name": "fCLandToOcean",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Lateral Transfer of Carbon out of Grid Cell That Eventually Goes into Ocean",
-  "description": [
-    "leached carbon etc that goes into run off or river routing and finds its way into ocean should be reported here."
-  ],
+  "physical_parameter": "fCLandToOcean",
+  "description": "leached carbon etc that goes into run off or river routing and finds its way into ocean should be reported here.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacellr"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacellr",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "snm",
   "branding_suffix_name": "tavg-u-hxy-is",
   "long_name": "Ice Sheet Surface Snow Melt",
+  "physical_parameter": "snmIs | snm | snm",
   "description": [
     "Loss of snow mass resulting from surface melting. Computed as the surface melt water from snow on the ice sheet portion of the grid cell divided by the ice_sheet area in the grid cell; report as 0.0 for snow-free land_ice regions; report as missing where the land fraction is 0.",
     "The total surface snow melt rate on the land portion of the grid cell divided by the land area in the grid cell; report as zero for snow-free land regions and missing where there is no land."
@@ -18,14 +19,13 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where ice_sheet"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where ice_sheet",
   "cell_measures": [
     "area: areacella",
     "area: areacellg"
@@ -42,6 +42,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "is",
-  "positive_direction": ""
+  "area_label": "is"
 }

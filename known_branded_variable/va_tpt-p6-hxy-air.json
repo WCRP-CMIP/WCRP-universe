@@ -8,9 +8,8 @@
   "variable_root_name": "va",
   "branding_suffix_name": "tpt-p6-hxy-air",
   "long_name": "Northward Wind",
-  "description": [
-    "Meridional wind (positive in a northward direction) on 6 pressure levels in the lower troposphere"
-  ],
+  "physical_parameter": "va6",
+  "description": "Meridional wind (positive in a northward direction) on 6 pressure levels in the lower troposphere",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "plev6",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean where air time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where air time: point",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "p6",
   "horizontal_label": "hxy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

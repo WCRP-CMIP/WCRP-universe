@@ -8,35 +8,26 @@
   "variable_root_name": "fAnthDisturb",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Carbon Mass Flux from Vegetation, Litter or Soil Pools into the Atmosphere Due to any Human Activity [kgC m-2 s-1]",
-  "description": [
-    "Anthropogenic flux of carbon as carbon dioxide into the atmosphere. That is, emissions influenced, caused, or created by human activity. Anthropogenic emission of carbon dioxide includes fossil fuel use, cement production, agricultural burning and sources associated with anthropogenic land use change, except forest regrowth."
-  ],
+  "physical_parameter": "fAnthDisturb",
+  "description": "Anthropogenic flux of carbon as carbon dioxide into the atmosphere. That is, emissions influenced, caused, or created by human activity. Anthropogenic emission of carbon dioxide includes fossil fuel use, cement production, agricultural burning and sources associated with anthropogenic land use change, except forest regrowth.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

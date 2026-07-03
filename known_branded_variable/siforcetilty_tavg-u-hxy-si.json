@@ -8,35 +8,26 @@
   "variable_root_name": "siforcetilty",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Sea-Surface Tilt Term in Force Balance (Y-Component)",
-  "description": [
-    "Y-component of the force on sea ice caused by sea-surface tilt divided by sea ice area."
-  ],
+  "physical_parameter": "siforcetilty",
+  "description": "Y-component of the force on sea ice caused by sea-surface tilt divided by sea ice area.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea_ice (mask=siconc)"
-  ],
-  "cell_measures": [
-    "--MODEL"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea_ice (mask=siconc)",
+  "cell_measures": "--MODEL",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "si",
-  "positive_direction": ""
+  "area_label": "si"
 }

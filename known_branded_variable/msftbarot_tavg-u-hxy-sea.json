@@ -8,35 +8,26 @@
   "variable_root_name": "msftbarot",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Ocean Barotropic Mass Streamfunction",
-  "description": [
-    "Streamfunction or its approximation for free surface models. See OMDP document for details."
-  ],
+  "physical_parameter": "msftbarot",
+  "description": "Streamfunction or its approximation for free surface models. See OMDP document for details.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

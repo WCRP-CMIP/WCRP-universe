@@ -8,6 +8,7 @@
   "variable_root_name": "libmassbf",
   "branding_suffix_name": "tavg-u-hxy-gis",
   "long_name": "Basal Specific Mass Balance Flux of Grounded Ice Sheet",
+  "physical_parameter": "libmassbfgr",
   "description": [
     "quantity averaged over grounded ice sheet",
     "quantity averaged over grounded land ice"
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where grounded_ice_sheet (mask=sfgrlf)"
-  ],
-  "cell_measures": [
-    "area: areacellg"
-  ],
-  "realm": [
-    "landice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where grounded_ice_sheet (mask=sfgrlf)",
+  "cell_measures": "area: areacellg",
+  "realm": "landice",
   "region": [
     "antarctica",
     "greenland"
@@ -39,6 +35,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "gis",
-  "positive_direction": ""
+  "area_label": "gis"
 }

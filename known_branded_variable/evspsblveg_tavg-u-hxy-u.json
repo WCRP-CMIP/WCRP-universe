@@ -8,6 +8,7 @@
   "variable_root_name": "evspsblveg",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Water evaporation from canopy",
+  "physical_parameter": "evspsblveg",
   "description": [
     "The same as the current variable evspsblveg but defined on daily timescales.",
     "Evaporation from canopy"
@@ -18,23 +19,16 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

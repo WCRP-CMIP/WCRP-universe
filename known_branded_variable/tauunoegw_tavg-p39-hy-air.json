@@ -8,33 +8,25 @@
   "variable_root_name": "tauunoegw",
   "branding_suffix_name": "tavg-p39-hy-air",
   "long_name": "Zonal mean eastward Reynolds stress from non-orographic eastward gravity wave parameterization",
-  "description": [
-    "Zonal mean vertical wave flux of zonal momentum within the non-orographic gravity wave parameterization associated with the eastward propagating modes."
-  ],
+  "physical_parameter": "tauunoegw",
+  "description": "Zonal mean vertical wave flux of zonal momentum within the non-orographic gravity wave parameterization associated with the eastward propagating modes.",
   "data_type": "real",
   "dimensions": [
     "lat",
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "plev39",
     "time"
   ],
-  "cell_methods": [
-    "longitude: time: mean where air"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "longitude: time: mean where air",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "p39",
   "horizontal_label": "hy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

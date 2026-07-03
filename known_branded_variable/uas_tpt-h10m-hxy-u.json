@@ -8,6 +8,7 @@
   "variable_root_name": "uas",
   "branding_suffix_name": "tpt-h10m-hxy-u",
   "long_name": "Eastward Near-Surface Wind",
+  "physical_parameter": "uas",
   "description": [
     "This is sampled synoptically.",
     "Near surface eastward wind",
@@ -19,26 +20,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rech7dChMsflzczqz",
+  "cell_methods": "area: mean time: point",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "h10m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

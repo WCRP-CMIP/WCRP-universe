@@ -8,32 +8,24 @@
   "variable_root_name": "nbp",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Carbon Mass Flux out of Atmosphere Due to Net Biospheric Production on Land [kgC m-2 s-1]",
-  "description": [
-    "This is the net mass flux of carbon between land and atmosphere calculated as photosynthesis MINUS the sum of  plant and soil respiration, carbonfluxes  from fire, harvest, grazing  and land use change. Positive flux  is into the land."
-  ],
+  "physical_parameter": "nbp",
+  "description": "This is the net mass flux of carbon between land and atmosphere calculated as photosynthesis MINUS the sum of  plant and soil respiration, carbonfluxes  from fire, harvest, grazing  and land use change. Positive flux  is into the land.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

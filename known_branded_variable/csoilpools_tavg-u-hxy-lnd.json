@@ -8,35 +8,26 @@
   "variable_root_name": "cSoilPools",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Carbon Mass in Each Model Soil Pool (Summed over Vertical Levels)",
-  "description": [
-    "For models with multiple soil carbon pools, report each pool here. If models also have vertical discretisation these should be aggregated"
-  ],
+  "physical_parameter": "cSoilPools",
+  "description": "For models with multiple soil carbon pools, report each pool here. If models also have vertical discretisation these should be aggregated",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

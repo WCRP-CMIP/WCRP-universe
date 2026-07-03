@@ -8,6 +8,7 @@
   "variable_root_name": "zostoga",
   "branding_suffix_name": "tavg-u-hm-sea",
   "long_name": "Global Average Thermosteric Sea Level Change",
+  "physical_parameter": "zostoga",
   "description": [
     "Global Average Thermosteric Sea Level Change",
     "There is no CMIP6 request for zosga nor zossga."
@@ -16,22 +17,15 @@
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,6 +8,7 @@
   "variable_root_name": "sfpm1",
   "branding_suffix_name": "tavg-h2m-hxy-u",
   "long_name": "Near-surface PM1.0 Mixing Ratio",
+  "physical_parameter": "sfpm1",
   "description": [
     "Hourly PM1.0 Mass Mixing Ratio near surface.",
     "Daily mean PM1.0 mass mixing ratio near surface."
@@ -18,27 +19,21 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmoschem"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "h2m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

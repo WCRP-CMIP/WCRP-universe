@@ -8,35 +8,26 @@
   "variable_root_name": "nOther",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Nitrogen Mass in Vegetation Components Other than Leaves, Stem and Root",
-  "description": [
-    "E.g. fruits, seeds, etc."
-  ],
+  "physical_parameter": "nOther",
+  "description": "E.g. fruits, seeds, etc.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

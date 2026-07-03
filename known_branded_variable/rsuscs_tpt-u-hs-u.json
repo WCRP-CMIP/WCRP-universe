@@ -8,28 +8,21 @@
   "variable_root_name": "rsuscs",
   "branding_suffix_name": "tpt-u-hs-u",
   "long_name": "Surface Upwelling Clear-Sky Shortwave Radiation",
-  "description": [
-    "Surface Upwelling Clear-sky Shortwave Radiation"
-  ],
+  "physical_parameter": "rsuscs",
+  "description": "Surface Upwelling Clear-sky Shortwave Radiation",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "u",
   "horizontal_label": "hs",

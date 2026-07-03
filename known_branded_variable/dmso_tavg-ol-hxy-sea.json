@@ -8,9 +8,8 @@
   "variable_root_name": "dmso",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Mole Concentration of Dimethyl Sulphide in Sea Water",
-  "description": [
-    "Mole concentration of dimethyl sulphide in water"
-  ],
+  "physical_parameter": "dmso",
+  "description": "Mole concentration of dimethyl sulphide in water",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

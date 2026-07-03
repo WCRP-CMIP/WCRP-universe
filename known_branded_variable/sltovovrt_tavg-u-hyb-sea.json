@@ -8,33 +8,25 @@
   "variable_root_name": "sltovovrt",
   "branding_suffix_name": "tavg-u-hyb-sea",
   "long_name": "Northward Ocean Salt Transport Due to Overturning",
-  "description": [
-    "From all advective mass transport processes, resolved and parameterized."
-  ],
+  "physical_parameter": "sltovovrt",
+  "description": "From all advective mass transport processes, resolved and parameterized.",
   "data_type": "real",
   "dimensions": [
     "lat",
     "basin",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "basin",
     "time"
   ],
-  "cell_methods": [
-    "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin)  time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin)  time: mean",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hyb",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

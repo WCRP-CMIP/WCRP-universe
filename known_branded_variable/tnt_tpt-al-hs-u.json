@@ -8,33 +8,25 @@
   "variable_root_name": "tnt",
   "branding_suffix_name": "tpt-al-hs-u",
   "long_name": "Tendency of Air Temperature",
-  "description": [
-    "Tendency of Air Temperature"
-  ],
+  "physical_parameter": "tnt",
+  "description": "Tendency of Air Temperature",
   "data_type": "real",
   "dimensions": [
     "lev",
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "alevel",
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

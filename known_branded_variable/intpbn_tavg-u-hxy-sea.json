@@ -8,35 +8,26 @@
   "variable_root_name": "intpbn",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Nitrogen Production",
-  "description": [
-    "Vertically integrated biogenic nitrogen production"
-  ],
+  "physical_parameter": "intpbn",
+  "description": "Vertically integrated biogenic nitrogen production",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea depth: sum where sea (over entire ocean column) time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "30s-90s"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea depth: sum where sea (over entire ocean column) time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "30s-90s",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

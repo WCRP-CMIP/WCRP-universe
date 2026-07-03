@@ -8,35 +8,26 @@
   "variable_root_name": "wetlandFrac",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Wetland Percentage Cover",
-  "description": [
-    "Percentage of grid cell covered by wetland. Report only one year if  fixed percentage is used, or time series if values are determined dynamically."
-  ],
+  "physical_parameter": "wetlandFrac",
+  "description": "Percentage of grid cell covered by wetland. Report only one year if  fixed percentage is used, or time series if values are determined dynamically.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recxGAee325tGpk8f",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

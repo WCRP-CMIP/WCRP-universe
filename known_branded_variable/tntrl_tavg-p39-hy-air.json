@@ -8,6 +8,7 @@
   "variable_root_name": "tntrl",
   "branding_suffix_name": "tavg-p39-hy-air",
   "long_name": "Zonal Mean Tendency of Air Temperature Due to Longwave Radiative Heating",
+  "physical_parameter": "tntrl",
   "description": [
     "Zonal mean tendency of air temperature due to longwave heating, all sky, with the extended number of vertical levels.",
     "zonal mean; hence YZT"
@@ -18,24 +19,17 @@
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "latitude",
     "plev39",
     "time"
   ],
-  "cell_methods": [
-    "longitude: time: mean where air"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "longitude: time: mean where air",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "p39",
   "horizontal_label": "hy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

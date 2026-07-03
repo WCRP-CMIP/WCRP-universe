@@ -8,6 +8,7 @@
   "variable_root_name": "treeFrac",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Tree Cover Percentage",
+  "physical_parameter": "treeFrac",
   "description": [
     "Percentage of entire grid cell  that is covered by trees.",
     "fraction of entire grid cell  that is covered by trees."
@@ -18,26 +19,18 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recSfXsRxYY3jhucH",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

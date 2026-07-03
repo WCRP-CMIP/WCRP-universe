@@ -8,6 +8,7 @@
   "variable_root_name": "vas",
   "branding_suffix_name": "tavg-h10m-hxy-u",
   "long_name": "Northward Near-Surface Wind",
+  "physical_parameter": "vas",
   "description": [
     "Northward component of the near surface wind",
     "Near surface northward wind"
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=rech7dChMsflzczqz",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "30s-90s",
     "global"
@@ -39,6 +35,5 @@
   "temporal_label": "tavg",
   "vertical_label": "h10m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,35 +8,26 @@
   "variable_root_name": "co3",
   "branding_suffix_name": "tavg-op20bar-hxy-sea",
   "long_name": "Carbonate Ion Concentration",
-  "description": [
-    "Mole concentration (number of moles per unit volume: molarity) of the carbonate anion (CO3)."
-  ],
+  "physical_parameter": "co3",
+  "description": "Mole concentration (number of moles per unit volume: molarity) of the carbonate anion (CO3).",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "ocnbgchem"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recISkthGVNIwCRKW",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
+  "realm": "ocnbgchem",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "op20bar",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

@@ -8,9 +8,8 @@
   "variable_root_name": "hfsnthermds",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Heat Flux into Sea Water Due to Snow Thermodynamics",
-  "description": [
-    "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  \"Snow thermodynamics\" refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion."
-  ],
+  "physical_parameter": "hfsnthermds",
+  "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.  The specification of a physical process by the phrase due_to_process means that the quantity named is a  single term in a sum of terms which together compose the general quantity  named by omitting the phrase.  \"Snow thermodynamics\" refers to the addition or subtraction of mass due to surface and basal fluxes, i.e., due to melting, sublimation and fusion.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

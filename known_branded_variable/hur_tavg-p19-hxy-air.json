@@ -8,6 +8,7 @@
   "variable_root_name": "hur",
   "branding_suffix_name": "tavg-p19-hxy-air",
   "long_name": "Relative Humidity",
+  "physical_parameter": "hur",
   "description": [
     "This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C."
   ],
@@ -18,21 +19,16 @@
     "plev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "plev19",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where air"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where air",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "global",
     "30s-90s"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "p19",
   "horizontal_label": "hxy",
-  "area_label": "air",
-  "positive_direction": ""
+  "area_label": "air"
 }

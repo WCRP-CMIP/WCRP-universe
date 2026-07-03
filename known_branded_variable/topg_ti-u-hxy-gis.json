@@ -8,6 +8,7 @@
   "variable_root_name": "topg",
   "branding_suffix_name": "ti-u-hxy-gis",
   "long_name": "Bedrock Altitude",
+  "physical_parameter": "topg",
   "description": [
     "The bedrock topography beneath the land ice"
   ],
@@ -16,19 +17,14 @@
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean where grounded_ice_sheet"
-  ],
-  "cell_measures": [
-    "area: areacellg"
-  ],
-  "realm": [
-    "landice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where grounded_ice_sheet",
+  "cell_measures": "area: areacellg",
+  "realm": "landice",
   "region": [
     "greenland",
     "antarctica"
@@ -36,6 +32,5 @@
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "gis",
-  "positive_direction": ""
+  "area_label": "gis"
 }

@@ -8,30 +8,24 @@
   "variable_root_name": "co2",
   "branding_suffix_name": "tclm-u-hm-u",
   "long_name": "Total Atmospheric Mass of CO2",
-  "description": [
-    "Total atmospheric mass of Carbon Dioxide"
-  ],
+  "physical_parameter": "co2",
+  "description": "Total atmospheric mass of Carbon Dioxide",
   "data_type": "real",
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time2"
   ],
-  "cell_methods": [
-    "height: sum (through atmospheric column) area: sum time: mean within years time: mean over years"
-  ],
-  "cell_measures": [],
+  "coordinates": "",
+  "cell_methods": "height: sum (through atmospheric column) area: sum time: mean within years time: mean over years",
   "realm": [
     "atmos",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tclm",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

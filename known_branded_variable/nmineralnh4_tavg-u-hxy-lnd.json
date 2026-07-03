@@ -8,35 +8,26 @@
   "variable_root_name": "nMineralNH4",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Mineral Ammonium in the Soil",
-  "description": [
-    "SUM of ammonium over all soil layers"
-  ],
+  "physical_parameter": "nMineralNH4",
+  "description": "SUM of ammonium over all soil layers",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

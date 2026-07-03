@@ -8,33 +8,24 @@
   "variable_root_name": "sftlf",
   "branding_suffix_name": "ti-u-hxy-u",
   "long_name": "Percentage of the Grid Cell Occupied by Land (Including Lakes)",
-  "description": [
-    "Percentage of horizontal area occupied by land."
-  ],
+  "physical_parameter": "sftlf",
+  "description": "Percentage of horizontal area occupied by land.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude"
   ],
-  "cell_methods": [
-    "area: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

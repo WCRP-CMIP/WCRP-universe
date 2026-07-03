@@ -8,6 +8,7 @@
   "variable_root_name": "modelcellareai",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "The Cell Area of the Ice Sheet Model",
+  "physical_parameter": "modelCellAreai",
   "description": [
     "When interpolated to a regular grid, it should be interpolated (not summed) with a conservative scheme to preserve total area"
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: sum time: mean"
-  ],
-  "cell_measures": [
-    "area: areacellg"
-  ],
-  "realm": [
-    "landice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: sum time: mean",
+  "cell_measures": "area: areacellg",
+  "realm": "landice",
   "region": [
     "antarctica",
     "greenland"
@@ -38,6 +34,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

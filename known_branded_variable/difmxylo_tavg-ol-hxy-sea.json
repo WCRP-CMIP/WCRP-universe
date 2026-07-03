@@ -8,9 +8,8 @@
   "variable_root_name": "difmxylo",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Ocean Momentum XY Laplacian Diffusivity",
-  "description": [
-    "Lateral Laplacian viscosity applied to the momentum equations."
-  ],
+  "physical_parameter": "difmxylo",
+  "description": "Lateral Laplacian viscosity applied to the momentum equations.",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

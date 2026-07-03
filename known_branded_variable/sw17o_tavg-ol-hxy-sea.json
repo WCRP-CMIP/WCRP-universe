@@ -8,9 +8,8 @@
   "variable_root_name": "sw17O",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Isotopic Ratio of Oxygen-17 in Sea Water",
-  "description": [
-    "Ratio of abundance of oxygen-17 (17O) atoms to oxygen-16 (16O) atoms in sea water"
-  ],
+  "physical_parameter": "sw17O",
+  "description": "Ratio of abundance of oxygen-17 (17O) atoms to oxygen-16 (16O) atoms in sea water",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

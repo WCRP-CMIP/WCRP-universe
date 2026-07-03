@@ -8,9 +8,8 @@
   "variable_root_name": "chegpso4",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Gas-Phase Production Rate of SO4",
-  "description": [
-    "proposed name: tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_due_to_gas_phase_net_chemical_production"
-  ],
+  "physical_parameter": "chegpso4",
+  "description": "proposed name: tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_due_to_gas_phase_net_chemical_production",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

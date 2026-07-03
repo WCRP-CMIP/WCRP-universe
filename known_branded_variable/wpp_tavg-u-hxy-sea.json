@@ -8,36 +8,29 @@
   "variable_root_name": "wpp",
   "branding_suffix_name": "tavg-u-hxy-sea",
   "long_name": "Total Wave Peak Period",
-  "description": [
-    "Wave period associated with the most energetic waves in total wave spectrum, incorporating both wind-sea and swell waves. In spectral wind wave models, this represents the spectral peak across the entire two-dimensional wave spectrum, incorporating both wind-sea and swell waves."
-  ],
+  "physical_parameter": "wpp",
+  "description": "Wave period associated with the most energetic waves in total wave spectrum, incorporating both wind-sea and swell waves. In spectral wind wave models, this represents the spectral peak across the entire two-dimensional wave spectrum, incorporating both wind-sea and swell waves.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello",
   "realm": [
     "ocean",
     "atmos"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

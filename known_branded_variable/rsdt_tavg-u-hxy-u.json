@@ -8,6 +8,7 @@
   "variable_root_name": "rsdt",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "TOA Incident Shortwave Radiation",
+  "physical_parameter": "rsdt",
   "description": [
     "at the top of the atmosphere",
     "Shortwave radiation incident at the top of the atmosphere"
@@ -18,20 +19,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "global",
     "30s-90s"

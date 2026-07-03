@@ -8,9 +8,8 @@
   "variable_root_name": "hcfc22",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "Mole Fraction of HCFC22",
-  "description": [
-    "This is the mole fraction of HCFC22 in air"
-  ],
+  "physical_parameter": "hcfc22",
+  "description": "This is the mole fraction of HCFC22 in air",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,27 +17,19 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "aerosol"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

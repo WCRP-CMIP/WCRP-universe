@@ -8,6 +8,7 @@
   "variable_root_name": "ccn1",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "CCN concentration at 1.0 percent supersaturation",
+  "physical_parameter": "ccn1",
   "description": [
     "This is the concentration of cloud condensation nuclei (CCN) at 1.0 percent supersaturation, based on aerosol chemical composition and size"
   ],
@@ -18,18 +19,15 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recQCnbSD27qHNevo",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "aerosol",
     "atmoschem"
@@ -41,6 +39,5 @@
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

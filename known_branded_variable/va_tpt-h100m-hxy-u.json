@@ -8,35 +8,26 @@
   "variable_root_name": "va",
   "branding_suffix_name": "tpt-h100m-hxy-u",
   "long_name": "Northward Wind at 100m",
-  "description": [
-    "Meridional wind (positive in a northward direction) at 100m above the surface."
-  ],
+  "physical_parameter": "va100m",
+  "description": "Meridional wind (positive in a northward direction) at 100m above the surface.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time1"
   ],
-  "cell_methods": [
-    "area: mean time: point"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recpEBgaxFcEkqTu1",
+  "cell_methods": "area: mean time: point",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "h100m",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

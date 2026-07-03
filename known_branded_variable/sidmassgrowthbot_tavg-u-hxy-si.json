@@ -8,35 +8,26 @@
   "variable_root_name": "sidmassgrowthbot",
   "branding_suffix_name": "tavg-u-hxy-si",
   "long_name": "Sea-Ice Mass Change Through Basal Growth",
-  "description": [
-    "Rate of change of sea-ice mass due to vertical growth of existing sea ice at its base divided by grid-cell area. Note that this number is always positive or zero since sea-ice melt is collected in sidmassmeltbot. This is to account for differential growth and melt in models with a sub-grid scale ice thickness distribution."
-  ],
+  "physical_parameter": "sidmassgrowthbot",
+  "description": "Rate of change of sea-ice mass due to vertical growth of existing sea ice at its base divided by grid-cell area. Note that this number is always positive or zero since sea-ice melt is collected in sidmassmeltbot. This is to account for differential growth and melt in models with a sub-grid scale ice thickness distribution.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where sea_ice over all_area_types"
-  ],
-  "cell_measures": [
-    "area: areacello"
-  ],
-  "realm": [
-    "seaice"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where sea_ice over all_area_types",
+  "cell_measures": "area: areacello",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "si",
-  "positive_direction": ""
+  "area_label": "si"
 }

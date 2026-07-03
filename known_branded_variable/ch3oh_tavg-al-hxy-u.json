@@ -8,9 +8,8 @@
   "variable_root_name": "ch3oh",
   "branding_suffix_name": "tavg-al-hxy-u",
   "long_name": "CH3OH  volume mixing ratio",
-  "description": [
-    "Mole fraction of methanol (CH3OH) in air"
-  ],
+  "physical_parameter": "ch3oh",
+  "description": "Mole fraction of methanol (CH3OH) in air",
   "data_type": "real",
   "dimensions": [
     "lon",
@@ -18,28 +17,22 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "atmoschem",
     "aerosol"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

@@ -8,33 +8,25 @@
   "variable_root_name": "va",
   "branding_suffix_name": "tpt-al-hs-u",
   "long_name": "Northward Wind",
-  "description": [
-    "Meridional wind (positive in a northward direction)."
-  ],
+  "physical_parameter": "va",
+  "description": "Meridional wind (positive in a northward direction).",
   "data_type": "real",
   "dimensions": [
     "lev",
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "alevel",
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "al",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

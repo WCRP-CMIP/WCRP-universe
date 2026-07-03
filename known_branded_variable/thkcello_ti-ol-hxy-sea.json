@@ -8,35 +8,26 @@
   "variable_root_name": "thkcello",
   "branding_suffix_name": "ti-ol-hxy-sea",
   "long_name": "Ocean Model Cell Thickness",
-  "description": [
-    "Thickness of ocean cells. \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell."
-  ],
+  "physical_parameter": "thkcello",
+  "description": "Thickness of ocean cells. \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "lev"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel"
   ],
-  "cell_methods": [
-    "area: mean where sea"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

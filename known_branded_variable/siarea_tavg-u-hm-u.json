@@ -8,6 +8,7 @@
   "variable_root_name": "siarea",
   "branding_suffix_name": "tavg-u-hm-u",
   "long_name": "Sea-Ice Area",
+  "physical_parameter": "siareas | siarean | siarean",
   "description": [
     "Total integrated area of sea ice in the Southern Hemisphere (where siconc > 0). Does not include grid cells partially covered by land.",
     "Total integrated area of sea ice in the Northern Hemisphere (where siconc > 0). Does not include grid cells partially covered by land."
@@ -16,16 +17,12 @@
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: sum time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "seaice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: sum time: mean",
+  "realm": "seaice",
   "region": [
     "southern-hemisphere",
     "northern-hemisphere"
@@ -33,6 +30,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

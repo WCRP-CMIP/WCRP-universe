@@ -8,31 +8,23 @@
   "variable_root_name": "tas",
   "branding_suffix_name": "tpt-h2m-hs-u",
   "long_name": "Near-Surface Air Temperature",
-  "description": [
-    "near-surface (usually, 2 meter) air temperature"
-  ],
+  "physical_parameter": "tas",
+  "description": "near-surface (usually, 2 meter) air temperature",
   "data_type": "real",
   "dimensions": [
     "site",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "site",
     "time1"
   ],
-  "cell_methods": [
-    "area: point time: point"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "atmos"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "link: table=Coordinates and Dimensions, record=recClMXimbjccdee3",
+  "cell_methods": "area: point time: point",
+  "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "h2m",
   "horizontal_label": "hs",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

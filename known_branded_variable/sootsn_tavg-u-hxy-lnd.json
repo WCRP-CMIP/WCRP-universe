@@ -8,36 +8,29 @@
   "variable_root_name": "sootsn",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Snow Soot Content",
-  "description": [
-    "the entire land portion of the grid cell is considered, with snow soot content set to 0.0 in regions free of snow."
-  ],
+  "physical_parameter": "sootsn",
+  "description": "the entire land portion of the grid cell is considered, with snow soot content set to 0.0 in regions free of snow.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
   "realm": [
     "landice",
     "land"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

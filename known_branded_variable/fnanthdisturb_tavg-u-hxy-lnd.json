@@ -8,35 +8,26 @@
   "variable_root_name": "fNAnthDisturb",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Nitrogen Mass Flux out of Land Due to any Human Activity",
-  "description": [
-    "will require some careful definition to make sure we capture everything - any human activity that releases nitrogen from land  instead of into product pool goes here. E.g. Deforestation fire, harvest assumed to decompose straight away, grazing..."
-  ],
+  "physical_parameter": "fNAnthDisturb",
+  "description": "will require some careful definition to make sure we capture everything - any human activity that releases nitrogen from land  instead of into product pool goes here. E.g. Deforestation fire, harvest assumed to decompose straight away, grazing...",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

@@ -8,33 +8,27 @@
   "variable_root_name": "rsus",
   "branding_suffix_name": "tavg-u-hxy-sn",
   "long_name": "Surface Upwelling Shortwave Radiation over Snow",
-  "description": [
-    "Surface Upwelling Shortwave Radiation over the portion of a land grid cell covered by snow. Can be used for computation of surface albedo."
-  ],
+  "physical_parameter": "rsuss",
+  "description": "Surface Upwelling Shortwave Radiation over the portion of a land grid cell covered by snow. Can be used for computation of surface albedo.",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean where snow (mask=snc)"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean where snow (mask=snc)",
+  "cell_measures": "area: areacella",
   "realm": [
     "land",
     "ocean"
   ],
-  "region": [
-    "global"
-  ],
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

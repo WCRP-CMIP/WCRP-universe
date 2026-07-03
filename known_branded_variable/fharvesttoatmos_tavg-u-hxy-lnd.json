@@ -8,32 +8,24 @@
   "variable_root_name": "fHarvestToAtmos",
   "branding_suffix_name": "tavg-u-hxy-lnd",
   "long_name": "Harvested Biomass That Goes Straight into Atmosphere as Carbon Mass Flux [kgC m-2 s-1]",
-  "description": [
-    "any harvested carbon that is assumed to decompose immediately into the atmosphere is reported here"
-  ],
+  "physical_parameter": "fHarvestToAtmos",
+  "description": "any harvested carbon that is assumed to decompose immediately into the atmosphere is reported here",
   "data_type": "real",
   "dimensions": [
     "lon",
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where land time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "land"
-  ],
-  "region": [
-    "global"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where land time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",

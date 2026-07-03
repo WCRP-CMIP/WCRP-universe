@@ -8,6 +8,7 @@
   "variable_root_name": "thetao",
   "branding_suffix_name": "tavg-ol-hxy-sea",
   "long_name": "Sea Water Potential Temperature",
+  "physical_parameter": "thetao",
   "description": [
     "Diagnostic should be contributed even for models using conservative temperature as prognostic field."
   ],
@@ -18,21 +19,16 @@
     "lev",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "olevel",
     "time"
   ],
-  "cell_methods": [
-    "area: mean where sea time: mean"
-  ],
-  "cell_measures": [
-    "area: areacello volume: volcello"
-  ],
-  "realm": [
-    "ocean"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: mean where sea time: mean",
+  "cell_measures": "area: areacello volume: volcello",
+  "realm": "ocean",
   "region": [
     "30s-90s",
     "global"
@@ -40,6 +36,5 @@
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "positive_direction": ""
+  "area_label": "sea"
 }

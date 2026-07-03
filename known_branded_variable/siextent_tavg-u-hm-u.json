@@ -8,6 +8,7 @@
   "variable_root_name": "siextent",
   "branding_suffix_name": "tavg-u-hm-u",
   "long_name": "Sea-Ice Extent",
+  "physical_parameter": "siextentn | siextents | siextents | siextentn",
   "description": [
     "Total integrated area of all Northern Hemisphere grid cells that are covered by at least 15% areal fraction of sea ice (siconc >= 15). Does not include grid cells partially covered by land.",
     "Total integrated area of all Southern Hemisphere grid cells that are covered by at least 15% areal fraction of sea ice (siconc >= 15). Does not include grid cells partially covered by land."
@@ -16,16 +17,12 @@
   "dimensions": [
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [],
-  "realm": [
-    "seaice"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "realm": "seaice",
   "region": [
     "northern-hemisphere",
     "southern-hemisphere"
@@ -33,6 +30,5 @@
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hm",
-  "area_label": "u",
-  "positive_direction": ""
+  "area_label": "u"
 }

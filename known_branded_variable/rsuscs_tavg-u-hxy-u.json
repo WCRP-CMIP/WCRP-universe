@@ -8,6 +8,7 @@
   "variable_root_name": "rsuscs",
   "branding_suffix_name": "tavg-u-hxy-u",
   "long_name": "Surface Upwelling Clear-Sky Shortwave Radiation",
+  "physical_parameter": "rsuscs",
   "description": [
     "Surface Upwelling Clear-sky Shortwave Radiation"
   ],
@@ -17,20 +18,15 @@
     "lat",
     "time"
   ],
-  "coordinates": [
+  "shapes_coordinates": [
     "longitude",
     "latitude",
     "time"
   ],
-  "cell_methods": [
-    "area: time: mean"
-  ],
-  "cell_measures": [
-    "area: areacella"
-  ],
-  "realm": [
-    "atmos"
-  ],
+  "coordinates": "",
+  "cell_methods": "area: time: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
   "region": [
     "global",
     "30s-90s"

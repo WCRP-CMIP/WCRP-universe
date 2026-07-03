@@ -27,7 +27,7 @@
             "@type":"@id",
             "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/temporal_label/"}
       },
-            "vertical_label": {
+      "vertical_label": {
             "@id": "https://esgvoc.ipsl.fr/resource/universe/vertical_label/",
             "@type":"@id",
             "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/vertical_label/"}
@@ -42,16 +42,7 @@
             "@type":"@id",
             "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/area_label/"}
       },
-      "frequency": {
-            "@id": "https://esgvoc.ipsl.fr/resource/universe/frequency/",
-            "@type":"@id",
-            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/frequency/"}
-        },
-      "table_id": {
-            "@id": "https://esgvoc.ipsl.fr/resource/universe/table/",
-            "@type":"@id",
-            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/table/"}
-      }
+      
       }
 }
 
