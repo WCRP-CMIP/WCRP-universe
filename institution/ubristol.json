@@ -1,0 +1,28 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ubristol",
+    "type": "institution",
+    "drs_name": "UBristol",
+    "acronyms": [
+        "UBristol"
+    ],
+    "labels": [
+        "University of Bristol",
+        "UK",
+        "Prifysgol Bryste"
+    ],
+    "description": "University of Bristol, UK",
+    "location": [
+        {
+            "city": "Bristol",
+            "country": "United Kingdom",
+            "lat": 51.45523,
+            "lon": -2.59665
+        }
+    ],
+    "ror": "0524sp257",
+    "urls": [
+        "http://bristol.ac.uk/",
+        "http://en.wikipedia.org/wiki/University_of_Bristol"
+    ]
+}
