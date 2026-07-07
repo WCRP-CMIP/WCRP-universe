@@ -2,12 +2,14 @@ schema_version: '1'
 project:
   id: universe
   name: WCRP Universe Controlled Vocabulary
-cv_version: 1.0.17
-universe_version: 1.0.17
+cv_version: 1.0.18
+universe_version: 1.0.18
 esgvoc:
   min_version: 4.0.0
 release_notes: |
-  - grid: 16 added
-  - model: 1 added
-  - organisation: 1 modified
-  - vertical_label: 2 modified
+  - institution: 1 added, 3 modified
+  - model: 1 removed
+  - model_componentEMD: 7 removed
+  - organisation: 3 modified
+  - reference: 1 removed
+  - source: 1 removed
