@@ -469,7 +469,6 @@ class Holder(BaseModel):
                 start_timestamp=start_timestamp,
                 end_timestamp=end_timestamp,
                 min_number_yrs_per_sim=min_number_yrs_per_sim,
-                parent_mip_era="cmip7",
                 tier=1,
             )
             self.experiments_project.append(proj)
@@ -613,13 +612,16 @@ class Holder(BaseModel):
 
             self.experiments_universe.append(univ)
 
-            proj = ExperimentProject(
+            init_kwargs = dict(
                 id=univ.drs_name.lower(),
                 activity=univ.activity,
                 min_number_yrs_per_sim=min_number_yrs_per_sim,
-                parent_mip_era="cmip7" if parent_experiment is not None else None,
                 tier=tier,
             )
+            if parent_experiment is not None:
+                init_kwargs["parent_mip_era"] = "cmip7"
+
+            proj = ExperimentProject(**init_kwargs)
             self.experiments_project.append(proj)
 
             self.add_experiment_to_activity(proj)
