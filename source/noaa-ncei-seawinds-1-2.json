@@ -1,1 +1,16 @@
-{"@context": "000_context.jsonld", "id": "noaa-ncei-seawinds-1-2", "type": "source_id", "drs_name": "NOAA-NCEI-SeaWinds-1-2", "description": {"institution_id": "NOAA-NCEI", "region": ["global_ocean"], "release_year": "2008", "source_description": "Blended Sea Surface Winds", "source_id": "NOAA-NCEI-SeaWinds-1-2", "source_label": "NOAA-NCEI-SeaWinds", "source_name": "NOAA NCEI SeaWinds", "source_type": "satellite_blended", "source_variables": ["sfcWind", "uas", "vas"], "source_version_number": "1.2"}}
+{
+    "@context": "000_context.jsonld",
+    "id": "noaa-ncei-seawinds-1-2",
+    "type": "source",
+    "drs_name": "NOAA-NCEI-SeaWinds-1-2",
+    "activity_participation": [
+        "obs4mips"
+    ],
+    "cohort": [],
+    "organisation_id": [],
+    "label": "NOAA-NCEI-SeaWinds",
+    "label_extended": "Blended Sea Surface Winds",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}
