@@ -1,16 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "iap-1-2",
-    "type": "source",
-    "drs_name": "IAP-1-2",
-    "activity_participation": [
-        "obs4mips"
-    ],
-    "cohort": [],
-    "organisation_id": [],
-    "label": "IAP",
-    "label_extended": "Sea Water Potential Temperature-In-situ (gridded) Chinese Academy of Sciences",
-    "license": {},
-    "model_component": null,
-    "release_year": null
-}
+{"@context": "000_context.jsonld", "id": "iap-1-2", "type": "source_id", "drs_name": "IAP-1-2", "description": {"institution_id": "CAS", "region": ["global_ocean"], "release_year": "2024", "source_description": "Sea Water Potential Temperature-In-situ (gridded) Chinese Academy of Sciences", "source_label": "IAP", "source_name": "IAP", "source_type": "gridded_insitu", "source_variables": ["thetao"], "source_version_number": "4.2"}}
