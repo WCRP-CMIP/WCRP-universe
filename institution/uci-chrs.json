@@ -1,14 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "uci-chrs",
-    "type": "institution",
-    "drs_name": "UCI-CHRS",
-    "acronyms": [],
-    "labels": [
-        "Center for Hydrometeorology and Remote Sensing"
-    ],
-    "description": "UCI-CHRS",
-    "location": [],
-    "ror": null,
-    "urls": []
-}
+{"@context": "000_context.jsonld", "id": "uci-chrs", "type": "institution_id", "drs_name": "UCI-CHRS", "description": "Center for Hydrometeorology and Remote Sensing"}

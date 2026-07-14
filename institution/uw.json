@@ -1,14 +1,1 @@
-{
-    "@context": "000_context.jsonld",
-    "id": "uw",
-    "type": "institution",
-    "drs_name": "UW",
-    "acronyms": [],
-    "labels": [
-        "University of Washington, USA"
-    ],
-    "description": "UW",
-    "location": [],
-    "ror": null,
-    "urls": []
-}
+{"@context": "000_context.jsonld", "id": "uw", "type": "institution_id", "drs_name": "UW", "description": "University of Washington, USA"}
