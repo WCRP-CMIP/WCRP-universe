@@ -1,1 +1,31 @@
-{"@context": "000_context.jsonld", "id": "ncar", "type": "institution_id", "drs_name": "NCAR", "description": "National Center for Atmospheric Research, Boulder, CO, USA"}
+{
+    "@context": "000_context.jsonld",
+    "id": "ncar",
+    "type": "institution",
+    "drs_name": "NCAR",
+    "acronyms": [
+        "NCAR"
+    ],
+    "labels": [
+        "National Center for Atmospheric Research",
+        "Boulder",
+        "CO",
+        "USA",
+        "NSF National Center for Atmospheric Research",
+        "National Science Foundation National Center for Atmospheric Research"
+    ],
+    "description": "The National Science Foundation National Center for Atmospheric Research (NSF NCAR) manages the development and maintenance of the Community Earth System Model (CESM).",
+    "location": [
+        {
+            "city": "Boulder",
+            "country": "United States",
+            "lat": 40.01499,
+            "lon": -105.27055
+        }
+    ],
+    "ror": "05cvfcr44",
+    "urls": [
+        "https://ncar.ucar.edu/",
+        "http://en.wikipedia.org/wiki/National_Center_for_Atmospheric_Research"
+    ]
+}

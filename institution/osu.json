@@ -1,1 +1,14 @@
-{"@context": "000_context.jsonld", "id": "osu", "type": "institution_id", "drs_name": "OSU", "description": "Oregon State University, OR, USA"}
+{
+    "@context": "000_context.jsonld",
+    "id": "osu",
+    "type": "institution",
+    "drs_name": "OSU",
+    "acronyms": [],
+    "labels": [
+        "Oregon State University, OR, USA"
+    ],
+    "description": "OSU",
+    "location": [],
+    "ror": null,
+    "urls": []
+}
