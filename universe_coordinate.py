@@ -33,18 +33,27 @@ from pydantic import BaseModel, Field
 import data_request_api.content.dreq_content as dc
 import data_request_api.query.dreq_query as dq
 
-DEFAULT_VERSION = "v1.2.2.4"
+DEFAULT_VERSION = "v1.2.2.5rc"
 DEFAULT_OUTPUT_DIR = "coordinate"
 CONTEXT_FILE = "000_context.jsonld"
 
-CMOR_REFERENCE_URLS = (
-    "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/tables/CMIP7_formula_terms.json",
-    "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/tables/CMIP7_grids.json",
-    "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/tables/CMIP7_coordinate.json",
-    "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/reference/MIP_coordinate.json",
-    "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/reference/MIP_formula_terms.json",
-    "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/reference/MIP_grids.json"
-)
+CMOR_REFERENCE_URLS = {
+    "coordinate": [
+        "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/tables/CMIP7_coordinate.json",
+        "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/reference/MIP_coordinate.json",
+        "https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables/blob/main/Tables/CORDEX-CMIP6_coordinate.json"
+    ],
+    "formula_terms": [
+        "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/tables/CMIP7_formula_terms.json",
+        "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/reference/MIP_formula_terms.json",
+        "https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables/blob/main/Tables/CORDEX-CMIP6_formula_terms.json"
+    ],
+    "grids": [
+        "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/tables/CMIP7_grids.json",
+        "https://github.com/WCRP-CMIP/cmip7-cmor-tables/blob/main/reference/MIP_grids.json",
+        "https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables/blob/main/Tables/CORDEX-CMIP6_grids.json"
+    ],
+}
 
 ScalarValue: TypeAlias = int | float | str
 
@@ -319,14 +328,19 @@ def find_reference_entries(document: Any) -> dict[str, dict[str, Any]]:
         "variable_entry"
     )
 
+    result = {}
     for container in preferred_containers:
         value = document.get(container)
         if isinstance(value, dict):
-            return {
-                str(key): entry
-                for key, entry in value.items()
-                if isinstance(entry, dict)
-            }
+            result.update(
+                {
+                    str(key): entry
+                    for key, entry in value.items()
+                    if isinstance(entry, dict)
+                }
+            )
+    if result:
+        return result
 
     ignored_keys = {
         "Header"
@@ -450,28 +464,33 @@ def reference_entry_to_coordinate(name: str, entry: dict[str, Any]) -> Coordinat
 
     return Coordinate(**drop_none(data))
 
-def load_cmor_reference_coordinates(urls: tuple[str, ...]) -> dict[str, Coordinate]:
+def load_cmor_reference_coordinates(urls: dict[str, str]) -> dict[str, Coordinate]:
     """Load coordinate-like entries from CMOR reference JSON files."""
     coordinates: dict[str, Coordinate] = {}
 
-    for url in urls:
-        try:
-            document = load_json_url(url)
-        except Exception as exc:
-            print(f"Warning: unable to load CMOR reference file {url!r}: {exc}")
-            continue
-
-        entries = find_reference_entries(document)
-        print(f"CMOR reference entries from {url.rsplit('/', 1)[-1]}: {len(entries)}")
-
-        for name, entry in entries.items():
-            if name in coordinates:
-                print(f"Info: duplicated CMOR reference coordinate skipped: {name}")
-                continue
+    for coord_type in ("coordinate", "formula_terms", "grids"):
+        for url in urls.get(coord_type, []):
             try:
-                coordinates[name] = reference_entry_to_coordinate(name, entry)
+                document = load_json_url(url)
             except Exception as exc:
-                print(f"Warning: unable to convert CMOR reference entry {name!r}: {exc}")
+                print(f"Warning: unable to load CMOR reference file {url!r}: {exc}")
+                continue
+
+            entries = find_reference_entries(document)
+            print(f"CMOR reference entries from {url.rsplit('/', 1)[-1]}: {len(entries)}")
+
+            for name, entry in entries.items():
+                mname = name
+                if coord_type == "grids":
+                    mname = "grids_"+name
+                if mname in coordinates:
+                    print(f"  - Info: duplicated CMOR reference coordinate skipped: {mname}")
+                    continue
+                try:
+                    coordinates[mname] = reference_entry_to_coordinate(mname, entry)
+                    print(f"  - Info: Added CMOR reference coordinate: {mname}")
+                except Exception as exc:
+                    print(f"  - Warning: unable to convert CMOR reference entry {mname!r}: {exc}")
 
     return coordinates
 
