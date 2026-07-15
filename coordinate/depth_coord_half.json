@@ -1,0 +1,16 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "depth_coord_half",
+  "type": "coordinate",
+  "drs_name": "lev",
+  "data_type": "double",
+  "cf_standard_name": "depth",
+  "long_name": "ocean depth coordinate",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "increasing",
+  "units": "m",
+  "has_bounds": false,
+  "valid_min": 0.0,
+  "valid_max": 12000.0
+}

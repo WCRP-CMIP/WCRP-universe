@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "grids_vertices",
+  "type": "coordinate",
+  "drs_name": "grids_vertices",
+  "data_type": "double"
+}

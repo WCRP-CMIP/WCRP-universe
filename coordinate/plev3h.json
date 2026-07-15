@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "plev3h",
+  "type": "coordinate",
+  "drs_name": "plev",
+  "data_type": "double",
+  "cf_standard_name": "air_pressure",
+  "long_name": "pressure",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
+  "units": "Pa",
+  "has_bounds": false,
+  "value": "['10000.', '1000.', '100.']"
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "depth",
+  "type": "coordinate",
+  "drs_name": "depth",
+  "data_type": "real",
+  "dimensions": [
+    "longitude latitude"
+  ],
+  "long_name": "Sea Floor Depth",
+  "units": "m"
+}

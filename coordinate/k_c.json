@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "k_c",
+  "type": "coordinate",
+  "drs_name": "k_c",
+  "data_type": "integer",
+  "long_name": "vertical coordinate formula term: k_c"
+}

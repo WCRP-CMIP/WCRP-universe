@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "orog2d",
+  "type": "coordinate",
+  "drs_name": "orog",
+  "data_type": "real",
+  "dimensions": [
+    "latitude"
+  ],
+  "long_name": "Surface Altitude",
+  "units": "m"
+}

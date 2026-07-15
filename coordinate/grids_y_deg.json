@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "grids_y_deg",
+  "type": "coordinate",
+  "drs_name": "y",
+  "data_type": "double",
+  "cf_standard_name": "projection_y_angular_coordinate",
+  "long_name": "y angular coordinate of projection",
+  "axis": "Y",
+  "units": "degrees"
+}

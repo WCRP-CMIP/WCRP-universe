@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "p0",
+  "type": "coordinate",
+  "drs_name": "p0",
+  "data_type": "double",
+  "cf_standard_name": "reference_air_pressure_for_atmosphere_vertical_coordinate",
+  "long_name": "vertical coordinate formula term: reference pressure",
+  "units": "Pa"
+}

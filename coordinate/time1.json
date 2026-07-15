@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "time1",
+  "type": "coordinate",
+  "drs_name": "time",
+  "data_type": "double",
+  "long_name": "Time Points",
+  "description": "synoptic times (for fields that are not time-means)",
+  "axis": "T",
+  "stored_direction": "increasing",
+  "units": "days since ?"
+}

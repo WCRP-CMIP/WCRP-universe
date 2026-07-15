@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ps",
+  "type": "coordinate",
+  "drs_name": "ps",
+  "data_type": "real",
+  "dimensions": [
+    "longitude latitude time"
+  ],
+  "cf_standard_name": "air_pressure",
+  "long_name": "Surface Air Pressure",
+  "units": "Pa"
+}

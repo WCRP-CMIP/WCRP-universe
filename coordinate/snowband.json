@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "snowband",
+  "type": "coordinate",
+  "drs_name": "snowband",
+  "data_type": "double",
+  "cf_standard_name": "surface_snow_thickness",
+  "long_name": "Snow Depth Band",
+  "units": "m",
+  "has_bounds": true
+}

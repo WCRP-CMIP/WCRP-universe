@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "landUse",
+  "type": "coordinate",
+  "drs_name": "landuse",
+  "data_type": "character",
+  "cf_standard_name": "area_type",
+  "long_name": "Land use type",
+  "has_bounds": false,
+  "value": "['primary_and_secondary_land', 'pastures', 'crops', 'urban']"
+}
