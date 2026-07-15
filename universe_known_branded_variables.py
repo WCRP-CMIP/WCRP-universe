@@ -26,7 +26,7 @@ from pydantic import BaseModel, Field, ValidationError
 import data_request_api.content.dreq_content as dc
 import data_request_api.query.dreq_query as dq
 
-DEFAULT_VERSION = "v1.2.2.4"
+DEFAULT_VERSION = "v1.2.2.5rc"
 DEFAULT_OUTPUT_DIR = "known_branded_variable"
 CONTEXT_FILE = "000_context.jsonld"
 
@@ -39,18 +39,10 @@ REGION_MAPPING = {
     "30S-90S": "30s-90s",
 }
 
-REALM_MAPPING = {
-    "tas.tavg-h2m-hxy-u": "atmos",
-}
-
 LONG_NAME_MAPPING = {
     "siarea_tavg-u-hm-u": "Sea-Ice Area",
-    "siarea_tavg-u-hm-u": "Sea-Ice Area",
-    "siextent_tavg-u-hm-u": "Sea-Ice Extent",
     "siextent_tavg-u-hm-u": "Sea-Ice Extent",
     "sisnmass_tavg-u-hm-si": "Snow Mass on Sea Ice",
-    "sisnmass_tavg-u-hm-si": "Snow Mass on Sea Ice",
-    "sivol_tavg-u-hm-u": "Sea-Ice Volume",
     "sivol_tavg-u-hm-u": "Sea-Ice Volume",
 }
 
@@ -74,7 +66,7 @@ class KnownBrandedVariable(BaseModel):
     # CF Standard Name context (flattened from hierarchy)
     cf_standard_name: str = Field(description="CF standard name, e.g., 'air_temperature'")
     cf_units: str = Field(description="CF standard units, e.g., 'K'")
-    
+
     # Variable Root context (flattened from hierarchy)
     variable_root_name: str = Field(description="Variable root name, e.g., 'ta'")
     branding_suffix_name: str = Field(description="Branding suffix, e.g., 'tavg-p19-hxy-air'")
@@ -84,9 +76,7 @@ class KnownBrandedVariable(BaseModel):
     physical_parameter: str = Field(description="Physical parameter")
     description: str | list[str] | None = Field(description="Variable description(s)")
     data_type: str = Field(description="Data type")
-    dimensions: list[str] = Field(description="NetCDF dimensions")
-    shapes_coordinates: list[str] = Field(description="Coordinate record names used to define spatial and temporal shapes")
-    coordinates: str = Field(default_factory=list, description="Required scalar or auxiliary coordinates")
+    dimensions: list[str] = Field(description="Dimensions field used in CMOR tables")
     cell_methods: str | list[str] = Field(description="CF cell_methods attribute(s)")
     cell_measures: str | list[str] | None = Field(default=None, description="CF cell_measures attribute(s)")
     realm: str | list[str] = Field(description="Earth system realms")
@@ -169,16 +159,6 @@ def get_first_record(table: Any, links: Any) -> Any | None:
         return None
     return table.get_record(links[0])
 
-def get_linked_attr(table: Any, links: Any, attr_name: str, default: str = "") -> str:
-    """Return attr_name from linked records as one whitespace-separated string."""
-    values: list[str] = []
-    for link in list_or_empty(links):
-        record = table.get_record(link)
-        value = get_attr(record, attr_name)
-        if value:
-            values.append(value)
-    return " ".join(values) if values else default
-
 def get_linked_values(table: Any, links: Any, attr_names: tuple[str, ...]) -> list[str]:
     """Return selected attributes from all linked records, preserving order and uniqueness."""
     values: list[str] = []
@@ -201,25 +181,65 @@ def get_table(tables: Any, *names: str) -> Any | None:
             continue
     return None
 
-def get_coordinate_output_name(coord_record: Any) -> str:
-    """Return the NetCDF output name used for a coordinate/dimension."""
-    return (
-        str_or_default(get_attr(coord_record, "output_name"))
-        or str_or_default(get_attr(coord_record, "out_name"))
-        or str_or_default(get_attr(coord_record, "name"))
-    )
-
 def get_coordinate_name(coord_record: Any) -> str:
     """Return the DReq coordinate record name used as coordinate JSON identifier."""
     return str_or_default(get_attr(coord_record, "name"))
 
-def add_shape_dimensions(result: list[str], shape_record: Any, coordinates: Any) -> None:
-    """Append dimensions from a spatial/temporal shape record."""
-    for dim_link in list_or_empty(get_attr(shape_record, "dimensions")):
-        coord_record = coordinates.get_record(dim_link)
-        coord_name = get_coordinate_output_name(coord_record)
-        if coord_name and coord_name not in result:
-            result.append(coord_name)
+
+def append_unique(values: list[str], incoming: str) -> None:
+    value = clean_str(str_or_default(incoming)).strip()
+    if value and value not in values:
+        values.append(value)
+
+
+def parse_dimension_tokens(value: Any) -> list[str]:
+    """Return dimension-like tokens from DR values preserving order and uniqueness."""
+    tokens: list[str] = []
+    if value in (None, "", []):
+        return tokens
+
+    if isinstance(value, str):
+        raw_tokens = re.split(r"[,\s]+", value)
+        for raw in raw_tokens:
+            append_unique(tokens, raw)
+        return tokens
+
+    for item in list_or_empty(value):
+        if isinstance(item, str):
+            for raw in re.split(r"[,\s]+", item):
+                append_unique(tokens, raw)
+        else:
+            append_unique(tokens, str(item))
+    return tokens
+
+
+def resolve_dimension_name(coordinates: Any, token: Any) -> str:
+    """Resolve a dimensions token to its DReq coordinate/dimension name when possible."""
+    text = clean_str(str_or_default(token)).strip()
+    if not text:
+        return ""
+
+    def get_name_from_record_id(record_id: str) -> str | None:
+        try:
+            record = coordinates.get_record(record_id)
+        except Exception:  # noqa: BLE001 - unknown or malformed record id.
+            return None
+        name = get_coordinate_name(record)
+        return name or None
+
+    try:
+        record = coordinates.get_record(token)
+    except Exception:  # noqa: BLE001 - token can already be a plain dimension name.
+        if "record=" in text:
+            record_id = text.split("record=", 1)[1].strip()
+            record_id = re.split(r"[,\s]+", record_id)[0]
+            resolved_name = get_name_from_record_id(record_id)
+            if resolved_name:
+                return resolved_name
+        return text
+    name = get_coordinate_name(record)
+    return name or text
+
 
 def add_shape_coordinate_names(result: list[str], shape_record: Any, coordinates: Any) -> None:
     """Append coordinate record names from a spatial/temporal shape record."""
@@ -252,37 +272,64 @@ def split_branded_variable_name(branded_name: str) -> tuple[str, str, str, str, 
 
     return suffix, temporal_label, vertical_label, horizontal_label, area_label
 
-def get_dimensions(var: Any, spatial_shapes: Any, temporal_shapes: Any, coordinates: Any) -> list[str]:
-    """Return NetCDF dimensions from spatial and temporal DReq shapes."""
+def get_linked_dimensions_in_dreq_order(
+    var: Any,
+    spatial_shapes: Any,
+    temporal_shapes: Any,
+    structures: Any | None,
+    coordinates: Any,
+) -> list[str]:
+    """Return dimensions in DR linked order: spatial, structure, temporal, coordinates."""
     dims: list[str] = []
 
     spatial_shape = get_first_record(spatial_shapes, get_attr(var, "spatial_shape"))
     if spatial_shape is not None:
-        add_shape_dimensions(dims, spatial_shape, coordinates)
+        add_shape_coordinate_names(dims, spatial_shape, coordinates)
+
+    if structures is not None and hasattr(var, "structure_title"):
+        structure = get_first_record(structures, get_attr(var, "structure_title"))
+        if structure is not None:
+            for dim_link in list_or_empty(get_attr(structure, "dimensions")):
+                dim_record = coordinates.get_record(dim_link)
+                append_unique(dims, get_coordinate_name(dim_record))
 
     temporal_shape = get_first_record(temporal_shapes, get_attr(var, "temporal_shape"))
     if temporal_shape is not None:
-        add_shape_dimensions(dims, temporal_shape, coordinates)
+        add_shape_coordinate_names(dims, temporal_shape, coordinates)
+
+    for coord_link in list_or_empty(get_attr(var, "coordinates")):
+        coord_record = coordinates.get_record(coord_link)
+        append_unique(dims, get_coordinate_name(coord_record))
 
     return dims
 
-def get_coordinate_names_from_shapes(var: Any, spatial_shapes: Any, temporal_shapes: Any, coordinates: Any) -> list[str]:
-    """Return DReq coordinate names from spatial and temporal DReq shapes."""
-    coord_names: list[str] = []
 
-    spatial_shape = get_first_record(spatial_shapes, get_attr(var, "spatial_shape"))
-    if spatial_shape is not None:
-        add_shape_coordinate_names(coord_names, spatial_shape, coordinates)
+def get_cmor_dimensions(
+    var: Any,
+    spatial_shapes: Any,
+    temporal_shapes: Any,
+    structures: Any | None,
+    coordinates: Any,
+) -> list[str]:
+    """Return CMOR dimensions preserving DR ordering and including extra_dimensions."""
+    dims: list[str] = []
 
-    temporal_shape = get_first_record(temporal_shapes, get_attr(var, "temporal_shape"))
-    if temporal_shape is not None:
-        add_shape_coordinate_names(coord_names, temporal_shape, coordinates)
+    # Follow DR logic: prefer variable.dimensions when present, otherwise linked order.
+    if hasattr(var, "dimensions"):
+        for token in parse_dimension_tokens(get_attr(var, "dimensions")):
+            append_unique(dims, resolve_dimension_name(coordinates, token))
+    else:
+        for dim in get_linked_dimensions_in_dreq_order(var, spatial_shapes, temporal_shapes, structures, coordinates):
+            append_unique(dims, dim)
 
-    return coord_names
+    # Append additional dimensions from explicit extra_dimension(s) fields.
+    for attr_name in ("extra_dimensions", "extra_dimension"):
+        if not hasattr(var, attr_name):
+            continue
+        for token in parse_dimension_tokens(get_attr(var, attr_name)):
+            append_unique(dims, resolve_dimension_name(coordinates, token))
 
-def get_coordinates(var: Any) -> str:
-    """Return coordinate names directly from the DR Variables Coordinates column."""
-    return clean_str(str_or_default(get_attr(var, "coordinates")))
+    return dims
 
 def get_realms(var: Any, modelling_realms: Any | None) -> str | list[str] | None:
     """Resolve primary and secondary modelling realms from DReq links."""
@@ -317,14 +364,11 @@ def get_long_name(var: Any, branded_name: str) -> str:
         ),
     )
 
-def list_or_none(values: list[str]) -> list[str] | None:
-    """Return a non-empty list, or None."""
-    return values or None
-    
 def build_known_branded_variable(
     var: Any,
     spatial_shapes: Any,
     temporal_shapes: Any,
+    structures: Any | None,
     coordinates: Any,
     cell_methods: Any,
     cell_measures: Any,
@@ -346,6 +390,14 @@ def build_known_branded_variable(
     assert len(get_attr(var, "physical_parameter")) == 1
     assert len(get_attr(var, "cell_methods")) == 1
 
+    dimensions = get_cmor_dimensions(
+        var,
+        spatial_shapes,
+        temporal_shapes,
+        structures,
+        coordinates,
+    )
+
     payload = {
         "id": branded_name.lower(),
         "type": "known_branded_variable",
@@ -358,9 +410,7 @@ def build_known_branded_variable(
         "physical_parameter": get_attr(physical_parameters.get_record(get_attr(var, "physical_parameter")[0]), "name"),
         "description": clean_str(get_attr(var, "description")),
         "data_type": get_attr(var, "type"),
-        "dimensions": get_dimensions(var, spatial_shapes, temporal_shapes, coordinates),
-        "shapes_coordinates": get_coordinate_names_from_shapes(var, spatial_shapes, temporal_shapes, coordinates),
-        "coordinates": get_coordinates(var),
+        "dimensions": dimensions,
         "cell_methods": get_attr(cell_methods.get_record(get_attr(var, "cell_methods")[0]), "cell_methods"),
         "cell_measures": (get_attr(cell_measures.get_record(get_attr(var, "cell_measures")[0]),"name",) if get_attr(var, "cell_measures") else None),
        "realm": get_realms(var, modelling_realms),
@@ -425,14 +475,40 @@ def merge_duplicate_branded_variable(
         if not values_equal(existing_data.get(key), incoming_data.get(key))
     ]
 
-    #print(f"Warning: duplicated branded variable differs and will be merged: {branded_name}")
+    print(f"Warning: duplicated branded variable differs and will be merged: {branded_name}")
 
-    list_fields = {"description", "cell_methods", "cell_measures", "region", "realm", "dimensions", "coordinates"}
+    list_fields = {
+        "description",
+        "cell_methods",
+        "cell_measures",
+        "region",
+        "realm",
+        "dimensions",
+    }
 
     for key in differing_keys:
         existing_value = existing_data.get(key)
         incoming_value = incoming_data.get(key)
-        #print(f"  - {key}: first={existing_value!r} duplicate={incoming_value!r}")
+        if key in [
+           "type",
+           "drs_name",
+           "variable_root_name",
+           "branding_suffix_name",
+           "temporal_label",
+           "vertical_label",
+           "horizontal_label",
+           "area_label"
+        ]:
+            raise ValueError(f"  - {key}: first={existing_value!r} duplicate={incoming_value!r}")
+        if key in [
+            "cf_standard_name",
+            "cf_units",
+            "dimensions",
+            "cell_methods",
+            "physical_parameter",
+            "data_type"
+        ]:
+            print(f"  - {key}: first={existing_value!r} duplicate={incoming_value!r}")
 
         if key in list_fields:
             merged[key] = merge_list_values(existing_value, incoming_value)
@@ -457,6 +533,7 @@ def load_known_branded_variables(version: str) -> dict[str, KnownBrandedVariable
     variables = tables["Variables"]
     spatial_shapes = tables["Spatial Shape"]
     temporal_shapes = tables["Temporal Shape"]
+    structures = get_table(tables, "Structure", "structure")
     coordinates = tables["Coordinates and Dimensions"]
     cell_methods = tables["Cell Methods"]
     cell_measures = tables["Cell Measures"]
@@ -481,6 +558,7 @@ def load_known_branded_variables(version: str) -> dict[str, KnownBrandedVariable
                 var,
                 spatial_shapes=spatial_shapes,
                 temporal_shapes=temporal_shapes,
+                structures=structures,
                 coordinates=coordinates,
                 cell_methods=cell_methods,
                 cell_measures=cell_measures,
