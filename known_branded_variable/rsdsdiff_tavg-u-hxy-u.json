@@ -5,24 +5,36 @@
   "drs_name": "rsdsdiff_tavg-u-hxy-u",
   "cf_standard_name": "surface_diffuse_downwelling_shortwave_flux_in_air",
   "cf_units": "W m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "rsdsdiff",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-u",
-  "description": "Surface Diffuse Downwelling Shortwave Radiation\n",
-  "dimensions": [
+  "long_name": "Surface Diffuse Downwelling Shortwave Radiation",
+  "physical_parameter": "rsdsdiff",
+  "description": [
+    "Surface Diffuse Downwelling Shortwave Radiation",
+    "Surface downwelling solar irradiance from diffuse radiation for UV calculations."
+  ],
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "time"
   ],
+  "shape_coordinates": [
+    "time"
+  ],
+  "scalar_coordinates": [],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": ": registered",
   "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
   "area_label": "u",
-  "bn_status": "accepted",
   "positive_direction": "down"
 }

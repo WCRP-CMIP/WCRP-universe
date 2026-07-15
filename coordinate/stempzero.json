@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "stempzero",
+  "type": "coordinate",
+  "drs_name": "stempzero",
+  "data_type": "double",
+  "cf_standard_name": "soil_temperature",
+  "long_name": "Soil Temperature Zero",
+  "axis": "Z",
+  "units": "degC",
+  "has_bounds": false,
+  "value": 0.0
+}

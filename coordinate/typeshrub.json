@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typeshrub",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "long_name": "Shrub area type",
+  "value": "shrubs",
+  "size": 1
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typecrop",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "long_name": "Crop area type",
+  "value": "crops",
+  "size": 1
+}

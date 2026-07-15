@@ -5,24 +5,32 @@
   "drs_name": "cldnvi_tavg-u-hxy-u",
   "cf_standard_name": "atmosphere_number_content_of_cloud_droplets",
   "cf_units": "m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "cldnvi",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-u",
-  "description": "Droplets are liquid only.  Values are weighted by liquid cloud fraction in each layer when vertically integrating, and for monthly means the samples are weighted by total liquid cloud fraction (as seen from TOA).\n",
-  "dimensions": [
+  "long_name": "Column Integrated Cloud Droplet Number",
+  "physical_parameter": "cldnvi",
+  "description": "Droplets are liquid only.  Values are weighted by liquid cloud fraction in each layer when vertically integrating, and for monthly means the samples are weighted by total liquid cloud fraction (as seen from TOA).",
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "time"
   ],
+  "shape_coordinates": [
+    "time"
+  ],
+  "scalar_coordinates": [],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": ": registered",
   "realm": "atmos",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "u"
 }

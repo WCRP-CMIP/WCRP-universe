@@ -5,24 +5,32 @@
   "drs_name": "sftlaf_ti-u-hxy-u",
   "cf_standard_name": "area_fraction",
   "cf_units": "%",
-  "cf_sn_status": "approved",
   "variable_root_name": "sftlaf",
-  "var_def_qualifier": "",
   "branding_suffix_name": "ti-u-hxy-u",
-  "description": "Fraction of horizontal land grid cell area occupied by lake.\n",
-  "dimensions": [
+  "long_name": "Fraction of the Grid Cell Occupied by Lake",
+  "physical_parameter": "sftlaf",
+  "description": "Fraction of horizontal land grid cell area occupied by lake.",
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "typelkins"
   ],
+  "shape_coordinates": [],
+  "scalar_coordinates": [
+    "typelkins"
+  ],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [],
   "cell_methods": "area: mean",
   "cell_measures": "area: areacella",
-  "history": ": registered",
   "realm": "land",
+  "region": "global",
   "temporal_label": "ti",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "u"
 }

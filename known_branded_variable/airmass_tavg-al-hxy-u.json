@@ -5,25 +5,35 @@
   "drs_name": "airmass_tavg-al-hxy-u",
   "cf_standard_name": "atmosphere_mass_of_air_per_unit_area",
   "cf_units": "kg m-2",
-  "cf_sn_status": "approved",
   "variable_root_name": "airmass",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-al-hxy-u",
-  "description": "The mass of air in an atmospheric layer.\n",
-  "dimensions": [
+  "long_name": "Vertically Integrated Mass Content of Air in Layer",
+  "physical_parameter": "airmass",
+  "description": "The mass of air in an atmospheric layer.",
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
+  "shape_coordinates": [
+    "time"
+  ],
+  "scalar_coordinates": [],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [
+    "alevel"
+  ],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": ": registered",
   "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "u"
 }

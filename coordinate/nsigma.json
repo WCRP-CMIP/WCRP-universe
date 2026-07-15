@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "nsigma",
+  "type": "coordinate",
+  "drs_name": "nsigma",
+  "data_type": "integer",
+  "long_name": "vertical coordinate formula term: nsigma"
+}

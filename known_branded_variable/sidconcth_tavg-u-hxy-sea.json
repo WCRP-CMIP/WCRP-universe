@@ -5,24 +5,32 @@
   "drs_name": "sidconcth_tavg-u-hxy-sea",
   "cf_standard_name": "tendency_of_sea_ice_area_fraction_due_to_thermodynamics",
   "cf_units": "s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "sidconcth",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-sea",
-  "description": "Total rate of change in sea-ice area fraction through thermodynamic processes.\n",
-  "dimensions": [
+  "long_name": "Sea-Ice Area Fraction Tendency Due to Thermodynamics",
+  "physical_parameter": "sidconcth",
+  "description": "Total rate of change in sea-ice area fraction through thermodynamic processes.",
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "time"
   ],
+  "shape_coordinates": [
+    "time"
+  ],
+  "scalar_coordinates": [],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [],
   "cell_methods": "area: mean where sea time: mean",
   "cell_measures": "area: areacello",
-  "history": ": registered",
-  "realm": "seaIce",
+  "realm": "seaice",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "sea"
 }

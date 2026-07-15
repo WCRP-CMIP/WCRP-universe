@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "a",
+  "type": "coordinate",
+  "drs_name": "a",
+  "data_type": "double",
+  "dimensions": [
+    "alevel"
+  ],
+  "long_name": "vertical coordinate formula term: a"
+}

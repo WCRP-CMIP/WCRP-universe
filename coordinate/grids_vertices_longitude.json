@@ -1,0 +1,13 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "grids_vertices_longitude",
+  "type": "coordinate",
+  "drs_name": "vertices_longitude",
+  "data_type": "double",
+  "dimensions": [
+    "vertices longitude latitude"
+  ],
+  "units": "degrees_east",
+  "valid_min": 0.0,
+  "valid_max": 360.0
+}

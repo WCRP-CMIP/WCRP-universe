@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "yant",
+  "type": "coordinate",
+  "drs_name": "yant",
+  "data_type": "double",
+  "long_name": "Y-coordinate of Antarctic grid",
+  "description": "Y-coordinate of Antarctic grid (stubb)",
+  "axis": "Y",
+  "units": "km"
+}

@@ -5,25 +5,35 @@
   "drs_name": "hcfc22_tavg-al-hxy-u",
   "cf_standard_name": "mole_fraction_of_hcfc22_in_air",
   "cf_units": "mol mol-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "hcfc22",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-al-hxy-u",
-  "description": "This is the mole fraction of HCFC22 in air\n",
-  "dimensions": [
+  "long_name": "Mole Fraction of HCFC22",
+  "physical_parameter": "hcfc22",
+  "description": "This is the mole fraction of HCFC22 in air",
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "alevel",
     "time"
   ],
+  "shape_coordinates": [
+    "time"
+  ],
+  "scalar_coordinates": [],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [
+    "alevel"
+  ],
   "cell_methods": "area: time: mean",
   "cell_measures": "area: areacella",
-  "history": ": registered",
   "realm": "aerosol",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "al",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "u"
 }

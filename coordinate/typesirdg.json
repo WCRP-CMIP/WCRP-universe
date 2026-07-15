@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typesirdg",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "long_name": "Sea Ice Ridge  area type",
+  "value": "sea_ice_ridges",
+  "size": 1
+}

@@ -5,25 +5,35 @@
   "drs_name": "hur_tpt-100hPa-hxy-u",
   "cf_standard_name": "relative_humidity",
   "cf_units": "%",
-  "cf_sn_status": "approved",
   "variable_root_name": "hur",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tpt-100hPa-hxy-u",
-  "description": "Relative humidity at 100 hPa\n",
-  "dimensions": [
+  "long_name": "hur100",
+  "physical_parameter": "hur100",
+  "description": "Relative humidity at 100 hPa",
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "time1",
     "p100"
   ],
+  "shape_coordinates": [
+    "time1"
+  ],
+  "scalar_coordinates": [
+    "p100"
+  ],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [],
   "cell_methods": "area: mean time: point",
   "cell_measures": "area: areacella",
-  "history": ": registered",
   "realm": "atmos",
+  "region": "global",
   "temporal_label": "tpt",
   "vertical_label": "100hPa",
   "horizontal_label": "hxy",
-  "area_label": "u",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "u"
 }

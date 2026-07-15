@@ -5,24 +5,32 @@
   "drs_name": "rivo_tavg-u-hxy-lnd",
   "cf_standard_name": "outgoing_water_volume_transport_along_river_channel",
   "cf_units": "m3 s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "rivo",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-u-hxy-lnd",
-  "description": "water\\_flux\\_from\\_upstream\n",
-  "dimensions": [
+  "long_name": "River Discharge",
+  "physical_parameter": "rivo",
+  "description": "water_flux_from_upstream",
+  "data_type": "real",
+  "cmor_dimensions": [
     "longitude",
     "latitude",
     "time"
   ],
+  "shape_coordinates": [
+    "time"
+  ],
+  "scalar_coordinates": [],
+  "grid_coordinates": [
+    "latitude",
+    "longitude"
+  ],
+  "parametric_coordinates": [],
   "cell_methods": "area: mean where land time: mean",
   "cell_measures": "area: areacellr",
-  "history": ": registered",
   "realm": "land",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "u",
   "horizontal_label": "hxy",
-  "area_label": "lnd",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "lnd"
 }

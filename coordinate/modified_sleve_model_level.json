@@ -1,0 +1,14 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "modified_sleve_model_level",
+  "type": "coordinate",
+  "drs_name": "lev",
+  "data_type": "double",
+  "cf_standard_name": "model_level_number",
+  "long_name": "Atmosphere Modified SLEVE Model Full-Levels (index; associated with 3D time-independent zfull and time-dependent pfull)",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
+  "units": "1",
+  "has_bounds": true
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ptop",
+  "type": "coordinate",
+  "drs_name": "ptop",
+  "data_type": "double",
+  "cf_standard_name": "air_pressure_at_top_of_atmosphere",
+  "long_name": "pressure at top of model",
+  "units": "Pa"
+}
