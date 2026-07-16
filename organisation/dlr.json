@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "dlr",
+    "type": "organisation",
+    "drs_name": "DLR",
+    "members": [
+        "dlr"
+    ],
+    "description": "The German Aerospace Center DLR is the Federal Republic of Germany\u2019s research centre for aviation, space, energy, transport, and security. The DLR Institute of Atmospheric Physics conducts research into the physics and chemistry of the global atmosphere, from the ground up to the upper edge of the middle atmosphere at an altitude of approximately 120 km."
+}
