@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "tempgrid-matsbn-1782169407",
+  "type": "grid",
+  "description": "Horizontal grid cell with a tripolar grid type.",
+  "drs_name": "tempgrid-matsbn-1782169407",
+  "region": "global"
+}
