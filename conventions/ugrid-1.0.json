@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ugrid-1.0",
+  "label": "UGRID-1.0",
+  "type": "conventions",
+  "drs_name": "UGRID-1.0",
+  "description": "https://ugrid-conventions.github.io/ugrid-conventions/"
+}
