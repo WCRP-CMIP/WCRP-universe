@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "wrf461u",
+  "type": "source",
+  "drs_name": "WRF461U",
+  "activity_participation": [
+    "DD"
+  ],
+  "cohort": [
+    "Registered"
+  ],
+  "organisation_id": [],
+  "label": "WRF v4.6.1-U",
+  "label_extended": "Weather Research and Forecasting model version 4.6.1, CORDEX WRF Community configuration U",
+  "license": null,
+  "model_component": null,
+  "release_year": "2024"
+}
