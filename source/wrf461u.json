@@ -12,7 +12,11 @@
   "organisation_id": [],
   "label": "WRF v4.6.1-U",
   "label_extended": "Weather Research and Forecasting model version 4.6.1, CORDEX WRF Community configuration U",
-  "license": null,
-  "model_component": null,
+  "license": {
+    "id": "CC BY 4.0",
+    "exceptions-contact": null,
+    "source-specific-info": ""
+  },
+  "model_component": {},
   "release_year": "2024"
 }

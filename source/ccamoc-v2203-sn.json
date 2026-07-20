@@ -12,7 +12,11 @@
   "organisation_id": [],
   "label": "CCAMoc v2203 SN",
   "label_extended": "Conformal Cubic Atmospheric Model, ocean-coupled configuration, version 2203 with spectral nudging",
-  "license": null,
-  "model_component": null,
+  "license": {
+    "id": "CC BY 4.0",
+    "exceptions-contact": null,
+    "source-specific-info": ""
+  },
+  "model_component": {},
   "release_year": "2022"
 }
