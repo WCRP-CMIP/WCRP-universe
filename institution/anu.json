@@ -4,14 +4,10 @@
     "type": "institution",
     "drs_name": "ANU",
     "acronyms": [
-        "ANU",
-        "ACCESS-NRI"
+        "ANU"
     ],
     "labels": [
-        "Australian National University",
-        "Australia's Climate Simulator",
-        "Australian Community Climate and Earth System Simulator",
-        "Australian Earth-System Simulator"
+        "Australian National University"
     ],
     "description": "The Australian National University hosts the ACCESS-NRI and NCI NCRIS facilities. ANU staff are ACCESS developers and users.",
     "location": [
@@ -22,9 +18,10 @@
             "lon": 149.12807
         }
     ],
-    "ror": "03qhv9c02",
+    "ror": "019wvm592",
     "urls": [
         "https://www.anu.edu.au/",
-        "https://www.access-nri.org.au"
+        "https://www.anu.edu.au",
+        "http://en.wikipedia.org/wiki/Australian_National_University"
     ]
 }
