@@ -1,0 +1,27 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ull",
+  "type": "institution",
+  "drs_name": "ull",
+  "acronyms": [
+    "ULL"
+  ],
+  "labels": [
+    "Universidad de La Laguna",
+    "Universidade de La Laguna",
+    "University of La Laguna"
+  ],
+  "description": "Universidad de La Laguna",
+  "location": [
+    {
+      "city": "San Cristóbal de La Laguna",
+      "country": "Spain",
+      "lat": 28.4853,
+      "lon": -16.32014
+    }
+  ],
+  "ror": "01r9z8p25",
+  "urls": [
+    "https://www.ull.es"
+  ]
+}

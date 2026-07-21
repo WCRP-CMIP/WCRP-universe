@@ -1,0 +1,22 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ccamoc-v2203-sn",
+  "type": "source",
+  "drs_name": "CCAMoc-v2203-SN",
+  "activity_participation": [
+    "DD"
+  ],
+  "cohort": [
+    "Registered"
+  ],
+  "organisation_id": [],
+  "label": "CCAMoc v2203 SN",
+  "label_extended": "Conformal Cubic Atmospheric Model, ocean-coupled configuration, version 2203 with spectral nudging",
+  "license": {
+    "id": "CC BY 4.0",
+    "exceptions-contact": null,
+    "source-specific-info": ""
+  },
+  "model_component": {},
+  "release_year": "2022"
+}

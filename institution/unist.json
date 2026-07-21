@@ -1,0 +1,27 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "unist",
+  "type": "institution",
+  "drs_name": "unist",
+  "acronyms": [
+    "UNIST"
+  ],
+  "labels": [
+    "Ulsan Gwahak Gisul Daehakgyo",
+    "Ulsan National Institute of Science and Technology",
+    "울산과학기술대학교"
+  ],
+  "description": "Ulsan National Institute of Science and Technology",
+  "location": [
+    {
+      "city": "Ulsan",
+      "country": "South Korea",
+      "lat": 35.53722,
+      "lon": 129.31667
+    }
+  ],
+  "ror": "017cjz748",
+  "urls": [
+    "https://www.unist.ac.kr"
+  ]
+}
