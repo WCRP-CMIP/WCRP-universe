@@ -7,14 +7,14 @@
     "start_timestamp": "1850-01-01",
     "activity": "rfmip",
     "additional_allowed_model_components": [
+        "aer",
         "chem",
         "bgc"
     ],
     "branch_information": null,
     "min_ensemble_size": 1,
     "required_model_components": [
-        "aogcm",
-        "aer"
+        "agcm"
     ],
     "tier": 1
 }
