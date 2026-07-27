@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "icon_xpp_1.1",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "ICON-XPP is a new CMIP7 model. It shares atmospheric and ocean dynamics with its precursor in CMIP6, ICON-ESM, but atmospheric physics has been completely replaced with the \"NWP\" physics package developed mostly by the German Meteorological Service, DWD. It retains however its triangular basic grid decomposition derived from the regular icosahedron; at different resolutions this grid is used across the atmosphere, land, and ocean domains. Compared to ICON-ESM, moreover the model features a higher resolution in both the atmosphere and ocean domains (it is now \"eddy-permitting\").  1. **ICON-XPP 1.1** couples the following model components:  - **ICON-A 1.1** atmosphere model, which solves atmospheric dynamics on an icosahedral grid at approximately 80 km resolution using a single-moment microphysics scheme, the ECRAD radiation scheme, and the MACv2 simple-plumes aerosol parameterization. It also includes sea-ice thermodynamics, representing heat transfer and phase changes within sea ice. - **ICON-O 1.1** ocean model, which solves ocean dynamics on an icosahedral grid at approximately 20 km resolution. - **ICON-Land 1.1** land model. For the concentration-driven simulations which this model variant is used for, the land component is **JSBACH 4**, which represents land-surface processes, hydrological processes, and carbon and nutrient cycling on the 80 km atmospheric grid. This includes the HD hydrological discharge model, which simulates surface runoff, baseflow, and river discharge. - **HAMOCC** ocean biogeochemistry model, which simulates ocean carbon reservoirs and other biogeochemical tracers. - **FESIM2** sea-ice model, which solves the elastic-viscous-plastic (EVP) equations governing sea-ice dynamics. It does not cover sea ice thermodynamics which is covered in ICON-A 1.1.  2. The model prescribes the following processes and forcings:  - Ozone concentrations follow the CMIP7 ozone climatology. - Anthropogenic aerosol effects are represented using the MACv2 simple-plume scheme. - The radiative impacts of volcanic aerosol injections into the stratosphere are prescribed. - Natural aerosols are prescribed using a background natural aerosol climatology. - Long-lived greenhouse gas concentrations are prescribed as spatially uniform constants. - Cloud droplet number concentrations (CDNC) are prescribed from a satellite-based climatology that has been modified to provide a plausible pre-industrial reference state. Within MACv2, CDNC is further adjusted to account for anthropogenic aerosol effects. - Land cover is prescribed through plant functional types (PFTs) subject to direct anthropogenic influence. PFT distributions do not respond dynamically to climate change.  3. The model omits the following processes:  - Dynamic land ice. Ice sheets are prescribed as static topographic features. - Interactive atmospheric chemistry. - Interactive aerosol microphysics and aerosol dynamics.  For long-lived anthropogenic greenhouse gases, the ICON-A radiation scheme explicitly considers CO\u2082, CH\u2084, N\u2082O, CFC-12, and CFC-11eq. Other minor greenhouse gases (including additional CFCs, HCFCs, and HFCs) are represented through the CMIP7 CFC-11-equivalent forcing and are therefore not treated separately.",
+  "calendar": [],
+  "release_year": null,
+  "references": [],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "ICON-XPP-1-1"
+}
