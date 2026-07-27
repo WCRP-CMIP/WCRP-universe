@@ -1,8 +1,0 @@
-{
-  "@context": "000_context.jsonld",
-  "id": "g228",
-  "type": "grid",
-  "description": "Horizontal grid cell with a plane projection grid type.",
-  "drs_name": "g228",
-  "region": "greenland, antarctica"
-}
