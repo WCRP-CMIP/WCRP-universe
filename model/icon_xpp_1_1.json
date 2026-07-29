@@ -1,6 +1,6 @@
 {
   "@context": "000_context.jsonld",
-  "id": "icon_xpp_1.1",
+  "id": "icon_xpp_1_1",
   "type": "model",
   "name": "",
   "family": null,
