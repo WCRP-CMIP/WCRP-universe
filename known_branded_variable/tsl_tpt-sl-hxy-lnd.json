@@ -1,0 +1,29 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "tsl_tpt-sl-hxy-lnd",
+  "type": "known_branded_variable",
+  "description": "Temperature of soil. Reported as missing for grid cells with no land.",
+  "drs_name": "tsl_tpt-sl-hxy-lnd",
+  "cf_standard_name": "soil_temperature",
+  "cf_units": "K",
+  "cf_sn_status": "approved",
+  "variable_root_name": "tsl",
+  "var_def_qualifier": "",
+  "branding_suffix_name": "tpt-sl-hxy-lnd",
+  "dimensions": [
+    "longitude",
+    "latitude",
+    "sdepth",
+    "time1"
+  ],
+  "cell_methods": "area: mean where land time: point",
+  "cell_measures": "area: areacella",
+  "history": ": registered",
+  "realm": "",
+  "temporal_label": "tpt",
+  "vertical_label": "sl",
+  "horizontal_label": "hxy",
+  "area_label": "lnd",
+  "bn_status": "accepted",
+  "positive_direction": ""
+}

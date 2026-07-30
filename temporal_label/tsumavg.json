@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "tsumavg",
+  "type": "temporal_label",
+  "description": "Data is the mean of daily sum over each time period (i.e. each reported interval defined by its time bounds).For example, the data may be reported monthly, with each value being the mean of the daily sunshine duration for each day in a month.",
+  "drs_name": "tsumavg"
+}
