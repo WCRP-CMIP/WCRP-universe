@@ -1,10 +1,12 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "ru-core",
-    "type": "organisation",
-    "drs_name": "RU-CORE",
-    "members": [
-        "ru-core"
-    ],
-    "description": "Ramkhamhaeng University Center Of Regional Climate Change and Renewable Energy"
+  "@context": "000_context.jsonld",
+  "id": "ru-core",
+  "type": "organisation",
+  "drs_name": "RU-CORE",
+  "members": [
+    "core",
+    "ru",
+    "ru-core"
+  ],
+  "description": "Ramkhamhaeng University Center Of Regional Climate Change and Renewable Energy"
 }
