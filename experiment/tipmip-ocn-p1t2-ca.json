@@ -1,0 +1,34 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "tipmip-ocn-p1t2-ca",
+  "type": "experiment",
+  "experiment_id": "tipmip-ocn-p1t2-ca",
+  "activity_id": [
+    "tipmip"
+  ],
+  "additional_allowed_model_components": [
+    "aer",
+    "bgc",
+    "chem",
+    "ism"
+  ],
+  "description": "Constant 0.3 Sv of water hosing over the North Atlantic and Arctiv North (North of 50 N) starting from a GWL2 stabilized run.",
+  "end_year": null,
+  "experiment": "NaHosMIP under GWL2",
+  "min_number_yrs_per_sim": 50,
+  "parent_activity_id": [
+    "tipmip"
+  ],
+  "parent_experiment_id": [
+    "esm-up2p0-gwl2p0"
+  ],
+  "required_model_components": [
+    "aogcm"
+  ],
+  "start_year": null,
+  "sub_experiment_id": [
+    "none"
+  ],
+  "tier": 2,
+  "drs_name": "tipmip-ocn-p1t2-Ca"
+}
