@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "tavgmax",
+  "type": "temporal_label",
+  "description": "Data is the maximum of the hourly mean over each time period (i.e. each reported interval defined by its time bounds).For example, the data may be reported daily, with each value being the maximum of the hourly mean precipitation rate.",
+  "drs_name": "tavgmax"
+}
