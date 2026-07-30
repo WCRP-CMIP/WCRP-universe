@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "isac",
+  "type": "institution",
+  "drs_name": "",
+  "acronyms": [],
+  "labels": [],
+  "description": "",
+  "location": [],
+  "ror": "",
+  "urls": []
+}
