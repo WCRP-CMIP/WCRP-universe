@@ -1,0 +1,34 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "tipmip-ocn-p1t1-da",
+  "type": "experiment",
+  "experiment_id": "tipmip-ocn-p1t1-da",
+  "activity_id": [
+    "tipmip"
+  ],
+  "additional_allowed_model_components": [
+    "aer",
+    "bgc",
+    "chem",
+    "ism"
+  ],
+  "description": "Ramp-up to 0.3 Sv in 50 years corresponding to the same amount of freshwater as 50 years of NaHosMIP u03hos.",
+  "end_year": null,
+  "experiment": "Uniform hosing in the Labrador Sea.",
+  "min_number_yrs_per_sim": 50,
+  "parent_activity_id": [
+    "tipmip"
+  ],
+  "parent_experiment_id": [
+    "esm-picontrol"
+  ],
+  "required_model_components": [
+    "aogcm"
+  ],
+  "start_year": null,
+  "sub_experiment_id": [
+    "none"
+  ],
+  "tier": 1,
+  "drs_name": "tipmip-ocn-p1t1-Da"
+}
