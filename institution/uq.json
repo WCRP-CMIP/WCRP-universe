@@ -1,0 +1,26 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "uq",
+  "type": "institution",
+  "drs_name": "",
+  "acronyms": [
+    "UQ"
+  ],
+  "labels": [
+    "The University of Queensland",
+    "University of Queensland"
+  ],
+  "description": "The University of Queensland",
+  "location": [
+    {
+      "city": "Brisbane",
+      "country": "Australia",
+      "lat": -27.46794,
+      "lon": 153.02809
+    }
+  ],
+  "ror": "00rqy9422",
+  "urls": [
+    "https://www.uq.edu.au"
+  ]
+}

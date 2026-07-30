@@ -1,0 +1,26 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cesga",
+  "type": "institution",
+  "drs_name": "",
+  "acronyms": [
+    "CESGA"
+  ],
+  "labels": [
+    "Centro de Supercomputación de Galicia",
+    "The Supercomputing Center of Galicia"
+  ],
+  "description": "Centro de Supercomputación de Galicia",
+  "location": [
+    {
+      "city": "Santiago de Compostela",
+      "country": "Spain",
+      "lat": 42.88052,
+      "lon": -8.54569
+    }
+  ],
+  "ror": "02z51cq88",
+  "urls": [
+    "https://www.cesga.es"
+  ]
+}

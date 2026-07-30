@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "icon-clm-202604-1-1",
+  "type": "source",
+  "drs_name": "ICON-CLM-202604-1-1",
+  "activity_participation": [
+    "DD"
+  ],
+  "cohort": [
+    "Registered"
+  ],
+  "organisation_id": [],
+  "label": "ICON-CLM-202604-1-1",
+  "label_extended": "ICON model in Climate Limited-area Mode (ICON-CLM), Version 202604-1-1",
+  "license": {},
+  "model_component": null,
+  "release_year": "2026"
+}

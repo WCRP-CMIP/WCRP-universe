@@ -1,10 +1,11 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "hclimcom-metno",
-    "type": "organisation",
-    "drs_name": "HCLIMcom-METNo",
-    "members": [
-        "metno"
-    ],
-    "description": "HARMONIE Climate Modelling Community (HCLIMcom) partner: Norwegian Meteorological Institute (METNo)"
+  "@context": "000_context.jsonld",
+  "id": "hclimcom-metno",
+  "type": "organisation",
+  "drs_name": "HCLIMcom-METNo",
+  "members": [
+    "hclimcom",
+    "metno"
+  ],
+  "description": "HARMONIE Climate Modelling Community (HCLIMcom) partner: Norwegian Meteorological Institute (METNo)"
 }

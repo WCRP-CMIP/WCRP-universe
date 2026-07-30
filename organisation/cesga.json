@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cesga",
+  "type": "organisation",
+  "drs_name": "CESGA",
+  "members": [
+    "cesga"
+  ],
+  "description": "Galicia Supercomputing Center (CESGA), Climate System Research Unit, Santiago de Compostela (Galicia), Spain"
+}

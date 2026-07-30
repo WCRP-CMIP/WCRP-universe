@@ -1,10 +1,11 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "clmcom-wegc",
-    "type": "organisation",
-    "drs_name": "CLMcom-WEGC",
-    "members": [
-        "wegc"
-    ],
-    "description": "clmcom-wegc institute"
+  "@context": "000_context.jsonld",
+  "id": "clmcom-wegc",
+  "type": "organisation",
+  "drs_name": "CLMcom-WEGC",
+  "members": [
+    "clmcom",
+    "wegc"
+  ],
+  "description": "clmcom-wegc institute"
 }

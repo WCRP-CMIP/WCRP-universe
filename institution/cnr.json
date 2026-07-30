@@ -1,0 +1,26 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cnr",
+  "type": "institution",
+  "drs_name": "",
+  "acronyms": [
+    "CNR"
+  ],
+  "labels": [
+    "Consiglio Nazionale delle Ricerche",
+    "National Research Council"
+  ],
+  "description": "National Research Council",
+  "location": [
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "lat": 41.89193,
+      "lon": 12.51133
+    }
+  ],
+  "ror": "04zaypm56",
+  "urls": [
+    "https://www.cnr.it"
+  ]
+}

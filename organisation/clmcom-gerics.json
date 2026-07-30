@@ -1,10 +1,11 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "clmcom-gerics",
-    "type": "organisation",
-    "drs_name": "CLMcom-GERICS",
-    "members": [
-        "gerics"
-    ],
-    "description": "Climate Limited-area Modelling Community (CLMcom) partner: Climate Service Center Germany"
+  "@context": "000_context.jsonld",
+  "id": "clmcom-gerics",
+  "type": "organisation",
+  "drs_name": "CLMcom-GERICS",
+  "members": [
+    "clmcom",
+    "gerics"
+  ],
+  "description": "Climate Limited-area Modelling Community (CLMcom) partner: Climate Service Center Germany"
 }
