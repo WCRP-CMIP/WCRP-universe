@@ -4,7 +4,6 @@
   "type": "organisation",
   "drs_name": "CLMcom-DWD",
   "members": [
-    "clmcom",
     "dwd"
   ],
   "description": "Climate Limited-area Modelling Community (CLMcom) partner: German Meteorological Service"

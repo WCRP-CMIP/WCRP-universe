@@ -4,7 +4,6 @@
   "type": "organisation",
   "drs_name": "CLMcom-WEGC",
   "members": [
-    "clmcom",
     "wegc"
   ],
   "description": "clmcom-wegc institute"
