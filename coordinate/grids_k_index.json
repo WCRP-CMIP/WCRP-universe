@@ -1,0 +1,9 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "grids_k_index",
+  "type": "coordinate",
+  "drs_name": "k",
+  "data_type": "integer",
+  "long_name": "third spatial index for variables stored on an unstructured grid",
+  "units": "1"
+}

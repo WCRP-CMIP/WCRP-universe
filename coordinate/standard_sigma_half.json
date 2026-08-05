@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "standard_sigma_half",
+  "type": "coordinate",
+  "drs_name": "lev",
+  "data_type": "double",
+  "cf_standard_name": "atmosphere_sigma_coordinate",
+  "long_name": "sigma coordinate",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "decreasing",
+  "has_bounds": false,
+  "valid_min": 0.0,
+  "valid_max": 1.0
+}

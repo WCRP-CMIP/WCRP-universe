@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typeresidual",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "long_name": "Residual area",
+  "value": "residual",
+  "size": 1
+}

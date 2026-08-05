@@ -5,11 +5,12 @@
   "drs_name": "diftrelo_tavg-ol-hxy-sea",
   "cf_standard_name": "ocean_tracer_epineutral_laplacian_diffusivity",
   "cf_units": "m2 s-1",
-  "cf_sn_status": "approved",
   "variable_root_name": "diftrelo",
-  "var_def_qualifier": "",
   "branding_suffix_name": "tavg-ol-hxy-sea",
-  "description": "Ocean tracer diffusivity associated with parameterized eddy-induced diffusive transport oriented along neutral or isopycnal directions. Sometimes this diffusivity is called the neutral diffusivity or isopycnal diffusivity or Redi diffusivity.\n",
+  "long_name": "Ocean Tracer Epineutral Laplacian Diffusivity",
+  "physical_parameter": "diftrelo",
+  "description": "Ocean tracer diffusivity associated with parameterized eddy-induced diffusive transport oriented along neutral or isopycnal directions. Sometimes this diffusivity is called the neutral diffusivity or isopycnal diffusivity or Redi diffusivity.",
+  "data_type": "real",
   "dimensions": [
     "longitude",
     "latitude",
@@ -18,12 +19,10 @@
   ],
   "cell_methods": "area: mean where sea time: mean",
   "cell_measures": "area: areacello volume: volcello",
-  "history": ": registered",
   "realm": "ocean",
+  "region": "global",
   "temporal_label": "tavg",
   "vertical_label": "ol",
   "horizontal_label": "hxy",
-  "area_label": "sea",
-  "bn_status": "accepted",
-  "positive_direction": ""
+  "area_label": "sea"
 }

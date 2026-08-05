@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "grids_longitude",
+  "type": "coordinate",
+  "drs_name": "longitude",
+  "data_type": "double",
+  "dimensions": [
+    "longitude latitude"
+  ],
+  "cf_standard_name": "longitude",
+  "long_name": "longitude",
+  "units": "degrees_east",
+  "valid_min": 0.0,
+  "valid_max": 360.0
+}

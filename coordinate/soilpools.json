@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "soilpools",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "long_name": "Soil Pools",
+  "description": "Carbon soil pools",
+  "size": 5
+}

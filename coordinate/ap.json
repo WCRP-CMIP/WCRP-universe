@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ap",
+  "type": "coordinate",
+  "drs_name": "ap",
+  "data_type": "double",
+  "dimensions": [
+    "alevel"
+  ],
+  "long_name": "vertical coordinate formula term: ap",
+  "units": "Pa"
+}

@@ -1,0 +1,15 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "height250m",
+  "type": "coordinate",
+  "drs_name": "height",
+  "data_type": "double",
+  "cf_standard_name": "height",
+  "long_name": "height",
+  "axis": "Z",
+  "positive_direction": "up",
+  "stored_direction": "increasing",
+  "units": "m",
+  "has_bounds": false,
+  "value": 250
+}

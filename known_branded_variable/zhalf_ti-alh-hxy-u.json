@@ -1,0 +1,27 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "zhalf_ti-alh-hxy-u",
+  "type": "known_branded_variable",
+  "drs_name": "zhalf_ti-alh-hxy-u",
+  "cf_standard_name": "height_above_reference_ellipsoid",
+  "cf_units": "m",
+  "variable_root_name": "zhalf",
+  "branding_suffix_name": "ti-alh-hxy-u",
+  "long_name": "Altitude of Model Half-Levels",
+  "physical_parameter": "zhalf",
+  "description": "Provide only if altitude of full model levels is fixed",
+  "data_type": "real",
+  "dimensions": [
+    "longitude",
+    "latitude",
+    "alevhalf"
+  ],
+  "cell_methods": "area: mean",
+  "cell_measures": "area: areacella",
+  "realm": "atmos",
+  "region": "global",
+  "temporal_label": "ti",
+  "vertical_label": "alh",
+  "horizontal_label": "hxy",
+  "area_label": "u"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ocean_sigma_z",
+  "type": "coordinate",
+  "drs_name": "lev",
+  "data_type": "double",
+  "cf_standard_name": "ocean_sigma_z_coordinate",
+  "long_name": "ocean sigma over z coordinate",
+  "axis": "Z",
+  "has_bounds": true
+}
