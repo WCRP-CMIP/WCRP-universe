@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "norce",
+    "type": "organisation",
+    "drs_name": "NORCE",
+    "members": [
+        "norce"
+    ],
+    "description": "NORCE Research AS"
+}
