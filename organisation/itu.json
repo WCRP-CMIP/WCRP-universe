@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "itu",
+    "type": "organisation",
+    "drs_name": "ITU",
+    "members": [
+        "itu"
+    ],
+    "description": "Istanbul Technical University"
+}
