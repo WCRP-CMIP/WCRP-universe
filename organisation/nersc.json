@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nersc",
+    "type": "organisation",
+    "drs_name": "NERSC",
+    "members": [
+        "nersc"
+    ],
+    "description": "Nansen Environmental and Remote Sensing Center"
+}
