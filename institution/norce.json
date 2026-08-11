@@ -7,7 +7,10 @@
         "NORCE"
     ],
     "labels": [
-        "NORCE Research AS"
+        "NORCE Norwegian Research Centre",
+        "NORCE Norwegian Research Centre AS",
+        "NORCE Research AS",
+        "Norwegian Research Centre"
     ],
     "description": "NORCE Research AS",
     "location": [
@@ -20,6 +23,7 @@
     ],
     "ror": "02gagpf75",
     "urls": [
-        "https://www.norceresearch.no"
+        "https://www.norceresearch.no",
+        "https://en.wikipedia.org/wiki/Norwegian_Research_Centre"
     ]
 }
