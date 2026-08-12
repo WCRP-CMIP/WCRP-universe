@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "uio",
     "type": "institution",
-    "drs_name": "UIO",
+    "drs_name": "UiO",
     "acronyms": [
         "UIO",
         "UiO"
