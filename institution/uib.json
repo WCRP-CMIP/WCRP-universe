@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "uib",
     "type": "institution",
-    "drs_name": "UIB",
+    "drs_name": "UiB",
     "acronyms": [
         "UIB",
         "UiB"
