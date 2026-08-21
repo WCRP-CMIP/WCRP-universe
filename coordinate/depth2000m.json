@@ -1,0 +1,17 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "depth2000m",
+  "type": "coordinate",
+  "drs_name": "depth",
+  "data_type": "double",
+  "cf_standard_name": "depth",
+  "long_name": "depth",
+  "axis": "Z",
+  "positive_direction": "down",
+  "stored_direction": "increasing",
+  "units": "m",
+  "has_bounds": true,
+  "value": 1000.0,
+  "valid_min": 0.0,
+  "valid_max": 2000.0
+}

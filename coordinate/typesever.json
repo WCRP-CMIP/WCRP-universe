@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typesever",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "long_name": "surface type",
+  "value": "secondary_evergreen_trees",
+  "size": 1
+}

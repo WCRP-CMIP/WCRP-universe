@@ -1,0 +1,12 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "sithreshold",
+  "type": "coordinate",
+  "drs_name": "threshold",
+  "data_type": "double",
+  "cf_standard_name": "sea_ice_area_fraction",
+  "long_name": "Sea Ice Area Fraction Threshold",
+  "units": "%",
+  "has_bounds": false,
+  "value": 15.0
+}

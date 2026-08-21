@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "typemp",
+  "type": "coordinate",
+  "drs_name": "type",
+  "data_type": "character",
+  "long_name": "Melt pond area type",
+  "value": "sea_ice_melt_pond",
+  "size": 1
+}
