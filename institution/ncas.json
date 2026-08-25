@@ -3,21 +3,24 @@
     "id": "ncas",
     "type": "institution",
     "drs_name": "NCAS",
-    "acronyms": [],
-    "labels": [
-        "Uks"
+    "acronyms": [
+        "NCAS"
     ],
-    "description": "Uks",
+    "labels": [
+        "National Centre for Atmospheric Science"
+    ],
+    "description": "UK National Centre for Atmospheric Science",
     "location": [
         {
-            "city": "Islamabad",
-            "country": "Pakistan",
-            "lat": 33.72148,
-            "lon": 73.04329
+            "city": "Leeds",
+            "country": "United Kingdom",
+            "lat": 53.79648,
+            "lon": -1.54785
         }
     ],
-    "ror": "03q36cn05",
+    "ror": "01wwwe276",
     "urls": [
-        "http://www.uksresearch.com/"
+        "https://ncas.ac.uk/",
+        "http://en.wikipedia.org/wiki/National_Centre_for_Atmospheric_Science"
     ]
 }
