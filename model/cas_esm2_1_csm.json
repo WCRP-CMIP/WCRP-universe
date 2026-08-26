@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cas_esm2_1_csm",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "The Chinese Academy of Sciences Earth System Model version 2.1 Climate System Model (CAS-ESM2-1-CSM) is a coupled climate system configuration of the CAS-ESM family, developed at the Institute of Atmospheric Physics, Chinese Academy of Sciences. It builds on the CAS-ESM2 framework developed and applied for CMIP6, with a coupled representation of the atmosphere, land surface, ocean, sea ice, atmospheric chemistry, and aerosols. CAS-ESM2-1-CSM dynamically simulates six component domains. The atmospheric component is IAP-AGCM5.0, the land-surface component is CoLM2014, the ocean component is LICOM2.0, and the sea-ice component is CICE4.0. Atmospheric chemistry is represented by CAM5-Trop-MAM3, while aerosols are represented by CAM5-MAM3. These components form a coupled modelling system for simulating the physical climate system and its interactions with atmospheric composition and aerosols across a wide range of temporal and spatial scales. No scientific component domain is classified as a prescribed component in this configuration. Ocean biogeochemistry and land ice are omitted. CAS-ESM2-1-CSM is therefore designed primarily for coupled climate-system simulations, including studies of climate mean state, variability, historical climate change, climate sensitivity, and future climate change and projection, while retaining interactive representations of atmospheric chemistry and aerosols.",
+  "calendar": [],
+  "release_year": null,
+  "references": [],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "CAS-ESM2-1-CSM"
+}
