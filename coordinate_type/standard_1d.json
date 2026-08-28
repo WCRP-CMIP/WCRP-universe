@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "standard_1d",
+    "type": "coordinate_type",
+    "description": "1-D coordinate variable whose name matches its dimension. The most common type. Examples include plev19, time, and spectral-band coordinates. Parametric vertical coordinates with formulas also use this type. QA/QC verifies the coordinate variable, matching dimension, units, requested values, bounds, and formula terms when specified.",
+    "drs_name": "standard_1d"
+}

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "snmis",
     "type": "variable",
-    "description": "Ice Sheet Surface Snow Melt",
     "drs_name": "snmIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Surface Snow Melt",
     "standard_name": "surface_snow_melt_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "The total surface snow melt rate on the land portion of the grid cell divided by the land area in the grid cell; report as zero for snow-free land regions and missing where there is no land."
 }

@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "scatter180",
+    "type": "data_coordinate",
+    "description": "Angle of scattering relative to direction of incident radiation",
+    "drs_name": "scatter180",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "scatangle",
+    "cf_standard_name": "scattering_angle",
+    "units": "degree",
+    "coordinate_values": [
+        180.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

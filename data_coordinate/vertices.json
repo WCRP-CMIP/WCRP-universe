@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vertices",
+    "type": "data_coordinate",
+    "description": "Index dimension enumerating the vertices of a grid cell.",
+    "drs_name": "vertices",
+    "coordinate_type": "standard_1d",
+    "data_type": "integer",
+    "out_name": "vertices",
+    "units": "1",
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rsuss",
+    "type": "variable",
+    "drs_name": "rsuss",
+    "long_name": "Surface Upwelling Shortwave Radiation over Snow",
+    "standard_name": "surface_upwelling_shortwave_flux_in_air",
+    "units": "W m-2",
+    "description": "Surface Upwelling Shortwave Radiation over the portion of a land grid cell covered by snow. Can be used for computation of surface albedo."
+}

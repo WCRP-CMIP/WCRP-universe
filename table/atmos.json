@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "atmos",
+    "type": "table",
+    "description": "Table identifier used by CMIP7 atmos.",
+    "drs_name": "atmos",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}

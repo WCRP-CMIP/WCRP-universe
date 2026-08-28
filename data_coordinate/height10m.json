@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "height10m",
+    "type": "data_coordinate",
+    "description": "~10 m standard wind speed height",
+    "drs_name": "height10m",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "height",
+    "cf_standard_name": "height",
+    "units": "m",
+    "axis": "Z",
+    "positive": "up",
+    "coordinate_values": [
+        10.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

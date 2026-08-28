@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "standard_sigma_half",
+    "type": "model_level_coordinate",
+    "description": "",
+    "drs_name": "standard_sigma_half",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "generic_level_name": "alevhalf",
+    "cf_standard_name": "atmosphere_sigma_coordinate",
+    "formula": "p = ptop + sigma*(ps - ptop)",
+    "z_factors": [
+        "ptop",
+        "ps"
+    ],
+    "bounds_required": false
+}

@@ -1,26 +1,23 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "siextent_tavg-u-hm-u",
-  "type": "known_branded_variable",
-  "drs_name": "siextent_tavg-u-hm-u",
-  "cf_standard_name": "sea_ice_extent",
-  "cf_units": "1e6 km2",
-  "cf_sn_status": "approved",
-  "variable_root_name": "siextent",
-  "var_def_qualifier": "",
-  "branding_suffix_name": "tavg-u-hm-u",
-  "description": "Total integrated area of all Northern Hemisphere grid cells that are covered by at least 15% areal fraction of sea ice (siconc >= 15). Does not include grid cells partially covered by land.\n",
-  "dimensions": [
-    "time"
-  ],
-  "cell_methods": "area: time: mean",
-  "cell_measures": "",
-  "history": ": registered",
-  "realm": "seaIce",
-  "temporal_label": "tavg",
-  "vertical_label": "u",
-  "horizontal_label": "hm",
-  "area_label": "u",
-  "bn_status": "accepted",
-  "positive_direction": ""
+    "@context": "000_context.jsonld",
+    "id": "siextent_tavg-u-hm-u",
+    "type": "known_branded_variable",
+    "drs_name": "siextent_tavg-u-hm-u",
+    "variable_root_name": "siextent",
+    "branding_suffix_name": "tavg-u-hm-u",
+    "cf_standard_name": "sea_ice_extent",
+    "out_name": "siextent",
+    "units": "1e6 km2",
+    "dimensions": [
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "u",
+    "horizontal_label": "hm",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: time: mean"
 }

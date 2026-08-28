@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "land",
+    "type": "table",
+    "description": "Table identifier used by CMIP7 land.",
+    "drs_name": "land",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}

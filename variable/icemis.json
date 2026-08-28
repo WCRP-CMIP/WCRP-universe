@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "icemis",
     "type": "variable",
-    "description": "Ice Sheet Surface Ice Melt Flux",
     "drs_name": "icemIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Surface Ice Melt Flux",
     "standard_name": "land_ice_surface_melt_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "Loss of ice mass resulting from surface melting. Computed as the total surface melt water on the land ice portion of the grid cell divided by land ice area in the grid cell."
 }

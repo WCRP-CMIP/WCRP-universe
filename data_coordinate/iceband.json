@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "iceband",
+    "type": "data_coordinate",
+    "description": "Ice depth bands",
+    "drs_name": "iceband",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "iceband",
+    "cf_standard_name": "sea_ice_thickness",
+    "units": "m",
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

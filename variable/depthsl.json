@@ -3,8 +3,8 @@
     "id": "depthsl",
     "type": "variable",
     "drs_name": "depthsl",
-    "description": "Depth is the vertical distance below the surface.",
     "long_name": "Total (Cumulative) Thickness of All Soil Layers",
     "standard_name": "depth",
-    "units": "m"
+    "units": "m",
+    "description": "Total (cumulative) thickness of all soil layers. This is the sum of individual thicknesses of all soil layers."
 }

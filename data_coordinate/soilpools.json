@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "soilpools",
+    "type": "data_coordinate",
+    "description": "Carbon soil pools",
+    "drs_name": "soilpools",
+    "coordinate_type": "auxiliary",
+    "data_type": "character",
+    "out_name": "type",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

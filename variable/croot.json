@@ -3,8 +3,8 @@
     "id": "croot",
     "type": "variable",
     "drs_name": "cRoot",
-    "description": "\"Content\" indicates a quantity per unit area.",
     "long_name": "Carbon Mass in Roots",
     "standard_name": "root_mass_content_of_carbon",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "Carbon mass per unit area in roots, including fine and coarse roots."
 }

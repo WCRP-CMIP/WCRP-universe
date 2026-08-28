@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "longitude",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "longitude",
+    "coordinate_type": "generic_horizontal",
+    "data_type": "double",
+    "out_name": "lon",
+    "cf_standard_name": "longitude",
+    "units": "degrees_east",
+    "axis": "X",
+    "stored_direction": "increasing",
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

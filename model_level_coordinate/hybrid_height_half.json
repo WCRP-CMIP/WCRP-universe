@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hybrid_height_half",
+    "type": "model_level_coordinate",
+    "description": "",
+    "drs_name": "hybrid_height_half",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "positive": "up",
+    "stored_direction": "increasing",
+    "generic_level_name": "alevhalf",
+    "cf_standard_name": "atmosphere_hybrid_height_coordinate",
+    "units": "m",
+    "formula": "z = a + b*orog",
+    "z_factors": [
+        "b_half",
+        "orog"
+    ],
+    "bounds_required": false
+}

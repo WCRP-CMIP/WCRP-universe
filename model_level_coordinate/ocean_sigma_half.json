@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ocean_sigma_half",
+    "type": "model_level_coordinate",
+    "description": "",
+    "drs_name": "ocean_sigma_half",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "positive": "up",
+    "stored_direction": "decreasing",
+    "generic_level_name": "olevhalf",
+    "cf_standard_name": "ocean_sigma_coordinate",
+    "formula": "z(n,k,j,i) = eta(n,j,i) + sigma(k)*(depth(j,i)+eta(n,j,i))",
+    "z_factors": [
+        "eta",
+        "depth"
+    ],
+    "bounds_required": false
+}

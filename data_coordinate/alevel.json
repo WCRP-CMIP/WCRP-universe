@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "alevel",
+    "type": "data_coordinate",
+    "description": "Generic atmospheric model vertical coordinate (nondimensional or dimensional) [use CF standard name apporpriate for model vertical coordinate, e.g. model_level_number or atmosphere_sigma_coordinate]",
+    "drs_name": "alevel",
+    "coordinate_type": "generic_vertical",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": true
+}

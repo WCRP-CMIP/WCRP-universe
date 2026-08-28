@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "prcrop",
     "type": "variable",
-    "description": "Precipitation over Crop Tile",
     "drs_name": "prCrop",
-    "long_name": null,
+    "long_name": "Precipitation over Crop Tile",
     "standard_name": "precipitation_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "includes both liquid and solid phases"
 }

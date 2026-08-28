@@ -3,8 +3,8 @@
     "id": "sfriver",
     "type": "variable",
     "drs_name": "sfriver",
-    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"River\" refers to water in the fluvial system (stream and floodplain).",
     "long_name": "Salt Flux into Sea Water from Rivers",
     "standard_name": "salt_flux_into_sea_water_from_rivers",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "This field is physical, and it arises when rivers carry a nonzero salt content.  Often this is zero, with rivers assumed to be fresh."
 }

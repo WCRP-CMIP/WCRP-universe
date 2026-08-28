@@ -3,8 +3,8 @@
     "id": "cldnvi",
     "type": "variable",
     "drs_name": "cldnvi",
-    "description": "\"Content\" indicates a quantity per unit area.  The \"atmosphere content\" of a quantity refers to the vertical integral from the surface to the top of the atmosphere. For the content between specified levels in the atmosphere, standard names including content_of_atmosphere_layer are used.",
     "long_name": "Column Integrated Cloud Droplet Number",
     "standard_name": "atmosphere_number_content_of_cloud_droplets",
-    "units": "m-2"
+    "units": "m-2",
+    "description": "Droplets are liquid only.  Values are weighted by liquid cloud fraction in each layer when vertically integrating, and for monthly means the samples are weighted by total liquid cloud fraction (as seen from TOA)."
 }

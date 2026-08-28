@@ -3,8 +3,8 @@
     "id": "lwsnl",
     "type": "variable",
     "drs_name": "lwsnl",
-    "description": "\"Content\" indicates a quantity per unit area. Surface snow refers to the snow on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants.",
     "long_name": "Liquid Water Content of Snow Layer",
     "standard_name": "liquid_water_content_of_surface_snow",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "The total mass of liquid water contained interstitially within the whole depth of the snow layer of the land portion of a grid cell divided by the area of the land portion of the cell."
 }

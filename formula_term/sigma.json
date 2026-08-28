@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sigma",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "sigma",
+    "data_type": "double",
+    "out_name": "sigma",
+    "cf_standard_name": "ocean_sigma_coordinate",
+    "units": "1",
+    "dimensions": [
+        "olevel"
+    ]
+}

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tsis",
     "type": "variable",
-    "description": "Ice Sheet Surface Temperature",
     "drs_name": "tsIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Surface Temperature",
     "standard_name": "surface_temperature",
-    "units": "K"
+    "units": "K",
+    "description": "Temperature of the lower boundary of the atmosphere"
 }

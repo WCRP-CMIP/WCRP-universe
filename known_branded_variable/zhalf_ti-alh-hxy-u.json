@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "zhalf_ti-alh-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "zhalf_ti-alh-hxy-u",
+    "variable_root_name": "zhalf",
+    "branding_suffix_name": "ti-alh-hxy-u",
+    "cf_standard_name": "height_above_reference_ellipsoid",
+    "out_name": "zhalf",
+    "units": "m",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "alevhalf"
+    ],
+    "temporal_label": "ti",
+    "vertical_label": "alh",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean"
+}

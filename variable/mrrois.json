@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "mrrois",
     "type": "variable",
-    "description": "Ice Sheet Total Runoff",
     "drs_name": "mrroIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Total Runoff",
     "standard_name": "runoff_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "The total run-off (including drainage through the base of the soil model) per unit area leaving the land portion of the grid cell."
 }

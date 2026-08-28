@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "litempbotfl",
     "type": "variable",
-    "description": "Basal Temperature of Floating Ice Shelf",
     "drs_name": "litempbotfl",
-    "long_name": null,
+    "long_name": "Basal Temperature of Floating Ice Shelf",
     "standard_name": "land_ice_basal_temperature",
-    "units": "K"
+    "units": "K",
+    "description": "Basal temperature that is used to force the ice sheet models, it is the temperature AT ice shelf-ocean interface.  Cell_methods: area: mean where floating_ice_shelf"
 }

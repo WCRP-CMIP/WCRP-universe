@@ -1,0 +1,11 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "y",
+    "type": "grid_axis",
+    "description": "",
+    "drs_name": "y",
+    "axis": "Y",
+    "data_type": "double",
+    "cf_standard_name": "projection_y_coordinate",
+    "units": "m"
+}

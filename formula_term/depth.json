@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "depth",
+    "data_type": "real",
+    "out_name": "depth",
+    "units": "m",
+    "dimensions": [
+        "longitude",
+        "latitude"
+    ]
+}

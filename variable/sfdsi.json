@@ -3,8 +3,8 @@
     "id": "sfdsi",
     "type": "variable",
     "drs_name": "sfdsi",
-    "description": "\"Downward\" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
     "long_name": "Downward Sea Ice Basal Salt Flux",
     "standard_name": "downward_sea_ice_basal_salt_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "Total flux of salt from water into sea ice divided by grid-cell area. This flux is upward (negative) during ice growth when salt is embedded into the ice and downward (positive) during melt when salt from sea ice is again released to the ocean."
 }

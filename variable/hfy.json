@@ -3,8 +3,8 @@
     "id": "hfy",
     "type": "variable",
     "drs_name": "hfy",
-    "description": "\"y\" indicates a vector component along the grid y-axis, positive with increasing y.",
     "long_name": "Ocean Heat Y Transport",
     "standard_name": "ocean_heat_y_transport",
-    "units": "W"
+    "units": "W",
+    "description": "Contains all contributions to \"y-ward\" heat transport from resolved and parameterized processes. Use Celsius for temperature scale."
 }

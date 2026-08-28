@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "gridlatitude",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "gridlatitude",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "rlat",
+    "cf_standard_name": "grid_latitude",
+    "units": "degrees",
+    "axis": "Y",
+    "stored_direction": "increasing",
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

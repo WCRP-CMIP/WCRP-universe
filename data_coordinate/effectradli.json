@@ -1,0 +1,32 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "effectradli",
+    "type": "data_coordinate",
+    "description": "Effective Radius of Liquid Aerosols  [Values to be specified]",
+    "drs_name": "effectRadLi",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "effectRadLi",
+    "units": "micron",
+    "stored_direction": "increasing",
+    "coordinate_values": [
+        4.0,
+        9.0,
+        11.5,
+        14.0,
+        17.5,
+        25.0
+    ],
+    "coordinate_bounds": [
+        0.0,
+        8.0,
+        10.0,
+        13.0,
+        15.0,
+        20.0,
+        30.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

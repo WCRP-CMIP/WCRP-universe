@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typec3pft",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "typec3pft",
+    "coordinate_type": "scalar",
+    "data_type": "character",
+    "out_name": "type",
+    "cf_standard_name": "area_type",
+    "coordinate_values": "c3_plant_functional_types",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sisndmassmelt",
+    "type": "variable",
+    "drs_name": "sisndmassmelt",
+    "long_name": "Snow Mass Rate of Change Through Melt",
+    "standard_name": "surface_snow_melt_flux",
+    "units": "kg m-2 s-1",
+    "description": "Rate of change of snow mass through melt divided by grid-cell area. Always negative or zero."
+}

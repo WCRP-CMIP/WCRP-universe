@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hur100p2pct",
+    "type": "data_coordinate",
+    "description": "Reference relative humidity for cloud diagnostics with value 100.2 percent (equivalent to 0.2 percent supersaturation)",
+    "drs_name": "hur100p2pct",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "hur",
+    "cf_standard_name": "relative_humidity",
+    "units": "%",
+    "coordinate_values": [
+        100.2
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

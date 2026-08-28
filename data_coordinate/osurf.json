@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "osurf",
+    "type": "data_coordinate",
+    "description": "Vertical coordinate for ocean surface or near-surface diagnostics. A scalar coordinate containing a text identifier set to ocean_surface_layer indicating data representing conditions in the uppermost layer of the ocean.",
+    "drs_name": "osurf",
+    "coordinate_type": "scalar",
+    "data_type": "character",
+    "out_name": "seasurface",
+    "axis": "Z",
+    "coordinate_values": "ocean_surface_layer",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

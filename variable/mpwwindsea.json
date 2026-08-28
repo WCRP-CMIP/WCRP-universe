@@ -3,8 +3,8 @@
     "id": "mpwwindsea",
     "type": "variable",
     "drs_name": "mpwwindsea",
-    "description": "A period is an interval of time, or the time-period of an oscillation. Wave period is the interval of time between repeated features on the waveform such as crests, troughs or upward passes through the mean level. Wave mean period is the mean period measured over the observation duration. Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum.",
     "long_name": "Wind Sea Wave Mean Period",
     "standard_name": "sea_surface_wind_wave_mean_period",
-    "units": "s"
+    "units": "s",
+    "description": "Average wave period (i.e., time in-between two wave crests) of wind-sea waves only (i.e., local wind waves). In spectral wind wave models, it is calculated using spectral moments, mathematical measures that describe the shape and characteristics of the wave spectrum."
 }

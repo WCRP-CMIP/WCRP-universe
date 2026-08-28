@@ -3,8 +3,8 @@
     "id": "thkcello",
     "type": "variable",
     "drs_name": "thkcello",
-    "description": "\"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
     "long_name": "Ocean Model Cell Thickness",
     "standard_name": "cell_thickness",
-    "units": "m"
+    "units": "m",
+    "description": "Thickness of ocean cells. \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell."
 }
