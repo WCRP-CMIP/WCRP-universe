@@ -3,6 +3,7 @@
         "@base": "https://esgvoc.ipsl.fr/resource/universe/coordinate_type/",
         "@vocab": "http://schema.org/",
         "id": "@id",
-        "type": "@type"
+        "type": "@type",
+        "coordinate_type": "https://esgvoc.ipsl.fr/resource/universe/coordinate_type/"
     }
 }
