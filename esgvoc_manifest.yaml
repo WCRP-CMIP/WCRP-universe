@@ -2,9 +2,27 @@ schema_version: '1'
 project:
   id: universe
   name: WCRP Universe Controlled Vocabulary
-cv_version: 1.0.32
-universe_version: 1.0.32
+cv_version: 2.0.0
+universe_version: 2.0.0
 esgvoc:
   min_version: 4.0.0
 release_notes: |
-  - model: 1 added
+  - coordinate_type: new data descriptor model
+  - data_coordinate: new data descriptor model
+  - formula_term: new data descriptor model
+  - grid_axis: new data descriptor model
+  - grid_variable: new data descriptor model
+  - known_branded_variable: updated data descriptor model
+  - model_level_coordinate: new data descriptor model
+  - table: updated data descriptor model
+  - variable: updated data descriptor model
+  - coordinate_type: 6 added
+  - data_coordinate: 106 added
+  - formula_term: 25 added
+  - grid_axis: 12 added
+  - grid_variable: 4 added
+  - institution: 1 added, 1 modified
+  - known_branded_variable: 1 added, 1430 modified, 460 removed
+  - model_level_coordinate: 18 added
+  - table: 8 added
+  - variable: 30 added, 1153 modified, 1243 removed
