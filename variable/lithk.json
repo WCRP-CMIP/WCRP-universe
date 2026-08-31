@@ -3,8 +3,8 @@
     "id": "lithk",
     "type": "variable",
     "drs_name": "lithk",
-    "description": "\"Land ice\" means glaciers, ice-caps and ice-sheets resting on bedrock and also includes ice-shelves. \"Thickness\" means the vertical extent of a layer.",
     "long_name": "Ice Sheet Thickness",
     "standard_name": "land_ice_thickness",
-    "units": "m"
+    "units": "m",
+    "description": "The thickness of the ice sheet"
 }

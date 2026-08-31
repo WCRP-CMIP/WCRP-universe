@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "zg500",
     "type": "variable",
-    "description": "Geopotential Height at 500hPa",
     "drs_name": "zg500",
-    "long_name": null,
+    "long_name": "Geopotential Height at 500hPa",
     "standard_name": "geopotential_height",
-    "units": "m"
+    "units": "m",
+    "description": "geopotential height on the 500 hPa surface"
 }

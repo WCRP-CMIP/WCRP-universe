@@ -3,8 +3,8 @@
     "id": "snm",
     "type": "variable",
     "drs_name": "snm",
-    "description": "Surface snow refers to the snow on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants. The surface called \"surface\" means the lower boundary of the atmosphere. In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics.",
     "long_name": "Surface Snow Melt",
     "standard_name": "surface_snow_melt_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "The total surface snow melt rate on the land portion of the grid cell divided by the land area in the grid cell; report as zero for snow-free land regions and missing where there is no land."
 }

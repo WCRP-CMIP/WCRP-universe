@@ -1,0 +1,19 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "basin",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "basin",
+    "coordinate_type": "auxiliary",
+    "data_type": "character",
+    "out_name": "basin",
+    "cf_standard_name": "region",
+    "coordinate_values": [
+        "atlantic_arctic_ocean",
+        "indian_pacific_ocean",
+        "global_ocean"
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

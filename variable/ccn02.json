@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ccn02",
+    "type": "variable",
+    "drs_name": "ccn02",
+    "long_name": "CCN concentration at 0.2 percent supersaturation, based on aerosol chemical composition and size",
+    "standard_name": "number_concentration_of_cloud_condensation_nuclei_assuming_reference_relative_humidity",
+    "units": "m-3",
+    "description": "This is the concentration of cloud condensation nuclei (CCN) at 0.2% supersaturation, based on aerosol chemical composition and size"
+}

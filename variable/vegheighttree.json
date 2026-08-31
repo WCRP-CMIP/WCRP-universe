@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "vegheighttree",
     "type": "variable",
-    "description": "Height of Trees",
     "drs_name": "vegHeightTree",
-    "long_name": null,
+    "long_name": "Height of Trees",
     "standard_name": "canopy_height",
-    "units": "m"
+    "units": "m",
+    "description": "Vegetation height averaged over the tree fraction of a grid cell."
 }

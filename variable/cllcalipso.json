@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "cllcalipso",
     "type": "variable",
-    "description": "CALIPSO Low Level Cloud Cover Percentage",
     "drs_name": "cllcalipso",
-    "long_name": null,
+    "long_name": "CALIPSO Low Level Cloud Cover Percentage",
     "standard_name": "cloud_area_fraction_in_atmosphere_layer",
-    "units": "%"
+    "units": "%",
+    "description": "Percentage cloud cover in layer centred on 840hPa"
 }

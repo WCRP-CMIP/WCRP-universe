@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hur100",
+    "type": "variable",
+    "drs_name": "hur100",
+    "long_name": "Relative humidity at 100 hPa",
+    "standard_name": "relative_humidity",
+    "units": "%",
+    "description": "Relative humidity at 100 hPa"
+}

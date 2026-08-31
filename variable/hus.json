@@ -3,8 +3,8 @@
     "id": "hus",
     "type": "variable",
     "drs_name": "hus",
-    "description": "\"specific\" means per unit mass. Specific humidity is the mass fraction of water vapor in (moist) air.",
     "long_name": "Specific Humidity",
     "standard_name": "specific_humidity",
-    "units": "1"
+    "units": "1",
+    "description": "Specific humidity is the mass fraction of water vapor in (moist) air."
 }

@@ -3,8 +3,8 @@
     "id": "nroot",
     "type": "variable",
     "drs_name": "nRoot",
-    "description": "\"Content\" indicates a quantity per unit area.",
     "long_name": "Nitrogen Mass in Roots",
     "standard_name": "root_mass_content_of_nitrogen",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "including fine and coarse roots."
 }

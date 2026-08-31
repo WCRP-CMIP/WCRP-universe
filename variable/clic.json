@@ -3,8 +3,8 @@
     "id": "clic",
     "type": "variable",
     "drs_name": "clic",
-    "description": "Mass fraction is used in the construction mass_fraction_of_X_in_Y, where X is a material constituent of Y. It means the ratio of the mass of X to the mass of Y (including X). Convective cloud is that produced by the convection schemes in an atmosphere model.",
     "long_name": "Mass Fraction of Convective Cloud Ice",
     "standard_name": "mass_fraction_of_convective_cloud_ice_in_air",
-    "units": "1"
+    "units": "1",
+    "description": "Calculated as the mass of convective cloud ice  in the grid cell divided by the mass of air (including the water in all phases) in the grid cell.  This includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model."
 }

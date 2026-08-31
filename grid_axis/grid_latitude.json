@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "grid_latitude",
+    "type": "grid_axis",
+    "description": "",
+    "drs_name": "grid_latitude",
+    "axis": "Y",
+    "data_type": "double",
+    "cf_standard_name": "grid_latitude",
+    "out_name": "rlat",
+    "units": "degrees"
+}

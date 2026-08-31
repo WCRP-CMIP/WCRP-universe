@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "snicemis",
     "type": "variable",
-    "description": "Ice Sheet Surface Snow and Ice Melt Flux",
     "drs_name": "snicemIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Surface Snow and Ice Melt Flux",
     "standard_name": "surface_snow_and_ice_melt_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "Loss of snow and ice mass resulting from surface melting. Computed as the total surface melt on the land ice portion of the grid cell divided by land ice area in the grid cell."
 }

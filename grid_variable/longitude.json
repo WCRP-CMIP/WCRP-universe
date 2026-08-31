@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "longitude",
+    "type": "grid_variable",
+    "description": "",
+    "drs_name": "longitude",
+    "data_type": "double",
+    "out_name": "longitude",
+    "units": "degrees_east",
+    "dimensions": [
+        "longitude",
+        "latitude"
+    ],
+    "cf_standard_name": "longitude"
+}

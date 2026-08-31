@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ta6",
+    "type": "variable",
+    "drs_name": "ta6",
+    "long_name": "Air temperature",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "Air temperature on 6 pressure levels in the lower troposphere"
+}

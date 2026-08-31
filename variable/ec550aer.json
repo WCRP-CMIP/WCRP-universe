@@ -3,8 +3,8 @@
     "id": "ec550aer",
     "type": "variable",
     "drs_name": "ec550aer",
-    "description": "",
     "long_name": "Aerosol Extinction Coefficient",
     "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles",
-    "units": ""
+    "units": "m-1",
+    "description": "Aerosol volume extinction coefficient at 550nm wavelength."
 }

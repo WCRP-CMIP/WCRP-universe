@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mrso100",
+    "type": "variable",
+    "drs_name": "mrso100",
+    "long_name": "Mean soil water content at a depth of 1 m",
+    "standard_name": "mass_content_of_water_in_soil_layer",
+    "units": "kg m-2",
+    "description": "Soil moisture at 3hr but for 0-1m"
+}

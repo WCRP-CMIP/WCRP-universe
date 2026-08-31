@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typeshrub",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "typeshrub",
+    "coordinate_type": "scalar",
+    "data_type": "character",
+    "out_name": "type",
+    "cf_standard_name": "area_type",
+    "coordinate_values": "shrubs",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

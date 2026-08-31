@@ -3,8 +3,8 @@
     "id": "swhmax",
     "type": "variable",
     "drs_name": "swhmax",
-    "description": "Significant wave height is a statistic computed from wave measurements and corresponds to the average height of the highest one third of the waves, where the height is defined as the vertical distance from a wave trough to the following wave crest.",
     "long_name": "Maximum Significant Wave Height",
     "standard_name": "sea_surface_wave_significant_height",
-    "units": "m"
+    "units": "m",
+    "description": "Highest value of the significant wave height simulated within a given time range (e.g., daily or monthly). The significant wave height (swh) is derived from the wave spectrum using spectral moments. Specifically, swh is four times the square root of the integral over all directions and all frequencies of the two-dimensional wave spectrum."
 }

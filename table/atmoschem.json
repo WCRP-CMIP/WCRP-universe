@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "atmoschem",
+    "type": "table",
+    "description": "Table identifier used by CMIP7 atmosChem.",
+    "drs_name": "atmosChem",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}

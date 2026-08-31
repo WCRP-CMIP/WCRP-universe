@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "eta",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "eta",
+    "data_type": "real",
+    "out_name": "eta",
+    "units": "m",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ]
+}

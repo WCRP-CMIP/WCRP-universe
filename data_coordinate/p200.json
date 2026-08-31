@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "p200",
+    "type": "data_coordinate",
+    "description": "200 hPa",
+    "drs_name": "p200",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "plev",
+    "cf_standard_name": "air_pressure",
+    "units": "Pa",
+    "axis": "Z",
+    "positive": "down",
+    "coordinate_values": [
+        20000.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "op20bar",
+    "type": "data_coordinate",
+    "description": "Coordinate level as hydrostatic pressure depth of 20.2bar (pressure level which is close to 200m in a standard ocean profile)",
+    "drs_name": "op20bar",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "pdepth",
+    "cf_standard_name": "sea_water_pressure_due_to_sea_water",
+    "units": "bar",
+    "axis": "Z",
+    "positive": "down",
+    "coordinate_values": [
+        20.2
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

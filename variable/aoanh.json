@@ -3,8 +3,8 @@
     "id": "aoanh",
     "type": "variable",
     "drs_name": "aoanh",
-    "description": "The quantity with standard name tracer_lifetime is the total length of time a passive tracer exists within a medium. Passive tracers are used in models to study processes such as transport and deposition.",
     "long_name": "Northern Hemisphere Tracer Lifetime",
     "standard_name": "tracer_lifetime",
-    "units": "s"
+    "units": "yr",
+    "description": "Fixed surface layer mixing ratio over 30o-50oN (0 ppbv), uniform fixed source (at all levels) everywhere else (source is unspecified but must be constant in space and time and documented). Note that the source could be 1yr/yr, so the tracer concentration provides mean age in years. For method using linearly increasing tracer include a method attribute: \"linearly increasing tracer\"For method using uniform source (1yr/yr) include a method attribute: \"uniform source\""
 }

@@ -3,8 +3,8 @@
     "id": "cly",
     "type": "variable",
     "drs_name": "cly",
-    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  \"Inorganic chlorine\",sometimes referred to as Cly, describes a family of chemical species which result from the degradation of chlorine-containing source gases (CFCs, HCFCs, VSLS) and natural inorganic chlorine sources such as sea-salt and other aerosols.  mole_fraction_of_inorganic_chlorine is the sum of all species belonging to the family that are represented within a given model.",
     "long_name": "Total Inorganic Chlorine Volume Mixing Ratio",
     "standard_name": "mole_fraction_of_inorganic_chlorine_in_air",
-    "units": "1"
+    "units": "mol mol-1",
+    "description": "Total family (the sum of all appropriate species in the model) ; list the species in the netCDF header, e.g. Cly = HCl + ClONO2 + HOCl + ClO + Cl + 2*Cl2O2 +2Cl2 + OClO + BrCl Definition: Total inorganic stratospheric chlorine (e.g., HCl, ClO) resulting from degradation of chlorine-containing source gases (CFCs, HCFCs, VSLS), and natural inorganic chlorine sources (e.g., sea salt and other aerosols) add comment attribute with detailed description about how the model calculates these fields"
 }

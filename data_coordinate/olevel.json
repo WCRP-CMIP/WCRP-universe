@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "olevel",
+    "type": "data_coordinate",
+    "description": "generic ocean model vertical coordinate (nondimensional or dimensional)",
+    "drs_name": "olevel",
+    "coordinate_type": "generic_vertical",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": true
+}

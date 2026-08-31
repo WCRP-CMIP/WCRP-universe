@@ -3,8 +3,8 @@
     "id": "flashrate",
     "type": "variable",
     "drs_name": "flashrate",
-    "description": "A lightning flash is a compound event, usually consisting of several discharges. Frequency is the number of oscillations of a wave, or the number of occurrences of an event, per unit time.",
     "long_name": "Lightning Flash Rate",
     "standard_name": "frequency_of_lightning_flashes_per_unit_area",
-    "units": "m-2 s-1"
+    "units": "km-2 s-1",
+    "description": "proposed name: lightning_flash_rate (units to be interpreted as \"counts km-2 s-1)"
 }

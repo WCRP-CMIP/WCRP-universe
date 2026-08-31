@@ -3,8 +3,8 @@
     "id": "dfe",
     "type": "variable",
     "drs_name": "dfe",
-    "description": "Mole concentration means number of moles per unit volume, also called \"molarity\", and is used in the construction mole_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical or biological species denoted by X may be described by a single term such as \"nitrogen\" or a phrase such as \"nox_expressed_as_nitrogen\".",
-    "long_name": "Surface Dissolved Iron Concentration",
+    "long_name": "Dissolved Iron Concentration",
     "standard_name": "mole_concentration_of_dissolved_iron_in_sea_water",
-    "units": "mol m-3"
+    "units": "mol m-3",
+    "description": "dissolved iron in sea water is meant to include both Fe2+ and Fe3+ ions (but not, e.g., particulate detrital iron)"
 }

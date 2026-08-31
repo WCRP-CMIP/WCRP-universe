@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "landice",
+    "type": "table",
+    "description": "Table identifier used by CMIP7 landIce.",
+    "drs_name": "landIce",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}

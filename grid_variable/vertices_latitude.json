@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vertices_latitude",
+    "type": "grid_variable",
+    "description": "",
+    "drs_name": "vertices_latitude",
+    "data_type": "double",
+    "out_name": "vertices_latitude",
+    "units": "degrees_north",
+    "dimensions": [
+        "vertices",
+        "longitude",
+        "latitude"
+    ]
+}

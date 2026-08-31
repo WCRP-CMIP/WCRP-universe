@@ -3,8 +3,8 @@
     "id": "ps",
     "type": "variable",
     "drs_name": "ps",
-    "description": "The surface called \"surface\" means the lower boundary of the atmosphere. Air pressure is the force per unit area which would be exerted when the moving gas molecules of which the air is composed strike a theoretical surface of any orientation.",
     "long_name": "Surface Air Pressure",
     "standard_name": "surface_air_pressure",
-    "units": "Pa"
+    "units": "Pa",
+    "description": "surface pressure (not mean sea-level pressure), 2-D field to calculate the 3-D pressure field from hybrid coordinates"
 }

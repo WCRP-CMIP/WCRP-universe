@@ -1,0 +1,24 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ocean_sigma_z_half",
+    "type": "model_level_coordinate",
+    "description": "",
+    "drs_name": "ocean_sigma_z_half",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "positive": "up",
+    "stored_direction": "decreasing",
+    "generic_level_name": "olevhalf",
+    "cf_standard_name": "ocean_sigma_z_coordinate",
+    "units": "m",
+    "formula": "for levels k where sigma(k) is defined and zlev(k) is not defined: z(n,k,j,i) = eta(n,j,i) + sigma(k)*(min(depth_c,depth(j,i))+eta(n,j,i)) ; for levels k where zlev(k) is defined and sigma(k) is not defined: z(n,k,j,i) = zlev(k)",
+    "z_factors": [
+        "sigma",
+        "eta",
+        "depth",
+        "depth_c",
+        "zlev"
+    ],
+    "bounds_required": false
+}

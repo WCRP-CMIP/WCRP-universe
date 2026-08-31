@@ -3,8 +3,8 @@
     "id": "fnvegsoil",
     "type": "variable",
     "drs_name": "fNVegSoil",
-    "description": "In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. \"Vegetation\" means any living plants e.g. trees, shrubs, grass. \"Litter\" is dead plant material in or above the soil.",
     "long_name": "Total Nitrogen Mass Flux from Vegetation Directly to Soil",
     "standard_name": "nitrogen_mass_flux_into_soil_from_vegetation_excluding_litter",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "In some models part of nitrogen (e.g., root exudate) can go directly into the soil pool without entering litter."
 }

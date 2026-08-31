@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "orog2d",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "orog2d",
+    "data_type": "real",
+    "out_name": "orog",
+    "units": "m",
+    "dimensions": [
+        "latitude"
+    ]
+}
