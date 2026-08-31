@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ta500",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}
