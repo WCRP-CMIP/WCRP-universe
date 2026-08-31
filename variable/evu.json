@@ -3,8 +3,8 @@
     "id": "evu",
     "type": "variable",
     "drs_name": "evu",
-    "description": "",
     "long_name": "Eddy Viscosity Coefficient for Momentum",
     "standard_name": "atmosphere_momentum_diffusivity",
-    "units": "m2 s-1"
+    "units": "m2 s-1",
+    "description": "Vertical diffusion coefficient for momentum due to parametrised eddies"
 }

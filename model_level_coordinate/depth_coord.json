@@ -1,0 +1,16 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth_coord",
+    "type": "model_level_coordinate",
+    "description": "",
+    "drs_name": "depth_coord",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "generic_level_name": "olevel",
+    "cf_standard_name": "depth",
+    "units": "m",
+    "bounds_required": true
+}

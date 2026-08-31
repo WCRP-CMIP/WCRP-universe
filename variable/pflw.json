@@ -3,8 +3,8 @@
     "id": "pflw",
     "type": "variable",
     "drs_name": "pflw",
-    "description": "\"Content\" indicates a quantity per unit area.  Permafrost is soil or rock that has remained at a temperature at or below zero degrees Celsius throughout the seasonal cycle for two or more years.",
     "long_name": "Liquid Water Content of Permafrost Layer",
     "standard_name": "liquid_water_content_of_permafrost_layer",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "*where land over land*, i.e., this is the total mass of liquid water contained within the permafrost layer within the land portion of a grid cell divided by the area of the land portion of the cell."
 }

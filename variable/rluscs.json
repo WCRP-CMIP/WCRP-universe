@@ -3,8 +3,8 @@
     "id": "rluscs",
     "type": "variable",
     "drs_name": "rluscs",
-    "description": "",
     "long_name": "Surface Upwelling Longwave Radiation Clear Sky",
     "standard_name": "surface_upwelling_longwave_flux_assuming_clear_sky",
-    "units": ""
+    "units": "W m-2",
+    "description": "Surface Upwelling Clear-sky Longwave Radiation"
 }

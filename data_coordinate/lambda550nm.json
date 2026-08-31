@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "lambda550nm",
+    "type": "data_coordinate",
+    "description": "Radiation wavelength used for monitoring aerosol properties",
+    "drs_name": "lambda550nm",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "wavelength",
+    "cf_standard_name": "radiation_wavelength",
+    "units": "nm",
+    "coordinate_values": [
+        550.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "p10",
+    "type": "data_coordinate",
+    "description": "10 hPa",
+    "drs_name": "p10",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "plev",
+    "cf_standard_name": "air_pressure",
+    "units": "Pa",
+    "axis": "Z",
+    "positive": "down",
+    "coordinate_values": [
+        1000.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

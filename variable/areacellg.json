@@ -3,8 +3,8 @@
     "id": "areacellg",
     "type": "variable",
     "drs_name": "areacellg",
-    "description": "\"Cell_area\" is the horizontal area of a gridcell.",
     "long_name": "Grid-Cell Area for Ice Sheet Variables",
     "standard_name": "cell_area",
-    "units": "m2"
+    "units": "m2",
+    "description": "Area of the target grid (not the interpolated area of the source grid)."
 }

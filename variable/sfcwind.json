@@ -3,8 +3,8 @@
     "id": "sfcwind",
     "type": "variable",
     "drs_name": "sfcWind",
-    "description": "Speed is the magnitude of velocity. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) The wind speed is the magnitude of the wind velocity.",
-    "long_name": "Daily Maximum Near-Surface Wind Speed",
+    "long_name": "Near-Surface Wind Speed",
     "standard_name": "wind_speed",
-    "units": "m s-1"
+    "units": "m s-1",
+    "description": "Daily maximum near-surface (usually, 10 meters) wind speed."
 }

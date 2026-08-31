@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typec4pastures",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "typec4pastures",
+    "coordinate_type": "scalar",
+    "data_type": "character",
+    "out_name": "type",
+    "cf_standard_name": "area_type",
+    "coordinate_values": "pastures_of_c4_plant_functional_types",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

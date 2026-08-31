@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "mrsoslut",
     "type": "variable",
-    "description": "Moisture in Upper Portion of Soil Column of Land-Use Tile",
     "drs_name": "mrsosLut",
-    "long_name": null,
+    "long_name": "Moisture in Upper Portion of Soil Column of Land-Use Tile",
     "standard_name": "mass_content_of_water_in_soil_layer",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "the mass of water in all phases in a thin surface layer; integrate over uppermost 10cm"
 }

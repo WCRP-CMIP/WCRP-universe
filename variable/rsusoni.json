@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rsusoni",
+    "type": "variable",
+    "drs_name": "rsusoni",
+    "long_name": "Surface Upwelling Shortwave Radiation over Ocean Not Covered by Sea Ice",
+    "standard_name": "surface_upwelling_shortwave_flux_in_air",
+    "units": "W m-2",
+    "description": "Surface Upwelling Shortwave Radiation over the portion of an ocean grid cell not covered by sea ice. Can be used for computation of surface albedo."
+}

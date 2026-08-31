@@ -3,8 +3,8 @@
     "id": "sidmasstrany",
     "type": "variable",
     "drs_name": "sidmasstrany",
-    "description": "\"y\" indicates a vector component along the grid y-axis, positive with increasing y. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
     "long_name": "Y-Component of Sea-Ice Mass Transport",
     "standard_name": "sea_ice_y_transport",
-    "units": "kg s-1"
+    "units": "kg s-1",
+    "description": "Y-component of the sea-ice drift-induced transport of snow and sea ice mass."
 }

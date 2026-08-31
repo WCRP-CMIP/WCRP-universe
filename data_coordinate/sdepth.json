@@ -1,0 +1,18 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sdepth",
+    "type": "data_coordinate",
+    "description": "Soil layers (depth). If soil layer thicknesses vary from one location to another, interpolate to a standard set of depths.  Ideally, the interpolation should preserve the vertical integral where appropriate (e.g. for layer mass content).",
+    "drs_name": "sdepth",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "depth",
+    "cf_standard_name": "depth",
+    "units": "m",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

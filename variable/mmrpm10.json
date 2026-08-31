@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "mmrpm10",
     "type": "variable",
-    "description": "PM10 Mass Mixing Ratio",
     "drs_name": "mmrpm10",
-    "long_name": null,
+    "long_name": "PM10 Mass Mixing Ratio",
     "standard_name": "mass_fraction_of_pm10_ambient_aerosol_particles_in_air",
-    "units": "kg kg-1"
+    "units": "kg kg-1",
+    "description": "Mass fraction atmospheric particulate compounds with an aerodynamic diameter of less than or equal to 10 micrometers"
 }

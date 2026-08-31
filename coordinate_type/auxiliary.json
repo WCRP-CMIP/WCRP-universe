@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "auxiliary",
+    "type": "coordinate_type",
+    "description": "Auxiliary 1-D coordinate with a simple index dimension. Values are character labels identifying categories. QA/QC verifies that the character coordinate variable exists and is associated with the expected index dimension.",
+    "drs_name": "auxiliary"
+}

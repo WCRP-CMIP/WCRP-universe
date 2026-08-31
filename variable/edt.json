@@ -3,8 +3,8 @@
     "id": "edt",
     "type": "variable",
     "drs_name": "edt",
-    "description": "",
     "long_name": "Eddy Diffusivity Coefficient for Temperature",
     "standard_name": "atmosphere_heat_diffusivity",
-    "units": "m2 s-1"
+    "units": "m2 s-1",
+    "description": "Vertical diffusion coefficient for temperature due to parametrised eddies"
 }

@@ -1,0 +1,27 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hybrid_sigma_ln_pressure",
+    "type": "model_level_coordinate",
+    "description": "",
+    "drs_name": "hybrid_sigma_ln_pressure",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "generic_level_name": "alevel",
+    "cf_standard_name": "atmosphere_hybrid_sigma_ln_pressure_coordinate",
+    "units": "1",
+    "formula": "p = p0*lev*(ps/p0)**b",
+    "z_factors": [
+        "p0",
+        "b",
+        "ps"
+    ],
+    "z_bounds_factors": [
+        "p0",
+        "b_bnds",
+        "ps"
+    ],
+    "bounds_required": true
+}

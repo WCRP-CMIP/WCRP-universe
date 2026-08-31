@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "minpblz",
     "type": "variable",
-    "description": "Minimum PBL Height",
     "drs_name": "minpblz",
-    "long_name": null,
+    "long_name": "Minimum PBL Height",
     "standard_name": "atmosphere_boundary_layer_thickness",
-    "units": "m"
+    "units": "m",
+    "description": "minimum boundary layer height during the day (add cell_methods attribute: \"time: minimum\")"
 }

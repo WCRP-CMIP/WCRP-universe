@@ -3,8 +3,8 @@
     "id": "sidragtop",
     "type": "variable",
     "drs_name": "sidragtop",
-    "description": "The surface called \"surface\" means the lower boundary of the atmosphere.",
     "long_name": "Atmospheric Drag Coefficient",
     "standard_name": "surface_drag_coefficient_for_momentum_in_air",
-    "units": "1"
+    "units": "1",
+    "description": "Atmospheric drag coefficient that is used to calculate the atmospheric momentum drag on sea ice."
 }

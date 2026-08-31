@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ap_half",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "ap_half",
+    "data_type": "double",
+    "out_name": "ap",
+    "units": "Pa",
+    "dimensions": [
+        "alevhalf"
+    ]
+}

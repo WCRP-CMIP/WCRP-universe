@@ -3,8 +3,8 @@
     "id": "thkcelluo",
     "type": "variable",
     "drs_name": "thkcelluo",
-    "description": "\"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell.",
     "long_name": "Ocean Model Cell Thickness at u-points",
     "standard_name": "cell_thickness",
-    "units": "m"
+    "units": "m",
+    "description": "The time varying thickness of ocean cells centered at u-points (points for velocity in the x-direction). \"Thickness\" means the vertical extent of a layer. \"Cell\" refers to a model grid-cell."
 }

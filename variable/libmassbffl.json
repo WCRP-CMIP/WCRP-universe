@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "libmassbffl",
     "type": "variable",
-    "description": "Basal Specific Mass Balance Flux of Floating Ice Shelf",
     "drs_name": "libmassbffl",
-    "long_name": null,
+    "long_name": "Basal Specific Mass Balance Flux of Floating Ice Shelf",
     "standard_name": "land_ice_basal_specific_mass_balance_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "Specific mass balance means the net rate at which ice is added per unit area at the land ice base.  A negative value means loss of ice. Computed as the total basal mass balance on the floating land ice (floating ice shelf) portion of the grid cell divided by floating land ice (floating ice shelf) area in the grid cell. Cell_methods: area: mean where floating_ice_shelf"
 }

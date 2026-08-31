@@ -3,8 +3,8 @@
     "id": "hfdsn",
     "type": "variable",
     "drs_name": "hfdsn",
-    "description": "\"Downward\" indicates a vector component which is positive when directed downward (negative upward). In accordance with common usage in geophysical disciplines, \"flux\" implies per unit area, called \"flux density\" in physics. The surface called \"surface\" means the lower boundary of the atmosphere.",
     "long_name": "Downward Heat Flux into Snow Where Land over Land",
     "standard_name": "surface_downward_heat_flux_in_snow",
-    "units": "W m-2"
+    "units": "W m-2",
+    "description": "the net downward heat flux from the atmosphere into the snow that lies on land divided by the land area in the grid cell; reported as 0.0 for snow-free land regions or where the land fraction is 0."
 }

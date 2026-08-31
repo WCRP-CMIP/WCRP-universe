@@ -3,8 +3,8 @@
     "id": "o3ste",
     "type": "variable",
     "drs_name": "o3ste",
-    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
     "long_name": "Stratospheric Ozone Tracer Volume Mixing Ratio",
     "standard_name": "mole_fraction_of_ozone_in_air",
-    "units": "1"
+    "units": "mol mol-1",
+    "description": "Ozone tracer intended to map out strat-trop exchange (STE) of ozone. Set to ozone in the stratosphere, then destroyed in the troposphere using the ozone chemical loss rate. Please specify the tropopause definition used"
 }

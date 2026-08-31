@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "latitude",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "latitude",
+    "coordinate_type": "generic_horizontal",
+    "data_type": "double",
+    "out_name": "lat",
+    "cf_standard_name": "latitude",
+    "units": "degrees_north",
+    "axis": "Y",
+    "stored_direction": "increasing",
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

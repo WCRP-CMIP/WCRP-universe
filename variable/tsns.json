@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tsns",
     "type": "variable",
-    "description": "Snow Surface Temperature",
     "drs_name": "tsns",
-    "long_name": null,
+    "long_name": "Snow Surface Temperature",
     "standard_name": "surface_temperature",
-    "units": "K"
+    "units": "K",
+    "description": "Temperature of the snow surface as it interacts with the atmosphere, averaged over a grid cell."
 }

@@ -3,8 +3,8 @@
     "id": "dryno3",
     "type": "variable",
     "drs_name": "dryno3",
-    "description": "",
     "long_name": "Dry deposition of nitrate aerosol",
     "standard_name": "tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_due_to_dry_deposition",
-    "units": ""
+    "units": "kg m-2 s-1",
+    "description": "Loss rate of nitrate (NO3) aerosol from the atmosphere due to dry deposition"
 }

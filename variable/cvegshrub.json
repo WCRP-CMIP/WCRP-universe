@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "cvegshrub",
     "type": "variable",
-    "description": "Carbon Mass in Vegetation on Shrub Tiles",
     "drs_name": "cVegShrub",
-    "long_name": null,
+    "long_name": "Carbon Mass in Vegetation on Shrub Tiles",
     "standard_name": "vegetation_carbon_content",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "\"Content\" indicates a quantity per unit area. \"Vegetation\" means any plants e.g. trees, shrubs, grass. Plants are autotrophs i.e. \"producers\" of biomass using carbon obtained from carbon dioxide."
 }

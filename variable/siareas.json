@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "siareas",
     "type": "variable",
-    "description": "Sea-Ice Area South",
     "drs_name": "siareas",
-    "long_name": null,
+    "long_name": "Sea-Ice Area South",
     "standard_name": "sea_ice_area",
-    "units": "1e6 km2"
+    "units": "1e6 km2",
+    "description": "Total integrated area of sea ice in the Southern Hemisphere (where siconc > 0). Does not include grid cells partially covered by land."
 }

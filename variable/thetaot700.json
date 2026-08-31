@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "thetaot700",
     "type": "variable",
-    "description": "Depth Average Potential Temperature of Upper 700m",
     "drs_name": "thetaot700",
-    "long_name": null,
+    "long_name": "Depth Average Potential Temperature of Upper 700m",
     "standard_name": "sea_water_potential_temperature",
-    "units": "degC"
+    "units": "degC",
+    "description": "Upper 700m, 2D field"
 }

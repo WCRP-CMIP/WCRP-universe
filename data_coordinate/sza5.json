@@ -1,0 +1,23 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sza5",
+    "type": "data_coordinate",
+    "description": "5 solar zenith angles for PARASOL reflectances",
+    "drs_name": "sza5",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "sza",
+    "cf_standard_name": "solar_zenith_angle",
+    "units": "degree",
+    "stored_direction": "increasing",
+    "coordinate_values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

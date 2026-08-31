@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "seaice",
+    "type": "table",
+    "description": "Table identifier used by CMIP7 seaIce.",
+    "drs_name": "seaIce",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}

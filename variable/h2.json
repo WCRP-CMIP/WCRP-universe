@@ -3,8 +3,8 @@
     "id": "h2",
     "type": "variable",
     "drs_name": "h2",
-    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.  The chemical formula of molecular hydrogen is H2.",
     "long_name": "H2 volume mixing ratio",
     "standard_name": "mole_fraction_of_molecular_hydrogen_in_air",
-    "units": "1"
+    "units": "mol mol-1",
+    "description": "This is the mole fraction of molecular hydrogen (H2) in air"
 }

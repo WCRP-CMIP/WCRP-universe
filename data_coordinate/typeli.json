@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typeli",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "typeli",
+    "coordinate_type": "scalar",
+    "data_type": "character",
+    "out_name": "type",
+    "cf_standard_name": "area_type",
+    "coordinate_values": "land_ice",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

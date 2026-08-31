@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ocnbgchem",
+    "type": "table",
+    "description": "Table identifier used by CMIP7 ocnBgchem.",
+    "drs_name": "ocnBgchem",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}

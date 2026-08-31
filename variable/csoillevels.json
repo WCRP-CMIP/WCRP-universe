@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "csoillevels",
     "type": "variable",
-    "description": "Carbon Mass in Each Model Soil Level (Summed over All Soil Carbon Pools in That Level)",
     "drs_name": "cSoilLevels",
-    "long_name": null,
-    "standard_name": "soil_mass_content_of_carbon",
-    "units": "kg m-2"
+    "long_name": "Carbon Mass in Each Model Soil Level (Summed over All Soil Carbon Pools in That Level)",
+    "standard_name": "carbon_mass_content_of_soil_layer",
+    "units": "kg m-2",
+    "description": "for models with vertically discretised soil carbon, report total soil carbon for each level"
 }

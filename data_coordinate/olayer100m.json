@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "olayer100m",
+    "type": "data_coordinate",
+    "description": "Coordinate for a layer from the surface to 100m.",
+    "drs_name": "olayer100m",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "depth",
+    "cf_standard_name": "depth",
+    "units": "m",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "coordinate_values": [
+        50.0
+    ],
+    "coordinate_bounds": [
+        0.0,
+        100.0
+    ],
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

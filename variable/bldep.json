@@ -3,8 +3,8 @@
     "id": "bldep",
     "type": "variable",
     "drs_name": "bldep",
-    "description": "The atmosphere boundary layer thickness is the \"depth\" or \"height\" of the (atmosphere) planetary boundary layer.",
-    "long_name": "Minimum PBL Height",
+    "long_name": "Boundary Layer Depth",
     "standard_name": "atmosphere_boundary_layer_thickness",
-    "units": "m"
+    "units": "m",
+    "description": "maximum boundary layer height during the day (add cell_methods attribute: \"time: maximum\")"
 }

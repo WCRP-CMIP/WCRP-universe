@@ -1,0 +1,20 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "height2m",
+    "type": "data_coordinate",
+    "description": "~2 m standard surface air temperature and surface humidity  height",
+    "drs_name": "height2m",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "height",
+    "cf_standard_name": "height",
+    "units": "m",
+    "axis": "Z",
+    "positive": "up",
+    "coordinate_values": [
+        2.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

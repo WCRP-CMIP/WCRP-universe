@@ -1,0 +1,32 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "effectradic",
+    "type": "data_coordinate",
+    "description": "Effective Radius of Ice Aerosols  [Values to be specified]",
+    "drs_name": "effectRadIc",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "effectRadIc",
+    "units": "micron",
+    "stored_direction": "increasing",
+    "coordinate_values": [
+        5.0,
+        15.0,
+        25.0,
+        35.0,
+        50.0,
+        75.0
+    ],
+    "coordinate_bounds": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        60.0,
+        90.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}
