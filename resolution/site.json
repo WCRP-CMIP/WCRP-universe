@@ -3,6 +3,8 @@
     "id": "site",
     "type": "resolution",
     "name": "site",
+    "value": "0",
+    "unit": "site",
     "drs_name": "site",
     "description": "site-level resolution"
 }
