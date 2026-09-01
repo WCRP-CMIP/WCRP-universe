@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "us-beo", "type": "site_id", "name": "US-Beo", "drs_name": "US-Beo", "description": {"location": "Barrow Environmental Observatory (BEO) tower", "latitude": "71.2810", "longitude": "-156.6123"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "us-beo",
+  "type": "site_id",
+  "name": "US-Beo",
+  "drs_name": "US-Beo",
+  "description": "",
+  "location": "Barrow Environmental Observatory (BEO) tower",
+  "latitude": "71.2810",
+  "longitude": "-156.6123"
+}

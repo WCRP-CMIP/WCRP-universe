@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "us-src", "type": "site_id", "name": "US-SRC", "drs_name": "US-SRC", "description": {"location": "Santa Rita Creosote", "latitude": "31.9083", "longitude": "-110.8395"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "us-src",
+  "type": "site_id",
+  "name": "US-SRC",
+  "drs_name": "US-SRC",
+  "description": "",
+  "location": "Santa Rita Creosote",
+  "latitude": "31.9083",
+  "longitude": "-110.8395"
+}

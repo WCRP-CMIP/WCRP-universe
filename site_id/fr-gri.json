@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "fr-gri", "type": "site_id", "name": "FR-Gri", "drs_name": "FR-Gri", "description": {"location": "Grignon", "latitude": "48.8442", "longitude": "1.9519"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "fr-gri",
+  "type": "site_id",
+  "name": "FR-Gri",
+  "drs_name": "FR-Gri",
+  "description": "",
+  "location": "Grignon",
+  "latitude": "48.8442",
+  "longitude": "1.9519"
+}

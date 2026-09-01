@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "us-blo", "type": "site_id", "name": "US-Blo", "drs_name": "US-Blo", "description": {"location": "Blodgett Forest", "latitude": "38.8953", "longitude": "-120.6328"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "us-blo",
+  "type": "site_id",
+  "name": "US-Blo",
+  "drs_name": "US-Blo",
+  "description": "",
+  "location": "Blodgett Forest",
+  "latitude": "38.8953",
+  "longitude": "-120.6328"
+}

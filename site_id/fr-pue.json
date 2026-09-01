@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "fr-pue", "type": "site_id", "name": "FR-Pue", "drs_name": "FR-Pue", "description": {"location": "Puechabon", "latitude": "43.7413", "longitude": "3.5957"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "fr-pue",
+  "type": "site_id",
+  "name": "FR-Pue",
+  "drs_name": "FR-Pue",
+  "description": "",
+  "location": "Puechabon",
+  "latitude": "43.7413",
+  "longitude": "3.5957"
+}

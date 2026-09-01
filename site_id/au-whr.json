@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "au-whr", "type": "site_id", "name": "AU-Whr", "drs_name": "AU-Whr", "description": {"location": "Whroo", "latitude": "-36.6732", "longitude": "145.0294"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "au-whr",
+  "type": "site_id",
+  "name": "AU-Whr",
+  "drs_name": "AU-Whr",
+  "description": "",
+  "location": "Whroo",
+  "latitude": "-36.6732",
+  "longitude": "145.0294"
+}

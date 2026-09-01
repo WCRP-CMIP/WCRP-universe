@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "us-arc", "type": "site_id", "name": "US-ARc", "drs_name": "US-ARc", "description": {"location": "ARM Southern Great Plains control site- Lamont", "latitude": "35.5465", "longitude": "-98.0400"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "us-arc",
+  "type": "site_id",
+  "name": "US-ARc",
+  "drs_name": "US-ARc",
+  "description": "",
+  "location": "ARM Southern Great Plains control site- Lamont",
+  "latitude": "35.5465",
+  "longitude": "-98.0400"
+}

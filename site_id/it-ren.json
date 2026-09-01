@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "it-ren", "type": "site_id", "name": "IT-Ren", "drs_name": "IT-Ren", "description": {"location": "Renon", "latitude": "46.5869", "longitude": "11.4337"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "it-ren",
+  "type": "site_id",
+  "name": "IT-Ren",
+  "drs_name": "IT-Ren",
+  "description": "",
+  "location": "Renon",
+  "latitude": "46.5869",
+  "longitude": "11.4337"
+}
