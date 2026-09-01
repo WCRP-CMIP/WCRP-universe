@@ -4,7 +4,8 @@
     "type": "organisation",
     "drs_name": "AS-RCEC",
     "members": [
-        "as-rcec"
+        "as-rcec",
+        "ntu"
     ],
-    "description": "Research Center for Environmental Changes, Academia Sinica"
+    "description": "The Research Center for Environmental Changes, Academia Sinica (AS-RCEC) is responsible for the development and maintenance of the Taiwan Earth System Model (TaiESM) in Taiwan."
 }
