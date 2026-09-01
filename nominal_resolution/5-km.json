@@ -3,5 +3,11 @@
     "id": "5-km",
     "type": "nominal_resolution",
     "drs_name": "5-km",
-    "description": "5-km nominal resolution"
+    "description": "5-km nominal resolution",
+    "magnitude": 5.0,
+    "range": [
+        3.6,
+        7.2
+    ],
+    "units": "km"
 }

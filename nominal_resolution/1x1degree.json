@@ -3,5 +3,11 @@
     "id": "1x1degree",
     "type": "nominal_resolution",
     "drs_name": "1x1degree",
-    "description": "1x1degree nominal resolution"
+    "description": "1x1degree nominal resolution",
+    "magnitude": 100.0,
+    "range": [
+        72.0,
+        160.0
+    ],
+    "units": "km"
 }

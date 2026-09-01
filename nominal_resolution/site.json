@@ -3,5 +3,11 @@
     "id": "site",
     "type": "nominal_resolution",
     "drs_name": "site",
-    "description": "site nominal resolution"
+    "description": "site nominal resolution",
+    "magnitude": 0.0,
+    "range": [
+        0.0,
+        0.0
+    ],
+    "units": "km"
 }
