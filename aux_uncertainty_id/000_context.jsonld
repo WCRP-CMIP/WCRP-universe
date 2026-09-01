@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base":"https://esgvoc.ipsl.fr/resource/universe/has_aux_unc/",
+        "@base":"https://esgvoc.ipsl.fr/resource/universe/aux_uncertainty_id/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type":"@type",

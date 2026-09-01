@@ -1,5 +1,7 @@
 {
     "@context": "000_context.jsonld",
     "id": "5-km",
-    "type": "resolution"
+    "type": "nominal_resolution",
+    "drs_name": "5-km",
+    "description": "5-km nominal resolution"
 }
