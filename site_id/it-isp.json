@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "it-isp", "type": "site_id", "name": "IT-Isp", "drs_name": "IT-Isp", "description": {"location": "Ispra ABC-IS", "latitude": "45.8126", "longitude": "8.6336"}}

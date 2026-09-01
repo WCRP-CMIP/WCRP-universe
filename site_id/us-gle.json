@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "us-gle", "type": "site_id", "name": "US-GLE", "drs_name": "US-GLE", "description": {"location": "GLEES", "latitude": "41.3665", "longitude": "-106.2399"}}

@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "us-var", "type": "site_id", "name": "US-Var", "drs_name": "US-Var", "description": {"location": "Vaira Ranch- Ione", "latitude": "38.4133", "longitude": "-120.9508"}}

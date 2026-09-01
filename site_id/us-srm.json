@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "us-srm", "type": "site_id", "name": "US-SRM", "drs_name": "US-SRM", "description": {"location": "Santa Rita Mesquite", "latitude": "31.8214", "longitude": "-110.8661"}}

@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "ca-ns2", "type": "site_id", "name": "CA-NS2", "drs_name": "CA-NS2", "description": {"location": "UCI-1930 burn site", "latitude": "55.9058", "longitude": "-98.5247"}}

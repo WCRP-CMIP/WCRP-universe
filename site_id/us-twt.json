@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "us-twt", "type": "site_id", "name": "US-Twt", "drs_name": "US-Twt", "description": {"location": "Twitchell Island", "latitude": "38.1087", "longitude": "-121.6531"}}

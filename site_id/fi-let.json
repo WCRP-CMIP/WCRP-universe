@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "fi-let", "type": "site_id", "name": "FI-Let", "drs_name": "FI-Let", "description": {"location": "Lettosuo", "latitude": "60.6418", "longitude": "23.9595"}}

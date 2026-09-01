@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "at-neu", "type": "site_id", "name": "AT-Neu", "drs_name": "AT-Neu", "description": {"location": "Neustift", "latitude": "47.1167", "longitude": "11.3175"}}

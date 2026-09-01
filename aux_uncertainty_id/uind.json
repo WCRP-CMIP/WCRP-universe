@@ -1,1 +1,0 @@
-{"@context": "000_context.jsonld", "id": "uind", "type": "aux_uncertainty_id", "name": "uind", "drs_name": "uind", "description": "uncertainty due to independent effects"}
