@@ -2,9 +2,6 @@
     "@context": "000_context.jsonld",
     "id": "5-km",
     "type": "nominal_resolution",
-    "description": "Resolution of 5 km",
-    "drs_name": "5 km",
-    "value": "5",
-    "name": "5km",
-    "unit": "km"
+    "drs_name": "5-km",
+    "description": "5-km nominal resolution"
 }
