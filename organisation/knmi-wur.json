@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "knmi-wur",
+    "type": "organisation",
+    "drs_name": "KNMI-WUR",
+    "members": [
+        "knmi-wur"
+    ],
+    "description": "KNMI-WUR"
+}

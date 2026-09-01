@@ -1,1 +1,14 @@
-{"@context": "000_context.jsonld", "id": "emoryu", "type": "institution_id", "drs_name": "EmoryU", "description": "Emory University, GA, USA"}
+{
+    "@context": "000_context.jsonld",
+    "id": "emoryu",
+    "type": "institution",
+    "drs_name": "EmoryU",
+    "acronyms": [],
+    "labels": [
+        "Emory University, GA, USA"
+    ],
+    "description": "EmoryU",
+    "location": [],
+    "ror": null,
+    "urls": []
+}
