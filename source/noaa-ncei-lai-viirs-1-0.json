@@ -1,1 +1,15 @@
-{"@context": "000_context.jsonld", "id": "noaa-ncei-lai-viirs-1-0", "type": "source_id", "drs_name": "NOAA-NCEI-LAI-VIIRS-1-0", "description": "Monthly Average of Daily Leaf Area Index from VIIRS"}
+{
+    "@context": "000_context.jsonld",
+    "id": "noaa-ncei-lai-viirs-1-0",
+    "type": "source",
+    "drs_name": "NOAA-NCEI-LAI-VIIRS-1-0",
+    "description": "Monthly Average of Daily Leaf Area Index from VIIRS",
+    "activity_participation": [],
+    "cohort": [],
+    "organisation_id": [],
+    "label": "NOAA-NCEI-LAI-VIIRS-1-0",
+    "label_extended": "Monthly Average of Daily Leaf Area Index from VIIRS",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

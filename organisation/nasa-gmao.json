@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nasa-gmao",
+    "type": "organisation",
+    "drs_name": "NASA-GMAO",
+    "members": [
+        "nasa-gmao"
+    ],
+    "description": "NASA-GMAO"
+}

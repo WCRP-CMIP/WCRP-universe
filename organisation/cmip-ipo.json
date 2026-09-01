@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cmip-ipo",
+    "type": "organisation",
+    "drs_name": "CMIP-IPO",
+    "members": [
+        "cmip-ipo"
+    ],
+    "description": "CMIP-IPO"
+}
