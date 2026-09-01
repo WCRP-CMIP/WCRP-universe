@@ -1,1 +1,8 @@
-{"@context": "000_context.jsonld", "id": "ai_upscaling", "type": "source_type"}
+{
+    "@context": "000_context.jsonld",
+    "id": "ai_upscaling",
+    "type": "obs_type",
+    "name": "ai_upscaling",
+    "drs_name": "ai_upscaling",
+    "description": "AI upscaling observation type"
+}
