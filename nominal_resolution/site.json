@@ -2,6 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "site",
     "type": "nominal_resolution",
+    "description": "Site-level point measurement",
     "drs_name": "site",
-    "description": "site nominal resolution"
+    "value": "0",
+    "name": "site",
+    "unit": "km"
 }
