@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mohc-cru-ncas",
+    "type": "institution",
+    "drs_name": "MOHC-CRU-NCAS",
+    "acronyms": [],
+    "labels": [
+        "Joint research collaboration between MOHC(UK), CRU-UEA (UK) and NCAS (UK)"
+    ],
+    "description": "MOHC-CRU-NCAS",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

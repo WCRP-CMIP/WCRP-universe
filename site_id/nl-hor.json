@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "nl-hor",
+  "type": "site_id",
+  "name": "NL-Hor",
+  "drs_name": "NL-Hor",
+  "description": "",
+  "location": "Horstermeer",
+  "latitude": "52.2403",
+  "longitude": "5.0713"
+}

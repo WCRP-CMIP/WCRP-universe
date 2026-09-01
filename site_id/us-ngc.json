@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "us-ngc",
+  "type": "site_id",
+  "name": "US-NGC",
+  "drs_name": "US-NGC",
+  "description": "",
+  "location": "NGEE Arctic Council",
+  "latitude": "64.8618",
+  "longitude": "-163.7002"
+}

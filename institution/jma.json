@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "jma",
+    "type": "institution",
+    "drs_name": "JMA",
+    "acronyms": [],
+    "labels": [
+        "Japanese Meterorological Agency"
+    ],
+    "description": "JMA",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

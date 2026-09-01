@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "sd-dem",
+  "type": "site_id",
+  "name": "SD-Dem",
+  "drs_name": "SD-Dem",
+  "description": "",
+  "location": "Demokeya",
+  "latitude": "13.2829",
+  "longitude": "30.4783"
+}

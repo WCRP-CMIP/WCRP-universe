@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "de-lnf",
+  "type": "site_id",
+  "name": "DE-Lnf",
+  "drs_name": "DE-Lnf",
+  "description": "",
+  "location": "Leinefelde",
+  "latitude": "51.3282",
+  "longitude": "10.3678"
+}

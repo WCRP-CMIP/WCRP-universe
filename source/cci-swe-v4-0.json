@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cci-swe-v4-0",
+    "type": "source",
+    "drs_name": "CCI-SWE-v4-0",
+    "description": "Snow Water Equivalent (SWE) from the ESA SNOW CCI Climate Data Record version 4.0",
+    "activity_participation": [],
+    "cohort": [],
+    "organisation_id": [],
+    "label": "CCI-SWE-v4-0",
+    "label_extended": "Snow Water Equivalent (SWE) from the ESA SNOW CCI Climate Data Record version 4.0",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

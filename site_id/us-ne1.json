@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "us-ne1",
+  "type": "site_id",
+  "name": "US-Ne1",
+  "drs_name": "US-Ne1",
+  "description": "",
+  "location": "Mead - irrigated continuous maize site",
+  "latitude": "41.1651",
+  "longitude": "-96.4766"
+}

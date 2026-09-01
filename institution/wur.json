@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wur",
+    "type": "institution",
+    "drs_name": "WUR",
+    "acronyms": [],
+    "labels": [
+        "Wageningen Universit, Netherlands"
+    ],
+    "description": "WUR",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

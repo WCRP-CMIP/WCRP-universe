@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "nz-kop",
+  "type": "site_id",
+  "name": "NZ-Kop",
+  "drs_name": "NZ-Kop",
+  "description": "",
+  "location": "Kopuatai",
+  "latitude": "-37.3879",
+  "longitude": "175.5539"
+}

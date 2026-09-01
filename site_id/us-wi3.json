@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "us-wi3",
+  "type": "site_id",
+  "name": "US-Wi3",
+  "drs_name": "US-Wi3",
+  "description": "",
+  "location": "Mature hardwood (MHW)",
+  "latitude": "46.6347",
+  "longitude": "-91.0987"
+}

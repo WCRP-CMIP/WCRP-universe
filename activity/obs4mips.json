@@ -1,7 +1,7 @@
 {
     "@context": "000_context.jsonld",
     "type": "activity",
-    "id": "obs4mip",
+    "id": "obs4mips",
     "name": "obs4MIPs",
     "cmip_acronym": "obs4MIPs",
     "long_name": "Observations datasets for Model Intercomparison Projects",

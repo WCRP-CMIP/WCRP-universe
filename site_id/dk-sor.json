@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "dk-sor",
+  "type": "site_id",
+  "name": "DK-Sor",
+  "drs_name": "DK-Sor",
+  "description": "",
+  "location": "Soroe",
+  "latitude": "55.4859",
+  "longitude": "11.6446"
+}
