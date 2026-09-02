@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ucsb-chc",
+    "type": "organisation",
+    "drs_name": "UCSB-CHC",
+    "members": [
+        "ucsb-chc"
+    ],
+    "description": "UCSB-CHC"
+}

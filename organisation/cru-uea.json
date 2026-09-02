@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cru-uea",
+    "type": "organisation",
+    "drs_name": "CRU-UEA",
+    "members": [
+        "cru-uea"
+    ],
+    "description": "CRU-UEA"
+}

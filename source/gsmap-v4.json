@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "gsmap-v4",
+    "type": "source",
+    "drs_name": "GSMaP-v4",
+    "description": "JAXA GSMAP",
+    "activity_participation": [],
+    "cohort": [],
+    "organisation_id": [],
+    "label": "GSMaP-v4",
+    "label_extended": "JAXA GSMAP",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

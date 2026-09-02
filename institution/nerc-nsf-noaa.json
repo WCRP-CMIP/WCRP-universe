@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nerc-nsf-noaa",
+    "type": "institution",
+    "drs_name": "NERC-NSF-NOAA",
+    "acronyms": [],
+    "labels": [
+        "Multi-institute/agency collaboration"
+    ],
+    "description": "NERC-NSF-NOAA",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

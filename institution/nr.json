@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nr",
+    "type": "institution",
+    "drs_name": "NR",
+    "acronyms": [],
+    "labels": [
+        "Norwegian Computing Center, Oslo, NO"
+    ],
+    "description": "NR",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "gl-nuf",
+  "type": "site_id",
+  "name": "GL-NuF",
+  "drs_name": "GL-NuF",
+  "description": "",
+  "location": "Nuuk Fen",
+  "latitude": "64.1308",
+  "longitude": "-51.3861"
+}

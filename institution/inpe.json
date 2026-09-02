@@ -7,19 +7,22 @@
         "INPE"
     ],
     "labels": [
-        "Instituto Nacional de Pesquisas Espaciais"
+        "Instituto Nacional de Pesquisas Espaciais",
+        "National Institute for Space Research"
     ],
     "description": "Instituto Nacional de Pesquisas Espaciais",
     "location": [
         {
-            "city": "São José dos Campos",
+            "city": "S\u00e3o Jos\u00e9 dos Campos",
             "country": "Brazil",
-            "lat": -23.2237,
-            "lon": -45.9009
+            "lat": -23.17944,
+            "lon": -45.88694
         }
     ],
     "ror": "04xbn6x09",
     "urls": [
-        "https://www.inpe.br/"
+        "https://www.inpe.br/",
+        "https://www.gov.br/inpe/pt-br",
+        "https://en.wikipedia.org/wiki/National_Institute_for_Space_Research"
     ]
 }

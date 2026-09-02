@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cru-uea",
+    "type": "institution",
+    "drs_name": "CRU-UEA",
+    "acronyms": [],
+    "labels": [
+        "Climatic Research Unit, University of East Anglia, Norwich, UK"
+    ],
+    "description": "CRU-UEA",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

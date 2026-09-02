@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cz-bk1",
+  "type": "site_id",
+  "name": "CZ-BK1",
+  "drs_name": "CZ-BK1",
+  "description": "",
+  "location": "Bily Kriz forest",
+  "latitude": "49.5021",
+  "longitude": "18.5369"
+}

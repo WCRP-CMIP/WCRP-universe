@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "de-akm",
+  "type": "site_id",
+  "name": "DE-Akm",
+  "drs_name": "DE-Akm",
+  "description": "",
+  "location": "Anklam",
+  "latitude": "53.8662",
+  "longitude": "13.6834"
+}

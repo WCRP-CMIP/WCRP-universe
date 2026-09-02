@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "au-fog",
+  "type": "site_id",
+  "name": "AU-Fog",
+  "drs_name": "AU-Fog",
+  "description": "",
+  "location": "Fogg Dam",
+  "latitude": "-12.5452",
+  "longitude": "131.3072"
+}

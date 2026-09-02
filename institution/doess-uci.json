@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "doess-uci",
+    "type": "institution",
+    "drs_name": "DoESS-UCI",
+    "acronyms": [],
+    "labels": [
+        "Department of Earth System Science, University of California Irvine"
+    ],
+    "description": "DoESS-UCI",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

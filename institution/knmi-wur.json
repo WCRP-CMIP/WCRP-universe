@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "knmi-wur",
+    "type": "institution",
+    "drs_name": "KNMI-WUR",
+    "acronyms": [],
+    "labels": [
+        "Multi-institute/agency collaboration"
+    ],
+    "description": "KNMI-WUR",
+    "location": [],
+    "ror": null,
+    "urls": []
+}

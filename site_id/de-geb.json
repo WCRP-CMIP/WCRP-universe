@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "de-geb",
+  "type": "site_id",
+  "name": "DE-Geb",
+  "drs_name": "DE-Geb",
+  "description": "",
+  "location": "Gebesee",
+  "latitude": "51.0997",
+  "longitude": "10.9146"
+}
