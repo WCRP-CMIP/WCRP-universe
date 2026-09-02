@@ -1,10 +1,10 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "u2",
-    "type": "variable",
-    "description": "Mean-Squared Eastward Wind Speed",
-    "drs_name": "u2",
-    "long_name": null,
-    "standard_name": "square_of_eastward_wind",
-    "units": "m2 s-2"
+  "@context": "000_context.jsonld",
+  "id": "u2",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
 }

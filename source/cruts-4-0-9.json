@@ -1,1 +1,15 @@
-{"@context": "000_context.jsonld", "id": "cruts-4-0-9", "type": "source_id", "drs_name": "CRUTS-4-0-9", "description": "Climate Research Unit temperature, volume of hydrological precipitation, vapour pressure, wet days, cloud cover-In-situ (gridded)"}
+{
+    "@context": "000_context.jsonld",
+    "id": "cruts-4-0-9",
+    "type": "source",
+    "drs_name": "CRUTS-4-0-9",
+    "description": "Climate Research Unit temperature, volume of hydrological precipitation, vapour pressure, wet days, cloud cover-In-situ (gridded)",
+    "activity_participation": [],
+    "cohort": [],
+    "organisation_id": [],
+    "label": "CRUTS-4-0-9",
+    "label_extended": "Climate Research Unit temperature, volume of hydrological precipitation, vapour pressure, wet days, cloud cover-In-situ (gridded)",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

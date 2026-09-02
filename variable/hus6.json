@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hus6",
+    "type": "variable",
+    "drs_name": "hus6",
+    "long_name": "Specific humidity for global field (6 pressure level)",
+    "standard_name": "specific_humidity",
+    "units": "1",
+    "description": "Specific humidity on 6 pressure levels in the lower troposphere"
+}

@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typetreend",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "typetreend",
+    "coordinate_type": "scalar",
+    "data_type": "character",
+    "out_name": "type",
+    "cf_standard_name": "area_type",
+    "coordinate_values": "needleleaf_deciduous_trees",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

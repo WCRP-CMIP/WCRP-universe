@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "l_index",
+    "type": "grid_axis",
+    "description": "",
+    "drs_name": "l_index",
+    "data_type": "integer",
+    "out_name": "l",
+    "units": "1"
+}

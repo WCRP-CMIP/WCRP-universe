@@ -3,8 +3,8 @@
     "id": "areacella",
     "type": "variable",
     "drs_name": "areacella",
-    "description": "\"Cell_area\" is the horizontal area of a gridcell.",
     "long_name": "Grid-Cell Area for Atmospheric Grid Variables",
     "standard_name": "cell_area",
-    "units": "m2"
+    "units": "m2",
+    "description": "For atmospheres with more than 1 mesh (e.g., staggered grids), report areas that apply to surface vertical fluxes of energy."
 }

@@ -3,8 +3,8 @@
     "id": "modelcellareai",
     "type": "variable",
     "drs_name": "modelcellareai",
-    "description": "\"Cell_area\" is the horizontal area of a gridcell.",
     "long_name": "The Cell Area of the Ice Sheet Model",
     "standard_name": "cell_area",
-    "units": "m2"
+    "units": "m2",
+    "description": "Horizontal area of ice-sheet grid cells"
 }

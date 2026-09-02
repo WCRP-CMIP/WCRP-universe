@@ -1159,8 +1159,8 @@ class Holder(BaseModel):
                     "a future experiment",
                     "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
                 ),
-                ["aogcm", "aer"],
-                ["chem", "bgc"],
+                ["agcm"],
+                ["aer", "chem", "bgc"],
             ),
             (
                 "piClim-histall",
@@ -1175,8 +1175,8 @@ class Holder(BaseModel):
                     "a future experiment",
                     "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
                 ),
-                ["aogcm", "aer"],
-                ["chem", "bgc"],
+                ["agcm"],
+                ["aer", "chem", "bgc"],
             ),
         ):
             univ = ExperimentUniverse(

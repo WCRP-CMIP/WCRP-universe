@@ -1,0 +1,22 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "wrf451v",
+  "type": "source",
+  "drs_name": "WRF451V",
+  "activity_participation": [
+    "DD"
+  ],
+  "cohort": [
+    "Registered"
+  ],
+  "organisation_id": [],
+  "label": "WRF v4.5.1-V",
+  "label_extended": "Weather Research and Forecasting model version 4.5.1, CORDEX WRF Community configuration V",
+  "license": {
+    "id": "CC BY 4.0",
+    "exceptions-contact": null,
+    "source-specific-info": ""
+  },
+  "model_component": {},
+  "release_year": "2023"
+}

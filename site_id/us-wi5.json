@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "us-wi5", "type": "site_id", "name": "US-Wi5", "drs_name": "US-Wi5", "description": {"location": "Mixed young jack pine (MYJP)", "latitude": "46.6531", "longitude": "-91.0858"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "us-wi5",
+  "type": "site_id",
+  "name": "US-Wi5",
+  "drs_name": "US-Wi5",
+  "description": "",
+  "location": "Mixed young jack pine (MYJP)",
+  "latitude": "46.6531",
+  "longitude": "-91.0858"
+}

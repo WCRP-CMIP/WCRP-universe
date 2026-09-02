@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "aerosol",
+    "type": "table",
+    "description": "Table identifier used by CMIP7 aerosol.",
+    "drs_name": "aerosol",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}

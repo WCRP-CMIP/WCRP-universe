@@ -3,8 +3,8 @@
     "id": "volcello",
     "type": "variable",
     "drs_name": "volcello",
-    "description": "",
     "long_name": "Ocean Grid-Cell Volume",
     "standard_name": "ocean_volume",
-    "units": "m3"
+    "units": "m3",
+    "description": "grid-cell volume ca. 2000."
 }

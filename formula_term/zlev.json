@@ -1,0 +1,13 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "zlev",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "zlev",
+    "data_type": "double",
+    "out_name": "zlev",
+    "units": "m",
+    "dimensions": [
+        "olevel"
+    ]
+}

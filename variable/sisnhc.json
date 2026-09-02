@@ -3,8 +3,8 @@
     "id": "sisnhc",
     "type": "variable",
     "drs_name": "sisnhc",
-    "description": "\"Content\" indicates a quantity per unit area. Thermal energy is the total vibrational energy, kinetic and potential, of all the molecules and atoms in a substance. Surface snow refers to the snow on the solid ground or on surface ice cover, but excludes, for example, falling snowflakes and snow on plants.",
     "long_name": "Snow Heat Content",
     "standard_name": "thermal_energy_content_of_surface_snow",
-    "units": "J m-2"
+    "units": "J m-2",
+    "description": "Heat content of all snow in grid cell divided by grid-cell area. This includes both the latent and sensible heat content contributions. Snow-water equivalent at 0 C is assumed to have a heat content of 0 J. Does not include the heat content of sea ice."
 }

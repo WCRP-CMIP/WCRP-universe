@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "time1",
+    "type": "data_coordinate",
+    "description": "synoptic times (for fields that are not time-means)",
+    "drs_name": "time1",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "time",
+    "cf_standard_name": "time",
+    "units": "days since ?",
+    "axis": "T",
+    "stored_direction": "increasing",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

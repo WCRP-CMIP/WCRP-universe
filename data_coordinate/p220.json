@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "p220",
+    "type": "data_coordinate",
+    "description": "pressure layer of high-level cloud in ISCCP simulator",
+    "drs_name": "p220",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "plev",
+    "cf_standard_name": "air_pressure",
+    "units": "Pa",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "decreasing",
+    "coordinate_values": [
+        22000.0
+    ],
+    "coordinate_bounds": [
+        44000.0,
+        0.0
+    ],
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

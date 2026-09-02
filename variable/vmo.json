@@ -3,8 +3,8 @@
     "id": "vmo",
     "type": "variable",
     "drs_name": "vmo",
-    "description": "\"y\" indicates a vector component along the grid y-axis, positive with increasing y.",
     "long_name": "Ocean Mass Y Transport",
     "standard_name": "ocean_mass_y_transport",
-    "units": "kg s-1"
+    "units": "kg s-1",
+    "description": "Y-ward mass transport from resolved and parameterized advective transport."
 }

@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "us-wcr", "type": "site_id", "name": "US-WCr", "drs_name": "US-WCr", "description": {"location": "Willow Creek", "latitude": "45.8059", "longitude": "-90.0799"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "us-wcr",
+  "type": "site_id",
+  "name": "US-WCr",
+  "drs_name": "US-WCr",
+  "description": "",
+  "location": "Willow Creek",
+  "latitude": "45.8059",
+  "longitude": "-90.0799"
+}

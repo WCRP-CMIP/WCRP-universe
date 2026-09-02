@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "hussanom",
     "type": "variable",
-    "description": "Near-Surface Specific Humidity Anomaly",
     "drs_name": "hussanom",
-    "long_name": null,
-    "standard_name": "specific_humidity_anomaly",
-    "units": "1"
+    "long_name": "Near-Surface Specific Humidity Anomaly",
+    "standard_name": "specific_humidity",
+    "units": "1",
+    "description": "Anomaly of near-surface specific humidity."
 }

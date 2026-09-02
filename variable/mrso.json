@@ -3,8 +3,8 @@
     "id": "mrso",
     "type": "variable",
     "drs_name": "mrso",
-    "description": "\"Water\" means water in all phases. \"Content\" indicates a quantity per unit area. The mass content of water in soil refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including \"content_of_soil_layer\" are used.",
     "long_name": "Total Soil Moisture Content",
     "standard_name": "mass_content_of_water_in_soil",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "the mass per unit area  (summed over all soil layers) of water in all phases."
 }

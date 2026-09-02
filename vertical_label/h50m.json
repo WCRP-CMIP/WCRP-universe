@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "h50m",
+  "type": "vertical_label",
+  "description": "Data is reported at a vertical height of 50m.",
+  "drs_name": "h50m"
+}

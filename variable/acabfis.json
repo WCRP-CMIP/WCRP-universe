@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "acabfis",
     "type": "variable",
-    "description": "Ice Sheet Surface Mass Balance Flux",
     "drs_name": "acabfIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Surface Mass Balance Flux",
     "standard_name": "land_ice_surface_specific_mass_balance_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "Specific mass balance means the net rate at which ice is added per unit area at the land ice surface. Computed as the total surface mass balance on the land ice portion of the grid cell divided by land ice area in the grid cell. A negative value means loss of ice"
 }

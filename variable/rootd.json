@@ -3,8 +3,8 @@
     "id": "rootd",
     "type": "variable",
     "drs_name": "rootd",
-    "description": "Depth is the vertical distance below the surface. The root depth is maximum depth of soil reached by plant roots, from which they can extract moisture.",
     "long_name": "Maximum Root Depth",
     "standard_name": "root_depth",
-    "units": "m"
+    "units": "m",
+    "description": "report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as *missing* where the land fraction is 0."
 }

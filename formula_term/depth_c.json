@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth_c",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "depth_c",
+    "data_type": "double",
+    "out_name": "depth_c",
+    "units": "m"
+}

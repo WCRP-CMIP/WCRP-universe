@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tasmaxcrop",
     "type": "variable",
-    "description": "Daily Maximum Near-Surface Air Temperature over Crop Tile",
     "drs_name": "tasmaxCrop",
-    "long_name": null,
+    "long_name": "Daily Maximum Near-Surface Air Temperature over Crop Tile",
     "standard_name": "air_temperature",
-    "units": "K"
+    "units": "K",
+    "description": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute \"time: max\")"
 }

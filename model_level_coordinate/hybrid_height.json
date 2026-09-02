@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hybrid_height",
+    "type": "model_level_coordinate",
+    "description": "",
+    "drs_name": "hybrid_height",
+    "axis": "Z",
+    "data_type": "double",
+    "out_name": "lev",
+    "positive": "up",
+    "stored_direction": "increasing",
+    "generic_level_name": "alevel",
+    "cf_standard_name": "atmosphere_hybrid_height_coordinate",
+    "units": "m",
+    "formula": "z = a + b*orog",
+    "z_factors": [
+        "b",
+        "orog"
+    ],
+    "z_bounds_factors": [
+        "b_bnds",
+        "orog"
+    ],
+    "bounds_required": true
+}

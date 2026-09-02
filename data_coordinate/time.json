@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "time",
+    "type": "data_coordinate",
+    "description": "for time-mean fields",
+    "drs_name": "time",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "time",
+    "cf_standard_name": "time",
+    "units": "days since ?",
+    "axis": "T",
+    "stored_direction": "increasing",
+    "bounds_required": true,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

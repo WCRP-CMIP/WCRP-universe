@@ -3,8 +3,8 @@
     "id": "intvaw",
     "type": "variable",
     "drs_name": "intvaw",
-    "description": "\"Water\" means water in all phases. \"Northward\" indicates a vector component which is positive when directed northward (negative southward). Transport across_unit_distance means expressed per unit distance normal to the direction of transport.",
     "long_name": "Vertically Integrated Northward Moisture Transport",
     "standard_name": "northward_atmosphere_water_transport_across_unit_distance",
-    "units": "kg m-1 s-1"
+    "units": "kg m-1 s-1",
+    "description": "Vertically integrated Northward moisture transport (Mass_weighted_vertical integral of the product of northward wind by total water mass per unit mass)"
 }

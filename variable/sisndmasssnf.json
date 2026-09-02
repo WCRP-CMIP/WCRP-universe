@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sisndmasssnf",
+    "type": "variable",
+    "drs_name": "sisndmasssnf",
+    "long_name": "Snow Mass Change Through Snowfall",
+    "standard_name": "snowfall_flux",
+    "units": "kg m-2 s-1",
+    "description": "Rate of change of snow mass due to solid precipitation (i.e. snowfall) falling onto sea ice divided by grid-cell area. Always positive or zero."
+}

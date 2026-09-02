@@ -1,10 +1,10 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "nwdfraclut",
-    "type": "variable",
-    "description": "Non-Woody Vegetation Percentage Cover",
-    "drs_name": "nwdFracLut",
-    "long_name": null,
-    "standard_name": "area_fraction",
-    "units": "%"
+  "@context": "000_context.jsonld",
+  "id": "nwdfraclut",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
 }

@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "vegheightshrub",
     "type": "variable",
-    "description": "Height of Shrubs",
     "drs_name": "vegHeightShrub",
-    "long_name": null,
+    "long_name": "Height of Shrubs",
     "standard_name": "canopy_height",
-    "units": "m"
+    "units": "m",
+    "description": "Vegetation height averaged over the shrub fraction of a grid cell."
 }

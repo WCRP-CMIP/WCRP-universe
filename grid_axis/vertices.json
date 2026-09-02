@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vertices",
+    "type": "grid_axis",
+    "description": "",
+    "drs_name": "vertices"
+}

@@ -1,1 +1,10 @@
-{"@context": "000_context.jsonld", "id": "site", "type": "nominal_resolution"}
+{
+    "@context": "000_context.jsonld",
+    "id": "site",
+    "type": "resolution",
+    "name": "site",
+    "value": "0",
+    "unit": "site",
+    "drs_name": "site",
+    "description": "site-level resolution"
+}

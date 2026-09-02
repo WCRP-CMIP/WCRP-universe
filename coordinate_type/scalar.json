@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "scalar",
+    "type": "coordinate_type",
+    "description": "Single-valued coordinate listed in the coordinates attribute rather than used as a dimension. Its value may be numeric or character. QA/QC verifies the requested value, the coordinates attribute, and requested bounds when specified.",
+    "drs_name": "scalar"
+}

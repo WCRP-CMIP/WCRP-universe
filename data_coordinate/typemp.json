@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "typemp",
+    "type": "data_coordinate",
+    "description": "",
+    "drs_name": "typemp",
+    "coordinate_type": "scalar",
+    "data_type": "character",
+    "out_name": "type",
+    "cf_standard_name": "area_type",
+    "coordinate_values": "sea_ice_melt_pond",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

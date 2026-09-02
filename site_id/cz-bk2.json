@@ -1,1 +1,11 @@
-{"@context": "000_context.jsonld", "id": "cz-bk2", "type": "site_id", "name": "CZ-BK2", "drs_name": "CZ-BK2", "description": {"location": "Bily Kriz grassland", "latitude": "49.4944", "longitude": "18.5429"}}
+{
+  "@context": "000_context.jsonld",
+  "id": "cz-bk2",
+  "type": "site_id",
+  "name": "CZ-BK2",
+  "drs_name": "CZ-BK2",
+  "description": "",
+  "location": "Bily Kriz grassland",
+  "latitude": "49.4944",
+  "longitude": "18.5429"
+}

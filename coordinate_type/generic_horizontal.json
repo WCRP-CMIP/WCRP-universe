@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "generic_horizontal",
+    "type": "coordinate_type",
+    "description": "Longitude or latitude used as a generic horizontal coordinate. It may be a regular 1-D coordinate or be represented by grid indices and auxiliary geographic variables. The axis field distinguishes X from Y.",
+    "drs_name": "generic_horizontal"
+}

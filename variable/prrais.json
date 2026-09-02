@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "prrais",
     "type": "variable",
-    "description": "Ice Sheet Rainfall Rate",
     "drs_name": "prraIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Rainfall Rate",
     "standard_name": "rainfall_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "Rainfall rate over the ice sheet"
 }

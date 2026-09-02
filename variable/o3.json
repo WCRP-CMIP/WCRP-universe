@@ -3,8 +3,8 @@
     "id": "o3",
     "type": "variable",
     "drs_name": "o3",
-    "description": "Mole fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y.",
-    "long_name": "O3 Volume Mixing Ratio in Lowest Model Layer",
+    "long_name": "Mole Fraction of O3",
     "standard_name": "mole_fraction_of_ozone_in_air",
-    "units": "1"
+    "units": "mol mol-1",
+    "description": "This is the mole fraction of ozone in air, sampled on the first day of the month as an instantaneous field."
 }

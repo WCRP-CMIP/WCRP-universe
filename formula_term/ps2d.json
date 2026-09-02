@@ -1,0 +1,15 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ps2d",
+    "type": "formula_term",
+    "description": "",
+    "drs_name": "ps2d",
+    "data_type": "real",
+    "out_name": "ps",
+    "cf_standard_name": "air_pressure",
+    "units": "Pa",
+    "dimensions": [
+        "latitude",
+        "time1"
+    ]
+}

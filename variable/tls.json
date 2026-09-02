@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "tls",
     "type": "variable",
-    "description": "MSU Temperature Lower Stratosphere",
     "drs_name": "tls",
-    "long_name": null,
-    "standard_name": "MSU_Temperature_Lower_Stratosphere",
-    "units": "K"
+    "long_name": "Temperature of the Lower Stratosphere",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "MSU/AMSU lower stratosphere brightness temperature (TLS)."
 }

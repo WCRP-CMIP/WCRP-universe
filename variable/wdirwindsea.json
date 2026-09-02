@@ -3,8 +3,8 @@
     "id": "wdirwindsea",
     "type": "variable",
     "drs_name": "wdirwindsea",
-    "description": "Wind waves are waves on the ocean surface and are the high frequency portion of a bimodal wave frequency spectrum. The phrase \"from_direction\" is used in the construction X_from_direction and indicates the direction from which the velocity vector of X is coming. The direction is a bearing in the usual geographical sense, measured positive clockwise from due north.",
     "long_name": "Wind Sea Wave Direction",
     "standard_name": "sea_surface_wind_wave_from_direction",
-    "units": "degree"
+    "units": "degree",
+    "description": "Mean direction of wave propagation (direction from which the wave is coming) derived from the wind-sea component of the wave energy spectrum (i.e., local wind waves). This variable is usually expressed in degrees relative to true north."
 }

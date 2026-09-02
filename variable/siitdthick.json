@@ -3,8 +3,8 @@
     "id": "siitdthick",
     "type": "variable",
     "drs_name": "siitdthick",
-    "description": "\"Thickness\" means the vertical extent of a layer. \"Sea ice\" means all ice floating in the sea which has formed from freezing sea water, rather than by other processes such as calving of land ice to form icebergs.",
     "long_name": "Sea-Ice Thickness in Ice Thickness Categories",
     "standard_name": "sea_ice_thickness",
-    "units": "m"
+    "units": "m",
+    "description": "Actual (floe) thickness of sea ice in each ice thickness category, NOT volume divided by grid area (vector with one entry for each ice thickness category starting from the thinnest category, netcdf file should use thickness bounds of categories as third coordinate axis)."
 }

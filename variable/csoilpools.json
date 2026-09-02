@@ -3,8 +3,8 @@
     "id": "csoilpools",
     "type": "variable",
     "drs_name": "cSoilPools",
-    "description": "\"Content\" indicates a quantity per unit area. The \"soil content\" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including content_of_soil_layer are used.",
     "long_name": "Carbon Mass in Each Model Soil Pool (Summed over Vertical Levels)",
     "standard_name": "soil_mass_content_of_carbon",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "For models with multiple soil carbon pools, report each pool here. If models also have vertical discretisation these should be aggregated"
 }

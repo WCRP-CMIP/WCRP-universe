@@ -1,0 +1,14 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "modelvegtype",
+    "type": "data_coordinate",
+    "description": "Vegetation or land cover type. Where possible, please use terms from the CF Convention Area Type table: http://cfconventions.org/Data/area-type-table/6/build/area-type-table",
+    "drs_name": "modelvegtype",
+    "coordinate_type": "auxiliary",
+    "data_type": "character",
+    "out_name": "type",
+    "cf_standard_name": "area_type",
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

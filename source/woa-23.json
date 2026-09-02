@@ -1,1 +1,15 @@
-{"@context": "000_context.jsonld", "id": "woa-23", "type": "source_id", "drs_name": "WOA-23", "description": "World Ocean Atlas"}
+{
+    "@context": "000_context.jsonld",
+    "id": "woa-23",
+    "type": "source",
+    "drs_name": "WOA-23",
+    "description": "World Ocean Atlas",
+    "activity_participation": [],
+    "cohort": [],
+    "organisation_id": [],
+    "label": "WOA-23",
+    "label_extended": "World Ocean Atlas",
+    "license": {},
+    "model_component": null,
+    "release_year": null
+}

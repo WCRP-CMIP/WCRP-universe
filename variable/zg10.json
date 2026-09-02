@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "zg10",
     "type": "variable",
-    "description": "Geopotential Height at 10hPa",
     "drs_name": "zg10",
-    "long_name": null,
+    "long_name": "Geopotential Height at 10hPa",
     "standard_name": "geopotential_height",
-    "units": "m"
+    "units": "m",
+    "description": "Geopotential height on the 10hPa surface"
 }

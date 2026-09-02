@@ -2,9 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "snicefreezis",
     "type": "variable",
-    "description": "Ice Sheet Surface Snow and Ice Refreeze Flux",
     "drs_name": "snicefreezIs",
-    "long_name": null,
+    "long_name": "Ice Sheet Surface Snow and Ice Refreeze Flux",
     "standard_name": "surface_snow_and_ice_refreezing_flux",
-    "units": "kg m-2 s-1"
+    "units": "kg m-2 s-1",
+    "description": "Mass flux of surface meltwater which refreezes within the snowpack. Computed as the total refreezing on the land ice portion of the grid cell divided by land ice area in the grid cell."
 }

@@ -3,8 +3,8 @@
     "id": "masscello",
     "type": "variable",
     "drs_name": "masscello",
-    "description": "Sea_water_mass_per_unit_area is the mass per unit area of the sea water contained within each grid cell.",
     "long_name": "Ocean Grid-Cell Mass per Area",
     "standard_name": "sea_water_mass_per_unit_area",
-    "units": "kg m-2"
+    "units": "kg m-2",
+    "description": "Tracer grid-cell mass per unit area used for computing tracer budgets. For Boussinesq models with static ocean grid cell thickness, masscello = rhozero*thickcello, where thickcello is static cell thickness and rhozero is constant Boussinesq reference density. More generally, masscello is time dependent and reported as part of Omon."
 }

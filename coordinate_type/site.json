@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "site",
+    "type": "coordinate_type",
+    "description": "Site or station index dimension with longitude and latitude supplied as auxiliary coordinates. QA/QC verifies the geographic auxiliary coordinates and dimension length.",
+    "drs_name": "site"
+}

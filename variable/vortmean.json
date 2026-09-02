@@ -1,10 +1,10 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "vortmean",
-    "type": "variable",
-    "description": "Relative Vorticity",
-    "drs_name": "vortmean",
-    "long_name": null,
-    "standard_name": "atmosphere_relative_vorticity",
-    "units": "s-1"
+  "@context": "000_context.jsonld",
+  "id": "vortmean",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
 }

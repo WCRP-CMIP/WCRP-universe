@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "generic_vertical",
+    "type": "coordinate_type",
+    "description": "Abstract model-level vertical coordinate whose values are model-dependent. QA/QC verifies a dimension with output name 'lev' without requiring specific level values. Concrete model-level coordinates reference it through generic_level_name.",
+    "drs_name": "generic_vertical"
+}

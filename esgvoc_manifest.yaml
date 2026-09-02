@@ -2,10 +2,26 @@ schema_version: '1'
 project:
   id: universe
   name: WCRP Universe Controlled Vocabulary
-cv_version: 1.0.19
-universe_version: 1.0.19
+cv_version: 3.0.0
+universe_version: 3.0.0
 esgvoc:
   min_version: 4.0.0
 release_notes: |
-  - grid: 13 added
-  - model: 3 added
+  - aux_uncertainty_id: new data descriptor model
+  - has_aux_unc: new data descriptor model
+  - site_id: new data descriptor model
+  - site_location: new data descriptor model
+  - activity: 1 added
+  - aux_uncertainty_id: 9 added
+  - conventions: 1 added
+  - grid: 6 added
+  - has_aux_unc: 2 added
+  - institution: 14 added, 1 modified
+  - nominal_resolution: 6 added
+  - obs_type: 1 added
+  - organisation: 14 added, 1 modified
+  - resolution: 1 added
+  - site_id: 267 added
+  - site_location: 1 added
+  - source: 25 added
+  - variable: 14 added

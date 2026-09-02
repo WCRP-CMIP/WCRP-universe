@@ -3,8 +3,8 @@
     "id": "sfx",
     "type": "variable",
     "drs_name": "sfx",
-    "description": "\"x\" indicates a vector component along the grid x-axis, positive with increasing x. Salt transport refers to the mass of salt being transported.",
     "long_name": "3D Ocean Salt Mass X Transport",
     "standard_name": "ocean_salt_x_transport",
-    "units": "1e-3 kg s-1"
+    "units": "kg s-1",
+    "description": "Contains all contributions to 'x-ward' salt mass transport from resolved and parameterized processes. Report on native horizontal grid."
 }

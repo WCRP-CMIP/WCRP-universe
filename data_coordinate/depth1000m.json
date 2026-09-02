@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "depth1000m",
+    "type": "data_coordinate",
+    "description": "coordinate value for 1000 m ocean depth",
+    "drs_name": "depth1000m",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "depth",
+    "cf_standard_name": "depth",
+    "units": "m",
+    "axis": "Z",
+    "positive": "down",
+    "stored_direction": "increasing",
+    "coordinate_values": [
+        1000.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}
