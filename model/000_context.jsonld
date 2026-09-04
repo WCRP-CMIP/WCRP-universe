@@ -4,7 +4,8 @@
     "prescribed_components": "reference",
     "omitted_components": "reference",
     "calendar": "reference",
-    "model_components": "full"
+    "model_components": "full",
+    "references": "full"
   },
   "@context": {
     "@base": "https://esgvoc.ipsl.fr/resource/universe/model/",
