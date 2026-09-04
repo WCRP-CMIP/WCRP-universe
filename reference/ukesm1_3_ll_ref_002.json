@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ukesm1_3_ll_ref_002",
+  "type": "reference",
+  "citation": "See DOI",
+  "doi": "https://doi.org/10.1029/2021MS002520",
+  "drs_name": "ukesm1_3_ll_ref_002"
+}
