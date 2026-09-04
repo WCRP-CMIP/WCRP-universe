@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ukcm2a_0_hh_ref_001",
+  "type": "reference",
+  "citation": "",
+  "doi": "https://doi.org/10.5281/zenodo.14288725",
+  "drs_name": "ukcm2a_0_hh_ref_001"
+}
