@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ec_earth3_esm_1_1_ref_001",
+  "type": "reference",
+  "citation": "",
+  "doi": "https://doi.org/10.5194/gmd-15-2973-2022",
+  "drs_name": "ec_earth3_esm_1_1_ref_001"
+}
