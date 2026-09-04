@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cas_esm2_1_csm_ref_001",
+  "type": "reference",
+  "citation": "",
+  "doi": "https://doi.org/10.1029/2020MS002210",
+  "drs_name": "cas_esm2_1_csm_ref_001"
+}
