@@ -11,8 +11,8 @@
   "calendar": [],
   "release_year": null,
   "references": [
-    "https://doi.org/10.5194/gmd-15-6399-2022",
-    "AWI-ESM3, Earth system model for the Coupled Model Intercomparison Project 7 (Streffing et al. in preparation, target GMD 2027)"
+    "awi_esm3_4_2_veg_hr_ref_001",
+    "awi_esm3_4_2_veg_hr_ref_002"
   ],
   "model_components": [],
   "embedded_components": [],
