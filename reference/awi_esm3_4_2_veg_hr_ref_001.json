@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "awi_esm3_4_2_veg_hr_ref_001",
+  "type": "reference",
+  "citation": "See DOI",
+  "doi": "https://doi.org/10.5194/gmd-15-6399-2022",
+  "drs_name": "awi_esm3_4_2_veg_hr_ref_001"
+}
