@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "access_esm1_6_ref_001",
+  "type": "reference",
+  "citation": "",
+  "doi": "https://doi.org/10.1071/ES19035",
+  "drs_name": "access_esm1_6_ref_001"
+}
