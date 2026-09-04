@@ -11,10 +11,10 @@
   "calendar": [],
   "release_year": null,
   "references": [
-    "https://doi.org/10.5194/gmd-16-1569-2023",
-    "https://doi.org/10.1029/2021MS002520",
-    "https://doi.org/10.5194/tc-16-4053-2022",
-    "https://doi.org/10.1029/2021MS002982"
+    "ukesm1_3_ll_ref_001",
+    "ukesm1_3_ll_ref_002",
+    "ukesm1_3_ll_ref_003",
+    "ukesm1_3_ll_ref_004"
   ],
   "model_components": [],
   "embedded_components": [],
