@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ukcm2_0_ll_ref_001",
+  "type": "reference",
+  "citation": "See DOI",
+  "doi": "https://doi.org/10.5194/egusphere-2026-1676",
+  "drs_name": "ukcm2_0_ll_ref_001"
+}
