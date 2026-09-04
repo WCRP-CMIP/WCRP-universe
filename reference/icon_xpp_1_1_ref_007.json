@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "icon_xpp_1_1_ref_007",
+  "type": "reference",
+  "citation": "See DOI",
+  "doi": "https://doi.org/10.5194/gmd-8-1747-2015",
+  "drs_name": "icon_xpp_1_1_ref_007"
+}
