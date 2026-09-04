@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "kace_2_0_g_ref_001",
+  "type": "reference",
+  "citation": "Paper under review",
+  "doi": "https://paper.under.review",
+  "drs_name": "kace_2_0_g_ref_001"
+}
