@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "hadcm3b_esm_ref_001",
+  "type": "reference",
+  "citation": "See DOI",
+  "doi": "https://doi.org/10.1007/s003820050010",
+  "drs_name": "hadcm3b_esm_ref_001"
+}
