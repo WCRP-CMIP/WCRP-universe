@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "gfdl_esm4p5_ref_001",
+  "type": "reference",
+  "citation": "Paper under review",
+  "doi": "https://paper.under.review/",
+  "drs_name": "gfdl_esm4p5_ref_001"
+}
