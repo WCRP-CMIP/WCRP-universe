@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "mri_esm3_4_ref_001",
+  "type": "reference",
+  "citation": "",
+  "doi": "https://doi.org/10.5281/zenodo.20839616",
+  "drs_name": "mri_esm3_4_ref_001"
+}
