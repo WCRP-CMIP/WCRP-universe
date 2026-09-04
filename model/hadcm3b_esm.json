@@ -11,8 +11,8 @@
   "calendar": [],
   "release_year": null,
   "references": [
-    "https://doi.org/10.1007/s003820050010",
-    "https://doi.org/10.5194/gmd-10-3715-2017"
+    "hadcm3b_esm_ref_001",
+    "hadcm3b_esm_ref_002"
   ],
   "model_components": [],
   "embedded_components": [],
