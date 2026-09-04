@@ -11,11 +11,11 @@
   "calendar": [],
   "release_year": null,
   "references": [
-    "https://doi.org/10.5194/gmd-12-4823-2019",
-    "https://doi.org/10.5194/gmd-16-5427-2023",
-    "https://doi.org/10.5194/gmd-15-4393-2022",
-    "https://doi.org/10.5194/bg-20-1313-2023",
-    "https://doi.org/10.5194/gmd-13-2825-2020"
+    "canesm6_0_mr_ref_001",
+    "canesm6_0_mr_ref_002",
+    "canesm6_0_mr_ref_003",
+    "canesm6_0_mr_ref_004",
+    "canesm6_0_mr_ref_005"
   ],
   "model_components": [],
   "embedded_components": [],
