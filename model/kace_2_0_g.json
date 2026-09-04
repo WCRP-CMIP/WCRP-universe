@@ -10,7 +10,9 @@
   "description": "K-ACE2 is a fully coupled Earth system model that integrates atmosphere (MetUM-HadGEM3-GA7.1), ocean (NEMO v3.6, GO6.0 configuration), land surface (JULES v5.3), and sea ice (CICE v5.1.2) components to simulate the physical climate system and its interactions with biogeochemical cycles. Land ice is omitted. The model includes interactive atmospheric chemistry (UKCA-StratTrop) and aerosols (UKCA-GLOMAP-mode), a dynamic ocean coupled to ocean biogeochemistry (TOPAZ2), and the land surface model that represents exchanges of energy, water, and carbon with the atmosphere, including terrestrial carbon processes. Sea ice is dynamically simulated and coupled to the atmosphere and ocean, enabling the representation of key climate feedbacks.",
   "calendar": [],
   "release_year": null,
-  "references": [],
+  "references": [
+    "https://paper.under.review"
+  ],
   "model_components": [],
   "embedded_components": [],
   "coupled_components": [],
