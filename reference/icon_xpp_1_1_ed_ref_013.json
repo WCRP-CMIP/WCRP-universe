@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "icon_xpp_1_1_ed_ref_013",
+  "type": "reference",
+  "citation": "See DOI",
+  "doi": "https://doi.org/10.5194/egusphere-2025-2987",
+  "drs_name": "icon_xpp_1_1_ed_ref_013"
+}
