@@ -10,7 +10,10 @@
   "description": "HadCM3B-ESM comprises dynamic modelling of the atmosphere (hadam3), sulphate aerosols (hadcm3-aerosol), land surface (moses2-1), ocean (hadom3), ocean sea-ice (hadcm3-sea-ice) and ocean biogeochemistry (hadocc)  land ice is prescribed (land points identified as land ice are completely covered in ice and fixed in time). Non-ice points can have fractional covering of vegetation types or non-vegetation (urban, lake)  atmospheric chemistry is ommitted other than use of prescribed oxidants in the sulphate aerosol scheme.",
   "calendar": [],
   "release_year": null,
-  "references": [],
+  "references": [
+    "https://doi.org/10.1007/s003820050010",
+    "https://doi.org/10.5194/gmd-10-3715-2017"
+  ],
   "model_components": [],
   "embedded_components": [],
   "coupled_components": [],
