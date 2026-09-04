@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "arts_esm_l_ref_001",
+  "type": "reference",
+  "citation": "",
+  "doi": "https://doi.org/10.21203/rs.3.rs-8969494/v1",
+  "drs_name": "arts_esm_l_ref_001"
+}
