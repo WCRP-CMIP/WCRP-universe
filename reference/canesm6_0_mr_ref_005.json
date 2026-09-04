@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "canesm6_0_mr_ref_005",
+  "type": "reference",
+  "citation": "See DOI",
+  "doi": "https://doi.org/10.5194/gmd-13-2825-2020",
+  "drs_name": "canesm6_0_mr_ref_005"
+}
