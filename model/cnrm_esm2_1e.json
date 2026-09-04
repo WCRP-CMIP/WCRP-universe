@@ -2,71 +2,20 @@
   "@context": "000_context.jsonld",
   "id": "cnrm_esm2_1e",
   "type": "model",
-  "name": "CNRM-ESM2-1e",
-  "family": "CNRM-CM, CNRM-ESM",
-  "dynamic_components": [
-    "aerosol",
-    "atmosphere",
-    "atmospheric_chemistry",
-    "land_surface",
-    "ocean",
-    "ocean_biogeochemistry",
-    "sea_ice"
-  ],
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
   "prescribed_components": [],
-  "omitted_components": [
-    "land_ice"
-  ],
-  "description": "CNRM-ESM2-1e is the CNRM Earth System model version 2 designed for CMIP6 on the basis of the physical core CNRM-CM6-1 (Voldoire et al. 2019). In concentration mode, it is the same model as CNRM-ESM2-1 (Séférian et al. 2019), it only differs from CNRM-ESM2-1 in emission-driven mode (see Bossert et al. 2026). The main adaptations consist in a better conservation of the carbon in all the components leading to a more consistent/realistic carbon flux evolution in historical simulations.",
-  "calendar": [
-    "standard"
-  ],
-  "release_year": 2018,
+  "omitted_components": [],
+  "description": "CNRM-ESM2-1e is the CNRM Earth System model version 2 designed for CMIP6 on the basis of the physical core CNRM-CM6-1 (Voldoire et al. 2019). In concentration mode, it is the same model as CNRM-ESM2-1 (S\u00e9f\u00e9rian et al. 2019), it only differs from CNRM-ESM2-1 in emission-driven mode (see Bossert et al. 2026). The main adaptations consist in a better conservation of the carbon in all the components leading to a more consistent/realistic carbon flux evolution in historical simulations.",
+  "calendar": [],
+  "release_year": null,
   "references": [
-    "cnrm_esm2_1e_ref_001",
-    "cnrm_esm2_1e_ref_002",
-    "cnrm_esm2_1e_ref_003"
+    "https://doi.org/10.1029/2019MS001791",
+    "https://doi.org/10.1029/2019MS001683"
   ],
-  "model_components": [
-    "tactic_v2",
-    "arpege_climat_version_6_3",
-    "reprobus_c_v2_0",
-    "surfex_v8_modeling_platform",
-    "nemo_nucleus_for_european_modelling_of_the_ocean_version_3_6_opa",
-    "pelagic_interaction_scheme_for_carbon_and_ecosystem_studies_model_volume_2_version_trace_gases_piscesv2_gas",
-    "gelato"
-  ],
-  "embedded_components": [
-    [
-      "aerosol",
-      "atmosphere"
-    ],
-    [
-      "sea_ice",
-      "ocean"
-    ],
-    [
-      "ocean_biogeochemistry",
-      "ocean"
-    ],
-    [
-      "atmospheric_chemistry",
-      "atmosphere"
-    ]
-  ],
-  "coupled_components": [
-    [
-      "atmosphere",
-      "ocean"
-    ],
-    [
-      "atmosphere",
-      "land_surface"
-    ],
-    [
-      "ocean",
-      "land_surface"
-    ]
-  ],
-  "drs_name": "CNRM-ESM2-1e"
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "CNRM-ESM2-1E"
 }
