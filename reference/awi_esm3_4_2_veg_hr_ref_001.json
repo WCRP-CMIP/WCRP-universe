@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "awi_esm3_4_2_veg_hr_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Streffing, J., Sidorenko, D., Semmler, T., Zampieri, L., Scholz, P., Andr\u00e9s-Mart\u00ednez, M., Koldunov, N., Rackow, T., Kjellsson, J., Goessling, H., Athanase, M., Wang, Q., Hegewald, J., Sein, D. V., Mu, L., Fladrich, U., Barbi, D., Gierz, P., Danilov, S., et al. (2022). AWI-CM3 coupled climate model: description and evaluation experiments for a prototype post-CMIP6 model. Geoscientific Model Development, 15(16), 6399\u20136427. https://doi.org/10.5194/gmd-15-6399-2022\n",
   "doi": "https://doi.org/10.5194/gmd-15-6399-2022",
   "drs_name": "awi_esm3_4_2_veg_hr_ref_001"
 }
