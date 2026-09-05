@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "canesm6_0_mr_ref_002",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Cole, J. N. S., von Salzen, K., Li, J., Scinocca, J., Plummer, D., Arora, V., McFarlane, N., Lazare, M., MacKay, M., & Verseghy, D. (2023). The Canadian Atmospheric Model version 5 (CanAM5.0.3). Geoscientific Model Development, 16(18), 5427\u20135448. https://doi.org/10.5194/gmd-16-5427-2023\n",
   "doi": "https://doi.org/10.5194/gmd-16-5427-2023",
   "drs_name": "canesm6_0_mr_ref_002"
 }
