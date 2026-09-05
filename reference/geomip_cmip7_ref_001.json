@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "geomip_cmip7_ref_001",
+    "type": "reference",
+    "drs_name": "geomip_cmip7_ref_001",
+    "citation": "Visioni, D., Robock, A., Roberts, K. E., Lee, W., Henry, M., Duffey, A., Hirasawa, H., Chegwidden, O., & Sipra, H. (2025). Finalizing Experimental Protocols for the Geoengineering Model Intercomparison Project (GeoMIP) Contribution to CMIP7. Bulletin of the American Meteorological Society, 106(10), E2029\u2013E2035. https://doi.org/10.1175/bams-d-25-0191.1\n",
+    "doi": "https://doi.org/10.1175/BAMS-D-25-0191.1"
+}

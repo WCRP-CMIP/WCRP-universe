@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "damip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "damip_cmip7_ref_000",
+    "citation": "Gillett, N. P., Simpson, I. R., Hegerl, G., Knutti, R., Mitchell, D., Ribes, A., Shiogama, H., Stone, D., Tebaldi, C., Wolski, P., Zhang, W., & Arora, V. K. (2025). The Detection and Attribution Model Intercomparison  Project (DAMIP v2.0) contribution to CMIP7. Geoscientific Model Development, 18(14), 4399\u20134416. https://doi.org/10.5194/gmd-18-4399-2025\n",
+    "doi": "https://doi.org/10.5194/gmd-18-4399-2025"
+}

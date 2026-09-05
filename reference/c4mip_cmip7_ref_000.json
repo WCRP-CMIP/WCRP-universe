@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "c4mip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "c4mip_cmip7_ref_000",
+    "citation": "Sanderson, B. M., Booth, B. B. B., Dunne, J., Eyring, V., Fisher, R. A., Friedlingstein, P., Gidden, M. J., Hajima, T., Jones, C. D., Jones, C. G., King, A., Koven, C. D., Lawrence, D. M., Lowe, J., Mengis, N., Peters, G. P., Rogelj, J., Smith, C., Snyder, A. C., et al. (2024). The need for carbon-emissions-driven climate projections in CMIP7. Geoscientific Model Development, 17(22), 8141\u20138172. https://doi.org/10.5194/gmd-17-8141-2024\n",
+    "doi": "https://doi.org/10.5194/gmd-17-8141-2024"
+}

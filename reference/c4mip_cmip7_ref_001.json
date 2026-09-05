@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "c4mip_cmip7_ref_001",
+    "type": "reference",
+    "drs_name": "c4mip_cmip7_ref_001",
+    "citation": "Sanderson, B. M., Brovkin, V., Fisher, R. A., Hohn, D., Ilyina, T., Jones, C. D., Koenigk, T., Koven, C., Li, H., Lawrence, D. M., Lawrence, P., Liddicoat, S., MacDougall, A. H., Mengis, N., Nicholls, Z., O\u2019Rourke, E., Romanou, A., Sandstad, M., Schwinger, J., et al. (2025). flat10MIP: an emissions-driven experiment to diagnose the climate response to positive, zero and negative CO\n                    <sub>2</sub>\n                    emissions. Geoscientific Model Development, 18(17), 5699\u20135724. https://doi.org/10.5194/gmd-18-5699-2025\n",
+    "doi": "https://doi.org/10.5194/gmd-18-5699-2025"
+}

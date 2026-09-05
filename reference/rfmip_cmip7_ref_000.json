@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rfmip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "rfmip_cmip7_ref_000",
+    "citation": "Pincus, R., Forster, P. M., & Stevens, B. (2016). The Radiative Forcing Model Intercomparison Project (RFMIP): experimental protocol for CMIP6. Geoscientific Model Development, 9(9), 3447\u20133460. https://doi.org/10.5194/gmd-9-3447-2016\n",
+    "doi": "https://doi.org/10.5194/gmd-9-3447-2016"
+}

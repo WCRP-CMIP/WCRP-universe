@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cmip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "cmip_cmip7_ref_000",
+    "citation": "Dunne, J. P., Hewitt, H. T., Arblaster, J. M., Bonou, F., Boucher, O., Cavazos, T., Dingley, B., Durack, P. J., Hassler, B., Juckes, M., Miyakawa, T., Mizielinski, M., Naik, V., Nicholls, Z., O\u2019Rourke, E., Pincus, R., Sanderson, B. M., Simpson, I. R., & Taylor, K. E. (2025). An evolving Coupled Model Intercomparison Project phase 7 (CMIP7) and Fast Track in support of future climate assessment. Geoscientific Model Development, 18(19), 6671\u20136700. https://doi.org/10.5194/gmd-18-6671-2025\n",
+    "doi": "https://doi.org/10.5194/gmd-18-6671-2025"
+}

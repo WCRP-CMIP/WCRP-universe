@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "geomip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "geomip_cmip7_ref_000",
+    "citation": "Visioni, D., Robock, A., Haywood, J., Henry, M., Tilmes, S., MacMartin, D. G., Kravitz, B., Doherty, S. J., Moore, J., Lennard, C., Watanabe, S., Muri, H., Niemeier, U., Boucher, O., Syed, A., Egbebiyi, T. S., S\u00e9f\u00e9rian, R., & Quaglia, I. (2024). G6-1.5K-SAI: a new Geoengineering Model Intercomparison Project (GeoMIP) experiment integrating recent advances  in solar radiation modification studies. Geoscientific Model Development, 17(7), 2583\u20132596. https://doi.org/10.5194/gmd-17-2583-2024\n",
+    "doi": "https://doi.org/10.5194/gmd-17-2583-2024"
+}

@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "c4mip_cmip7_ref_002",
+    "type": "reference",
+    "drs_name": "c4mip_cmip7_ref_002",
+    "citation": "Jones, C. D., Arora, V., Friedlingstein, P., Bopp, L., Brovkin, V., Dunne, J., Graven, H., Hoffman, F., Ilyina, T., John, J. G., Jung, M., Kawamiya, M., Koven, C., Pongratz, J., Raddatz, T., Randerson, J. T., & Zaehle, S. (2016). C4MIP \u2013 The Coupled Climate\u2013Carbon Cycle Model Intercomparison Project:\nexperimental protocol for CMIP6. Geoscientific Model Development, 9(8), 2853\u20132880. https://doi.org/10.5194/gmd-9-2853-2016\n",
+    "doi": "https://doi.org/10.5194/gmd-9-2853-2016"
+}
