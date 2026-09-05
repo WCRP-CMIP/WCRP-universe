@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "canesm5_1_ref_005",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Sigmond, M., Anstey, J., Arora, V., Digby, R., Gillett, N., Kharin, V., Merryfield, W., Reader, C., Scinocca, J., Swart, N., Virgin, J., Abraham, C., Cole, J., Lambert, N., Lee, W.-S., Liang, Y., Malinina, E., Rieger, L., von Salzen, K., et al. (2023). Improvements in the Canadian Earth System Model (CanESM) through systematic model analysis: CanESM5.0 and CanESM5.1. Geoscientific Model Development, 16(22), 6553\u20136591. https://doi.org/10.5194/gmd-16-6553-2023\n",
   "doi": "https://doi.org/10.5194/gmd-16-6553-2023",
   "drs_name": "canesm5_1_ref_005"
 }
