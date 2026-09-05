@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "ukesm1_3_ll_ref_004",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Folberth, G. A., Staniaszek, Z., Archibald, A. T., Gedney, N., Griffiths, P. T., Jones, C. D., O\u2019Connor, F. M., Parker, R. J., Sellar, A. A., & Wiltshire, A. (2022). Description and Evaluation of an Emission\u2010Driven and Fully Coupled Methane Cycle in UKESM1. Journal of Advances in Modeling Earth Systems, 14(7). Portico. https://doi.org/10.1029/2021ms002982\n",
   "doi": "https://doi.org/10.1029/2021MS002982",
   "drs_name": "ukesm1_3_ll_ref_004"
 }
