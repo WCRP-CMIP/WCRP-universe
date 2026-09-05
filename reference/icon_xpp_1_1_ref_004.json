@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ref_004",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Korn, P. (2018). A structure-preserving discretization of ocean parametrizations on unstructured grids. Ocean Modelling, 132, 73\u201390. https://doi.org/10.1016/j.ocemod.2018.10.002\n",
   "doi": "https://doi.org/10.1016/j.ocemod.2018.10.002",
   "drs_name": "icon_xpp_1_1_ref_004"
 }
