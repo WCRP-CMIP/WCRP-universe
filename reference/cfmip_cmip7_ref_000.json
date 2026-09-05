@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cfmip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "cfmip_cmip7_ref_000",
+    "citation": "Webb, M. J., Andrews, T., Bodas-Salcedo, A., Bony, S., Bretherton, C. S., Chadwick, R., Chepfer, H., Douville, H., Good, P., Kay, J. E., Klein, S. A., Marchand, R., Medeiros, B., Siebesma, A. P., Skinner, C. B., Stevens, B., Tselioudis, G., Tsushima, Y., & Watanabe, M. (2017). The Cloud Feedback Model Intercomparison Project (CFMIP) contribution to CMIP6. Geoscientific Model Development, 10(1), 359\u2013384. https://doi.org/10.5194/gmd-10-359-2017\n",
+    "doi": "https://doi.org/10.5194/gmd-10-359-2017"
+}

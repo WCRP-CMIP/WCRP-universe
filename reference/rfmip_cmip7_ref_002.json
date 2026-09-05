@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rfmip_cmip7_ref_002",
+    "type": "reference",
+    "drs_name": "rfmip_cmip7_ref_002",
+    "citation": "Kramer, R. J., Smith, C., & Andrews, T. (2026). The Radiative Forcing Model Intercomparison  Project (RFMIP2.0) for CMIP7. Geoscientific Model Development, 19(10), 4447\u20134466. https://doi.org/10.5194/gmd-19-4447-2026\n",
+    "doi": "https://doi.org/10.5194/gmd-19-4447-2026"
+}
