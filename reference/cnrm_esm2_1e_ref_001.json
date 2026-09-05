@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "cnrm_esm2_1e_ref_001",
   "type": "reference",
-  "citation": "Séférian et al., 2019. Evaluation of CNRM Earth-System model, CNRM-ESM2-1 : role of Earth system processes in present-day and future climate, Journal of Advances in Modeling Earth Systems",
+  "citation": "S\u00e9f\u00e9rian, R., Nabat, P., Michou, M., Saint\u2010Martin, D., Voldoire, A., Colin, J., Decharme, B., Delire, C., Berthet, S., Chevallier, M., S\u00e9n\u00e9si, S., Franchisteguy, L., Vial, J., Mallet, M., Joetzjer, E., Geoffroy, O., Gu\u00e9r\u00e9my, J.-F., Moine, M.-P., Msadek, R., et al. (2019). Evaluation of CNRM Earth System Model, CNRM\u2010ESM2\u20101: Role of Earth System Processes in Present\u2010Day and Future Climate. Journal of Advances in Modeling Earth Systems, 11(12), 4182\u20134227. Portico. https://doi.org/10.1029/2019ms001791\n",
   "doi": "https://doi.org/10.1029/2019MS001791",
   "drs_name": "cnrm_esm2_1e_ref_001"
 }
