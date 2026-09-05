@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "mcm_ua_1_0_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "T., D., R., S., K., D., M., S., T., K., A., B., P., K., & R., W. (2002). Review of simulations of climate variability and change with the GFDL R30 coupled climate model. Climate Dynamics, 19(7), 555\u2013574. https://doi.org/10.1007/s00382-002-0249-5\n",
   "doi": "https://doi.org/10.1007/s00382-002-0249-5",
   "drs_name": "mcm_ua_1_0_ref_001"
 }
