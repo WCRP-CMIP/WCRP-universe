@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pmip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "pmip_cmip7_ref_000",
+    "citation": "Otto-Bliesner, B. L., Braconnot, P., Harrison, S. P., Lunt, D. J., Abe-Ouchi, A., Albani, S., Bartlein, P. J., Capron, E., Carlson, A. E., Dutton, A., Fischer, H., Goelzer, H., Govin, A., Haywood, A., Joos, F., LeGrande, A. N., Lipscomb, W. H., Lohmann, G., Mahowald, N., et al. (2017). The PMIP4 contribution to CMIP6 \u2013  Part 2: Two interglacials, scientific objective and experimental design for Holocene and  Last Interglacial simulations. Geoscientific Model Development, 10(11), 3979\u20134003. https://doi.org/10.5194/gmd-10-3979-2017\n",
+    "doi": "https://doi.org/10.5194/gmd-10-3979-2017"
+}
