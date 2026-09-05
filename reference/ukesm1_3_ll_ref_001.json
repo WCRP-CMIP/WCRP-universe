@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "ukesm1_3_ll_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Mulcahy, J. P., Jones, C. G., Rumbold, S. T., Kuhlbrodt, T., Dittus, A. J., Blockley, E. W., Yool, A., Walton, J., Hardacre, C., Andrews, T., Bodas-Salcedo, A., Stringer, M., de Mora, L., Harris, P., Hill, R., Kelley, D., Robertson, E., & Tang, Y. (2023). UKESM1.1: development and evaluation of an updated configuration of the UK Earth System Model. Geoscientific Model Development, 16(6), 1569\u20131600. https://doi.org/10.5194/gmd-16-1569-2023\n",
   "doi": "https://doi.org/10.5194/gmd-16-1569-2023",
   "drs_name": "ukesm1_3_ll_ref_001"
 }
