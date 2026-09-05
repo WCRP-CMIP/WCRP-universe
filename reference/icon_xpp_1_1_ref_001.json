@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "M\u00fcller, W. A., Lorenz, S., Pham, T. V., Schneidereit, A., Brokopf, R., Brovkin, V., Br\u00fcggemann, N., Chegini, F., Dommenget, D., Fr\u00f6hlich, K., Fr\u00fch, B., Gayler, V., Haak, H., Hagemann, S., Hanke, M., Ilyina, T., Jungclaus, J., K\u00f6hler, M., Korn, P., et al. (2025). The ICON-based Earth System Model for climate predictions and projections (ICON XPP v1.0). Geoscientific Model Development, 18(23), 9385\u20139415. https://doi.org/10.5194/gmd-18-9385-2025\n",
   "doi": "https://doi.org/10.5194/gmd-18-9385-2025",
   "drs_name": "icon_xpp_1_1_ref_001"
 }

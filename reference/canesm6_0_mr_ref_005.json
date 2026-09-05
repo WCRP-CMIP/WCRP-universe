@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "canesm6_0_mr_ref_005",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Melton, J. R., Arora, V. K., Wisernig-Cojoc, E., Seiler, C., Fortier, M., Chan, E., & Teckentrup, L. (2020). CLASSIC v1.0: the open-source community successor to the Canadian Land Surface Scheme (CLASS) and the Canadian Terrestrial Ecosystem Model (CTEM) \u2013 Part 1: Model framework and site-level performance. Geoscientific Model Development, 13(6), 2825\u20132850. https://doi.org/10.5194/gmd-13-2825-2020\n",
   "doi": "https://doi.org/10.5194/gmd-13-2825-2020",
   "drs_name": "canesm6_0_mr_ref_005"
 }

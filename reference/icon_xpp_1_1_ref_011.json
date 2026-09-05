@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ref_011",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Fiedler, S., Pham, T. V., Schlund, M., Wahl, S., Sudarchikova, N., Bischof, S., & Hoesly, R. M. (2025). First Analysis of Climate Forcing and Response to Updated Historical Anthropogenic Aerosol With the New CMIP7 Model ICON XPP. Journal of Advances in Modeling Earth Systems, 17(10). Portico. https://doi.org/10.1029/2025ms005067\n",
   "doi": "https://doi.org/10.1029/2025MS005067",
   "drs_name": "icon_xpp_1_1_ref_011"
 }

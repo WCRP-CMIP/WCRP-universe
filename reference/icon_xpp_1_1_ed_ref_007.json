@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_007",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Danilov, S., Wang, Q., Timmermann, R., Iakovlev, N., Sidorenko, D., Kimmritz, M., Jung, T., & Schr\u00f6ter, J. (2015). Finite-Element Sea Ice Model (FESIM), version 2. Geoscientific Model Development, 8(6), 1747\u20131761. https://doi.org/10.5194/gmd-8-1747-2015\n",
   "doi": "https://doi.org/10.5194/gmd-8-1747-2015",
   "drs_name": "icon_xpp_1_1_ed_ref_007"
 }

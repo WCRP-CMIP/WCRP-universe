@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "arts_esm_l_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Volodin, E., Chernenkov, A., Tarasevich, M., Bragina, V., Kostrykin, S., Blagodatskikh, D., & Gritsun, A. (2026). Earth system model ARTS-ESM-L: basic properties, simulation of present climate and historical climate changes. https://doi.org/10.21203/rs.3.rs-8969494/v1\n",
   "doi": "https://doi.org/10.21203/rs.3.rs-8969494/v1",
   "drs_name": "arts_esm_l_ref_001"
 }

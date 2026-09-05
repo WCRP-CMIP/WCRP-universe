@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "ukcm2_0_ll_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Rostron, J. W., Bodas-Salcedo, A., Sexton, D. M. H., Jones, C. G., Blockley, E. W., Kuhlbrodt, T., Mulcahy, J. P., Palmer, T. E., Peatier, S., Ringer, M. A., Rumbold, S. T., Sanderson, B. M., Tang, Y., & Willet, M. R. (2026). UKCM2-LL: a new low-resolution GC5 configuration with constrained climate sensitivity \u2013 methodology and development. https://doi.org/10.5194/egusphere-2026-1676\n",
   "doi": "https://doi.org/10.5194/egusphere-2026-1676",
   "drs_name": "ukcm2_0_ll_ref_001"
 }

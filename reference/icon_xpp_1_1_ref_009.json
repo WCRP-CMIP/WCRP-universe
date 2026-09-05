@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ref_009",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Maerz, J., Six, K. D., Stemmler, I., Ahmerkamp, S., & Ilyina, T. (2020). Microstructure and composition of marine aggregates as co-determinants for vertical particulate organic carbon transfer in the global ocean. Biogeosciences, 17(7), 1765\u20131803. https://doi.org/10.5194/bg-17-1765-2020\n",
   "doi": "https://doi.org/10.5194/bg-17-1765-2020",
   "drs_name": "icon_xpp_1_1_ref_009"
 }

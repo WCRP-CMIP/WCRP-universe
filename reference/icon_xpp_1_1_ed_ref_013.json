@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_013",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Miinalainen, T., Ojasalo, A., Croft, H., Aurela, M., Peltoniemi, M., Caldararu, S., Zaehle, S., & Thum, T. (2025). Evaluating the carbon and nitrogen cycles of the QUINCY terrestrial biosphere model using remotely-sensed data. https://doi.org/10.5194/egusphere-2025-2987\n",
   "doi": "https://doi.org/10.5194/egusphere-2025-2987",
   "drs_name": "icon_xpp_1_1_ed_ref_013"
 }

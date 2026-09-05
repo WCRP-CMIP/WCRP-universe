@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_010",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Hagemann, S., & D\ufffdmenil, L. (1997). A parametrization of the lateral waterflow for the global scale. Climate Dynamics, 14(1), 17\u201331. https://doi.org/10.1007/s003820050205\n",
   "doi": "https://doi.org/10.1007/s003820050205",
   "drs_name": "icon_xpp_1_1_ed_ref_010"
 }

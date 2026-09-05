@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "ec_earth3_esm_1_1_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "D\u00f6scher, R., Acosta, M., Alessandri, A., Anthoni, P., Arsouze, T., Bergman, T., Bernardello, R., Boussetta, S., Caron, L.-P., Carver, G., Castrillo, M., Catalano, F., Cvijanovic, I., Davini, P., Dekker, E., Doblas-Reyes, F. J., Docquier, D., Echevarria, P., Fladrich, U., et al. (2022). The EC-Earth3 Earth system model for the Coupled Model Intercomparison Project 6. Geoscientific Model Development, 15(7), 2973\u20133020. https://doi.org/10.5194/gmd-15-2973-2022\n",
   "doi": "https://doi.org/10.5194/gmd-15-2973-2022",
   "drs_name": "ec_earth3_esm_1_1_ref_001"
 }
