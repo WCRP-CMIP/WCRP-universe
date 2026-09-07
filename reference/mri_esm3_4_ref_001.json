@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "mri_esm3_4_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Deushi, M., Yoshimura, H., Urakawa, S., Yukimoto, S., Watanabe, Y., TSUJINO, H., Oshima, N., Shindo, E., Kawai, H., Yoshida, K., Adachi, Y., Niwano, M., Yasui, R., Nakano, H., Toyoda, T., Koshiro, T., Nagasawa, R., Hirahara, S., Ishii, M., &amp; Mizuta, R. (2026). MRI-ESM3.4: Description of the Meteorological Research Institute Earth System Model Version 3.4. <i>Zenodo</i>. https://doi.org/10.5281/ZENODO.20839616",
   "doi": "https://doi.org/10.5281/zenodo.20839616",
   "drs_name": "mri_esm3_4_ref_001"
 }

@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "canesm5_1_ref_002",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Sospedra-Alfonso, R., Merryfield, W. J., Boer, G. J., Kharin, V. V., Lee, W.-S., Seiler, C., & Christian, J. R. (2021). Decadal climate predictions with the Canadian Earth System Model version 5 (CanESM5). Geoscientific Model Development, 14(11), 6863\u20136891. https://doi.org/10.5194/gmd-14-6863-2021\n",
   "doi": "https://doi.org/10.5194/gmd-14-6863-2021",
   "drs_name": "canesm5_1_ref_002"
 }

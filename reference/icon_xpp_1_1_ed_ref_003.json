@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_003",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Z\u00e4ngl, G., Reinert, D., R\u00edpodas, P., & Baldauf, M. (2014). The\n                    <scp>ICON</scp>\n                    (ICOsahedral Non\u2010hydrostatic) modelling framework of\n                    <scp>DWD</scp>\n                    and\n                    <scp>MPI\u2010M</scp>\n                    : Description of the non\u2010hydrostatic dynamical core. Quarterly Journal of the Royal Meteorological Society, 141(687), 563\u2013579. Portico. https://doi.org/10.1002/qj.2378\n",
   "doi": "https://doi.org/10.1002/qj.2378",
   "drs_name": "icon_xpp_1_1_ed_ref_003"
 }

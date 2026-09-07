@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ref_008",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Ilyina, T., Six, K. D., Segschneider, J., Maier\u2010Reimer, E., Li, H., & N\u00fa\u00f1ez\u2010Riboni, I. (2013). Global ocean biogeochemistry model HAMOCC: Model architecture and performance as component of the MPI\u2010Earth system model in different CMIP5 experimental realizations. Journal of Advances in Modeling Earth Systems, 5(2), 287\u2013315. Portico. https://doi.org/10.1029/2012ms000178\n",
   "doi": "https://doi.org/10.1029/2012ms000178",
   "drs_name": "icon_xpp_1_1_ref_008"
 }

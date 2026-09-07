@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_012",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Thum, T., Caldararu, S., Engel, J., Kern, M., Pallandt, M., Schnur, R., Yu, L., & Zaehle, S. (2019). A new model of the coupled carbon, nitrogen, and phosphorus cycles in the terrestrial biosphere (QUINCY v1.0; revision 1996). Geoscientific Model Development, 12(11), 4781\u20134802. https://doi.org/10.5194/gmd-12-4781-2019\n",
   "doi": "https://doi.org/10.5194/gmd-12-4781-2019",
   "drs_name": "icon_xpp_1_1_ed_ref_012"
 }

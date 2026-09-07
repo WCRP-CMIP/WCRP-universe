@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "ukesm1_3_ll_ref_002",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Smith, R. S., Mathiot, P., Siahaan, A., Lee, V., Cornford, S. L., Gregory, J. M., Payne, A. J., Jenkins, A., Holland, P. R., Ridley, J. K., & Jones, C. G. (2021). Coupling the U.K. Earth System Model to Dynamic Models of the Greenland and Antarctic Ice Sheets. Journal of Advances in Modeling Earth Systems, 13(10). Portico. https://doi.org/10.1029/2021ms002520\n",
   "doi": "https://doi.org/10.1029/2021MS002520",
   "drs_name": "ukesm1_3_ll_ref_002"
 }

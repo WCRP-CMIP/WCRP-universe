@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_005",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Korn, P., Br\u00fcggemann, N., Jungclaus, J. H., Lorenz, S. J., Gutjahr, O., Haak, H., Linardakis, L., Mehlmann, C., Mikolajewicz, U., Notz, D., Putrasahan, D. A., Singh, V., von Storch, J.-S., Zhu, X., & Marotzke, J. (2022). ICON\u2010O: The Ocean Component of the ICON Earth System Model\u2014Global Simulation Characteristics and Local Telescoping Capability. Journal of Advances in Modeling Earth Systems, 14(10). Portico. https://doi.org/10.1029/2021ms002952\n",
   "doi": "https://doi.org/10.1029/2021MS002952",
   "drs_name": "icon_xpp_1_1_ed_ref_005"
 }

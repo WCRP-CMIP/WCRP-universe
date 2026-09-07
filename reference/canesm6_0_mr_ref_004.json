@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "canesm6_0_mr_ref_004",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Arora, V. K., Seiler, C., Wang, L., & Kou-Giesbrecht, S. (2023). Towards an ensemble-based evaluation of land surface models in light of uncertain forcings and observations. Biogeosciences, 20(7), 1313\u20131355. https://doi.org/10.5194/bg-20-1313-2023\n",
   "doi": "https://doi.org/10.5194/bg-20-1313-2023",
   "drs_name": "canesm6_0_mr_ref_004"
 }

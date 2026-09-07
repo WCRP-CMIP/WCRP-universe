@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "access_esm1_6_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Ziehn, T., Chamberlain, M. A., Law, R. M., Lenton, A., Bodman, R. W., Dix, M., Stevens, L., Wang, Y.-P., & Srbinovsky, J. (2020). The Australian Earth System Model: ACCESS-ESM1.5. Journal of Southern Hemisphere Earth Systems Science, 70(1), 193\u2013214. https://doi.org/10.1071/es19035\n",
   "doi": "https://doi.org/10.1071/ES19035",
   "drs_name": "access_esm1_6_ref_001"
 }

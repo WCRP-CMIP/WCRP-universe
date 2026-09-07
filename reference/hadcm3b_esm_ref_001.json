@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "hadcm3b_esm_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Gordon, C., Cooper, C., Senior, C. A., Banks, H., Gregory, J. M., Johns, T. C., Mitchell, J. F. B., & Wood, R. A. (2000). The simulation of SST, sea ice extents and ocean heat transports in a version of the Hadley Centre coupled model without flux adjustments. Climate Dynamics, 16(2-3), 147\u2013168. https://doi.org/10.1007/s003820050010\n",
   "doi": "https://doi.org/10.1007/s003820050010",
   "drs_name": "hadcm3b_esm_ref_001"
 }

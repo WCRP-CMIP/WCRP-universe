@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "canesm5_1_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Swart, N. C., Cole, J. N. S., Kharin, V. V., Lazare, M., Scinocca, J. F., Gillett, N. P., Anstey, J., Arora, V., Christian, J. R., Hanna, S., Jiao, Y., Lee, W. G., Majaess, F., Saenko, O. A., Seiler, C., Seinen, C., Shao, A., Sigmond, M., Solheim, L., et al. (2019). The Canadian Earth System Model version 5 (CanESM5.0.3). Geoscientific Model Development, 12(11), 4823\u20134873. https://doi.org/10.5194/gmd-12-4823-2019\n",
   "doi": "https://doi.org/10.5194/gmd-12-4823-2019",
   "drs_name": "canesm5_1_ref_001"
 }

@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "canesm5_1_ref_003",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Christian, J. R., Denman, K. L., Hayashida, H., Holdsworth, A. M., Lee, W. G., Riche, O. G. J., Shao, A. E., Steiner, N., & Swart, N. C. (2022). Ocean biogeochemistry in the Canadian Earth System Model version 5.0.3: CanESM5 and CanESM5-CanOE. Geoscientific Model Development, 15(11), 4393\u20134424. https://doi.org/10.5194/gmd-15-4393-2022\n",
   "doi": "https://doi.org/10.5194/gmd-15-4393-2022",
   "drs_name": "canesm5_1_ref_003"
 }

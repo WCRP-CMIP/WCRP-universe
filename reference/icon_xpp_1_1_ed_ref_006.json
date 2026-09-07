@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_006",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Mehlmann, C., & Korn, P. (2021). Sea-ice dynamics on triangular grids. Journal of Computational Physics, 428, 110086. https://doi.org/10.1016/j.jcp.2020.110086\n",
   "doi": "https://doi.org/10.1016/j.jcp.2020.110086",
   "drs_name": "icon_xpp_1_1_ed_ref_006"
 }

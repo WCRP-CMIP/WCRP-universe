@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "icon_xpp_1_1_ed_ref_002",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "M\u00fcller, W. A., Fr\u00fch, B., Korn, P., Potthast, R., Baehr, J., Bettems, J.-M., B\u00f6l\u00f6ni, G., Brienen, S., Fr\u00f6hlich, K., Helmert, J., Jungclaus, J., K\u00f6hler, M., Lorenz, S., Schneidereit, A., Schnur, R., Schulz, J.-P., Schlemmer, L., Sgoff, C., Pham, T. V., et al. (2025). ICON: Toward Vertically Integrated Model Configurations for Numerical Weather Prediction, Climate Predictions, and Projections. Bulletin of the American Meteorological Society, 106(6), E1017\u2013E1031. https://doi.org/10.1175/bams-d-24-0042.1\n",
   "doi": "https://doi.org/10.1175/BAMS-D-24-0042.1",
   "drs_name": "icon_xpp_1_1_ed_ref_002"
 }

@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "hadcm3b_esm_ref_002",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Valdes, P. J., Armstrong, E., Badger, M. P. S., Bradshaw, C. D., Bragg, F., Crucifix, M., Davies-Barnard, T., Day, J. J., Farnsworth, A., Gordon, C., Hopcroft, P. O., Kennedy, A. T., Lord, N. S., Lunt, D. J., Marzocchi, A., Parry, L. M., Pope, V., Roberts, W. H. G., Stone, E. J., et al. (2017). The BRIDGE HadCM3 family of climate models: HadCM3@Bristol\u00a0v1.0. Geoscientific Model Development, 10(10), 3715\u20133743. https://doi.org/10.5194/gmd-10-3715-2017\n",
   "doi": "https://doi.org/10.5194/gmd-10-3715-2017",
   "drs_name": "hadcm3b_esm_ref_002"
 }

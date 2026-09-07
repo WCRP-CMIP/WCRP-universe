@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "ukcm2a_0_hh_ref_001",
   "type": "reference",
-  "citation": "See DOI",
+  "citation": "Roberts, M. J., Jung, T., Ortega, P., Ghosh, R., Wachsmann, F., von Storch, J.-S., Kroeger, J., Aengenheyster, M., &amp; Roberts, C. (2024). Phase 1 simulations, including HighResMIP and CMIP6- PI-control simulations. <i>Zenodo</i>. https://doi.org/10.5281/ZENODO.14288725",
   "doi": "https://doi.org/10.5281/zenodo.14288725",
   "drs_name": "ukcm2a_0_hh_ref_001"
 }
