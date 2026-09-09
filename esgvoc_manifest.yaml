@@ -2,14 +2,10 @@ schema_version: '1'
 project:
   id: universe
   name: WCRP Universe Controlled Vocabulary
-cv_version: 3.1.0
-universe_version: 3.1.0
+cv_version: 3.1.1
+universe_version: 3.1.1
 esgvoc:
   min_version: 4.0.0
 release_notes: |
-  - activity: updated data descriptor model
-  - data_coordinate: 1 added
-  - grid: 11 added, 1 modified
-  - model: 2 added
-  - reference: 17 added
-  - source: 1 added
+  - model: 19 modified
+  - reference: 53 added, 2 modified
