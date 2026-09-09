@@ -3,6 +3,6 @@
     "id": "ouranos",
     "type": "organisation",
     "drs_name": "OURANOS",
-    "members": [],
-    "description": "Consortium on Regional Climatology and Adaptation to Climate Change (Québec, Canada)"
+    "members": ["ouranos"],
+    "description": "Ouranos Consortium on Regional Climatology and Adaptation to Climate Change"
 }
