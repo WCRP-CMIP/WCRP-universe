@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g014",
+  "type": "grid",
+  "description": "Horizontal grid with multiple ocean passage representations.",
+  "drs_name": "g014",
+  "region": "global"
+}
