@@ -9,6 +9,7 @@ for the CMIP7 fast-track.
 
 import json
 import re
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -119,6 +120,62 @@ class ExperimentProject(BaseModel):
         write_file(out_file, content)
 
 
+class Reference(BaseModel):
+    id: str
+    citation: str
+    doi: str
+
+    def write_file(self, project_root: Path) -> None:
+        content = {
+            "@context": "000_context.jsonld",
+            "id": self.id,
+            "type": "reference",
+            "citation": self.citation,
+            "doi": self.doi,
+            "drs_name": self.id,
+        }
+
+        out_file = str(project_root / "reference" / f"{self.id}.json")
+        write_file(out_file, content)
+
+
+def get_citation_for_doi(doi: str, style: str = "apa") -> str | None:
+    print(f"Trying to get citation for {doi=}")
+    url = f"https://doi.org/{doi}"
+    headers = {"Accept": f"text/x-bibliography; style={style}"}
+
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req) as response:
+        res = response.read().decode("utf-8")
+
+    return res
+
+
+def get_reference(url: str, activity: str, number: int) -> Reference:
+    try:
+        citation = get_citation_for_doi(url)
+        doi = url
+
+    except urllib.error.HTTPError as exc:
+        print(f"Could not get DOI for {url}. {exc.code=} {exc.reason=}")
+        doi = "N/A"
+        citation = f"See {url}"
+
+    res = Reference(
+        id=f"{activity}_cmip7_ref_{number:03d}",
+        citation=citation,
+        doi=doi,
+    )
+
+    return res
+
+
+def get_references(urls: list[str], activity) -> list[Reference]:
+    res = [get_reference(v, activity, i) for i, v in enumerate(urls)]
+
+    return res
+
+
 class ActivityProject(BaseModel):
     model_config = ConfigDict(
         validate_assignment=True,
@@ -129,7 +186,8 @@ class ActivityProject(BaseModel):
 
     id: str
     experiments: list[str]
-    urls: list[str]
+    references: list[Reference]
+    # urls: list[str]
     description: str = "dont_write"
 
     def write_file(self, project_root: Path) -> None:
@@ -138,7 +196,7 @@ class ActivityProject(BaseModel):
             "id": self.id,
             "type": "activity",
             "experiments": sorted(self.experiments),
-            "urls": sorted(self.urls),
+            "references": sorted(v.id for v in self.references),
         }
         for attr in ("description",):
             val = getattr(self, attr)
@@ -170,28 +228,38 @@ class Holder(BaseModel):
             ActivityProject(
                 id="aerchemmip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-10-585-2017",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-10-585-2017",
+                    ],
+                    "aerchemmip",
+                ),
             ),
             ActivityProject(
                 id="c4mip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-17-8141-2024",
-                    "https://doi.org/10.5194/gmd-18-5699-2025",
-                    "https://doi.org/10.5194/gmd-9-2853-2016",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-17-8141-2024",
+                        "https://doi.org/10.5194/gmd-18-5699-2025",
+                        "https://doi.org/10.5194/gmd-9-2853-2016",
+                    ],
+                    "c4mip",
+                ),
             ),
             ActivityProject(
                 id="cfmip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-10-359-2017"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-10-359-2017"], "cfmip"
+                ),
             ),
             ActivityProject(
                 id="cmip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-18-6671-2025"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-18-6671-2025"], "cmip"
+                ),
                 description=(
                     # If you were doing this for CMIP6, you would write DECK and historical
                     # as historical was separate from the DECK in CMIP6, but isn't in CMIP7,
@@ -203,49 +271,67 @@ class Holder(BaseModel):
             ActivityProject(
                 id="damip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-18-4399-2025"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-18-4399-2025"], "damip"
+                ),
             ),
             ActivityProject(
                 id="dcpp",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-9-3751-2016",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-9-3751-2016",
+                    ],
+                    "dcpp",
+                ),
             ),
             ActivityProject(
                 id="geomip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-17-2583-2024",
-                    "https://doi.org/10.1175/BAMS-D-25-0191.1",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-17-2583-2024",
+                        "https://doi.org/10.1175/BAMS-D-25-0191.1",
+                    ],
+                    "geomip",
+                ),
             ),
             ActivityProject(
                 id="lmip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-9-2809-2016"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-9-2809-2016"], "lmip"
+                ),
             ),
             ActivityProject(
                 id="pmip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-10-3979-2017",
-                    "https://doi.org/10.5194/cp-19-883-2023",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-10-3979-2017",
+                        "https://doi.org/10.5194/cp-19-883-2023",
+                    ],
+                    "pmip",
+                ),
             ),
             ActivityProject(
                 id="rfmip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-9-3447-2016",
-                    "https://doi.org/10.5194/acp-20-9591-2020",
-                    "https://doi.org/10.5194/gmd-19-4447-2026",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-9-3447-2016",
+                        "https://doi.org/10.5194/acp-20-9591-2020",
+                        "https://doi.org/10.5194/gmd-19-4447-2026",
+                    ],
+                    "rfmip",
+                ),
             ),
             ActivityProject(
                 id="scenariomip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/egusphere-2024-3765"],
+                references=get_references(
+                    ["https://doi.org/10.5194/egusphere-2024-3765"], "scenariomip"
+                ),
                 description=(
                     "Future scenario experiments. "
                     "Exploration of the future climate under a (selected) range of possible boundary conditions. "
@@ -1220,16 +1306,6 @@ class Holder(BaseModel):
 
         return self
 
-    def write_files(self, project_root: Path, universe_root: Path) -> None:
-        for experiment_project in self.experiments_project:
-            experiment_project.write_file(project_root)
-
-        for experiment_universe in self.experiments_universe:
-            experiment_universe.write_file(universe_root)
-
-        for activity in self.activities:
-            activity.write_file(project_root)
-
     @staticmethod
     def get_scenario_tier(drs_name: str) -> int:
         # A bit stupid, because in practice everything ends up being tier 1,
@@ -1823,6 +1899,8 @@ class Holder(BaseModel):
 
         for activity in self.activities:
             activity.write_file(project_root)
+            for reference in activity.references:
+                reference.write_file(universe_root)
 
 
 def sort_keys(
