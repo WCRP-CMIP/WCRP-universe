@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rfmip_cmip7_ref_001",
+    "type": "reference",
+    "drs_name": "rfmip_cmip7_ref_001",
+    "citation": "Smith, C. J., Kramer, R. J., Myhre, G., Alterskj\u00e6r, K., Collins, W., Sima, A., Boucher, O., Dufresne, J.-L., Nabat, P., Michou, M., Yukimoto, S., Cole, J., Paynter, D., Shiogama, H., O\u2019Connor, F. M., Robertson, E., Wiltshire, A., Andrews, T., Hannay, C., et al. (2020). Effective radiative forcing and adjustments in CMIP6 models. Atmospheric Chemistry and Physics, 20(16), 9591\u20139618. https://doi.org/10.5194/acp-20-9591-2020\n",
+    "doi": "https://doi.org/10.5194/acp-20-9591-2020"
+}

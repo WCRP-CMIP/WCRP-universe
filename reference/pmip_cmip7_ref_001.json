@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pmip_cmip7_ref_001",
+    "type": "reference",
+    "drs_name": "pmip_cmip7_ref_001",
+    "citation": "Sime, L. C., Sivankutty, R., Vallet-Malmierca, I., de Boer, A. M., & Sicard, M. (2023). Summer surface air temperature proxies point to  near-sea-ice-free conditions in the Arctic at 127\u2009ka. Climate of the Past, 19(4), 883\u2013900. https://doi.org/10.5194/cp-19-883-2023\n",
+    "doi": "https://doi.org/10.5194/cp-19-883-2023"
+}

@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "aerchemmip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "aerchemmip_cmip7_ref_000",
+    "citation": "Collins, W. J., Lamarque, J.-F., Schulz, M., Boucher, O., Eyring, V., Hegglin, M. I., Maycock, A., Myhre, G., Prather, M., Shindell, D., & Smith, S. J. (2017). AerChemMIP: quantifying the effects of chemistry and aerosols in CMIP6. Geoscientific Model Development, 10(2), 585\u2013607. https://doi.org/10.5194/gmd-10-585-2017\n",
+    "doi": "https://doi.org/10.5194/gmd-10-585-2017"
+}

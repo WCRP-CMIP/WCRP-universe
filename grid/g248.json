@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g248",
+  "type": "grid",
+  "description": "Horizontal grid cell with a tripolar grid type and 0.66 x 0.66 degree resolution.",
+  "drs_name": "g248",
+  "region": "global"
+}
