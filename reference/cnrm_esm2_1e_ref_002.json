@@ -2,7 +2,7 @@
   "@context": "000_context.jsonld",
   "id": "cnrm_esm2_1e_ref_002",
   "type": "reference",
-  "citation": "Voldoire, A. et al., 2019. Evaluation of CMIP6 DECK Experiments With CNRM-CM6-1, Journal of Advances in Modeling Earth Systems, 11, 2177–2213",
+  "citation": "Voldoire, A., Saint\u2010Martin, D., S\u00e9n\u00e9si, S., Decharme, B., Alias, A., Chevallier, M., Colin, J., Gu\u00e9r\u00e9my, J.-F., Michou, M., Moine, M.-P., Nabat, P., Roehrig, R., Salas y M\u00e9lia, D., S\u00e9f\u00e9rian, R., Valcke, S., Beau, I., Belamari, S., Berthet, S., Cassou, C., et al. (2019). Evaluation of CMIP6 DECK Experiments With CNRM\u2010CM6\u20101. Journal of Advances in Modeling Earth Systems, 11(7), 2177\u20132213. Portico. https://doi.org/10.1029/2019ms001683\n",
   "doi": "https://doi.org/10.1029/2019MS001683",
   "drs_name": "cnrm_esm2_1e_ref_002"
 }
