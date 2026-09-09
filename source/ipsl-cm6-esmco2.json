@@ -2,5 +2,9 @@
     "@context": "000_context.jsonld",
     "id": "ipsl-cm6-esmco2",
     "type": "source",
-    "drs_name": "IPSL-CM6-ESMCO2"
+    "drs_name": "IPSL-CM6-ESMCO2",
+    "label": "IPSL-CM6-ESMCO2",
+    "organisation_id": [
+        "ipsl"
+    ]
 }
