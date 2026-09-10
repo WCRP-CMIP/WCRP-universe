@@ -1,0 +1,23 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ouranos",
+    "type": "institution",
+    "drs_name": "OURANOS",
+    "acronyms": [],
+    "labels": [
+        "Ouranos Consortium on Regional Climatology and Climate Change Adaptation"
+    ],
+    "description": "Ouranos Consortium on Regional Climatology and Climate Change Adaptation",
+    "location": [
+        {
+            "city": "Montréal",
+            "country": "Canada",
+            "lat": 45.505540,
+            "lon": -73.572140
+        }
+    ],
+    "ror": "0565gth98",
+    "urls": [
+        "https://www.ouranos.ca"
+    ]
+}
