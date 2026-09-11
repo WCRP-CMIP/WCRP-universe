@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "5000km",
+  "type": "nominal_resolution",
+  "drs_name": "",
+  "description": "",
+  "magnitude": null,
+  "range": [],
+  "units": ""
+}
