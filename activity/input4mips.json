@@ -1,0 +1,7 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "input4mips",
+  "type": "activity",
+  "description": "",
+  "drs_name": "input4MIPs"
+}
