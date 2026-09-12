@@ -1,0 +1,21 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "zg_tpt-30hpa-hxy-u",
+  "type": "known_branded_variable",
+  "drs_name": "",
+  "variable_root_name": "",
+  "branding_suffix_name": "",
+  "cf_standard_name": "",
+  "out_name": "",
+  "units": "",
+  "dimensions": [],
+  "temporal_label": "",
+  "vertical_label": "",
+  "horizontal_label": "",
+  "area_label": "",
+  "var_def_qualifier": null,
+  "history": "",
+  "bn_status": "",
+  "cf_sn_status": "",
+  "cell_methods": ""
+}
