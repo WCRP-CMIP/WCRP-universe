@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "iiasa-iamc-hl-ext-1-1-1",
+  "type": "source",
+  "drs_name": "IIASA-IAMC-hl-ext-1-1-1",
+  "activity_participation": [
+    "input4mips"
+  ],
+  "cohort": [],
+  "organisation_id": [
+    "iiasa-iamc"
+  ],
+  "label": "",
+  "label_extended": "",
+  "license": {},
+  "model_component": null,
+  "release_year": null
+}

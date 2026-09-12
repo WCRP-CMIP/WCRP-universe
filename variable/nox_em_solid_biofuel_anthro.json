@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "nox_em_solid_biofuel_anthro",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}
