@@ -1,0 +1,18 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "pik-vl-ext-1-0-0",
+  "type": "source",
+  "drs_name": "PIK-vl-ext-1-0-0",
+  "activity_participation": [
+    "input4mips"
+  ],
+  "cohort": [],
+  "organisation_id": [
+    "pik"
+  ],
+  "label": "",
+  "label_extended": "",
+  "license": {},
+  "model_component": null,
+  "release_year": null
+}
