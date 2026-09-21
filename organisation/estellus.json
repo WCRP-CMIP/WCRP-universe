@@ -1,1 +1,1 @@
-{"@context": "000_context.jsonld", "id": "estellus", "type": "organisation", "drs_name": "Estellus", "description": "Estellus, Fr"}
+{"@context": "000_context.jsonld", "id": "estellus", "type": "organisation", "drs_name": "Estellus", "description": "Estellus, Fr", "members": ["estellus"]}
