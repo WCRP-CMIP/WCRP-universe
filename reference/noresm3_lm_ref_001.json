@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "noresm3_lm_ref_001",
+  "type": "reference",
+  "citation": "Seland, Ø., Bentsen, M., Olivié, D., Toniazzo, T., Gjermundsen, A., Graff, L. S., Debernard, J. B., Gupta, A. K., He, Y.-C., Kirkevåg, A., Schwinger, J., Tjiputra, J., Aas, K. S., Bethke, I., Fan, Y., Griesfeller, J., Grini, A., Guo, C., Ilicak, M., et al. (2020). Overview of the Norwegian Earth System Model (NorESM2) and key climate response of CMIP6 DECK, historical, and scenario simulations. Geoscientific Model Development, 13(12), 6165-6200. https://doi.org/10.5194/gmd-13-6165-2020\n",
+  "doi": "https://doi.org/10.5194/gmd-13-6165-2020",
+  "drs_name": "noresm3_lm_ref_001"
+}
