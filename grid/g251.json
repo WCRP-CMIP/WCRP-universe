@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g251",
+  "type": "grid",
+  "description": "Horizontal grid cell with a stretched grid type.",
+  "drs_name": "g251",
+  "region": "global"
+}
