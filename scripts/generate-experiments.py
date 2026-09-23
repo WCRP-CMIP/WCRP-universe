@@ -146,7 +146,7 @@ def get_citation_for_doi(doi: str, style: str = "apa") -> str | None:
 
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req) as response:
-        res = response.read().decode("utf-8")
+        res = response.read().decode("utf-8").strip()
 
     return res
 
@@ -1425,12 +1425,15 @@ class Holder(BaseModel):
         return f"esm-{scenario_drs_name}"
 
     def get_scenario_esm(
-        self,
-        scenario: ExperimentUniverse,
+        self, scenario: ExperimentUniverse, tier: int | None = None
     ) -> ExperimentUniverse:
+
         res = scenario.model_copy()
 
         res.drs_name = self.get_scenario_esm_drs_name(scenario.drs_name)
+        if tier is None:
+            tier = self.get_scenario_tier(res.drs_name)
+
         res.description = (
             scenario.description.replace(
                 "carbon dioxide concentrations", "carbon dioxide emissions"
@@ -1449,7 +1452,7 @@ class Holder(BaseModel):
             scenario.parent_experiment, res.parent_experiment
         )
 
-        res.tier = self.get_scenario_tier(res.drs_name)
+        res.tier = tier
 
         return res
 
@@ -1864,16 +1867,10 @@ class Holder(BaseModel):
             ),
         ]
 
-        def get_tier(drs_name: str) -> int:
-            if drs_name.startswith("esm"):
-                return 1
-
-            return 2
-
         for acronym, description_base, branch_year in acronym_descriptions:
             drs_name = acronym
             drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
-            tier = get_tier(drs_name)
+            tier_conc_driven = 2
 
             description = (
                 f"{description_base} Run with prescribed carbon dioxide concentrations "
@@ -1894,7 +1891,7 @@ class Holder(BaseModel):
                 parent_mip_era="cmip7",
                 required_model_components=["aogcm"],
                 start_timestamp=f"{branch_year}-01-01",
-                tier=tier,
+                tier=tier_conc_driven,
             )
 
             proj_base = self.get_scenario_project(univ_base)
@@ -1904,21 +1901,21 @@ class Holder(BaseModel):
             self.add_experiment_to_activity(proj_base)
 
             univ_ext = self.get_scenario_extension(
-                univ_base, tier=tier, min_number_yrs_per_sim=100.0
+                univ_base, tier=tier_conc_driven, min_number_yrs_per_sim=100.0
             )
             proj_ext = self.get_scenario_project(univ_ext)
             self.experiments_universe.append(univ_ext)
             self.experiments_project.append(proj_ext)
             self.add_experiment_to_activity(proj_ext)
 
-            univ_esm = self.get_scenario_esm(univ_base)
+            univ_esm = self.get_scenario_esm(univ_base, tier=1)
             proj_esm = self.get_scenario_project(univ_esm)
             self.experiments_universe.append(univ_esm)
             self.experiments_project.append(proj_esm)
             self.add_experiment_to_activity(proj_esm)
 
             univ_esm_ext = self.get_scenario_extension(
-                univ_esm, tier=tier, min_number_yrs_per_sim=100.0
+                univ_esm, min_number_yrs_per_sim=100.0
             )
             proj_esm_ext = self.get_scenario_project(univ_esm_ext)
             self.experiments_universe.append(univ_esm_ext)
