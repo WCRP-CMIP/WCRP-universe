@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "polmip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "polmip_cmip7_ref_000",
+    "citation": "Zhong, J., Zhang, X., Zhang, D., Wang, D., Guo, L., Peng, H., Huang, X., Wang, Z., Lei, Y., Lu, Y., Qu, C., Zhang, X., & Miao, C. (2025). Plausible global emissions scenario for 2\u2009\u00b0C aligned with China\u2019s net-zero pathway. Nature Communications, 16(1). https://doi.org/10.1038/s41467-025-62983-5\n",
+    "doi": "https://doi.org/10.1038/s41467-025-62983-5"
+}

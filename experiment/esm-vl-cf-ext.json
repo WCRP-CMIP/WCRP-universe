@@ -12,7 +12,7 @@
         "aer",
         "chem"
     ],
-    "branch_information": "Branch from `esm-vl-cf` at 2100-12-31.",
+    "branch_information": "Branch from `esm-vl-cf` at 2100-12-31",
     "min_ensemble_size": 1,
     "parent_activity": "polmip",
     "parent_experiment": "esm-vl-cf",
@@ -21,5 +21,5 @@
         "aogcm",
         "bgc"
     ],
-    "tier": 1
+    "tier": 2
 }
