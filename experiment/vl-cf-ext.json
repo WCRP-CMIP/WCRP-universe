@@ -13,7 +13,7 @@
         "chem",
         "bgc"
     ],
-    "branch_information": "Branch from `vl-cf` at 2100-12-31.",
+    "branch_information": "Branch from `vl-cf` at 2100-12-31",
     "min_ensemble_size": 1,
     "parent_activity": "polmip",
     "parent_experiment": "vl-cf",

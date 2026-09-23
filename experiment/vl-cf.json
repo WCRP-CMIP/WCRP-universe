@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "vl-cf",
     "type": "experiment",
-    "description": "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for global surface air temperature to peak at 1.5C and stabilise or slowly decline.",
+    "description": "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for global surface air temperature to peak at 1.5C and stabilise or slowly decline. Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-vl-cf`).",
     "drs_name": "vl-cf",
     "start_timestamp": "2016-01-01",
     "end_timestamp": "2100-12-31",
