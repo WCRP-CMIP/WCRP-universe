@@ -251,7 +251,12 @@ class Holder(BaseModel):
                 id="cfmip",
                 experiments=[],
                 references=get_references(
-                    ["https://doi.org/10.5194/gmd-10-359-2017"], "cfmip"
+                    [
+                        # "https://doi.org/10.5194/gmd-10-359-2017",
+                        "https://doi.org/10.5194/gmd-19-8693-2026",
+                        "https://doi.org/10.1029/2023GL104786",
+                    ],
+                    "cfmip",
                 ),
             ),
             ActivityProject(
@@ -534,6 +539,7 @@ class Holder(BaseModel):
             start_timestamp,
             end_timestamp,
             min_number_yrs_per_sim,
+            tier,
         ) in (
             (
                 "amip",
@@ -542,14 +548,43 @@ class Holder(BaseModel):
                 "1979-01-01",
                 "2021-12-31",
                 43,
+                1,
             ),
             (
                 "amip-p4K",
-                "Same as `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions.",
+                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment).",
                 "cfmip",
                 "1979-01-01",
                 "2021-12-31",
                 43,
+                1,
+            ),
+            (
+                "amip-m4K",
+                "Same as the `amip` simulation, except sea surface temperatures are decreased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment).",
+                "cfmip",
+                "1979-01-01",
+                "2021-12-31",
+                43,
+                1,
+            ),
+            (
+                "amip-p4K-SST-rad",
+                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment) when calculating the upward longwave radiation from the sea surface using the Planck function (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
+                "cfmip",
+                "1979-01-01",
+                "2021-12-31",
+                43,
+                2,
+            ),
+            (
+                "amip-p4K-SST-turb",
+                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment) when calculating the turbulent transport of the latent and sensible heat fluxes at the air-sea interface using bulk aerodynamic formulae (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
+                "cfmip",
+                "1979-01-01",
+                "2021-12-31",
+                43,
+                2,
             ),
             (
                 "amip-piForcing",
@@ -562,6 +597,7 @@ class Holder(BaseModel):
                 "1870-01-01",
                 "2021-12-31",
                 152,
+                1,
             ),
         ):
             univ = ExperimentUniverse(
@@ -579,7 +615,7 @@ class Holder(BaseModel):
                 parent_mip_era=None,
                 required_model_components=["agcm"],
                 start_timestamp=None,
-                tier=1,
+                tier=tier,
             )
 
             self.experiments_universe.append(univ)

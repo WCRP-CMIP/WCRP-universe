@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cfmip_cmip7_ref_001",
+    "type": "reference",
+    "drs_name": "cfmip_cmip7_ref_001",
+    "citation": "Ogura, T., Webb, M. J., & Lock, A. P. (2023). Positive Low Cloud Feedback Primarily Caused by Increasing Longwave Radiation From the Sea Surface in Two Versions of a Climate Model. Geophysical Research Letters, 50(20). Portico. https://doi.org/10.1029/2023gl104786",
+    "doi": "https://doi.org/10.1029/2023GL104786"
+}
