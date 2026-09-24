@@ -332,6 +332,41 @@ class Holder(BaseModel):
                 ),
             ),
             ActivityProject(
+                id="polmip",
+                experiments=[],
+                references=get_references(
+                    [
+                        "https://doi.org/10.1038/s41467-025-62983-5",
+                        "https://doi.org/10.1016/j.eng.2024.11.023",
+                        "https://doi.org/10.1016/j.accre.2023.11.004",
+                        "https://dx.doi.org/10.1088/1748-9326/adfbfb",
+                        "https://doi.org/10.5281/zenodo.21487424",
+                    ],
+                    "polmip",
+                ),
+                description=(
+                    "Policy-Aligned Model Intercomparison Project (PolMIP). "
+                    "PolMIP is designed as a complementary effort to existing MIPs. "
+                    "While ScenarioMIP explores the breadth of future forcing levels under idealized assumptions, "
+                    "PolMIP focuses on the depth of policy-driven pathways, "
+                    "offering higher fidelity for regions where specific mitigation strategies and timelines are defined. "
+                    "By providing a coordinated infrastructure for policy-driven scenario simulations, "
+                    "PolMIP aims to deliver actionable science for national climate assessments, "
+                    "enhance the policy relevance of CMIP, "
+                    "and foster closer collaboration between the climate modeling community and policymakers. "
+                    "Ultimately, PolMIP seeks to ensure that the next generation of climate projections is not only scientifically robust "
+                    "but also deeply rooted in the real-world decisions shaping our collective future. "
+                    "The project has completed phase 1: demonstration and proof of concept, "
+                    "starting from the SSP2-com scenario that was developed by Chinese scientists "
+                    "that aligns with China's carbon neutrality pledge "
+                    "(peaking carbon emissions before 2030 and achieving carbon neutrality before 2060) "
+                    "within the SSP2 socioeconomic framework and the NDC data of countries worldwide. "
+                    "The next phase will expand the framework to include policy-aligned scenarios from other nations and regions, "
+                    "creating a multi-country ensemble "
+                    "that enables consistent cross-comparison of national climate action strategies under a unified protocol."
+                ),
+            ),
+            ActivityProject(
                 id="scenariomip",
                 experiments=[],
                 references=get_references(
@@ -1384,7 +1419,12 @@ class Holder(BaseModel):
     def get_scenario_extension(
         self,
         scenario: ExperimentUniverse,
+        min_number_yrs_per_sim: float = 50.0,
+        tier: int | None = None,
     ) -> ExperimentUniverse:
+        if tier is None:
+            tier = self.get_scenario_tier(scenario.drs_name.lower())
+
         res = scenario.model_copy()
 
         scenario_end_timestamp_dt = datetime.strptime(
@@ -1404,11 +1444,11 @@ class Holder(BaseModel):
         res.start_timestamp = extension_start_timestamp
         res.end_timestamp = extension_end_timestamp
 
-        res.min_number_yrs_per_sim = 50.0
+        res.min_number_yrs_per_sim = min_number_yrs_per_sim
         res.parent_activity = scenario.activity
         res.parent_experiment = scenario.drs_name.lower()
         res.drs_name = f"{scenario.drs_name}-ext"
-        res.tier = self.get_scenario_tier(res.drs_name)
+        res.tier = tier
 
         return res
 
@@ -1421,12 +1461,15 @@ class Holder(BaseModel):
         return f"esm-{scenario_drs_name}"
 
     def get_scenario_esm(
-        self,
-        scenario: ExperimentUniverse,
+        self, scenario: ExperimentUniverse, tier: int | None = None
     ) -> ExperimentUniverse:
+
         res = scenario.model_copy()
 
         res.drs_name = self.get_scenario_esm_drs_name(scenario.drs_name)
+        if tier is None:
+            tier = self.get_scenario_tier(res.drs_name)
+
         res.description = (
             scenario.description.replace(
                 "carbon dioxide concentrations", "carbon dioxide emissions"
@@ -1445,7 +1488,7 @@ class Holder(BaseModel):
             scenario.parent_experiment, res.parent_experiment
         )
 
-        res.tier = self.get_scenario_tier(res.drs_name)
+        res.tier = tier
 
         return res
 
@@ -1849,6 +1892,74 @@ class Holder(BaseModel):
 
         return self
 
+    def add_polmip_entries(self) -> "Holder":
+        acronym_descriptions = [
+            (
+                "vl-cf",
+                (
+                    "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for global surface air temperature to peak at 1.5C and stabilise or slowly decline."
+                ),
+                2016,
+            ),
+        ]
+
+        for acronym, description_base, branch_year in acronym_descriptions:
+            drs_name = acronym
+            drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
+            tier_conc_driven = 2
+
+            description = (
+                f"{description_base} Run with prescribed carbon dioxide concentrations "
+                f"(for prescribed carbon dioxide emissions, see `{drs_name_esm_scenario}`)."
+            )
+
+            univ_base = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="polmip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information=f"Branch from `historical` at {branch_year}-01-01.",
+                end_timestamp="2100-12-31",
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=2100 - branch_year + 1,
+                parent_activity="cmip",
+                parent_experiment="historical",
+                parent_mip_era="cmip7",
+                required_model_components=["aogcm"],
+                start_timestamp=f"{branch_year}-01-01",
+                tier=tier_conc_driven,
+            )
+
+            proj_base = self.get_scenario_project(univ_base)
+
+            self.experiments_universe.append(univ_base)
+            self.experiments_project.append(proj_base)
+            self.add_experiment_to_activity(proj_base)
+
+            univ_ext = self.get_scenario_extension(
+                univ_base, tier=tier_conc_driven, min_number_yrs_per_sim=100.0
+            )
+            proj_ext = self.get_scenario_project(univ_ext)
+            self.experiments_universe.append(univ_ext)
+            self.experiments_project.append(proj_ext)
+            self.add_experiment_to_activity(proj_ext)
+
+            univ_esm = self.get_scenario_esm(univ_base, tier=1)
+            proj_esm = self.get_scenario_project(univ_esm)
+            self.experiments_universe.append(univ_esm)
+            self.experiments_project.append(proj_esm)
+            self.add_experiment_to_activity(proj_esm)
+
+            univ_esm_ext = self.get_scenario_extension(
+                univ_esm, min_number_yrs_per_sim=100.0
+            )
+            proj_esm_ext = self.get_scenario_project(univ_esm_ext)
+            self.experiments_universe.append(univ_esm_ext)
+            self.experiments_project.append(proj_esm_ext)
+            self.add_experiment_to_activity(proj_esm_ext)
+
+        return self
+
     def add_geomip_entries(self) -> "Holder":
         for (
             drs_name,
@@ -1996,6 +2107,7 @@ def main():
     holder.add_pmip_entries()
     holder.add_piclim_entries()
     holder.add_scenario_entries()
+    holder.add_polmip_entries()
     holder.add_aerchemmip_entries()
     holder.add_geomip_entries()
 
