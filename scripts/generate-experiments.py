@@ -252,7 +252,8 @@ class Holder(BaseModel):
                 experiments=[],
                 references=get_references(
                     [
-                        "https://doi.org/10.5194/gmd-10-359-2017",
+                        # "https://doi.org/10.5194/gmd-10-359-2017",
+                        "https://doi.org/10.5194/gmd-19-8693-2026",
                         "https://doi.org/10.1029/2023GL104786",
                     ],
                     "cfmip",
@@ -516,7 +517,16 @@ class Holder(BaseModel):
             ),
             (
                 "amip-p4K",
-                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions.",
+                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment).",
+                "cfmip",
+                "1979-01-01",
+                "2021-12-31",
+                43,
+                1,
+            ),
+            (
+                "amip-m4K",
+                "Same as the `amip` simulation, except sea surface temperatures are decreased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment).",
                 "cfmip",
                 "1979-01-01",
                 "2021-12-31",
@@ -525,7 +535,7 @@ class Holder(BaseModel):
             ),
             (
                 "amip-p4K-SST-rad",
-                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions when calculating the upward longwave radiation from the sea surface using the Planck function (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
+                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment) when calculating the upward longwave radiation from the sea surface using the Planck function (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
                 "cfmip",
                 "1979-01-01",
                 "2021-12-31",
@@ -534,7 +544,7 @@ class Holder(BaseModel):
             ),
             (
                 "amip-p4K-SST-turb",
-                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions when calculating the turbulent transport of the latent and sensible heat fluxes at the air-sea interface using bulk aerodynamic formulae (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
+                "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment) when calculating the turbulent transport of the latent and sensible heat fluxes at the air-sea interface using bulk aerodynamic formulae (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
                 "cfmip",
                 "1979-01-01",
                 "2021-12-31",

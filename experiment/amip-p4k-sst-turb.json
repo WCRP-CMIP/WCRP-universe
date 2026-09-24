@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "amip-p4k-sst-turb",
     "type": "experiment",
-    "description": "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions when calculating the turbulent transport of the latent and sensible heat fluxes at the air-sea interface using bulk aerodynamic formulae (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
+    "description": "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment) when calculating the turbulent transport of the latent and sensible heat fluxes at the air-sea interface using bulk aerodynamic formulae (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
     "drs_name": "amip-p4K-SST-turb",
     "start_timestamp": null,
     "end_timestamp": null,

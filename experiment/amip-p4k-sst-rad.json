@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "amip-p4k-sst-rad",
     "type": "experiment",
-    "description": "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions when calculating the upward longwave radiation from the sea surface using the Planck function (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
+    "description": "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment) when calculating the upward longwave radiation from the sea surface using the Planck function (see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786).",
     "drs_name": "amip-p4K-SST-rad",
     "start_timestamp": null,
     "end_timestamp": null,
