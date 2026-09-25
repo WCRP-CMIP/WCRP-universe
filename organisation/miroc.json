@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "miroc",
     "type": "organisation",
-    "drs_name": "miroc",
+    "drs_name": "MIROC",
     "members": [
         "aori",
         "jamstec",
