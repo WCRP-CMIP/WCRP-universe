@@ -2,11 +2,12 @@
     "@context": "000_context.jsonld",
     "id": "miroc",
     "type": "organisation",
-    "drs_name": "MIROC",
+    "drs_name": "miroc",
     "members": [
-        "jamstec",
         "aori",
+        "jamstec",
         "nies",
         "r-ccs"
-    ]
+    ],
+    "description": "MIROC is a collaborative climate modeling consortium in Japan that develops and applies the MIROC climate model for climate research and international model intercomparison projects."
 }
