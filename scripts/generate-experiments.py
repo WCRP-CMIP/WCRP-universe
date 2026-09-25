@@ -9,6 +9,7 @@ for the CMIP7 fast-track.
 
 import json
 import re
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -119,6 +120,62 @@ class ExperimentProject(BaseModel):
         write_file(out_file, content)
 
 
+class Reference(BaseModel):
+    id: str
+    citation: str
+    doi: str
+
+    def write_file(self, project_root: Path) -> None:
+        content = {
+            "@context": "000_context.jsonld",
+            "id": self.id,
+            "type": "reference",
+            "citation": self.citation,
+            "doi": self.doi,
+            "drs_name": self.id,
+        }
+
+        out_file = str(project_root / "reference" / f"{self.id}.json")
+        write_file(out_file, content)
+
+
+def get_citation_for_doi(doi: str, style: str = "apa") -> str | None:
+    print(f"Trying to get citation for {doi=}")
+    url = f"https://doi.org/{doi}"
+    headers = {"Accept": f"text/x-bibliography; style={style}"}
+
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req) as response:
+        res = response.read().decode("utf-8").strip()
+
+    return res
+
+
+def get_reference(url: str, activity: str, number: int) -> Reference:
+    try:
+        citation = get_citation_for_doi(url)
+        doi = url
+
+    except urllib.error.HTTPError as exc:
+        print(f"Could not get DOI for {url}. {exc.code=} {exc.reason=}")
+        doi = "N/A"
+        citation = f"See {url}"
+
+    res = Reference(
+        id=f"{activity}_cmip7_ref_{number:03d}",
+        citation=citation,
+        doi=doi,
+    )
+
+    return res
+
+
+def get_references(urls: list[str], activity) -> list[Reference]:
+    res = [get_reference(v, activity, i) for i, v in enumerate(urls)]
+
+    return res
+
+
 class ActivityProject(BaseModel):
     model_config = ConfigDict(
         validate_assignment=True,
@@ -129,7 +186,8 @@ class ActivityProject(BaseModel):
 
     id: str
     experiments: list[str]
-    urls: list[str]
+    references: list[Reference]
+    # urls: list[str]
     description: str = "dont_write"
 
     def write_file(self, project_root: Path) -> None:
@@ -138,7 +196,7 @@ class ActivityProject(BaseModel):
             "id": self.id,
             "type": "activity",
             "experiments": sorted(self.experiments),
-            "urls": sorted(self.urls),
+            "references": sorted(v.id for v in self.references),
         }
         for attr in ("description",):
             val = getattr(self, attr)
@@ -170,28 +228,38 @@ class Holder(BaseModel):
             ActivityProject(
                 id="aerchemmip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-10-585-2017",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-10-585-2017",
+                    ],
+                    "aerchemmip",
+                ),
             ),
             ActivityProject(
                 id="c4mip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-17-8141-2024",
-                    "https://doi.org/10.5194/gmd-18-5699-2025",
-                    "https://doi.org/10.5194/gmd-9-2853-2016",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-17-8141-2024",
+                        "https://doi.org/10.5194/gmd-18-5699-2025",
+                        "https://doi.org/10.5194/gmd-9-2853-2016",
+                    ],
+                    "c4mip",
+                ),
             ),
             ActivityProject(
                 id="cfmip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-10-359-2017"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-10-359-2017"], "cfmip"
+                ),
             ),
             ActivityProject(
                 id="cmip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-18-6671-2025"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-18-6671-2025"], "cmip"
+                ),
                 description=(
                     # If you were doing this for CMIP6, you would write DECK and historical
                     # as historical was separate from the DECK in CMIP6, but isn't in CMIP7,
@@ -203,49 +271,102 @@ class Holder(BaseModel):
             ActivityProject(
                 id="damip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-18-4399-2025"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-18-4399-2025"], "damip"
+                ),
             ),
             ActivityProject(
                 id="dcpp",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-9-3751-2016",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-9-3751-2016",
+                    ],
+                    "dcpp",
+                ),
             ),
             ActivityProject(
                 id="geomip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-17-2583-2024",
-                    "https://doi.org/10.1175/BAMS-D-25-0191.1",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-17-2583-2024",
+                        "https://doi.org/10.1175/BAMS-D-25-0191.1",
+                    ],
+                    "geomip",
+                ),
             ),
             ActivityProject(
                 id="lmip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/gmd-9-2809-2016"],
+                references=get_references(
+                    ["https://doi.org/10.5194/gmd-9-2809-2016"], "lmip"
+                ),
             ),
             ActivityProject(
                 id="pmip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-10-3979-2017",
-                    "https://doi.org/10.5194/cp-19-883-2023",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-10-3979-2017",
+                        "https://doi.org/10.5194/cp-19-883-2023",
+                    ],
+                    "pmip",
+                ),
             ),
             ActivityProject(
                 id="rfmip",
                 experiments=[],
-                urls=[
-                    "https://doi.org/10.5194/gmd-9-3447-2016",
-                    "https://doi.org/10.5194/acp-20-9591-2020",
-                    "https://doi.org/10.5194/gmd-19-4447-2026",
-                ],
+                references=get_references(
+                    [
+                        "https://doi.org/10.5194/gmd-9-3447-2016",
+                        "https://doi.org/10.5194/acp-20-9591-2020",
+                        "https://doi.org/10.5194/gmd-19-4447-2026",
+                    ],
+                    "rfmip",
+                ),
+            ),
+            ActivityProject(
+                id="polmip",
+                experiments=[],
+                references=get_references(
+                    [
+                        "https://doi.org/10.1038/s41467-025-62983-5",
+                        "https://doi.org/10.1016/j.eng.2024.11.023",
+                        "https://doi.org/10.1016/j.accre.2023.11.004",
+                        "https://dx.doi.org/10.1088/1748-9326/adfbfb",
+                        "https://doi.org/10.5281/zenodo.21487424",
+                    ],
+                    "polmip",
+                ),
+                description=(
+                    "Policy-Aligned Model Intercomparison Project (PolMIP). "
+                    "PolMIP is designed as a complementary effort to existing MIPs. "
+                    "While ScenarioMIP explores the breadth of future forcing levels under idealized assumptions, "
+                    "PolMIP focuses on the depth of policy-driven pathways, "
+                    "offering higher fidelity for regions where specific mitigation strategies and timelines are defined. "
+                    "By providing a coordinated infrastructure for policy-driven scenario simulations, "
+                    "PolMIP aims to deliver actionable science for national climate assessments, "
+                    "enhance the policy relevance of CMIP, "
+                    "and foster closer collaboration between the climate modeling community and policymakers. "
+                    "Ultimately, PolMIP seeks to ensure that the next generation of climate projections is not only scientifically robust "
+                    "but also deeply rooted in the real-world decisions shaping our collective future. "
+                    "The project has completed phase 1: demonstration and proof of concept, "
+                    "starting from the SSP2-com scenario that was developed by Chinese scientists "
+                    "that aligns with China's carbon neutrality pledge "
+                    "(peaking carbon emissions before 2030 and achieving carbon neutrality before 2060) "
+                    "within the SSP2 socioeconomic framework and the NDC data of countries worldwide. "
+                    "The next phase will expand the framework to include policy-aligned scenarios from other nations and regions, "
+                    "creating a multi-country ensemble "
+                    "that enables consistent cross-comparison of national climate action strategies under a unified protocol."
+                ),
             ),
             ActivityProject(
                 id="scenariomip",
                 experiments=[],
-                urls=["https://doi.org/10.5194/egusphere-2024-3765"],
+                references=get_references(
+                    ["https://doi.org/10.5194/egusphere-2024-3765"], "scenariomip"
+                ),
                 description=(
                     "Future scenario experiments. "
                     "Exploration of the future climate under a (selected) range of possible boundary conditions. "
@@ -1220,16 +1341,6 @@ class Holder(BaseModel):
 
         return self
 
-    def write_files(self, project_root: Path, universe_root: Path) -> None:
-        for experiment_project in self.experiments_project:
-            experiment_project.write_file(project_root)
-
-        for experiment_universe in self.experiments_universe:
-            experiment_universe.write_file(universe_root)
-
-        for activity in self.activities:
-            activity.write_file(project_root)
-
     @staticmethod
     def get_scenario_tier(drs_name: str) -> int:
         # A bit stupid, because in practice everything ends up being tier 1,
@@ -1272,7 +1383,12 @@ class Holder(BaseModel):
     def get_scenario_extension(
         self,
         scenario: ExperimentUniverse,
+        min_number_yrs_per_sim: float = 50.0,
+        tier: int | None = None,
     ) -> ExperimentUniverse:
+        if tier is None:
+            tier = self.get_scenario_tier(scenario.drs_name.lower())
+
         res = scenario.model_copy()
 
         scenario_end_timestamp_dt = datetime.strptime(
@@ -1292,11 +1408,11 @@ class Holder(BaseModel):
         res.start_timestamp = extension_start_timestamp
         res.end_timestamp = extension_end_timestamp
 
-        res.min_number_yrs_per_sim = 50.0
+        res.min_number_yrs_per_sim = min_number_yrs_per_sim
         res.parent_activity = scenario.activity
         res.parent_experiment = scenario.drs_name.lower()
         res.drs_name = f"{scenario.drs_name}-ext"
-        res.tier = self.get_scenario_tier(res.drs_name)
+        res.tier = tier
 
         return res
 
@@ -1309,12 +1425,15 @@ class Holder(BaseModel):
         return f"esm-{scenario_drs_name}"
 
     def get_scenario_esm(
-        self,
-        scenario: ExperimentUniverse,
+        self, scenario: ExperimentUniverse, tier: int | None = None
     ) -> ExperimentUniverse:
+
         res = scenario.model_copy()
 
         res.drs_name = self.get_scenario_esm_drs_name(scenario.drs_name)
+        if tier is None:
+            tier = self.get_scenario_tier(res.drs_name)
+
         res.description = (
             scenario.description.replace(
                 "carbon dioxide concentrations", "carbon dioxide emissions"
@@ -1333,7 +1452,7 @@ class Holder(BaseModel):
             scenario.parent_experiment, res.parent_experiment
         )
 
-        res.tier = self.get_scenario_tier(res.drs_name)
+        res.tier = tier
 
         return res
 
@@ -1737,6 +1856,74 @@ class Holder(BaseModel):
 
         return self
 
+    def add_polmip_entries(self) -> "Holder":
+        acronym_descriptions = [
+            (
+                "vl-cf",
+                (
+                    "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for global surface air temperature to peak at 1.5C and stabilise or slowly decline."
+                ),
+                2016,
+            ),
+        ]
+
+        for acronym, description_base, branch_year in acronym_descriptions:
+            drs_name = acronym
+            drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
+            tier_conc_driven = 2
+
+            description = (
+                f"{description_base} Run with prescribed carbon dioxide concentrations "
+                f"(for prescribed carbon dioxide emissions, see `{drs_name_esm_scenario}`)."
+            )
+
+            univ_base = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="polmip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information=f"Branch from `historical` at {branch_year}-01-01.",
+                end_timestamp="2100-12-31",
+                min_ensemble_size=1,
+                min_number_yrs_per_sim=2100 - branch_year + 1,
+                parent_activity="cmip",
+                parent_experiment="historical",
+                parent_mip_era="cmip7",
+                required_model_components=["aogcm"],
+                start_timestamp=f"{branch_year}-01-01",
+                tier=tier_conc_driven,
+            )
+
+            proj_base = self.get_scenario_project(univ_base)
+
+            self.experiments_universe.append(univ_base)
+            self.experiments_project.append(proj_base)
+            self.add_experiment_to_activity(proj_base)
+
+            univ_ext = self.get_scenario_extension(
+                univ_base, tier=tier_conc_driven, min_number_yrs_per_sim=100.0
+            )
+            proj_ext = self.get_scenario_project(univ_ext)
+            self.experiments_universe.append(univ_ext)
+            self.experiments_project.append(proj_ext)
+            self.add_experiment_to_activity(proj_ext)
+
+            univ_esm = self.get_scenario_esm(univ_base, tier=1)
+            proj_esm = self.get_scenario_project(univ_esm)
+            self.experiments_universe.append(univ_esm)
+            self.experiments_project.append(proj_esm)
+            self.add_experiment_to_activity(proj_esm)
+
+            univ_esm_ext = self.get_scenario_extension(
+                univ_esm, min_number_yrs_per_sim=100.0
+            )
+            proj_esm_ext = self.get_scenario_project(univ_esm_ext)
+            self.experiments_universe.append(univ_esm_ext)
+            self.experiments_project.append(proj_esm_ext)
+            self.add_experiment_to_activity(proj_esm_ext)
+
+        return self
+
     def add_geomip_entries(self) -> "Holder":
         for (
             drs_name,
@@ -1823,6 +2010,8 @@ class Holder(BaseModel):
 
         for activity in self.activities:
             activity.write_file(project_root)
+            for reference in activity.references:
+                reference.write_file(universe_root)
 
 
 def sort_keys(
@@ -1882,6 +2071,7 @@ def main():
     holder.add_pmip_entries()
     holder.add_piclim_entries()
     holder.add_scenario_entries()
+    holder.add_polmip_entries()
     holder.add_aerchemmip_entries()
     holder.add_geomip_entries()
 

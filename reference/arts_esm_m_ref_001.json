@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "arts_esm_m_ref_001",
+  "type": "reference",
+  "citation": "Volodin, E. M., Tarasevich, M. A., Bragina, V., Chernenkov, A. Yu., Kostrykin, S. V., Blagodatskikh, D., Ezhkova, A., Onoprienko, V., Iakovlev, N., Suiazova, V., Debolskiy, A., Mortikov, E., Tsybulin, I., & Gritsun, A. (2026). Simulation of present-day climate, its variability, and historical changes with the ARTS-ESM-M Earth system model. https://doi.org/10.22541/essoar.15008013/v1\n",
+  "doi": "https://doi.org/10.22541/essoar.15008013/v1",
+  "drs_name": "arts_esm_m_ref_001"
+}

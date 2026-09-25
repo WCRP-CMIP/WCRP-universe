@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "polmip_cmip7_ref_001",
+    "type": "reference",
+    "drs_name": "polmip_cmip7_ref_001",
+    "citation": "Zhang, X., Zhong, J., Zhang, X., Zhang, D., Miao, C., Wang, D., & Guo, L. (2025). China Can Achieve Carbon Neutrality in Line with the Paris Agreement\u2019s 2 \u00b0C Target: Navigating Global Emissions Scenarios, Warming Levels, and Extreme Event Projections. Engineering, 44, 207\u2013214. https://doi.org/10.1016/j.eng.2024.11.023",
+    "doi": "https://doi.org/10.1016/j.eng.2024.11.023"
+}

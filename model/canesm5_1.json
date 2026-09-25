@@ -10,7 +10,13 @@
   "description": "CanESM5-1 is a fully coupled atmosphere-ocean-land ESM, which is scientifically very similar to CanESM5, and includes major technical upgrades within the model components, as well as addressing some key scientific issues, like stratospheric dust spikes.",
   "calendar": [],
   "release_year": null,
-  "references": [],
+  "references": [
+    "canesm5_1_ref_001",
+    "canesm5_1_ref_002",
+    "canesm5_1_ref_003",
+    "canesm5_1_ref_004",
+    "canesm5_1_ref_005"
+  ],
   "model_components": [],
   "embedded_components": [],
   "coupled_components": [],

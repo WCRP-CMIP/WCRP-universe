@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g013",
+  "type": "grid",
+  "description": "Horizontal grid with multiple sites at point locations.",
+  "drs_name": "g013",
+  "region": "global"
+}

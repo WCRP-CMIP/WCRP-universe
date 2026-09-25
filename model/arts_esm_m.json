@@ -1,0 +1,20 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "arts_esm_m",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "The ARTS-M model is developed based on the INMCM5 that participated in CMIP6. ARTS-ESM-M is a medium-resolution model that incorporates updates to the low-resolution ARTS-ESM-L model as well as a set of new features. The core of the ARTS-ESM-M is a coupled model of global circulation of atmosphere and ocean. The atmospheric component includes land surface and interactive aerosol modules. The oceanic component is supplemented with sea ice dynamics and thermodynamics sub-model. Three dimensional concentrations of ozone are prescribed.",
+  "calendar": [],
+  "release_year": null,
+  "references": [
+    "arts_esm_m_ref_001"
+  ],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "ARTS-ESM-M"
+}

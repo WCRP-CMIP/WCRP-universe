@@ -10,7 +10,9 @@
   "description": "Physical coupled ocean-atmosphere model (AOGCM). Atmosphere-land passes information to the ocean-sea ice components once per day. There is no diurnal variation in the radiation. All physical sub-grid scale parameterizations are simple and were developed at GFDL in the 1960s through 1990.",
   "calendar": [],
   "release_year": null,
-  "references": [],
+  "references": [
+    "mcm_ua_1_0_ref_001"
+  ],
   "model_components": [],
   "embedded_components": [],
   "coupled_components": [],
