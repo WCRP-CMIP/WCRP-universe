@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "amip-p4k",
     "type": "experiment",
-    "description": "Same as `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions.",
+    "description": "Same as the `amip` simulation, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment).",
     "drs_name": "amip-p4K",
     "start_timestamp": null,
     "end_timestamp": null,
