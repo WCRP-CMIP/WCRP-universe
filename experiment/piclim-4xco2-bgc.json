@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "piclim-4xco2-bgc",
+    "type": "experiment",
+    "description": "Same as `piClim-control`, except atmospheric carbon dioxide concentrations are set to four times `piControl` levels, but only for the biogeochemical component of the model. For any other model component that directly uses CO2 concentration, including radiation, the CO2 concentration should be set to the value used in `piClim-control`.",
+    "drs_name": "piClim-4xCO2-bgc",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
+    "activity": "rfmip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem",
+        "bgc"
+    ],
+    "min_ensemble_size": 1,
+    "required_model_components": [
+        "agcm"
+    ],
+    "tier": 1
+}

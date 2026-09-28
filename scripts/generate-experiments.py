@@ -1154,6 +1154,19 @@ class Holder(BaseModel):
                 1,
             ),
             (
+                "piClim-ghg",
+                get_purturbation_description(
+                    "total well-mixed (non-ozone) greenhouse gas",
+                    "well-mixed (non-ozone) greenhouse gas concentrations",
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+                1,
+            ),
+            (
                 "piClim-4xCO2",
                 (
                     "In combination with `piClim-control`, "
@@ -1168,6 +1181,82 @@ class Holder(BaseModel):
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
+                1,
+            ),
+            (
+                "piClim-4xCO2-bgc",
+                (
+                    # What this is for?
+                    # "In combination with `piClim-control`, "
+                    # "quantifies a quadrupling of atmospheric carbon dioxide's "
+                    # "(4xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels, "
+                    "but only for the biogeochemical component of the model. "
+                    "For any other model component that directly uses CO2 concentration, including radiation, "
+                    "the CO2 concentration should be set to the value used in `piClim-control`."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-4xCO2-rad",
+                (
+                    # What this is for?
+                    # "In combination with `piClim-control`, "
+                    # "quantifies a quadrupling of atmospheric carbon dioxide's "
+                    # "(4xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels, "
+                    "but only for the radiation component of the model. "
+                    "For any other model component that directly uses CO2 concentration, including the biogeochemical component, "
+                    "the CO2 concentration should be set to the value used in `piClim-control`."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-2xCO2",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies a doubling of atmospheric carbon dioxide's "
+                    "(2xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to two times `piControl` levels."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-0p5xCO2",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies a halving of atmospheric carbon dioxide's "
+                    "(0.5xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to half of `piControl` levels."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
                 1,
             ),
             (
@@ -1253,6 +1342,69 @@ class Holder(BaseModel):
                 1,
                 1,
             ),
+            (
+                "piClim-lu",
+                get_purturbation_description(
+                    "land-use change",
+                    "land states",
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm", "aer"],
+                ["chem", "bgc"],
+                1,
+                1,
+            ),
+            (
+                "piClim-p4K",
+                (
+                    "Baseline for effective radiative forcing (ERF) calculations "
+                    "with a warmer background state. "
+                    "Same as `piClim-control`, "
+                    "except sea surface temperatures are increased by 4K in ice-free regions "
+                    "(sea ice and SSTs in grid boxes containing sea ice remain the same as in the `piClim-control` experiment)."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-p4K-4xCO2",
+                (
+                    "In combination with `piClim-p4K`, `piClim-control` and `piClim-4xCO2`, "
+                    "this experiment can be used to evaluate the sensitivity of 4xCO2 radiative forcing "
+                    "to a warmer background state. "
+                    "Same as `piClim-p4K`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-p4K-aer",
+                (
+                    "In combination with `piClim-p4K`, `piClim-control` and `piClim-aer`, "
+                    "this experiment can be used to evaluate the sensitivity of aerosol radiative forcing "
+                    "to a warmer background state. "
+                    "Same as `piClim-control`, except anthropogenic aerosol emissions use present-day values "
+                    "(typically the last year of the `historical` simulation within the same CMIP era "
+                    "e.g. 2014 values for CMIP6, 2021 values for CMIP7)."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
         ):
             univ = ExperimentUniverse(
                 drs_name=drs_name,
@@ -1302,6 +1454,7 @@ class Holder(BaseModel):
             get_description_project,
             required_model_components,
             additional_allowed_model_components,
+            tier,
         ) in (
             (
                 "piClim-histaer",
@@ -1318,6 +1471,7 @@ class Holder(BaseModel):
                 ),
                 ["agcm"],
                 ["aer", "chem", "bgc"],
+                1,
             ),
             (
                 "piClim-histall",
@@ -1334,6 +1488,42 @@ class Holder(BaseModel):
                 ),
                 ["agcm"],
                 ["aer", "chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-histghg",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies transient well-mixed (non-ozone) greenhouse gas effective radiative forcing (ERF) "
+                    "due to changes in concentrations of these gases (not emissions) "
+                    "over the historical period and a future experiment. "
+                    "This complements the `piClim-*` experiments which provide a more precise "
+                    "quantification of present-day ERF for various greenhouse gas components."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` experiment",
+                ),
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                2,
+            ),
+            (
+                "piClim-histnat",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies transient natural effective radiative forcing (ERF) "
+                    "over the historical period and a future experiment. "
+                    # "This complements the `piClim-*` experiments which provide a more precise "
+                    # "quantification of present-day ERF for various greenhouse gas components."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` experiment",
+                ),
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                2,
             ),
         ):
             univ = ExperimentUniverse(
@@ -1352,7 +1542,7 @@ class Holder(BaseModel):
                 parent_mip_era="dont_write",
                 required_model_components=required_model_components,
                 start_timestamp="1850-01-01",
-                tier=1,
+                tier=tier,
             )
 
             self.experiments_universe.append(univ)
@@ -1369,7 +1559,7 @@ class Holder(BaseModel):
                 parent_activity="cmip",
                 parent_experiment="picontrol",
                 parent_mip_era="cmip7",
-                tier=1,
+                tier=tier,
             )
             self.experiments_project.append(proj)
 
