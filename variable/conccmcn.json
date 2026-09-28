@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "conccmcn",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "conccmcn",
+    "type": "variable",
+    "drs_name": "conccmcn",
+    "long_name": "Number Concentration Coarse Mode Aerosol",
+    "standard_name": "number_concentration_of_coarse_mode_ambient_aerosol_particles_in_air",
+    "units": "m-3",
+    "description": "Number Concentration Coarse Mode Aerosol"
 }

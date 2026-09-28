@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "fescav",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "fescav",
+    "type": "variable",
+    "drs_name": "fescav",
+    "long_name": "Non-Biogenic Iron Scavenging",
+    "standard_name": "tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_scavenging_by_inorganic_particles",
+    "units": "mol m-3 s-1",
+    "description": "Non-Biogenic Iron Scavenging"
 }

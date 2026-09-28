@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "phabio",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "phabio",
+    "type": "variable",
+    "drs_name": "phabio",
+    "long_name": "Abiotic pH",
+    "standard_name": "sea_water_ph_abiotic_analogue_reported_on_total_scale",
+    "units": "1",
+    "description": "Abiotic pH"
 }

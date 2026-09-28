@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "cmisc",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "cmisc",
+    "type": "variable",
+    "drs_name": "cMisc",
+    "long_name": "Carbon Mass in Other Living Compartments on Land",
+    "standard_name": "miscellaneous_living_matter_mass_content_of_carbon",
+    "units": "kg m-2",
+    "description": "Carbon Mass in Other Living Compartments on Land"
 }

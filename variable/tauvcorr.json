@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "tauvcorr",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "tauvcorr",
+    "type": "variable",
+    "drs_name": "tauvcorr",
+    "long_name": "Surface Downward Y Stress Correction",
+    "standard_name": "downward_y_stress_correction_at_sea_water_surface",
+    "units": "N m-2",
+    "description": "Surface Downward Y Stress Correction"
 }

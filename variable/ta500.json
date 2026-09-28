@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "ta500",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "ta500",
+    "type": "variable",
+    "drs_name": "ta500",
+    "long_name": "Air Temperature",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "Air Temperature"
 }

@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "phyfe",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "phyfe",
+    "type": "variable",
+    "drs_name": "phyfe",
+    "long_name": "Mole Concentration of Total Phytoplankton Expressed as Iron in Sea Water",
+    "standard_name": "mole_concentration_of_phytoplankton_expressed_as_iron_in_sea_water",
+    "units": "mol m-3",
+    "description": "Mole Concentration of Total Phytoplankton Expressed as Iron in Sea Water"
 }

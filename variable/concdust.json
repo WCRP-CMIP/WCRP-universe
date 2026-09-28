@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "concdust",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "concdust",
+    "type": "variable",
+    "drs_name": "concdust",
+    "long_name": "Concentration of Dust",
+    "standard_name": "mass_concentration_of_dust_dry_aerosol_particles_in_air",
+    "units": "kg m-3",
+    "description": "Concentration of Dust"
 }

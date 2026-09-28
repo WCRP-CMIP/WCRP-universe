@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "prlsns",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "prlsns",
+    "type": "variable",
+    "drs_name": "prlsns",
+    "long_name": "Stratiform Snowfall Flux",
+    "standard_name": "stratiform_snowfall_flux",
+    "units": "kg m-2 s-1",
+    "description": "Stratiform Snowfall Flux"
 }

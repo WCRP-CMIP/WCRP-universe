@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "pop",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "pop",
+    "type": "variable",
+    "drs_name": "pop",
+    "long_name": "Mole Concentration of Particulate Organic Matter Expressed as Phosphorus in Sea Water",
+    "standard_name": "mole_concentration_of_particulate_organic_matter_expressed_as_phosphorus_in_sea_water",
+    "units": "mol m-3",
+    "description": "Mole Concentration of Particulate Organic Matter Expressed as Phosphorus in Sea Water"
 }

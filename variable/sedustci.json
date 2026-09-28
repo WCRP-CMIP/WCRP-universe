@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "sedustci",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "sedustci",
+    "type": "variable",
+    "drs_name": "sedustCI",
+    "long_name": "Sedimentation Flux of Dust Mode Coarse Insoluble",
+    "standard_name": "minus_tendency_of_atmosphere_mass_content_of_insoluble_dust_dry_aerosol_particles_due_to_deposition",
+    "units": "kg m-2 s-1",
+    "description": "Sedimentation Flux of Dust Mode Coarse Insoluble"
 }

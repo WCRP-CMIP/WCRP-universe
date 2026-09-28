@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "ec",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "ec",
+    "type": "variable",
+    "drs_name": "ec",
+    "long_name": "Interception Evaporation",
+    "standard_name": "water_evaporation_flux_from_canopy",
+    "units": "kg m-2 s-1",
+    "description": "Interception Evaporation"
 }

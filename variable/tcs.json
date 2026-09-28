@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "tcs",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "tcs",
+    "type": "variable",
+    "drs_name": "tcs",
+    "long_name": "Vegetation Canopy Temperature",
+    "standard_name": "canopy_temperature",
+    "units": "K",
+    "description": "Vegetation Canopy Temperature"
 }
