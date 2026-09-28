@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "polmip_cmip7_ref_002",
+    "type": "reference",
+    "drs_name": "polmip_cmip7_ref_002",
+    "citation": "Zhang, D., Huang, X.-D., Zhong, J.-T., Guo, L.-F., Guo, S.-Y., Wang, D.-Y., Miao, C.-H., Zhang, X.-L., & Zhang, X.-Y. (2023). A representative CO2 emissions pathway for China toward carbon neutrality under the Paris Agreement\u2019s 2\u00a0\u00b0C target. Advances in Climate Change Research, 14(6), 941\u2013951. https://doi.org/10.1016/j.accre.2023.11.004",
+    "doi": "https://doi.org/10.1016/j.accre.2023.11.004"
+}

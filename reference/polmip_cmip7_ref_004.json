@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "polmip_cmip7_ref_004",
+    "type": "reference",
+    "drs_name": "polmip_cmip7_ref_004",
+    "citation": "H\u00f6gner, A., Sandstad, M., Kikstra, J., Nauels, A., Nicholls, Z., Sanderson, B., Smith, C., Zecchetto, M., &amp; Schleussner, C.-F. (2026). <i>The CMIP7 VL-CF counterfactual emissions pathway dataset v1.1.1 documentation</i> [Dataset]. Zenodo. https://doi.org/10.5281/ZENODO.21487424",
+    "doi": "https://doi.org/10.5281/zenodo.21487424"
+}
