@@ -1420,7 +1420,7 @@ class Holder(BaseModel):
                 parent_mip_era="dont_write",
                 required_model_components=required_model_components,
                 start_timestamp=None,
-                tier=1,
+                tier=tier,
             )
 
             self.experiments_universe.append(univ)

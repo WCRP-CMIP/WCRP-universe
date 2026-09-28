@@ -17,5 +17,5 @@
     "required_model_components": [
         "agcm"
     ],
-    "tier": 1
+    "tier": 3
 }
