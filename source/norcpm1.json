@@ -29,5 +29,8 @@
     "release_year": "2019",
     "organisation_id": [
         "ncc"
+    ],
+    "references": [
+        "norcpm1_ref_001"
     ]
 }

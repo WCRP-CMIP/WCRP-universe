@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "giss_e2_1_g_ref_001",
+  "type": "reference",
+  "citation": "Kelley, M., Schmidt, G. A., Nazarenko, L. S., Bauer, S. E., Ruedy, R., & Russell, G. L., et al. (2020). GISS-E2.1: Configurations and climatology. Journal of Advances in Modeling Earth Systems, 12, e2019MS002025. https://doi.org/10.1029/2019MS002025",
+  "doi": "https://doi.org/10.1029/2019MS002025",
+  "drs_name": "giss_e2_1_g_ref_001"
+}

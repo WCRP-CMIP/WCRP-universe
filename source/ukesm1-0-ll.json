@@ -9,5 +9,8 @@
     "contributors": [
         "mohc"
     ],
-    "model_components": []
+    "model_components": [],
+    "references": [
+        "ukesm1_0_ref_001"
+    ]
 }

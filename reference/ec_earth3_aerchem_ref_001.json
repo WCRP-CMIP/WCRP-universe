@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ec_earth3_aerchem_ref_001",
+  "type": "reference",
+  "citation": "EC-Earth Consortium (EC-Earth) (2020). EC-Earth-Consortium EC-Earth3-AerChem model output prepared for CMIP6 CMIP historical. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.4701",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.4701",
+  "drs_name": "ec_earth3_aerchem_ref_001"
+}

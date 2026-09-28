@@ -28,5 +28,9 @@
     "release_year": 2017,
     "organisation_id": [
         "miroc"
+    ],
+    "references": [
+        "miroc6_ref_001",
+        "miroc6_ref_002"
     ]
 }

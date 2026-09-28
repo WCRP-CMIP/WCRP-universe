@@ -35,5 +35,9 @@
     "release_year": "2019",
     "organisation_id": [
         "csiro"
+    ],
+    "references": [
+        "access_esm1_5_ref_001",
+        "access_esm1_5_ref_002"
     ]
 }

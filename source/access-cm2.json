@@ -32,5 +32,9 @@
     "release_year": "2019",
     "organisation_id": [
         "csiro-arccss"
+    ],
+    "references": [
+        "access_cm2_ref_001",
+        "access_cm2_ref_002"
     ]
 }

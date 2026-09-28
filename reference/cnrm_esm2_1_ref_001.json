@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cnrm_esm2_1_ref_001",
+  "type": "reference",
+  "citation": "Lovato, Tomas; Peano, Daniele; Butenschön, Momme (2021). CMCC CMCC-ESM2 model output prepared for CMIP6 CMIP historical. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.13195",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.13195",
+  "drs_name": "cnrm_esm2_1_ref_001"
+}

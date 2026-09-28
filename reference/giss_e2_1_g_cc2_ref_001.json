@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "giss_e2_1_g_cc2_ref_001",
+  "type": "reference",
+  "citation": "Romanou, A., Lerner, P., Kiang, N., Aleinov, I., Kelley, M., Miller, R., Russell, G., Ruedy, R., Schmidt, G., Hakuba, M., and Wang, O.: The NASA-GISS ModelE2.1-CC2 ESM: development and simulations, EGUsphere [preprint], https://doi.org/10.5194/egusphere-2025-4839, 2026",
+  "doi": "https://doi.org/10.5194/egusphere-2025-4839",
+  "drs_name": "giss_e2_1_g_cc2_ref_001"
+}

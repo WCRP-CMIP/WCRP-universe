@@ -29,5 +29,8 @@
     "release_year": 2019,
     "organisation_id": [
         "nasa-giss"
+    ],
+    "references": [
+        "giss_e2_1_g_ref_001"
     ]
 }
