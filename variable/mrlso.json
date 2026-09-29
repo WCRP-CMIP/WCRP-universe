@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "mrlso",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "mrlso",
+    "type": "variable",
+    "drs_name": "mrlso",
+    "long_name": "Soil Liquid Water Content",
+    "standard_name": "liquid_water_content_of_soil_layer",
+    "units": "kg m-2",
+    "description": "Soil Liquid Water Content"
 }

@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "reffrainc",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "reffrainc",
+    "type": "variable",
+    "drs_name": "reffrainc",
+    "long_name": "Hydrometeor Effective Radius of Convective Rainfall",
+    "standard_name": "effective_radius_of_convective_cloud_rain_particles",
+    "units": "m",
+    "description": "Hydrometeor Effective Radius of Convective Rainfall"
 }

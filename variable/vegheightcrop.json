@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "vegheightcrop",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "vegheightcrop",
+    "type": "variable",
+    "drs_name": "vegHeightCrop",
+    "long_name": "Height of Crops",
+    "standard_name": "canopy_height",
+    "units": "m",
+    "description": "Height of Crops"
 }

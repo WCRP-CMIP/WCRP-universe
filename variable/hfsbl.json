@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "hfsbl",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "hfsbl",
+    "type": "variable",
+    "drs_name": "hfsbl",
+    "long_name": "Energy of Sublimation",
+    "standard_name": "surface_upward_latent_heat_flux_due_to_sublimation",
+    "units": "W m-2",
+    "description": "Energy of Sublimation"
 }

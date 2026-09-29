@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "grpllsprof",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "grpllsprof",
+    "type": "variable",
+    "drs_name": "grpllsprof",
+    "long_name": "Stratiform Graupel Flux",
+    "standard_name": "stratiform_graupel_flux",
+    "units": "kg m-2 s-1",
+    "description": "Stratiform Graupel Flux"
 }

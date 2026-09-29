@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "dpco2abio",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "dpco2abio",
+    "type": "variable",
+    "drs_name": "dpco2abio",
+    "long_name": "Abiotic Delta Pco Partial Pressure",
+    "standard_name": "surface_carbon_dioxide_abiotic_analogue_partial_pressure_difference_between_sea_water_and_air",
+    "units": "Pa",
+    "description": "Abiotic Delta Pco Partial Pressure"
 }

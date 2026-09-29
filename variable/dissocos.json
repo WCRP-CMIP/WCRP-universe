@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "dissocos",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "dissocos",
+    "type": "variable",
+    "drs_name": "dissocos",
+    "long_name": "Surface Dissolved Organic Carbon Concentration",
+    "standard_name": "mole_concentration_of_dissolved_organic_carbon_in_sea_water",
+    "units": "mol m-3",
+    "description": "Surface Dissolved Organic Carbon Concentration"
 }

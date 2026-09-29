@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "clitterbelow",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "clitterbelow",
+    "type": "variable",
+    "drs_name": "cLitterBelow",
+    "long_name": "Carbon Mass in Below-Ground Litter",
+    "standard_name": "subsurface_litter_mass_content_of_carbon",
+    "units": "kg m-2",
+    "description": "Carbon Mass in Below-Ground Litter"
 }

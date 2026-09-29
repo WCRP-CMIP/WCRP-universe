@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "swtoaasdust",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "swtoaasdust",
+    "type": "variable",
+    "drs_name": "swtoaasdust",
+    "long_name": "All-Sky Shortwave Flux Due to Dust at Toa",
+    "standard_name": "toa_instantaneous_shortwave_forcing",
+    "units": "W m-2",
+    "description": "All-Sky Shortwave Flux Due to Dust at Toa"
 }

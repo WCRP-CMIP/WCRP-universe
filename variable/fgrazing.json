@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "fgrazing",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "fgrazing",
+    "type": "variable",
+    "drs_name": "fGrazing",
+    "long_name": "Carbon Mass Flux into Atmosphere Due to Grazing on Land [kgC m-2 s-1]",
+    "standard_name": "surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_grazing",
+    "units": "kg m-2 s-1",
+    "description": "Carbon Mass Flux into Atmosphere Due to Grazing on Land [kgC m-2 s-1]"
 }

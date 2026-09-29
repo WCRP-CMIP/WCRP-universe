@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "6hr",
     "type": "frequency",
-    "description": "Three hourly samples.",
+    "description": "Six hourly samples.",
     "drs_name": "6hr",
     "interval": 6.0,
     "units": "hour"

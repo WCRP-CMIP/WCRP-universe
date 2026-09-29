@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "tr",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "tr",
+    "type": "variable",
+    "drs_name": "tr",
+    "long_name": "Surface Radiative Temperature",
+    "standard_name": "surface_temperature",
+    "units": "K",
+    "description": "Surface Radiative Temperature"
 }

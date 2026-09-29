@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "cwood",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "cwood",
+    "type": "variable",
+    "drs_name": "cWood",
+    "long_name": "Carbon Mass in Wood",
+    "standard_name": "stem_mass_content_of_carbon",
+    "units": "kg m-2",
+    "description": "Carbon Mass in Wood"
 }

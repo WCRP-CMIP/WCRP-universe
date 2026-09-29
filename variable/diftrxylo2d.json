@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "diftrxylo2d",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "diftrxylo2d",
+    "type": "variable",
+    "drs_name": "diftrxylo2d",
+    "long_name": "Ocean Tracer XY Laplacian Diffusivity",
+    "standard_name": "ocean_tracer_xy_laplacian_diffusivity",
+    "units": "m2 s-1",
+    "description": "Ocean Tracer XY Laplacian Diffusivity"
 }

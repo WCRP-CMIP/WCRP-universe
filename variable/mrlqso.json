@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "mrlqso",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "mrlqso",
+    "type": "variable",
+    "drs_name": "mrlqso",
+    "long_name": "Average Layer Fraction of Liquid Moisture",
+    "standard_name": "mass_fraction_of_unfrozen_water_in_soil_moisture",
+    "units": "1",
+    "description": "Average Layer Fraction of Liquid Moisture"
 }

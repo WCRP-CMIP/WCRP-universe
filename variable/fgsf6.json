@@ -1,10 +1,10 @@
 {
-  "@context": "000_context.jsonld",
-  "id": "fgsf6",
-  "type": "variable",
-  "drs_name": "",
-  "long_name": "",
-  "standard_name": "",
-  "units": "",
-  "description": ""
+    "@context": "000_context.jsonld",
+    "id": "fgsf6",
+    "type": "variable",
+    "drs_name": "fgsf6",
+    "long_name": "Surface Downward SF6 Flux",
+    "standard_name": "surface_downward_mole_flux_of_sulfur_hexafluoride",
+    "units": "mol m-2 s-1",
+    "description": "Surface Downward SF6 Flux"
 }
