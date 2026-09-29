@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "snd_tpt-u-hxy-lnd",
+    "type": "known_branded_variable",
+    "drs_name": "snd_tpt-u-hxy-lnd",
+    "variable_root_name": "snd",
+    "branding_suffix_name": "tpt-u-hxy-lnd",
+    "cf_standard_name": "surface_snow_thickness",
+    "out_name": "snd",
+    "units": "m",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "lnd",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean where land time: point"
+}

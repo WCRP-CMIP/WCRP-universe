@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "zg_tavg-750hpa-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "zg_tavg-750hPa-hxy-u",
+    "variable_root_name": "zg",
+    "branding_suffix_name": "tavg-750hPa-hxy-u",
+    "cf_standard_name": "geopotential_height",
+    "out_name": "zg",
+    "units": "m",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time",
+        "p750"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "750hpa",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: time: mean"
+}

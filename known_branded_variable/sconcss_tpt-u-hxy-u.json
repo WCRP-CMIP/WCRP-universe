@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sconcss_tpt-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "sconcss_tpt-u-hxy-u",
+    "variable_root_name": "sconcss",
+    "branding_suffix_name": "tpt-u-hxy-u",
+    "cf_standard_name": "mass_concentration_of_sea_salt_dry_aerosol_particles_in_air",
+    "out_name": "sconcss",
+    "units": "kg m-3",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean time: point"
+}

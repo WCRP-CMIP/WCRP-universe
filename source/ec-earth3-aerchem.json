@@ -28,5 +28,8 @@
     "release_year": "2019",
     "organisation_id": [
         "ec-earth-consortium"
+    ],
+    "references": [
+        "ec_earth3_aerchem_ref_001"
     ]
 }

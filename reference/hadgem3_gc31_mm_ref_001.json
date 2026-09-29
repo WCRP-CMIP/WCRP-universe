@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "hadgem3_gc31_mm_ref_001",
+  "type": "reference",
+  "citation": "Ridley, Jeff; Menary, Matthew; Kuhlbrodt, Till; Andrews, Martin; Andrews, Tim (2019). MOHC HadGEM3-GC31-MM model output prepared for CMIP6 CMIP piControl. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.6297",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.6297",
+  "drs_name": "hadgem3_gc31_mm_ref_001"
+}

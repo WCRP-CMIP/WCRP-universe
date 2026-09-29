@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sitemptop_tavg-u-hxy-si",
+    "type": "known_branded_variable",
+    "drs_name": "sitemptop_tavg-u-hxy-si",
+    "variable_root_name": "sitemptop",
+    "branding_suffix_name": "tavg-u-hxy-si",
+    "cf_standard_name": "sea_ice_surface_temperature",
+    "out_name": "sitemptop",
+    "units": "K",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "si",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: time: mean where sea_ice (comment: mask=siconc)"
+}

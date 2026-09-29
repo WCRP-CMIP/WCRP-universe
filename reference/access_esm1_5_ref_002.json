@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "access_esm1_5_ref_002",
+  "type": "reference",
+  "citation": "Ziehn, Tilo; Chamberlain, Matthew; Lenton, Andrew; Law, Rachel; Bodman, Roger; Dix, Martin; Wang, Yingping; Dobrohotoff, Peter; Srbinovsky, Jhan; Stevens, Lauren; Vohralik, Peter; Mackallah, Chloe; Sullivan, Arnold; O'Farrell, Siobhan; Druken, Kelsey (2019). CSIRO ACCESS-ESM1.5 model output prepared for CMIP6 ScenarioMIP. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.2291",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.2291",
+  "drs_name": "access_esm1_5_ref_002"
+}

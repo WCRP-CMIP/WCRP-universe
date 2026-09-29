@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mrsol_tpt-sl-hxy-lnd",
+    "type": "known_branded_variable",
+    "drs_name": "mrsol_tpt-sl-hxy-lnd",
+    "variable_root_name": "mrsol",
+    "branding_suffix_name": "tpt-sl-hxy-lnd",
+    "cf_standard_name": "mass_content_of_water_in_soil_layer",
+    "out_name": "mrsol",
+    "units": "kg m-2",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "sdepth",
+        "time1"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "sl",
+    "horizontal_label": "hxy",
+    "area_label": "lnd",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean where land time: point"
+}

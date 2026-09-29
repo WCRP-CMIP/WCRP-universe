@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "access_cm2_ref_001",
+  "type": "reference",
+  "citation": "Dix, Martin; Bi, Daohua; Dobrohotoff, Peter; Fiedler, Russell; Harman, Ian; Law, Rachel; Mackallah, Chloe; Marsland, Simon; O'Farrell, Siobhan; Rashid, Harun; Srbinovsky, Jhan; Sullivan, Arnold; Trenham, Claire; Vohralik, Peter; Watterson, Ian; Williams, Gareth; Woodhouse, Matthew; Bodman, Roger; Dias, Fabio Boeira; Domingues, Catia M.; Hannah, Nicholas; Heerdegen, Aidan; Savita, Abhishek; Wales, Scott; Allen, Chris; Druken, Kelsey; Evans, Ben; Richards, Clare; Ridzwan, Syazwan Mohamed; Roberts, Dale; Smillie, Jon; Snow, Kate; Ward, Marshall; Yang, Rui (2019). CSIRO-ARCCSS ACCESS-CM2 model output prepared for CMIP6 CMIP historical. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.4271",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.4271",
+  "drs_name": "access_cm2_ref_001"
+}

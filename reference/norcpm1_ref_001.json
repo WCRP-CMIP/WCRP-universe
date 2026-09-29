@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "norcpm1_ref_001",
+  "type": "reference",
+  "citation": "Bethke, Ingo; Wang, Yiguo; Counillon, François; Kimmritz, Madlen; Fransner, Filippa; Samuelsen, Annette; Langehaug, Helene Reinertsen; Chiu, Ping-Gin; Bentsen, Mats; Guo, Chuncheng; Tjiputra, Jerry; Kirkevåg, Alf; Oliviè, Dirk Jan Leo; Seland, Øyvind; Fan, Yuanchao; Lawrence, Peter; Eldevik, Tor; Keenlyside, Noel (2019). NCC NorCPM1 model output prepared for CMIP6 CMIP historical. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.10894",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.10894",
+  "drs_name": "norcpm1_ref_001"
+}

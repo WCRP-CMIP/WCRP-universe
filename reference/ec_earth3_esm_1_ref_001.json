@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ec_earth3_esm_1_ref_001",
+  "type": "reference",
+  "citation": "EC-Earth OptimESM partners (EC-Earth-OptimESM) (2024). EC-Earth-Consortium EC-Earth3-ESM-1 model output prepared for CMIP6 CMIP 1pctCO2. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.17828",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.17828",
+  "drs_name": "ec_earth3_esm_1_ref_001"
+}

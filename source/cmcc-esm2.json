@@ -32,5 +32,9 @@
     "release_year": "2017",
     "organisation_id": [
         "cmcc"
+    ],
+    "references": [
+        "cmcc_esm2_ref_001",
+        "cmcc_esm2_ref_002"
     ]
 }

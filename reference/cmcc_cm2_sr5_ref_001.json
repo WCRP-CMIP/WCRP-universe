@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "cmcc_cm2_sr5_ref_001",
+  "type": "reference",
+  "citation": "Lovato, Tomas; Peano, Daniele (2020). CMCC CMCC-CM2-SR5 model output prepared for CMIP6 ScenarioMIP. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.1365",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.1365",
+  "drs_name": "cmcc_cm2_sr5_ref_001"
+}

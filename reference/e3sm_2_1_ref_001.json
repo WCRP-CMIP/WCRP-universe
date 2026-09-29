@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "e3sm_2_1_ref_001",
+  "type": "reference",
+  "citation": "Smith, K. M., Barthel, A. M., Conlon, L. M., Van Roekel, L. P., Bartoletti, A., Golaz, J.-C., Zhang, C., Begeman, C. B., Benedict, J. J., Bisht, G., Feng, Y., Hannah, W., Harrop, B. E., Jeffery, N., Lin, W., Ma, P.-L., Maltrud, M. E., Petersen, M. R., Singh, B., Tang, Q., Tesfa, T., Wolfe, J. D., Xie, S., Zheng, X., Balaguru, K., Garuba, O., Gleckler, P., Hu, A., Lee, J., Moore-Maley, B., and Ordoñez, A. C.: The DOE E3SM version 2.1: overview and assessment of the impacts of parameterized ocean submesoscales, Geosci. Model Dev., 18, 1613–1633, https://doi.org/10.5194/gmd-18-1613-2025, 2025",
+  "doi": "https://doi.org/10.5194/gmd-18-1613-2025",
+  "drs_name": "e3sm_2_1_ref_001"
+}

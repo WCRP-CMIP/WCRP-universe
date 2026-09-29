@@ -28,5 +28,8 @@
     "organisation_id": [
         "mohc",
         "nerc"
+    ],
+    "references": [
+        "hadgem3_gc31_ll_ref_001"
     ]
 }

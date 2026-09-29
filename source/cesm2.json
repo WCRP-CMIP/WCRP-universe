@@ -30,5 +30,8 @@
     "release_year": "2018",
     "organisation_id": [
         "ncar"
+    ],
+    "references": [
+        "cesm2_ref_001"
     ]
 }

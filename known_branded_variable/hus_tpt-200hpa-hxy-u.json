@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hus_tpt-200hpa-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "hus_tpt-200hPa-hxy-u",
+    "variable_root_name": "hus",
+    "branding_suffix_name": "tpt-200hPa-hxy-u",
+    "cf_standard_name": "specific_humidity",
+    "out_name": "hus",
+    "units": "1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1",
+        "p200"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "200hpa",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean time: point"
+}

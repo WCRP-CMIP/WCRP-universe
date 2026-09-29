@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "mri_esm2_0_ref_001",
+  "type": "reference",
+  "citation": "Yukimoto, Seiji; Koshiro, Tsuyoshi; Kawai, Hideaki; Oshima, Naga; Yoshida, Kohei; Urakawa, Shogo; Tsujino, Hiroyuki; Deushi, Makoto; Tanaka, Taichu; Hosaka, Masahiro; Yoshimura, Hiromasa; Shindo, Eiki; Mizuta, Ryo; Ishii, Masayoshi; Obata, Atsushi; Adachi, Yukimasa (2019). MRI MRI-ESM2.0 model output prepared for CMIP6 CMIP historical. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.6842",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.6842",
+  "drs_name": "mri_esm2_0_ref_001"
+}

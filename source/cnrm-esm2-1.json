@@ -29,5 +29,9 @@
     "release_year": "2017",
     "organisation_id": [
         "cnrm-cerfacs"
+    ],
+    "references": [
+        "cnrm_esm2_ref_001",
+        "cnrm_esm2_ref_002"
     ]
 }
