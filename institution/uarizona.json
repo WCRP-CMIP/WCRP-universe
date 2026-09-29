@@ -1,0 +1,33 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uarizona",
+    "type": "institution",
+    "drs_name": "UArizona",
+    "acronyms": [
+        "UArizona",
+        "UA",
+        "CNRS"
+    ],
+    "labels": [
+        "The University of Arizona",
+        "University of Arizona",
+        "The University of Arizona, Tucson",
+        "Centre National de la Recherche Scientifique",
+        "French National Centre for Scientific Research"
+    ],
+    "description": "The University of Arizona is a public research university in Tucson, Arizona, USA. It conducts extensive research in atmospheric sciences, climate modeling, hydrology, and Earth system science. The institution participates in global climate research collaborations and develops numerical models for environmental and climate applications.",
+    "location": [
+        {
+            "city": "Paris",
+            "country": "France",
+            "lat": 48.85341,
+            "lon": 2.3488
+        }
+    ],
+    "ror": "02feahw73",
+    "urls": [
+        "https://www.arizona.edu",
+        "https://www.cnrs.fr",
+        "http://en.wikipedia.org/wiki/Centre_national_de_la_recherche_scientifique"
+    ]
+}
