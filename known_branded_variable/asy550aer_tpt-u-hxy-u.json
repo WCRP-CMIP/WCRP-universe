@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "asy550aer_tpt-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "asy550aer_tpt-u-hxy-u",
+    "variable_root_name": "asy550aer",
+    "branding_suffix_name": "tpt-u-hxy-u",
+    "cf_standard_name": "asymmetry_factor_of_ambient_aerosol_particles",
+    "out_name": "asy550aer",
+    "units": "1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean time: point"
+}

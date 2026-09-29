@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "snc_tpt-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "snc_tpt-u-hxy-u",
+    "variable_root_name": "snc",
+    "branding_suffix_name": "tpt-u-hxy-u",
+    "cf_standard_name": "surface_snow_area_fraction",
+    "out_name": "snc",
+    "units": "%",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean time: point"
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sund_tsumavg-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "sund_tsumavg-u-hxy-u",
+    "variable_root_name": "sund",
+    "branding_suffix_name": "tsumavg-u-hxy-u",
+    "cf_standard_name": "duration_of_sunshine",
+    "out_name": "sund",
+    "units": "s",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ],
+    "temporal_label": "tsumavg",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "time: sum within days time: mean over days"
+}

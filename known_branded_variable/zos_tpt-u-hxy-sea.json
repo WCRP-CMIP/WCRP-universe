@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "zos_tpt-u-hxy-sea",
+    "type": "known_branded_variable",
+    "drs_name": "zos_tpt-u-hxy-sea",
+    "variable_root_name": "zos",
+    "branding_suffix_name": "tpt-u-hxy-sea",
+    "cf_standard_name": "sea_surface_height_above_geoid",
+    "out_name": "zos",
+    "units": "m",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "sea",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean where sea time: point"
+}

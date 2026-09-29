@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "va_tpt-500hpa-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "va_tpt-500hPa-hxy-u",
+    "variable_root_name": "va",
+    "branding_suffix_name": "tpt-500hPa-hxy-u",
+    "cf_standard_name": "northward_wind",
+    "out_name": "va",
+    "units": "m s-1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1",
+        "p500"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "500hpa",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean time: point"
+}

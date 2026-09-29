@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ta50m",
+    "type": "variable",
+    "drs_name": "ta50m",
+    "long_name": "Air Temperature at 50m",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "Air Temperature at 50m"
+}

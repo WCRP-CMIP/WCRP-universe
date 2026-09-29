@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "scat550so4_tavg-p19-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "scat550so4_tavg-p19-hxy-u",
+    "variable_root_name": "scat550so4",
+    "branding_suffix_name": "tavg-p19-hxy-u",
+    "cf_standard_name": "volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles",
+    "out_name": "scat550so4",
+    "units": "m-1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time",
+        "plev19"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "p19",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: time: mean"
+}

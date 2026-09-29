@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wfonocorr_tavg-u-hxy-sea",
+    "type": "known_branded_variable",
+    "drs_name": "wfonocorr_tavg-u-hxy-sea",
+    "variable_root_name": "wfonocorr",
+    "branding_suffix_name": "tavg-u-hxy-sea",
+    "cf_standard_name": "water_flux_into_sea_water_without_flux_correction",
+    "out_name": "wfonocorr",
+    "units": "kg m-2 s-1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "sea",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean where sea time: mean"
+}

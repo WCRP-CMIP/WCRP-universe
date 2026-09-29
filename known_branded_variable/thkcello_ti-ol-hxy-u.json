@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "thkcello_ti-ol-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "thkcello_ti-ol-hxy-u",
+    "variable_root_name": "thkcello",
+    "branding_suffix_name": "ti-ol-hxy-u",
+    "cf_standard_name": "cell_thickness",
+    "out_name": "thkcello",
+    "units": "m",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "olevel"
+    ],
+    "temporal_label": "ti",
+    "vertical_label": "ol",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean"
+}

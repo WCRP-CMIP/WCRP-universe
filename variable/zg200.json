@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "zg200",
+    "type": "variable",
+    "drs_name": "zg200",
+    "long_name": "Geopotential Height at 200hPa",
+    "standard_name": "geopotential_height",
+    "units": "m",
+    "description": "Geopotential Height at 200hPa"
+}

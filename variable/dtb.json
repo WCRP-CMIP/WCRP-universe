@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "dtb",
+    "type": "variable",
+    "drs_name": "dtb",
+    "long_name": "Depth to Bedrock",
+    "standard_name": "bedrock_depth_below_ground_level",
+    "units": "m",
+    "description": "Depth to Bedrock"
+}
