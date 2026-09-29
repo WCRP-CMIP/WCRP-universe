@@ -31,5 +31,8 @@
     "release_year": "2019",
     "organisation_id": [
         "ec-earth-consortium"
+    ],
+    "references": [
+        "ec_earth3_veg_ref_001"
     ]
 }

@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "hadgem3_gc31_ll_ref_001",
+  "type": "reference",
+  "citation": "Good, Peter (2019). MOHC HadGEM3-GC31-LL model output prepared for CMIP6 ScenarioMIP. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.10845",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.10845",
+  "drs_name": "hadgem3_gc31_ll_ref_001"
+}

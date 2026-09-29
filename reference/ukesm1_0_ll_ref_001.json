@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ukesm1_0_ll_ref_001",
+  "type": "reference",
+  "citation": "Good, Peter; Sellar, Alistair; Tang, Yongming; Rumbold, Steve; Ellis, Rich; Kelley, Douglas; Kuhlbrodt, Till; Walton, Jeremy (2019). MOHC UKESM1.0-LL model output prepared for CMIP6 ScenarioMIP. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.1567",
+  "doi": "https://doi.org/10.22033/ESGF/CMIP6.1567",
+  "drs_name": "ukesm1_0_ll_ref_001"
+}

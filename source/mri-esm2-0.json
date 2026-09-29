@@ -29,5 +29,9 @@
     "release_year": "2017",
     "organisation_id": [
         "mri"
+    ],
+    "references": [
+        "mri_esm2_0_hr_ref_001",
+        "mri_esm2_0_hr_ref_002"
     ]
 }

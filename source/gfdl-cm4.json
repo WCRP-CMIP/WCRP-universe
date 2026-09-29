@@ -37,5 +37,8 @@
     "release_year": "2018",
     "organisation_id": [
         "noaa-gfdl"
+    ],
+    "references": [
+        "gfdl_cm4_ref_001"
     ]
 }

@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "gfdl_cm4_ref_001",
+  "type": "reference",
+  "citation": "Held, I. M., Guo, H., Adcroft, A., Dunne, J. P., Horowitz, L. W., Krasting, J., et al. (2019). Structure and performance of GFDL's CM4.0 climate model. Journal of Advances in Modeling Earth Systems, 11, 3691–3727. https://doi.org/10.1029/2019MS001829",
+  "doi": "https://doi.org/10.1029/2019MS001829",
+  "drs_name": "gfdl_cm4_ref_001"
+}

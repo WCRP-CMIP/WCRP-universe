@@ -27,5 +27,8 @@
     "release_year": "2016",
     "organisation_id": [
         "mohc"
+    ],
+    "references": [
+        "hadgem3_gc31_mm_ref_001"
     ]
 }

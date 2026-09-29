@@ -38,5 +38,8 @@
     "release_year": "2018",
     "organisation_id": [
         "miroc"
+    ],
+    "references": [
+        "miroc_es2l_ref_001"
     ]
 }

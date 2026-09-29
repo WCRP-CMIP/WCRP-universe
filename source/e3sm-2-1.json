@@ -27,5 +27,8 @@
     "release_year": "2024",
     "organisation_id": [
         "e3sm-project"
+    ],
+    "references": [
+        "e3sm_2_1_ref_001"
     ]
 }

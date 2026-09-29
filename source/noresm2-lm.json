@@ -31,5 +31,8 @@
     "release_year": 2017,
     "organisation_id": [
         "ncc"
+    ],
+    "references": [
+        "noresm2_lm_ref_001"
     ]
 }
