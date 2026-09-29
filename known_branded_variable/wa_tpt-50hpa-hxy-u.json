@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wa_tpt-50hpa-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "wa_tpt-50hPa-hxy-u",
+    "variable_root_name": "wa",
+    "branding_suffix_name": "tpt-50hPa-hxy-u",
+    "cf_standard_name": "upward_air_velocity",
+    "out_name": "wa",
+    "units": "m s-1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time1",
+        "p50"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "50hpa",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean time: point"
+}

@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "concss_tavg-p19-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "concss_tavg-p19-hxy-u",
+    "variable_root_name": "concss",
+    "branding_suffix_name": "tavg-p19-hxy-u",
+    "cf_standard_name": "mass_concentration_of_sea_salt_dry_aerosol_particles_in_air",
+    "out_name": "concss",
+    "units": "kg m-3",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time",
+        "plev19"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "p19",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: time: mean"
+}

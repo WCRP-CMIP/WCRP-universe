@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uo_tavg-ol-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "uo_tavg-ol-hxy-u",
+    "variable_root_name": "uo",
+    "branding_suffix_name": "tavg-ol-hxy-u",
+    "cf_standard_name": "sea_water_x_velocity",
+    "out_name": "uo",
+    "units": "m s-1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "olevel",
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "ol",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "time: mean"
+}

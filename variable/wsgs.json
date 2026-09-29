@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "wsgs",
+    "type": "variable",
+    "drs_name": "wsgs",
+    "long_name": "Near-Surface Wind Speed of Gust",
+    "standard_name": "wind_speed_of_gust",
+    "units": "m s-1",
+    "description": "Near-Surface Wind Speed of Gust"
+}

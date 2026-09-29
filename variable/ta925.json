@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ta925",
+    "type": "variable",
+    "drs_name": "ta925",
+    "long_name": "Air Temperature at 925hPa",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "Air Temperature at 925hPa"
+}

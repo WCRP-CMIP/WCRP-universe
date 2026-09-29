@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "vertices_longitude",
+    "type": "variable",
+    "drs_name": "vertices_longitude",
+    "long_name": "",
+    "standard_name": "",
+    "units": "degrees_east",
+    "description": ""
+}

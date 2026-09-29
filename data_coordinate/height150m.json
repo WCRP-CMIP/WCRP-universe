@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "height150m",
+    "type": "data_coordinate",
+    "description": "~150 m height",
+    "drs_name": "height150m",
+    "coordinate_type": "scalar",
+    "data_type": "double",
+    "out_name": "height",
+    "cf_standard_name": "height",
+    "units": "m",
+    "axis": "Z",
+    "positive": "up",
+    "stored_direction": "increasing",
+    "coordinate_values": [
+        150.0
+    ],
+    "bounds_required": false,
+    "is_climatology": false,
+    "is_generic_model_level_coordinate": false
+}

@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "volcello_ti-ol-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "volcello_ti-ol-hxy-u",
+    "variable_root_name": "volcello",
+    "branding_suffix_name": "ti-ol-hxy-u",
+    "cf_standard_name": "ocean_volume",
+    "out_name": "volcello",
+    "units": "m3",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "olevel"
+    ],
+    "temporal_label": "ti",
+    "vertical_label": "ol",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: sum"
+}

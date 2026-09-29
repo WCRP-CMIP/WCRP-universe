@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mrsos_tavg-u-hxy-lnd",
+    "type": "known_branded_variable",
+    "drs_name": "mrsos_tavg-u-hxy-lnd",
+    "variable_root_name": "mrsos",
+    "branding_suffix_name": "tavg-u-hxy-lnd",
+    "cf_standard_name": "mass_content_of_water_in_soil_layer",
+    "out_name": "mrsos",
+    "units": "kg m-2",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "lnd",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean where land time: mean"
+}

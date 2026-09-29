@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "rsdscsaf_tavg-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "rsdscsaf_tavg-u-hxy-u",
+    "variable_root_name": "rsdscsaf",
+    "branding_suffix_name": "tavg-u-hxy-u",
+    "cf_standard_name": "surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol",
+    "out_name": "rsdscsaf",
+    "units": "W m-2",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: time: mean"
+}

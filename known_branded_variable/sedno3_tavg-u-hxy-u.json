@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sedno3_tavg-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "sedno3_tavg-u-hxy-u",
+    "variable_root_name": "sedno3",
+    "branding_suffix_name": "tavg-u-hxy-u",
+    "cf_standard_name": "tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition",
+    "out_name": "sedno3",
+    "units": "kg m-2 s-1",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: time: mean"
+}

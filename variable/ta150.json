@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ta150",
+    "type": "variable",
+    "drs_name": "ta150",
+    "long_name": "Air Temperature at 150hPa",
+    "standard_name": "air_temperature",
+    "units": "K",
+    "description": "Air Temperature at 150hPa"
+}

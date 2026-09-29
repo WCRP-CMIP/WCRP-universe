@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "sfturf_ti-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "sfturf_ti-u-hxy-u",
+    "variable_root_name": "sfturf",
+    "branding_suffix_name": "ti-u-hxy-u",
+    "cf_standard_name": "area_fraction",
+    "out_name": "sfturf",
+    "units": "%",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "typeurban"
+    ],
+    "temporal_label": "ti",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": "area: mean"
+}
