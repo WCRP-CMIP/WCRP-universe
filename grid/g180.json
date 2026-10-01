@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a regular gaussian grid type and 3.75 x 2.25 degree resolution.",
   "drs_name": "g180",
-  "region": "global"
+  "region": "global",
+  "grid_type": "regular_gaussian",
+  "n_cells": 7680,
+  "grid_mapping": "latitude_longitude"
 }

@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a reduced gaussian grid type and 100 x 100 km resolution.",
   "drs_name": "g235",
-  "region": "global"
+  "region": "global",
+  "grid_type": "reduced_gaussian",
+  "n_cells": 40320,
+  "grid_mapping": "latitude_longitude"
 }

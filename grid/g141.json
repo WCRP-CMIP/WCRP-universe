@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a spectral reduced gaussian grid type and 80 x 80 km resolution.",
   "drs_name": "g141",
-  "region": "global"
+  "region": "global",
+  "grid_type": "spectral_reduced_gaussian",
+  "n_cells": 88838,
+  "grid_mapping": "latitude_longitude"
 }
