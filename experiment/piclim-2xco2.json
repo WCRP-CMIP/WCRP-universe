@@ -1,9 +1,9 @@
 {
     "@context": "000_context.jsonld",
-    "id": "piclim-p4k",
+    "id": "piclim-2xco2",
     "type": "experiment",
-    "description": "Baseline for effective radiative forcing (ERF) calculations with a warmer background state. Same as `piClim-control`, except sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing sea ice remain the same as in the `piClim-control` experiment).",
-    "drs_name": "piClim-p4K",
+    "description": "In combination with `piClim-control`, quantifies a doubling of atmospheric carbon dioxide's (2xCO2's) effective radiative forcing (ERF). Same as `piClim-control`, except atmospheric carbon dioxide concentrations are set to two times `piControl` levels.",
+    "drs_name": "piClim-2xCO2",
     "start_timestamp": null,
     "end_timestamp": null,
     "min_number_yrs_per_sim": 30.0,
