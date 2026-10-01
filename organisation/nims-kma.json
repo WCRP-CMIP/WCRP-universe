@@ -1,10 +1,12 @@
 {
-    "@context": "000_context.jsonld",
-    "id": "nims-kma",
-    "type": "organisation",
-    "drs_name": "NIMS-KMA",
-    "members": [
-        "nims-kma"
-    ],
-    "description": "The National Institute of Meteorological Sciences (NIMS) is the research institute of the Korea Meteorological Administration (KMA)."
+  "@context": "000_context.jsonld",
+  "id": "nims-kma",
+  "type": "organisation",
+  "drs_name": "NIMS-KMA",
+  "members": [
+    "kma",
+    "nims",
+    "nims-kma"
+  ],
+  "description": "The National Institute of Meteorological Sciences (NIMS) is the research institute of the Korea Meteorological Administration (KMA)."
 }

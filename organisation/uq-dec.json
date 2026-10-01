@@ -4,6 +4,7 @@
   "type": "organisation",
   "drs_name": "UQ-DEC",
   "members": [
+    "dec",
     "uq",
     "uq-dec"
   ],
