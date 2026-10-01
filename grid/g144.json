@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a yin yang grid type and 1 x 1 degree resolution.",
   "drs_name": "g144",
-  "region": "global"
+  "region": "global",
+  "grid_type": "yin_yang",
+  "n_cells": 73066,
+  "grid_mapping": "latitude_longitude"
 }

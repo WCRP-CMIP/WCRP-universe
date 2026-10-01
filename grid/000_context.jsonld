@@ -10,6 +10,17 @@
             "@id": "https://esgvoc.ipsl.fr/resource/universe/region/",
             "@type":"@id",
             "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/region/"}
-        }
+        },
+        "grid_type":{
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/grid_type/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/grid_type/"}
+        },
+        "grid_mapping":{
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/grid_mapping/",
+            "@type":"@id",
+            "@context":{"@base":"https://esgvoc.ipsl.fr/resource/universe/grid_mapping/"}
+        },
+        "n_cells": "https://schema.org/Number"
     }
 }

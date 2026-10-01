@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a stretched grid type.",
   "drs_name": "g252",
-  "region": "global"
+  "region": "global",
+  "grid_type": "stretched",
+  "n_cells": 77400,
+  "grid_mapping": "latitude_longitude"
 }
