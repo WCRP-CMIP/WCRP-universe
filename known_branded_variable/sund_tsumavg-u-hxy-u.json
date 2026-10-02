@@ -11,7 +11,7 @@
     "dimensions": [
         "longitude",
         "latitude",
-        "time"
+        "time6"
     ],
     "temporal_label": "tsumavg",
     "vertical_label": "u",
