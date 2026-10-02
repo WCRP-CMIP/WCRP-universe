@@ -1,8 +1,8 @@
 {
   "@context": "000_context.jsonld",
-  "id": "miroc6_ref_001",
+  "id": "miroc6_ref_002",
   "type": "reference",
   "citation": "Shiogama, Hideo; Abe, Manabu; Tatebe, Hiroaki (2019). MIROC MIROC6 model output prepared for CMIP6 ScenarioMIP. Version YYYYMMDD[1].Earth System Grid Federation. https://doi.org/10.22033/ESGF/CMIP6.898",
   "doi": "https://doi.org/10.22033/ESGF/CMIP6.898",
-  "drs_name": "miroc6_ref_001"
+  "drs_name": "miroc6_ref_002"
 }
