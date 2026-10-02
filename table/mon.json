@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mon",
+    "type": "table",
+    "description": "Table identifier used by CORDEX-CMIP6 mon.",
+    "drs_name": "mon",
+    "product": null,
+    "table_date": null,
+    "variable_entry": []
+}
