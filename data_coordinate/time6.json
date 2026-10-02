@@ -1,0 +1,17 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "time6",
+    "type": "data_coordinate",
+    "description": "Time coordinate for data reported as the mean of daily sums.",
+    "drs_name": "time6",
+    "coordinate_type": "standard_1d",
+    "data_type": "double",
+    "out_name": "time",
+    "cf_standard_name": "time",
+    "units": "days since ?",
+    "axis": "T",
+    "stored_direction": "increasing",
+    "bounds_required": true,
+    "is_climatology": true,
+    "is_generic_model_level_coordinate": false
+}
