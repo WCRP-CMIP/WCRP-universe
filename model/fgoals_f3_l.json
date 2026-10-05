@@ -1,0 +1,20 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fgoals_f3_l",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "CAS FGOALS-f3-L is composed of five components: version 2.2 of the Finite-volume Atmospheric Model (FAMIL) (Zhou et al., 2015; Bao et al., 2019; Li et al., 2019), which is the new generation atmospheric general circulation model of the Spectral Atmosphere Model of LASG (SAMIL) (Wu et al., 1996; Bao et al., 2010, 2013) (their main differences are shown in Table 1); version 3 of the LASG/IAP Climate system Ocean Model (LICOM3) (Liu et al., 2012); version 4.0 of the Community Land Model (CLM4) (Oleson et al., 2010); version 4 of the Los Alamos sea ice model (CICE4) (Hunke and Lipscomb, 2010); and version 7 of the coupled module from the National Center for Atmospheric Research (NCAR) (http://www.cesm.ucar.edu/ models/cesm1.0/cpl7/), which is used to exchange the fluxes among these components.",
+  "calendar": [],
+  "release_year": null,
+  "references": [
+    "fgoals_f3_l_ref_001"
+  ],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "FGOALS-f3-L"
+}
