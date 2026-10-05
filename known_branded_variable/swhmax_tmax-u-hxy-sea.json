@@ -21,5 +21,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: mean where sea time: maximum"
+    "cell_methods": [
+        "area: mean where sea time: maximum"
+    ]
 }
