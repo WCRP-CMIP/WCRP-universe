@@ -2083,20 +2083,41 @@ class Holder(BaseModel):
         return self
 
     def add_polmip_entries(self) -> "Holder":
-        acronym_descriptions = [
+        descriptions = [
             (
                 "vl-cf",
                 (
                     "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for global surface air temperature to peak at 1.5C and stabilise or slowly decline."
                 ),
                 2016,
+                2,
+                1,
+                True,
+            ),
+            (
+                "SSP2-com-CMIP7",
+                (
+                    "Policy-driven pathway aligned with China's carbon neutrality pledge, "
+                    "peaking carbon emissions before 2030 and achieving carbon neutrality before 2060. "
+                    "It is developed within the SSP2 socioeconomic framework "
+                    "and consistent with global Nationally Determined Contributions (NDCs) data."
+                ),
+                2022,
+                1,
+                1,
+                False,
             ),
         ]
 
-        for acronym, description_base, branch_year in acronym_descriptions:
-            drs_name = acronym
+        for (
+            drs_name,
+            description_base,
+            branch_year,
+            tier_conc_driven,
+            tier_emms_driven,
+            has_extension,
+        ) in descriptions:
             drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
-            tier_conc_driven = 2
 
             description = (
                 f"{description_base} Run with prescribed carbon dioxide concentrations "
@@ -2126,27 +2147,29 @@ class Holder(BaseModel):
             self.experiments_project.append(proj_base)
             self.add_experiment_to_activity(proj_base)
 
-            univ_ext = self.get_scenario_extension(
-                univ_base, tier=tier_conc_driven, min_number_yrs_per_sim=100.0
-            )
-            proj_ext = self.get_scenario_project(univ_ext)
-            self.experiments_universe.append(univ_ext)
-            self.experiments_project.append(proj_ext)
-            self.add_experiment_to_activity(proj_ext)
+            if has_extension:
+                univ_ext = self.get_scenario_extension(
+                    univ_base, tier=tier_conc_driven, min_number_yrs_per_sim=100.0
+                )
+                proj_ext = self.get_scenario_project(univ_ext)
+                self.experiments_universe.append(univ_ext)
+                self.experiments_project.append(proj_ext)
+                self.add_experiment_to_activity(proj_ext)
 
-            univ_esm = self.get_scenario_esm(univ_base, tier=1)
+            univ_esm = self.get_scenario_esm(univ_base, tier=tier_emms_driven)
             proj_esm = self.get_scenario_project(univ_esm)
             self.experiments_universe.append(univ_esm)
             self.experiments_project.append(proj_esm)
             self.add_experiment_to_activity(proj_esm)
 
-            univ_esm_ext = self.get_scenario_extension(
-                univ_esm, min_number_yrs_per_sim=100.0
-            )
-            proj_esm_ext = self.get_scenario_project(univ_esm_ext)
-            self.experiments_universe.append(univ_esm_ext)
-            self.experiments_project.append(proj_esm_ext)
-            self.add_experiment_to_activity(proj_esm_ext)
+            if has_extension:
+                univ_esm_ext = self.get_scenario_extension(
+                    univ_esm, min_number_yrs_per_sim=100.0
+                )
+                proj_esm_ext = self.get_scenario_project(univ_esm_ext)
+                self.experiments_universe.append(univ_esm_ext)
+                self.experiments_project.append(proj_esm_ext)
+                self.add_experiment_to_activity(proj_esm_ext)
 
         return self
 
