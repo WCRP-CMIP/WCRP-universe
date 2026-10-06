@@ -385,6 +385,42 @@ class Holder(BaseModel):
                     "For details, please see the full description in the ScenarioMIP description papers."
                 ),
             ),
+            ActivityProject(
+                id="firemip",
+                experiments=[],
+                references=get_references(
+                    [
+                        "https://gmd.copernicus.org/articles/19/3989/2026/",
+                    ],
+                    "firemip",
+                ),
+                description=(
+                    # "Fire is a global phenomenon and a key Earth system process. "
+                    # "Extreme fire events have increased in recent years, "
+                    # "and fire frequency and intensity are projected to rise across most regions and biomes, "
+                    # "posing substantial challenges for ecosystems, the carbon cycle, and society. "
+                    "Fire Model Intercomparison Project. "
+                    # "(FireMIP), launched in 2014, "
+                    # "has advanced global fire modeling in Dynamic Global Vegetation Models (DGVMs) "
+                    # "and improved understanding of fire's local and direct drivers "
+                    # "and its local impacts on vegetation and land carbon budgets "
+                    # "through land offline simulations (i.e., decoupled from the atmosphere). "
+                    "Having existed for many years, FireMIP is now being inclued in CMIP7 to: "
+                    # TODO: check - this contradicts descriptions elsewhere that say thate FireMIP is only for decoupled simulations
+                    "(1) evaluate fire simulations in state-of-the-art fully coupled Earth system models (ESMs); "
+                    "(2) assess fire regime changes in the past, present, and future, "
+                    "and identify their primary natural and anthropogenic forcings "
+                    "and causal pathways within the Earth system, including the associated uncertainties; "
+                    "and (3) quantify the impacts of fires and fire changes on climate, ecosystems, "
+                    "and society across Earth system components, regions, and timescales, "
+                    "and elucidate the underlying mechanisms. "
+                    "FireMIP in CMIP7 will advance fire and fire-related modeling in fully coupled ESMs, "
+                    "and provide a quantitative, comprehensive, "
+                    "and process-based understanding of fire's role in the Earth system "
+                    "by using models that incorporate critical climate feedbacks "
+                    "and CMIP7 multi-model, multi-initial-condition, and multi-scenario ensembles."
+                ),
+            ),
         ]
 
     def add_experiment_to_activity(self, experiment: ExperimentProject) -> "Holder":
