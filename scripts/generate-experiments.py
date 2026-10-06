@@ -1364,11 +1364,11 @@ class Holder(BaseModel):
                     "except sea surface temperatures are increased by 4K in ice-free regions "
                     "(sea ice and SSTs in grid boxes containing sea ice remain the same as in the `piClim-control` experiment)."
                 ),
-                "rfmip",
+                "aerchemmip",
                 "Same as `piClim-control`",
                 ["agcm"],
                 ["aer", "chem", "bgc"],
-                3,
+                1,
                 1,
             ),
             (
