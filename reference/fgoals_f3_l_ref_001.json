@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fgoals_f3_l_ref_001",
+  "type": "reference",
+  "citation": "He, B., Bao, Q., Wang, X., Zhou, L., Wu, X., Liu, Y., Wu, G., Chen, K., He, S., Hu, W., Li, J., Li, J., Nian, G., Wang, L., Yang, J., Zhang, M., & Zhang, X. (2019). CAS FGOALS-f3-L Model Datasets for CMIP6 Historical Atmospheric Model Intercomparison Project Simulation. Advances in Atmospheric Sciences, 36(8), 771-778. https://doi.org/10.1007/s00376-019-9027-8\n",
+  "doi": "https://doi.org/10.1007/s00376-019-9027-8",
+  "drs_name": "fgoals_f3_l_ref_001"
+}

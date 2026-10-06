@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "giss_e3_1_cc_ref_001",
+  "type": "reference",
+  "citation": "Cesana, G. V., Lin, Y.-J., Wu, J., Kelley, M., Remillard, J., Tselioudis, G., Schmidt, G. A., Arouf, A., Elsaesser, G., Ackerman, A. S., Bauer, S., Cheng, Y., Fridlind, A. M., & Nanou, N. (2026). Improved representation of cloud properties and feedbacks in the NASA GISS-E3 climate model. https://doi.org/10.22541/essoar.15005381/v1\n",
+  "doi": "https://doi.org/10.22541/essoar.15005381/v1",
+  "drs_name": "giss_e3_1_cc_ref_001"
+}

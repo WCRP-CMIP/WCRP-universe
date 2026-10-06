@@ -1,6 +1,6 @@
 {
     "@context": "000_context.jsonld",
-    "id": "damip",
+    "id": "dcpp",
     "type": "activity",
     "description": "Decadal climate prediction project: Coordinated multi-model investigation into decadal climate prediction, predictability, and variability",
     "drs_name": "DCPP"

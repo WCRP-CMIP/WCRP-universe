@@ -2,32 +2,19 @@
     "@context": "000_context.jsonld",
     "id": "piclim-histnat",
     "type": "experiment",
-    "experiment_id": "piClim-histnat",
-    "activity_id": [
-        "rfmip"
-    ],
+    "description": "In combination with `piClim-control`, quantifies transient natural effective radiative forcing (ERF) over the historical period and a future experiment. ",
+    "drs_name": "piClim-histnat",
+    "start_timestamp": "1850-01-01",
+    "activity": "rfmip",
     "additional_allowed_model_components": [
         "aer",
         "chem",
         "bgc"
     ],
-    "description": "Time-varying forcing from volcanos, solar variability, etc. SST and sea ice fixed at preindustrial control. Interactive vegetation",
-    "end_year": 2100,
-    "experiment": "transient effective radiative forcing by natural perturbations",
-    "min_number_yrs_per_sim": "251",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "picontrol"
-    ],
+    "branch_information": null,
+    "min_ensemble_size": 1,
     "required_model_components": [
         "agcm"
     ],
-    "start_year": 1850,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "2",
-    "drs_name": "piClim-histnat"
+    "tier": 2
 }
