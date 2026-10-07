@@ -2234,7 +2234,6 @@ class Holder(BaseModel):
                     "both burned area in the model code and prescribed fire emissions in the forcing dataset "
                     f"(at least {', '.join(full_fire_emissions)}) are set to zero. "
                     "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
-                    # TODO: add this experiment too so that modelling teams can upload their spin up simulations to ESGF if they wish
                     "We encourage modeling groups to perform `piControl-nofire` to generate the initial state."
                 ),
                 "Branch from `piControl-nofire` or (as a fallback) `piControl` at a time of your choosing",
