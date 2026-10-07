@@ -2187,10 +2187,6 @@ class Holder(BaseModel):
         return self
 
     def add_firemip_entries(self) -> "Holder":
-        # hist-nofire
-        # hist-nofireaer - not related to the above, despite the name
-        # scen7-h-ca2010fire
-        # scen7-h-ca2010fireaer
         # TODO: check this list. Note that SO2 is the forcings variable, not SO4 so I have changed this.
         aerosol_fire_emissions = ["BC", "OC", "SO2", "CO", "NOx"]
         full_fire_emissions = [*aerosol_fire_emissions, "CO2", "CH4", "N2O"]
@@ -2287,16 +2283,16 @@ class Holder(BaseModel):
             (
                 "scen7-h-ca2010fire",
                 (
-                    "The same as `scen7-h`, but with burned area and fire emissions fixed at their 2001–2020 averages. "
-                    "Burned area should be prescribed as an input field, using each model’s own 2001–2020 average derived from its historical simulations. "
+                    "The same as `scen7-h`, but with burned area and fire emissions fixed at their 2001-2020 averages. "
+                    "Burned area should be prescribed as an input field, using each model's own 2001-2020 average derived from its historical simulations. "
                     "For models without interactive fire emission modules, all fire emissions (known as open biomass burning emissions in the forcings) "
-                    "should be replaced with the corresponding 2001–2020 average."
+                    "should be replaced with the corresponding 2001-2020 average."
                 ),
                 scen7_experiment_universe.branch_information,
                 scen7_experiment_project.start_timestamp,
                 "2060-12-31",
-                scen7_experiment_project.parent_activity,
-                scen7_experiment_project.parent_experiment,
+                scen7_experiment_universe.parent_activity,
+                scen7_experiment_universe.parent_experiment,
                 2,
             ),
             (
@@ -2308,8 +2304,8 @@ class Holder(BaseModel):
                 scen7_experiment_universe.branch_information,
                 scen7_experiment_project.start_timestamp,
                 "2060-12-31",
-                scen7_experiment_project.parent_activity,
-                scen7_experiment_project.parent_experiment,
+                scen7_experiment_universe.parent_activity,
+                scen7_experiment_universe.parent_experiment,
                 2,
             ),
         ):
@@ -2345,11 +2341,9 @@ class Holder(BaseModel):
             proj = ExperimentProject(
                 id=univ.drs_name.lower(),
                 activity=univ.activity,
-                start_timestamp="1850-01-01",
+                start_timestamp=start_timestamp,
                 end_timestamp=end_timestamp,
                 min_number_yrs_per_sim=min_number_yrs_per_sim,
-                parent_activity=univ.parent_activity,
-                parent_experiment=univ.parent_experiment,
                 parent_mip_era="cmip7" if parent_activity else None,
                 tier=univ.tier,
             )
@@ -2365,8 +2359,8 @@ class Holder(BaseModel):
                 "rather than prescribed carbon dioxide concentrations "
                 f"(for the equivalent prescribed carbon dioxide concentrations experiment, see `{univ.drs_name}`)."
             )
-            univ_esm.required_model_components = list(
-                {*univ.required_model_components, "bgc"}
+            univ_esm.required_model_components = sorted(
+                list({*univ.required_model_components, "bgc"})
             )
             univ_esm.additional_allowed_model_components = [
                 v for v in univ.additional_allowed_model_components if v != "bgc"
@@ -2378,11 +2372,9 @@ class Holder(BaseModel):
             proj_esm = ExperimentProject(
                 id=univ_esm.drs_name.lower(),
                 activity=univ_esm.activity,
-                start_timestamp="1850-01-01",
+                start_timestamp=start_timestamp,
                 end_timestamp=end_timestamp,
                 min_number_yrs_per_sim=min_number_yrs_per_sim,
-                parent_activity=univ_esm.parent_activity,
-                parent_experiment=univ_esm.parent_experiment,
                 parent_mip_era="cmip7" if univ_esm.parent_activity else None,
                 tier=univ_esm.tier,
             )

@@ -15,8 +15,8 @@
     "parent_activity": "cmip",
     "parent_experiment": "esm-historical",
     "required_model_components": [
-        "bgc",
-        "aogcm"
+        "aogcm",
+        "bgc"
     ],
     "tier": 2
 }

@@ -15,8 +15,8 @@
     "parent_activity": null,
     "parent_experiment": null,
     "required_model_components": [
-        "bgc",
-        "aogcm"
+        "aogcm",
+        "bgc"
     ],
     "tier": 1
 }
