@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-hist-nofireaer",
+    "type": "experiment",
+    "description": "Historical coupled simulations with fire aerosol emissions set to zero. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset (BC, OC, SO2, CO, NOx) are set to zero. In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero.  Here run with prescribed carbon dioxide emissions, rather than prescribed carbon dioxide concentrations (for the equivalent prescribed carbon dioxide concentrations experiment, see `hist-nofireaer`).",
+    "drs_name": "esm-hist-nofireaer",
+    "start_timestamp": null,
+    "activity": "firemip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from `historical` no later than 1920",
+    "min_ensemble_size": 3,
+    "parent_activity": "cmip",
+    "parent_experiment": "esm-historical",
+    "required_model_components": [
+        "bgc",
+        "aogcm"
+    ],
+    "tier": 2
+}

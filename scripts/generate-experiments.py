@@ -2186,6 +2186,212 @@ class Holder(BaseModel):
 
         return self
 
+    def add_firemip_entries(self) -> "Holder":
+        # hist-nofire
+        # hist-nofireaer - not related to the above, despite the name
+        # scen7-h-ca2010fire
+        # scen7-h-ca2010fireaer
+        # TODO: check this list. Note that SO2 is the forcings variable, not SO4 so I have changed this.
+        aerosol_fire_emissions = ["BC", "OC", "SO2", "CO", "NOx"]
+        full_fire_emissions = [*aerosol_fire_emissions, "CO2", "CH4", "N2O"]
+
+        hist_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "historical"
+        ]
+        if len(hist_experiment_project_l) != 1:
+            raise AssertionError(hist_experiment_project_l)
+
+        hist_experiment_project = hist_experiment_project_l[0]
+
+        scen7_experiment_universe_l = [
+            v for v in self.experiments_universe if v.drs_name == "scen7-h"
+        ]
+        if len(scen7_experiment_universe_l) != 1:
+            raise AssertionError(scen7_experiment_universe_l)
+
+        scen7_experiment_universe = scen7_experiment_universe_l[0]
+
+        scen7_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "scen7-h"
+        ]
+        if len(scen7_experiment_project_l) != 1:
+            raise AssertionError(scen7_experiment_project_l)
+
+        scen7_experiment_project = scen7_experiment_project_l[0]
+
+        for (
+            drs_name,
+            description,
+            branch_information,
+            start_timestamp,
+            end_timestamp,
+            parent_activity,
+            parent_experiment,
+            tier,
+        ) in (
+            # TODO: reduce duplication in descriptions
+            (
+                "hist-nofire",
+                (
+                    "Historical coupled simulations with fires set to zero. "
+                    "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
+                    "both burned area in the model code and prescribed fire emissions in the forcing dataset "
+                    f"(at least {', '.join(full_fire_emissions)}) are set to zero. "
+                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
+                    # TODO: add this experiment too so that modelling teams can upload their spin up simulations to ESGF if they wish
+                    "We encourage modeling groups to perform `piControl-nofire` to generate the initial state."
+                ),
+                "Branch from `piControl-nofire` or (as a fallback) `piControl` at a time of your choosing",
+                hist_experiment_project.start_timestamp,
+                hist_experiment_project.end_timestamp,
+                None,  # Multiple options, which is not supported
+                None,  # Multiple options, which is not supported
+                1,
+            ),
+            (
+                "piControl-nofire",
+                (
+                    "Pre-industrial control simulatio with no fire emissions. "
+                    "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
+                    "both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset "
+                    f"(at least {', '.join(full_fire_emissions)}) are set to zero. "
+                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
+                ),
+                "Branch from `piControl-spinup` at a time of your choosing",
+                None,
+                None,
+                "cmip",
+                "picontrol-spinup",
+                2,
+            ),
+            (
+                "hist-nofireaer",
+                (
+                    "Historical coupled simulations with fire aerosol emissions set to zero. "
+                    "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
+                    # TODO: check - is burned area being set zero correct? That turns everything off, not just aerosols?
+                    "both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset "
+                    # Replace with (?): "This does not apply to models that have interactive fire-emissions.")
+                    f"({', '.join(aerosol_fire_emissions)}) are set to zero. "
+                    # TODO: check - is burned area being set zero correct? That turns everything off, not just aerosols?
+                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
+                    # Replace with (?): "This does not apply to models that have interactive fire-emissions.")
+                ),
+                "Branch from `historical` no later than 1920",
+                None,  # undefined so not written
+                hist_experiment_project.end_timestamp,
+                "cmip",
+                "historical",
+                2,
+            ),
+            (
+                "scen7-h-ca2010fire",
+                (
+                    "The same as `scen7-h`, but with burned area and fire emissions fixed at their 2001–2020 averages. "
+                    "Burned area should be prescribed as an input field, using each model’s own 2001–2020 average derived from its historical simulations. "
+                    "For models without interactive fire emission modules, all fire emissions (known as open biomass burning emissions in the forcings) "
+                    "should be replaced with the corresponding 2001–2020 average."
+                ),
+                scen7_experiment_universe.branch_information,
+                scen7_experiment_project.start_timestamp,
+                "2060-12-31",
+                scen7_experiment_project.parent_activity,
+                scen7_experiment_project.parent_experiment,
+                2,
+            ),
+            (
+                "scen7-h-ca2010fireaer",
+                (
+                    f"The same as `scen7-h`, but with fire aerosol emissions ({aerosol_fire_emissions}) fixed at their 2001–2020 averages. "
+                    "This does not apply to models that have interactive fire-emissions."
+                ),
+                scen7_experiment_universe.branch_information,
+                scen7_experiment_project.start_timestamp,
+                "2060-12-31",
+                scen7_experiment_project.parent_activity,
+                scen7_experiment_project.parent_experiment,
+                2,
+            ),
+        ):
+            if start_timestamp is None or end_timestamp is None:
+                min_number_yrs_per_sim = None
+
+            else:
+                min_number_yrs_per_sim = (
+                    datetime.strptime(end_timestamp, "%Y-%m-%d").year
+                    - datetime.strptime(start_timestamp, "%Y-%m-%d").year
+                    + 1
+                )
+
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="firemip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information=branch_information,
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=3,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity=parent_activity,
+                parent_experiment=parent_experiment,
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=["aogcm"],
+                start_timestamp=start_timestamp,
+                tier=tier,
+            )
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                start_timestamp="1850-01-01",
+                end_timestamp=end_timestamp,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_activity=univ.parent_activity,
+                parent_experiment=univ.parent_experiment,
+                parent_mip_era="cmip7" if parent_activity else None,
+                tier=univ.tier,
+            )
+            self.experiments_universe.append(univ)
+            self.experiments_project.append(proj)
+            self.add_experiment_to_activity(proj)
+
+            univ_esm = univ.model_copy()
+            univ_esm.drs_name = f"esm-{univ.drs_name}"
+            univ_esm.description = (
+                f"{univ.description} "
+                "Here run with prescribed carbon dioxide emissions, "
+                "rather than prescribed carbon dioxide concentrations "
+                f"(for the equivalent prescribed carbon dioxide concentrations experiment, see `{univ.drs_name}`)."
+            )
+            univ_esm.required_model_components = list(
+                {*univ.required_model_components, "bgc"}
+            )
+            univ_esm.additional_allowed_model_components = [
+                v for v in univ.additional_allowed_model_components if v != "bgc"
+            ]
+            univ_esm.branch_information.replace("piControl", "esm-piControl")
+            univ_esm.parent_experiment = (
+                f"esm-{univ.parent_experiment}" if univ.parent_experiment else None
+            )
+            proj_esm = ExperimentProject(
+                id=univ_esm.drs_name.lower(),
+                activity=univ_esm.activity,
+                start_timestamp="1850-01-01",
+                end_timestamp=end_timestamp,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_activity=univ_esm.parent_activity,
+                parent_experiment=univ_esm.parent_experiment,
+                parent_mip_era="cmip7" if univ_esm.parent_activity else None,
+                tier=univ_esm.tier,
+            )
+            self.experiments_universe.append(univ_esm)
+            self.experiments_project.append(proj_esm)
+            self.add_experiment_to_activity(proj_esm)
+
+        return self
+
     def add_geomip_entries(self) -> "Holder":
         for (
             drs_name,
@@ -2334,6 +2540,7 @@ def main():
     holder.add_piclim_entries()
     holder.add_scenario_entries()
     holder.add_polmip_entries()
+    holder.add_firemip_entries()
     holder.add_aerchemmip_entries()
     holder.add_geomip_entries()
 

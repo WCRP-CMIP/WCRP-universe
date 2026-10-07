@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-scen7-h-ca2010fire",
+    "type": "experiment",
+    "description": "The same as `scen7-h`, but with burned area and fire emissions fixed at their 2001\u20132020 averages. Burned area should be prescribed as an input field, using each model\u2019s own 2001\u20132020 average derived from its historical simulations. For models without interactive fire emission modules, all fire emissions (known as open biomass burning emissions in the forcings) should be replaced with the corresponding 2001\u20132020 average. Here run with prescribed carbon dioxide emissions, rather than prescribed carbon dioxide concentrations (for the equivalent prescribed carbon dioxide concentrations experiment, see `scen7-h-ca2010fire`).",
+    "drs_name": "esm-scen7-h-ca2010fire",
+    "start_timestamp": "2022-01-01",
+    "activity": "firemip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from `historical` at 2022-01-01.",
+    "min_ensemble_size": 3,
+    "parent_experiment": "esm-dont_write",
+    "required_model_components": [
+        "bgc",
+        "aogcm"
+    ],
+    "tier": 2
+}

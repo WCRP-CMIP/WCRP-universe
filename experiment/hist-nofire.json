@@ -2,35 +2,21 @@
     "@context": "000_context.jsonld",
     "id": "hist-nofire",
     "type": "experiment",
-    "experiment_id": "hist-noFire",
-    "activity_id": [
-        "firemip"
-    ],
+    "description": "Historical coupled simulations with fires set to zero. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), both burned area in the model code and prescribed fire emissions in the forcing dataset (at least BC, OC, SO2, CO, NOx, CO2, CH4, N2O) are set to zero. In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. We encourage modeling groups to perform `piControl-nofire` to generate the initial state.",
+    "drs_name": "hist-nofire",
+    "start_timestamp": "1850-01-01",
+    "activity": "firemip",
     "additional_allowed_model_components": [
-        "aogcm",
-        "bgc",
         "aer",
-        "chem"
+        "chem",
+        "bgc"
     ],
-    "description": "This experiment is similar to the esm-hist experiment in DECK, but it features no fire globally throughout the historical period and is initialized from a no-fire spin-up.",
-    "end_year": 2021,
-    "experiment": "no fires occur globally",
-    "min_number_yrs_per_sim": "172",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "esm-picontrol"
-    ],
+    "branch_information": "Branch from `piControl-nofire` or (as a fallback) `piControl` at a time of your choosing",
+    "min_ensemble_size": 3,
+    "parent_activity": null,
+    "parent_experiment": null,
     "required_model_components": [
-        "aogcm",
-        "bgc",
-        "aer"
+        "aogcm"
     ],
-    "start_year": 1850,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "2",
-    "drs_name": "hist-noFire"
+    "tier": 1
 }
