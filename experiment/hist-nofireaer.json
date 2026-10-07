@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "hist-nofireaer",
     "type": "experiment",
-    "description": "Historical coupled simulations with fire aerosol emissions set to zero. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), prescribed fire aerosol emissions in the forcing dataset are set to zero. ",
+    "description": "Historical coupled simulations with fire aerosol emissions set to zero. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), prescribed fire aerosol emissions in the forcing dataset should be set to zero.",
     "drs_name": "hist-nofireaer",
     "start_timestamp": null,
     "activity": "firemip",
