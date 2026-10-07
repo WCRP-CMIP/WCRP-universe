@@ -395,18 +395,8 @@ class Holder(BaseModel):
                     "firemip",
                 ),
                 description=(
-                    # "Fire is a global phenomenon and a key Earth system process. "
-                    # "Extreme fire events have increased in recent years, "
-                    # "and fire frequency and intensity are projected to rise across most regions and biomes, "
-                    # "posing substantial challenges for ecosystems, the carbon cycle, and society. "
                     "Fire Model Intercomparison Project. "
-                    # "(FireMIP), launched in 2014, "
-                    # "has advanced global fire modeling in Dynamic Global Vegetation Models (DGVMs) "
-                    # "and improved understanding of fire's local and direct drivers "
-                    # "and its local impacts on vegetation and land carbon budgets "
-                    # "through land offline simulations (i.e., decoupled from the atmosphere). "
-                    "Having existed for many years, FireMIP is now being inclued in CMIP7 to: "
-                    # TODO: check - this contradicts descriptions elsewhere that say thate FireMIP is only for decoupled simulations
+                    "In CMIP7, FireMIP expands into the fully coupled Earth system modeling framework to: "
                     "(1) evaluate fire simulations in state-of-the-art fully coupled Earth system models (ESMs); "
                     "(2) assess fire regime changes in the past, present, and future, "
                     "and identify their primary natural and anthropogenic forcings "
@@ -2187,9 +2177,9 @@ class Holder(BaseModel):
         return self
 
     def add_firemip_entries(self) -> "Holder":
-        # TODO: check this list. Note that SO2 is the forcings variable, not SO4 so I have changed this.
-        aerosol_fire_emissions = ["BC", "OC", "SO2", "CO", "NOx"]
-        full_fire_emissions = [*aerosol_fire_emissions, "CO2", "CH4", "N2O"]
+        # # Requested not to have lists, see https://github.com/WCRP-CMIP/WCRP-universe/pull/399#discussion_r4203053542
+        # aerosol_fire_emissions = ["BC", "OC", "SO2", "CO", "NOx"]
+        # full_fire_emissions = [*aerosol_fire_emissions, "CO2", "CH4", "N2O"]
 
         hist_experiment_project_l = [
             v for v in self.experiments_project if v.id == "historical"
@@ -2232,7 +2222,7 @@ class Holder(BaseModel):
                     "Historical coupled simulations with fires set to zero. "
                     "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
                     "both burned area in the model code and prescribed fire emissions in the forcing dataset "
-                    f"(at least {', '.join(full_fire_emissions)}) are set to zero. "
+                    "are set to zero. "
                     "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
                     "We encourage modeling groups to perform `piControl-nofire` to generate the initial state."
                 ),
@@ -2249,7 +2239,7 @@ class Holder(BaseModel):
                     "Pre-industrial control simulatio with no fire emissions. "
                     "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
                     "both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset "
-                    f"(at least {', '.join(full_fire_emissions)}) are set to zero. "
+                    "are set to zero. "
                     "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
                 ),
                 "Branch from `piControl-spinup` at a time of your choosing",
@@ -2264,13 +2254,7 @@ class Holder(BaseModel):
                 (
                     "Historical coupled simulations with fire aerosol emissions set to zero. "
                     "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
-                    # TODO: check - is burned area being set zero correct? That turns everything off, not just aerosols?
-                    "both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset "
-                    # Replace with (?): "This does not apply to models that have interactive fire-emissions.")
-                    f"({', '.join(aerosol_fire_emissions)}) are set to zero. "
-                    # TODO: check - is burned area being set zero correct? That turns everything off, not just aerosols?
-                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
-                    # Replace with (?): "This does not apply to models that have interactive fire-emissions.")
+                    "prescribed fire aerosol emissions in the forcing dataset are set to zero. "
                 ),
                 "Branch from `historical` no later than 1920",
                 None,  # undefined so not written
@@ -2297,7 +2281,7 @@ class Holder(BaseModel):
             (
                 "scen7-h-ca2010fireaer",
                 (
-                    f"The same as `scen7-h`, but with fire aerosol emissions ({aerosol_fire_emissions}) fixed at their 2001–2020 averages. "
+                    "The same as `scen7-h`, but with fire aerosol emissions fixed at their 2001–2020 averages. "
                     "This does not apply to models that have interactive fire-emissions."
                 ),
                 scen7_experiment_universe.branch_information,

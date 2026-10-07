@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "scen7-h-ca2010fireaer",
     "type": "experiment",
-    "description": "The same as `scen7-h`, but with fire aerosol emissions (['BC', 'OC', 'SO2', 'CO', 'NOx']) fixed at their 2001\u20132020 averages. This does not apply to models that have interactive fire-emissions.",
+    "description": "The same as `scen7-h`, but with fire aerosol emissions fixed at their 2001\u20132020 averages. This does not apply to models that have interactive fire-emissions.",
     "drs_name": "scen7-h-ca2010fireaer",
     "start_timestamp": "2022-01-01",
     "activity": "firemip",

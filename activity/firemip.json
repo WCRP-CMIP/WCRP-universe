@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "firemip",
     "type": "activity",
-    "description": "Fire Model Intercomparison Project: understanding of fire's local and direct drivers and its local impacts on vegetation and land carbon budgets through land offline (i.e. decoupled from the atmosphere) simulations.",
+    "description": "Fire Model Intercomparison Project: understanding of fire's local and direct drivers and its local impacts on vegetation and land carbon budgets.",
     "drs_name": "FireMIP"
 }
 
