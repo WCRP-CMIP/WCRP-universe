@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "esm-hist-nofire",
     "type": "experiment",
-    "description": "Historical coupled simulations with fires set to zero. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), both burned area in the model code and prescribed fire emissions in the forcing dataset are set to zero. In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. We encourage modeling groups to perform `piControl-nofire` to generate the initial state. Here run with prescribed carbon dioxide emissions, rather than prescribed carbon dioxide concentrations (for the equivalent prescribed carbon dioxide concentrations experiment, see `hist-nofire`).",
+    "description": "Historical coupled simulations with fires set to zero. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), both burned area in the model code and prescribed fire emissions in the forcing dataset should be set to zero. In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. We encourage modeling groups to perform `piControl-nofire` to generate the initial state. Here run with prescribed carbon dioxide emissions, rather than prescribed carbon dioxide concentrations (for the equivalent prescribed carbon dioxide concentrations experiment, see `hist-nofire`).",
     "drs_name": "esm-hist-nofire",
     "start_timestamp": "1850-01-01",
     "activity": "firemip",

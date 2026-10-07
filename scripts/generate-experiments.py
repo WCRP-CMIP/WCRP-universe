@@ -2245,7 +2245,7 @@ class Holder(BaseModel):
                     "Historical coupled simulations with fires set to zero. "
                     "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
                     "both burned area in the model code and prescribed fire emissions in the forcing dataset "
-                    "are set to zero. "
+                    "should be set to zero. "
                     "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
                     "We encourage modeling groups to perform `piControl-nofire` to generate the initial state."
                 ),
@@ -2262,8 +2262,8 @@ class Holder(BaseModel):
                     "Pre-industrial control simulatio with no fire emissions. "
                     "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
                     "both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset "
-                    "are set to zero. "
-                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
+                    "should be set to zero. "
+                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero."
                 ),
                 "Branch from `piControl-spinup` at a time of your choosing",
                 None,
@@ -2277,7 +2277,7 @@ class Holder(BaseModel):
                 (
                     "Historical coupled simulations with fire aerosol emissions set to zero. "
                     "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
-                    "prescribed fire aerosol emissions in the forcing dataset are set to zero. "
+                    "prescribed fire aerosol emissions in the forcing dataset should be set to zero."
                 ),
                 "Branch from `historical` no later than 1920",
                 None,  # undefined so not written
