@@ -1,0 +1,27 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hfso_tavg-u-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "hfso_tavg-u-hxy-u",
+    "variable_root_name": "hfso",
+    "branding_suffix_name": "tavg-u-hxy-u",
+    "cf_standard_name": "downward_heat_flux_in_soil",
+    "out_name": "hfso",
+    "units": "W m-2",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "time"
+    ],
+    "temporal_label": "tavg",
+    "vertical_label": "u",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": [
+        "area: time: mean"
+    ]
+}

@@ -21,5 +21,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: sum time: mean"
+    "cell_methods": [
+        "area: sum time: mean"
+    ]
 }

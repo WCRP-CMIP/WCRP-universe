@@ -21,5 +21,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: mean where sea_ice (mask=siconc) depth: sum where sea_ice time: mean"
+    "cell_methods": [
+        "area: mean where sea_ice (mask=siconc) depth: sum where sea_ice time: mean"
+    ]
 }

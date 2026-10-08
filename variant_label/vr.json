@@ -2,6 +2,6 @@
   "@context": "000_context.jsonld",
   "id": "vr",
   "type": "variant_label",
-  "regex": "^v\\d+-r\\d+$",
+  "regex": "^v[1-9]\\d*-r[1-9]\\d*$",
   "description": "CORDEX version-realization label (e.g. v1-r1)"
 }

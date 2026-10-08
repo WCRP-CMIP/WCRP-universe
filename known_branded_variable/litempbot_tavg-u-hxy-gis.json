@@ -21,5 +21,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: time: mean where grounded_ice_sheet (mask=sfgrlf)"
+    "cell_methods": [
+        "area: time: mean where grounded_ice_sheet (mask=sfgrlf)"
+    ]
 }

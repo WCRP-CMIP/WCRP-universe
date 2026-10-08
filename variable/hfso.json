@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hfso",
+    "type": "variable",
+    "description": "",
+    "drs_name": "hfso",
+    "long_name": "Ground Heat Flux",
+    "standard_name": "downward_heat_flux_in_soil",
+    "units": "W m-2"
+}

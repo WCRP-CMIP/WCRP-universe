@@ -11,7 +11,7 @@
     "dimensions": [
         "longitude",
         "latitude",
-        "time"
+        "time6"
     ],
     "temporal_label": "tsumavg",
     "vertical_label": "u",
@@ -21,5 +21,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "time: sum within days time: mean over days"
+    "cell_methods": [
+        "time: sum within days time: mean over days"
+    ]
 }

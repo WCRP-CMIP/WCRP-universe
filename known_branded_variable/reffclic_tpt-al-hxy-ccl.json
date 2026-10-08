@@ -22,5 +22,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: mean where convective_cloud time: point"
+    "cell_methods": [
+        "area: mean where convective_cloud time: point"
+    ]
 }
