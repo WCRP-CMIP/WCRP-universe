@@ -22,5 +22,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: mean where air time: mean within years time: mean over years"
+    "cell_methods": [
+        "area: mean where air time: mean within years time: mean over years"
+    ]
 }

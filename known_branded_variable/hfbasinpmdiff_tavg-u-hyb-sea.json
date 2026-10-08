@@ -21,5 +21,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin) where sea time: mean"
+    "cell_methods": [
+        "depth: longitude: sum where sea (along a zig-zag grid path spanning a basin) where sea time: mean"
+    ]
 }

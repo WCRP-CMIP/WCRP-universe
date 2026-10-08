@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "firemip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "firemip_cmip7_ref_000",
+    "citation": "See https://gmd.copernicus.org/articles/19/3989/2026/",
+    "doi": "N/A"
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "hfc152a",
+  "type": "variable",
+  "drs_name": "",
+  "long_name": "",
+  "standard_name": "",
+  "units": "",
+  "description": ""
+}

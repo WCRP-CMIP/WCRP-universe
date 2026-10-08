@@ -20,5 +20,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: point time: point"
+    "cell_methods": [
+        "area: point time: point"
+    ]
 }

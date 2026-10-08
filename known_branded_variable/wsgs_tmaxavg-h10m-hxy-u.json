@@ -11,7 +11,7 @@
     "dimensions": [
         "longitude",
         "latitude",
-        "time",
+        "time4",
         "height10m"
     ],
     "temporal_label": "tmaxavg",
@@ -22,5 +22,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: mean time: maximum within days time: mean over days"
+    "cell_methods": [
+        "area: mean time: maximum within days time: mean over days"
+    ]
 }
