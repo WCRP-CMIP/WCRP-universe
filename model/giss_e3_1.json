@@ -1,0 +1,20 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "giss_e3_1",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "This is the basic description of the GISS Earth System Model version being used for CMIP7. It couples the GISS Atmosphere, GISS Ocean, GISS sea ice, and (optionally interactive) MATRIX aerosols and chemistry (and diagnostic carbon cycle).  Depending on the physics version, the MATRIX aerosol and gas phase chemistry are calculated interactively, or are read in (from a pre-calculated atmospheric run). Interactive simulations are have short-lived climate forcers emissions prescribed. Sea ice runs on the ocean model grid. The land ice component is prescribed, but the implicit mass balance is calculated and used to feed discharge into the ocean on a region by region basis. Changing freshwater fluxes from the (prescribed) land ice component are read in based on observations (or separately calculated simulations). Some experiments will be run using an interactive fire module. The carbon cycle is run in diagnostic mode without impacting the atmospheric CO2 or ocean albedo where appropriate.",
+  "calendar": [],
+  "release_year": null,
+  "references": [
+    "giss_e3_1_ref_001"
+  ],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "GISS-E3-1"
+}

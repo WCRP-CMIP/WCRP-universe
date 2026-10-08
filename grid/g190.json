@@ -6,6 +6,5 @@
   "drs_name": "g190",
   "region": "global",
   "grid_type": "regular_latitude_longitude",
-  "n_cells": 1,
-  "grid_mapping": null
+  "n_cells": 1
 }

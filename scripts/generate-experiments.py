@@ -385,6 +385,32 @@ class Holder(BaseModel):
                     "For details, please see the full description in the ScenarioMIP description papers."
                 ),
             ),
+            ActivityProject(
+                id="firemip",
+                experiments=[],
+                references=get_references(
+                    [
+                        "https://gmd.copernicus.org/articles/19/3989/2026/",
+                    ],
+                    "firemip",
+                ),
+                description=(
+                    "Fire Model Intercomparison Project. "
+                    "In CMIP7, FireMIP expands into the fully coupled Earth system modeling framework to: "
+                    "(1) evaluate fire simulations in state-of-the-art fully coupled Earth system models (ESMs); "
+                    "(2) assess fire regime changes in the past, present, and future, "
+                    "and identify their primary natural and anthropogenic forcings "
+                    "and causal pathways within the Earth system, including the associated uncertainties; "
+                    "and (3) quantify the impacts of fires and fire changes on climate, ecosystems, "
+                    "and society across Earth system components, regions, and timescales, "
+                    "and elucidate the underlying mechanisms. "
+                    "FireMIP in CMIP7 will advance fire and fire-related modeling in fully coupled ESMs, "
+                    "and provide a quantitative, comprehensive, "
+                    "and process-based understanding of fire's role in the Earth system "
+                    "by using models that incorporate critical climate feedbacks "
+                    "and CMIP7 multi-model, multi-initial-condition, and multi-scenario ensembles."
+                ),
+            ),
         ]
 
     def add_experiment_to_activity(self, experiment: ExperimentProject) -> "Holder":
@@ -1154,6 +1180,19 @@ class Holder(BaseModel):
                 1,
             ),
             (
+                "piClim-ghg",
+                get_purturbation_description(
+                    "total well-mixed (non-ozone) greenhouse gas",
+                    "well-mixed (non-ozone) greenhouse gas concentrations",
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+                1,
+            ),
+            (
                 "piClim-4xCO2",
                 (
                     "In combination with `piClim-control`, "
@@ -1168,6 +1207,82 @@ class Holder(BaseModel):
                 ["agcm"],
                 ["aer", "chem", "bgc"],
                 1,
+                1,
+            ),
+            (
+                "piClim-4xCO2-bgc",
+                (
+                    # What this is for?
+                    # "In combination with `piClim-control`, "
+                    # "quantifies a quadrupling of atmospheric carbon dioxide's "
+                    # "(4xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels, "
+                    "but only for the biogeochemical component of the model. "
+                    "For any other model component that directly uses CO2 concentration, including radiation, "
+                    "the CO2 concentration should be set to the value used in `piClim-control`."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-4xCO2-rad",
+                (
+                    # What this is for?
+                    # "In combination with `piClim-control`, "
+                    # "quantifies a quadrupling of atmospheric carbon dioxide's "
+                    # "(4xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels, "
+                    "but only for the radiation component of the model. "
+                    "For any other model component that directly uses CO2 concentration, including the biogeochemical component, "
+                    "the CO2 concentration should be set to the value used in `piClim-control`."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-2xCO2",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies a doubling of atmospheric carbon dioxide's "
+                    "(2xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to two times `piControl` levels."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-0p5xCO2",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies a halving of atmospheric carbon dioxide's "
+                    "(0.5xCO2's) effective radiative forcing (ERF). "
+                    "Same as `piClim-control`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to half of `piControl` levels."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
                 1,
             ),
             (
@@ -1253,6 +1368,69 @@ class Holder(BaseModel):
                 1,
                 1,
             ),
+            (
+                "piClim-lu",
+                get_purturbation_description(
+                    "land-use change",
+                    "land states",
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm", "aer"],
+                ["chem", "bgc"],
+                1,
+                1,
+            ),
+            (
+                "piClim-p4K",
+                (
+                    "Baseline for effective radiative forcing (ERF) calculations "
+                    "with a warmer background state. "
+                    "Same as `piClim-control`, "
+                    "except sea surface temperatures are increased by 4K in ice-free regions "
+                    "(sea ice and SSTs in grid boxes containing sea ice remain the same as in the `piClim-control` experiment)."
+                ),
+                "aerchemmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                1,
+                1,
+            ),
+            (
+                "piClim-p4K-4xCO2",
+                (
+                    "In combination with `piClim-p4K`, `piClim-control` and `piClim-4xCO2`, "
+                    "this experiment can be used to evaluate the sensitivity of 4xCO2 radiative forcing "
+                    "to a warmer background state. "
+                    "Same as `piClim-p4K`, "
+                    "except atmospheric carbon dioxide concentrations "
+                    "are set to four times `piControl` levels."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
+            (
+                "piClim-p4K-aer",
+                (
+                    "In combination with `piClim-p4K`, `piClim-control` and `piClim-aer`, "
+                    "this experiment can be used to evaluate the sensitivity of aerosol radiative forcing "
+                    "to a warmer background state. "
+                    "Same as `piClim-control`, except anthropogenic aerosol emissions use present-day values "
+                    "(typically the last year of the `historical` simulation within the same CMIP era "
+                    "e.g. 2014 values for CMIP6, 2021 values for CMIP7)."
+                ),
+                "rfmip",
+                "Same as `piClim-control`",
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                3,
+                1,
+            ),
         ):
             univ = ExperimentUniverse(
                 drs_name=drs_name,
@@ -1268,7 +1446,7 @@ class Holder(BaseModel):
                 parent_mip_era="dont_write",
                 required_model_components=required_model_components,
                 start_timestamp=None,
-                tier=1,
+                tier=tier,
             )
 
             self.experiments_universe.append(univ)
@@ -1302,6 +1480,7 @@ class Holder(BaseModel):
             get_description_project,
             required_model_components,
             additional_allowed_model_components,
+            tier,
         ) in (
             (
                 "piClim-histaer",
@@ -1318,6 +1497,7 @@ class Holder(BaseModel):
                 ),
                 ["agcm"],
                 ["aer", "chem", "bgc"],
+                1,
             ),
             (
                 "piClim-histall",
@@ -1334,6 +1514,42 @@ class Holder(BaseModel):
                 ),
                 ["agcm"],
                 ["aer", "chem", "bgc"],
+                1,
+            ),
+            (
+                "piClim-histghg",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies transient well-mixed (non-ozone) greenhouse gas effective radiative forcing (ERF) "
+                    "due to changes in concentrations of these gases (not emissions) "
+                    "over the historical period and a future experiment. "
+                    "This complements the `piClim-*` experiments which provide a more precise "
+                    "quantification of present-day ERF for various greenhouse gas components."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` experiment",
+                ),
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                2,
+            ),
+            (
+                "piClim-histnat",
+                (
+                    "In combination with `piClim-control`, "
+                    "quantifies transient natural effective radiative forcing (ERF) "
+                    "over the historical period and a future experiment. "
+                    # "This complements the `piClim-*` experiments which provide a more precise "
+                    # "quantification of present-day ERF for various greenhouse gas components."
+                ),
+                lambda x: x.replace(
+                    "a future experiment",
+                    "the `scen7-m` experiment",
+                ),
+                ["agcm"],
+                ["aer", "chem", "bgc"],
+                2,
             ),
         ):
             univ = ExperimentUniverse(
@@ -1352,7 +1568,7 @@ class Holder(BaseModel):
                 parent_mip_era="dont_write",
                 required_model_components=required_model_components,
                 start_timestamp="1850-01-01",
-                tier=1,
+                tier=tier,
             )
 
             self.experiments_universe.append(univ)
@@ -1369,7 +1585,7 @@ class Holder(BaseModel):
                 parent_activity="cmip",
                 parent_experiment="picontrol",
                 parent_mip_era="cmip7",
-                tier=1,
+                tier=tier,
             )
             self.experiments_project.append(proj)
 
@@ -1893,20 +2109,41 @@ class Holder(BaseModel):
         return self
 
     def add_polmip_entries(self) -> "Holder":
-        acronym_descriptions = [
+        descriptions = [
             (
                 "vl-cf",
                 (
                     "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for global surface air temperature to peak at 1.5C and stabilise or slowly decline."
                 ),
                 2016,
+                2,
+                1,
+                True,
+            ),
+            (
+                "SSP2-com-CMIP7",
+                (
+                    "Policy-driven pathway aligned with China's carbon neutrality pledge, "
+                    "peaking carbon emissions before 2030 and achieving carbon neutrality before 2060. "
+                    "It is developed within the SSP2 socioeconomic framework "
+                    "and consistent with global Nationally Determined Contributions (NDCs) data."
+                ),
+                2022,
+                1,
+                1,
+                False,
             ),
         ]
 
-        for acronym, description_base, branch_year in acronym_descriptions:
-            drs_name = acronym
+        for (
+            drs_name,
+            description_base,
+            branch_year,
+            tier_conc_driven,
+            tier_emms_driven,
+            has_extension,
+        ) in descriptions:
             drs_name_esm_scenario = self.get_scenario_esm_drs_name(drs_name)
-            tier_conc_driven = 2
 
             description = (
                 f"{description_base} Run with prescribed carbon dioxide concentrations "
@@ -1936,27 +2173,220 @@ class Holder(BaseModel):
             self.experiments_project.append(proj_base)
             self.add_experiment_to_activity(proj_base)
 
-            univ_ext = self.get_scenario_extension(
-                univ_base, tier=tier_conc_driven, min_number_yrs_per_sim=100.0
-            )
-            proj_ext = self.get_scenario_project(univ_ext)
-            self.experiments_universe.append(univ_ext)
-            self.experiments_project.append(proj_ext)
-            self.add_experiment_to_activity(proj_ext)
+            if has_extension:
+                univ_ext = self.get_scenario_extension(
+                    univ_base, tier=tier_conc_driven, min_number_yrs_per_sim=100.0
+                )
+                proj_ext = self.get_scenario_project(univ_ext)
+                self.experiments_universe.append(univ_ext)
+                self.experiments_project.append(proj_ext)
+                self.add_experiment_to_activity(proj_ext)
 
-            univ_esm = self.get_scenario_esm(univ_base, tier=1)
+            univ_esm = self.get_scenario_esm(univ_base, tier=tier_emms_driven)
             proj_esm = self.get_scenario_project(univ_esm)
             self.experiments_universe.append(univ_esm)
             self.experiments_project.append(proj_esm)
             self.add_experiment_to_activity(proj_esm)
 
-            univ_esm_ext = self.get_scenario_extension(
-                univ_esm, min_number_yrs_per_sim=100.0
+            if has_extension:
+                univ_esm_ext = self.get_scenario_extension(
+                    univ_esm, min_number_yrs_per_sim=100.0
+                )
+                proj_esm_ext = self.get_scenario_project(univ_esm_ext)
+                self.experiments_universe.append(univ_esm_ext)
+                self.experiments_project.append(proj_esm_ext)
+                self.add_experiment_to_activity(proj_esm_ext)
+
+        return self
+
+    def add_firemip_entries(self) -> "Holder":
+        # # Requested not to have lists, see https://github.com/WCRP-CMIP/WCRP-universe/pull/399#discussion_r4203053542
+        # aerosol_fire_emissions = ["BC", "OC", "SO2", "CO", "NOx"]
+        # full_fire_emissions = [*aerosol_fire_emissions, "CO2", "CH4", "N2O"]
+
+        hist_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "historical"
+        ]
+        if len(hist_experiment_project_l) != 1:
+            raise AssertionError(hist_experiment_project_l)
+
+        hist_experiment_project = hist_experiment_project_l[0]
+
+        scen7_experiment_universe_l = [
+            v for v in self.experiments_universe if v.drs_name == "scen7-h"
+        ]
+        if len(scen7_experiment_universe_l) != 1:
+            raise AssertionError(scen7_experiment_universe_l)
+
+        scen7_experiment_universe = scen7_experiment_universe_l[0]
+
+        scen7_experiment_project_l = [
+            v for v in self.experiments_project if v.id == "scen7-h"
+        ]
+        if len(scen7_experiment_project_l) != 1:
+            raise AssertionError(scen7_experiment_project_l)
+
+        scen7_experiment_project = scen7_experiment_project_l[0]
+
+        for (
+            drs_name,
+            description,
+            branch_information,
+            start_timestamp,
+            end_timestamp,
+            parent_activity,
+            parent_experiment,
+            tier,
+        ) in (
+            # TODO: reduce duplication in descriptions
+            (
+                "hist-nofire",
+                (
+                    "Historical coupled simulations with fires set to zero. "
+                    "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
+                    "both burned area in the model code and prescribed fire emissions in the forcing dataset "
+                    "should be set to zero. "
+                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
+                    "We encourage modeling groups to perform `piControl-nofire` to generate the initial state."
+                ),
+                "Branch from `piControl-nofire` or (as a fallback) `piControl` at a time of your choosing",
+                hist_experiment_project.start_timestamp,
+                hist_experiment_project.end_timestamp,
+                None,  # Multiple options, which is not supported
+                None,  # Multiple options, which is not supported
+                1,
+            ),
+            (
+                "piControl-nofire",
+                (
+                    "Pre-industrial control simulatio with no fire emissions. "
+                    "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
+                    "both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset "
+                    "should be set to zero. "
+                    "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero."
+                ),
+                "Branch from `piControl-spinup` at a time of your choosing",
+                None,
+                None,
+                "cmip",
+                "picontrol-spinup",
+                2,
+            ),
+            (
+                "hist-nofireaer",
+                (
+                    "Historical coupled simulations with fire aerosol emissions set to zero. "
+                    "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
+                    "prescribed fire aerosol emissions in the forcing dataset should be set to zero."
+                ),
+                "Branch from `historical` no later than 1920",
+                None,  # undefined so not written
+                hist_experiment_project.end_timestamp,
+                "cmip",
+                "historical",
+                2,
+            ),
+            (
+                "scen7-h-ca2010fire",
+                (
+                    "The same as `scen7-h`, but with burned area and fire emissions fixed at their 2001-2020 averages. "
+                    "Burned area should be prescribed as an input field, using each model's own 2001-2020 average derived from its historical simulations. "
+                    "For models without interactive fire emission modules, all fire emissions (known as open biomass burning emissions in the forcings) "
+                    "should be replaced with the corresponding 2001-2020 average."
+                ),
+                scen7_experiment_universe.branch_information,
+                scen7_experiment_project.start_timestamp,
+                "2060-12-31",
+                scen7_experiment_universe.parent_activity,
+                scen7_experiment_universe.parent_experiment,
+                2,
+            ),
+            (
+                "scen7-h-ca2010fireaer",
+                (
+                    "The same as `scen7-h`, but with fire aerosol emissions fixed at their 2001–2020 averages. "
+                    "This does not apply to models that have interactive fire-emissions."
+                ),
+                scen7_experiment_universe.branch_information,
+                scen7_experiment_project.start_timestamp,
+                "2060-12-31",
+                scen7_experiment_universe.parent_activity,
+                scen7_experiment_universe.parent_experiment,
+                2,
+            ),
+        ):
+            if start_timestamp is None or end_timestamp is None:
+                min_number_yrs_per_sim = None
+
+            else:
+                min_number_yrs_per_sim = (
+                    datetime.strptime(end_timestamp, "%Y-%m-%d").year
+                    - datetime.strptime(start_timestamp, "%Y-%m-%d").year
+                    + 1
+                )
+
+            univ = ExperimentUniverse(
+                drs_name=drs_name,
+                description=description,
+                activity="firemip",
+                additional_allowed_model_components=["aer", "chem", "bgc"],
+                branch_information=branch_information,
+                # Defined in project
+                end_timestamp="dont_write",
+                min_ensemble_size=3,
+                # Defined in project
+                min_number_yrs_per_sim="dont_write",
+                parent_activity=parent_activity,
+                parent_experiment=parent_experiment,
+                # Defined in project
+                parent_mip_era="dont_write",
+                required_model_components=["aogcm"],
+                start_timestamp=start_timestamp,
+                tier=tier,
             )
-            proj_esm_ext = self.get_scenario_project(univ_esm_ext)
-            self.experiments_universe.append(univ_esm_ext)
-            self.experiments_project.append(proj_esm_ext)
-            self.add_experiment_to_activity(proj_esm_ext)
+            proj = ExperimentProject(
+                id=univ.drs_name.lower(),
+                activity=univ.activity,
+                start_timestamp=start_timestamp,
+                end_timestamp=end_timestamp,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_mip_era="cmip7" if parent_activity else None,
+                tier=univ.tier,
+            )
+            self.experiments_universe.append(univ)
+            self.experiments_project.append(proj)
+            self.add_experiment_to_activity(proj)
+
+            univ_esm = univ.model_copy()
+            univ_esm.drs_name = f"esm-{univ.drs_name}"
+            univ_esm.description = (
+                f"{univ.description} "
+                "Here run with prescribed carbon dioxide emissions, "
+                "rather than prescribed carbon dioxide concentrations "
+                f"(for the equivalent prescribed carbon dioxide concentrations experiment, see `{univ.drs_name}`)."
+            )
+            univ_esm.required_model_components = sorted(
+                list({*univ.required_model_components, "bgc"})
+            )
+            univ_esm.additional_allowed_model_components = [
+                v for v in univ.additional_allowed_model_components if v != "bgc"
+            ]
+            univ_esm.branch_information.replace("piControl", "esm-piControl")
+            univ_esm.parent_experiment = (
+                f"esm-{univ.parent_experiment}" if univ.parent_experiment else None
+            )
+            proj_esm = ExperimentProject(
+                id=univ_esm.drs_name.lower(),
+                activity=univ_esm.activity,
+                start_timestamp=start_timestamp,
+                end_timestamp=end_timestamp,
+                min_number_yrs_per_sim=min_number_yrs_per_sim,
+                parent_mip_era="cmip7" if univ_esm.parent_activity else None,
+                tier=univ_esm.tier,
+            )
+            self.experiments_universe.append(univ_esm)
+            self.experiments_project.append(proj_esm)
+            self.add_experiment_to_activity(proj_esm)
 
         return self
 
@@ -2108,6 +2538,7 @@ def main():
     holder.add_piclim_entries()
     holder.add_scenario_entries()
     holder.add_polmip_entries()
+    holder.add_firemip_entries()
     holder.add_aerchemmip_entries()
     holder.add_geomip_entries()
 

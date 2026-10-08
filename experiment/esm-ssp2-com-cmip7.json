@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-ssp2-com-cmip7",
+    "type": "experiment",
+    "description": "Policy-driven pathway aligned with China's carbon neutrality pledge, peaking carbon emissions before 2030 and achieving carbon neutrality before 2060. It is developed within the SSP2 socioeconomic framework and consistent with global Nationally Determined Contributions (NDCs) data. Run with prescribed carbon dioxide emissions (for prescribed carbon dioxide concentrations, see `SSP2-com-CMIP7`).",
+    "drs_name": "esm-SSP2-com-CMIP7",
+    "start_timestamp": "2022-01-01",
+    "end_timestamp": "2100-12-31",
+    "min_number_yrs_per_sim": 79.0,
+    "activity": "polmip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from `esm-hist` at 2022-01-01.",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "esm-hist",
+    "parent_mip_era": "cmip7",
+    "required_model_components": [
+        "aogcm",
+        "bgc"
+    ],
+    "tier": 1
+}

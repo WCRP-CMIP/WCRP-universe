@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g257",
+  "type": "grid",
+  "description": "Horizontal grid cell with a stretched grid type.",
+  "drs_name": "g257",
+  "region": "global",
+  "grid_type": "stretched",
+  "n_cells": 14400,
+  "grid_mapping": "latitude_longitude"
+}

@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "river",
+    "type": "realm",
+    "description": "Dataset which applies (or mostly applies) to river routing and river discharge components of the Earth system.",
+    "drs_name": "river"
+}

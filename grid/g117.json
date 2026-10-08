@@ -6,6 +6,5 @@
   "drs_name": "g117",
   "region": "global",
   "grid_type": "hierarchical_discrete_global_grid",
-  "n_cells": null,
   "grid_mapping": "latitude_longitude"
 }

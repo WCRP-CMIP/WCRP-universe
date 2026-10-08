@@ -19,5 +19,7 @@
     "history": "registered",
     "bn_status": "accepted",
     "cf_sn_status": "approved",
-    "cell_methods": "area: sum where sea time: mean"
+    "cell_methods": [
+        "area: sum where sea time: mean"
+    ]
 }

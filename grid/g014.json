@@ -4,8 +4,5 @@
   "type": "grid",
   "description": "Horizontal grid with multiple ocean passage representations.",
   "drs_name": "g014",
-  "region": "global",
-  "grid_type": "discrete_lines",
-  "n_cells": null,
-  "grid_mapping": null
+  "region": "global"
 }
