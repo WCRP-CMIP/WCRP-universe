@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a plane projection grid type and 5 x 5 km resolution.",
   "drs_name": "g185",
-  "region": "greenland"
+  "region": "greenland",
+  "grid_type": "plane_projection",
+  "n_cells": 165005,
+  "grid_mapping": "polar_stereographic"
 }

@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a regular latitude longitude grid type and 360 x 90 degree resolution.",
   "drs_name": "g012",
-  "region": "southern-hemisphere"
+  "region": "southern-hemisphere",
+  "grid_type": "regular_latitude_longitude",
+  "n_cells": 1,
+  "grid_mapping": "latitude_longitude"
 }

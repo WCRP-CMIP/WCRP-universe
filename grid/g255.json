@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a cubed sphere grid type.",
   "drs_name": "g255",
-  "region": "global"
+  "region": "global",
+  "grid_type": "cubed_sphere",
+  "n_cells": 55296,
+  "grid_mapping": "latitude_longitude"
 }

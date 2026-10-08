@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a displaced pole grid type and 1.0 x 0.5 degree resolution.",
   "drs_name": "g211",
-  "region": "global"
+  "region": "global",
+  "grid_type": "displaced_pole",
+  "n_cells": 114480,
+  "grid_mapping": "rotated_latitude_longitude"
 }

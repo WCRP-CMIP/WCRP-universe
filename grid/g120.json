@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a spectral gaussian grid type and 2.8 x 2.8 degree resolution.",
   "drs_name": "g120",
-  "region": "global"
+  "region": "global",
+  "grid_type": "spectral_gaussian",
+  "n_cells": 8192,
+  "grid_mapping": "latitude_longitude"
 }

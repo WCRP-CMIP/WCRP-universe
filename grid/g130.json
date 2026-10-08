@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a unstructured triangular grid type.",
   "drs_name": "g130",
-  "region": "global"
+  "region": "global",
+  "grid_type": "unstructured_triangular",
+  "n_cells": 3146761,
+  "grid_mapping": "latitude_longitude"
 }

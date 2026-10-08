@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Ocean tripolar grid with 105704 cells.",
   "drs_name": "g102",
-  "region": "global"
+  "region": "global",
+  "grid_type": "tripolar",
+  "n_cells": 105704,
+  "grid_mapping": "latitude_longitude"
 }
