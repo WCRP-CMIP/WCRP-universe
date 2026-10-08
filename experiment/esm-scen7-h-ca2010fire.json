@@ -13,7 +13,7 @@
     "branch_information": "Branch from `historical` at 2022-01-01.",
     "min_ensemble_size": 3,
     "parent_activity": "cmip",
-    "parent_experiment": "esm-historical",
+    "parent_experiment": "esm-hist",
     "required_model_components": [
         "aogcm",
         "bgc"
