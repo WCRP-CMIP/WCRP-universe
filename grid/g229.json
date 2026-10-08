@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a regular lat lon grid type and 4 x 4 km resolution.",
   "drs_name": "g229",
-  "region": "greenland"
+  "region": "greenland",
+  "grid_type": "regular_latitude_longitude",
+  "n_cells": 303541,
+  "grid_mapping": "polar_stereographic"
 }

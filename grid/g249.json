@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a cubic octahedral spectral reduced gaussian grid type and 67 x 70 km resolution.",
   "drs_name": "g249",
-  "region": "global"
+  "region": "global",
+  "grid_type": "cubic_octahedral_spectral_reduced_gaussian",
+  "n_cells": 135168,
+  "grid_mapping": "latitude_longitude"
 }

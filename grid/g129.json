@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a regular latitude longitude grid type and 0.27778 x 0.28125 degree resolution.",
   "drs_name": "g129",
-  "region": "global"
+  "region": "global",
+  "grid_type": "regular_latitude_longitude",
+  "n_cells": 829440,
+  "grid_mapping": "latitude_longitude"
 }

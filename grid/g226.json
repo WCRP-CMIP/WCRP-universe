@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a tripolar grid type and 0.1 x 0.1 degree resolution.",
   "drs_name": "g226",
-  "region": "global"
+  "region": "global",
+  "grid_type": "tripolar",
+  "n_cells": 8287200,
+  "grid_mapping": "latitude_longitude"
 }

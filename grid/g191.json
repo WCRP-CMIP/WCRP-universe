@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a plane projection grid type and 8 x 8 km resolution.",
   "drs_name": "g191",
-  "region": "antarctica"
+  "region": "antarctica",
+  "grid_type": "plane_projection",
+  "n_cells": 577600,
+  "grid_mapping": "polar_stereographic"
 }

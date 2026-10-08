@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a cubed sphere grid type and 208 x 208 km resolution.",
   "drs_name": "g234",
-  "region": "global"
+  "region": "global",
+  "grid_type": "cubed_sphere",
+  "n_cells": 13824,
+  "grid_mapping": "latitude_longitude"
 }

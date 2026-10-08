@@ -4,5 +4,8 @@
   "type": "grid",
   "description": "Horizontal grid cell with a spectral reduced gaussian grid type.",
   "drs_name": "g176",
-  "region": "global"
+  "region": "global",
+  "grid_type": "spectral_reduced_gaussian",
+  "n_cells": 42440,
+  "grid_mapping": "latitude_longitude"
 }
