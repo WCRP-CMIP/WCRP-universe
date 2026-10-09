@@ -7,27 +7,39 @@ import json
 
 def main():
     for id, drs_name, description, cf_standard_region, iso_region in (
-        ("global", "glb", "The entire globe i.e. earth.", "global", None),
-        ("antarctica", "ata", "Antarcica.", "antarctica", "ata"),
-        ("greenland", "grl", "Greenland.", "greenland", "grl"),
+        (
+            "global",
+            "glb",
+            "The geographical region of the whole of the Earth’s surface, as defined by the CF conventions.",
+            "global",
+            None,
+        ),
+        ("antarctica", "ata", "Antarctica.", "antarctica", "ata"),
+        (
+            "greenland",
+            "grl",
+            "The geographical region of Greenland, as defined by the CF conventions.",
+            "greenland",
+            "grl",
+        ),
         (
             "30s-90s",
             "30S-90S",
-            "The area of the globe south of the latitude 30S.",
+            "The geographical region of the Earth’s surface between 30 and 90 degrees south.",
             None,
             None,
         ),
         (
             "northern-hemisphere",
             "nh",
-            "The northern hemisphere.",
+            "The Northern Hemisphere.",
             "northern_hemisphere",
             None,
         ),
         (
             "southern-hemisphere",
             "sh",
-            "The southern hemisphere.",
+            "The Southern Hemisphere.",
             "southern_hemisphere",
             None,
         ),
@@ -44,7 +56,7 @@ def main():
 
         out_file = f"region/{id}.json"
         with open(out_file, "w") as fh:
-            json.dump(content, fh, indent=4)
+            json.dump(content, fh, indent=4, ensure_ascii=False)
             fh.write("\n")
 
         print(f"Wrote {out_file}")

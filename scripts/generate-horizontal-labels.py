@@ -17,8 +17,9 @@ def main():
         (
             "hy",
             (
-                "Data on y (often just lat) grid. "
-                "This is usually zonal-mean or zonal-sum or some other zonal-aggregate data."
+                "Data that is a function of the y horizontal dimension, but not x "
+                "(i.e., often just a function of latitude). "
+                "This is usually a zonal-mean or zonal-sum or some other zonal-aggregate data."
             ),
         ),
         (
@@ -28,24 +29,22 @@ def main():
         (
             "hyb",
             (
-                "Data on y (often just lat) grids in specific basins. "
-                "This is usually zonal-mean or zonal-sum or some other zonal-aggregate data."
+                "Data that is a function of the y horizontal dimension "
+                "(i.e., often just a function of latitude), "
+                "representing a zonal-mean or zonal-sum or some other aggregate across the x dimension "
+                "for individual ocean basins (e.g., a zonal mean across each of the ocean basins)."
             ),
         ),
         (
             "ht",
             (
                 "Data along a transect. "
-                "This is usually some aggregate (sum, mean etc.) along the transect(s)."
+                "This is some aggregate (sum, mean etc.) along the transect(s)."
             ),
         ),
         (
             "hm",
-            (
-                "No other horizontal label. "
-                "This usually means the data is a horizontal mean "
-                "(therefore has no horizontal dimensions)."
-            ),
+            ("Data reported as a mean over some horizontal area."),
         ),
     ):
         id = drs_name.lower()

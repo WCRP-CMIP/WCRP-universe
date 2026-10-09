@@ -10,7 +10,7 @@
         "aer",
         "chem"
     ],
-    "branch_information": "Branch from `historical` no later than 1920",
+    "branch_information": "Branch from `esm-hist` no later than 1920",
     "min_ensemble_size": 3,
     "parent_activity": "cmip",
     "parent_experiment": "esm-hist",

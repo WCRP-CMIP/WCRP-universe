@@ -14,28 +14,28 @@ def main():
             "tmax",
             (
                 "Data is the maximum within each time period "
-                "(i.e. interval defined by the time bounds)."
+                "(i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
             "tmin",
             (
                 "Data is the minimum within each time period "
-                "(i.e. interval defined by the time bounds)."
+                "(i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
             "tsum",
             (
                 "Data is the sum over each time period "
-                "(i.e. interval defined by the time bounds)."
+                "(i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
             "tavg",
             (
-                "Data is the average over each time period "
-                "(i.e. interval defined by the time bounds)."
+                "Data is averaged over each time period "
+                "(i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
@@ -52,7 +52,7 @@ def main():
                 "Data is a climatology. "
                 "In this case, it is a monthly climatology "
                 "i.e. each set of time bounds represents a month "
-                "and the values show the monthy-by-month variation "
+                "and the twelve values show the month-by-month variation "
                 "(derived by averaging over a number of years)."
             ),
         ),
@@ -69,8 +69,8 @@ def main():
         (
             "tmaxavg",
             (
-                "Data is the mean of daily maximum over each time period "
-                "(i.e. interval defined by the time bounds)."
+                "Data is the mean of daily maxima over each time period "
+                "(i.e. each reported interval defined by its time bounds). "
                 "For example, the data may be reported monthly, "
                 "with each value being the mean of the daily maximum temperature "
                 "for each day in the month."
@@ -79,8 +79,8 @@ def main():
         (
             "tminavg",
             (
-                "Data is the mean of daily minimum over each time period "
-                "(i.e. interval defined by the time bounds)."
+                "Data is the mean of daily minima over each time period "
+                "(i.e. each reported interval defined by its time bounds). "
                 "For example, the data may be reported monthly, "
                 "with each value being the mean of the daily minimum temperature "
                 "for each day in the month."

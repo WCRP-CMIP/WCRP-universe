@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "esm-picontrol-nofire",
     "type": "experiment",
-    "description": "Pre-industrial control simulatio with no fire emissions. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset should be set to zero. In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. Here run with prescribed carbon dioxide emissions, rather than prescribed carbon dioxide concentrations (for the equivalent prescribed carbon dioxide concentrations experiment, see `piControl-nofire`).",
+    "description": "Pre-industrial control simulation with no fire emissions. In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset should be set to zero. In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. Here run with prescribed carbon dioxide emissions, rather than prescribed carbon dioxide concentrations (for the equivalent prescribed carbon dioxide concentrations experiment, see `piControl-nofire`).",
     "drs_name": "esm-piControl-nofire",
     "start_timestamp": null,
     "activity": "firemip",
@@ -10,7 +10,7 @@
         "aer",
         "chem"
     ],
-    "branch_information": "Branch from `piControl-spinup` at a time of your choosing",
+    "branch_information": "Branch from `esm-piControl-spinup` at a time of your choosing",
     "min_ensemble_size": 3,
     "parent_activity": "cmip",
     "parent_experiment": "esm-picontrol-spinup",

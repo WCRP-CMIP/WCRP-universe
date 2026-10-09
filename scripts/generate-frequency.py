@@ -47,7 +47,7 @@ def main():
         ),
         (
             "6hr",
-            "Three hourly samples.",
+            "Six hourly samples.",
             6.0,
             "hour",
         ),

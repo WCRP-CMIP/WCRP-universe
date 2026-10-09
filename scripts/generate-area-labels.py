@@ -13,7 +13,7 @@ def main():
         (
             "air",
             (
-                "Data is only included where the reporting point is in air "
+                "Data come solely from regions occupied by air "
                 "(this isn't always the case e.g. if a variable is reported at sea level pressure "
                 "but there is a mountain then the surface would not be air)."
             ),
@@ -21,50 +21,54 @@ def main():
         ),
         (
             "cl",
-            ("Data is only included where the reporting point is in cloud."),
+            (
+                "Data come solely from the portion of the atmosphere "
+                "or the portion of an atmospheric column occupied by cloud."
+            ),
             "cloud",
         ),
         (
             "ccl",
-            ("Data is only included where the reporting point is in convective cloud."),
+            (
+                "Data come solely from the portion of the atmosphere "
+                "or the portion of an atmospheric column occupied by convective cloud."
+            ),
             "convective_cloud",
         ),
         (
             "crp",
             (
-                "Data is only included where the reporting point is in an area of crops. "
-                "Crops is loosely defined and model dependent."
+                "Data come solely from land areas covered by crops. "
+                "'Crops' is loosely defined and model dependent."
             ),
             "crops",
         ),
         (
             "fis",
             (
-                "Data is only included where the reporting point is in an area of floating ice shelf. "
-                "Ice shelves are the component of ice sheets that flow over the ocean."
+                "Data come solely from areas of floating ice shelf. "
+                "'Ice shelves' are the component of ice sheets that flow over the ocean."
             ),
             "floating_ice_shelf",
         ),
         (
             "gis",
             (
-                "Data is only included where the reporting point is in an area of grounded ice sheet. "
+                "Data come solely from areas of grounded ice sheet. "
                 "Grounded ice sheets rest over bedrock, excluding ice-caps, glaciers and floating ice shelves."
             ),
             "grounded_ice_sheet",
         ),
         (
             "ifs",
-            (
-                "Data is only included where the reporting point is in an area of sea without ice."
-            ),
+            ("Data come solely from sea areas that are free of ice."),
             "ice_free_sea",
         ),
         (
             "is",
             (
-                "Data is only included where the reporting point is in an area where ice sheets are present. "
-                "It includes both grounded ice sheets resting over bedrock and any ice shelves flowing over the ocean "
+                "Data come solely from areas of ice sheets. "
+                "'Ice sheets' include both grounded ice sheets resting on bedrock and any ice shelves flowing over the ocean "
                 "that are attached to grounded ice sheets. "
                 "It excludes ice-caps and glaciers and any floating ice shelves and ice tongues "
                 "attached to them."
@@ -73,13 +77,18 @@ def main():
         ),
         (
             "lnd",
-            ("Data is only included where the reporting point is in on land."),
+            (
+                "Data come solely from land areas.  "
+                "Every location on earth is classified as either land or sea, "
+                "but further area type labels also apply to these primary types "
+                "(e.g., crops or land ice apply to portions of the land area)."
+            ),
             "land",
         ),
         (
             "li",
             (
-                "Data is only included where the reporting point is in an area where land ice is present. "
+                "Data come solely from areas of land ice. "
                 "'Land ice' means glaciers, ice-caps, grounded ice sheets resting on bedrock and floating ice-shelves."
             ),
             "land_ice",
@@ -87,7 +96,7 @@ def main():
         (
             "ng",
             (
-                "Data is only included where the reporting point is in an area where natural grasses are present. "
+                "Data come solely from land areas covered by natural grasses. "
                 "'Natural grasses' means grasses growing in areas of low productivity, "
                 "often situated on rough or uneven ground. This can include rocky areas, briars and heathland."
             ),
@@ -96,7 +105,7 @@ def main():
         (
             "pst",
             (
-                "Data is only included where the reporting point is in an area of pasture. "
+                "Data come solely from land areas covered by pasture. "
                 "Pastures are assumed to be anthropogenic in origin. "
                 "They include anthropogenically managed pastureland and rangeland."
             ),
@@ -105,35 +114,34 @@ def main():
         (
             "sea",
             (
-                "Data is only included where there is sea (both ice-free sea and areas with sea ice)"
+                "Data come solely from areas covered by sea.  "
+                "Every location on earth is classified as either land or sea, "
+                "but further area type labels also apply to these primary types "
+                "(e.g., sea ice or floating ice shelf)."
             ),
             "sea",
         ),
         (
             "si",
-            (
-                "Data is only included where the reporting point is in an area where sea ice is present."
-            ),
+            ("Data come solely from areas of sea ice."),
             "sea_ice",
         ),
         (
             "simp",
-            (
-                "Data is only included where the reporting point is in an area where melt pond on top of sea ice is present."
-            ),
+            ("Data come solely from areas where melt pond is present atop sea ice."),
             "sea_ice_melt_pond",
         ),
         (
             "sir",
-            (
-                "Data is only included where the reporting point is in an area where 'ridged' sea ice is present."
-            ),
+            ("Data come solely from areas where sea ice is 'ridged'."),
             "sea_ice_ridges",
         ),
         (
             "multi",
             (
-                "Data is reported on multiple areas. These are indicated by a 'sector' dimension."
+                "Data come from several different area types "
+                "with data from each area type stored separately in the variable's array "
+                "as identified by its 'sector' dimension. "
                 "This area type is typically used for including multiple land-use or vegetation area types in a single file."
             ),
             None,
@@ -141,34 +149,37 @@ def main():
         (
             "shb",
             (
-                "Data is only included where the reporting point is in an area of shrubs. "
+                "Data come solely from land areas covered by shrubs. "
                 "Shrubs is loosely defined and model dependent."
             ),
             "shrubs",
         ),
         (
             "sn",
-            ("Data is only included where the reporting point is in an area of snow."),
+            ("Data come solely from areas where the surface is covered by snow."),
             "snow",
         ),
         (
             "scl",
-            ("Data is only included where the reporting point is in stratiform cloud."),
+            (
+                "Data come solely from the portion of the atmosphere "
+                "or the portion of an atmospheric column occupied by stratiform cloud."
+            ),
             "stratiform_cloud",
         ),
         (
             "tree",
             (
-                "Data is only included where the reporting point is in an area of trees. "
+                "Data come solely from land areas covered by trees. "
                 "All trees are in the C3 plant functional type. "
-                "Trees is loosely defined and model dependent."
+                "'Trees' is loosely defined and model dependent."
             ),
             "trees",
         ),
         (
             "ufs",
             (
-                "Data is only included where the reporting point is in an area of unfrozen soil. "
+                "Data come solely from areas of unfrozen soil. "
                 "Unfrozen soil means that the soil at the surface is unfrozen. "
                 "Frozen soil may be present at lower levels."
             ),
@@ -176,16 +187,14 @@ def main():
         ),
         (
             "veg",
-            (
-                "Data is only included where the reporting point is in an area of vegetation."
-            ),
+            ("Data come solely from land areas covered by vegetation."),
             "vegetation",
         ),
         (
             "wl",
             (
-                "Data is only included where the reporting point is in an area of wetland. "
-                "Wetlands are areas where water covers the soil, "
+                "Data come solely from wetland areas. "
+                "Wetlands are land areas where water covers the soil, "
                 "or is present either at or near the surface of the soil all year "
                 "or for varying periods of time during the year, including during the growing season."
             ),
@@ -193,12 +202,10 @@ def main():
         ),
         (
             "lsi",
-            (
-                "Data is only included where the reporting point is in an area of land or sea ice."
-            ),
+            ("Data come solely from either areas of land or areas of sea ice."),
             None,
         ),
-        ("u", ("Unmasked i.e. all areas are included/sampled"), None),
+        ("u", ("Unmasked; all areas of the Earth are included."), None),
     ):
         id = drs_name.lower()
         content = {

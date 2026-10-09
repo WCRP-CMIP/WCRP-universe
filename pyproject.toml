@@ -13,7 +13,7 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "icecream>=2.1.7",
     "devtools>=0.12.2",
-    "esgvoc",
+    "esgvoc @ git+https://github.com/ESGF/esgf-vocab.git@integration",
 ]
 readme = "README.md"
 requires-python = ">= 3.10"
@@ -21,10 +21,6 @@ requires-python = ">= 3.10"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.rye]
-managed = true
-dev-dependencies = []
 
 [tool.hatch.metadata]
 allow-direct-references = true
@@ -43,5 +39,3 @@ dev = [
     "jupyter-console>=6.6.3",
     "pyairtable>=3.1.1",
 ]
-[tool.uv.sources]
-esgvoc = { git = "https://github.com/ESGF/esgf-vocab.git", branch = "integration" }

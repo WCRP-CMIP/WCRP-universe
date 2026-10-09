@@ -151,6 +151,31 @@ Open your PR against the **`esgvoc_dev`** branch (not `main`). This allows:
 
 Once approved and merged into `esgvoc_dev`, changes will be promoted to `main` after a validation cycle.
 
+## Generation scripts
+
+Some terms are written by the scripts in `scripts/` rather than by hand
+(e.g. `scripts/generate-frequency.py` writes the terms in `frequency/`).
+If you change terms that a script writes, update the script too,
+otherwise your change will be reverted the next time the script is run.
+
+The scripts only need Python (>= 3.11) and its standard library,
+no extra packages.
+Run them from the root of the repository, e.g.
+
+```bash
+python scripts/generate-frequency.py
+```
+
+Scripts named `generate-cmip7-*` also write to the
+[CMIP7 CVs](https://github.com/WCRP-CMIP/CMIP7-CVs),
+which they expect to be cloned next to this repository (i.e. at `../CMIP7-CVs`).
+`scripts/generate-cmip7-experiments.py` also needs internet access,
+because it looks up the citations for each activity's references from their DOIs.
+
+The code in `_src/` and `_tests/` does need extra packages.
+Pinned versions are in `requirements.txt`
+(the comments at the top of that file explain how to install and update them).
+
 ## Versioning
 
 Version information is tracked in `esgvoc_manifest.yaml`:
