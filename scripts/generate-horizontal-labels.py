@@ -17,9 +17,8 @@ def main():
         (
             "hy",
             (
-                "Data that is a function of the y horizontal dimension, but not x "
-                "(i.e., often just a function of latitude). "
-                "This is usually a zonal-mean or zonal-sum or some other zonal-aggregate data."
+                "Data that is a function of the y horizontal dimension, but not x (i.e., often just a function of "
+                "latitude). This is usually a zonal-mean or zonal-sum or some other zonal-aggregate data."
             ),
         ),
         (
@@ -29,17 +28,15 @@ def main():
         (
             "hyb",
             (
-                "Data that is a function of the y horizontal dimension "
-                "(i.e., often just a function of latitude), "
-                "representing a zonal-mean or zonal-sum or some other aggregate across the x dimension "
-                "for individual ocean basins (e.g., a zonal mean across each of the ocean basins)."
+                "Data that is a function of the y horizontal dimension (i.e., often just a function of latitude), "
+                "representing a zonal-mean or zonal-sum or some other aggregate across the x dimension for individual "
+                "ocean basins (e.g., a zonal mean across each of the ocean basins)."
             ),
         ),
         (
             "ht",
             (
-                "Data along a transect. "
-                "This is some aggregate (sum, mean etc.) along the transect(s)."
+                "Data along a transect. This is some aggregate (sum, mean etc.) along the transect(s)."
             ),
         ),
         (

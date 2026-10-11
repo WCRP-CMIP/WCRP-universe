@@ -150,8 +150,7 @@ ACTIVITIES: dict[str, Activity] = {
                 # If you were doing this for CMIP6, you would write DECK and historical
                 # as historical was separate from the DECK in CMIP6, but isn't in CMIP7,
                 # see https://github.com/WCRP-CMIP/CMIP7-CVs/issues/327
-                "CMIP core common experiments "
-                "i.e. the DECK (Diagnostic, Evaluation and Characterization of Klima)."
+                "CMIP core common experiments i.e. the DECK (Diagnostic, Evaluation and Characterization of Klima)."
             ),
         ),
         Activity(
@@ -200,40 +199,35 @@ ACTIVITIES: dict[str, Activity] = {
                 "https://doi.org/10.5281/zenodo.21487424",
             ],
             description=(
-                "Policy-Aligned Model Intercomparison Project (PolMIP). "
-                "PolMIP is designed as a complementary effort to existing MIPs. "
-                "While ScenarioMIP explores the breadth of future forcing levels under idealized assumptions, "
-                "PolMIP focuses on the depth of policy-driven pathways, "
-                "offering higher fidelity for regions where specific mitigation strategies and timelines are defined. "
-                "By providing a coordinated infrastructure for policy-driven scenario simulations, "
-                "PolMIP aims to deliver actionable science for national climate assessments, "
-                "enhance the policy relevance of CMIP, "
-                "and foster closer collaboration between the climate modeling community and policymakers. "
-                "Ultimately, PolMIP seeks to ensure that the next generation of climate projections is not only scientifically robust "
-                "but also deeply rooted in the real-world decisions shaping our collective future. "
-                "The project has completed phase 1: demonstration and proof of concept, "
-                "starting from the SSP2-com scenario that was developed by Chinese scientists "
-                "that aligns with China's carbon neutrality pledge "
-                "(peaking carbon emissions before 2030 and achieving carbon neutrality before 2060) "
-                "within the SSP2 socioeconomic framework and the NDC data of countries worldwide. "
-                "The next phase will expand the framework to include policy-aligned scenarios from other nations and regions, "
-                "creating a multi-country ensemble "
-                "that enables consistent cross-comparison of national climate action strategies under a unified protocol."
+                "Policy-Aligned Model Intercomparison Project (PolMIP). PolMIP is designed as a complementary effort "
+                "to existing MIPs. While ScenarioMIP explores the breadth of future forcing levels under idealized "
+                "assumptions, PolMIP focuses on the depth of policy-driven pathways, offering higher fidelity for "
+                "regions where specific mitigation strategies and timelines are defined. By providing a coordinated "
+                "infrastructure for policy-driven scenario simulations, PolMIP aims to deliver actionable science for "
+                "national climate assessments, enhance the policy relevance of CMIP, and foster closer collaboration "
+                "between the climate modeling community and policymakers. Ultimately, PolMIP seeks to ensure that the "
+                "next generation of climate projections is not only scientifically robust but also deeply rooted in "
+                "the real-world decisions shaping our collective future. The project has completed phase 1: "
+                "demonstration and proof of concept, starting from the SSP2-com scenario that was developed by Chinese "
+                "scientists that aligns with China's carbon neutrality pledge (peaking carbon emissions before 2030 "
+                "and achieving carbon neutrality before 2060) within the SSP2 socioeconomic framework and the NDC data "
+                "of countries worldwide. The next phase will expand the framework to include policy-aligned scenarios "
+                "from other nations and regions, creating a multi-country ensemble that enables consistent "
+                "cross-comparison of national climate action strategies under a unified protocol."
             ),
         ),
         Activity(
             id="scenariomip",
             references=["https://doi.org/10.5194/egusphere-2024-3765"],
             description=(
-                "Future scenario experiments. "
-                "Exploration of the future climate under a (selected) range of possible boundary conditions. "
-                "In CMIP7, the priority tier for experiments is conditional on whether you are doing emissions- or concentration-driven simulations. "
-                "There is no way to express this in the CVs (nor time to implement something to handle this conditionality). "
-                "This means that, for your particular situation, some experiments may be at a lower tier than is listed in the CVs. "
-                "For example, the `vl` scenario is tier 1 for concentration-driven models "
-                "and tier 2 for emissions-driven models. "
-                "However, in the CVs, we have used the highest priority tier (across all the possible conditionalities). "
-                "Hence `vl` is listed as tier 1 in the CVs (even though it is actually tier 2 for emissions-driven models). "
+                "Future scenario experiments. Exploration of the future climate under a (selected) range of possible "
+                "boundary conditions. In CMIP7, the priority tier for experiments is conditional on whether you are "
+                "doing emissions- or concentration-driven simulations. There is no way to express this in the CVs (nor "
+                "time to implement something to handle this conditionality). This means that, for your particular "
+                "situation, some experiments may be at a lower tier than is listed in the CVs. For example, the `vl` "
+                "scenario is tier 1 for concentration-driven models and tier 2 for emissions-driven models. However, "
+                "in the CVs, we have used the highest priority tier (across all the possible conditionalities). Hence "
+                "`vl` is listed as tier 1 in the CVs (even though it is actually tier 2 for emissions-driven models). "
                 "For details, please see the full description in the ScenarioMIP description papers."
             ),
         ),
@@ -243,26 +237,20 @@ ACTIVITIES: dict[str, Activity] = {
                 "https://gmd.copernicus.org/articles/19/3989/2026/",
             ],
             description=(
-                "Fire Model Intercomparison Project. "
-                "In CMIP7, FireMIP expands into the fully coupled Earth system modeling framework to: "
-                "(1) evaluate fire simulations in state-of-the-art fully coupled Earth system models (ESMs); "
-                "(2) assess fire regime changes in the past, present, and future, "
-                "and identify their primary natural and anthropogenic forcings "
-                "and causal pathways within the Earth system, including the associated uncertainties; "
-                "and (3) quantify the impacts of fires and fire changes on climate, ecosystems, "
-                "and society across Earth system components, regions, and timescales, "
-                "and elucidate the underlying mechanisms. "
-                "FireMIP in CMIP7 will advance fire and fire-related modeling in fully coupled ESMs, "
-                "and provide a quantitative, comprehensive, "
-                "and process-based understanding of fire's role in the Earth system "
-                "by using models that incorporate critical climate feedbacks "
-                "and CMIP7 multi-model, multi-initial-condition, and multi-scenario ensembles."
+                "Fire Model Intercomparison Project. In CMIP7, FireMIP expands into the fully coupled Earth system "
+                "modeling framework to: (1) evaluate fire simulations in state-of-the-art fully coupled Earth system "
+                "models (ESMs); (2) assess fire regime changes in the past, present, and future, and identify their "
+                "primary natural and anthropogenic forcings and causal pathways within the Earth system, including the "
+                "associated uncertainties; and (3) quantify the impacts of fires and fire changes on climate, "
+                "ecosystems, and society across Earth system components, regions, and timescales, and elucidate the "
+                "underlying mechanisms. FireMIP in CMIP7 will advance fire and fire-related modeling in fully coupled "
+                "ESMs, and provide a quantitative, comprehensive, and process-based understanding of fire's role in "
+                "the Earth system by using models that incorporate critical climate feedbacks and CMIP7 multi-model, "
+                "multi-initial-condition, and multi-scenario ensembles."
             ),
         ),
     )
 }
-
-EXPERIMENTS: dict[str, Experiment] = {}
 
 # Commonly used model component combinations
 AOGCM = dict(
@@ -294,36 +282,46 @@ FROM_PICONTROL = dict(
 )
 
 
-def add(universe: UniverseExperiment, cmip7: CMIP7Experiment) -> str:
-    """Register an experiment, returning its id"""
-    id = universe.drs_name.lower()
-    if id in EXPERIMENTS:
-        raise AssertionError(f"{id} is already registered")
+@dataclass(frozen=True)
+class Holder:
+    """
+    Holder of the experiments generated so far
 
-    if universe.activity not in ACTIVITIES:
-        raise AssertionError(f"Unknown activity for {id}: {universe.activity}")
+    The holder is never modified in place.
+    Instead, `add` returns a new holder with the added experiment.
+    """
 
-    EXPERIMENTS[id] = Experiment(
-        universe=copy.deepcopy(universe), cmip7=copy.deepcopy(cmip7)
-    )
+    activities: dict[str, Activity]
+    experiments: dict[str, Experiment] = dataclasses.field(default_factory=dict)
 
-    return id
+    def add(self, universe: UniverseExperiment, cmip7: CMIP7Experiment) -> "Holder":
+        """Get a new holder, with the given experiment added"""
+        id = universe.drs_name.lower()
+        if id in self.experiments:
+            raise AssertionError(f"{id} is already registered")
 
+        if universe.activity not in self.activities:
+            raise AssertionError(f"Unknown activity for {id}: {universe.activity}")
 
-def get(id_or_drs_name: str) -> Experiment:
-    """Get a registered experiment from its id or its DRS name"""
-    # Ids are always the lowercase version of the DRS name
-    id = id_or_drs_name.lower()
-    try:
-        return EXPERIMENTS[id]
-    except KeyError:
-        msg = f"{id} is not registered (yet?). Registered: {sorted(EXPERIMENTS)}"
-        raise KeyError(msg)
+        experiment = Experiment(
+            universe=copy.deepcopy(universe), cmip7=copy.deepcopy(cmip7)
+        )
 
+        return dataclasses.replace(
+            self, experiments={**self.experiments, id: experiment}
+        )
 
-def universe_copy(id_or_drs_name: str, **overrides: Any) -> UniverseExperiment:
-    """Copy the universe fields of a registered experiment, overriding some of them"""
-    return dataclasses.replace(copy.deepcopy(get(id_or_drs_name).universe), **overrides)
+    def get(self, id_or_drs_name: str) -> Experiment:
+        """Get a registered experiment from its id or its DRS name"""
+        # Ids are always the lowercase version of the DRS name
+        id = id_or_drs_name.lower()
+        try:
+            return self.experiments[id]
+        except KeyError:
+            msg = (
+                f"{id} is not registered (yet?). Registered: {sorted(self.experiments)}"
+            )
+            raise KeyError(msg)
 
 
 def pick(obj: Any, *fields: str) -> dict[str, Any]:
@@ -333,6 +331,91 @@ def pick(obj: Any, *fields: str) -> dict[str, Any]:
 
 def year(timestamp: str) -> int:
     return int(timestamp.split("-")[0])
+
+
+def esm_name(name: str | None | NotWritten) -> str | None | NotWritten:
+    """
+    Get the name of the emissions-driven equivalent of a concentration-driven experiment
+
+    Works for both ids and DRS names.
+    `None` and `NOT_WRITTEN` are passed through unchanged.
+    """
+    if name is None or name is NOT_WRITTEN:
+        return name
+
+    if name.lower() == "historical":
+        return "esm-hist"
+
+    return f"esm-{name}"
+
+
+def esm_backticks(text: str) -> str:
+    """Switch every experiment named in backticks to its emissions-driven equivalent"""
+    return re.sub(r"`([^`]+)`", lambda m: f"`{esm_name(m.group(1))}`", text)
+
+
+def esm_variant(
+    concentration_driven: UniverseExperiment,
+    *,
+    description: str | None = None,
+    **overrides: Any,
+) -> UniverseExperiment:
+    """
+    Get the emissions-driven equivalent of a concentration-driven experiment
+
+    Parameters
+    ----------
+    concentration_driven
+        Concentration-driven experiment
+
+    description
+        Description of the emissions-driven experiment.
+        If not supplied, the concentration-driven experiment's description must say
+        that it uses prescribed carbon dioxide concentrations
+        and point to the emissions-driven experiment.
+        This is then swapped around.
+
+    **overrides
+        Any other fields to override, e.g. the model components
+        (by default, `ESM`) or the tier
+
+    Returns
+    -------
+    :
+        Emissions-driven experiment
+    """
+    drs_name = esm_name(concentration_driven.drs_name)
+    if description is None:
+        concentration_driven_info = (
+            "prescribed carbon dioxide concentrations (for prescribed "
+            f"carbon dioxide emissions, see `{drs_name}`)"
+        )
+        if concentration_driven.description.count(concentration_driven_info) != 1:
+            raise AssertionError(concentration_driven.description)
+
+        description = concentration_driven.description.replace(
+            concentration_driven_info,
+            (
+                "prescribed carbon dioxide emissions (for prescribed carbon dioxide concentrations, see "
+                f"`{concentration_driven.drs_name}`)"
+            ),
+        )
+
+    branch_information = concentration_driven.branch_information
+    if isinstance(branch_information, str):
+        branch_information = esm_backticks(branch_information)
+
+    return dataclasses.replace(
+        concentration_driven,
+        **{
+            "drs_name": drs_name,
+            "description": description,
+            "branch_information": branch_information,
+            "parent_experiment": esm_name(concentration_driven.parent_experiment),
+            **ESM,
+            **overrides,
+        },
+    )
 
 
 # Scenario-style experiments (ScenarioMIP, PolMIP) duplicate their timing info
@@ -352,50 +435,19 @@ def scenario_cmip7(universe: UniverseExperiment) -> CMIP7Experiment:
 
 def scenario_description(description_base: str, drs_name: str) -> str:
     return (
-        f"{description_base} Run with prescribed carbon dioxide concentrations "
-        f"(for prescribed carbon dioxide emissions, see `esm-{drs_name}`)."
-    )
-
-
-def scenario_esm(id_or_drs_name: str, tier: int = 1) -> UniverseExperiment:
-    """Get the emissions-driven equivalent of a concentration-driven scenario"""
-    base = get(id_or_drs_name).universe
-    if base.parent_experiment != "historical":
-        raise AssertionError(base.parent_experiment)
-
-    concentration_driven_suffix = (
-        "Run with prescribed carbon dioxide concentrations "
-        f"(for prescribed carbon dioxide emissions, see `esm-{base.drs_name}`)."
-    )
-    if not base.description.endswith(concentration_driven_suffix):
-        raise AssertionError(base.description)
-
-    description = base.description.replace(
-        concentration_driven_suffix,
-        "Run with prescribed carbon dioxide emissions "
-        f"(for prescribed carbon dioxide concentrations, see `{base.drs_name}`).",
-    )
-
-    return universe_copy(
-        base.drs_name,
-        drs_name=f"esm-{base.drs_name}",
-        description=description,
-        **ESM,
-        parent_experiment="esm-hist",
-        branch_information=base.branch_information.replace("historical", "esm-hist"),
-        tier=tier,
+        f"{description_base} Run with prescribed carbon dioxide concentrations (for prescribed carbon dioxide "
+        f"emissions, see `{esm_name(drs_name)}`)."
     )
 
 
 def scenario_extension(
-    id_or_drs_name: str, min_number_yrs_per_sim: float = 50.0, tier: int = 1
+    base: UniverseExperiment, min_number_yrs_per_sim: float = 50.0, tier: int = 1
 ) -> UniverseExperiment:
     """Get the extension of a scenario"""
-    base = get(id_or_drs_name).universe
     end_year = year(base.end_timestamp)
 
-    return universe_copy(
-        base.drs_name,
+    return dataclasses.replace(
+        base,
         drs_name=f"{base.drs_name}-ext",
         description=f"Extension of `{base.drs_name}` beyond {end_year}.",
         # Unclear to me how this is meant to work.
@@ -412,11 +464,11 @@ def scenario_extension(
     )
 
 
-def add_scenario(universe: UniverseExperiment) -> str:
-    return add(universe, scenario_cmip7(universe))
+def add_scenario(holder: Holder, universe: UniverseExperiment) -> Holder:
+    return holder.add(universe, scenario_cmip7(universe))
 
 
-def add_deck_and_friends() -> None:
+def add_deck_and_friends(holder: Holder) -> Holder:
     for (
         drs_name,
         description_start,
@@ -427,9 +479,8 @@ def add_deck_and_friends() -> None:
         (
             "1pctCO2-bgc",
             (
-                "Biogeochemically coupled simulation "
-                "(i.e. the carbon cycle only 'sees' the increase in atmospheric carbon dioxide, "
-                "not any change in temperature) of a "
+                "Biogeochemically coupled simulation (i.e. the carbon cycle only 'sees' the increase in atmospheric "
+                "carbon dioxide, not any change in temperature) of a "
             ),
             "c4mip",
             ESM,
@@ -437,21 +488,19 @@ def add_deck_and_friends() -> None:
         (
             "1pctCO2-rad",
             (
-                "Radiatively coupled simulation "
-                "(i.e. the carbon cycle only 'sees' the increase in temperature, "
-                "not any change in atmospheric carbon dioxide) of a "
+                "Radiatively coupled simulation (i.e. the carbon cycle only 'sees' the increase in temperature, not "
+                "any change in atmospheric carbon dioxide) of a "
             ),
             "c4mip",
             ESM,
         ),
     ):
-        add(
+        holder = holder.add(
             UniverseExperiment(
                 drs_name=drs_name,
                 description=(
-                    f"{description_start}"
-                    "1% per year increase in atmospheric carbon dioxide levels. "
-                    "All other conditions are kept the same as piControl."
+                    f"{description_start}1% per year increase in atmospheric carbon dioxide levels. All other "
+                    "conditions are kept the same as piControl."
                 ),
                 activity=activity,
                 **components,
@@ -483,7 +532,7 @@ def add_deck_and_friends() -> None:
             "cfmip",
         ),
     ):
-        add(
+        holder = holder.add(
             UniverseExperiment(
                 drs_name=drs_name,
                 description=f"{description_start} All other conditions are kept the same as piControl.",
@@ -501,13 +550,16 @@ def add_deck_and_friends() -> None:
         )
 
     amip_sst_p4k = (
-        "sea surface temperatures are increased by 4K in ice-free regions "
-        "(sea ice and SSTs in grid boxes containing sea ice remain the same as in the `amip` experiment)"
+        "sea surface temperatures are increased by 4K in ice-free regions (sea ice and SSTs in grid boxes containing "
+        "sea ice remain the same as in the `amip` experiment)"
     )
     for drs_name, description, activity, start_timestamp, tier in (
         (
             "amip",
-            "Simulation of the climate of the recent past with prescribed sea surface temperatures and sea ice concentrations.",
+            (
+                "Simulation of the climate of the recent past with prescribed sea surface temperatures and sea ice "
+                "concentrations."
+            ),
             "cmip",
             "1979-01-01",
             1,
@@ -522,8 +574,7 @@ def add_deck_and_friends() -> None:
         (
             "amip-m4K",
             (
-                "Same as the `amip` simulation, except "
-                f"{amip_sst_p4k.replace('increased', 'decreased')}."
+                f"Same as the `amip` simulation, except {amip_sst_p4k.replace('increased', 'decreased')}."
             ),
             "cfmip",
             "1979-01-01",
@@ -532,9 +583,9 @@ def add_deck_and_friends() -> None:
         (
             "amip-p4K-SST-rad",
             (
-                f"Same as the `amip` simulation, except {amip_sst_p4k} "
-                "when calculating the upward longwave radiation from the sea surface using the Planck function "
-                "(see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786)."
+                f"Same as the `amip` simulation, except {amip_sst_p4k} when calculating the upward longwave radiation "
+                "from the sea surface using the Planck function (see Ogura et al., 2023, "
+                "https://doi.org/10.1029/2023GL104786)."
             ),
             "cfmip",
             "1979-01-01",
@@ -543,10 +594,9 @@ def add_deck_and_friends() -> None:
         (
             "amip-p4K-SST-turb",
             (
-                f"Same as the `amip` simulation, except {amip_sst_p4k} "
-                "when calculating the turbulent transport of the latent and sensible heat fluxes "
-                "at the air-sea interface using bulk aerodynamic formulae "
-                "(see Ogura et al., 2023, https://doi.org/10.1029/2023GL104786)."
+                f"Same as the `amip` simulation, except {amip_sst_p4k} when calculating the turbulent transport of the "
+                "latent and sensible heat fluxes at the air-sea interface using bulk aerodynamic formulae (see Ogura "
+                "et al., 2023, https://doi.org/10.1029/2023GL104786)."
             ),
             "cfmip",
             "1979-01-01",
@@ -555,8 +605,7 @@ def add_deck_and_friends() -> None:
         (
             "amip-piForcing",
             (
-                "Same as `amip` simulation, except it starts in 1870 "
-                "and all forcings are set to pre-industrial levels "
+                "Same as `amip` simulation, except it starts in 1870 and all forcings are set to pre-industrial levels "
                 "rather than time-varying forcings."
             ),
             "cfmip",
@@ -565,7 +614,7 @@ def add_deck_and_friends() -> None:
         ),
     ):
         end_timestamp = "2021-12-31"
-        add(
+        holder = holder.add(
             UniverseExperiment(
                 drs_name=drs_name,
                 description=description,
@@ -591,12 +640,12 @@ def add_deck_and_friends() -> None:
             ),
         )
 
-    add(
+    holder = holder.add(
         UniverseExperiment(
             drs_name="dcppB-forecast-cmip6",
             description=(
-                "Simulation to examine forced climate change and variability up to 10 years into the future. "
-                "This forecast is initialised from observations with forcing from ssp245 applied over its extent."
+                "Simulation to examine forced climate change and variability up to 10 years into the future. This "
+                "forecast is initialised from observations with forcing from ssp245 applied over its extent."
             ),
             activity="dcpp",
             # "ism" not included
@@ -616,163 +665,112 @@ def add_deck_and_friends() -> None:
         CMIP7Experiment(tier=1),
     )
 
-    for (
-        drs_name,
-        description,
-        min_number_yrs_per_sim,
-        tier,
-        parent_experiment,
-        branch_information,
-    ) in (
-        (
-            "piControl",
-            (
-                "Pre-industrial control simulation "
-                "with prescribed carbon dioxide concentrations "
-                "(for prescribed carbon dioxide emissions, see `esm-piControl`). "
-                "Used to characterise natural variability and unforced behaviour."
-            ),
-            400.0,
-            1,
-            "picontrol-spinup",
-            "Branch from `piControl-spinup` at a time of your choosing",
+    # The control and historical experiments,
+    # each alongside its emissions-driven equivalent
+    picontrol_spinup = UniverseExperiment(
+        drs_name="piControl-spinup",
+        description=(
+            "Spin-up simulation. Used to get the model into a state of approximate radiative equilibrium before "
+            "starting the `piControl` simulation."
         ),
-        (
-            "piControl-spinup",
-            (
-                "Spin-up simulation. "
-                "Used to get the model into a state of approximate radiative equilibrium "
-                "before starting the `piControl` simulation."
-            ),
-            None,
-            3,
-            None,
-            None,
-        ),
-        (
-            "esm-piControl",
-            (
-                "Pre-industrial control simulation "
-                "with prescribed carbon dioxide emissions "
-                "(for prescribed carbon dioxide concentrations, see `piControl`). "
-                "Used to characterise natural variability and unforced behaviour."
-            ),
-            400.0,
-            1,
-            "esm-picontrol-spinup",
-            "Branch from `esm-piControl-spinup` at a time of your choosing",
-        ),
-        (
-            "esm-piControl-spinup",
-            (
-                "Spin-up simulation. "
-                "Used to get the model into a state of approximate radiative equilibrium "
-                "before starting the `esm-piControl` simulation."
-            ),
-            None,
-            3,
-            None,
-            None,
-        ),
-    ):
-        has_parent = parent_experiment is not None
-        add(
-            UniverseExperiment(
-                drs_name=drs_name,
-                description=description,
-                activity="cmip",
-                **(ESM if drs_name.startswith("esm-") else AOGCM),
-                branch_information=branch_information,
-                parent_activity="cmip" if has_parent else None,
-                parent_experiment=parent_experiment,
-                # If there is a parent, its MIP era is defined in project
-                parent_mip_era=NOT_WRITTEN if has_parent else None,
-                start_timestamp=None,
-                end_timestamp=None,
-                min_ensemble_size=1,
-                tier=1,
-            ),
-            CMIP7Experiment(
-                min_number_yrs_per_sim=min_number_yrs_per_sim,
-                parent_mip_era="cmip7" if has_parent else NOT_WRITTEN,
-                tier=tier,
-            ),
-        )
-
-    for drs_name, description, parent_experiment, branch_information in (
-        (
-            "historical",
-            (
-                "Simulation of the climate of the recent past "
-                "(typically meaning 1850 to present-day) "
-                "with prescribed carbon dioxide concentrations "
-                "(for prescribed carbon dioxide emissions, see `esm-hist`)."
-            ),
-            "picontrol",
-            "Branch from `piControl` at a time of your choosing",
-        ),
-        (
-            "esm-hist",
-            (
-                "Simulation of the climate of the recent past "
-                "(typically meaning 1850 to present-day) "
-                "with prescribed carbon dioxide emissions "
-                "(for prescribed carbon dioxide concentrations, see `historical`)."
-            ),
-            "esm-picontrol",
-            "Branch from esm-piControl at a time of your choosing",
-        ),
-    ):
-        add(
-            UniverseExperiment(
-                drs_name=drs_name,
-                description=description,
-                activity="cmip",
-                **(ESM if drs_name.startswith("esm-") else AOGCM),
-                branch_information=branch_information,
-                parent_activity="cmip",
-                parent_experiment=parent_experiment,
-                start_timestamp="1850-01-01",
-                min_ensemble_size=1,
-                tier=1,
-            ),
-            CMIP7Experiment(
-                start_timestamp="1850-01-01",
-                end_timestamp="2021-12-31",
-                min_number_yrs_per_sim=172.0,
-                parent_mip_era="cmip7",
-                tier=1,
-            ),
-        )
-
-
-def add_flat10() -> None:
-    flat10_id = add(
-        UniverseExperiment(
-            drs_name="esm-flat10",
-            description="10 PgC / yr constant carbon dioxide emissions.",
-            activity="c4mip",
-            **ESM,
-            branch_information="Branch from `esm-piControl` at a time of your choosing",
-            parent_activity="cmip",
-            parent_experiment="esm-picontrol",
-            start_timestamp=None,
-            end_timestamp=None,
-            min_number_yrs_per_sim=100.0,
-            min_ensemble_size=1,
-            tier=1,
-        ),
-        CMIP7Experiment(parent_mip_era="cmip7", tier=1),
+        activity="cmip",
+        **AOGCM,
+        branch_information=None,
+        parent_activity=None,
+        parent_experiment=None,
+        parent_mip_era=None,
+        start_timestamp=None,
+        end_timestamp=None,
+        min_ensemble_size=1,
+        tier=1,
     )
+    picontrol_spinup_cmip7 = CMIP7Experiment(min_number_yrs_per_sim=None, tier=3)
+    holder = holder.add(picontrol_spinup, picontrol_spinup_cmip7).add(
+        esm_variant(
+            picontrol_spinup,
+            description=esm_backticks(picontrol_spinup.description),
+        ),
+        picontrol_spinup_cmip7,
+    )
+
+    picontrol = UniverseExperiment(
+        drs_name="piControl",
+        description=(
+            "Pre-industrial control simulation with prescribed carbon dioxide concentrations (for prescribed carbon "
+            "dioxide emissions, see `esm-piControl`). Used to characterise natural variability and unforced behaviour."
+        ),
+        activity="cmip",
+        **AOGCM,
+        branch_information="Branch from `piControl-spinup` at a time of your choosing",
+        parent_activity="cmip",
+        parent_experiment="picontrol-spinup",
+        # Defined in project
+        parent_mip_era=NOT_WRITTEN,
+        start_timestamp=None,
+        end_timestamp=None,
+        min_ensemble_size=1,
+        tier=1,
+    )
+    picontrol_cmip7 = CMIP7Experiment(
+        min_number_yrs_per_sim=400.0, parent_mip_era="cmip7", tier=1
+    )
+    holder = holder.add(picontrol, picontrol_cmip7).add(
+        esm_variant(picontrol), picontrol_cmip7
+    )
+
+    historical = UniverseExperiment(
+        drs_name="historical",
+        description=(
+            "Simulation of the climate of the recent past (typically meaning 1850 to present-day) with prescribed "
+            "carbon dioxide concentrations (for prescribed carbon dioxide emissions, see `esm-hist`)."
+        ),
+        activity="cmip",
+        **AOGCM,
+        **FROM_PICONTROL,
+        start_timestamp="1850-01-01",
+        min_ensemble_size=1,
+        tier=1,
+    )
+    historical_cmip7 = CMIP7Experiment(
+        start_timestamp="1850-01-01",
+        end_timestamp="2021-12-31",
+        min_number_yrs_per_sim=172.0,
+        parent_mip_era="cmip7",
+        tier=1,
+    )
+    holder = holder.add(historical, historical_cmip7).add(
+        esm_variant(historical), historical_cmip7
+    )
+
+    return holder
+
+
+def add_flat10(holder: Holder) -> Holder:
+    # Emissions-driven only, so there is no concentration-driven equivalent
+    flat10 = UniverseExperiment(
+        drs_name="esm-flat10",
+        description="10 PgC / yr constant carbon dioxide emissions.",
+        activity="c4mip",
+        **ESM,
+        branch_information="Branch from `esm-piControl` at a time of your choosing",
+        parent_activity="cmip",
+        parent_experiment="esm-picontrol",
+        start_timestamp=None,
+        end_timestamp=None,
+        min_number_yrs_per_sim=100.0,
+        min_ensemble_size=1,
+        tier=1,
+    )
+    flat10_cmip7 = CMIP7Experiment(parent_mip_era="cmip7", tier=1)
+    holder = holder.add(flat10, flat10_cmip7)
 
     for drs_name, description, min_number_yrs_per_sim in (
         (
             "esm-flat10-cdr",
             (
-                "Extension of `esm-flat10` where emissions decline linearly to -10 PgC / yr "
-                "then stay constant until cumulative emissions "
-                "(including the emissions in `esm-flat10`) reach zero. "
-                "An extra 20 years is included at the end to allow for calculating averages over different time windows."
+                "Extension of `esm-flat10` where emissions decline linearly to -10 PgC / yr then stay constant until "
+                "cumulative emissions (including the emissions in `esm-flat10`) reach zero. An extra 20 years is "
+                "included at the end to allow for calculating averages over different time windows."
             ),
             220.0,
         ),
@@ -782,37 +780,41 @@ def add_flat10() -> None:
             100.0,
         ),
     ):
-        add(
-            universe_copy(
-                flat10_id,
+        holder = holder.add(
+            dataclasses.replace(
+                flat10,
                 drs_name=drs_name,
                 description=description,
                 branch_information="Branch from `esm-flat10` at the end of year 100.",
                 min_number_yrs_per_sim=min_number_yrs_per_sim,
-                parent_activity=get(flat10_id).universe.activity,
-                parent_experiment=flat10_id,
+                parent_activity=flat10.activity,
+                parent_experiment=flat10.drs_name.lower(),
             ),
-            get(flat10_id).cmip7,
+            flat10_cmip7,
         )
 
+    return holder
 
-def add_damip() -> None:
+
+def add_damip(holder: Holder) -> Holder:
     description_template = (
-        "Response to historical {forcing} forcing "
-        "({extension}). "
-        "All other conditions are kept the same as piControl."
+        "Response to historical {forcing} forcing ({extension}). All "
+        "other conditions are kept the same as piControl."
     )
     for drs_name, forcing in (
         ("hist-aer", "aerosol"),
         ("hist-GHG", "greenhouse gas"),
         ("hist-nat", "natural"),
     ):
-        add(
+        holder = holder.add(
             UniverseExperiment(
                 drs_name=drs_name,
                 description=description_template.format(
                     forcing=forcing,
-                    extension="often with extension using forcings from a scenario simulation specific to the CMIP phase",
+                    extension=(
+                        "often with extension using forcings from a scenario simulation specific to the CMIP "
+                        "phase"
+                    ),
                 ),
                 activity="damip",
                 **AOGCM,
@@ -835,14 +837,19 @@ def add_damip() -> None:
             ),
         )
 
+    return holder
 
-def add_lmip() -> None:
+
+def add_lmip(holder: Holder) -> Holder:
     start_timestamp = "1901-01-01"
-    end_timestamp = get("historical").cmip7.end_timestamp
-    add(
+    end_timestamp = holder.get("historical").cmip7.end_timestamp
+    holder = holder.add(
         UniverseExperiment(
             drs_name="land-hist",
-            description="Land-only version of `historical` with prescribed climate and weather inputs required to drive land models.",
+            description=(
+                "Land-only version of `historical` with prescribed climate and weather inputs required to "
+                "drive land models."
+            ),
             activity="lmip",
             required_model_components=["land"],
             additional_allowed_model_components=[],
@@ -863,14 +870,16 @@ def add_lmip() -> None:
         ),
     )
 
+    return holder
 
-def add_pmip() -> None:
-    add(
+
+def add_pmip(holder: Holder) -> Holder:
+    holder = holder.add(
         UniverseExperiment(
             drs_name="abrupt-127k",
             description=(
-                "Simulation to examine the response to orbital and greenhouse gas concentration changes "
-                "associated with the last interglacial (127 000 years before present)."
+                "Simulation to examine the response to orbital and greenhouse gas concentration changes associated "
+                "with the last interglacial (127 000 years before present)."
             ),
             activity="pmip",
             **AOGCM,
@@ -884,46 +893,41 @@ def add_pmip() -> None:
         CMIP7Experiment(min_number_yrs_per_sim=100.0, parent_mip_era="cmip7", tier=1),
     )
 
+    return holder
 
-def add_piclim() -> None:
+
+def add_piclim(holder: Holder) -> Holder:
     def present_day_description(quantifies: str, forcing_diff: str) -> str:
         return (
-            "In combination with `piClim-control`, "
-            f"quantifies present-day {quantifies} effective radiative forcing (ERF). "
-            f"Same as `piClim-control`, except {forcing_diff} use present-day values "
-            "(typically the last year of the `historical` simulation within the same CMIP era "
-            "e.g. 2014 values for CMIP6, 2021 values for CMIP7)."
+            f"In combination with `piClim-control`, quantifies present-day {quantifies} effective radiative forcing "
+            f"(ERF). Same as `piClim-control`, except {forcing_diff} use present-day values (typically the last year "
+            "of the `historical` simulation within the same CMIP era e.g. 2014 values for CMIP6, 2021 values for "
+            "CMIP7)."
         )
 
     def co2_description(quantifies: str, factor: str) -> str:
         return (
-            "In combination with `piClim-control`, "
-            f"quantifies {quantifies} effective radiative forcing (ERF). "
-            "Same as `piClim-control`, "
-            "except atmospheric carbon dioxide concentrations "
-            f"are set to {factor} `piControl` levels."
+            f"In combination with `piClim-control`, quantifies {quantifies} effective radiative forcing (ERF). Same as "
+            f"`piClim-control`, except atmospheric carbon dioxide concentrations are set to {factor} `piControl` "
+            "levels."
         )
 
     def co2_single_component_description(component: str, other: str) -> str:
         return (
             # What this is for?
-            "Same as `piClim-control`, "
-            "except atmospheric carbon dioxide concentrations "
-            "are set to four times `piControl` levels, "
-            f"but only for the {component} component of the model. "
-            f"For any other model component that directly uses CO2 concentration, including {other}, "
-            "the CO2 concentration should be set to the value used in `piClim-control`."
+            "Same as `piClim-control`, except atmospheric carbon dioxide concentrations are set to four times "
+            f"`piControl` levels, but only for the {component} component of the model. For any other model "
+            f"component that directly uses CO2 concentration, including {other}, the CO2 concentration should be "
+            "set to the value used in `piClim-control`."
         )
 
-    hist_end_year = year(get("historical").cmip7.end_timestamp)
+    hist_end_year = year(holder.get("historical").cmip7.end_timestamp)
     for drs_name, description, activity, components, tier in (
         (
             "piClim-control",
             (
-                "Baseline for effective radiative forcing (ERF) calculations. "
-                "`piControl` with prescribed sea-surface temperatures "
-                "and sea-ice concentrations from a climatology of "
-                "the model's `piControl` simulation."
+                "Baseline for effective radiative forcing (ERF) calculations. `piControl` with prescribed sea-surface "
+                "temperatures and sea-ice concentrations from a climatology of the model's `piControl` simulation."
             ),
             "cmip",
             AGCM,
@@ -1065,11 +1069,9 @@ def add_piclim() -> None:
         (
             "piClim-p4K",
             (
-                "Baseline for effective radiative forcing (ERF) calculations "
-                "with a warmer background state. "
-                "Same as `piClim-control`, "
-                "except sea surface temperatures are increased by 4K in ice-free regions "
-                "(sea ice and SSTs in grid boxes containing sea ice remain the same as in the `piClim-control` experiment)."
+                "Baseline for effective radiative forcing (ERF) calculations with a warmer background state. Same as "
+                "`piClim-control`, except sea surface temperatures are increased by 4K in ice-free regions (sea ice "
+                "and SSTs in grid boxes containing sea ice remain the same as in the `piClim-control` experiment)."
             ),
             "aerchemmip",
             AGCM,
@@ -1078,12 +1080,10 @@ def add_piclim() -> None:
         (
             "piClim-p4K-4xCO2",
             (
-                "In combination with `piClim-p4K`, `piClim-control` and `piClim-4xCO2`, "
-                "this experiment can be used to evaluate the sensitivity of 4xCO2 radiative forcing "
-                "to a warmer background state. "
-                "Same as `piClim-p4K`, "
-                "except atmospheric carbon dioxide concentrations "
-                "are set to four times `piControl` levels."
+                "In combination with `piClim-p4K`, `piClim-control` and `piClim-4xCO2`, this experiment can be used to "
+                "evaluate the sensitivity of 4xCO2 radiative forcing to a warmer background state. Same as "
+                "`piClim-p4K`, except atmospheric carbon dioxide concentrations are set to four times `piControl` "
+                "levels."
             ),
             "rfmip",
             AGCM,
@@ -1092,12 +1092,11 @@ def add_piclim() -> None:
         (
             "piClim-p4K-aer",
             (
-                "In combination with `piClim-p4K`, `piClim-control` and `piClim-aer`, "
-                "this experiment can be used to evaluate the sensitivity of aerosol radiative forcing "
-                "to a warmer background state. "
-                "Same as `piClim-control`, except anthropogenic aerosol emissions use present-day values "
-                "(typically the last year of the `historical` simulation within the same CMIP era "
-                "e.g. 2014 values for CMIP6, 2021 values for CMIP7)."
+                "In combination with `piClim-p4K`, `piClim-control` and `piClim-aer`, this experiment can be used to "
+                "evaluate the sensitivity of aerosol radiative forcing to a warmer background state. Same as "
+                "`piClim-control`, except anthropogenic aerosol emissions use present-day values (typically the last "
+                "year of the `historical` simulation within the same CMIP era e.g. 2014 values for CMIP6, 2021 values "
+                "for CMIP7)."
             ),
             "rfmip",
             AGCM,
@@ -1106,16 +1105,16 @@ def add_piclim() -> None:
     ):
         if drs_name == "piClim-control":
             branch_information = (
-                "Branch from `piControl` at a time of your choosing. "
-                "Given that you are using a climatology from your own model as boundary conditions, "
-                "we recommended branching from the mid-point of the period over which you calculated the climatology "
-                "(but this recommendation may not be appropriate for all models, "
-                "so ultimately it is up to you to decide what introduces the smallest 'shock'/'jump' at the branch time)."
+                "Branch from `piControl` at a time of your choosing. Given that you are using a climatology from your "
+                "own model as boundary conditions, we recommended branching from the mid-point of the period over "
+                "which you calculated the climatology (but this recommendation may not be appropriate for all models, "
+                "so ultimately it is up to you to decide what introduces the smallest 'shock'/'jump' at the branch "
+                "time)."
             )
         else:
             branch_information = "Same as `piClim-control`"
 
-        add(
+        holder = holder.add(
             UniverseExperiment(
                 drs_name=drs_name,
                 description=description,
@@ -1147,11 +1146,9 @@ def add_piclim() -> None:
         (
             "piClim-histaer",
             (
-                "In combination with `piClim-control`, "
-                "quantifies transient aerosol effective radiative forcing (ERF) "
-                "over the historical period and a future experiment. "
-                "This can be compared with `piClim-aer` which provides a more precise "
-                "quantification of present-day aerosol ERF."
+                "In combination with `piClim-control`, quantifies transient aerosol effective radiative forcing (ERF) "
+                "over the historical period and a future experiment. This can be compared with `piClim-aer` which "
+                "provides a more precise quantification of present-day aerosol ERF."
             ),
             "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
             1,
@@ -1159,11 +1156,9 @@ def add_piclim() -> None:
         (
             "piClim-histall",
             (
-                "In combination with `piClim-control`, "
-                "quantifies transient effective radiative forcing (ERF) "
-                "over the historical period and a future experiment. "
-                "This complements the `piClim-*` experiments which provide a more precise "
-                "quantification of present-day ERF for various forcing components."
+                "In combination with `piClim-control`, quantifies transient effective radiative forcing (ERF) over the "
+                "historical period and a future experiment. This complements the `piClim-*` experiments which provide "
+                "a more precise quantification of present-day ERF for various forcing components."
             ),
             "the `scen7-m` or `esm-scen7-m` experiment (whichever is relevant to your model setup)",
             1,
@@ -1171,12 +1166,10 @@ def add_piclim() -> None:
         (
             "piClim-histghg",
             (
-                "In combination with `piClim-control`, "
-                "quantifies transient well-mixed (non-ozone) greenhouse gas effective radiative forcing (ERF) "
-                "due to changes in concentrations of these gases (not emissions) "
-                "over the historical period and a future experiment. "
-                "This complements the `piClim-*` experiments which provide a more precise "
-                "quantification of present-day ERF for various greenhouse gas components."
+                "In combination with `piClim-control`, quantifies transient well-mixed (non-ozone) greenhouse gas "
+                "effective radiative forcing (ERF) due to changes in concentrations of these gases (not emissions) "
+                "over the historical period and a future experiment. This complements the `piClim-*` experiments which "
+                "provide a more precise quantification of present-day ERF for various greenhouse gas components."
             ),
             "the `scen7-m` experiment",
             2,
@@ -1184,15 +1177,14 @@ def add_piclim() -> None:
         (
             "piClim-histnat",
             (
-                "In combination with `piClim-control`, "
-                "quantifies transient natural effective radiative forcing (ERF) "
+                "In combination with `piClim-control`, quantifies transient natural effective radiative forcing (ERF) "
                 "over the historical period and a future experiment. "
             ),
             "the `scen7-m` experiment",
             2,
         ),
     ):
-        add(
+        holder = holder.add(
             UniverseExperiment(
                 drs_name=drs_name,
                 description=description,
@@ -1217,8 +1209,10 @@ def add_piclim() -> None:
             ),
         )
 
+    return holder
 
-def add_scenariomip() -> None:
+
+def add_scenariomip(holder: Holder) -> Holder:
     # In CMIP7, the tier depends on whether you are running
     # emissions- or concentration-driven.
     # We can't express this so everything gets the highest tier
@@ -1229,90 +1223,90 @@ def add_scenariomip() -> None:
         (
             "vl",
             (
-                "CMIP7 ScenarioMIP Very Low emission scenario - "
-                "The Very Low emission scenario "
-                "is designed to keep the temperature level as low as plausible given feasibility constraints. "
-                "This scenario is thus relevant for the low end of the Paris range "
-                "(staying as close as plausible to 1.5C at the time of peak warming "
+                "CMIP7 ScenarioMIP Very Low emission scenario - The Very Low emission scenario is designed to keep the "
+                "temperature level as low as plausible given feasibility constraints. This scenario is thus relevant "
+                "for the low end of the Paris range (staying as close as plausible to 1.5C at the time of peak warming "
                 "and limiting warming to 1.5C by the end of the century)."
             ),
         ),
         (
             "ln",
             (
-                "CMIP7 ScenarioMIP Low-to-Negative emission scenario - "
-                "A scenario with a higher overshoot of the 1.5C goal, "
-                "followed by stringent climate policies resulting in net-negative greenhouse gas emissions to return to lower warming levels, "
-                "thus supporting research into the reversibility of climate outcomes and their impacts."
+                "CMIP7 ScenarioMIP Low-to-Negative emission scenario - A scenario with a higher overshoot of the 1.5C "
+                "goal, followed by stringent climate policies resulting in net-negative greenhouse gas emissions to "
+                "return to lower warming levels, thus supporting research into the reversibility of climate outcomes "
+                "and their impacts."
             ),
         ),
         (
             "l",
             (
-                "CMIP7 ScenarioMIP Low emission scenario - "
-                "The Low emission scenario is designed to be consistent "
-                "with the pursuit of holding warming to a level likely below 2C, "
-                "without returning to 1.5C before the end of the century. "
+                "CMIP7 ScenarioMIP Low emission scenario - The Low emission scenario is designed to be consistent with "
+                "the pursuit of holding warming to a level likely below 2C, without returning to 1.5C before the end "
+                "of the century. "
             ),
         ),
         (
             "ml",
             (
-                "CMIP7 ScenarioMIP Medium-to-Low emission scenario - "
-                "A scenario exploring a delayed increase in mitigation efforts, "
-                "short of the Paris temperature goal but achieving net-zero CO2 emissions by the end of the century."
+                "CMIP7 ScenarioMIP Medium-to-Low emission scenario - A scenario exploring a delayed increase in "
+                "mitigation efforts, short of the Paris temperature goal but achieving net-zero CO2 emissions by the "
+                "end of the century."
             ),
         ),
         (
             "m",
             (
-                "CMIP7 ScenarioMIP Medium emission scenario - "
-                "A middle scenario exploring consequences of extending current policies and trends into the future."
+                "CMIP7 ScenarioMIP Medium emission scenario - A middle scenario exploring consequences of extending "
+                "current policies and trends into the future."
             ),
         ),
         (
             "hl",
             (
-                "CMIP7 ScenarioMIP High-to-Low emission scenario - "
-                "A scenario that follows approximately the same emissions pathway as the High, "
-                "but changes course in the second half of the century, applying strong mitigation measures to reach net zero CO2 emissions by 2100."
+                "CMIP7 ScenarioMIP High-to-Low emission scenario - A scenario that follows approximately the same "
+                "emissions pathway as the High, but changes course in the second half of the century, applying strong "
+                "mitigation measures to reach net zero CO2 emissions by 2100."
             ),
         ),
         (
             "h",
             (
-                "CMIP7 ScenarioMIP High emission scenario - "
-                "A scenario with emissions as high as judged to be plausible, "
-                "based on assuming developments that include a rollback of current mitigation policies. "
+                "CMIP7 ScenarioMIP High emission scenario - A scenario with emissions as high as judged to be "
+                "plausible, based on assuming developments that include a rollback of current mitigation policies. "
                 "This scenario is expected to result in forcings below SSP5-8.5."
             ),
         ),
     ):
         drs_name = f"scen7-{acronym}"
-        scenario_id = add_scenario(
-            UniverseExperiment(
-                drs_name=drs_name,
-                description=scenario_description(description_base, drs_name),
-                activity="scenariomip",
-                **AOGCM,
-                branch_information="Branch from `historical` at 2022-01-01.",
-                parent_activity="cmip",
-                parent_experiment="historical",
-                parent_mip_era="cmip7",
-                start_timestamp="2022-01-01",
-                end_timestamp="2100-12-31",
-                min_number_yrs_per_sim=79.0,
-                min_ensemble_size=1,
-                tier=1,
-            )
+        scenario = UniverseExperiment(
+            drs_name=drs_name,
+            description=scenario_description(description_base, drs_name),
+            activity="scenariomip",
+            **AOGCM,
+            branch_information="Branch from `historical` at 2022-01-01.",
+            parent_activity="cmip",
+            parent_experiment="historical",
+            parent_mip_era="cmip7",
+            start_timestamp="2022-01-01",
+            end_timestamp="2100-12-31",
+            min_number_yrs_per_sim=79.0,
+            min_ensemble_size=1,
+            tier=1,
         )
-        add_scenario(scenario_extension(scenario_id))
+        scenario_esm = esm_variant(scenario)
+        for universe in (
+            scenario,
+            scenario_extension(scenario),
+            scenario_esm,
+            scenario_extension(scenario_esm),
+        ):
+            holder = add_scenario(holder, universe)
 
-        esm_id = add_scenario(scenario_esm(scenario_id))
-        add_scenario(scenario_extension(esm_id))
+    return holder
 
 
-def add_polmip() -> None:
+def add_polmip(holder: Holder) -> Holder:
     for (
         drs_name,
         description_base,
@@ -1324,7 +1318,8 @@ def add_polmip() -> None:
         (
             "vl-cf",
             (
-                "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for global surface air temperature to peak at 1.5C and stabilise or slowly decline."
+                "Counterfactual emissions pathway that is as physically consistent as possible, while aiming for "
+                "global surface air temperature to peak at 1.5C and stabilise or slowly decline."
             ),
             2016,
             2,
@@ -1334,53 +1329,57 @@ def add_polmip() -> None:
         (
             "SSP2-com-CMIP7",
             (
-                "Policy-driven pathway aligned with China's carbon neutrality pledge, "
-                "peaking carbon emissions before 2030 and achieving carbon neutrality before 2060. "
-                "It is developed within the SSP2 socioeconomic framework "
-                "and consistent with global Nationally Determined Contributions (NDCs) data."
+                "Policy-driven pathway aligned with China's carbon neutrality pledge, peaking carbon emissions before "
+                "2030 and achieving carbon neutrality before 2060. It is developed within the SSP2 socioeconomic "
+                "framework and consistent with global Nationally Determined Contributions (NDCs) data."
             ),
             2022,
             1,
             1,
-            False,
+            True,
         ),
     ):
-        scenario_id = add_scenario(
-            UniverseExperiment(
-                drs_name=drs_name,
-                description=scenario_description(description_base, drs_name),
-                activity="polmip",
-                **AOGCM,
-                branch_information=f"Branch from `historical` at {branch_year}-01-01.",
-                parent_activity="cmip",
-                parent_experiment="historical",
-                parent_mip_era="cmip7",
-                start_timestamp=f"{branch_year}-01-01",
-                end_timestamp="2100-12-31",
-                min_number_yrs_per_sim=float(2100 - branch_year + 1),
-                min_ensemble_size=1,
-                tier=tier_concentration_driven,
-            )
+        scenario = UniverseExperiment(
+            drs_name=drs_name,
+            description=scenario_description(description_base, drs_name),
+            activity="polmip",
+            **AOGCM,
+            branch_information=f"Branch from `historical` at {branch_year}-01-01.",
+            parent_activity="cmip",
+            parent_experiment="historical",
+            parent_mip_era="cmip7",
+            start_timestamp=f"{branch_year}-01-01",
+            end_timestamp="2100-12-31",
+            min_number_yrs_per_sim=float(2100 - branch_year + 1),
+            min_ensemble_size=1,
+            tier=tier_concentration_driven,
         )
-        esm_id = add_scenario(scenario_esm(scenario_id, tier=tier_emissions_driven))
-
+        scenario_esm = esm_variant(scenario, tier=tier_emissions_driven)
+        universes = [scenario, scenario_esm]
         if has_extension:
-            add_scenario(
-                scenario_extension(
-                    scenario_id,
-                    min_number_yrs_per_sim=100.0,
-                    tier=tier_concentration_driven,
-                )
+            universes.extend(
+                [
+                    scenario_extension(
+                        scenario,
+                        min_number_yrs_per_sim=100.0,
+                        tier=tier_concentration_driven,
+                    ),
+                    scenario_extension(scenario_esm, min_number_yrs_per_sim=100.0),
+                ]
             )
-            add_scenario(scenario_extension(esm_id, min_number_yrs_per_sim=100.0))
+
+        for universe in universes:
+            holder = add_scenario(holder, universe)
+
+    return holder
 
 
-def add_firemip() -> None:
+def add_firemip(holder: Holder) -> Holder:
     # # Requested not to have lists, see https://github.com/WCRP-CMIP/WCRP-universe/pull/399#discussion_r4203053542
     # aerosol_fire_emissions = ["BC", "OC", "SO2", "CO", "NOx"]
     # full_fire_emissions = [*aerosol_fire_emissions, "CO2", "CH4", "N2O"]
-    hist = get("historical")
-    scen7_h = get("scen7-h")
+    hist = holder.get("historical")
+    scen7_h = holder.get("scen7-h")
 
     for (
         drs_name,
@@ -1395,12 +1394,11 @@ def add_firemip() -> None:
         (
             "hist-nofire",
             (
-                "Historical coupled simulations with fires set to zero. "
-                "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
-                "both burned area in the model code and prescribed fire emissions in the forcing dataset "
-                "should be set to zero. "
-                "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. "
-                "We encourage modeling groups to perform `piControl-nofire` to generate the initial state."
+                "Historical coupled simulations with fires set to zero. In models that use prescribed fire emissions "
+                "(known as open biomass burning emissions in the forcings), both burned area in the model code and "
+                "prescribed fire emissions in the forcing dataset should be set to zero. In models with interactive "
+                "fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero. We "
+                "encourage modeling groups to perform `piControl-nofire` to generate the initial state."
             ),
             "Branch from `piControl-nofire` or (as a fallback) `piControl` at a time of your choosing",
             hist.cmip7.start_timestamp,
@@ -1412,11 +1410,11 @@ def add_firemip() -> None:
         (
             "piControl-nofire",
             (
-                "Pre-industrial control simulation with no fire emissions. "
-                "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
-                "both burned area in the model code and prescribed fire aerosol emissions in the forcing dataset "
-                "should be set to zero. "
-                "In models with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed as zero."
+                "Pre-industrial control simulation with no fire emissions. In models that use prescribed fire "
+                "emissions (known as open biomass burning emissions in the forcings), both burned area in the model "
+                "code and prescribed fire aerosol emissions in the forcing dataset should be set to zero. In models "
+                "with interactive fire modules, set burned area to zero so that fire emissions are therefore diagnosed "
+                "as zero."
             ),
             "Branch from `piControl-spinup` at a time of your choosing",
             None,
@@ -1428,9 +1426,9 @@ def add_firemip() -> None:
         (
             "hist-nofireaer",
             (
-                "Historical coupled simulations with fire aerosol emissions set to zero. "
-                "In models that use prescribed fire emissions (known as open biomass burning emissions in the forcings), "
-                "prescribed fire aerosol emissions in the forcing dataset should be set to zero."
+                "Historical coupled simulations with fire aerosol emissions set to zero. In models that use prescribed "
+                "fire emissions (known as open biomass burning emissions in the forcings), prescribed fire aerosol "
+                "emissions in the forcing dataset should be set to zero."
             ),
             "Branch from `historical` no later than 1920",
             None,  # undefined so not written
@@ -1443,9 +1441,10 @@ def add_firemip() -> None:
             "scen7-h-ca2010fire",
             (
                 "The same as `scen7-h`, but with burned area and fire emissions fixed at their 2001-2020 averages. "
-                "Burned area should be prescribed as an input field, using each model's own 2001-2020 average derived from its historical simulations. "
-                "For models without interactive fire emission modules, all fire emissions (known as open biomass burning emissions in the forcings) "
-                "should be replaced with the corresponding 2001-2020 average."
+                "Burned area should be prescribed as an input field, using each model's own 2001-2020 average derived "
+                "from its historical simulations. For models without interactive fire emission modules, all fire "
+                "emissions (known as open biomass burning emissions in the forcings) should be replaced with the "
+                "corresponding 2001-2020 average."
             ),
             scen7_h.universe.branch_information,
             scen7_h.cmip7.start_timestamp,
@@ -1457,8 +1456,8 @@ def add_firemip() -> None:
         (
             "scen7-h-ca2010fireaer",
             (
-                "The same as `scen7-h`, but with fire aerosol emissions fixed at their 2001–2020 averages. "
-                "This does not apply to models that have interactive fire-emissions."
+                "The same as `scen7-h`, but with fire aerosol emissions fixed at their 2001–2020 averages. This does "
+                "not apply to models that have interactive fire-emissions."
             ),
             scen7_h.universe.branch_information,
             scen7_h.cmip7.start_timestamp,
@@ -1482,67 +1481,49 @@ def add_firemip() -> None:
             parent_mip_era="cmip7" if parent_activity else None,
             tier=tier,
         )
-        id = add(
-            UniverseExperiment(
-                drs_name=drs_name,
-                description=description,
-                activity="firemip",
-                **AOGCM,
-                branch_information=branch_information,
-                parent_activity=parent_activity,
-                parent_experiment=parent_experiment,
-                start_timestamp=start_timestamp,
-                min_ensemble_size=3,
-                tier=tier,
-            ),
-            cmip7,
+        universe = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity="firemip",
+            **AOGCM,
+            branch_information=branch_information,
+            parent_activity=parent_activity,
+            parent_experiment=parent_experiment,
+            start_timestamp=start_timestamp,
+            min_ensemble_size=3,
+            tier=tier,
         )
-
-        add(
-            universe_copy(
-                id,
-                drs_name=f"esm-{drs_name}",
-                description=(
-                    f"{description} "
-                    "Here run with prescribed carbon dioxide emissions, "
-                    "rather than prescribed carbon dioxide concentrations "
-                    f"(for the equivalent prescribed carbon dioxide concentrations experiment, see `{drs_name}`)."
-                ),
-                **ESM,
-                branch_information=branch_information.replace(
-                    "`piControl", "`esm-piControl"
-                ).replace("`historical`", "`esm-hist`"),
-                parent_experiment=(
-                    f"esm-{parent_experiment}".replace("esm-historical", "esm-hist")
-                    if parent_experiment
-                    else None
-                ),
+        universe_esm = esm_variant(
+            universe,
+            description=(
+                f"{description} Here run with prescribed carbon dioxide emissions, rather than prescribed carbon "
+                "dioxide concentrations (for the equivalent prescribed carbon dioxide concentrations experiment, see "
+                f"`{drs_name}`)."
             ),
-            cmip7,
         )
+        holder = holder.add(universe, cmip7).add(universe_esm, cmip7)
+
+    return holder
 
 
-def add_aerchemmip() -> None:
+def add_aerchemmip(holder: Holder) -> Holder:
     aq_description_template = (
-        "Used to diagnose climate and air quality responses "
-        "to the regionally heterogeneous evolution of anthropogenic non-CH4 SLCF emissions. "
-        "Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), "
-        "aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) {focus_forcings_evolution}. "
-        "All other forcings evolve as in `{other_forcings_experiment}`. "
-        "Requires interactive chemistry. "
-        "Models without interactive chemistry should run `{pair_experiment}` instead."
+        "Used to diagnose climate and air quality responses to the regionally heterogeneous evolution of anthropogenic "
+        "non-CH4 SLCF emissions. Anthropogenic non-CH4 tropospheric O3 precursor emissions (NMVOCs, CO, NOx), "
+        "aerosols, and aerosol precursor emissions (BC, OC, NH3, SO2) {focus_forcings_evolution}. All other forcings "
+        "evolve as in `{other_forcings_experiment}`. Requires interactive chemistry. Models without interactive "
+        "chemistry should run `{pair_experiment}` instead."
     )
     aq_components = dict(
         required_model_components=["aogcm", "aer", "chem"],
         additional_allowed_model_components=["bgc"],
     )
     aer_description_template = (
-        "Used to diagnose climate responses "
-        "to the regionally heterogeneous evolution of anthropogenic aerosol emissions. "
-        "Anthropogenic aerosols and aerosol precursor emissions (BC, OC, NH3, SO2) {focus_forcings_evolution}. "
-        "All other forcings evolve as in `{other_forcings_experiment}`. "
-        "Intended for models without interactive chemistry. "
-        "Models with interactive chemistry should run `{pair_experiment}` instead."
+        "Used to diagnose climate responses to the regionally heterogeneous evolution of anthropogenic aerosol "
+        "emissions. Anthropogenic aerosols and aerosol precursor emissions (BC, OC, NH3, SO2) "
+        "{focus_forcings_evolution}. All other forcings evolve as in `{other_forcings_experiment}`. Intended for "
+        "models without interactive chemistry. Models with interactive chemistry should run `{pair_experiment}` "
+        "instead."
     )
     aer_components = dict(
         required_model_components=["aogcm", "aer"],
@@ -1550,7 +1531,7 @@ def add_aerchemmip() -> None:
     )
 
     hist_universe_fields = pick(
-        get("historical").universe,
+        holder.get("historical").universe,
         "branch_information",
         "parent_activity",
         "parent_experiment",
@@ -1577,7 +1558,7 @@ def add_aerchemmip() -> None:
             other_forcings_experiment="historical",
             pair_experiment=pair_drs_name,
         )
-        add(
+        holder = holder.add(
             UniverseExperiment(
                 drs_name=drs_name,
                 description=f"{description} {note}",
@@ -1590,7 +1571,9 @@ def add_aerchemmip() -> None:
             CMIP7Experiment(
                 start_timestamp=hist_universe_fields["start_timestamp"],
                 **pick(
-                    get("historical").cmip7, "end_timestamp", "min_number_yrs_per_sim"
+                    holder.get("historical").cmip7,
+                    "end_timestamp",
+                    "min_number_yrs_per_sim",
                 ),
                 # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
                 min_ensemble_size=1,
@@ -1599,68 +1582,73 @@ def add_aerchemmip() -> None:
             ),
         )
 
-    hist_end_year = year(get("historical").cmip7.end_timestamp)
+    hist_end_year = year(holder.get("historical").cmip7.end_timestamp)
     for base_experiment, focus_forcings_evolution in (
         # vl gets replaced with h stuff
         ("scen7-vl", "evolve as in `scen7-h`"),
-        ("esm-scen7-vl", "evolve as in `esm-scen7-h`"),
         # h gets replaced with present-day stuff
         ("scen7-h", f"are held constant at present-day ({hist_end_year}) levels"),
-        ("esm-scen7-h", f"are held constant at present-day ({hist_end_year}) levels"),
     ):
-        base_universe_fields = pick(
-            get(base_experiment).universe,
-            "branch_information",
-            "start_timestamp",
-            "end_timestamp",
-            "min_number_yrs_per_sim",
-            "parent_activity",
-            "parent_experiment",
-            "parent_mip_era",
-        )
+        base = holder.get(base_experiment).universe
         for suffix, pair_suffix, description_template, components in (
             ("-AQ", "-Aer", aq_description_template, aq_components),
             ("-Aer", "-AQ", aer_description_template, aer_components),
         ):
-            add(
-                UniverseExperiment(
-                    drs_name=f"{base_experiment}{suffix}",
-                    description=description_template.format(
-                        focus_forcings_evolution=focus_forcings_evolution,
-                        other_forcings_experiment=base_experiment,
-                        pair_experiment=f"{base_experiment}{pair_suffix}",
-                    ),
-                    activity="aerchemmip",
-                    **components,
-                    **base_universe_fields,
-                    # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
-                    min_ensemble_size=1,
-                    tier=1,
+            universe = UniverseExperiment(
+                drs_name=f"{base.drs_name}{suffix}",
+                description=description_template.format(
+                    focus_forcings_evolution=focus_forcings_evolution,
+                    other_forcings_experiment=base.drs_name,
+                    pair_experiment=f"{base.drs_name}{pair_suffix}",
                 ),
-                CMIP7Experiment(
-                    **pick(
-                        get(base_experiment).universe,
-                        "start_timestamp",
-                        "end_timestamp",
-                        "min_number_yrs_per_sim",
-                    ),
-                    parent_mip_era="cmip7",
-                    tier=1,
+                activity="aerchemmip",
+                **components,
+                **pick(
+                    base,
+                    "branch_information",
+                    "start_timestamp",
+                    "end_timestamp",
+                    "min_number_yrs_per_sim",
+                    "parent_activity",
+                    "parent_experiment",
+                    "parent_mip_era",
                 ),
+                # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
+                min_ensemble_size=1,
+                tier=1,
             )
+            cmip7 = CMIP7Experiment(
+                **pick(
+                    universe,
+                    "start_timestamp",
+                    "end_timestamp",
+                    "min_number_yrs_per_sim",
+                ),
+                parent_mip_era="cmip7",
+                tier=1,
+            )
+            universe_esm = esm_variant(
+                universe,
+                description=esm_backticks(universe.description),
+                # Unlike the other emissions-driven experiments,
+                # bgc is not required (as in the existing CVs)
+                **components,
+            )
+            holder = holder.add(universe, cmip7).add(universe_esm, cmip7)
+
+    return holder
 
 
-def add_geomip() -> None:
+def add_geomip(holder: Holder) -> Holder:
     base_scenario = "scen7-ml"
     start_year = 2035
-    add(
+    holder = holder.add(
         UniverseExperiment(
             drs_name="G7-1p5K-SAI",
             description=(
-                "Stablisation of global-mean temperature at 1.5C "
-                "by increasing stratospheric sulfur forcing "
-                "to whatever level is required to achieve stable temperatures. "
-                "The simulation generally branches from a scenario simulation at some point in the future."
+                "Stablisation of global-mean temperature at 1.5C by increasing stratospheric sulfur forcing to "
+                "whatever level is required to achieve stable temperatures. The simulation generally branches from a "
+                "scenario simulation at some point in the future."
             ),
             activity="geomip",
             **AOGCM,
@@ -1669,22 +1657,23 @@ def add_geomip() -> None:
         ),
         CMIP7Experiment(
             description=(
-                "Stablisation of global-mean temperature at 1.5C "
-                "by increasing stratospheric sulfur forcing "
-                "to whatever level is required to achieve stable temperatures "
-                f"after following the `{base_scenario}` scenario until {start_year}."
+                "Stablisation of global-mean temperature at 1.5C by increasing stratospheric sulfur forcing to "
+                f"whatever level is required to achieve stable temperatures after following the `{base_scenario}` "
+                f"scenario until {start_year}."
             ),
             branch_information=f"Branch from the `{base_scenario}` simulation at the start of {start_year}.",
             start_timestamp=f"{start_year}-01-01",
             end_timestamp=None,
             min_number_yrs_per_sim=50.0,
             min_ensemble_size=1,
-            parent_activity=get(base_scenario).universe.activity,
+            parent_activity=holder.get(base_scenario).universe.activity,
             parent_experiment=base_scenario,
             parent_mip_era="cmip7",
             tier=1,
         ),
     )
+
+    return holder
 
 
 def get_citation_for_doi(doi: str, style: str = "apa") -> str | None:
@@ -1748,54 +1737,64 @@ def write_file(out_file: Path, content: dict[str, Any]) -> None:
     print(f"Wrote {out_file}")
 
 
-def main():
-    add_deck_and_friends()
-    add_flat10()
-    add_damip()
-    add_lmip()
-    add_pmip()
-    add_piclim()
-    add_scenariomip()
-    add_polmip()
-    add_firemip()
-    add_aerchemmip()
-    add_geomip()
-
-    for id, experiment in EXPERIMENTS.items():
+def write_files(holder: Holder, universe_root: Path, project_root: Path) -> None:
+    """Write the experiments, activities and references"""
+    for id, experiment in holder.experiments.items():
         write_file(
-            UNIVERSE_ROOT / "experiment" / f"{id}.json",
+            universe_root / "experiment" / f"{id}.json",
             {"id": id, "type": "experiment", **as_json(experiment.universe)},
         )
         write_file(
-            PROJECT_ROOT / "experiment" / f"{id}.json",
+            project_root / "experiment" / f"{id}.json",
             {"id": id, "type": "experiment", **as_json(experiment.cmip7)},
         )
 
-    for activity in ACTIVITIES.values():
+    for activity in holder.activities.values():
         references = [
             get_reference(url, activity.id, i)
             for i, url in enumerate(activity.references)
         ]
         for reference in references:
             write_file(
-                UNIVERSE_ROOT / "reference" / f"{reference.id}.json",
+                universe_root / "reference" / f"{reference.id}.json",
                 {"type": "reference", "drs_name": reference.id, **as_json(reference)},
             )
 
         write_file(
-            PROJECT_ROOT / "activity" / f"{activity.id}.json",
+            project_root / "activity" / f"{activity.id}.json",
             {
                 **as_json(activity),
                 "type": "activity",
                 "experiments": sorted(
                     id
-                    for id, experiment in EXPERIMENTS.items()
+                    for id, experiment in holder.experiments.items()
                     if experiment.universe.activity == activity.id
                 ),
                 # Written as the ids of the reference entries, rather than DOIs
                 "references": sorted(v.id for v in references),
             },
         )
+
+
+def main():
+    holder = Holder(activities=ACTIVITIES)
+    # Order matters: later steps look up experiments added by earlier steps
+    for add_experiments in (
+        add_deck_and_friends,
+        add_flat10,
+        add_damip,
+        add_lmip,
+        add_pmip,
+        add_piclim,
+        add_scenariomip,
+        add_polmip,
+        add_firemip,
+        add_aerchemmip,
+        add_geomip,
+    ):
+        holder = add_experiments(holder)
+
+    write_files(holder, universe_root=UNIVERSE_ROOT, project_root=PROJECT_ROOT)
 
 
 if __name__ == "__main__":
