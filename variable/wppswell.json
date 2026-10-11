@@ -6,5 +6,5 @@
     "long_name": "Swell Wave Peak Period",
     "standard_name": "sea_surface_swell_wave_period_at_variance_spectral_density_maximum",
     "units": "s",
-    "description": "Wave period associated with the most energetic swell waves (i.e., waves that have propagated away from their generation area). In spectral wind wave models, this represents the spectral peak across part of the two-dimensional wave spectrum, incorporating just swell waves."
+    "description": "Wave period associated with the most energetic swell waves (i.e., waves that have propagated away from their generation area). In spectral wind wave models, this represents the spectral peak across part of the two-dimensional wave spectrum, incorporating just swell waves."
 }

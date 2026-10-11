@@ -6,5 +6,5 @@
     "long_name": "Total Peak Wave Direction",
     "standard_name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
     "units": "degree",
-    "description": "Direction of wave propagation (direction from which the wave is coming) derived from the total wave energy spectrum, incorporating both wind-sea and swell waves, by identifying the direction associated with the peak (maximum) energy density. This variable is usually expressed in degrees relative to true north."
+    "description": "Direction of wave propagation (direction from which the wave is coming) derived from the total wave energy spectrum, incorporating both wind-sea and swell waves, by identifying the direction associated with the peak (maximum) energy density. This variable is usually expressed in degrees relative to true north."
 }

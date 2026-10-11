@@ -6,5 +6,5 @@
     "long_name": "Northward Surface Stokes Drift",
     "standard_name": "sea_surface_wave_stokes_drift_northward_velocity",
     "units": "m s-1",
-    "description": "The northward component of the net drift velocity of ocean water caused by surface wind-sea waves. The Stokes drift velocity could be defined as the difference between the average Lagrangian flow velocity of a fluid parcel, and the average Eulerian flow velocity of the fluid at a fixed position."
+    "description": "The northward component of the net drift velocity of ocean water caused by surface wind-sea waves. The Stokes drift velocity could be defined as the difference between the average Lagrangian flow velocity of a fluid parcel, and the average Eulerian flow velocity of the fluid at a fixed position."
 }

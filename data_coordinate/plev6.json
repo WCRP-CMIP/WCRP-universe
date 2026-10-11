@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "plev6",
     "type": "data_coordinate",
-    "description": "6 pressure levels used for accurate assessment of land–atmosphere coupling",
+    "description": "6 pressure levels used for accurate assessment of land-atmosphere coupling",
     "drs_name": "plev6",
     "coordinate_type": "standard_1d",
     "data_type": "double",

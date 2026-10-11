@@ -6,5 +6,5 @@
     "long_name": "Net Latent Heat Flux over Sea Ice",
     "standard_name": "surface_downward_latent_heat_flux",
     "units": "W m-2",
-    "description": "Net latent heat flux over sea ice (energy flow per sea ice area). Positive for a downward heat flux."
+    "description": "Net latent heat flux over sea ice (energy flow per sea ice area). Positive for a downward heat flux."
 }
