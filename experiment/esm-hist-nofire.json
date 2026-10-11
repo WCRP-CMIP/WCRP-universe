@@ -10,7 +10,7 @@
         "aer",
         "chem"
     ],
-    "branch_information": "Branch from `piControl-nofire` or (as a fallback) `piControl` at a time of your choosing",
+    "branch_information": "Branch from `esm-piControl-nofire` or (as a fallback) `esm-piControl` at a time of your choosing",
     "min_ensemble_size": 3,
     "parent_activity": null,
     "parent_experiment": null,

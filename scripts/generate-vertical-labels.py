@@ -15,16 +15,16 @@ def main():
         (
             "alh",
             (
-                "Data is reported on the model's atmospheric model half-levels "
-                "(i.e. at the interfaces between model vertical layers)."
+                "Data is reported on the model's atmospheric model half-levels (i.e. at the interfaces between model "
+                "vertical layers)."
             ),
         ),
         ("ol", "Data is reported on the model's ocean model levels."),
         (
             "olh",
             (
-                "Data is reported on the model's ocean model half-levels "
-                "(i.e. at the interfaces between model vertical layers)."
+                "Data is reported on the model's ocean model half-levels (i.e. at the interfaces between model "
+                "vertical layers)."
             ),
         ),
         ("rho", "Data is reported on specific density surface(s)."),
@@ -61,13 +61,11 @@ def main():
         ("p8", "Data is reported at 8 pressure levels."),
         (
             "p7c",
-            "Data is reported at 7 pressure levels "
-            "(although they're not the same pressure levels as `p7h`).",
+            "Data is reported at 7 pressure levels (although they're not the same pressure levels as `p7h`).",
         ),
         (
             "p7h",
-            "Data is reported at 7 pressure levels "
-            "(although they're not the same pressure levels as `p7c`).",
+            "Data is reported at 7 pressure levels (although they're not the same pressure levels as `p7c`).",
         ),
         ("p19", "Data is reported at 19 pressure levels."),
         ("p27", "Data is reported at 27 pressure levels."),
@@ -75,15 +73,17 @@ def main():
         ("op4", "Data is reported at 4 ocean pressure layers."),
         (
             "op20bar",
-            "Data is reported at a hydrostatic pressure depth of 20.2bar (a pressure level which is close to 200m in a standard ocean profile)",
+            (
+                "Data is reported at a hydrostatic pressure depth of 20.2bar (a pressure level which is close to 200m "
+                "in a standard ocean profile)"
+            ),
         ),
         (
             "u",
             (
-                "Data is reported with no vertical dimension. "
-                "This does not necessarily mean that there is no vertical information "
-                "attached to the variable, it is just not included in the dimension information. "
-                "Vertical information might be found in the variable's standard name or cell methods."
+                "Data is reported with no vertical dimension. This does not necessarily mean that there is no vertical "
+                "information attached to the variable, it is just not included in the dimension information. Vertical "
+                "information might be found in the variable's standard name or cell methods."
             ),
         ),
     ):
