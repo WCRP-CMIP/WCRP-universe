@@ -153,9 +153,24 @@ def get_citation_for_doi(doi: str, style: str = "apa") -> str | None:
     return res
 
 
+CITATION_FIXES: dict[str, str] = {
+    # The DOI service returns a space followed by a no-break space here
+    "(ScenarioMIP-CMIP7) \N{NO-BREAK SPACE}.": "(ScenarioMIP-CMIP7) .",
+}
+"""Hard-coded fixes applied to citations (substring to replace: replacement)"""
+
+
+def fix_citation(citation: str) -> str:
+    """Apply `CITATION_FIXES` to a citation"""
+    for old, new in CITATION_FIXES.items():
+        citation = citation.replace(old, new)
+
+    return citation
+
+
 def get_reference(url: str, activity: str, number: int) -> Reference:
     try:
-        citation = get_citation_for_doi(url)
+        citation = fix_citation(get_citation_for_doi(url))
         doi = url
 
     except urllib.error.HTTPError as exc:
