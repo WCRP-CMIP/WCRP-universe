@@ -2373,7 +2373,9 @@ class Holder(BaseModel):
             ]
             univ_esm.branch_information.replace("piControl", "esm-piControl")
             univ_esm.parent_experiment = (
-                f"esm-{univ.parent_experiment}" if univ.parent_experiment else None
+                f"esm-{univ.parent_experiment}".replace("esm-historical", "esm-hist")
+                if univ.parent_experiment
+                else None
             )
             proj_esm = ExperimentProject(
                 id=univ_esm.drs_name.lower(),
