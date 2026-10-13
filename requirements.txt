@@ -1,0 +1,2 @@
+# Dependencies of the scripts run in CI (e.g. scripts/check-cv-entries-are-ascii.py)
+pylatexenc==2.11

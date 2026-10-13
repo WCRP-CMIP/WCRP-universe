@@ -7,12 +7,12 @@
         "FZJ"
     ],
     "labels": [
-        "Forschungszentrum Julich"
+        "Forschungszentrum J\\\"ulich"
     ],
-    "description": "Forschungszentrum Julich",
+    "description": "Forschungszentrum J\\\"ulich",
     "location": [
         {
-            "city": "Julich",
+            "city": "J\\\"ulich",
             "country": "Germany",
             "lat": 50.92149,
             "lon": 6.36267

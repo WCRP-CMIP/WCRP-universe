@@ -11,7 +11,7 @@
         "Helmholtz Centre for Polar and Marine Research",
         "Alfred Wegener Institute for Polar and Marine Research",
         "Alfred-Wegener-Institut",
-        "Alfred-Wegener-Institut Helmholtz-Zentrum fur Polar- und Meeresforschung"
+        "Alfred-Wegener-Institut Helmholtz-Zentrum f\\\"ur Polar- und Meeresforschung"
     ],
     "description": "The Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI), is a German research centre based in Bremerhaven and a member of the Helmholtz Association. Its work spans polar climate, sea ice, marine biogeochemistry, and Earth system modelling, and it develops the FESOM ocean model used in the AWI-CM and AWI-ESM coupled climate models contributed to CMIP.",
     "location": [
