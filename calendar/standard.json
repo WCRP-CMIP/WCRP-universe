@@ -2,6 +2,6 @@
     "@context": "000_context.jsonld",
     "id": "standard",
     "type": "calendar",
-    "description": "The Gregorian–Julian calendar, as defined by the CF conventions.",
+    "description": "The Gregorian-Julian calendar, as defined by the CF conventions.",
     "drs_name": "standard"
 }
