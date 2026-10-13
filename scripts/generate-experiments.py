@@ -14,9 +14,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from pydantic import BaseModel, ConfigDict
-
 from ascii_latex import to_ascii_latex_recursive
+from pydantic import BaseModel, ConfigDict
 
 
 class ExperimentUniverse(BaseModel):
@@ -155,7 +154,7 @@ def get_citation_for_doi(doi: str, style: str = "apa") -> str | None:
 
 CITATION_FIXES: dict[str, str] = {
     # The DOI service returns a space followed by a no-break space here
-    "(ScenarioMIP-CMIP7) \N{NO-BREAK SPACE}.": "(ScenarioMIP-CMIP7) .",
+    "(ScenarioMIP-CMIP7) \N{NO-BREAK SPACE}.": "(ScenarioMIP-CMIP7).",
 }
 """Hard-coded fixes applied to citations (substring to replace: replacement)"""
 
