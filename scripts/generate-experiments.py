@@ -16,6 +16,8 @@ from typing import Any
 
 from pydantic import BaseModel, ConfigDict
 
+from ascii_latex import to_ascii_latex_recursive
+
 
 class ExperimentUniverse(BaseModel):
     model_config = ConfigDict(
@@ -2304,7 +2306,7 @@ class Holder(BaseModel):
             (
                 "scen7-h-ca2010fireaer",
                 (
-                    "The same as `scen7-h`, but with fire aerosol emissions fixed at their 2001–2020 averages. "
+                    "The same as `scen7-h`, but with fire aerosol emissions fixed at their 2001-2020 averages. "
                     "This does not apply to models that have interactive fire-emissions."
                 ),
                 scen7_experiment_universe.branch_information,
@@ -2510,7 +2512,9 @@ def sort_keys(
 
 
 def write_file(out_file: str, content: dict[str, Any]) -> None:
-    content_sorted = sort_keys(content)
+    # Convert text to ASCII, encoding non-ASCII characters as LaTeX
+    # (e.g. citations retrieved from DOIs often contain non-ASCII characters)
+    content_sorted = sort_keys(to_ascii_latex_recursive(content))
     with open(out_file, "w") as fh:
         json.dump(content_sorted, fh, indent=4)
         fh.write("\n")
