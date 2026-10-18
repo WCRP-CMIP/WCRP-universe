@@ -4,34 +4,13 @@
     "type": "institution",
     "drs_name": "UArizona",
     "acronyms": [
-        "UArizona",
         "UA"
     ],
-    "labels": [
-        "The University of Arizona",
-        "University of Arizona",
-        "The University of Arizona, Tucson",
-        "Universidad de Arizona"
-    ],
-    "description": "The University of Arizona is a public research university in Tucson, Arizona, USA. It conducts extensive research in atmospheric sciences, climate modeling, hydrology, and Earth system science. The institution participates in global climate research collaborations and develops numerical models for environmental and climate applications.",
-    "location": [
-        {
-            "city": "Tucson",
-            "country": "United States",
-            "lat": 32.22174,
-            "lon": -110.92648
-        },
-        {
-            "city": "Phoenix",
-            "country": "United States",
-            "lat": 33.44838,
-            "lon": -112.07404
-        }
-    ],
-    "ror": "03m2x1q45",
+    "labels": [],
+    "description": "The UA-Climate group at the University of Arizona develops and applies coupled atmosphere-ocean general circulation models for climate research. The group focuses on simulating large-scale climate processes, evaluating model performance, and contributing to international climate model intercomparison efforts with a focus on the Southern Ocean's role in climate. UA-Climate participates in CMIP activities by producing and analyzing AOGCM simulations for assessment and research.",
+    "location": [],
+    "ror": "03m2xiq45",
     "urls": [
-        "https://www.arizona.edu",
-        "http://www.arizona.edu/",
-        "http://en.wikipedia.org/wiki/University_of_Arizona"
+        "https://www.arizona.edu"
     ]
 }
