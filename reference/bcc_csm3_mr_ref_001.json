@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "bcc_csm3_mr_ref_001",
+  "type": "reference",
+  "citation": "Wu, T., Lu, Y., Fang, Y., Xin, X., Li, L., Li, W., Jie, W., Zhang, J., Liu, Y., Zhang, L., Zhang, F., Zhang, Y., Wu, F., Li, J., Chu, M., Wang, Z., Shi, X., Liu, X., Wei, M., et al. (2019). The Beijing Climate Center Climate System Model (BCC-CSM):  the main progress from CMIP5 to CMIP6. Geoscientific Model Development, 12(4), 1573-1600. https://doi.org/10.5194/gmd-12-1573-2019\n",
+  "doi": "https://doi.org/10.5194/gmd-12-1573-2019",
+  "drs_name": "bcc_csm3_mr_ref_001"
+}
