@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "ipsl_cm6_esmco2_ref_001",
+  "type": "reference",
+  "citation": "Boucher, O., Servonnat, J., Albright, A. L., Aumont, O., Balkanski, Y., Bastrikov, V., Bekki, S., Bonnet, R., Bony, S., Bopp, L., Braconnot, P., Brockmann, P., Cadule, P., Caubel, A., Cheruy, F., Codron, F., Cozic, A., Cugnet, D., D'Andrea, F., et al. (2020). Presentation and Evaluation of the IPSL-CM6A-LR Climate Model. Journal of Advances in Modeling Earth Systems, 12(7). Portico. https://doi.org/10.1029/2019ms002010\n",
+  "doi": "https://doi.org/10.1029/2019MS002010",
+  "drs_name": "ipsl_cm6_esmco2_ref_001"
+}
