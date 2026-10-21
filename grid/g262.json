@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g262",
+  "type": "grid",
+  "description": "Horizontal grid cell with a basin by latitude grid type.",
+  "drs_name": "g262",
+  "region": "global",
+  "grid_type": "basin_by_latitude",
+  "n_cells": null,
+  "grid_mapping": null
+}

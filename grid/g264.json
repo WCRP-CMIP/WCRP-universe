@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g264",
+  "type": "grid",
+  "description": "Horizontal grid cell with a tripolar grid type.",
+  "drs_name": "g264",
+  "region": "global",
+  "grid_type": "tripolar",
+  "n_cells": 415440,
+  "grid_mapping": "latitude_longitude"
+}
