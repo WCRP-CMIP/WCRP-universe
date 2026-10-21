@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "discrete_lines",
+    "type": "grid_type",
+    "description": "A set of discrete lines (e.g. ocean passages or transects), rather than cells that tessellate a region.",
+    "drs_name": "discrete_lines"
+}
