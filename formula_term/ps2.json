@@ -6,7 +6,7 @@
     "drs_name": "ps2",
     "data_type": "real",
     "out_name": "ps",
-    "cf_standard_name": "air_pressure",
+    "cf_standard_name": "surface_air_pressure",
     "units": "Pa",
     "dimensions": [
         "longitude",
