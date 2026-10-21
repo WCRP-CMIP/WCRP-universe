@@ -1,0 +1,20 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "bcc_csm3_mr",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "BCC-CSM3-MR is an updated version of BCC-CSM2-MR, as used for CMIP6 (Wu et al., 2019). The main differences from BCC-CSM2-MR include improved horizontal and vertical resolution in the atmosphere, an upgraded ocean model version from MOM4 to MOM5, and updated physical processes in the atmospheric, land surface, and sea ice model components. The atmospheric component, BCC-AGCM4-MR, has a horizontal resolution of T159 triangular truncation, approximately 75 km, and 72 vertical hybrid sigma-pressure layers, with the top level at 0.01 hPa. Model physics has been improved in the atmospheric component, including cloud parameterization, deep and shallow cumulus convection, boundary layer turbulence, and gravity wave schemes. The land component, BCC-AVIM3, improves the parameterization in terms of snow cover, soil freeze/thaw processes, rice paddies, lakes with real depths in a snow-ice-water-soil framework, and ground energy balance. Sea ice is classified into five thickness categories, and redistribution among these categories is governed by a simple enthalpy conservation principle. The sea ice model incorporates snow heat capacity parameterizations that account for vertical salinity profiles and the thermal conductivity of sea ice.",
+  "calendar": [],
+  "release_year": null,
+  "references": [
+    "bcc_csm3_mr_ref_001"
+  ],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "BCC-CSM3-MR"
+}
