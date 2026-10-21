@@ -1,0 +1,12 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "site-collection",
+    "type": "nominal_resolution",
+    "drs_name": "site-collection",
+    "magnitude": 0.0,
+    "range": [
+        0.0,
+        0.0
+    ],
+    "units": "km"
+}
