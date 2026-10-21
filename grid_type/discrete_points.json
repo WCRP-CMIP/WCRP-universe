@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "discrete_points",
+    "type": "grid_type",
+    "description": "A set of discrete sites at point locations (e.g. stations), rather than cells that tessellate a region.",
+    "drs_name": "discrete_points"
+}
