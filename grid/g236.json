@@ -6,6 +6,6 @@
   "drs_name": "g236",
   "region": "global",
   "grid_type": "unstructured_triangular",
-  "n_cells": 211567,
+  "n_cells": 220509,
   "grid_mapping": "latitude_longitude"
 }

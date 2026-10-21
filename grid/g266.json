@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g266",
+  "type": "grid",
+  "description": "Horizontal grid cell with a regular gaussian grid type.",
+  "drs_name": "g266",
+  "region": "global",
+  "grid_type": "regular_gaussian",
+  "n_cells": 32768,
+  "grid_mapping": "latitude_longitude"
+}
