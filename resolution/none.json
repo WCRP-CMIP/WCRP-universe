@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "none",
+    "name": "none",
+    "type": "resolution",
+    "description": "Nominal horizontal resolution is not applicable or not meaningfully defined for this dataset, for example because its horizontal sampling geometry is not a two-dimensional grid.",
+    "drs_name": "None"
+}
