@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uarizona",
+    "type": "organisation",
+    "drs_name": "UArizona",
+    "members": [
+        "uarizona"
+    ],
+    "description": "The UA-Climate group at the University of Arizona develops and applies coupled atmosphere-ocean general circulation models for climate research. The group focuses on simulating large-scale climate processes, evaluating model performance, and contributing to international climate model intercomparison efforts with a focus on the Southern Ocean's role in climate. UA-Climate participates in CMIP activities by producing and analyzing AOGCM simulations for assessment and research."
+}

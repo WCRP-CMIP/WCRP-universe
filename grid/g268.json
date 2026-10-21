@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g268",
+  "type": "grid",
+  "description": "Horizontal grid cell with a quadratic spectral gaussian grid type and 1.875 x 1.875 degree resolution.",
+  "drs_name": "g268",
+  "region": "global",
+  "grid_type": "quadratic_spectral_gaussian",
+  "n_cells": 18432,
+  "grid_mapping": "latitude_longitude"
+}
