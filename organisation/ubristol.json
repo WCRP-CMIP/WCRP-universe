@@ -1,0 +1,10 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ubristol",
+    "type": "organisation",
+    "drs_name": "UBristol",
+    "members": [
+        "ubristol"
+    ],
+    "description": "BRIDGE modelling group, School of Geographical Sciences, University of Bristol, UK"
+}
