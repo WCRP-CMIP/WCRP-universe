@@ -7,11 +7,10 @@
         "UBristol"
     ],
     "labels": [
-        "University of Bristol",
-        "UK",
-        "Prifysgol Bryste"
+        "Prifysgol Bryste",
+        "University of Bristol"
     ],
-    "description": "University of Bristol, UK",
+    "description": "BRIDGE modelling group, School of Geographical Sciences,  University of Bristol, UK",
     "location": [
         {
             "city": "Bristol",
@@ -22,7 +21,7 @@
     ],
     "ror": "0524sp257",
     "urls": [
-        "http://bristol.ac.uk/",
+        "https://www.bristol.ac.uk/",
         "http://en.wikipedia.org/wiki/University_of_Bristol"
     ]
 }
