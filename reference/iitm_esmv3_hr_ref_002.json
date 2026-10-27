@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "iitm_esmv3_hr_ref_002",
+  "type": "reference",
+  "citation": "See https://paper.under.review",
+  "doi": "N/A",
+  "drs_name": "iitm_esmv3_hr_ref_002"
+}
