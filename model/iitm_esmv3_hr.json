@@ -1,0 +1,21 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "iitm_esmv3_hr",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "The IITM Earth System Model (IITM-ESMv3-HR) for CMIP7 uses a GFS-based atmospheric model (Triangular Cubic Octahedral, TCO126 grid, ~67km), MOM4p1 ocean model (1{\\textdegree}), Sea Ice Simulator (SIS), Noah land-surface model with 24 vegetation types, and ocean biogeochemistry (TOPAZ), with the major components operating interactively. Atmosphere, ocean, sea ice, biogeochemistry, and land surface/subsurface processes are dynamically simulated, while land ice and atmospheric chemistry are omitted in the current configuration. The IITM-ESMv3 incorporates prescribed natural and anthropogenic aerosol forcing through updated time-varying distributions of aerosol optical depth (AOD), single scattering albedo (SSA), and asymmetry parameter (ASY) developed for CMIP7. The IITM-ESMv3 incorporates time-varying land use land cover changes following CMIP7 protocol. The coupled framework using Flexible Modeling System (FMS) enables interactive exchanges of energy, momentum, freshwater, and other tracers among the active Earth-system components.",
+  "calendar": [],
+  "release_year": null,
+  "references": [
+    "iitm_esmv3_hr_ref_001",
+    "iitm_esmv3_hr_ref_002"
+  ],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "IITM-ESMv3-HR"
+}
