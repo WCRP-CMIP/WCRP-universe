@@ -10,7 +10,7 @@
         "aer",
         "chem"
     ],
-    "branch_information": "Branch from `historical` at 2022-01-01.",
+    "branch_information": "Branch from `esm-hist` at 2022-01-01.",
     "min_ensemble_size": 3,
     "parent_activity": "cmip",
     "parent_experiment": "esm-hist",

@@ -13,86 +13,71 @@ def main():
         (
             "tmax",
             (
-                "Data is the maximum within each time period "
-                "(i.e. interval defined by the time bounds)."
+                "Data is the maximum within each time period (i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
             "tmin",
             (
-                "Data is the minimum within each time period "
-                "(i.e. interval defined by the time bounds)."
+                "Data is the minimum within each time period (i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
             "tsum",
             (
-                "Data is the sum over each time period "
-                "(i.e. interval defined by the time bounds)."
+                "Data is the sum over each time period (i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
             "tavg",
             (
-                "Data is the average over each time period "
-                "(i.e. interval defined by the time bounds)."
+                "Data is averaged over each time period (i.e. each reported interval defined by its time bounds)."
             ),
         ),
         (
             "tpt",
             (
-                "Data represents the value at the specific point in time "
-                "at which the data is reported "
-                "(all other time points within each time interval are not considered)."
+                "Data represents the value at the specific point in time at which the data is reported (all other time "
+                "points within each time interval are not considered)."
             ),
         ),
         (
             "tclm",
             (
-                "Data is a climatology. "
-                "In this case, it is a monthly climatology "
-                "i.e. each set of time bounds represents a month "
-                "and the values show the monthy-by-month variation "
-                "(derived by averaging over a number of years)."
+                "Data is a climatology. In this case, it is a monthly climatology i.e. each set of time bounds "
+                "represents a month and the twelve values show the month-by-month variation (derived by averaging over "
+                "a number of years)."
             ),
         ),
         (
             "tclmdc",
             (
-                "Data is a climatology. "
-                "In this case, it is a diurnal cycle climatology "
-                "i.e. each set of time bounds represents an hour "
-                "and the values show the hour-by-hour variation "
-                "(derived by averaging over a number of days or months or years)."
+                "Data is a climatology. In this case, it is a diurnal cycle climatology i.e. each set of time bounds "
+                "represents an hour and the values show the hour-by-hour variation (derived by averaging over a number "
+                "of days or months or years)."
             ),
         ),
         (
             "tmaxavg",
             (
-                "Data is the mean of daily maximum over each time period "
-                "(i.e. interval defined by the time bounds)."
-                "For example, the data may be reported monthly, "
-                "with each value being the mean of the daily maximum temperature "
-                "for each day in the month."
+                "Data is the mean of daily maxima over each time period (i.e. each reported interval defined by its "
+                "time bounds). For example, the data may be reported monthly, with each value being the mean of the "
+                "daily maximum temperature for each day in the month."
             ),
         ),
         (
             "tminavg",
             (
-                "Data is the mean of daily minimum over each time period "
-                "(i.e. interval defined by the time bounds)."
-                "For example, the data may be reported monthly, "
-                "with each value being the mean of the daily minimum temperature "
-                "for each day in the month."
+                "Data is the mean of daily minima over each time period (i.e. each reported interval defined by its "
+                "time bounds). For example, the data may be reported monthly, with each value being the mean of the "
+                "daily minimum temperature for each day in the month."
             ),
         ),
         (
             "ti",
             (
-                "Data is time independent i.e. has no time dimension. "
-                "This does not necessarily mean the data has no time relevance "
-                "e.g. the data may be a mean over all time "
-                "(therefore not having a time dimension), "
+                "Data is time independent i.e. has no time dimension. This does not necessarily mean the data has no "
+                "time relevance e.g. the data may be a mean over all time (therefore not having a time dimension), "
                 "although such cases are rare (if they exist at all) in CMIP contexts."
             ),
         ),
