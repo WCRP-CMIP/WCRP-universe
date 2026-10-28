@@ -1,5 +1,5 @@
-# Pinned dependencies for `_src` and `_tests`
-# (the scripts in `scripts/` only need the Python standard library).
+# Pinned dependencies for `_src`, `_tests` and the scripts in `scripts/`
+# (the scripts only need pylatexenc, the rest are for `_src` and `_tests`).
 #
 # Install with:
 #   pip install -r requirements.txt
@@ -56,6 +56,7 @@ pyairtable==3.5.0.post1
 pydantic==2.14.0
 pydantic_core==2.50.0
 Pygments==2.21.0
+pylatexenc==2.11
 PyLD==3.3.0
 pytest==9.1.1
 python-dateutil==2.9.0.post0

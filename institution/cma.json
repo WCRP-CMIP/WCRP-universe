@@ -1,0 +1,29 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cma",
+    "type": "institution",
+    "drs_name": "CMA",
+    "acronyms": [
+        "CMA"
+    ],
+    "labels": [
+        "China Meteorological Administration",
+        "Central Military Commission Meteorological Bureau",
+        "中国气象局"
+    ],
+    "description": "The China Meteorological Administration is the supervising authority for the development of the BCC-CSM model.",
+    "location": [
+        {
+            "city": "Beijing",
+            "country": "China",
+            "lat": 39.9075,
+            "lon": 116.39723
+        }
+    ],
+    "ror": "00bx3rb98",
+    "urls": [
+        "https://www.cma.gov.cn/en/",
+        "http://www.cma.gov.cn/en2014/",
+        "https://en.wikipedia.org/wiki/China_Meteorological_Administration"
+    ]
+}

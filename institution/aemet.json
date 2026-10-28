@@ -7,13 +7,13 @@
         "AEMET"
     ],
     "labels": [
-        "Agencia Estatal de Meteorología",
-        "Agència Estatal de Meteorologia",
-        "Instituto Central Meteorológico",
+        "Agencia Estatal de Meteorolog{\\'\\i}a",
+        "Ag\\`encia Estatal de Meteorologia",
+        "Instituto Central Meteorol\\'ogico",
         "Meteorologiako Estatu Agentzia",
         "State Meteorological Agency"
     ],
-    "description": "Agencia Estatal de Meteorología",
+    "description": "Agencia Estatal de Meteorolog{\\'\\i}a",
     "location": [
         {
             "city": "Madrid",

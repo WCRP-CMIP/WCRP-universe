@@ -8,8 +8,8 @@
     ],
     "labels": [
         "Technical University of Crete",
-        "Universit\u00e9 technique de cr\u00e8te",
-        "\u03a0\u03bf\u03bb\u03c5\u03c4\u03b5\u03c7\u03bd\u03b5\u03af\u03bf \u039a\u03c1\u03ae\u03c4\u03b7\u03c2"
+        "Universit\\'e technique de cr\\`ete",
+        "\\ensuremath{\\Pi}o\\ensuremath{\\lambda}\\ensuremath{\\upsilon}\\ensuremath{\\tau}\\ensuremath{\\varepsilon}\\ensuremath{\\chi}\\ensuremath{\\nu}\\ensuremath{\\varepsilon}\\ensuremath{\\acute\\iota}o K\\ensuremath{\\rho}\\ensuremath{\\acute\\eta}\\ensuremath{\\tau}\\ensuremath{\\eta}\\ensuremath{\\varsigma}"
     ],
     "description": "Technical University of Crete",
     "location": [

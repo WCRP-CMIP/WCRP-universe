@@ -38,4 +38,5 @@ log_cli_date_format = "%Y-%m-%d %H:%M:%S"
 dev = [
     "jupyter-console>=6.6.3",
     "pyairtable>=3.1.1",
+    "pylatexenc>=2.10",
 ]

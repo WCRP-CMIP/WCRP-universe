@@ -10,7 +10,7 @@
         "aer",
         "chem"
     ],
-    "description": "Amip with Natural forcings: Solar + volcanic + orbital with observed SST/SIC. All other boundary\u00a0conditions set\u00a0to 1850.",
+    "description": "Amip with Natural forcings: Solar + volcanic + orbital with observed SST/SIC. All other boundary conditions set to 1850.",
     "end_year": 2024,
     "experiment": "Amip with Natural forcings",
     "min_number_yrs_per_sim": 35,

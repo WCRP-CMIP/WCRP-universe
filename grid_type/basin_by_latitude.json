@@ -1,0 +1,7 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "basin_by_latitude",
+    "type": "grid_type",
+    "description": "A grid of ocean basins, each of which is represented by zonal cells that extend to the full width of each basin at each latitude.",
+    "drs_name": "basin_by_latitude"
+}

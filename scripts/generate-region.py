@@ -10,7 +10,7 @@ def main():
         (
             "global",
             "glb",
-            "The geographical region of the whole of the Earth’s surface, as defined by the CF conventions.",
+            "The geographical region of the whole of the Earth's surface, as defined by the CF conventions.",
             "global",
             None,
         ),
@@ -25,7 +25,7 @@ def main():
         (
             "30s-90s",
             "30S-90S",
-            "The geographical region of the Earth’s surface between 30 and 90 degrees south.",
+            "The geographical region of the Earth's surface between 30 and 90 degrees south.",
             None,
             None,
         ),
