@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "iitm_esmv3_hr_ref_001",
+  "type": "reference",
+  "citation": "Swapna, P., Krishnan, R., Sandeep, N., Prajeesh, A. G., Ayantika, D. C., Manmeet, S., & Vellore, R. (2018). Long-Term Climate Simulations Using the IITM Earth System Model (IITM-ESMv2) With Focus on the South Asian Monsoon. Journal of Advances in Modeling Earth Systems, 10(5), 1127-1149. Portico. https://doi.org/10.1029/2017ms001262\n",
+  "doi": "https://doi.org/10.1029/2017MS001262",
+  "drs_name": "iitm_esmv3_hr_ref_001"
+}

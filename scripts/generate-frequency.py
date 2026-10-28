@@ -22,9 +22,9 @@ def main():
         (
             "1hrPt",
             (
-                "Hourly samples. This is a legacy label that indicated that the sample was a point sample "
-                "i.e. represented the value at a specific point in time. "
-                "This information is now conveyed via the temporal label instead."
+                "Hourly samples. This is a legacy label that indicated that the sample was a point sample i.e. "
+                "represented the value at a specific point in time. This information is now conveyed via the temporal "
+                "label instead."
             ),
             1.0,
             "hour",
@@ -38,25 +38,25 @@ def main():
         (
             "3hrPt",
             (
-                "Three hourly samples. This is a legacy label that indicated that the sample was a point sample "
-                "i.e. represented the value at a specific point in time. "
-                "This information is now conveyed via the temporal label instead."
+                "Three hourly samples. This is a legacy label that indicated that the sample was a point sample i.e. "
+                "represented the value at a specific point in time. This information is now conveyed via the temporal "
+                "label instead."
             ),
             3.0,
             "hour",
         ),
         (
             "6hr",
-            "Three hourly samples.",
+            "Six hourly samples.",
             6.0,
             "hour",
         ),
         (
             "6hrPt",
             (
-                "Six hourly samples. This is a legacy label that indicated that the sample was a point sample "
-                "i.e. represented the value at a specific point in time. "
-                "This information is now conveyed via the temporal label instead."
+                "Six hourly samples. This is a legacy label that indicated that the sample was a point sample i.e. "
+                "represented the value at a specific point in time. This information is now conveyed via the temporal "
+                "label instead."
             ),
             6.0,
             "hour",
@@ -70,8 +70,8 @@ def main():
         (
             "dec",
             (
-                "Decadal samples. "
-                "Note that this means that the time interval between each sample is not constant for some calendars."
+                "Decadal samples. Note that this means that the time interval between each sample is not constant for "
+                "some calendars."
             ),
             10.0,
             "year",
@@ -84,15 +84,18 @@ def main():
         ),
         (
             "mon",
-            "Monthly samples. Note that this means that the time interval between each sample is not constant for some calendars.",
+            (
+                "Monthly samples. Note that this means that the time interval between each sample is not constant for "
+                "some calendars."
+            ),
             1.0,
             "month",
         ),
         (
             "monC",
             (
-                "Monthly climatology (i.e. mean over a number of months) at monthly resolution. "
-                "Note that this means that the time interval between each sample is not constant for some calendars."
+                "Monthly climatology (i.e. mean over a number of months) at monthly resolution. Note that this means "
+                "that the time interval between each sample is not constant for some calendars."
             ),
             1.0,
             "month",
@@ -100,9 +103,9 @@ def main():
         (
             "monPt",
             (
-                "Monthly samples. This is a legacy label that indicated that the sample was a point sample "
-                "i.e. represented the value at a specific point in time. "
-                "This information is now conveyed via the temporal label instead."
+                "Monthly samples. This is a legacy label that indicated that the sample was a point sample i.e. "
+                "represented the value at a specific point in time. This information is now conveyed via the temporal "
+                "label instead."
             ),
             1.0,
             "month",
@@ -110,10 +113,9 @@ def main():
         (
             "subhrPt",
             (
-                "Sub-hourly (i.e. more frequently than once per hour) samples. "
-                "This is a legacy label that indicated that the sample was a point sample "
-                "i.e. represented the value at a specific point in time. "
-                "This information is now conveyed via the temporal label instead."
+                "Sub-hourly (i.e. more frequently than once per hour) samples. This is a legacy label that indicated "
+                "that the sample was a point sample i.e. represented the value at a specific point in time. This "
+                "information is now conveyed via the temporal label instead."
             ),
             # Not uniquely defined therefore None
             None,
@@ -122,8 +124,8 @@ def main():
         (
             "yr",
             (
-                "Yearly (i.e. annual) samples. "
-                "Note that this means that the time interval between each sample is not constant for some calendars."
+                "Yearly (i.e. annual) samples. Note that this means that the time interval between each sample is not "
+                "constant for some calendars."
             ),
             1.0,
             "year",
@@ -131,9 +133,9 @@ def main():
         (
             "yrPt",
             (
-                "Yearly (i.e. annual) samples. This is a legacy label that indicated that the sample was a point sample "
-                "i.e. represented the value at a specific point in time. "
-                "This information is now conveyed via the temporal label instead."
+                "Yearly (i.e. annual) samples. This is a legacy label that indicated that the sample was a point "
+                "sample i.e. represented the value at a specific point in time. This information is now conveyed via "
+                "the temporal label instead."
             ),
             1.0,
             "year",

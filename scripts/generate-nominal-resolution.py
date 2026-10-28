@@ -53,12 +53,10 @@ def main():
             "id": id,
             "type": "nominal_resolution",
             "description": (
-                "Should drs name include whitespace? "
-                "Having whitespace in drs name isn't ideal, but if this will only ever be used in global attributes, "
-                "it won't technically break things. "
-                f"{resolution:.1f}km nominal resolution. "
-                "This value isn't uniform, "
-                "but provides an esimate of the resolution of the dataset on average."
+                "Should drs name include whitespace? Having whitespace in drs name isn't ideal, but if this will only "
+                f"ever be used in global attributes, it won't technically break things. {resolution:.1f}km nominal "
+                "resolution. This value isn't uniform, but provides an esimate of the resolution of the dataset on "
+                "average."
             ),
             "drs_name": drs_name,
             "magnitude": resolution,
