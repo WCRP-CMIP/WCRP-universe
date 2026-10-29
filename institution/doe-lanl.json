@@ -1,0 +1,32 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "doe-lanl",
+    "type": "institution",
+    "drs_name": "doe-lanl",
+    "acronyms": [
+        "LANL"
+    ],
+    "labels": [
+        "Laboratoire national de los alamos",
+        "Laboratorio Nacional de Los \\'Alamos",
+        "Los Alamos National Laboratory",
+        "U.S. Department of Energy Los Alamos National Laboratory",
+        "U.S. Department of Energy National Nuclear Security Administration Los Alamos National Laboratory",
+        "United States Department of Energy Los Alamos National Laboratory",
+        "United States Department of Energy National Nuclear Security Administration Los Alamos National Laboratory"
+    ],
+    "description": "Los Alamos National Laboratory is a US Department of Energy Laboratory.",
+    "location": [
+        {
+            "city": "Los Alamos",
+            "country": "United States",
+            "lat": 35.88808,
+            "lon": -106.30697
+        }
+    ],
+    "ror": "01e41cf67",
+    "urls": [
+        "http://lanl.gov/",
+        "http://en.wikipedia.org/wiki/Los_Alamos_National_Laboratory"
+    ]
+}
