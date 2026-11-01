@@ -2,7 +2,7 @@
     "@context": "000_context.jsonld",
     "id": "doe-lanl",
     "type": "institution",
-    "drs_name": "doe-lanl",
+    "drs_name": "DOE-LANL",
     "acronyms": [
         "LANL"
     ],
