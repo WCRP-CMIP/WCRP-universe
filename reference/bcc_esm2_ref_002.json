@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "bcc_esm2_ref_002",
+  "type": "reference",
+  "citation": "See https://paper.under.review",
+  "doi": "N/A",
+  "drs_name": "bcc_esm2_ref_002"
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "bcc_esm2",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "BCC-ESM2 is an updated version of BCC-ESM1, which was used for CMIP6 (Wu et al., 2020). The atmosphere, land surface, sea ice, and ocean components share the same configurations as BCC-CSM3-MR, but BCC-ESM2 incorporates interactive atmospheric chemistry and aerosols along with their feedbacks. Land ice is omitted. The atmospheric component, BCC-AGCM4-Chem, combines 66 gas-phase chemical species and 13 bulk aerosol compounds. Following its predecessor BCC-AGCM3-Chem (Wu et al., 2020) used in BCC-ESM1, these species in BCC-AGCM4-Chem are treated interactively through processes including emission, transport, gas-phase chemical reactions, secondary aerosol formation, gravitational settling, dry deposition, wet scavenging by clouds and precipitation, and aerosol effects on radiation, clouds, and precipitation. When forced with CMIP7-prescribed anthropogenic emissions, prognostic aerosols and GHG (including CO2 and O3) effects on radiation are included. The concentrations of other greenhouse gases (including CH4, N2O, CFC11, and CFC12) from CMIP7-prescribed monthly data are still used for their radiation calculations, although they are prognostic variables.",
+  "calendar": [],
+  "release_year": null,
+  "references": [
+    "bcc_esm2_ref_001",
+    "bcc_esm2_ref_002"
+  ],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "BCC-ESM2"
+}
