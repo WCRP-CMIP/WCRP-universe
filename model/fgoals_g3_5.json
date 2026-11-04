@@ -1,0 +1,22 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fgoals_g3_5",
+  "type": "model",
+  "name": "",
+  "family": null,
+  "dynamic_components": [],
+  "prescribed_components": [],
+  "omitted_components": [],
+  "description": "FGOALS-g is a fully coupled global climate model developed by the Institute of Atmospheric Physics, Chinese Academy of Sciences (IAP, CAS). It consists of four dynamically coupled components: atmosphere (GAMIL3), ocean (LICOM3), land (CAS-LSM), and sea ice (CICE4), integrated through CPL7 or C-Coupler2 (Li et al., 2020). The updated FGOALS-g3.5 configuration improves riverine freshwater exchange through nearest-neighbor mapping (Tseng et al., 2016) and revises the Indonesian Seaway bathymetry to better represent the Indonesian Throughflow (Wei et al., 2023). Greenhouse gas concentrations, ozone, solar irradiance, aerosols, and land-use changes are prescribed according to CMIP experimental protocols. Aerosol effects are represented using the simplified MACv2-SP approach. Fully interactive atmospheric chemistry, prognostic aerosol microphysics, coupled carbon-cycle biogeochemistry, and dynamic ice sheets are not explicitly represented.",
+  "calendar": [],
+  "release_year": null,
+  "references": [
+    "fgoals_g3_5_ref_001",
+    "fgoals_g3_5_ref_002",
+    "fgoals_g3_5_ref_003"
+  ],
+  "model_components": [],
+  "embedded_components": [],
+  "coupled_components": [],
+  "drs_name": "FGOALS-g3-5"
+}
