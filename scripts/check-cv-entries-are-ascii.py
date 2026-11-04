@@ -40,6 +40,7 @@ from ascii_latex import to_ascii_latex
 # even with LaTeX.
 EXEMPTIONS: dict[str, tuple[str, ...]] = {
     "institution/as-rcec.json": ("環境變遷研究中心",),
+    "institution/bcc.json": ("国家气候中心",),
     "institution/bnu.json": ("بیکن ہاؤس نیشنل یونیورسٹی",),
     "institution/cas.json": ("中国科学院",),
     "institution/cma.json": ("中国气象局",),
