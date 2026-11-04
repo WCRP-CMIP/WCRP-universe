@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fgoals_g3_5_ref_001",
+  "type": "reference",
+  "citation": "Li, L., Yu, Y., Tang, Y., Lin, P., Xie, J., Song, M., Dong, L., Zhou, T., Liu, L., Wang, L., Pu, Y., Chen, X., Chen, L., Xie, Z., Liu, H., Zhang, L., Huang, X., Feng, T., Zheng, W., et al. (2020). The Flexible Global Ocean-Atmosphere-Land System Model Grid-Point Version 3 (FGOALS-g3): Description and Evaluation. Journal of Advances in Modeling Earth Systems, 12(9). Portico. https://doi.org/10.1029/2019ms002012\n",
+  "doi": "https://doi.org/10.1029/2019MS002012",
+  "drs_name": "fgoals_g3_5_ref_001"
+}
