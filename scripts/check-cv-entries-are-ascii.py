@@ -43,6 +43,7 @@ EXEMPTIONS: dict[str, tuple[str, ...]] = {
     "institution/bnu.json": ("بیکن ہاؤس نیشنل یونیورسٹی",),
     "institution/cas.json": ("中国科学院",),
     "institution/cma.json": ("中国气象局",),
+    "institution/cccr-iitm.json": ("भारतीय उष्णप्रदेशीय हवामानशास्त्र संस्था",),
     "institution/fdu.json": ("复旦大学", "復旦大學"),
     "institution/hyu.json": ("한양대학교",),
     "institution/iitm.json": ("भारतीय उष्णप्रदेशीय हवामानशास्त्र संस्था",),

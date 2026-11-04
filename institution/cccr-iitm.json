@@ -7,7 +7,8 @@
         "IITM"
     ],
     "labels": [
-        "Indian Institute of Tropical Meteorology"
+        "Indian Institute of Tropical Meteorology",
+        "भारतीय उष्णप्रदेशीय हवामानशास्त्र संस्था"
     ],
     "description": "Indian Institute of Tropical Meteorology",
     "location": [
@@ -20,6 +21,7 @@
     ],
     "ror": "03jf2m686",
     "urls": [
-        "http://www.tropmet.res.in/"
+        "http://www.tropmet.res.in/",
+        "https://en.wikipedia.org/wiki/Indian_Institute_of_Tropical_Meteorology"
     ]
 }

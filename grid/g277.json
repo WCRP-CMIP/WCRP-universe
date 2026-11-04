@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g277",
+  "type": "grid",
+  "description": "Horizontal grid cell with a regular latitude longitude grid type and 0.8333333 x 0.55555725 degree resolution.",
+  "drs_name": "g277",
+  "region": "global",
+  "grid_type": "regular_latitude_longitude",
+  "n_cells": 139968,
+  "grid_mapping": "latitude_longitude"
+}
