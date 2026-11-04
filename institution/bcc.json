@@ -5,19 +5,20 @@
     "drs_name": "BCC",
     "acronyms": [],
     "labels": [
-        "Beijing Biocytogen (China)"
+        "Beijing Climate Center",
+        "国家气候中心"
     ],
-    "description": "Beijing Biocytogen (China)",
+    "description": "Beijing Climate Center",
     "location": [
         {
             "city": "Beijing",
             "country": "China",
-            "lat": 39.950128,
-            "lon": 116.383679
+            "lat": 39.9075,
+            "lon": 116.39723
         }
     ],
-    "ror": "01spyyb53",
+    "ror": "03kb2jw75",
     "urls": [
-        "http://www.bbctg.com.cn/"
+        "http://bcc.ncc-cma.net"
     ]
 }
