@@ -4,23 +4,26 @@
     "type": "institution",
     "drs_name": "NUIST",
     "acronyms": [
-        "NU",
-        "NJU "
+        "NUIST"
     ],
     "labels": [
-        "Nanjing University"
+        "Nanjing University of Information Science and Technology",
+        "Nan Xin Da",
+        "南京信息工程大学"
     ],
-    "description": "Nanjing University",
+    "description": "Nanjing University of Information Science and Technology, Nanjing, 210044, China",
     "location": [
         {
             "city": "Nanjing",
             "country": "China",
-            "lat": 32.056111,
-            "lon": 118.775
+            "lat": 32.06167,
+            "lon": 118.77778
         }
     ],
-    "ror": "01rxvg760",
+    "ror": "02y0rxk19",
     "urls": [
-        "http://www.nju.edu.cn/english/"
+        "https://www.nuist.edu.cn",
+        "http://www.nuist.edu.cn",
+        "https://en.wikipedia.org/wiki/Nanjing_University_of_Information_Science_and_Technology"
     ]
 }
