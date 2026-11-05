@@ -56,6 +56,7 @@ EXEMPTIONS: dict[str, tuple[str, ...]] = {
         "気象研究所",
     ),
     "institution/nims-kma.json": ("국립기상과학원",),
+    "institution/nuist.json": ("南京信息工程大学",),
     "institution/sysu.json": ("中山大学",),
     "institution/unist.json": ("울산과학기술대학교",),
 }
