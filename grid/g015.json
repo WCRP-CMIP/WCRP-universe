@@ -4,7 +4,7 @@
   "type": "grid",
   "description": "Horizontal grid with a single cell for 30S-90S.",
   "drs_name": "g015",
-  "region": "30S-90S",
+  "region": "30s-90s",
   "grid_type": "regular_latitude_longitude",
   "n_cells": 1,
   "grid_mapping": "latitude_longitude"
