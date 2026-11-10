@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uleicester",
+    "type": "institution",
+    "drs_name": "ULeicester",
+    "acronyms": [
+        "ULeicester"
+    ],
+    "labels": [
+        "University of Leicester"
+    ],
+    "description": "University of Leicester, Leicester, UK",
+    "location": [
+        {
+            "city": "Leicester",
+            "country": "United Kingdom",
+            "lat": 52.6386,
+            "lon": -1.13169
+        }
+    ],
+    "ror": "04h699437",
+    "urls": [
+        "https://le.ac.uk"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "iup-ub",
+    "type": "institution",
+    "drs_name": "IUP-UB",
+    "acronyms": [
+        "IUP",
+        "IUP-UB"
+    ],
+    "labels": [
+        "Institute of Environmental Physics, University of Bremen",
+        "Institut für Umweltphysik, Universität Bremen"
+    ],
+    "description": "Institute of Environmental Physics, University of Bremen, Germany",
+    "location": [
+        {
+            "city": "Bremen",
+            "country": "Germany",
+            "lat": 53.07582,
+            "lon": 8.80717
+        }
+    ],
+    "ror": null,
+    "urls": [
+        "https://www.iup.uni-bremen.de"
+    ]
+}
