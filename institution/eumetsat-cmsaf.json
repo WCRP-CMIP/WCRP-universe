@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "eumetsat-cmsaf",
+    "type": "institution",
+    "drs_name": "EUMETSAT-CMSAF",
+    "acronyms": [
+        "CM SAF",
+        "CM-SAF"
+    ],
+    "labels": [
+        "EUMETSAT Satellite Application Facility on Climate Monitoring"
+    ],
+    "description": "EUMETSAT Satellite Application Facility on Climate Monitoring, hosted by Deutscher Wetterdienst (DWD), Offenbach, Germany",
+    "location": [
+        {
+            "city": "Offenbach",
+            "country": "Germany",
+            "lat": 50.10061,
+            "lon": 8.76647
+        }
+    ],
+    "ror": null,
+    "urls": [
+        "https://www.cmsaf.eu"
+    ]
+}
