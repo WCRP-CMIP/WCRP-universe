@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "estellus",
+    "type": "institution",
+    "drs_name": "Estellus",
+    "acronyms": [
+        "Estellus"
+    ],
+    "labels": [
+        "Estellus"
+    ],
+    "description": "Estellus, Paris, France (CNRS spin-off, satellite Earth observation data processing)",
+    "location": [
+        {
+            "city": "Paris",
+            "country": "France",
+            "lat": 48.85341,
+            "lon": 2.3488
+        }
+    ],
+    "ror": null,
+    "urls": [
+        "https://estellus.fr"
+    ]
+}
