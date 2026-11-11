@@ -2,32 +2,21 @@
     "@context": "000_context.jsonld",
     "id": "histsst-pich4",
     "type": "experiment",
-    "experiment_id": "histSST-piCH4",
-    "activity_id": [
-        "aerchemmip"
-    ],
+    "description": "In combination with `histSST`, quantifies the transient methane effective radiative forcing (ERF) and composition changes over the historical period. Same as `histSST`, except methane concentrations or emissions (as appropriate for the model) are held at 1850 values. Atmosphere-only counterpart of `hist-piCH4`.",
+    "drs_name": "histSST-piCH4",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
     "additional_allowed_model_components": [
+        "aer",
         "bgc"
     ],
-    "description": "Historical (non-CH4) WMGHG concentrations and NTCF emissions, 1850 CH4 concentrations",
-    "end_year": 2014,
-    "experiment": "historical SSTs and historical forcing, but with pre-industrial methane concentrations",
-    "min_number_yrs_per_sim": "165",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "picontrol"
-    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
     "required_model_components": [
         "agcm",
-        "aer",
         "chem"
     ],
-    "start_year": 1850,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "1",
-    "drs_name": "histSST-piCH4"
+    "tier": 2
 }

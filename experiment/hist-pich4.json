@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hist-pich4",
+    "type": "experiment",
+    "description": "In combination with `historical`, quantifies the net effect of methane changes on atmospheric composition and climate. Same as `historical`, except methane concentrations or emissions (as appropriate for the model) are held at 1850 values.",
+    "drs_name": "hist-piCH4",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "aer",
+        "bgc"
+    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 3,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
+    "required_model_components": [
+        "aogcm",
+        "chem"
+    ],
+    "tier": 2
+}

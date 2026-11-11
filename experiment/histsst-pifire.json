@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "histsst-pifire",
+    "type": "experiment",
+    "description": "In combination with `histSST`, quantifies the transient effective radiative forcing (ERF), composition and air quality changes from fire emissions over the historical period. Same as `histSST`, except short-lived climate forcer emissions from fires are held at 1850 values. Models with interactive fire should prescribe monthly fire emissions from multiple decades of `piControl` (not a repeating climatology). Atmosphere-only counterpart of `hist-piFire`.",
+    "drs_name": "histSST-piFire",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "bgc"
+    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
+    "required_model_components": [
+        "agcm",
+        "aer",
+        "chem"
+    ],
+    "tier": 2
+}

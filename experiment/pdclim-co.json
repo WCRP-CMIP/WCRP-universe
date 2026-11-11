@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pdclim-co",
+    "type": "experiment",
+    "description": "In combination with `pdClim-control`, quantifies anthropogenic carbon monoxide (CO) effective radiative forcing (ERF) relative to a present-day base state. Same as `pdClim-control`, except anthropogenic CO emissions use pre-industrial (1850) values.",
+    "drs_name": "pdClim-CO",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "aer",
+        "bgc"
+    ],
+    "min_ensemble_size": 1,
+    "required_model_components": [
+        "agcm",
+        "chem"
+    ],
+    "tier": 2
+}

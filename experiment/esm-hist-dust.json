@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-hist-dust",
+    "type": "experiment",
+    "description": "In combination with `esm-hist`, quantifies the climate response to historical changes in desert dust. Same as `esm-hist`, except dust follows the historical dust emission dataset of Leung et al. (2025), which captures the observed increase in dust since pre-industrial times.",
+    "drs_name": "esm-hist-Dust",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "bgc",
+        "chem"
+    ],
+    "branch_information": "Branch from `esm-piControl` at a time of your choosing",
+    "min_ensemble_size": 3,
+    "parent_activity": "cmip",
+    "parent_experiment": "esm-picontrol",
+    "required_model_components": [
+        "aogcm",
+        "aer"
+    ],
+    "tier": 2
+}
