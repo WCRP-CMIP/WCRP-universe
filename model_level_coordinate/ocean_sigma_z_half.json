@@ -14,11 +14,11 @@
     "units": "m",
     "formula": "for levels k where sigma(k) is defined and zlev(k) is not defined: z(n,k,j,i) = eta(n,j,i) + sigma(k)*(min(depth_c,depth(j,i))+eta(n,j,i)) ; for levels k where zlev(k) is defined and sigma(k) is not defined: z(n,k,j,i) = zlev(k)",
     "z_factors": [
-        "sigma",
+        "sigma_half",
         "eta",
         "depth",
         "depth_c",
-        "zlev"
+        "zlev_half"
     ],
     "bounds_required": false
 }
