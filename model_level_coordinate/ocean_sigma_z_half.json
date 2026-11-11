@@ -20,12 +20,5 @@
         "depth_c",
         "zlev_half"
     ],
-    "bounds_required": false,
-    "z_bounds_factors": [
-        "sigma_half_bnds",
-        "eta",
-        "depth",
-        "depth_c",
-        "zlev_half_bnds"
-    ]
+    "bounds_required": false
 }
