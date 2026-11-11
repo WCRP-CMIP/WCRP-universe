@@ -1305,7 +1305,7 @@ def add_piclim(holder: Holder) -> Holder:
         if drs_name == "piClim-control":
             branch_information = (
                 "Branch from `piControl` at a time of your choosing. Given that you are using a climatology from your "
-                "own model as boundary conditions, we recommended branching from the mid-point of the period over "
+                "own model as boundary conditions, we recommend branching from the mid-point of the period over "
                 "which you calculated the climatology (but this recommendation may not be appropriate for all models, "
                 "so ultimately it is up to you to decide what introduces the smallest 'shock'/'jump' at the branch "
                 "time)."
