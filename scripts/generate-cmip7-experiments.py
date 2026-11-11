@@ -309,6 +309,13 @@ AOGCM_CHEM_ONLY = AOGCM_CHEM
 # They are kept as registered for now.
 # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (reference experiment components)
 
+# TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (climatology experiment branching)
+# `pdClim-control` was registered with the same branching advice as `piClim-control`
+# (branch at a time of your choosing, ideally from within the period used for the climatology).
+# Is this correct, or should `pdClim-control` branch from `historical` at the end of the historical simulation
+# (or not branch at all)? Any change probably applies to `piClim-control` too.
+# This also affects every `pdClim-*` and `piClim-*` experiment, as they are "Same as" their control.
+
 # Universe fields for experiments that branch from piControl
 FROM_PICONTROL = dict(
     branch_information="Branch from `piControl` at a time of your choosing",
@@ -936,8 +943,12 @@ AQ_EMISSIONS = (
     "anthropogenic non-CH4 tropospheric O3 precursor (NMVOCs, CO, NOx) and aerosol and aerosol precursor "
     "(BC, OC, NH3, SO2) emissions"
 )
-AER_EMISSIONS = "anthropogenic aerosol and aerosol precursor (BC, OC, NH3, SO2) emissions"
-O3_EMISSIONS = "anthropogenic non-CH4 tropospheric O3 precursor (NMVOCs, CO, NOx) emissions"
+AER_EMISSIONS = (
+    "anthropogenic aerosol and aerosol precursor (BC, OC, NH3, SO2) emissions"
+)
+O3_EMISSIONS = (
+    "anthropogenic non-CH4 tropospheric O3 precursor (NMVOCs, CO, NOx) emissions"
+)
 CH4 = "methane concentrations or emissions (as appropriate for the model)"
 DUST_HISTORICAL = (
     "dust follows the historical dust emission dataset of Leung et al. (2025), which captures the observed "
@@ -1286,6 +1297,11 @@ def add_piclim(holder: Holder) -> Holder:
             1,
         ),
     ):
+        # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
+        # the `pdClim-control` branching advice (see `add_aerchemmip_pdclim`) was copied from this.
+        # If the co-chairs change the advice for `pdClim-control`,
+        # this (and hence every `piClim-*` experiment, which are "Same as `piClim-control`")
+        # probably needs to change too.
         if drs_name == "piClim-control":
             branch_information = (
                 "Branch from `piControl` at a time of your choosing. Given that you are using a climatology from your "
@@ -2058,6 +2074,8 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
             CMIP7Experiment(
                 branch_information=branch_information,
                 min_ensemble_size=1,
+                # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
+                # depends on the answer for `pdClim-control` (e.g. no parent if they shouldn't branch at all)
                 parent_activity="cmip",
                 parent_experiment="historical",
                 parent_mip_era="cmip7",
@@ -2074,6 +2092,10 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
             "temperatures and sea-ice concentrations prescribed from a climatology of the last 30 years "
             f"({climatology_start_year}-{hist_end_year}) of the model's own `historical` (or `esm-hist`) simulation."
         ),
+        # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
+        # Is this advice correct or should you be branching from historical at the end of the historical simulation
+        # (or not branching at all?)? The advice was copied from `piClim-control` (see `add_piclim`),
+        # so any change probably applies there too.
         (
             "Branch from `historical` (or `esm-hist`) at a time of your choosing. Given that you are using a "
             "climatology from your own model as boundary conditions, we recommend branching from within the period "
@@ -2157,6 +2179,8 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
                 f"relative to a present-day base state. Same as `pdClim-control`, except {forcing_diff} use "
                 f"pre-industrial (1850) values.{extra}"
             ),
+            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
+            # inherits the (to be confirmed) `pdClim-control` branching advice
             "Same as `pdClim-control`",
             components,
             tier,
@@ -2228,7 +2252,14 @@ def add_aerchemmip_scenarios(holder: Holder) -> Holder:
     land_use_present_day = (
         f"land use is fixed at a present-day ({hist_end_year}) monthly climatology"
     )
-    for base_drs_name, sst_components, sst_extra, ar_world, ar_reference_suffix, ar_tier in (
+    for (
+        base_drs_name,
+        sst_components,
+        sst_extra,
+        ar_world,
+        ar_reference_suffix,
+        ar_tier,
+    ) in (
         (
             "scen7-h",
             # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (reference experiment components):
