@@ -9,7 +9,6 @@
     "min_number_yrs_per_sim": 79.0,
     "activity": "aerchemmip",
     "additional_allowed_model_components": [
-        "aer",
         "bgc"
     ],
     "branch_information": "Branch from `historical` at 2022-01-01.",
@@ -19,6 +18,7 @@
     "parent_mip_era": "cmip7",
     "required_model_components": [
         "agcm",
+        "aer",
         "chem"
     ],
     "tier": 3

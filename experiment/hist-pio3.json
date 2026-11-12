@@ -7,7 +7,6 @@
     "start_timestamp": "1850-01-01",
     "activity": "aerchemmip",
     "additional_allowed_model_components": [
-        "aer",
         "bgc"
     ],
     "branch_information": "Branch from `piControl` at a time of your choosing",
@@ -16,6 +15,7 @@
     "parent_experiment": "picontrol",
     "required_model_components": [
         "aogcm",
+        "aer",
         "chem"
     ],
     "tier": 2

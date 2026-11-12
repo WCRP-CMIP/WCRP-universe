@@ -267,10 +267,6 @@ AGCM = dict(
     required_model_components=["agcm"],
     additional_allowed_model_components=["aer", "chem", "bgc"],
 )
-AGCM_CHEM = dict(
-    required_model_components=["agcm", "chem"],
-    additional_allowed_model_components=["aer", "bgc"],
-)
 AGCM_AER = dict(
     required_model_components=["agcm", "aer"],
     additional_allowed_model_components=["chem", "bgc"],
@@ -287,34 +283,23 @@ AOGCM_AER_CHEM = dict(
     required_model_components=["aogcm", "aer", "chem"],
     additional_allowed_model_components=["bgc"],
 )
-AOGCM_CHEM = dict(
-    required_model_components=["aogcm", "chem"],
-    additional_allowed_model_components=["aer", "bgc"],
-)
+# AerChemMIP model component conventions
+# (confirmed by the AerChemMIP co-chairs in https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476):
+# - experiments that need chemistry (CHEM in the AerChemMIP2 paper, https://doi.org/10.5194/gmd-19-3477-2026)
+#   require `aer` as well as `chem` because CHEM is defined as "trace gas chemistry and aerosols",
+#   i.e. interactive chemistry on top of AER.
+#   Hence there is no chemistry-only (`chem` without `aer`) component combination.
+# - the reference experiments (`histSST`, `pdClim-control`, `(esm-)scen7-h-SST`) require `aer`,
+#   matching their perturbation experiments.
+#   The deliberate exception is `(esm-)scen7-vl-SST`, which only requires `agcm`.
+#   It is also the reference for the afforestation/reforestation experiments,
+#   which models with minimal capability are invited to run (alongside `(esm-)scen7-vl-SST-pdLU`).
 
-# TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (chemistry-only components)
-# The AerChemMIP CMIP7 registrations (https://github.com/WCRP-CMIP/CMIP7-CVs/issues?q=author%3Aduncanwp)
-# require `aer` as well as `chem` for experiments that only perturb chemistry
-# (ozone precursors, methane, NOx, VOCs, H2, BVOC, wetland emissions, lightning).
-# The existing chemistry-only experiments (`piClim-CH4`, `piClim-N2O`, `piClim-NOx`, `piClim-ODS`)
-# only require `chem` (with `aer` allowed).
-# For consistency, every chemistry-only experiment uses `AGCM_CHEM_ONLY` or `AOGCM_CHEM_ONLY` below
-# (i.e. only `chem` is required) until the AerChemMIP co-chairs clarify what is actually desired.
-AGCM_CHEM_ONLY = AGCM_CHEM
-AOGCM_CHEM_ONLY = AOGCM_CHEM
-
-# Model component combinations used in the issues for the AerChemMIP reference experiments
-# (e.g. `histSST`, `pdClim-control`, `scen7-h-SST`, `scen7-vl-SST`)
-# are inconsistent with each other and with the experiments they are the reference for.
-# They are kept as registered for now.
-# TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (reference experiment components)
-
-# TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (climatology experiment branching)
-# `pdClim-control` was registered with the same branching advice as `piClim-control`
-# (branch at a time of your choosing, ideally from within the period used for the climatology).
-# Is this correct, or should `pdClim-control` branch from `historical` at the end of the historical simulation
-# (or not branch at all)? Any change probably applies to `piClim-control` too.
-# This also affects every `pdClim-*` and `piClim-*` experiment, as they are "Same as" their control.
+# `pdClim-control` has the same branching advice as `piClim-control`
+# (branch at a time of your choosing, ideally from within the period used for the climatology),
+# as confirmed by the AerChemMIP co-chairs in
+# https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476.
+# Every `pdClim-*` and `piClim-*` experiment is "Same as" its control.
 
 # Universe fields for experiments that branch from piControl
 FROM_PICONTROL = dict(
@@ -1076,7 +1061,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "methane concentrations or emissions (as appropriate for the model)",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1086,7 +1071,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "nitrous oxide concentrations or emissions (as appropriate for the model)",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1096,7 +1081,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "nitrous oxide (NOx) emissions",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1106,7 +1091,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "ozone-depleting substances concentrations",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1229,8 +1214,7 @@ def add_piclim(holder: Holder) -> Holder:
                 ),
             ),
             "aerchemmip",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1262,16 +1246,14 @@ def add_piclim(holder: Holder) -> Holder:
                 "biogenic volatile organic compound (BVOC)", "BVOC emissions are"
             ),
             "aerchemmip",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             1,
         ),
         (
             "piClim-2xWet",
             doubled_description("wetland methane (CH4)", "wetland CH4 emissions are"),
             "aerchemmip",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1292,16 +1274,11 @@ def add_piclim(holder: Holder) -> Holder:
                 "interactive fire."
             ),
             "aerchemmip",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             1,
         ),
     ):
-        # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
-        # the `pdClim-control` branching advice (see `add_aerchemmip_pdclim`) was copied from this.
-        # If the co-chairs change the advice for `pdClim-control`,
-        # this (and hence every `piClim-*` experiment, which are "Same as `piClim-control`")
-        # probably needs to change too.
+        # The `pdClim-control` branching advice (see `add_aerchemmip_pdclim`) mirrors this
         if drs_name == "piClim-control":
             branch_information = (
                 "Branch from `piControl` at a time of your choosing. Given that you are using a climatology from your "
@@ -1854,7 +1831,13 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
             DUST_HISTORICAL,
             "",
             AOGCM_AER,
-            # The parent of `esm-scen7-vl-Dust`
+            # `esm-hist-Dust` is the parent of `esm-scen7-vl-Dust`.
+            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (dust experiments):
+            # `esm-hist-Dust` was not registered. It is still under discussion
+            # (https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476) whether to
+            # (a) keep `esm-hist-Dust` (fully emissions-driven chain),
+            # (b) drop it and keep `hist-Dust` as the parent of `esm-scen7-vl-Dust` (accepting the mismatch) or
+            # (c) ask groups that can't afford `esm-hist-Dust` to run `scen7-vl-Dust` instead.
             True,
         ),
         (
@@ -1873,8 +1856,7 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
             "the net effect of methane changes on atmospheric composition and climate",
             f"{CH4} are held at 1850 values",
             "",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AOGCM_CHEM_ONLY,
+            AOGCM_AER_CHEM,
             False,
         ),
         (
@@ -1885,8 +1867,7 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
                 "only (it evolves as in `historical` in the radiation scheme)"
             ),
             "",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AOGCM_CHEM_ONLY,
+            AOGCM_AER_CHEM,
             False,
         ),
     ):
@@ -1935,8 +1916,6 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
             "`historical` simulation."
         ),
         activity="aerchemmip",
-        # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (reference experiment components):
-        # registered as requiring aer, but not all the `histSST-*` experiments require aer
         **AGCM_AER,
         **FROM_PICONTROL,
         start_timestamp=historical.universe.start_timestamp,
@@ -1998,8 +1977,7 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
             "the transient methane effective radiative forcing (ERF) and composition changes",
             f"{CH4} are held at 1850 values",
             "",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             2,
         ),
         (
@@ -2010,8 +1988,7 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
                 "only (it evolves as in `histSST` in the radiation scheme)"
             ),
             "",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             2,
         ),
         (
@@ -2019,8 +1996,7 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
             "the transient effective radiative forcing (ERF) and composition changes from anthropogenic NOx",
             "anthropogenic NOx emissions are held at 1850 values",
             "",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             3,
         ),
     ):
@@ -2074,8 +2050,6 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
             CMIP7Experiment(
                 branch_information=branch_information,
                 min_ensemble_size=1,
-                # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
-                # depends on the answer for `pdClim-control` (e.g. no parent if they shouldn't branch at all)
                 parent_activity="cmip",
                 parent_experiment="historical",
                 parent_mip_era="cmip7",
@@ -2092,17 +2066,12 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
             "temperatures and sea-ice concentrations prescribed from a climatology of the last 30 years "
             f"({climatology_start_year}-{hist_end_year}) of the model's own `historical` (or `esm-hist`) simulation."
         ),
-        # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
-        # Is this advice correct or should you be branching from historical at the end of the historical simulation
-        # (or not branching at all?)? The advice was copied from `piClim-control` (see `add_piclim`),
-        # so any change probably applies there too.
+        # Mirrors the `piClim-control` advice (see `add_piclim`)
         (
             "Branch from `historical` (or `esm-hist`) at a time of your choosing. Given that you are using a "
             "climatology from your own model as boundary conditions, we recommend branching from within the period "
             f"over which you calculated the climatology ({climatology_start_year}-{hist_end_year})."
         ),
-        # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (reference experiment components):
-        # registered as requiring aer, but not all the `pdClim-*` experiments require aer
         AGCM_AER,
         2,
     )
@@ -2133,8 +2102,7 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
                 " Methane uses 1850 values in the chemistry scheme only and remains at "
                 f"{hist_end_year} values in the radiation scheme."
             ),
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             3,
         ),
         (
@@ -2145,8 +2113,7 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
                 " Requires models that include H2 emissions; the setup should be coordinated with the AerChemMIP2 "
                 "co-chairs."
             ),
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-            AGCM_CHEM_ONLY,
+            AGCM_AER_CHEM,
             3,
         ),
         *(
@@ -2155,8 +2122,7 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
                 f"anthropogenic {species}",
                 f"anthropogenic {emissions} emissions",
                 "",
-                # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer too)
-                AGCM_CHEM_ONLY,
+                AGCM_AER_CHEM,
                 tier,
             )
             for suffix, species, emissions, tier in (
@@ -2179,8 +2145,6 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
                 f"relative to a present-day base state. Same as `pdClim-control`, except {forcing_diff} use "
                 f"pre-industrial (1850) values.{extra}"
             ),
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (climatology experiment branching):
-            # inherits the (to be confirmed) `pdClim-control` branching advice
             "Same as `pdClim-control`",
             components,
             tier,
@@ -2262,8 +2226,6 @@ def add_aerchemmip_scenarios(holder: Holder) -> Holder:
     ) in (
         (
             "scen7-h",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (reference experiment components):
-            # `scen7-h-SST` was registered as requiring aer, `scen7-vl-SST` was not
             AGCM_AER,
             "",
             " in a warmer world",
@@ -2272,8 +2234,8 @@ def add_aerchemmip_scenarios(holder: Holder) -> Holder:
         ),
         (
             "scen7-vl",
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (reference experiment components):
-            # `scen7-vl-SST` was registered as only requiring agcm, `scen7-h-SST` requires aer too
+            # Deliberately only requires agcm
+            # (see the AerChemMIP model component conventions near the top of this file)
             AGCM,
             (
                 " Also the reference for the afforestation/reforestation experiments, so BVOC, fire and dust "
@@ -2358,8 +2320,7 @@ def add_aerchemmip_scenarios(holder: Holder) -> Holder:
                     "CH4",
                     "a failure of methane mitigation",
                     f"{CH4} follow `scen7-h` instead of `scen7-vl`",
-                    # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer)
-                    AGCM_CHEM_ONLY,
+                    AGCM_AER_CHEM,
                     2,
                 ),
                 (
@@ -2369,8 +2330,7 @@ def add_aerchemmip_scenarios(holder: Holder) -> Holder:
                         f"{O3_EMISSIONS} follow `scen7-h`, and methane follows `scen7-h` in the chemistry scheme "
                         "only (it follows `scen7-vl` in the radiation scheme)"
                     ),
-                    # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (chemistry-only components, registered with aer)
-                    AGCM_CHEM_ONLY,
+                    AGCM_AER_CHEM,
                     3,
                 ),
             )
