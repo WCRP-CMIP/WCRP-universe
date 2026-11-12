@@ -1832,8 +1832,8 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
             "",
             AOGCM_AER,
             # `esm-hist-Dust` is the parent of `esm-scen7-vl-Dust`.
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS (dust experiments):
-            # `esm-hist-Dust` was not registered. It is still under discussion
+            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (dust experiments):
+            # Blocks merging. `esm-hist-Dust` was not registered. It is still under discussion
             # (https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476) whether to
             # (a) keep `esm-hist-Dust` (fully emissions-driven chain),
             # (b) drop it and keep `hist-Dust` as the parent of `esm-scen7-vl-Dust` (accepting the mismatch) or
