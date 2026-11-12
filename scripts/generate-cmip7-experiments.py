@@ -843,14 +843,17 @@ def add_damip(holder: Holder) -> Holder:
 
 
 def add_lmip(holder: Holder) -> Holder:
-    start_timestamp = "1901-01-01"
+    start_timestamp = "1850-01-01"
     end_timestamp = holder.get("historical").cmip7.end_timestamp
     holder = holder.add(
         UniverseExperiment(
             drs_name="land-hist",
             description=(
                 "Land-only version of `historical` with prescribed climate and weather inputs required to "
-                "drive land models."
+                "drive land models. "
+                "The land model setup should be "
+                "the same as that used in the equivalent coupled model historical experiment (`historical` or `esm-hist`), "
+                "other than minor parameter tunings to adjust to the differences in coupled model runs versus prescribed climate runs."
             ),
             activity="lmip",
             required_model_components=["land"],
