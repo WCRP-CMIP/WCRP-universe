@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g285",
+  "type": "grid",
+  "description": "Horizontal grid cell with a unstructured grid type and 0.5 x 0.5 degree resolution.",
+  "drs_name": "g285",
+  "region": "global",
+  "grid_type": "unstructured",
+  "n_cells": 120964,
+  "grid_mapping": "latitude_longitude"
+}
