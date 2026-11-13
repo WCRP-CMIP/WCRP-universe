@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "kiost_esm2_ref_002",
+  "type": "reference",
+  "citation": "Dunne, J. P., Horowitz, L. W., Adcroft, A. J., Ginoux, P., Held, I. M., John, J. G., Krasting, J. P., Malyshev, S., Naik, V., Paulot, F., Shevliakova, E., Stock, C. A., Zadeh, N., Balaji, V., Blanton, C., Dunne, K. A., Dupuis, C., Durachta, J., Dussin, R., et al. (2020). The GFDL Earth System Model Version 4.1 (GFDL-ESM 4.1): Overall Coupled Model Description and Simulation Characteristics. Journal of Advances in Modeling Earth Systems, 12(11). Portico. https://doi.org/10.1029/2019ms002015\n",
+  "doi": "https://doi.org/10.1029/2019MS002015",
+  "drs_name": "kiost_esm2_ref_002"
+}
