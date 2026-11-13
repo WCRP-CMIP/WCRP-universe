@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "kiost_esm2_ref_003",
+  "type": "reference",
+  "citation": "Pak, G., Noh, Y., Lee, M.-I., Yeh, S.-W., Kim, D., Kim, S.-Y., Lee, J.-L., Lee, H. J., Hyun, S.-H., Lee, K.-Y., Lee, J.-H., Park, Y.-G., Jin, H., Park, H., & Kim, Y. H. (2021). Korea Institute of Ocean Science and Technology Earth System Model and Its Simulation Characteristics. Ocean Science Journal, 56(1), 18-45. https://doi.org/10.1007/s12601-021-00001-7\n",
+  "doi": "https://doi.org/10.1007/s12601-021-00001-7",
+  "drs_name": "kiost_esm2_ref_003"
+}

@@ -843,14 +843,17 @@ def add_damip(holder: Holder) -> Holder:
 
 
 def add_lmip(holder: Holder) -> Holder:
-    start_timestamp = "1901-01-01"
+    start_timestamp = "1850-01-01"
     end_timestamp = holder.get("historical").cmip7.end_timestamp
     holder = holder.add(
         UniverseExperiment(
             drs_name="land-hist",
             description=(
                 "Land-only version of `historical` with prescribed climate and weather inputs required to "
-                "drive land models."
+                "drive land models. "
+                "The land model setup should be "
+                "the same as that used in the equivalent coupled model historical experiment (`historical` or `esm-hist`), "
+                "other than minor parameter tunings to adjust to the differences in coupled model runs versus prescribed climate runs."
             ),
             activity="lmip",
             required_model_components=["land"],
@@ -1331,9 +1334,13 @@ def add_polmip(holder: Holder) -> Holder:
         (
             "SSP2-com-CMIP7",
             (
-                "Policy-driven pathway aligned with China's carbon neutrality pledge, peaking carbon emissions before "
-                "2030 and achieving carbon neutrality before 2060. It is developed within the SSP2 socioeconomic "
-                "framework and consistent with global Nationally Determined Contributions (NDCs) data."
+                "SSP2-com-CMIP7 is a global emissions pathway developed within the SSP2 socioeconomic framework, "
+                "building on the original CGEM-based SSP2-com scenario. "
+                "The CMIP7 update harmonises emissions with the historical inventories used for CMIP7. "
+                "National and regional emissions trajectories "
+                "are constructed to align with 2030 and 2035 NDC targets and longer-term net-zero commitments, "
+                "while maintaining consistency with global NDC benchmarks and global net-zero emissions objectives. "
+                "Sectoral emissions are provided for 17 CGEM regions."
             ),
             2022,
             1,
