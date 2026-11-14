@@ -2,32 +2,21 @@
     "@context": "000_context.jsonld",
     "id": "histsst",
     "type": "experiment",
-    "experiment_id": "histSST",
-    "activity_id": [
-        "aerchemmip"
-    ],
+    "description": "Reference for the `histSST-*` experiments. Atmosphere-only historical simulation with all forcings as in `historical`, and time-varying sea-surface temperatures and sea ice prescribed from the model's own `historical` simulation.",
+    "drs_name": "histSST",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
     "additional_allowed_model_components": [
         "chem",
         "bgc"
     ],
-    "description": "Historical transient with SSTs prescribed from historical",
-    "end_year": 2014,
-    "experiment": "historical prescribed SSTs and historical forcing",
-    "min_number_yrs_per_sim": "165",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "picontrol"
-    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
     "required_model_components": [
         "agcm",
         "aer"
     ],
-    "start_year": 1850,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "1",
-    "drs_name": "histSST"
+    "tier": 1
 }

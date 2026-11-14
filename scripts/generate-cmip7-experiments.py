@@ -267,14 +267,39 @@ AGCM = dict(
     required_model_components=["agcm"],
     additional_allowed_model_components=["aer", "chem", "bgc"],
 )
-AGCM_CHEM = dict(
-    required_model_components=["agcm", "chem"],
-    additional_allowed_model_components=["aer", "bgc"],
-)
 AGCM_AER = dict(
     required_model_components=["agcm", "aer"],
     additional_allowed_model_components=["chem", "bgc"],
 )
+AGCM_AER_CHEM = dict(
+    required_model_components=["agcm", "aer", "chem"],
+    additional_allowed_model_components=["bgc"],
+)
+AOGCM_AER = dict(
+    required_model_components=["aogcm", "aer"],
+    additional_allowed_model_components=["bgc", "chem"],
+)
+AOGCM_AER_CHEM = dict(
+    required_model_components=["aogcm", "aer", "chem"],
+    additional_allowed_model_components=["bgc"],
+)
+# AerChemMIP model component conventions
+# (confirmed by the AerChemMIP co-chairs in https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476):
+# - experiments that need chemistry (CHEM in the AerChemMIP2 paper, https://doi.org/10.5194/gmd-19-3477-2026)
+#   require `aer` as well as `chem` because CHEM is defined as "trace gas chemistry and aerosols",
+#   i.e. interactive chemistry on top of AER.
+#   Hence there is no chemistry-only (`chem` without `aer`) component combination.
+# - the reference experiments (`histSST`, `pdClim-control`, `(esm-)scen7-h-SST`) require `aer`,
+#   matching their perturbation experiments.
+#   The deliberate exception is `(esm-)scen7-vl-SST`, which only requires `agcm`.
+#   It is also the reference for the afforestation/reforestation experiments,
+#   which models with minimal capability are invited to run (alongside `(esm-)scen7-vl-SST-pdLU`).
+
+# `pdClim-control` has the same branching advice as `piClim-control`
+# (branch at a time of your choosing, ideally from within the period used for the climatology),
+# as confirmed by the AerChemMIP co-chairs in
+# https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476.
+# Every `pdClim-*` and `piClim-*` experiment is "Same as" its control.
 
 # Universe fields for experiments that branch from piControl
 FROM_PICONTROL = dict(
@@ -901,13 +926,44 @@ def add_pmip(holder: Holder) -> Holder:
     return holder
 
 
+# Emissions used to define the AerChemMIP experiments
+AQ_EMISSIONS = (
+    "anthropogenic non-CH4 tropospheric O3 precursor (NMVOCs, CO, NOx) and aerosol and aerosol precursor "
+    "(BC, OC, NH3, SO2) emissions"
+)
+AER_EMISSIONS = (
+    "anthropogenic aerosol and aerosol precursor (BC, OC, NH3, SO2) emissions"
+)
+O3_EMISSIONS = (
+    "anthropogenic non-CH4 tropospheric O3 precursor (NMVOCs, CO, NOx) emissions"
+)
+CH4 = "methane concentrations or emissions (as appropriate for the model)"
+DUST_HISTORICAL = (
+    "dust follows the historical dust emission dataset of Leung et al. (2025), which captures the observed "
+    "increase in dust since pre-industrial times"
+)
+DUST_FUTURE = (
+    "dust emissions follow the future extension of the Leung et al. (2025) dataset (a linear increase on the "
+    "present-day pattern of sources)"
+)
+
+
 def add_piclim(holder: Holder) -> Holder:
-    def present_day_description(quantifies: str, forcing_diff: str) -> str:
+    def present_day_description(
+        quantifies: str, forcing_diff: str, extra: str = ""
+    ) -> str:
         return (
             f"In combination with `piClim-control`, quantifies present-day {quantifies} effective radiative forcing "
             f"(ERF). Same as `piClim-control`, except {forcing_diff} use present-day values (typically the last year "
             "of the `historical` simulation within the same CMIP era e.g. 2014 values for CMIP6, 2021 values for "
-            "CMIP7)."
+            f"CMIP7).{extra}"
+        )
+
+    def doubled_description(natural_emissions: str, forcing_diff: str) -> str:
+        return (
+            f"In combination with `piClim-control`, quantifies the radiative effect of natural {natural_emissions} "
+            "emissions, to estimate the strength of the associated climate feedback. Same as `piClim-control`, "
+            f"except {forcing_diff} doubled."
         )
 
     def co2_description(quantifies: str, factor: str) -> str:
@@ -1008,7 +1064,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "methane concentrations or emissions (as appropriate for the model)",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1018,7 +1074,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "nitrous oxide concentrations or emissions (as appropriate for the model)",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1028,7 +1084,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "nitrous oxide (NOx) emissions",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1038,7 +1094,7 @@ def add_piclim(holder: Holder) -> Holder:
                 "ozone-depleting substances concentrations",
             ),
             "aerchemmip",
-            AGCM_CHEM,
+            AGCM_AER_CHEM,
             1,
         ),
         (
@@ -1107,11 +1163,129 @@ def add_piclim(holder: Holder) -> Holder:
             AGCM,
             3,
         ),
+        (
+            "piClim-AQ",
+            present_day_description(
+                "non-CH4 tropospheric ozone and aerosol",
+                AQ_EMISSIONS,
+            ),
+            "aerchemmip",
+            AGCM_AER_CHEM,
+            1,
+        ),
+        (
+            "piClim-BC",
+            present_day_description(
+                "black carbon (BC) aerosol",
+                "anthropogenic BC emissions",
+                " All other aerosol precursor emissions remain at 1850 values.",
+            ),
+            "aerchemmip",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "piClim-OC",
+            present_day_description(
+                "organic carbon (OC) aerosol",
+                "anthropogenic OC emissions",
+                " All other aerosol precursor emissions remain at 1850 values.",
+            ),
+            "aerchemmip",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "piClim-NH3",
+            present_day_description(
+                "ammonia (NH3)",
+                "anthropogenic NH3 emissions",
+                " All other aerosol precursor emissions remain at 1850 values.",
+            ),
+            "aerchemmip",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "piClim-O3",
+            present_day_description(
+                "tropospheric ozone",
+                O3_EMISSIONS,
+                (
+                    " Methane uses present-day values in the chemistry scheme only (to capture CH4-driven O3 "
+                    "production) and remains at 1850 values in the radiation scheme."
+                ),
+            ),
+            "aerchemmip",
+            AGCM_AER_CHEM,
+            1,
+        ),
+        (
+            "piClim-2xdust",
+            doubled_description("mineral dust", "mineral dust emissions are"),
+            "aerchemmip",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "piClim-2xss",
+            doubled_description("sea salt", "sea salt emissions are"),
+            "aerchemmip",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "piClim-2xfire",
+            doubled_description(
+                "fire", "fire emissions of all species (e.g. NOx, BC, OC, CO, VOCs) are"
+            ),
+            "aerchemmip",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "piClim-2xBVOC",
+            doubled_description(
+                "biogenic volatile organic compound (BVOC)", "BVOC emissions are"
+            ),
+            "aerchemmip",
+            AGCM_AER_CHEM,
+            1,
+        ),
+        (
+            "piClim-2xWet",
+            doubled_description("wetland methane (CH4)", "wetland CH4 emissions are"),
+            "aerchemmip",
+            AGCM_AER_CHEM,
+            1,
+        ),
+        (
+            "piClim-2xPOApDMS",
+            doubled_description(
+                "primary marine organic aerosol (POA) and dimethyl sulphide (DMS)",
+                "emissions of primary marine organic compounds and of DMS are both",
+            ),
+            "aerchemmip",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "piClim-2xflash",
+            (
+                f"{doubled_description('lightning', 'the lightning flash rate is')} Unlike CMIP6 `piClim-2xNOx`, "
+                "which doubled NOx produced per flash, this also affects natural fire ignitions in models with "
+                "interactive fire."
+            ),
+            "aerchemmip",
+            AGCM_AER_CHEM,
+            1,
+        ),
     ):
+        # The `pdClim-control` branching advice (see `add_aerchemmip_pdclim`) mirrors this
         if drs_name == "piClim-control":
             branch_information = (
                 "Branch from `piControl` at a time of your choosing. Given that you are using a climatology from your "
-                "own model as boundary conditions, we recommended branching from the mid-point of the period over "
+                "own model as boundary conditions, we recommend branching from the mid-point of the period over "
                 "which you calculated the climatology (but this recommendation may not be appropriate for all models, "
                 "so ultimately it is up to you to decide what introduces the smallest 'shock'/'jump' at the branch "
                 "time)."
@@ -1133,7 +1307,8 @@ def add_piclim(holder: Holder) -> Holder:
             ),
             CMIP7Experiment(
                 description=re.sub(
-                    r"\(typically.*\)",
+                    # Non-greedy so that any later brackets in the description are left alone
+                    r"\(typically[^)]*\)",
                     f"({hist_end_year} values for CMIP7)",
                     description,
                 ),
@@ -1648,6 +1823,596 @@ def add_aerchemmip(holder: Holder) -> Holder:
     return holder
 
 
+def add_aerchemmip_historical(holder: Holder) -> Holder:
+    """Add the AerChemMIP historical experiments (coupled and with prescribed SSTs)"""
+    historical = holder.get("historical")
+    historical_cmip7_fields = pick(
+        historical.cmip7, "start_timestamp", "end_timestamp", "min_number_yrs_per_sim"
+    )
+
+    # Coupled experiments
+    for drs_name, quantifies, forcing_diff, extra, components, has_esm_variant in (
+        (
+            "hist-Dust",
+            "the climate response to historical changes in desert dust",
+            DUST_HISTORICAL,
+            "",
+            AOGCM_AER,
+            # `esm-hist-Dust` is the parent of `esm-scen7-vl-Dust`.
+            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (dust experiments):
+            # Blocks merging. `esm-hist-Dust` was not registered. It is still under discussion
+            # (https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476) whether to
+            # (a) keep `esm-hist-Dust` (fully emissions-driven chain),
+            # (b) drop it and keep `hist-Dust` as the parent of `esm-scen7-vl-Dust` (accepting the mismatch) or
+            # (c) ask groups that can't afford `esm-hist-Dust` to run `scen7-vl-Dust` instead.
+            True,
+        ),
+        (
+            "hist-piFire",
+            "the climate and air quality response to fire emissions",
+            "short-lived climate forcer emissions from fires are held at 1850 values",
+            (
+                " Models with interactive fire should prescribe monthly fire emissions from multiple decades of "
+                "`piControl` (not a repeating climatology)."
+            ),
+            AOGCM_AER_CHEM,
+            False,
+        ),
+        (
+            "hist-piCH4",
+            "the net effect of methane changes on atmospheric composition and climate",
+            f"{CH4} are held at 1850 values",
+            "",
+            AOGCM_AER_CHEM,
+            False,
+        ),
+        (
+            "hist-piO3",
+            "the climate response to tropospheric ozone changes from all precursors (CH4, NMVOCs, CO, NOx)",
+            (
+                f"{O3_EMISSIONS} are held at 1850 values, and methane is held at 1850 values in the chemistry scheme "
+                "only (it evolves as in `historical` in the radiation scheme)"
+            ),
+            "",
+            AOGCM_AER_CHEM,
+            False,
+        ),
+    ):
+        universe = UniverseExperiment(
+            drs_name=drs_name,
+            description=(
+                f"In combination with `historical`, quantifies {quantifies}. Same as `historical`, except "
+                f"{forcing_diff}.{extra}"
+            ),
+            activity="aerchemmip",
+            **components,
+            **pick(
+                historical.universe,
+                "branch_information",
+                "parent_activity",
+                "parent_experiment",
+                "start_timestamp",
+            ),
+            min_ensemble_size=3,
+            tier=2,
+        )
+        cmip7 = CMIP7Experiment(
+            **historical_cmip7_fields,
+            min_ensemble_size=3,
+            parent_mip_era="cmip7",
+            tier=2,
+        )
+        holder = holder.add(universe, cmip7)
+        if has_esm_variant:
+            holder = holder.add(
+                esm_variant(
+                    universe,
+                    description=esm_backticks(universe.description),
+                    # As for the other AerChemMIP experiments, bgc is not required
+                    **components,
+                ),
+                cmip7,
+            )
+
+    # Prescribed SST experiments
+    histsst = UniverseExperiment(
+        drs_name="histSST",
+        description=(
+            "Reference for the `histSST-*` experiments. Atmosphere-only historical simulation with all forcings as "
+            "in `historical`, and time-varying sea-surface temperatures and sea ice prescribed from the model's own "
+            "`historical` simulation."
+        ),
+        activity="aerchemmip",
+        **AGCM_AER,
+        **FROM_PICONTROL,
+        start_timestamp=historical.universe.start_timestamp,
+        min_ensemble_size=1,
+        tier=1,
+    )
+    histsst_cmip7 = CMIP7Experiment(
+        **historical_cmip7_fields,
+        min_ensemble_size=1,
+        parent_mip_era="cmip7",
+        tier=1,
+    )
+    holder = holder.add(histsst, histsst_cmip7)
+
+    for suffix, quantifies, forcing_diff, extra, components, tier in (
+        (
+            "piAQ",
+            (
+                "the transient effective radiative forcing (ERF), composition and air quality changes from "
+                "anthropogenic non-CH4 short-lived climate forcer emissions"
+            ),
+            f"{AQ_EMISSIONS} are held at 1850 values",
+            "",
+            AGCM_AER_CHEM,
+            1,
+        ),
+        (
+            "piAer",
+            "the transient aerosol effective radiative forcing (ERF)",
+            f"{AER_EMISSIONS} are held at 1850 values",
+            "",
+            AGCM_AER,
+            1,
+        ),
+        (
+            "Dust",
+            "the transient effective radiative forcing (ERF) from historical changes in desert dust",
+            DUST_HISTORICAL,
+            "",
+            AGCM_AER,
+            2,
+        ),
+        (
+            "piFire",
+            (
+                "the transient effective radiative forcing (ERF), composition and air quality changes from fire "
+                "emissions"
+            ),
+            "short-lived climate forcer emissions from fires are held at 1850 values",
+            (
+                " Models with interactive fire should prescribe monthly fire emissions from multiple decades of "
+                "`piControl` (not a repeating climatology)."
+            ),
+            AGCM_AER_CHEM,
+            2,
+        ),
+        (
+            "piCH4",
+            "the transient methane effective radiative forcing (ERF) and composition changes",
+            f"{CH4} are held at 1850 values",
+            "",
+            AGCM_AER_CHEM,
+            2,
+        ),
+        (
+            "piO3",
+            "the transient tropospheric ozone effective radiative forcing (ERF)",
+            (
+                f"{O3_EMISSIONS} are held at 1850 values, and methane is held at 1850 values in the chemistry scheme "
+                "only (it evolves as in `histSST` in the radiation scheme)"
+            ),
+            "",
+            AGCM_AER_CHEM,
+            2,
+        ),
+        (
+            "piNOx",
+            "the transient effective radiative forcing (ERF) and composition changes from anthropogenic NOx",
+            "anthropogenic NOx emissions are held at 1850 values",
+            "",
+            AGCM_AER_CHEM,
+            3,
+        ),
+    ):
+        coupled_drs_name = f"hist-{suffix}"
+        if coupled_drs_name.lower() in holder.experiments:
+            extra = f"{extra} Atmosphere-only counterpart of `{coupled_drs_name}`."
+
+        holder = holder.add(
+            dataclasses.replace(
+                histsst,
+                drs_name=f"histSST-{suffix}",
+                description=(
+                    f"In combination with `histSST`, quantifies {quantifies} over the historical period. Same as "
+                    f"`histSST`, except {forcing_diff}.{extra}"
+                ),
+                **components,
+                tier=tier,
+            ),
+            dataclasses.replace(histsst_cmip7, tier=tier),
+        )
+
+    return holder
+
+
+def add_aerchemmip_pdclim(holder: Holder) -> Holder:
+    """Add the AerChemMIP present-day climatology (pdClim) experiments"""
+    hist_end_year = year(holder.get("historical").cmip7.end_timestamp)
+    climatology_start_year = hist_end_year - 30 + 1
+
+    def add_pdclim(
+        holder: Holder,
+        drs_name: str,
+        description: str,
+        branch_information: str,
+        components: dict[str, list[str]],
+        tier: int,
+    ) -> Holder:
+        # Split between the universe and the project as for the piClim experiments
+        return holder.add(
+            UniverseExperiment(
+                drs_name=drs_name,
+                description=description,
+                activity="aerchemmip",
+                **components,
+                start_timestamp=None,
+                end_timestamp=None,
+                min_number_yrs_per_sim=30.0,
+                min_ensemble_size=1,
+                tier=tier,
+            ),
+            CMIP7Experiment(
+                branch_information=branch_information,
+                min_ensemble_size=1,
+                parent_activity="cmip",
+                parent_experiment="historical",
+                parent_mip_era="cmip7",
+                tier=tier,
+            ),
+        )
+
+    holder = add_pdclim(
+        holder,
+        "pdClim-control",
+        (
+            "Baseline for effective radiative forcing (ERF) calculations relative to a present-day base state. "
+            f"Atmosphere-only experiment with all forcings at present-day ({hist_end_year}) values, and sea-surface "
+            "temperatures and sea-ice concentrations prescribed from a climatology of the last 30 years "
+            f"({climatology_start_year}-{hist_end_year}) of the model's own `historical` (or `esm-hist`) simulation."
+        ),
+        # Mirrors the `piClim-control` advice (see `add_piclim`)
+        (
+            "Branch from `historical` (or `esm-hist`) at a time of your choosing. Given that you are using a "
+            "climatology from your own model as boundary conditions, we recommend branching from within the period "
+            f"over which you calculated the climatology ({climatology_start_year}-{hist_end_year})."
+        ),
+        AGCM_AER,
+        2,
+    )
+
+    for suffix, quantifies, forcing_diff, extra, components, tier in (
+        (
+            "AQ",
+            "non-CH4 tropospheric ozone and aerosol",
+            AQ_EMISSIONS,
+            "",
+            AGCM_AER_CHEM,
+            3,
+        ),
+        ("aer", "aerosol", AER_EMISSIONS, "", AGCM_AER, 3),
+        (
+            "BC",
+            "black carbon (BC) aerosol",
+            "anthropogenic BC emissions",
+            f" All other emissions remain at {hist_end_year} values.",
+            AGCM_AER,
+            3,
+        ),
+        (
+            "O3",
+            "tropospheric ozone",
+            O3_EMISSIONS,
+            (
+                " Methane uses 1850 values in the chemistry scheme only and remains at "
+                f"{hist_end_year} values in the radiation scheme."
+            ),
+            AGCM_AER_CHEM,
+            3,
+        ),
+        (
+            "H2",
+            "hydrogen (H2)",
+            "the effects of H2 on CH4 and O3 chemistry",
+            (
+                " Requires models that include H2 emissions; the setup should be coordinated with the AerChemMIP2 "
+                "co-chairs."
+            ),
+            AGCM_AER_CHEM,
+            3,
+        ),
+        *(
+            (
+                suffix,
+                f"anthropogenic {species}",
+                f"anthropogenic {emissions} emissions",
+                "",
+                AGCM_AER_CHEM,
+                tier,
+            )
+            for suffix, species, emissions, tier in (
+                ("CO", "carbon monoxide (CO)", "CO", 2),
+                ("NMVOC", "non-methane volatile organic compound (NMVOC)", "NMVOC", 2),
+                ("C2H6", "ethane (C2H6)", "ethane (C2H6)", 3),
+                ("C3H8", "propane (C3H8)", "propane (C3H8)", 3),
+                ("C2H4", "ethene (C2H4)", "ethene (C2H4)", 3),
+                ("C3H6", "propene (C3H6)", "propene (C3H6)", 3),
+                ("C4H10", "butane (C4H10)", "butane (C4H10)", 3),
+                ("alcohol", "alcohol", "alcohol", 3),
+            )
+        ),
+    ):
+        holder = add_pdclim(
+            holder,
+            f"pdClim-{suffix}",
+            (
+                f"In combination with `pdClim-control`, quantifies {quantifies} effective radiative forcing (ERF) "
+                f"relative to a present-day base state. Same as `pdClim-control`, except {forcing_diff} use "
+                f"pre-industrial (1850) values.{extra}"
+            ),
+            "Same as `pdClim-control`",
+            components,
+            tier,
+        )
+
+    return holder
+
+
+def add_aerchemmip_scenarios(holder: Holder) -> Holder:
+    """
+    Add the AerChemMIP scenario experiments
+
+    The coupled dust scenario and the experiments with prescribed SSTs,
+    each alongside its emissions-driven equivalent.
+    """
+    hist_end_year = year(holder.get("historical").cmip7.end_timestamp)
+
+    def add_with_esm_variant(holder: Holder, universe: UniverseExperiment) -> Holder:
+        cmip7 = CMIP7Experiment(
+            **pick(
+                universe,
+                "start_timestamp",
+                "end_timestamp",
+                "min_number_yrs_per_sim",
+            ),
+            parent_mip_era="cmip7",
+            tier=universe.tier,
+        )
+        universe_esm = esm_variant(
+            universe,
+            description=esm_backticks(universe.description),
+            # As for the other AerChemMIP experiments, bgc is not required
+            required_model_components=universe.required_model_components,
+            additional_allowed_model_components=universe.additional_allowed_model_components,
+        )
+
+        return holder.add(universe, cmip7).add(universe_esm, cmip7)
+
+    scen7_vl = holder.get("scen7-vl").universe
+    scenario_timing = pick(
+        scen7_vl, "start_timestamp", "end_timestamp", "min_number_yrs_per_sim"
+    )
+
+    # Coupled dust scenario
+    hist_dust = holder.get("hist-Dust").universe
+    holder = add_with_esm_variant(
+        holder,
+        UniverseExperiment(
+            drs_name="scen7-vl-Dust",
+            description=(
+                "In combination with `scen7-vl`, quantifies the climate and air quality response to a hypothetical "
+                f"continued increase in desert dust. Same as `scen7-vl`, except {DUST_FUTURE}. Future continuation of "
+                f"`{hist_dust.drs_name}`."
+            ),
+            activity="aerchemmip",
+            **AOGCM_AER,
+            branch_information=f"Branch from `{hist_dust.drs_name}` at {scen7_vl.start_timestamp}.",
+            parent_activity=hist_dust.activity,
+            parent_experiment=hist_dust.drs_name.lower(),
+            parent_mip_era="cmip7",
+            **scenario_timing,
+            min_ensemble_size=3,
+            tier=2,
+        ),
+    )
+
+    # Prescribed SST experiments
+    # (the AQ/Aer/Dust experiments are the atmosphere-only counterparts of coupled experiments)
+    land_use_present_day = (
+        f"land use is fixed at a present-day ({hist_end_year}) monthly climatology"
+    )
+    for (
+        base_drs_name,
+        sst_components,
+        sst_extra,
+        ar_world,
+        ar_reference_suffix,
+        ar_tier,
+    ) in (
+        (
+            "scen7-h",
+            AGCM_AER,
+            "",
+            " in a warmer world",
+            "-SST-vlLU",
+            3,
+        ),
+        (
+            "scen7-vl",
+            # Deliberately only requires agcm
+            # (see the AerChemMIP model component conventions near the top of this file)
+            AGCM,
+            (
+                " Also the reference for the afforestation/reforestation experiments, so BVOC, fire and dust "
+                "emissions should be interactive where the model allows."
+            ),
+            "",
+            "-SST",
+            2,
+        ),
+    ):
+        base = holder.get(base_drs_name).universe
+        sst_drs_name = f"{base_drs_name}-SST"
+        sst = UniverseExperiment(
+            drs_name=sst_drs_name,
+            description=(
+                f"Reference for the `{sst_drs_name}-*` experiments and atmosphere-only counterpart of "
+                f"`{base_drs_name}`. All forcings evolve as in `{base_drs_name}`, with time-evolving monthly "
+                f"sea-surface temperatures and sea ice prescribed from the model's own `{base_drs_name}` simulation. "
+                "Models with emissions that depend on the sea-surface state (e.g. DMS) should also prescribe these "
+                f"from the same simulation.{sst_extra}"
+            ),
+            activity="aerchemmip",
+            **sst_components,
+            **pick(
+                base,
+                "branch_information",
+                "start_timestamp",
+                "end_timestamp",
+                "min_number_yrs_per_sim",
+                "parent_activity",
+                "parent_experiment",
+                "parent_mip_era",
+            ),
+            min_ensemble_size=1,
+            tier=1,
+        )
+        holder = add_with_esm_variant(holder, sst)
+
+        if base_drs_name == "scen7-h":
+            # Held at present-day levels
+            perturbations = (
+                (
+                    "AQ",
+                    "future changes in anthropogenic non-CH4 short-lived climate forcer emissions",
+                    f"{AQ_EMISSIONS} are held at present-day ({hist_end_year}) values",
+                    AGCM_AER_CHEM,
+                    1,
+                ),
+                (
+                    "Aer",
+                    "future changes in anthropogenic aerosols",
+                    f"{AER_EMISSIONS} are held at present-day ({hist_end_year}) values",
+                    AGCM_AER,
+                    1,
+                ),
+            )
+        else:
+            # Follow the high scenario instead
+            perturbations = (
+                (
+                    "AQ",
+                    "a failure of air pollution mitigation",
+                    f"{AQ_EMISSIONS} follow `scen7-h` instead of `scen7-vl`",
+                    AGCM_AER_CHEM,
+                    1,
+                ),
+                (
+                    "Aer",
+                    "a failure of aerosol mitigation",
+                    f"{AER_EMISSIONS} follow `scen7-h` instead of `scen7-vl`",
+                    AGCM_AER,
+                    1,
+                ),
+                (
+                    "Dust",
+                    "a hypothetical continued increase in desert dust",
+                    DUST_FUTURE,
+                    AGCM_AER,
+                    2,
+                ),
+                (
+                    "CH4",
+                    "a failure of methane mitigation",
+                    f"{CH4} follow `scen7-h` instead of `scen7-vl`",
+                    AGCM_AER_CHEM,
+                    2,
+                ),
+                (
+                    "O3",
+                    "a failure of ozone precursor mitigation",
+                    (
+                        f"{O3_EMISSIONS} follow `scen7-h`, and methane follows `scen7-h` in the chemistry scheme "
+                        "only (it follows `scen7-vl` in the radiation scheme)"
+                    ),
+                    AGCM_AER_CHEM,
+                    3,
+                ),
+            )
+
+        for suffix, quantifies, forcing_diff, components, tier in perturbations:
+            extra = ""
+            coupled_drs_name = f"{base_drs_name}-{suffix}"
+            if coupled_drs_name.lower() in holder.experiments:
+                extra = f" Atmosphere-only counterpart of `{coupled_drs_name}`."
+
+            holder = add_with_esm_variant(
+                holder,
+                dataclasses.replace(
+                    sst,
+                    drs_name=f"{sst_drs_name}-{suffix}",
+                    description=(
+                        f"In combination with `{sst_drs_name}`, quantifies the effective radiative forcing (ERF) of "
+                        f"{quantifies}. Same as `{sst_drs_name}`, except {forcing_diff}.{extra}"
+                    ),
+                    **components,
+                    tier=tier,
+                ),
+            )
+
+        # Afforestation/reforestation (A/R) experiments
+        ar_reference = f"{base_drs_name}{ar_reference_suffix}"
+        ar_start = f"Afforestation/reforestation (A/R) experiment{ar_world}. Same as `{sst_drs_name}`, except"
+        ar_experiments = [
+            (
+                "pdLU-BFD",
+                (
+                    f"{ar_start} {land_use_present_day}. BVOC, fire and dust emissions are interactive, so they "
+                    f"respond to climate but not to land-use change. Compare with `{ar_reference}` for the total "
+                    "radiative effect of A/R. Requires interactive BVOC, fire and dust emissions."
+                ),
+                AGCM_AER,
+            ),
+            (
+                "pdLU",
+                (
+                    f"{ar_start} {land_use_present_day}, and BVOC, fire and dust emissions are prescribed from "
+                    f"`{ar_reference}`. Compare with `{ar_reference}` for the surface-albedo effect of A/R, and with "
+                    f"`{sst_drs_name}-pdLU-BFD` for the effect via BVOC, fire and dust emissions."
+                ),
+                AGCM,
+            ),
+        ]
+        if base_drs_name == "scen7-h":
+            ar_experiments.insert(
+                0,
+                (
+                    "vlLU",
+                    (
+                        f"{ar_start} land use follows `scen7-vl` (which includes A/R). BVOC, fire and dust emissions "
+                        "are interactive where the model allows."
+                    ),
+                    AGCM,
+                ),
+            )
+
+        for suffix, description, components in ar_experiments:
+            holder = add_with_esm_variant(
+                holder,
+                dataclasses.replace(
+                    sst,
+                    drs_name=f"{sst_drs_name}-{suffix}",
+                    description=description,
+                    **components,
+                    tier=ar_tier,
+                ),
+            )
+
+    return holder
+
+
 def add_geomip(holder: Holder) -> Holder:
     base_scenario = "scen7-ml"
     start_year = 2035
@@ -1817,6 +2582,9 @@ def main():
         add_polmip,
         add_firemip,
         add_aerchemmip,
+        add_aerchemmip_historical,
+        add_aerchemmip_pdclim,
+        add_aerchemmip_scenarios,
         add_geomip,
     ):
         holder = add_experiments(holder)

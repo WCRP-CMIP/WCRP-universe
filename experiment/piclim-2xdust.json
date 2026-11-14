@@ -2,32 +2,20 @@
     "@context": "000_context.jsonld",
     "id": "piclim-2xdust",
     "type": "experiment",
-    "experiment_id": "piClim-2xdust",
-    "activity_id": [
-        "aerchemmip"
-    ],
+    "description": "In combination with `piClim-control`, quantifies the radiative effect of natural mineral dust emissions, to estimate the strength of the associated climate feedback. Same as `piClim-control`, except mineral dust emissions are doubled.",
+    "drs_name": "piClim-2xdust",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
+    "activity": "aerchemmip",
     "additional_allowed_model_components": [
         "chem",
         "bgc"
     ],
-    "description": "1850 control with doubled dust emissions",
-    "end_year": null,
-    "experiment": "pre-industrial climatological SSTs and forcing, but with doubled emissions of dust",
-    "min_number_yrs_per_sim": "30",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "picontrol"
-    ],
+    "min_ensemble_size": 1,
     "required_model_components": [
         "agcm",
         "aer"
     ],
-    "start_year": null,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "2",
-    "drs_name": "piClim-2xdust"
+    "tier": 1
 }

@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hist-pifire",
+    "type": "experiment",
+    "description": "In combination with `historical`, quantifies the climate and air quality response to fire emissions. Same as `historical`, except short-lived climate forcer emissions from fires are held at 1850 values. Models with interactive fire should prescribe monthly fire emissions from multiple decades of `piControl` (not a repeating climatology).",
+    "drs_name": "hist-piFire",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "bgc"
+    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 3,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
+    "required_model_components": [
+        "aogcm",
+        "aer",
+        "chem"
+    ],
+    "tier": 2
+}
