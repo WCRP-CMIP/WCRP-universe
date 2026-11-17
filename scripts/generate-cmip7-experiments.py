@@ -251,6 +251,14 @@ ACTIVITIES: dict[str, Activity] = {
                 "multi-initial-condition, and multi-scenario ensembles."
             ),
         ),
+        Activity(
+            id="tipmip",
+            references=[
+                "https://doi.org/10.5194/egusphere-2025-1899",
+                "https://doi.org/10.5194/gmd-19-6941-2026",
+                "https://doi.org/10.5194/egusphere-2026-1698",
+            ],
+        ),
     )
 }
 
@@ -2504,6 +2512,135 @@ def add_geomip(holder: Holder) -> Holder:
     return holder
 
 
+def add_tipmip(holder: Holder) -> Holder:
+    ramp_up = UniverseExperiment(
+        drs_name="tip-esm-E-e",
+        description="Ramp-up experiment with a constant warming rate of 2 degree C per century.",
+        activity="tipmip",
+        **ESM,
+        min_ensemble_size=1,
+        tier=1,
+        # TODO: confirm with submitter
+        branch_information="Branch from `esm-piControl` at a time of your choosing",
+        parent_activity="cmip",
+        parent_experiment="esm-picontrol",
+        # parent_mip_era=,
+        start_timestamp=None,
+        end_timestamp=None,
+    )
+    ramp_up_cmip7 = CMIP7Experiment(
+        parent_mip_era="cmip7", tier=1, min_number_yrs_per_sim=200.0
+    )
+    holder = holder.add(ramp_up, ramp_up_cmip7)
+
+    universe_d = {}
+    for drs_name, branch_warming in (
+        ("tip-esm-E-ec", 1.5),
+        ("tip-esm-E-ee", 2.0),
+        ("tip-esm-E-eg", 3.0),
+        ("tip-esm-E-ei", 4.0),
+        ("tip-esm-E-ek", 5.0),
+    ):
+        description = f"Zero CO2 emissions simulation starting at {branch_warming} degree C GWL."
+        universe_experiment = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity=ramp_up.activity,
+            **ESM,
+            min_ensemble_size=1,
+            tier=1,
+            branch_information=(
+                f"Branch from `{ramp_up.drs_name}` when you reach a global-warming level (GWL) of {branch_warming} degree C."
+            ),
+            parent_activity=ramp_up.activity,
+            parent_experiment=ramp_up.drs_name.lower(),
+            # parent_mip_era=,
+            start_timestamp=None,
+            end_timestamp=None,
+        )
+        universe_d[drs_name] = universe_experiment
+
+        cmip7_experiment = CMIP7Experiment(
+            tier=1,
+            parent_mip_era="cmip7",
+            min_number_yrs_per_sim=300.0,
+            min_ensemble_size=1,
+        )
+
+        holder = holder.add(universe_experiment, cmip7_experiment)
+
+    for drs_name, branch_from, min_number_yrs_per_sim in (
+        ("tip-esm-E-ee50e", "tip-esm-E-ee", 100.0),
+        ("tip-esm-E-ei50e", "tip-esm-E-ei", 200.0),
+    ):
+        description = (
+            f"Ramp-down simulation with CO2 emissions that are the negative of those used in the ramp-up, "
+            f"starting 50 years into `{branch_from}`."
+        )
+        universe_experiment = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity=ramp_up.activity,
+            **ESM,
+            min_ensemble_size=1,
+            tier=1,
+            branch_information=(
+                f"Branch from `{branch_from}` 50 years after `{branch_from}`'s start."
+            ),
+            parent_activity=universe_d[branch_from].activity,
+            parent_experiment=universe_d[branch_from].drs_name.lower(),
+            # parent_mip_era=,
+            start_timestamp=None,
+            end_timestamp=None,
+        )
+        universe_d[drs_name] = universe_experiment
+
+        cmip7_experiment = CMIP7Experiment(
+            tier=1,
+            parent_mip_era="cmip7",
+            min_number_yrs_per_sim=min_number_yrs_per_sim,
+            min_ensemble_size=1,
+        )
+
+        holder = holder.add(universe_experiment, cmip7_experiment)
+
+    for drs_name, branch_from, branch_warming, min_number_yrs_per_sim in (
+        ("tip-esm-E-ei50ee", "tip-esm-E-ei50e", 2.0, 300.0),
+    ):
+        description = (
+            "Zero CO2 emissions simulation, branching from a simulation with declining global-mean temperature, "
+            f"starting at {branch_warming} degree C GWL."
+        )
+        universe_experiment = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity=ramp_up.activity,
+            **ESM,
+            min_ensemble_size=1,
+            tier=1,
+            branch_information=(
+                f"Branch from `{universe_d[branch_from].drs_name}` when you reach a global-warming level (GWL) of {branch_warming} degree C."
+            ),
+            parent_activity=universe_d[branch_from].activity,
+            parent_experiment=universe_d[branch_from].drs_name.lower(),
+            # parent_mip_era=,
+            start_timestamp=None,
+            end_timestamp=None,
+        )
+        universe_d[drs_name] = universe_experiment
+
+        cmip7_experiment = CMIP7Experiment(
+            tier=1,
+            parent_mip_era="cmip7",
+            min_number_yrs_per_sim=min_number_yrs_per_sim,
+            min_ensemble_size=1,
+        )
+
+        holder = holder.add(universe_experiment, cmip7_experiment)
+
+    return holder
+
+
 def get_citation_for_doi(
     doi: str, style: str = "apa", offline: bool = False
 ) -> str | None:
@@ -2650,6 +2787,7 @@ def main():
         add_aerchemmip_pdclim,
         add_aerchemmip_scenarios,
         add_geomip,
+        add_tipmip,
     ):
         holder = add_experiments(holder)
 

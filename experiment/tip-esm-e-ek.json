@@ -1,0 +1,23 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tip-esm-e-ek",
+    "type": "experiment",
+    "description": "Zero CO2 emissions simulation starting at 5.0 degree C GWL.",
+    "drs_name": "tip-esm-E-ek",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "activity": "tipmip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from `tip-esm-E-e` when you reach a global-warming level (GWL) of 5.0 degree C.",
+    "min_ensemble_size": 1,
+    "parent_activity": "tipmip",
+    "parent_experiment": "tip-esm-e-e",
+    "required_model_components": [
+        "aogcm",
+        "bgc"
+    ],
+    "tier": 1
+}
