@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tipmip_cmip7_ref_000",
+    "type": "reference",
+    "drs_name": "tipmip_cmip7_ref_000",
+    "citation": "Winkelmann, R., Dennis, D. P., Donges, J. F., Loriani, S., Klose, A. K., Abrams, J. F., Alvarez-Solas, J., Albrecht, T., Armstrong McKay, D., Bathiany, S., Blasco Navarro, J., Brovkin, V., Burke, E., Danabasoglu, G., Donner, R. V., Dr\\\"uke, M., Georgievski, G., Goelzer, H., Harper, A. B., et al. (2025). The Tipping Points Modelling Intercomparison Project (TIPMIP): Assessing tipping point risks in the Earth system. https://doi.org/10.5194/egusphere-2025-1899",
+    "doi": "https://doi.org/10.5194/egusphere-2025-1899"
+}

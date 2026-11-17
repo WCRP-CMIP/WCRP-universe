@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tipmip_cmip7_ref_001",
+    "type": "reference",
+    "drs_name": "tipmip_cmip7_ref_001",
+    "citation": "Jones, C., Bossert, I., Dennis, D. P., Jeffery, H. A., Jones, C. D., Koenigk, T., Loriani, S., Sanderson, B., S\\'ef\\'erian, R., Wyser, K., Yang, S., Abe, M., Bathiany, S., Braconnot, P., Brovkin, V., Burger, F. A., Cadule, P., Castruccio, F. S., Danabasoglu, G., et al. (2026). The TIPMIP Earth system model experiment protocol: phase 1. Geoscientific Model Development, 19(14), 6941-6966. https://doi.org/10.5194/gmd-19-6941-2026",
+    "doi": "https://doi.org/10.5194/gmd-19-6941-2026"
+}
