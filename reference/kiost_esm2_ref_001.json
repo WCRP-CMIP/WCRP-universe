@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "kiost_esm2_ref_001",
+  "type": "reference",
+  "citation": "See https://paper.under.review",
+  "doi": "N/A",
+  "drs_name": "kiost_esm2_ref_001"
+}

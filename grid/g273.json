@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g273",
+  "type": "grid",
+  "description": "Horizontal grid cell with a regular gaussian grid type and 145 x 140 km resolution.",
+  "drs_name": "g273",
+  "region": "global",
+  "grid_type": "regular_gaussian",
+  "n_cells": 34816,
+  "grid_mapping": "latitude_longitude"
+}

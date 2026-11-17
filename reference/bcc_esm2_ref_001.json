@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "bcc_esm2_ref_001",
+  "type": "reference",
+  "citation": "Wu, T., Zhang, F., Zhang, J., Jie, W., Zhang, Y., Wu, F., Li, L., Yan, J., Liu, X., Lu, X., Tan, H., Zhang, L., Wang, J., & Hu, A. (2020). Beijing Climate Center Earth System Model version 1 (BCC-ESM1): model description and evaluation of aerosol simulations. Geoscientific Model Development, 13(3), 977-1005. https://doi.org/10.5194/gmd-13-977-2020\n",
+  "doi": "https://doi.org/10.5194/gmd-13-977-2020",
+  "drs_name": "bcc_esm2_ref_001"
+}

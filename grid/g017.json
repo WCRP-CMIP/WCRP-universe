@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g017",
+  "type": "grid",
+  "description": "Horizontal grid with a single cell for Antarctica.",
+  "drs_name": "g017",
+  "region": "antarctica",
+  "grid_type": "regular_latitude_longitude",
+  "n_cells": 1,
+  "grid_mapping": "latitude_longitude"
+}

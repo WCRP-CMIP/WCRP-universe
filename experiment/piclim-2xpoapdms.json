@@ -1,0 +1,21 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "piclim-2xpoapdms",
+    "type": "experiment",
+    "description": "In combination with `piClim-control`, quantifies the radiative effect of natural primary marine organic aerosol (POA) and dimethyl sulphide (DMS) emissions, to estimate the strength of the associated climate feedback. Same as `piClim-control`, except emissions of primary marine organic compounds and of DMS are both doubled.",
+    "drs_name": "piClim-2xPOApDMS",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
+    "activity": "aerchemmip",
+    "additional_allowed_model_components": [
+        "chem",
+        "bgc"
+    ],
+    "min_ensemble_size": 1,
+    "required_model_components": [
+        "agcm",
+        "aer"
+    ],
+    "tier": 1
+}

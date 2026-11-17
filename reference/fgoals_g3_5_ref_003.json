@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fgoals_g3_5_ref_003",
+  "type": "reference",
+  "citation": "Wei, J., Liu, H., Zhao, Y., Lin, P., Yu, Z., Li, L., Xie, J., & Duan, A. (2023). Simulation of the climate and ocean circulations in the Middle Miocene Climate Optimum by a coupled model FGOALS-g3. Palaeogeography, Palaeoclimatology, Palaeoecology, 617, 111509. https://doi.org/10.1016/j.palaeo.2023.111509\n",
+  "doi": "https://doi.org/10.1016/j.palaeo.2023.111509",
+  "drs_name": "fgoals_g3_5_ref_003"
+}

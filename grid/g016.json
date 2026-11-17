@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g016",
+  "type": "grid",
+  "description": "Horizontal grid cell with a single cell for Greenland.",
+  "drs_name": "g016",
+  "region": "greenland",
+  "grid_type": "regular_latitude_longitude",
+  "n_cells": 1,
+  "grid_mapping": "latitude_longitude"
+}
