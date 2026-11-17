@@ -2,32 +2,21 @@
     "@context": "000_context.jsonld",
     "id": "histsst-piaer",
     "type": "experiment",
-    "experiment_id": "histSST-piAer",
-    "activity_id": [
-        "aerchemmip"
-    ],
+    "description": "In combination with `histSST`, quantifies the transient aerosol effective radiative forcing (ERF) over the historical period. Same as `histSST`, except anthropogenic aerosol and aerosol precursor (BC, OC, NH3, SO2) emissions are held at 1850 values. Atmosphere-only counterpart of `hist-piAer`.",
+    "drs_name": "histSST-piAer",
+    "start_timestamp": "1850-01-01",
+    "activity": "aerchemmip",
     "additional_allowed_model_components": [
         "chem",
         "bgc"
     ],
-    "description": "Historical WMGHG, halocarbon concentrations and tropospheric ozone precursors emissions, 1850 aerosol precursor emissions, prescribed SSTs",
-    "end_year": 2014,
-    "experiment": "historical SSTs and historical forcing, but with pre-industrial aerosol emissions",
-    "min_number_yrs_per_sim": "165",
-    "parent_activity_id": [
-        "cmip"
-    ],
-    "parent_experiment_id": [
-        "picontrol"
-    ],
+    "branch_information": "Branch from `piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "picontrol",
     "required_model_components": [
         "agcm",
         "aer"
     ],
-    "start_year": 1850,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "2",
-    "drs_name": "histSST-piAer"
+    "tier": 1
 }
