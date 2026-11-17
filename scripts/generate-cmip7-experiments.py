@@ -795,23 +795,23 @@ def add_flat10(holder: Holder) -> Holder:
     flat10_cmip7 = CMIP7Experiment(parent_mip_era="cmip7", tier=1)
     holder = holder.add(flat10, flat10_cmip7)
 
-    definitions = ()
-    for drs_name, flat10_version in (
+    definitions = (
         ("flat10-bgc", "Biogeochemically coupled (BGC)"),
         ("flat10-rad", "Radiatively coupled (RAD)"),
-    ):
+    )
+    for drs_name, flat10_version in definitions:
         other_experiments_l = [d[0] for d in definitions if d[0] != drs_name]
         if len(other_experiments_l) > 1:
             raise NotImplementedError
         else:
-            other_experiments = other_experiments_l
+            other_experiments = f"`{other_experiments_l[0]}`"
 
         description = (
             f"{flat10_version} version of `esm-flat10`. "
-            "Driven by prescribed CO2 concentration taken from the esm-flat10 of the ESM. "
-            "All other conditions are kept the same as piControl. "
+            "Driven by prescribed CO2 concentration taken from the `esm-flat10` simulation of the ESM. "
+            "All other conditions are kept the same as `piControl`. "
             "This provides the opportunity to diagnose climate-carbon cycle feedbacks "
-            "from the flat10 simulations because it uses identical CO2 concentration. "
+            "from the `esm-flat10` simulations because it uses identical CO2 concentration. "
             f"Complements {other_experiments}."
         )
         holder = holder.add(
