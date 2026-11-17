@@ -7,19 +7,25 @@
         "CMCC"
     ],
     "labels": [
-        "Euro-Mediterranean Center on Climate Change (CMCC Foundation)"
+        "Euro-Mediterranean Center on Climate Change (CMCC Foundation)",
+        "CMCC Foundation",
+        "CMCC Foundation - Euro-Mediterranean Center on Climate Change",
+        "Euro-Mediterranean Center for Climate Change",
+        "Fondazione Centro Euro-Mediterraneo sui Cambiamenti Climatici"
     ],
     "description": "Euro-Mediterranean Center on Climate Change (CMCC Foundation)",
     "location": [
         {
             "city": "Lecce",
             "country": "Italy",
-            "lat": 40.35643,
-            "lon": 18.194769
+            "lat": 40.35481,
+            "lon": 18.17244
         }
     ],
     "ror": "01tf11a61",
     "urls": [
-        "https://www.cmcc.it/"
+        "https://www.cmcc.it/",
+        "https://www.cmcc.it",
+        "https://en.wikipedia.org/wiki/Euro-Mediterranean_Center_for_Climate_Change"
     ]
 }
