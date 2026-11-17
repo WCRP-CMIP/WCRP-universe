@@ -295,10 +295,14 @@ AOGCM_AER_CHEM = dict(
 #   It is also the reference for the afforestation/reforestation experiments,
 #   which models with minimal capability are invited to run (alongside `(esm-)scen7-vl-SST-pdLU`).
 
-# `pdClim-control` has the same branching advice as `piClim-control`
+# `pdClim-control` has similar branching advice to `piClim-control`
 # (branch at a time of your choosing, ideally from within the period used for the climatology),
 # as confirmed by the AerChemMIP co-chairs in
 # https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476.
+# Unlike `piClim-control` (parent `piControl`), the `pdClim-*` experiments have no fixed parent.
+# Groups can branch from either `historical` or `esm-hist`
+# (https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6869503458)
+# and only a single parent can be specified, so the branch information explains this instead.
 # Every `pdClim-*` and `piClim-*` experiment is "Same as" its control.
 
 # Universe fields for experiments that branch from piControl
@@ -1831,13 +1835,11 @@ def add_aerchemmip_historical(holder: Holder) -> Holder:
             DUST_HISTORICAL,
             "",
             AOGCM_AER,
-            # `esm-hist-Dust` is the parent of `esm-scen7-vl-Dust`.
-            # TODO: FOLLOW UP WITH THE AERCHEMMIP CO-CHAIRS BEFORE MERGING (dust experiments):
-            # Blocks merging. `esm-hist-Dust` was not registered. It is still under discussion
-            # (https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6810556476) whether to
-            # (a) keep `esm-hist-Dust` (fully emissions-driven chain),
-            # (b) drop it and keep `hist-Dust` as the parent of `esm-scen7-vl-Dust` (accepting the mismatch) or
-            # (c) ask groups that can't afford `esm-hist-Dust` to run `scen7-vl-Dust` instead.
+            # `esm-hist-Dust` was not registered.
+            # It is added so that `esm-scen7-vl-Dust` has an emissions-driven parent
+            # (as for FireMIP's `hist-noFire`/`esm-hist-noFire`),
+            # as agreed with the AerChemMIP co-chairs in
+            # https://github.com/WCRP-CMIP/WCRP-universe/pull/459#issuecomment-6869503458.
             True,
         ),
         (
@@ -2050,9 +2052,10 @@ def add_aerchemmip_pdclim(holder: Holder) -> Holder:
             CMIP7Experiment(
                 branch_information=branch_information,
                 min_ensemble_size=1,
-                parent_activity="cmip",
-                parent_experiment="historical",
-                parent_mip_era="cmip7",
+                # No fixed parent: either `historical` or `esm-hist` (see the branch information)
+                parent_activity=None,
+                parent_experiment=None,
+                parent_mip_era=None,
                 tier=tier,
             ),
         )
