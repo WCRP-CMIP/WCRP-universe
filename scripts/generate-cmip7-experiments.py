@@ -1295,7 +1295,9 @@ def add_piclim(holder: Holder) -> Holder:
                 "time)."
             )
         else:
-            branch_information = "Same as `piClim-control`"
+            branch_information = (
+                "Use the same branch point as you used for `piClim-control`"
+            )
 
         holder = holder.add(
             UniverseExperiment(
@@ -1303,13 +1305,17 @@ def add_piclim(holder: Holder) -> Holder:
                 description=description,
                 activity=activity,
                 **components,
+                min_ensemble_size=1,
+                tier=tier,
+                parent_activity="cmip",
+                parent_experiment="picontrol",
+                # parent_mip_era=,
                 start_timestamp=None,
                 end_timestamp=None,
                 min_number_yrs_per_sim=30.0,
-                min_ensemble_size=1,
-                tier=tier,
             ),
             CMIP7Experiment(
+                tier=tier,
                 description=re.sub(
                     # Non-greedy so that any later brackets in the description are left alone
                     r"\(typically[^)]*\)",
@@ -1317,12 +1323,14 @@ def add_piclim(holder: Holder) -> Holder:
                     description,
                 ),
                 branch_information=branch_information,
+                # parent_activity="cmip",
+                # parent_experiment="picontrol",
+                parent_mip_era="cmip7",
+                # start_timestamp=None,
+                # end_timestamp=None,
+                # min_number_yrs_per_sim=30.0,
                 # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
                 min_ensemble_size=1,
-                parent_activity="cmip",
-                parent_experiment="picontrol",
-                parent_mip_era="cmip7",
-                tier=tier,
             ),
         )
 
