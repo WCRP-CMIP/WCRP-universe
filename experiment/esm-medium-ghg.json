@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-medium-ghg",
+    "type": "experiment",
+    "description": "Response to greenhouse gas forcing in the CMIP7 `esm-scen7-m` scenario. All other conditions are kept the same as esm-piControl.",
+    "drs_name": "esm-Medium-GHG",
+    "start_timestamp": "2036-01-01",
+    "activity": "damip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from the end of `esm-hist-GHG`",
+    "min_ensemble_size": 1,
+    "parent_activity": "damip",
+    "parent_experiment": "esm-hist-ghg",
+    "required_model_components": [
+        "aogcm",
+        "bgc"
+    ],
+    "tier": 3
+}

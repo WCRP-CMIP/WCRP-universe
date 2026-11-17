@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-medium-o3",
+    "type": "experiment",
+    "description": "Response to tropospheric and stratospheric ozone concentration changes (these are prescribed throughout the atmospheric column) forcing in the CMIP7 `esm-scen7-m` scenario. All other conditions are kept the same as esm-piControl.",
+    "drs_name": "esm-Medium-O3",
+    "start_timestamp": "2036-01-01",
+    "activity": "damip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from the end of `esm-hist-O3`",
+    "min_ensemble_size": 1,
+    "parent_activity": "damip",
+    "parent_experiment": "esm-hist-o3",
+    "required_model_components": [
+        "aogcm",
+        "bgc"
+    ],
+    "tier": 3
+}
