@@ -2,31 +2,24 @@
     "@context": "000_context.jsonld",
     "id": "a4sstice-4xco2",
     "type": "experiment",
-    "experiment_id": "a4SSTice-4xCO2",
-    "activity_id": [
-        "cfmip"
-    ],
+    "description": "`a4SSTice-4xCO2` uses monthly time-varying SST, sea-ice and atmospheric constituents from years 111-140 of each model's own `abrupt-4xCO2` run. To set up the experiment, it is recommended to start from an `a4SSTice` configuration, then to change the CO2 concentrations. `a4SSTice-4xCO2` is part of a set of AGCM timeslice experiments (also including `piSST-pxK` and `a4SSTice`) designed to examine regional climate responses to CO2 forcing. `a4SSTice-4xCO2` can be compared with years 111-140 of `abrupt-4xCO2` to determine whether an atmosphere-only framework can adequately replicate regional climates from a coupled GCM. `a4SSTice-4xCO2` minus `a4SSTice` isolates the direct CO2 effect, including the plant physiological response. The CMIP5/CMIP6 versions of these experiments are described in [Chadwick et al. (2017)](https://doi.org/10.1007/s00382-016-3488-6) and [Webb et al. (2017)](https://doi.org/10.5194/gmd-10-359-2017) but there have been significant changes made to the experimental protocol for CMIP7, see [Ceppi et al. (2026)](https://doi.org/10.5194/gmd-19-8693-2026).",
+    "drs_name": "a4SSTice-4xCO2",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
+    "activity": "cfmip",
     "additional_allowed_model_components": [
         "aer",
-        "chem"
+        "chem",
+        "bgc"
     ],
-    "description": "As a4SSTice, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation",
-    "end_year": null,
-    "experiment": "as piSST but with SSTs and sea ice from abrupt-4xCO2, and 4xCO2 seen by radiation and vegetation",
-    "min_number_yrs_per_sim": "30",
-    "parent_activity_id": [
-        "no parent"
-    ],
-    "parent_experiment_id": [
-        "no parent"
-    ],
+    "branch_information": null,
+    "min_ensemble_size": 1,
+    "parent_activity": null,
+    "parent_experiment": null,
+    "parent_mip_era": null,
     "required_model_components": [
         "agcm"
     ],
-    "start_year": null,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "2",
-    "drs_name": "a4SSTice-4xCO2"
+    "tier": 1
 }

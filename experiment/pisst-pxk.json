@@ -2,31 +2,24 @@
     "@context": "000_context.jsonld",
     "id": "pisst-pxk",
     "type": "experiment",
-    "experiment_id": "piSST-pxK",
-    "activity_id": [
-        "cfmip"
-    ],
+    "description": "`piSST-pxK` is an AGCM experiment using monthly time-varying sea-ice and atmospheric constituents from 30 years of each model's own `piControl` run. The 30 years of the `piControl` run should be chosen to be parallel to years 111-140 of the `abrupt-4xCO2` run. SSTs are also taken from `piControl` in the same way as sea-ice, but are uniformly increased by x K in ice-free regions, where x is the global, climatological annual-mean ice-free SST change between years 111-140 of `abrupt-4xCO2` and the parallel section of `piControl`. Note that x should be both spatially and temporally constant. In `piSST-pxK`, sea ice and SSTs in grid boxes containing sea ice should remain the same as in `piControl`. To set up the experiment, it is recommended to start from a `piClim-control` configuration, then alter the SST and sea-ice boundary conditions (including making them time-varying rather than climatological). `piSST-pxK` is part of a set of AGCM timeslice experiments (also including `a4SSTice` and `a4SSTice-4xCO2`) designed to examine regional climate responses to CO2 forcing. `piSST-pxK` minus `piControl` provides the response to a uniform SST increase. The CMIP5/CMIP6 versions of these experiments are described in [Chadwick et al. (2017)](https://doi.org/10.1007/s00382-016-3488-6) and [Webb et al. (2017)](https://doi.org/10.5194/gmd-10-359-2017) but there have been significant changes made to the experimental protocol for CMIP7, see [Ceppi et al. (2026)](https://doi.org/10.5194/gmd-19-8693-2026).",
+    "drs_name": "piSST-pxK",
+    "start_timestamp": null,
+    "end_timestamp": null,
+    "min_number_yrs_per_sim": 30.0,
+    "activity": "cfmip",
     "additional_allowed_model_components": [
         "aer",
-        "chem"
+        "chem",
+        "bgc"
     ],
-    "description": "Same as piSST, but with a spatially and temporally uniform SST anomaly applied on top of the monthly-varying piSST SSTs. The magnitude of the uniform increase is taken from each model's global, climatological annual mean SST change between abrupt-4xCO2 minus piControl (using the mean of years 111-140 of abrupt-4xCO2, and the parallel 30-year section of piControl)",
-    "end_year": null,
-    "experiment": "as piSST with uniform SST increase with magnitude based on abrupt-4xCO2 response",
-    "min_number_yrs_per_sim": "20",
-    "parent_activity_id": [
-        "no parent"
-    ],
-    "parent_experiment_id": [
-        "no parent"
-    ],
+    "branch_information": null,
+    "min_ensemble_size": 1,
+    "parent_activity": null,
+    "parent_experiment": null,
+    "parent_mip_era": null,
     "required_model_components": [
         "agcm"
     ],
-    "start_year": null,
-    "sub_experiment_id": [
-        "none"
-    ],
-    "tier": "2",
-    "drs_name": "piSST-pxK"
+    "tier": 1
 }
