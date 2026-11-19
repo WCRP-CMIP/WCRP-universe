@@ -795,6 +795,52 @@ def add_flat10(holder: Holder) -> Holder:
     flat10_cmip7 = CMIP7Experiment(parent_mip_era="cmip7", tier=1)
     holder = holder.add(flat10, flat10_cmip7)
 
+    definitions = (
+        ("flat10-bgc", "Biogeochemically coupled (BGC)"),
+        ("flat10-rad", "Radiatively coupled (RAD)"),
+    )
+    for drs_name, flat10_version in definitions:
+        other_experiments_l = [d[0] for d in definitions if d[0] != drs_name]
+        if len(other_experiments_l) > 1:
+            raise NotImplementedError
+        else:
+            other_experiments = f"`{other_experiments_l[0]}`"
+
+        description = (
+            f"{flat10_version} version of `esm-flat10`. "
+            "Driven by prescribed CO2 concentration taken from the `esm-flat10` simulation of the ESM. "
+            "All other conditions are kept the same as `piControl`. "
+            "This provides the opportunity to diagnose climate-carbon cycle feedbacks "
+            "from the `esm-flat10` simulations because it uses identical CO2 concentration. "
+            f"Complements {other_experiments}."
+        )
+        holder = holder.add(
+            UniverseExperiment(
+                drs_name=drs_name,
+                description=description,
+                activity=flat10.activity,
+                **ESM,
+                min_ensemble_size=1,
+                tier=1,
+                branch_information=(
+                    "Run exactly parallel to the esm-flat10 simulations. "
+                    "Branch from the same point of `esm-piControl`."
+                ),
+                parent_activity=flat10.parent_activity,
+                parent_experiment=flat10.parent_experiment,
+                # parent_mip_era=,
+                start_timestamp=None,
+                end_timestamp=None,
+                # min_number_yrs_per_sim=
+            ),
+            CMIP7Experiment(
+                tier=1,
+                parent_mip_era="cmip7",
+                min_number_yrs_per_sim=150.0,
+                min_ensemble_size=1,
+            ),
+        )
+
     for drs_name, description, min_number_yrs_per_sim in (
         (
             "esm-flat10-cdr",
@@ -2461,7 +2507,12 @@ def add_geomip(holder: Holder) -> Holder:
     return holder
 
 
-def get_citation_for_doi(doi: str, style: str = "apa") -> str | None:
+def get_citation_for_doi(
+    doi: str, style: str = "apa", offline: bool = False
+) -> str | None:
+    if offline:
+        return "Offline"
+
     print(f"Trying to get citation for {doi=}")
     url = f"https://doi.org/{doi}"
     headers = {"Accept": f"text/x-bibliography; style={style}"}
@@ -2488,9 +2539,9 @@ def fix_citation(citation: str) -> str:
     return citation
 
 
-def get_reference(url: str, activity: str, number: int) -> Reference:
+def get_reference(url: str, activity: str, number: int, offline_doi: bool) -> Reference:
     try:
-        citation = fix_citation(get_citation_for_doi(url))
+        citation = fix_citation(get_citation_for_doi(url, offline=offline_doi))
         doi = url
 
     except urllib.error.HTTPError as exc:
@@ -2540,7 +2591,9 @@ def write_file(out_file: Path, content: dict[str, Any]) -> None:
     print(f"Wrote {out_file}")
 
 
-def write_files(holder: Holder, universe_root: Path, project_root: Path) -> None:
+def write_files(
+    holder: Holder, universe_root: Path, project_root: Path, offline_doi: bool
+) -> None:
     """Write the experiments, activities and references"""
     for id, experiment in holder.experiments.items():
         write_file(
@@ -2554,7 +2607,7 @@ def write_files(holder: Holder, universe_root: Path, project_root: Path) -> None
 
     for activity in holder.activities.values():
         references = [
-            get_reference(url, activity.id, i)
+            get_reference(url, activity.id, i, offline_doi=offline_doi)
             for i, url in enumerate(activity.references)
         ]
         for reference in references:
@@ -2580,6 +2633,9 @@ def write_files(holder: Holder, universe_root: Path, project_root: Path) -> None
 
 
 def main():
+    OFFLINE_DOI = True
+    OFFLINE_DOI = False
+
     holder = Holder(activities=ACTIVITIES)
     # Order matters: later steps look up experiments added by earlier steps
     for add_experiments in (
@@ -2600,7 +2656,12 @@ def main():
     ):
         holder = add_experiments(holder)
 
-    write_files(holder, universe_root=UNIVERSE_ROOT, project_root=PROJECT_ROOT)
+    write_files(
+        holder,
+        universe_root=UNIVERSE_ROOT,
+        project_root=PROJECT_ROOT,
+        offline_doi=OFFLINE_DOI,
+    )
 
 
 if __name__ == "__main__":
