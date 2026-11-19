@@ -826,13 +826,9 @@ def add_flat10(holder: Holder) -> Holder:
                     "Run exactly parallel to the esm-flat10 simulations. "
                     "Branch from the same point of `esm-piControl`."
                 ),
-                # TODO: Parent activity? esm-piControl (so you have a mode switch and are out of equilibrium?)
-                # or piControl (so you're in equilibrium?)
                 parent_activity=flat10.parent_activity,
                 parent_experiment=flat10.parent_experiment,
                 # parent_mip_era=,
-                # TODO: start and end timestamp aren't prescribed, same as esm-flat10
-                # (modelling teams can pick output time axis)
                 start_timestamp=None,
                 end_timestamp=None,
                 # min_number_yrs_per_sim=
@@ -840,7 +836,6 @@ def add_flat10(holder: Holder) -> Holder:
             CMIP7Experiment(
                 tier=1,
                 parent_mip_era="cmip7",
-                # TODO: esm-flat10 is only 100 years, do you really want 150 for esm-flat10-bgc and esm-flat10-rad?
                 min_number_yrs_per_sim=150.0,
                 min_ensemble_size=1,
             ),
