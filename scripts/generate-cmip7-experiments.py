@@ -877,20 +877,75 @@ def add_flat10(holder: Holder) -> Holder:
 
 
 def add_damip(holder: Holder) -> Holder:
-    description_template = (
-        "Response to historical {forcing} forcing ({extension}). All "
-        "other conditions are kept the same as piControl."
-    )
-    for drs_name, forcing in (
-        ("hist-aer", "aerosol"),
-        ("hist-GHG", "greenhouse gas"),
-        ("hist-nat", "natural"),
+    def esm_description(description: str) -> str:
+        return esm_backticks(description).replace("piControl", "esm-piControl")
+
+    def add_with_esm_equivalent(
+        holder: Holder,
+        universe: UniverseExperiment,
+        cmip7: CMIP7Experiment,
+        esm_tier: int,
+    ) -> Holder:
+        return holder.add(universe, cmip7).add(
+            esm_variant(
+                universe,
+                description=esm_description(universe.description),
+                tier=esm_tier,
+            ),
+            dataclasses.replace(
+                cmip7,
+                description=esm_description(cmip7.description),
+                tier=esm_tier,
+            ),
+        )
+
+    def cmip7_experiment(
+        description: str,
+        start_timestamp: str,
+        end_timestamp: str,
+        min_ensemble_size: int,
+        tier: int,
+    ) -> CMIP7Experiment:
+        return CMIP7Experiment(
+            description=description,
+            start_timestamp=start_timestamp,
+            end_timestamp=end_timestamp,
+            min_number_yrs_per_sim=float(
+                year(end_timestamp) - year(start_timestamp) + 1
+            ),
+            min_ensemble_size=min_ensemble_size,
+            parent_mip_era="cmip7",
+            tier=tier,
+        )
+
+    hist_forcings = {}
+    # The emissions-driven equivalents have their own tiers
+    for drs_name, forcing, tier, esm_tier in (
+        ("hist-aer", "aerosol", 1, 2),
+        ("hist-GHG", "greenhouse gas", 1, 2),
+        ("hist-nat", "natural", 1, 2),
+        ("hist-lu", "land-use and land-cover", 2, 2),
+        (
+            "hist-O3",
+            (
+                "tropospheric and stratospheric ozone concentration changes "
+                "(these are prescribed throughout the atmospheric column)"
+            ),
+            2,
+            2,
+        ),
+        ("hist-volc", "volcanic stratospheric aerosol", 3, 3),
     ):
-        holder = holder.add(
+        hist_forcings[drs_name] = forcing
+        description_template = (
+            f"Response to historical {forcing} forcing ({{extension}}). All "
+            "other conditions are kept the same as piControl."
+        )
+        holder = add_with_esm_equivalent(
+            holder,
             UniverseExperiment(
                 drs_name=drs_name,
                 description=description_template.format(
-                    forcing=forcing,
                     extension=(
                         "often with extension using forcings from a scenario simulation specific to the CMIP "
                         "phase"
@@ -901,20 +956,52 @@ def add_damip(holder: Holder) -> Holder:
                 **FROM_PICONTROL,
                 start_timestamp="1850-01-01",
                 min_ensemble_size=1,
-                tier=1,
+                tier=tier,
             ),
-            CMIP7Experiment(
+            cmip7_experiment(
                 description=description_template.format(
-                    forcing=forcing,
-                    extension="with extension using forcings from the `m` scenario simulation",
+                    extension="with extension using forcings from the `scen7-m` scenario simulation",
                 ),
                 start_timestamp="1850-01-01",
                 end_timestamp="2035-12-31",
-                min_number_yrs_per_sim=186.0,
                 min_ensemble_size=3,
-                parent_mip_era="cmip7",
-                tier=1,
+                tier=tier,
             ),
+            esm_tier=esm_tier,
+        )
+
+    # TODO: Call these m-aer or medium-aer or scen7-m-aer for consistency instead?
+    for drs_name, parent_drs_name, tier in (
+        ("Medium-aer", "hist-aer", 3),
+        ("Medium-GHG", "hist-GHG", 3),
+        ("Medium-O3", "hist-O3", 3),
+    ):
+        description_template = (
+            f"Response to {hist_forcings[parent_drs_name]} forcing in the {{scenario}} scenario. All "
+            "other conditions are kept the same as piControl."
+        )
+        holder = add_with_esm_equivalent(
+            holder,
+            UniverseExperiment(
+                drs_name=drs_name,
+                description=description_template.format(scenario="CMIP7 `scen7-m`"),
+                activity="damip",
+                **AOGCM,
+                branch_information=f"Branch from the end of `{parent_drs_name}`",
+                parent_activity="damip",
+                parent_experiment=parent_drs_name.lower(),
+                start_timestamp="2036-01-01",
+                min_ensemble_size=1,
+                tier=tier,
+            ),
+            cmip7_experiment(
+                description=description_template.format(scenario="`scen7-m`"),
+                start_timestamp="2036-01-01",
+                end_timestamp="2100-12-31",
+                min_ensemble_size=1,
+                tier=tier,
+            ),
+            esm_tier=tier,
         )
 
     return holder
