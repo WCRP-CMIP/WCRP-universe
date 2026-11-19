@@ -7,7 +7,6 @@
     "coordinate_type": "scalar",
     "data_type": "character",
     "out_name": "seasurface",
-    "axis": "Z",
     "coordinate_values": "ocean_surface_layer",
     "bounds_required": false,
     "is_climatology": false,
