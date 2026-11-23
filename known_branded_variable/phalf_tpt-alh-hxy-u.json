@@ -1,0 +1,28 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "phalf_tpt-alh-hxy-u",
+    "type": "known_branded_variable",
+    "drs_name": "phalf_tpt-alh-hxy-u",
+    "variable_root_name": "phalf",
+    "branding_suffix_name": "tpt-alh-hxy-u",
+    "cf_standard_name": "air_pressure",
+    "out_name": "phalf",
+    "units": "Pa",
+    "dimensions": [
+        "longitude",
+        "latitude",
+        "alevhalf",
+        "time1"
+    ],
+    "temporal_label": "tpt",
+    "vertical_label": "alh",
+    "horizontal_label": "hxy",
+    "area_label": "u",
+    "var_def_qualifier": null,
+    "history": "registered",
+    "bn_status": "accepted",
+    "cf_sn_status": "approved",
+    "cell_methods": [
+        "area: mean time: point"
+    ]
+}
