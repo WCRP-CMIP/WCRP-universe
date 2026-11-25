@@ -972,11 +972,10 @@ def add_damip(holder: Holder) -> Holder:
             esm_tier=esm_tier,
         )
 
-    # TODO: Call these m-aer or medium-aer or scen7-m-aer for consistency instead?
     for drs_name, parent_drs_name, tier in (
-        ("Medium-aer", "hist-aer", 3),
-        ("Medium-GHG", "hist-GHG", 3),
-        ("Medium-O3", "hist-O3", 3),
+        ("scen7-m-aer", "hist-aer", 3),
+        ("scen7-m-GHG", "hist-GHG", 3),
+        ("scen7-m-O3", "hist-O3", 3),
     ):
         description_template = (
             f"Response to {hist_forcings[parent_drs_name]} forcing in the {{scenario}} scenario. All "
