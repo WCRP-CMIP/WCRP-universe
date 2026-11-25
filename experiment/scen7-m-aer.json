@@ -1,9 +1,9 @@
 {
     "@context": "000_context.jsonld",
-    "id": "medium-ghg",
+    "id": "scen7-m-aer",
     "type": "experiment",
-    "description": "Response to greenhouse gas forcing in the CMIP7 `scen7-m` scenario. All other conditions are kept the same as piControl.",
-    "drs_name": "Medium-GHG",
+    "description": "Response to aerosol forcing in the CMIP7 `scen7-m` scenario. All other conditions are kept the same as piControl.",
+    "drs_name": "scen7-m-aer",
     "start_timestamp": "2036-01-01",
     "activity": "damip",
     "additional_allowed_model_components": [
@@ -11,10 +11,10 @@
         "chem",
         "bgc"
     ],
-    "branch_information": "Branch from the end of `hist-GHG`",
+    "branch_information": "Branch from the end of `hist-aer`",
     "min_ensemble_size": 1,
     "parent_activity": "damip",
-    "parent_experiment": "hist-ghg",
+    "parent_experiment": "hist-aer",
     "required_model_components": [
         "aogcm"
     ],

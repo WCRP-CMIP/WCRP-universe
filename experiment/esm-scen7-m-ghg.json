@@ -1,9 +1,9 @@
 {
     "@context": "000_context.jsonld",
-    "id": "esm-medium-ghg",
+    "id": "esm-scen7-m-ghg",
     "type": "experiment",
     "description": "Response to greenhouse gas forcing in the CMIP7 `esm-scen7-m` scenario. All other conditions are kept the same as esm-piControl.",
-    "drs_name": "esm-Medium-GHG",
+    "drs_name": "esm-scen7-m-GHG",
     "start_timestamp": "2036-01-01",
     "activity": "damip",
     "additional_allowed_model_components": [

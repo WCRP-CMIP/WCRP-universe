@@ -1,9 +1,9 @@
 {
     "@context": "000_context.jsonld",
-    "id": "esm-medium-aer",
+    "id": "esm-scen7-m-aer",
     "type": "experiment",
     "description": "Response to aerosol forcing in the CMIP7 `esm-scen7-m` scenario. All other conditions are kept the same as esm-piControl.",
-    "drs_name": "esm-Medium-aer",
+    "drs_name": "esm-scen7-m-aer",
     "start_timestamp": "2036-01-01",
     "activity": "damip",
     "additional_allowed_model_components": [

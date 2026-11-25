@@ -1,9 +1,9 @@
 {
     "@context": "000_context.jsonld",
-    "id": "medium-o3",
+    "id": "scen7-m-o3",
     "type": "experiment",
     "description": "Response to tropospheric and stratospheric ozone concentration changes (these are prescribed throughout the atmospheric column) forcing in the CMIP7 `scen7-m` scenario. All other conditions are kept the same as piControl.",
-    "drs_name": "Medium-O3",
+    "drs_name": "scen7-m-O3",
     "start_timestamp": "2036-01-01",
     "activity": "damip",
     "additional_allowed_model_components": [
