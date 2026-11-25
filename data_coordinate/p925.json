@@ -12,7 +12,7 @@
     "axis": "Z",
     "positive": "down",
     "coordinate_values": [
-        20000.0
+        92500.0
     ],
     "bounds_required": false,
     "is_climatology": false,

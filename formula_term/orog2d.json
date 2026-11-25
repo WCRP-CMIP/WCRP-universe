@@ -6,6 +6,7 @@
     "drs_name": "orog2d",
     "data_type": "real",
     "out_name": "orog",
+    "cf_standard_name": "surface_altitude",
     "units": "m",
     "dimensions": [
         "latitude"
