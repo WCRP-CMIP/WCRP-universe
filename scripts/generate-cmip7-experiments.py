@@ -143,6 +143,9 @@ ACTIVITIES: dict[str, Activity] = {
                 # "https://doi.org/10.5194/gmd-10-359-2017",
                 "https://doi.org/10.5194/gmd-19-8693-2026",
                 "https://doi.org/10.1029/2023GL104786",
+                # # CMIP6 version ref
+                # "https://doi.org/10.1007/s00382-016-3488-6",
+                # "https://doi.org/10.5194/gmd-10-359-2017",
             ],
         ),
         Activity(
@@ -826,13 +829,9 @@ def add_flat10(holder: Holder) -> Holder:
                     "Run exactly parallel to the esm-flat10 simulations. "
                     "Branch from the same point of `esm-piControl`."
                 ),
-                # TODO: Parent activity? esm-piControl (so you have a mode switch and are out of equilibrium?)
-                # or piControl (so you're in equilibrium?)
                 parent_activity=flat10.parent_activity,
                 parent_experiment=flat10.parent_experiment,
                 # parent_mip_era=,
-                # TODO: start and end timestamp aren't prescribed, same as esm-flat10
-                # (modelling teams can pick output time axis)
                 start_timestamp=None,
                 end_timestamp=None,
                 # min_number_yrs_per_sim=
@@ -840,7 +839,6 @@ def add_flat10(holder: Holder) -> Holder:
             CMIP7Experiment(
                 tier=1,
                 parent_mip_era="cmip7",
-                # TODO: esm-flat10 is only 100 years, do you really want 150 for esm-flat10-bgc and esm-flat10-rad?
                 min_number_yrs_per_sim=150.0,
                 min_ensemble_size=1,
             ),
@@ -1432,7 +1430,9 @@ def add_piclim(holder: Holder) -> Holder:
                 "time)."
             )
         else:
-            branch_information = "Same as `piClim-control`"
+            branch_information = (
+                "Use the same branch point as you used for `piClim-control`"
+            )
 
         holder = holder.add(
             UniverseExperiment(
@@ -1440,13 +1440,17 @@ def add_piclim(holder: Holder) -> Holder:
                 description=description,
                 activity=activity,
                 **components,
+                min_ensemble_size=1,
+                tier=tier,
+                parent_activity="cmip",
+                parent_experiment="picontrol",
+                # parent_mip_era=,
                 start_timestamp=None,
                 end_timestamp=None,
                 min_number_yrs_per_sim=30.0,
-                min_ensemble_size=1,
-                tier=tier,
             ),
             CMIP7Experiment(
+                tier=tier,
                 description=re.sub(
                     # Non-greedy so that any later brackets in the description are left alone
                     r"\(typically[^)]*\)",
@@ -1454,12 +1458,14 @@ def add_piclim(holder: Holder) -> Holder:
                     description,
                 ),
                 branch_information=branch_information,
+                # parent_activity="cmip",
+                # parent_experiment="picontrol",
+                parent_mip_era="cmip7",
+                # start_timestamp=None,
+                # end_timestamp=None,
+                # min_number_yrs_per_sim=30.0,
                 # https://github.com/WCRP-CMIP/CMIP7-CVs/issues/382
                 min_ensemble_size=1,
-                parent_activity="cmip",
-                parent_experiment="picontrol",
-                parent_mip_era="cmip7",
-                tier=tier,
             ),
         )
 
@@ -2590,6 +2596,104 @@ def add_geomip(holder: Holder) -> Holder:
     return holder
 
 
+def add_cfmip(holder: Holder) -> Holder:
+    for drs_name, description in (
+        (
+            "piSST-pxK",
+            (
+                "`piSST-pxK` is an AGCM experiment "
+                "using monthly time-varying sea-ice and atmospheric constituents "
+                "from 30 years of each model's own `piControl` run. "
+                "The 30 years of the `piControl` run should be chosen to be parallel to years 111-140 of the `abrupt-4xCO2` run. "
+                "SSTs are also taken from `piControl` in the same way as sea-ice, "
+                "but are uniformly increased by x K in ice-free regions, "
+                "where x is the global, climatological annual-mean ice-free SST change between years 111-140 of `abrupt-4xCO2` "
+                "and the parallel section of `piControl`. "
+                "Note that x should be both spatially and temporally constant. "
+                "In `piSST-pxK`, sea ice and SSTs in grid boxes containing sea ice should remain the same as in `piControl`. "
+                "To set up the experiment, it is recommended to start from a `piClim-control` configuration, "
+                "then alter the SST and sea-ice boundary conditions (including making them time-varying rather than climatological). "
+                "`piSST-pxK` is part of a set of AGCM timeslice experiments "
+                "(also including `a4SSTice` and `a4SSTice-4xCO2`) "
+                "designed to examine regional climate responses to CO2 forcing. "
+                "`piSST-pxK` minus `piControl` provides the response to a uniform SST increase. "
+                "The CMIP5/CMIP6 versions of these experiments are described in "
+                "[Chadwick et al. (2017)](https://doi.org/10.1007/s00382-016-3488-6) "
+                "and [Webb et al. (2017)](https://doi.org/10.5194/gmd-10-359-2017) "
+                "but there have been significant changes made to the experimental protocol for CMIP7, "
+                "see [Ceppi et al. (2026)](https://doi.org/10.5194/gmd-19-8693-2026)."
+            ),
+        ),
+        (
+            "a4SSTice",
+            (
+                "`a4SSTice` uses monthly time-varying SST and sea-ice from years 111-140 of each model's own `abrupt-4xCO2` run, "
+                "while keeping atmospheric constituents to pre-industrial levels. "
+                "To set up the experiment, it is recommended to start from a `piSST-pxK` configuration, then to change the SSTs and sea-ice. "
+                "`a4SSTice` is part of a set of AGCM timeslice experiments "
+                "(also including `piSST-pxK` and `a4SSTice-4xCO2`) "
+                "designed to examine regional climate responses to CO2 forcing. "
+                "`a4SSTice` minus `piSST-pxK` provides the response to the (zero-mean) pattern of SST change combined with the change in sea-ice. "
+                "The CMIP5/CMIP6 versions of these experiments are described in "
+                "[Chadwick et al. (2017)](https://doi.org/10.1007/s00382-016-3488-6) "
+                "and [Webb et al. (2017)](https://doi.org/10.5194/gmd-10-359-2017) "
+                "but there have been significant changes made to the experimental protocol for CMIP7, "
+                "see [Ceppi et al. (2026)](https://doi.org/10.5194/gmd-19-8693-2026)."
+            ),
+        ),
+        (
+            "a4SSTice-4xCO2",
+            (
+                "`a4SSTice-4xCO2` uses monthly time-varying SST, sea-ice and atmospheric constituents "
+                "from years 111-140 of each model's own `abrupt-4xCO2` run. "
+                "To set up the experiment, it is recommended to start from an `a4SSTice` configuration, then to change the CO2 concentrations. "
+                "`a4SSTice-4xCO2` is part of a set of AGCM timeslice experiments "
+                "(also including `piSST-pxK` and `a4SSTice`) "
+                "designed to examine regional climate responses to CO2 forcing. "
+                "`a4SSTice-4xCO2` can be compared with years 111-140 of `abrupt-4xCO2` "
+                "to determine whether an atmosphere-only framework can adequately replicate regional climates from a coupled GCM. "
+                "`a4SSTice-4xCO2` minus `a4SSTice` isolates the direct CO2 effect, including the plant physiological response. "
+                "The CMIP5/CMIP6 versions of these experiments are described in "
+                "[Chadwick et al. (2017)](https://doi.org/10.1007/s00382-016-3488-6) "
+                "and [Webb et al. (2017)](https://doi.org/10.5194/gmd-10-359-2017) "
+                "but there have been significant changes made to the experimental protocol for CMIP7, "
+                "see [Ceppi et al. (2026)](https://doi.org/10.5194/gmd-19-8693-2026)."
+            ),
+        ),
+    ):
+        universe_experiment = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity="cfmip",
+            **AGCM,
+            min_ensemble_size=1,
+            tier=1,
+            branch_information=None,
+            parent_activity=None,
+            parent_experiment=None,
+            parent_mip_era=None,
+            start_timestamp=None,
+            end_timestamp=None,
+            min_number_yrs_per_sim=30.0,
+        )
+        cmip7_experiment = CMIP7Experiment(
+            tier=1,
+            # description=,
+            # branch_information=,
+            # parent_activity="cmip",
+            # parent_experiment="picontrol",
+            # parent_mip_era="cmip7",
+            # start_timestamp=None,
+            # end_timestamp=None,
+            min_number_yrs_per_sim=30.0,
+            min_ensemble_size=1,
+        )
+
+        holder = holder.add(universe_experiment, cmip7_experiment)
+
+    return holder
+
+
 def get_citation_for_doi(
     doi: str, style: str = "apa", offline: bool = False
 ) -> str | None:
@@ -2736,6 +2840,7 @@ def main():
         add_aerchemmip_pdclim,
         add_aerchemmip_scenarios,
         add_geomip,
+        add_cfmip,
     ):
         holder = add_experiments(holder)
 

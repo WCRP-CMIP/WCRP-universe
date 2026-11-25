@@ -12,11 +12,11 @@
     "generic_level_name": "alevhalf",
     "cf_standard_name": "atmosphere_hybrid_sigma_ln_pressure_coordinate",
     "units": "1",
-    "formula": "p = p0*lev*(ps/p0)**b",
+    "formula": "p = p0*eta*(ps/p0)**b",
     "z_factors": [
-        "p0",
         "b_half",
-        "ps"
+        "ps",
+        "p0"
     ],
     "bounds_required": false
 }
