@@ -2520,7 +2520,6 @@ def add_tipmip(holder: Holder) -> Holder:
         **ESM,
         min_ensemble_size=1,
         tier=1,
-        # TODO: confirm with submitter
         branch_information="Branch from `esm-piControl` at a time of your choosing",
         parent_activity="cmip",
         parent_experiment="esm-picontrol",
@@ -2541,7 +2540,9 @@ def add_tipmip(holder: Holder) -> Holder:
         ("tip-esm-E-ei", 4.0),
         ("tip-esm-E-ek", 5.0),
     ):
-        description = f"Zero CO2 emissions simulation starting at {branch_warming} degree C GWL."
+        description = (
+            f"Zero CO2 emissions simulation starting at {branch_warming} degree C GWL."
+        )
         universe_experiment = UniverseExperiment(
             drs_name=drs_name,
             description=description,
