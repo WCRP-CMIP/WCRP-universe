@@ -2957,6 +2957,14 @@ def write_files(
         )
 
 
+# BEGIN registrations to add by hand (batch `rfmip`)
+# The automated processing failed for these registrations,
+# so they have to be added to this script by hand:
+# - rfmip experiment `piClim-FixLST-anthro`: https://github.com/WCRP-CMIP/CMIP7-CVs/issues/993
+#   (form validation failed: name: Value error, must be fewer than 20 characters, see https://zenodo.org/records/14929769)
+# END registrations to add by hand (batch `rfmip`)
+
+
 def main():
     OFFLINE_DOI = True
     OFFLINE_DOI = False
