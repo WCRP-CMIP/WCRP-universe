@@ -1,10 +1,7 @@
 {
     "@context": "000_context.jsonld",
-    "type": "activity",
     "id": "tipmip",
-    "name": "TIPMIP",
-    "cmip_acronym": "TIPMIP",
-    "long_name": "Tipping Point Model Intercomparison Project",
-    "url": "https://tipmip.pik-potsdam.de/",
+    "type": "activity",
+    "description": "TIPMIP is an international intercomparison project that aims to systematically advance our understanding of nonlinear tipping dynamics in various Earth system components, and assess the associated uncertainties and risks. At present, no MIP exists which focuses specifically on identifying and evaluating the risks of tipping dynamics in the Earth system. Filling this gap, TIPMIP will shed light on critical processes currently underrepresented in other MIPs and in Earth system models.",
     "drs_name": "TIPMIP"
 }
