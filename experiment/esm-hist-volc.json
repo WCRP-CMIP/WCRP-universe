@@ -1,0 +1,22 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "esm-hist-volc",
+    "type": "experiment",
+    "description": "Response to historical volcanic stratospheric aerosol forcing (often with extension using forcings from a scenario simulation specific to the CMIP phase). All other conditions are kept the same as esm-piControl.",
+    "drs_name": "esm-hist-volc",
+    "start_timestamp": "1850-01-01",
+    "activity": "damip",
+    "additional_allowed_model_components": [
+        "aer",
+        "chem"
+    ],
+    "branch_information": "Branch from `esm-piControl` at a time of your choosing",
+    "min_ensemble_size": 1,
+    "parent_activity": "cmip",
+    "parent_experiment": "esm-picontrol",
+    "required_model_components": [
+        "aogcm",
+        "bgc"
+    ],
+    "tier": 3
+}
