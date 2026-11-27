@@ -1,0 +1,8 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "tipmip_cmip7_ref_002",
+    "type": "reference",
+    "drs_name": "tipmip_cmip7_ref_002",
+    "citation": "Swingedouw, D., Jackson, L., Hu, A., Romanou, A., Laureanti, N. C., Weijer, W., Loriani, S., Otto-Bliesner, B., Abe-Ouchi, A., Almeida, L., Bellucci, A., B\\\"orner, R., Danabasoglu, G., Dennis, D. P., Devilliers, M., Drijfhout, S., Donges, J., Fr\\\"ob, F., Fr\\\"olicher, T. L., et al. (2026). TIPMIP-OCEAN experimental protocol phase 1: Tipping dynamics of the AMOC. https://doi.org/10.5194/egusphere-2026-1698",
+    "doi": "https://doi.org/10.5194/egusphere-2026-1698"
+}

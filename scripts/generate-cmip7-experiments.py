@@ -254,6 +254,14 @@ ACTIVITIES: dict[str, Activity] = {
                 "multi-initial-condition, and multi-scenario ensembles."
             ),
         ),
+        Activity(
+            id="tipmip",
+            references=[
+                "https://doi.org/10.5194/egusphere-2025-1899",
+                "https://doi.org/10.5194/gmd-19-6941-2026",
+                "https://doi.org/10.5194/egusphere-2026-1698",
+            ],
+        ),
     )
 }
 
@@ -877,20 +885,75 @@ def add_flat10(holder: Holder) -> Holder:
 
 
 def add_damip(holder: Holder) -> Holder:
-    description_template = (
-        "Response to historical {forcing} forcing ({extension}). All "
-        "other conditions are kept the same as piControl."
-    )
-    for drs_name, forcing in (
-        ("hist-aer", "aerosol"),
-        ("hist-GHG", "greenhouse gas"),
-        ("hist-nat", "natural"),
+    def esm_description(description: str) -> str:
+        return esm_backticks(description).replace("piControl", "esm-piControl")
+
+    def add_with_esm_equivalent(
+        holder: Holder,
+        universe: UniverseExperiment,
+        cmip7: CMIP7Experiment,
+        esm_tier: int,
+    ) -> Holder:
+        return holder.add(universe, cmip7).add(
+            esm_variant(
+                universe,
+                description=esm_description(universe.description),
+                tier=esm_tier,
+            ),
+            dataclasses.replace(
+                cmip7,
+                description=esm_description(cmip7.description),
+                tier=esm_tier,
+            ),
+        )
+
+    def cmip7_experiment(
+        description: str,
+        start_timestamp: str,
+        end_timestamp: str,
+        min_ensemble_size: int,
+        tier: int,
+    ) -> CMIP7Experiment:
+        return CMIP7Experiment(
+            description=description,
+            start_timestamp=start_timestamp,
+            end_timestamp=end_timestamp,
+            min_number_yrs_per_sim=float(
+                year(end_timestamp) - year(start_timestamp) + 1
+            ),
+            min_ensemble_size=min_ensemble_size,
+            parent_mip_era="cmip7",
+            tier=tier,
+        )
+
+    hist_forcings = {}
+    # The emissions-driven equivalents have their own tiers
+    for drs_name, forcing, tier, esm_tier in (
+        ("hist-aer", "aerosol", 1, 2),
+        ("hist-GHG", "greenhouse gas", 1, 2),
+        ("hist-nat", "natural", 1, 2),
+        ("hist-lu", "land-use and land-cover", 2, 2),
+        (
+            "hist-O3",
+            (
+                "tropospheric and stratospheric ozone concentration changes "
+                "(these are prescribed throughout the atmospheric column)"
+            ),
+            2,
+            2,
+        ),
+        ("hist-volc", "volcanic stratospheric aerosol", 3, 3),
     ):
-        holder = holder.add(
+        hist_forcings[drs_name] = forcing
+        description_template = (
+            f"Response to historical {forcing} forcing ({{extension}}). All "
+            "other conditions are kept the same as piControl."
+        )
+        holder = add_with_esm_equivalent(
+            holder,
             UniverseExperiment(
                 drs_name=drs_name,
                 description=description_template.format(
-                    forcing=forcing,
                     extension=(
                         "often with extension using forcings from a scenario simulation specific to the CMIP "
                         "phase"
@@ -901,20 +964,51 @@ def add_damip(holder: Holder) -> Holder:
                 **FROM_PICONTROL,
                 start_timestamp="1850-01-01",
                 min_ensemble_size=1,
-                tier=1,
+                tier=tier,
             ),
-            CMIP7Experiment(
+            cmip7_experiment(
                 description=description_template.format(
-                    forcing=forcing,
-                    extension="with extension using forcings from the `m` scenario simulation",
+                    extension="with extension using forcings from the `scen7-m` scenario simulation",
                 ),
                 start_timestamp="1850-01-01",
                 end_timestamp="2035-12-31",
-                min_number_yrs_per_sim=186.0,
                 min_ensemble_size=3,
-                parent_mip_era="cmip7",
-                tier=1,
+                tier=tier,
             ),
+            esm_tier=esm_tier,
+        )
+
+    for drs_name, parent_drs_name, tier in (
+        ("scen7-m-aer", "hist-aer", 3),
+        ("scen7-m-GHG", "hist-GHG", 3),
+        ("scen7-m-O3", "hist-O3", 3),
+    ):
+        description_template = (
+            f"Response to {hist_forcings[parent_drs_name]} forcing in the {{scenario}} scenario. All "
+            "other conditions are kept the same as piControl."
+        )
+        holder = add_with_esm_equivalent(
+            holder,
+            UniverseExperiment(
+                drs_name=drs_name,
+                description=description_template.format(scenario="CMIP7 `scen7-m`"),
+                activity="damip",
+                **AOGCM,
+                branch_information=f"Branch from the end of `{parent_drs_name}`",
+                parent_activity="damip",
+                parent_experiment=parent_drs_name.lower(),
+                start_timestamp="2036-01-01",
+                min_ensemble_size=1,
+                tier=tier,
+            ),
+            cmip7_experiment(
+                description=description_template.format(scenario="`scen7-m`"),
+                start_timestamp="2036-01-01",
+                end_timestamp="2100-12-31",
+                min_ensemble_size=1,
+                tier=tier,
+            ),
+            esm_tier=tier,
         )
 
     return holder
@@ -2510,6 +2604,136 @@ def add_geomip(holder: Holder) -> Holder:
     return holder
 
 
+def add_tipmip(holder: Holder) -> Holder:
+    ramp_up = UniverseExperiment(
+        drs_name="tip-esm-E-e",
+        description="Ramp-up experiment with a constant warming rate of 2 degree C per century.",
+        activity="tipmip",
+        **ESM,
+        min_ensemble_size=1,
+        tier=1,
+        branch_information="Branch from `esm-piControl` at a time of your choosing",
+        parent_activity="cmip",
+        parent_experiment="esm-picontrol",
+        # parent_mip_era=,
+        start_timestamp=None,
+        end_timestamp=None,
+    )
+    ramp_up_cmip7 = CMIP7Experiment(
+        parent_mip_era="cmip7", tier=1, min_number_yrs_per_sim=200.0
+    )
+    holder = holder.add(ramp_up, ramp_up_cmip7)
+
+    universe_d = {}
+    for drs_name, branch_warming in (
+        ("tip-esm-E-ec", 1.5),
+        ("tip-esm-E-ee", 2.0),
+        ("tip-esm-E-eg", 3.0),
+        ("tip-esm-E-ei", 4.0),
+        ("tip-esm-E-ek", 5.0),
+    ):
+        description = (
+            f"Zero CO2 emissions simulation starting at {branch_warming} degree C GWL."
+        )
+        universe_experiment = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity=ramp_up.activity,
+            **ESM,
+            min_ensemble_size=1,
+            tier=1,
+            branch_information=(
+                f"Branch from `{ramp_up.drs_name}` when you reach a global-warming level (GWL) of {branch_warming} degree C."
+            ),
+            parent_activity=ramp_up.activity,
+            parent_experiment=ramp_up.drs_name.lower(),
+            # parent_mip_era=,
+            start_timestamp=None,
+            end_timestamp=None,
+        )
+        universe_d[drs_name] = universe_experiment
+
+        cmip7_experiment = CMIP7Experiment(
+            tier=1,
+            parent_mip_era="cmip7",
+            min_number_yrs_per_sim=300.0,
+            min_ensemble_size=1,
+        )
+
+        holder = holder.add(universe_experiment, cmip7_experiment)
+
+    for drs_name, branch_from, min_number_yrs_per_sim in (
+        ("tip-esm-E-ee50e", "tip-esm-E-ee", 100.0),
+        ("tip-esm-E-ei50e", "tip-esm-E-ei", 200.0),
+    ):
+        description = (
+            f"Ramp-down simulation with CO2 emissions that are the negative of those used in the ramp-up, "
+            f"starting 50 years into `{branch_from}`."
+        )
+        universe_experiment = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity=ramp_up.activity,
+            **ESM,
+            min_ensemble_size=1,
+            tier=1,
+            branch_information=(
+                f"Branch from `{branch_from}` 50 years after `{branch_from}`'s start."
+            ),
+            parent_activity=universe_d[branch_from].activity,
+            parent_experiment=universe_d[branch_from].drs_name.lower(),
+            # parent_mip_era=,
+            start_timestamp=None,
+            end_timestamp=None,
+        )
+        universe_d[drs_name] = universe_experiment
+
+        cmip7_experiment = CMIP7Experiment(
+            tier=1,
+            parent_mip_era="cmip7",
+            min_number_yrs_per_sim=min_number_yrs_per_sim,
+            min_ensemble_size=1,
+        )
+
+        holder = holder.add(universe_experiment, cmip7_experiment)
+
+    for drs_name, branch_from, branch_warming, min_number_yrs_per_sim in (
+        ("tip-esm-E-ei50ee", "tip-esm-E-ei50e", 2.0, 300.0),
+    ):
+        description = (
+            "Zero CO2 emissions simulation, branching from a simulation with declining global-mean temperature, "
+            f"starting at {branch_warming} degree C GWL."
+        )
+        universe_experiment = UniverseExperiment(
+            drs_name=drs_name,
+            description=description,
+            activity=ramp_up.activity,
+            **ESM,
+            min_ensemble_size=1,
+            tier=1,
+            branch_information=(
+                f"Branch from `{universe_d[branch_from].drs_name}` when you reach a global-warming level (GWL) of {branch_warming} degree C."
+            ),
+            parent_activity=universe_d[branch_from].activity,
+            parent_experiment=universe_d[branch_from].drs_name.lower(),
+            # parent_mip_era=,
+            start_timestamp=None,
+            end_timestamp=None,
+        )
+        universe_d[drs_name] = universe_experiment
+
+        cmip7_experiment = CMIP7Experiment(
+            tier=1,
+            parent_mip_era="cmip7",
+            min_number_yrs_per_sim=min_number_yrs_per_sim,
+            min_ensemble_size=1,
+        )
+
+        holder = holder.add(universe_experiment, cmip7_experiment)
+
+    return holder
+
+
 def add_cfmip(holder: Holder) -> Holder:
     for drs_name, description in (
         (
@@ -2754,6 +2978,7 @@ def main():
         add_aerchemmip_pdclim,
         add_aerchemmip_scenarios,
         add_geomip,
+        add_tipmip,
         add_cfmip,
     ):
         holder = add_experiments(holder)
