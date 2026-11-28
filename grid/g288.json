@@ -1,0 +1,11 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "g288",
+  "type": "grid",
+  "description": "Horizontal grid cell with a displaced pole grid type and 1.125 x 0.53 degree resolution.",
+  "drs_name": "g288",
+  "region": "global",
+  "grid_type": "displaced_pole",
+  "n_cells": 122880,
+  "grid_mapping": "rotated_latitude_longitude"
+}
